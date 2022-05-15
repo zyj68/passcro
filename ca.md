@@ -5,1103 +5,675 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_7001 @WangCai_1, server: 167.88.61.204, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_7002 @WangCai_1, server: 167.88.61.204, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_8118 @WangCai_1, server: 167.88.61.204, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8009 @WangCai_1, server: 167.88.61.204, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8119 @WangCai_1, server: 167.88.61.204, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8881 @WangCai_1, server: 167.88.61.204, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_5000 @WangCai_1, server: 167.88.61.204, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_4444 @WangCai_1, server: 167.88.61.204, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_9102 @WangCai_1, server: 167.88.61.204, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_6697 @WangCai_1, server: 167.88.61.204, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_6379 @WangCai_1, server: 167.88.61.204, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_9101 @WangCai_1, server: 167.88.61.204, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_8882 @WangCai_1, server: 167.88.61.204, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8008 @WangCai_1, server: 167.88.61.204, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8000 @WangCai_1, server: 167.88.61.204, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5004 @WangCai_1, server: 167.88.61.204, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_5500 @WangCai_1, server: 167.88.61.204, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5600 @WangCai_1, server: 167.88.61.204, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8888 @WangCai_1, server: 167.88.61.204, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6679 @WangCai_1, server: 167.88.61.204, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_0443 @WangCai_1, server: 167.88.61.204, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_8118 @WangCai_1 2, server: 167.88.61.15, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_6697 @WangCai_1 2, server: 167.88.61.15, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_5601 @WangCai_1, server: 167.88.61.15, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8119 @WangCai_1 2, server: 167.88.61.15, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_5003 @WangCai_1, server: 167.88.61.15, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_5001 @WangCai_1, server: 167.88.61.15, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_9102 @WangCai_1 2, server: 167.88.61.15, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_7306 @WangCai_1, server: 167.88.61.15, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_8881 @WangCai_1 2, server: 167.88.61.15, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8080 @WangCai_1, server: 167.88.61.15, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5000 @WangCai_1 2, server: 167.88.61.15, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_4444 @WangCai_1 2, server: 167.88.61.15, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_0443 @WangCai_1 2, server: 167.88.61.15, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_8009 @WangCai_1 2, server: 167.88.61.15, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8008 @WangCai_1 2, server: 167.88.61.15, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_7002 @WangCai_1 2, server: 167.88.61.15, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_7307 @WangCai_1, server: 167.88.61.15, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_3306 @WangCai_1, server: 167.88.61.15, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8000 @WangCai_1 2, server: 167.88.61.15, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_6679 @WangCai_1 2, server: 167.88.61.15, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_8888 @WangCai_1 2, server: 167.88.61.15, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8090 @WangCai_1, server: 167.88.61.15, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_8882 @WangCai_1 2, server: 167.88.61.15, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_6379 @WangCai_1 2, server: 167.88.61.15, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_9101 @WangCai_1 2, server: 167.88.61.15, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_8091 @WangCai_1, server: 167.88.61.15, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_5500 @WangCai_1 2, server: 167.88.61.15, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5600 @WangCai_1 2, server: 167.88.61.15, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5004 @WangCai_1 2, server: 167.88.61.15, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_2375 @WangCai_1, server: 167.88.61.15, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_7001 @WangCai_1 2, server: 167.88.61.15, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_3389 @WangCai_1, server: 167.88.61.15, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_2376 @WangCai_1, server: 167.88.61.15, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_8118 @WangCai_1 3, server: 169.197.141.15, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_6697 @WangCai_1 3, server: 169.197.141.15, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_5601 @WangCai_1 2, server: 169.197.141.15, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8119 @WangCai_1 3, server: 169.197.141.15, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_5003 @WangCai_1 2, server: 169.197.141.15, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_5001 @WangCai_1 2, server: 169.197.141.15, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_9102 @WangCai_1 3, server: 169.197.141.15, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_7306 @WangCai_1 2, server: 169.197.141.15, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_8881 @WangCai_1 3, server: 169.197.141.15, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8080 @WangCai_1 2, server: 169.197.141.15, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5000 @WangCai_1 3, server: 169.197.141.15, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_4444 @WangCai_1 3, server: 169.197.141.15, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_0443 @WangCai_1 3, server: 169.197.141.15, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_8009 @WangCai_1 3, server: 169.197.141.15, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8008 @WangCai_1 3, server: 169.197.141.15, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_7002 @WangCai_1 3, server: 169.197.141.15, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_7307 @WangCai_1 2, server: 169.197.141.15, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_3306 @WangCai_1 2, server: 169.197.141.15, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8000 @WangCai_1 3, server: 169.197.141.15, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_6679 @WangCai_1 3, server: 169.197.141.15, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_8888 @WangCai_1 3, server: 169.197.141.15, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8090 @WangCai_1 2, server: 169.197.141.15, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_8882 @WangCai_1 3, server: 169.197.141.15, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_6379 @WangCai_1 3, server: 169.197.141.15, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_9101 @WangCai_1 3, server: 169.197.141.15, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_8091 @WangCai_1 2, server: 169.197.141.15, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_5500 @WangCai_1 3, server: 169.197.141.15, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5600 @WangCai_1 3, server: 169.197.141.15, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5004 @WangCai_1 3, server: 169.197.141.15, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_2375 @WangCai_1 2, server: 169.197.141.15, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_7001 @WangCai_1 3, server: 169.197.141.15, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_3389 @WangCai_1 2, server: 169.197.141.15, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_2376 @WangCai_1 2, server: 169.197.141.15, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_0443 @WangCai_1 4, server: 38.91.101.159, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_2375 @WangCai_1 3, server: 38.91.101.159, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_2376 @WangCai_1 3, server: 38.91.101.159, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_3306 @WangCai_1 3, server: 38.91.101.159, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_3389 @WangCai_1 3, server: 38.91.101.159, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_4444 @WangCai_1 4, server: 38.91.101.159, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_5000 @WangCai_1 4, server: 38.91.101.159, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5001 @WangCai_1 3, server: 38.91.101.159, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5003 @WangCai_1 3, server: 38.91.101.159, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_5004 @WangCai_1 4, server: 38.91.101.159, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_5500 @WangCai_1 4, server: 38.91.101.159, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5600 @WangCai_1 4, server: 38.91.101.159, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5601 @WangCai_1 3, server: 38.91.101.159, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6379 @WangCai_1 4, server: 38.91.101.159, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_6679 @WangCai_1 4, server: 38.91.101.159, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_6697 @WangCai_1 4, server: 38.91.101.159, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_7001 @WangCai_1 4, server: 38.91.101.159, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_7002 @WangCai_1 4, server: 38.91.101.159, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_7306 @WangCai_1 3, server: 38.91.101.159, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_7307 @WangCai_1 3, server: 38.91.101.159, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_8000 @WangCai_1 4, server: 38.91.101.159, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8008 @WangCai_1 4, server: 38.91.101.159, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8009 @WangCai_1 4, server: 38.91.101.159, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8080 @WangCai_1 3, server: 38.91.101.159, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8090 @WangCai_1 3, server: 38.91.101.159, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_8091 @WangCai_1 3, server: 38.91.101.159, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_8118 @WangCai_1 4, server: 38.91.101.159, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8119 @WangCai_1 4, server: 38.91.101.159, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8881 @WangCai_1 4, server: 38.91.101.159, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8882 @WangCai_1 4, server: 38.91.101.159, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8888 @WangCai_1 4, server: 38.91.101.159, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_9101 @WangCai_1 4, server: 38.91.101.159, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_9102 @WangCai_1 4, server: 38.91.101.159, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_0443 @WangCai_1 5, server: 38.91.100.150, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_2375 @WangCai_1 4, server: 38.91.100.150, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_2376 @WangCai_1 4, server: 38.91.100.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_3306 @WangCai_1 4, server: 38.91.100.150, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_4444 @WangCai_1 5, server: 38.91.100.150, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_5000 @WangCai_1 5, server: 38.91.100.150, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5003 @WangCai_1 4, server: 38.91.100.150, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_5004 @WangCai_1 5, server: 38.91.100.150, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_5500 @WangCai_1 5, server: 38.91.100.150, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5600 @WangCai_1 5, server: 38.91.100.150, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6379 @WangCai_1 5, server: 38.91.100.150, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_6679 @WangCai_1 5, server: 38.91.100.150, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_6697 @WangCai_1 5, server: 38.91.100.150, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_7001 @WangCai_1 5, server: 38.91.100.150, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_7002 @WangCai_1 5, server: 38.91.100.150, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_7307 @WangCai_1 4, server: 38.91.100.150, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_8000 @WangCai_1 5, server: 38.91.100.150, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8008 @WangCai_1 5, server: 38.91.100.150, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8009 @WangCai_1 5, server: 38.91.100.150, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8118 @WangCai_1 5, server: 38.91.100.150, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8119 @WangCai_1 5, server: 38.91.100.150, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8881 @WangCai_1 5, server: 38.91.100.150, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8882 @WangCai_1 5, server: 38.91.100.150, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8888 @WangCai_1 5, server: 38.91.100.150, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_9101 @WangCai_1 5, server: 38.91.100.150, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_9102 @WangCai_1 5, server: 38.91.100.150, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_0443 @WangCai_1 6, server: 38.75.136.161, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_2375 @WangCai_1 5, server: 38.75.136.161, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_2376 @WangCai_1 5, server: 38.75.136.161, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_3306 @WangCai_1 5, server: 38.75.136.161, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_3389 @WangCai_1 4, server: 38.75.136.161, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_4444 @WangCai_1 6, server: 38.75.136.161, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_5000 @WangCai_1 6, server: 38.75.136.161, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5001 @WangCai_1 4, server: 38.75.136.161, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5003 @WangCai_1 5, server: 38.75.136.161, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_5004 @WangCai_1 6, server: 38.75.136.161, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_5500 @WangCai_1 6, server: 38.75.136.161, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5600 @WangCai_1 6, server: 38.75.136.161, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5601 @WangCai_1 4, server: 38.75.136.161, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6379 @WangCai_1 6, server: 38.75.136.161, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_6679 @WangCai_1 6, server: 38.75.136.161, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_6697 @WangCai_1 6, server: 38.75.136.161, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_7001 @WangCai_1 6, server: 38.75.136.161, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_7002 @WangCai_1 6, server: 38.75.136.161, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_7306 @WangCai_1 4, server: 38.75.136.161, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_7307 @WangCai_1 5, server: 38.75.136.161, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_8000 @WangCai_1 6, server: 38.75.136.161, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8008 @WangCai_1 6, server: 38.75.136.161, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8009 @WangCai_1 6, server: 38.75.136.161, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8080 @WangCai_1 4, server: 38.75.136.161, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8090 @WangCai_1 4, server: 38.75.136.161, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_8091 @WangCai_1 4, server: 38.75.136.161, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_8118 @WangCai_1 6, server: 38.75.136.161, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8119 @WangCai_1 6, server: 38.75.136.161, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8881 @WangCai_1 6, server: 38.75.136.161, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8882 @WangCai_1 6, server: 38.75.136.161, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8888 @WangCai_1 6, server: 38.75.136.161, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_9101 @WangCai_1 6, server: 38.75.136.161, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_9102 @WangCai_1 6, server: 38.75.136.161, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_8008 @WangCai_1 7, server: 167.88.63.60, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_6679 @WangCai_1 7, server: 167.88.63.60, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_4444 @WangCai_1 7, server: 167.88.63.60, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_6379 @WangCai_1 7, server: 167.88.63.60, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_3389 @WangCai_1 5, server: 167.88.63.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8080 @WangCai_1 5, server: 167.88.63.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_7307 @WangCai_1 6, server: 167.88.63.60, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_8091 @WangCai_1 5, server: 167.88.63.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_5500 @WangCai_1 7, server: 167.88.63.60, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_2375 @WangCai_1 6, server: 167.88.63.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_8009 @WangCai_1 7, server: 167.88.63.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_3306 @WangCai_1 6, server: 167.88.63.60, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_7002 @WangCai_1 7, server: 167.88.63.60, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_8000 @WangCai_1 7, server: 167.88.63.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_9101 @WangCai_1 7, server: 167.88.63.60, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_5004 @WangCai_1 7, server: 167.88.63.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_2376 @WangCai_1 6, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_8888 @WangCai_1 7, server: 167.88.63.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8882 @WangCai_1 7, server: 167.88.63.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_7001 @WangCai_1 7, server: 167.88.63.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_5003 @WangCai_1 6, server: 167.88.63.60, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_9102 @WangCai_1 7, server: 167.88.63.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_8881 @WangCai_1 7, server: 167.88.63.60, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_5001 @WangCai_1 5, server: 167.88.63.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_7306 @WangCai_1 5, server: 167.88.63.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_5601 @WangCai_1 5, server: 167.88.63.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8119 @WangCai_1 7, server: 167.88.63.60, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8118 @WangCai_1 7, server: 167.88.63.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_6697 @WangCai_1 7, server: 167.88.63.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_2376 @WangCai_1 7, server: 167.88.63.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_5500 @WangCai_1 8, server: 167.88.63.71, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_6679 @WangCai_1 8, server: 167.88.63.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_7002 @WangCai_1 8, server: 167.88.63.71, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_8009 @WangCai_1 8, server: 167.88.63.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_4444 @WangCai_1 8, server: 167.88.63.71, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_8080 @WangCai_1 6, server: 167.88.63.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_9102 @WangCai_1 8, server: 167.88.63.71, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_3389 @WangCai_1 6, server: 167.88.63.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_7001 @WangCai_1 8, server: 167.88.63.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_8008 @WangCai_1 8, server: 167.88.63.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_6379 @WangCai_1 8, server: 167.88.63.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_2375 @WangCai_1 7, server: 167.88.63.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_3306 @WangCai_1 7, server: 167.88.63.71, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8881 @WangCai_1 8, server: 167.88.63.71, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_9101 @WangCai_1 8, server: 167.88.63.71, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_5600 @WangCai_1 7, server: 167.88.63.71, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8091 @WangCai_1 6, server: 167.88.63.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_8000 @WangCai_1 8, server: 167.88.63.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8118 @WangCai_1 8, server: 167.88.63.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8882 @WangCai_1 8, server: 167.88.63.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_5601 @WangCai_1 6, server: 167.88.63.71, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8119 @WangCai_1 8, server: 167.88.63.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_0443 @WangCai_1 7, server: 167.88.63.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_8888 @WangCai_1 8, server: 167.88.63.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5003 @WangCai_1 7, server: 167.88.63.71, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_5001 @WangCai_1 6, server: 167.88.63.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5000 @WangCai_1 7, server: 167.88.63.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_7306 @WangCai_1 6, server: 167.88.63.71, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_8118 @WangCai_1 9, server: 142.202.48.43, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_6697 @WangCai_1 8, server: 142.202.48.43, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_5601 @WangCai_1 7, server: 142.202.48.43, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8119 @WangCai_1 9, server: 142.202.48.43, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_5003 @WangCai_1 8, server: 142.202.48.43, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_5001 @WangCai_1 7, server: 142.202.48.43, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_9102 @WangCai_1 9, server: 142.202.48.43, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_7306 @WangCai_1 7, server: 142.202.48.43, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_8881 @WangCai_1 9, server: 142.202.48.43, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8080 @WangCai_1 7, server: 142.202.48.43, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5000 @WangCai_1 8, server: 142.202.48.43, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_4444 @WangCai_1 9, server: 142.202.48.43, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_0443 @WangCai_1 8, server: 142.202.48.43, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_8009 @WangCai_1 9, server: 142.202.48.43, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8008 @WangCai_1 9, server: 142.202.48.43, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_7002 @WangCai_1 9, server: 142.202.48.43, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_7307 @WangCai_1 7, server: 142.202.48.43, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_3306 @WangCai_1 8, server: 142.202.48.43, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8000 @WangCai_1 9, server: 142.202.48.43, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_6679 @WangCai_1 9, server: 142.202.48.43, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_8888 @WangCai_1 9, server: 142.202.48.43, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8090 @WangCai_1 5, server: 142.202.48.43, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_8882 @WangCai_1 9, server: 142.202.48.43, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_6379 @WangCai_1 9, server: 142.202.48.43, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_9101 @WangCai_1 9, server: 142.202.48.43, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_8091 @WangCai_1 7, server: 142.202.48.43, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_5500 @WangCai_1 9, server: 142.202.48.43, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5600 @WangCai_1 8, server: 142.202.48.43, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5004 @WangCai_1 8, server: 142.202.48.43, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_2375 @WangCai_1 8, server: 142.202.48.43, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_7001 @WangCai_1 9, server: 142.202.48.43, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_3389 @WangCai_1 7, server: 142.202.48.43, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_2376 @WangCai_1 8, server: 142.202.48.43, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_0443 @WangCai_1, server: 134.195.196.6, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_2375 @WangCai_1, server: 134.195.196.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_2376 @WangCai_1, server: 134.195.196.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_3306 @WangCai_1, server: 134.195.196.6, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_3389 @WangCai_1, server: 134.195.196.6, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_4444 @WangCai_1, server: 134.195.196.6, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_5000 @WangCai_1, server: 134.195.196.6, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5001 @WangCai_1, server: 134.195.196.6, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5003 @WangCai_1, server: 134.195.196.6, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5004 @WangCai_1, server: 134.195.196.6, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5500 @WangCai_1, server: 134.195.196.6, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_5600 @WangCai_1, server: 134.195.196.6, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5601 @WangCai_1, server: 134.195.196.6, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_6379 @WangCai_1, server: 134.195.196.6, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ‌‌🇨🇦CA_6679 @WangCai_1, server: 134.195.196.6, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6697 @WangCai_1, server: 134.195.196.6, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_7001 @WangCai_1, server: 134.195.196.6, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7002 @WangCai_1, server: 134.195.196.6, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7306 @WangCai_1, server: 134.195.196.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_7307 @WangCai_1, server: 134.195.196.6, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_8000 @WangCai_1, server: 134.195.196.6, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8008 @WangCai_1, server: 134.195.196.6, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8009 @WangCai_1, server: 134.195.196.6, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8080 @WangCai_1, server: 134.195.196.6, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8090 @WangCai_1, server: 134.195.196.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8091 @WangCai_1, server: 134.195.196.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8118 @WangCai_1, server: 134.195.196.6, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8119 @WangCai_1, server: 134.195.196.6, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8881 @WangCai_1, server: 134.195.196.6, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8882 @WangCai_1, server: 134.195.196.6, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8888 @WangCai_1, server: 134.195.196.6, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_9101 @WangCai_1, server: 134.195.196.6, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_9102 @WangCai_1, server: 134.195.196.6, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_0443 @WangCai_1 2, server: 134.195.196.16, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_2375 @WangCai_1 2, server: 134.195.196.16, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_2376 @WangCai_1 2, server: 134.195.196.16, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_3306 @WangCai_1 2, server: 134.195.196.16, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_3389 @WangCai_1 2, server: 134.195.196.16, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_4444 @WangCai_1 2, server: 134.195.196.16, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_5000 @WangCai_1 2, server: 134.195.196.16, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5001 @WangCai_1 2, server: 134.195.196.16, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5003 @WangCai_1 2, server: 134.195.196.16, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5004 @WangCai_1 2, server: 134.195.196.16, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5500 @WangCai_1 2, server: 134.195.196.16, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_5600 @WangCai_1 2, server: 134.195.196.16, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5601 @WangCai_1 2, server: 134.195.196.16, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_6379 @WangCai_1 2, server: 134.195.196.16, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ‌‌🇨🇦CA_6679 @WangCai_1 2, server: 134.195.196.16, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6697 @WangCai_1 2, server: 134.195.196.16, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_7001 @WangCai_1 2, server: 134.195.196.16, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7002 @WangCai_1 2, server: 134.195.196.16, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7306 @WangCai_1 2, server: 134.195.196.16, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_7307 @WangCai_1 2, server: 134.195.196.16, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_8000 @WangCai_1 2, server: 134.195.196.16, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8008 @WangCai_1 2, server: 134.195.196.16, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8009 @WangCai_1 2, server: 134.195.196.16, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8080 @WangCai_1 2, server: 134.195.196.16, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8090 @WangCai_1 2, server: 134.195.196.16, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8091 @WangCai_1 2, server: 134.195.196.16, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8118 @WangCai_1 2, server: 134.195.196.16, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8119 @WangCai_1 2, server: 134.195.196.16, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8881 @WangCai_1 2, server: 134.195.196.16, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8882 @WangCai_1 2, server: 134.195.196.16, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8888 @WangCai_1 2, server: 134.195.196.16, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_9101 @WangCai_1 2, server: 134.195.196.16, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_9102 @WangCai_1 2, server: 134.195.196.16, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_0443 @WangCai_1 3, server: 134.195.196.206, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_2375 @WangCai_1 3, server: 134.195.196.206, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_2376 @WangCai_1 3, server: 134.195.196.206, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_3306 @WangCai_1 3, server: 134.195.196.206, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_3389 @WangCai_1 3, server: 134.195.196.206, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_4444 @WangCai_1 3, server: 134.195.196.206, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_5000 @WangCai_1 3, server: 134.195.196.206, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5001 @WangCai_1 3, server: 134.195.196.206, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5003 @WangCai_1 3, server: 134.195.196.206, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5004 @WangCai_1 3, server: 134.195.196.206, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5500 @WangCai_1 3, server: 134.195.196.206, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_5600 @WangCai_1 3, server: 134.195.196.206, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5601 @WangCai_1 3, server: 134.195.196.206, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_6379 @WangCai_1 3, server: 134.195.196.206, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ‌‌🇨🇦CA_6679 @WangCai_1 3, server: 134.195.196.206, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6697 @WangCai_1 3, server: 134.195.196.206, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_7001 @WangCai_1 3, server: 134.195.196.206, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7002 @WangCai_1 3, server: 134.195.196.206, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7306 @WangCai_1 3, server: 134.195.196.206, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_7307 @WangCai_1 3, server: 134.195.196.206, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_8000 @WangCai_1 3, server: 134.195.196.206, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8008 @WangCai_1 3, server: 134.195.196.206, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8009 @WangCai_1 3, server: 134.195.196.206, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8080 @WangCai_1 3, server: 134.195.196.206, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8090 @WangCai_1 3, server: 134.195.196.206, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8091 @WangCai_1 3, server: 134.195.196.206, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8118 @WangCai_1 3, server: 134.195.196.206, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8119 @WangCai_1 3, server: 134.195.196.206, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8881 @WangCai_1 3, server: 134.195.196.206, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8882 @WangCai_1 3, server: 134.195.196.206, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8888 @WangCai_1 3, server: 134.195.196.206, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_9101 @WangCai_1 3, server: 134.195.196.206, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_9102 @WangCai_1 3, server: 134.195.196.206, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_0443 @WangCai_1 4, server: 134.195.196.24, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_2375 @WangCai_1 4, server: 134.195.196.24, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_2376 @WangCai_1 4, server: 134.195.196.24, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_3306 @WangCai_1 4, server: 134.195.196.24, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_3389 @WangCai_1 4, server: 134.195.196.24, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_4444 @WangCai_1 4, server: 134.195.196.24, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_5000 @WangCai_1 4, server: 134.195.196.24, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5001 @WangCai_1 4, server: 134.195.196.24, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5003 @WangCai_1 4, server: 134.195.196.24, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5004 @WangCai_1 4, server: 134.195.196.24, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5500 @WangCai_1 4, server: 134.195.196.24, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_5600 @WangCai_1 4, server: 134.195.196.24, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5601 @WangCai_1 4, server: 134.195.196.24, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_6379 @WangCai_1 4, server: 134.195.196.24, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ‌‌🇨🇦CA_6679 @WangCai_1 4, server: 134.195.196.24, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6697 @WangCai_1 4, server: 134.195.196.24, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_7001 @WangCai_1 4, server: 134.195.196.24, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7002 @WangCai_1 4, server: 134.195.196.24, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7306 @WangCai_1 4, server: 134.195.196.24, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_7307 @WangCai_1 4, server: 134.195.196.24, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_8000 @WangCai_1 4, server: 134.195.196.24, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8008 @WangCai_1 4, server: 134.195.196.24, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8009 @WangCai_1 4, server: 134.195.196.24, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8080 @WangCai_1 4, server: 134.195.196.24, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8090 @WangCai_1 4, server: 134.195.196.24, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8091 @WangCai_1 4, server: 134.195.196.24, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8118 @WangCai_1 4, server: 134.195.196.24, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8119 @WangCai_1 4, server: 134.195.196.24, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8881 @WangCai_1 4, server: 134.195.196.24, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8882 @WangCai_1 4, server: 134.195.196.24, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8888 @WangCai_1 4, server: 134.195.196.24, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_9101 @WangCai_1 4, server: 134.195.196.24, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_9102 @WangCai_1 4, server: 134.195.196.24, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: DE_0443 @WangCai_1, server: 145.239.1.100, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: DE_2376 @WangCai_1, server: 145.239.1.100, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: DE_3306 @WangCai_1, server: 145.239.1.100, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: DE_3389 @WangCai_1, server: 145.239.1.100, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: DE_4444 @WangCai_1, server: 145.239.1.100, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: DE_5000 @WangCai_1, server: 145.239.1.100, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: DE_5003 @WangCai_1, server: 145.239.1.100, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: DE_5004 @WangCai_1, server: 145.239.1.100, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: DE_5500 @WangCai_1, server: 145.239.1.100, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: DE_5600 @WangCai_1, server: 145.239.1.100, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: DE_5601 @WangCai_1, server: 145.239.1.100, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: DE_6379 @WangCai_1, server: 145.239.1.100, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: DE_6679 @WangCai_1, server: 145.239.1.100, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: DE_6697 @WangCai_1, server: 145.239.1.100, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: DE_7001 @WangCai_1, server: 145.239.1.100, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: DE_7002 @WangCai_1, server: 145.239.1.100, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: DE_7306 @WangCai_1, server: 145.239.1.100, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: DE_7307 @WangCai_1, server: 145.239.1.100, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: DE_8000 @WangCai_1, server: 145.239.1.100, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: DE_8008 @WangCai_1, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: DE_8009 @WangCai_1, server: 145.239.1.100, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: DE_8080 @WangCai_1, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: DE_8090 @WangCai_1, server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: DE_8091 @WangCai_1, server: 145.239.1.100, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: DE_8118 @WangCai_1, server: 145.239.1.100, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: DE_8119 @WangCai_1, server: 145.239.1.100, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: DE_8881 @WangCai_1, server: 145.239.1.100, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: DE_8882 @WangCai_1, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: DE_8888 @WangCai_1, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: DE_9101 @WangCai_1, server: 145.239.1.100, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: DE_9102 @WangCai_1, server: 145.239.1.100, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8118 @WangCai_1 2
-      - US_6697 @WangCai_1 2
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1 2
-      - US_5003 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_8080 @WangCai_1
-      - US_5000 @WangCai_1 2
-      - US_4444 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7002 @WangCai_1 2
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1 2
-      - US_8090 @WangCai_1
-      - US_8882 @WangCai_1 2
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1 2
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1
-      - US_7001 @WangCai_1 2
-      - US_3389 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_8118 @WangCai_1 3
-      - US_6697 @WangCai_1 3
-      - US_5601 @WangCai_1 2
-      - US_8119 @WangCai_1 3
-      - US_5003 @WangCai_1 2
-      - US_5001 @WangCai_1 2
-      - US_9102 @WangCai_1 3
-      - US_7306 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - US_8080 @WangCai_1 2
-      - US_5000 @WangCai_1 3
-      - US_4444 @WangCai_1 3
-      - US_0443 @WangCai_1 3
-      - US_8009 @WangCai_1 3
-      - US_8008 @WangCai_1 3
-      - US_7002 @WangCai_1 3
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 3
-      - US_6679 @WangCai_1 3
-      - US_8888 @WangCai_1 3
-      - US_8090 @WangCai_1 2
-      - US_8882 @WangCai_1 3
-      - US_6379 @WangCai_1 3
-      - US_9101 @WangCai_1 3
-      - US_8091 @WangCai_1 2
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1 3
-      - US_5004 @WangCai_1 3
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1 3
-      - US_3389 @WangCai_1 2
-      - US_2376 @WangCai_1 2
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 3
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1 3
-      - US_4444 @WangCai_1 4
-      - US_5000 @WangCai_1 4
-      - US_5001 @WangCai_1 3
-      - US_5003 @WangCai_1 3
-      - US_5004 @WangCai_1 4
-      - US_5500 @WangCai_1 4
-      - US_5600 @WangCai_1 4
-      - US_5601 @WangCai_1 3
-      - US_6379 @WangCai_1 4
-      - US_6679 @WangCai_1 4
-      - US_6697 @WangCai_1 4
-      - US_7001 @WangCai_1 4
-      - US_7002 @WangCai_1 4
-      - US_7306 @WangCai_1 3
-      - US_7307 @WangCai_1 3
-      - US_8000 @WangCai_1 4
-      - US_8008 @WangCai_1 4
-      - US_8009 @WangCai_1 4
-      - US_8080 @WangCai_1 3
-      - US_8090 @WangCai_1 3
-      - US_8091 @WangCai_1 3
-      - US_8118 @WangCai_1 4
-      - US_8119 @WangCai_1 4
-      - US_8881 @WangCai_1 4
-      - US_8882 @WangCai_1 4
-      - US_8888 @WangCai_1 4
-      - US_9101 @WangCai_1 4
-      - US_9102 @WangCai_1 4
-      - US_0443 @WangCai_1 5
-      - US_2375 @WangCai_1 4
-      - US_2376 @WangCai_1 4
-      - US_3306 @WangCai_1 4
-      - US_4444 @WangCai_1 5
-      - US_5000 @WangCai_1 5
-      - US_5003 @WangCai_1 4
-      - US_5004 @WangCai_1 5
-      - US_5500 @WangCai_1 5
-      - US_5600 @WangCai_1 5
-      - US_6379 @WangCai_1 5
-      - US_6679 @WangCai_1 5
-      - US_6697 @WangCai_1 5
-      - US_7001 @WangCai_1 5
-      - US_7002 @WangCai_1 5
-      - US_7307 @WangCai_1 4
-      - US_8000 @WangCai_1 5
-      - US_8008 @WangCai_1 5
-      - US_8009 @WangCai_1 5
-      - US_8118 @WangCai_1 5
-      - US_8119 @WangCai_1 5
-      - US_8881 @WangCai_1 5
-      - US_8882 @WangCai_1 5
-      - US_8888 @WangCai_1 5
-      - US_9101 @WangCai_1 5
-      - US_9102 @WangCai_1 5
-      - US_0443 @WangCai_1 6
-      - US_2375 @WangCai_1 5
-      - US_2376 @WangCai_1 5
-      - US_3306 @WangCai_1 5
-      - US_3389 @WangCai_1 4
-      - US_4444 @WangCai_1 6
-      - US_5000 @WangCai_1 6
-      - US_5001 @WangCai_1 4
-      - US_5003 @WangCai_1 5
-      - US_5004 @WangCai_1 6
-      - US_5500 @WangCai_1 6
-      - US_5600 @WangCai_1 6
-      - US_5601 @WangCai_1 4
-      - US_6379 @WangCai_1 6
-      - US_6679 @WangCai_1 6
-      - US_6697 @WangCai_1 6
-      - US_7001 @WangCai_1 6
-      - US_7002 @WangCai_1 6
-      - US_7306 @WangCai_1 4
-      - US_7307 @WangCai_1 5
-      - US_8000 @WangCai_1 6
-      - US_8008 @WangCai_1 6
-      - US_8009 @WangCai_1 6
-      - US_8080 @WangCai_1 4
-      - US_8090 @WangCai_1 4
-      - US_8091 @WangCai_1 4
-      - US_8118 @WangCai_1 6
-      - US_8119 @WangCai_1 6
-      - US_8881 @WangCai_1 6
-      - US_8882 @WangCai_1 6
-      - US_8888 @WangCai_1 6
-      - US_9101 @WangCai_1 6
-      - US_9102 @WangCai_1 6
-      - US_8008 @WangCai_1 7
-      - US_6679 @WangCai_1 7
-      - US_4444 @WangCai_1 7
-      - US_6379 @WangCai_1 7
-      - US_3389 @WangCai_1 5
-      - US_8080 @WangCai_1 5
-      - US_7307 @WangCai_1 6
-      - US_8091 @WangCai_1 5
-      - US_5500 @WangCai_1 7
-      - US_2375 @WangCai_1 6
-      - US_8009 @WangCai_1 7
-      - US_3306 @WangCai_1 6
-      - US_7002 @WangCai_1 7
-      - US_8000 @WangCai_1 7
-      - US_9101 @WangCai_1 7
-      - US_5004 @WangCai_1 7
-      - US_2376 @WangCai_1 6
-      - US_8888 @WangCai_1 7
-      - US_8882 @WangCai_1 7
-      - US_7001 @WangCai_1 7
-      - US_5003 @WangCai_1 6
-      - US_9102 @WangCai_1 7
-      - US_8881 @WangCai_1 7
-      - US_5001 @WangCai_1 5
-      - US_7306 @WangCai_1 5
-      - US_5601 @WangCai_1 5
-      - US_8119 @WangCai_1 7
-      - US_8118 @WangCai_1 7
-      - US_6697 @WangCai_1 7
-      - US_2376 @WangCai_1 7
-      - US_5500 @WangCai_1 8
-      - US_6679 @WangCai_1 8
-      - US_7002 @WangCai_1 8
-      - US_8009 @WangCai_1 8
-      - US_4444 @WangCai_1 8
-      - US_8080 @WangCai_1 6
-      - US_9102 @WangCai_1 8
-      - US_3389 @WangCai_1 6
-      - US_7001 @WangCai_1 8
-      - US_8008 @WangCai_1 8
-      - US_6379 @WangCai_1 8
-      - US_2375 @WangCai_1 7
-      - US_3306 @WangCai_1 7
-      - US_8881 @WangCai_1 8
-      - US_9101 @WangCai_1 8
-      - US_5600 @WangCai_1 7
-      - US_8091 @WangCai_1 6
-      - US_8000 @WangCai_1 8
-      - US_8118 @WangCai_1 8
-      - US_8882 @WangCai_1 8
-      - US_5601 @WangCai_1 6
-      - US_8119 @WangCai_1 8
-      - US_0443 @WangCai_1 7
-      - US_8888 @WangCai_1 8
-      - US_5003 @WangCai_1 7
-      - US_5001 @WangCai_1 6
-      - US_5000 @WangCai_1 7
-      - US_7306 @WangCai_1 6
-      - US_8118 @WangCai_1 9
-      - US_6697 @WangCai_1 8
-      - US_5601 @WangCai_1 7
-      - US_8119 @WangCai_1 9
-      - US_5003 @WangCai_1 8
-      - US_5001 @WangCai_1 7
-      - US_9102 @WangCai_1 9
-      - US_7306 @WangCai_1 7
-      - US_8881 @WangCai_1 9
-      - US_8080 @WangCai_1 7
-      - US_5000 @WangCai_1 8
-      - US_4444 @WangCai_1 9
-      - US_0443 @WangCai_1 8
-      - US_8009 @WangCai_1 9
-      - US_8008 @WangCai_1 9
-      - US_7002 @WangCai_1 9
-      - US_7307 @WangCai_1 7
-      - US_3306 @WangCai_1 8
-      - US_8000 @WangCai_1 9
-      - US_6679 @WangCai_1 9
-      - US_8888 @WangCai_1 9
-      - US_8090 @WangCai_1 5
-      - US_8882 @WangCai_1 9
-      - US_6379 @WangCai_1 9
-      - US_9101 @WangCai_1 9
-      - US_8091 @WangCai_1 7
-      - US_5500 @WangCai_1 9
-      - US_5600 @WangCai_1 8
-      - US_5004 @WangCai_1 8
-      - US_2375 @WangCai_1 8
-      - US_7001 @WangCai_1 9
-      - US_3389 @WangCai_1 7
-      - US_2376 @WangCai_1 8
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_4444 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3389 @WangCai_1 2
+      - ‌‌🇨🇦CA_4444 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_3389 @WangCai_1 3
+      - ‌‌🇨🇦CA_4444 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5601 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8009 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_2375 @WangCai_1 4
+      - ‌‌🇨🇦CA_2376 @WangCai_1 4
+      - ‌‌🇨🇦CA_3306 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1 4
+      - ‌‌🇨🇦CA_4444 @WangCai_1 4
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_5001 @WangCai_1 4
+      - ‌‌🇨🇦CA_5003 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5601 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7306 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1 4
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1 4
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8090 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8118 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9102 @WangCai_1 4
+      - DE_0443 @WangCai_1
+      - DE_2376 @WangCai_1
+      - DE_3306 @WangCai_1
+      - DE_3389 @WangCai_1
+      - DE_4444 @WangCai_1
+      - DE_5000 @WangCai_1
+      - DE_5003 @WangCai_1
+      - DE_5004 @WangCai_1
+      - DE_5500 @WangCai_1
+      - DE_5600 @WangCai_1
+      - DE_5601 @WangCai_1
+      - DE_6379 @WangCai_1
+      - DE_6679 @WangCai_1
+      - DE_6697 @WangCai_1
+      - DE_7001 @WangCai_1
+      - DE_7002 @WangCai_1
+      - DE_7306 @WangCai_1
+      - DE_7307 @WangCai_1
+      - DE_8000 @WangCai_1
+      - DE_8008 @WangCai_1
+      - DE_8009 @WangCai_1
+      - DE_8080 @WangCai_1
+      - DE_8090 @WangCai_1
+      - DE_8091 @WangCai_1
+      - DE_8118 @WangCai_1
+      - DE_8119 @WangCai_1
+      - DE_8881 @WangCai_1
+      - DE_8882 @WangCai_1
+      - DE_8888 @WangCai_1
+      - DE_9101 @WangCai_1
+      - DE_9102 @WangCai_1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8118 @WangCai_1 2
-      - US_6697 @WangCai_1 2
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1 2
-      - US_5003 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_8080 @WangCai_1
-      - US_5000 @WangCai_1 2
-      - US_4444 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7002 @WangCai_1 2
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1 2
-      - US_8090 @WangCai_1
-      - US_8882 @WangCai_1 2
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1 2
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1
-      - US_7001 @WangCai_1 2
-      - US_3389 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_8118 @WangCai_1 3
-      - US_6697 @WangCai_1 3
-      - US_5601 @WangCai_1 2
-      - US_8119 @WangCai_1 3
-      - US_5003 @WangCai_1 2
-      - US_5001 @WangCai_1 2
-      - US_9102 @WangCai_1 3
-      - US_7306 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - US_8080 @WangCai_1 2
-      - US_5000 @WangCai_1 3
-      - US_4444 @WangCai_1 3
-      - US_0443 @WangCai_1 3
-      - US_8009 @WangCai_1 3
-      - US_8008 @WangCai_1 3
-      - US_7002 @WangCai_1 3
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 3
-      - US_6679 @WangCai_1 3
-      - US_8888 @WangCai_1 3
-      - US_8090 @WangCai_1 2
-      - US_8882 @WangCai_1 3
-      - US_6379 @WangCai_1 3
-      - US_9101 @WangCai_1 3
-      - US_8091 @WangCai_1 2
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1 3
-      - US_5004 @WangCai_1 3
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1 3
-      - US_3389 @WangCai_1 2
-      - US_2376 @WangCai_1 2
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 3
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1 3
-      - US_4444 @WangCai_1 4
-      - US_5000 @WangCai_1 4
-      - US_5001 @WangCai_1 3
-      - US_5003 @WangCai_1 3
-      - US_5004 @WangCai_1 4
-      - US_5500 @WangCai_1 4
-      - US_5600 @WangCai_1 4
-      - US_5601 @WangCai_1 3
-      - US_6379 @WangCai_1 4
-      - US_6679 @WangCai_1 4
-      - US_6697 @WangCai_1 4
-      - US_7001 @WangCai_1 4
-      - US_7002 @WangCai_1 4
-      - US_7306 @WangCai_1 3
-      - US_7307 @WangCai_1 3
-      - US_8000 @WangCai_1 4
-      - US_8008 @WangCai_1 4
-      - US_8009 @WangCai_1 4
-      - US_8080 @WangCai_1 3
-      - US_8090 @WangCai_1 3
-      - US_8091 @WangCai_1 3
-      - US_8118 @WangCai_1 4
-      - US_8119 @WangCai_1 4
-      - US_8881 @WangCai_1 4
-      - US_8882 @WangCai_1 4
-      - US_8888 @WangCai_1 4
-      - US_9101 @WangCai_1 4
-      - US_9102 @WangCai_1 4
-      - US_0443 @WangCai_1 5
-      - US_2375 @WangCai_1 4
-      - US_2376 @WangCai_1 4
-      - US_3306 @WangCai_1 4
-      - US_4444 @WangCai_1 5
-      - US_5000 @WangCai_1 5
-      - US_5003 @WangCai_1 4
-      - US_5004 @WangCai_1 5
-      - US_5500 @WangCai_1 5
-      - US_5600 @WangCai_1 5
-      - US_6379 @WangCai_1 5
-      - US_6679 @WangCai_1 5
-      - US_6697 @WangCai_1 5
-      - US_7001 @WangCai_1 5
-      - US_7002 @WangCai_1 5
-      - US_7307 @WangCai_1 4
-      - US_8000 @WangCai_1 5
-      - US_8008 @WangCai_1 5
-      - US_8009 @WangCai_1 5
-      - US_8118 @WangCai_1 5
-      - US_8119 @WangCai_1 5
-      - US_8881 @WangCai_1 5
-      - US_8882 @WangCai_1 5
-      - US_8888 @WangCai_1 5
-      - US_9101 @WangCai_1 5
-      - US_9102 @WangCai_1 5
-      - US_0443 @WangCai_1 6
-      - US_2375 @WangCai_1 5
-      - US_2376 @WangCai_1 5
-      - US_3306 @WangCai_1 5
-      - US_3389 @WangCai_1 4
-      - US_4444 @WangCai_1 6
-      - US_5000 @WangCai_1 6
-      - US_5001 @WangCai_1 4
-      - US_5003 @WangCai_1 5
-      - US_5004 @WangCai_1 6
-      - US_5500 @WangCai_1 6
-      - US_5600 @WangCai_1 6
-      - US_5601 @WangCai_1 4
-      - US_6379 @WangCai_1 6
-      - US_6679 @WangCai_1 6
-      - US_6697 @WangCai_1 6
-      - US_7001 @WangCai_1 6
-      - US_7002 @WangCai_1 6
-      - US_7306 @WangCai_1 4
-      - US_7307 @WangCai_1 5
-      - US_8000 @WangCai_1 6
-      - US_8008 @WangCai_1 6
-      - US_8009 @WangCai_1 6
-      - US_8080 @WangCai_1 4
-      - US_8090 @WangCai_1 4
-      - US_8091 @WangCai_1 4
-      - US_8118 @WangCai_1 6
-      - US_8119 @WangCai_1 6
-      - US_8881 @WangCai_1 6
-      - US_8882 @WangCai_1 6
-      - US_8888 @WangCai_1 6
-      - US_9101 @WangCai_1 6
-      - US_9102 @WangCai_1 6
-      - US_8008 @WangCai_1 7
-      - US_6679 @WangCai_1 7
-      - US_4444 @WangCai_1 7
-      - US_6379 @WangCai_1 7
-      - US_3389 @WangCai_1 5
-      - US_8080 @WangCai_1 5
-      - US_7307 @WangCai_1 6
-      - US_8091 @WangCai_1 5
-      - US_5500 @WangCai_1 7
-      - US_2375 @WangCai_1 6
-      - US_8009 @WangCai_1 7
-      - US_3306 @WangCai_1 6
-      - US_7002 @WangCai_1 7
-      - US_8000 @WangCai_1 7
-      - US_9101 @WangCai_1 7
-      - US_5004 @WangCai_1 7
-      - US_2376 @WangCai_1 6
-      - US_8888 @WangCai_1 7
-      - US_8882 @WangCai_1 7
-      - US_7001 @WangCai_1 7
-      - US_5003 @WangCai_1 6
-      - US_9102 @WangCai_1 7
-      - US_8881 @WangCai_1 7
-      - US_5001 @WangCai_1 5
-      - US_7306 @WangCai_1 5
-      - US_5601 @WangCai_1 5
-      - US_8119 @WangCai_1 7
-      - US_8118 @WangCai_1 7
-      - US_6697 @WangCai_1 7
-      - US_2376 @WangCai_1 7
-      - US_5500 @WangCai_1 8
-      - US_6679 @WangCai_1 8
-      - US_7002 @WangCai_1 8
-      - US_8009 @WangCai_1 8
-      - US_4444 @WangCai_1 8
-      - US_8080 @WangCai_1 6
-      - US_9102 @WangCai_1 8
-      - US_3389 @WangCai_1 6
-      - US_7001 @WangCai_1 8
-      - US_8008 @WangCai_1 8
-      - US_6379 @WangCai_1 8
-      - US_2375 @WangCai_1 7
-      - US_3306 @WangCai_1 7
-      - US_8881 @WangCai_1 8
-      - US_9101 @WangCai_1 8
-      - US_5600 @WangCai_1 7
-      - US_8091 @WangCai_1 6
-      - US_8000 @WangCai_1 8
-      - US_8118 @WangCai_1 8
-      - US_8882 @WangCai_1 8
-      - US_5601 @WangCai_1 6
-      - US_8119 @WangCai_1 8
-      - US_0443 @WangCai_1 7
-      - US_8888 @WangCai_1 8
-      - US_5003 @WangCai_1 7
-      - US_5001 @WangCai_1 6
-      - US_5000 @WangCai_1 7
-      - US_7306 @WangCai_1 6
-      - US_8118 @WangCai_1 9
-      - US_6697 @WangCai_1 8
-      - US_5601 @WangCai_1 7
-      - US_8119 @WangCai_1 9
-      - US_5003 @WangCai_1 8
-      - US_5001 @WangCai_1 7
-      - US_9102 @WangCai_1 9
-      - US_7306 @WangCai_1 7
-      - US_8881 @WangCai_1 9
-      - US_8080 @WangCai_1 7
-      - US_5000 @WangCai_1 8
-      - US_4444 @WangCai_1 9
-      - US_0443 @WangCai_1 8
-      - US_8009 @WangCai_1 9
-      - US_8008 @WangCai_1 9
-      - US_7002 @WangCai_1 9
-      - US_7307 @WangCai_1 7
-      - US_3306 @WangCai_1 8
-      - US_8000 @WangCai_1 9
-      - US_6679 @WangCai_1 9
-      - US_8888 @WangCai_1 9
-      - US_8090 @WangCai_1 5
-      - US_8882 @WangCai_1 9
-      - US_6379 @WangCai_1 9
-      - US_9101 @WangCai_1 9
-      - US_8091 @WangCai_1 7
-      - US_5500 @WangCai_1 9
-      - US_5600 @WangCai_1 8
-      - US_5004 @WangCai_1 8
-      - US_2375 @WangCai_1 8
-      - US_7001 @WangCai_1 9
-      - US_3389 @WangCai_1 7
-      - US_2376 @WangCai_1 8
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_4444 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3389 @WangCai_1 2
+      - ‌‌🇨🇦CA_4444 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_3389 @WangCai_1 3
+      - ‌‌🇨🇦CA_4444 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5601 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8009 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_2375 @WangCai_1 4
+      - ‌‌🇨🇦CA_2376 @WangCai_1 4
+      - ‌‌🇨🇦CA_3306 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1 4
+      - ‌‌🇨🇦CA_4444 @WangCai_1 4
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_5001 @WangCai_1 4
+      - ‌‌🇨🇦CA_5003 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5601 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7306 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1 4
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1 4
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8090 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8118 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9102 @WangCai_1 4
+      - DE_0443 @WangCai_1
+      - DE_2376 @WangCai_1
+      - DE_3306 @WangCai_1
+      - DE_3389 @WangCai_1
+      - DE_4444 @WangCai_1
+      - DE_5000 @WangCai_1
+      - DE_5003 @WangCai_1
+      - DE_5004 @WangCai_1
+      - DE_5500 @WangCai_1
+      - DE_5600 @WangCai_1
+      - DE_5601 @WangCai_1
+      - DE_6379 @WangCai_1
+      - DE_6679 @WangCai_1
+      - DE_6697 @WangCai_1
+      - DE_7001 @WangCai_1
+      - DE_7002 @WangCai_1
+      - DE_7306 @WangCai_1
+      - DE_7307 @WangCai_1
+      - DE_8000 @WangCai_1
+      - DE_8008 @WangCai_1
+      - DE_8009 @WangCai_1
+      - DE_8080 @WangCai_1
+      - DE_8090 @WangCai_1
+      - DE_8091 @WangCai_1
+      - DE_8118 @WangCai_1
+      - DE_8119 @WangCai_1
+      - DE_8881 @WangCai_1
+      - DE_8882 @WangCai_1
+      - DE_8888 @WangCai_1
+      - DE_9101 @WangCai_1
+      - DE_9102 @WangCai_1
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8118 @WangCai_1 2
-      - US_6697 @WangCai_1 2
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1 2
-      - US_5003 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_8080 @WangCai_1
-      - US_5000 @WangCai_1 2
-      - US_4444 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7002 @WangCai_1 2
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1 2
-      - US_8090 @WangCai_1
-      - US_8882 @WangCai_1 2
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1 2
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1
-      - US_7001 @WangCai_1 2
-      - US_3389 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_8118 @WangCai_1 3
-      - US_6697 @WangCai_1 3
-      - US_5601 @WangCai_1 2
-      - US_8119 @WangCai_1 3
-      - US_5003 @WangCai_1 2
-      - US_5001 @WangCai_1 2
-      - US_9102 @WangCai_1 3
-      - US_7306 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - US_8080 @WangCai_1 2
-      - US_5000 @WangCai_1 3
-      - US_4444 @WangCai_1 3
-      - US_0443 @WangCai_1 3
-      - US_8009 @WangCai_1 3
-      - US_8008 @WangCai_1 3
-      - US_7002 @WangCai_1 3
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 3
-      - US_6679 @WangCai_1 3
-      - US_8888 @WangCai_1 3
-      - US_8090 @WangCai_1 2
-      - US_8882 @WangCai_1 3
-      - US_6379 @WangCai_1 3
-      - US_9101 @WangCai_1 3
-      - US_8091 @WangCai_1 2
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1 3
-      - US_5004 @WangCai_1 3
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1 3
-      - US_3389 @WangCai_1 2
-      - US_2376 @WangCai_1 2
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 3
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1 3
-      - US_4444 @WangCai_1 4
-      - US_5000 @WangCai_1 4
-      - US_5001 @WangCai_1 3
-      - US_5003 @WangCai_1 3
-      - US_5004 @WangCai_1 4
-      - US_5500 @WangCai_1 4
-      - US_5600 @WangCai_1 4
-      - US_5601 @WangCai_1 3
-      - US_6379 @WangCai_1 4
-      - US_6679 @WangCai_1 4
-      - US_6697 @WangCai_1 4
-      - US_7001 @WangCai_1 4
-      - US_7002 @WangCai_1 4
-      - US_7306 @WangCai_1 3
-      - US_7307 @WangCai_1 3
-      - US_8000 @WangCai_1 4
-      - US_8008 @WangCai_1 4
-      - US_8009 @WangCai_1 4
-      - US_8080 @WangCai_1 3
-      - US_8090 @WangCai_1 3
-      - US_8091 @WangCai_1 3
-      - US_8118 @WangCai_1 4
-      - US_8119 @WangCai_1 4
-      - US_8881 @WangCai_1 4
-      - US_8882 @WangCai_1 4
-      - US_8888 @WangCai_1 4
-      - US_9101 @WangCai_1 4
-      - US_9102 @WangCai_1 4
-      - US_0443 @WangCai_1 5
-      - US_2375 @WangCai_1 4
-      - US_2376 @WangCai_1 4
-      - US_3306 @WangCai_1 4
-      - US_4444 @WangCai_1 5
-      - US_5000 @WangCai_1 5
-      - US_5003 @WangCai_1 4
-      - US_5004 @WangCai_1 5
-      - US_5500 @WangCai_1 5
-      - US_5600 @WangCai_1 5
-      - US_6379 @WangCai_1 5
-      - US_6679 @WangCai_1 5
-      - US_6697 @WangCai_1 5
-      - US_7001 @WangCai_1 5
-      - US_7002 @WangCai_1 5
-      - US_7307 @WangCai_1 4
-      - US_8000 @WangCai_1 5
-      - US_8008 @WangCai_1 5
-      - US_8009 @WangCai_1 5
-      - US_8118 @WangCai_1 5
-      - US_8119 @WangCai_1 5
-      - US_8881 @WangCai_1 5
-      - US_8882 @WangCai_1 5
-      - US_8888 @WangCai_1 5
-      - US_9101 @WangCai_1 5
-      - US_9102 @WangCai_1 5
-      - US_0443 @WangCai_1 6
-      - US_2375 @WangCai_1 5
-      - US_2376 @WangCai_1 5
-      - US_3306 @WangCai_1 5
-      - US_3389 @WangCai_1 4
-      - US_4444 @WangCai_1 6
-      - US_5000 @WangCai_1 6
-      - US_5001 @WangCai_1 4
-      - US_5003 @WangCai_1 5
-      - US_5004 @WangCai_1 6
-      - US_5500 @WangCai_1 6
-      - US_5600 @WangCai_1 6
-      - US_5601 @WangCai_1 4
-      - US_6379 @WangCai_1 6
-      - US_6679 @WangCai_1 6
-      - US_6697 @WangCai_1 6
-      - US_7001 @WangCai_1 6
-      - US_7002 @WangCai_1 6
-      - US_7306 @WangCai_1 4
-      - US_7307 @WangCai_1 5
-      - US_8000 @WangCai_1 6
-      - US_8008 @WangCai_1 6
-      - US_8009 @WangCai_1 6
-      - US_8080 @WangCai_1 4
-      - US_8090 @WangCai_1 4
-      - US_8091 @WangCai_1 4
-      - US_8118 @WangCai_1 6
-      - US_8119 @WangCai_1 6
-      - US_8881 @WangCai_1 6
-      - US_8882 @WangCai_1 6
-      - US_8888 @WangCai_1 6
-      - US_9101 @WangCai_1 6
-      - US_9102 @WangCai_1 6
-      - US_8008 @WangCai_1 7
-      - US_6679 @WangCai_1 7
-      - US_4444 @WangCai_1 7
-      - US_6379 @WangCai_1 7
-      - US_3389 @WangCai_1 5
-      - US_8080 @WangCai_1 5
-      - US_7307 @WangCai_1 6
-      - US_8091 @WangCai_1 5
-      - US_5500 @WangCai_1 7
-      - US_2375 @WangCai_1 6
-      - US_8009 @WangCai_1 7
-      - US_3306 @WangCai_1 6
-      - US_7002 @WangCai_1 7
-      - US_8000 @WangCai_1 7
-      - US_9101 @WangCai_1 7
-      - US_5004 @WangCai_1 7
-      - US_2376 @WangCai_1 6
-      - US_8888 @WangCai_1 7
-      - US_8882 @WangCai_1 7
-      - US_7001 @WangCai_1 7
-      - US_5003 @WangCai_1 6
-      - US_9102 @WangCai_1 7
-      - US_8881 @WangCai_1 7
-      - US_5001 @WangCai_1 5
-      - US_7306 @WangCai_1 5
-      - US_5601 @WangCai_1 5
-      - US_8119 @WangCai_1 7
-      - US_8118 @WangCai_1 7
-      - US_6697 @WangCai_1 7
-      - US_2376 @WangCai_1 7
-      - US_5500 @WangCai_1 8
-      - US_6679 @WangCai_1 8
-      - US_7002 @WangCai_1 8
-      - US_8009 @WangCai_1 8
-      - US_4444 @WangCai_1 8
-      - US_8080 @WangCai_1 6
-      - US_9102 @WangCai_1 8
-      - US_3389 @WangCai_1 6
-      - US_7001 @WangCai_1 8
-      - US_8008 @WangCai_1 8
-      - US_6379 @WangCai_1 8
-      - US_2375 @WangCai_1 7
-      - US_3306 @WangCai_1 7
-      - US_8881 @WangCai_1 8
-      - US_9101 @WangCai_1 8
-      - US_5600 @WangCai_1 7
-      - US_8091 @WangCai_1 6
-      - US_8000 @WangCai_1 8
-      - US_8118 @WangCai_1 8
-      - US_8882 @WangCai_1 8
-      - US_5601 @WangCai_1 6
-      - US_8119 @WangCai_1 8
-      - US_0443 @WangCai_1 7
-      - US_8888 @WangCai_1 8
-      - US_5003 @WangCai_1 7
-      - US_5001 @WangCai_1 6
-      - US_5000 @WangCai_1 7
-      - US_7306 @WangCai_1 6
-      - US_8118 @WangCai_1 9
-      - US_6697 @WangCai_1 8
-      - US_5601 @WangCai_1 7
-      - US_8119 @WangCai_1 9
-      - US_5003 @WangCai_1 8
-      - US_5001 @WangCai_1 7
-      - US_9102 @WangCai_1 9
-      - US_7306 @WangCai_1 7
-      - US_8881 @WangCai_1 9
-      - US_8080 @WangCai_1 7
-      - US_5000 @WangCai_1 8
-      - US_4444 @WangCai_1 9
-      - US_0443 @WangCai_1 8
-      - US_8009 @WangCai_1 9
-      - US_8008 @WangCai_1 9
-      - US_7002 @WangCai_1 9
-      - US_7307 @WangCai_1 7
-      - US_3306 @WangCai_1 8
-      - US_8000 @WangCai_1 9
-      - US_6679 @WangCai_1 9
-      - US_8888 @WangCai_1 9
-      - US_8090 @WangCai_1 5
-      - US_8882 @WangCai_1 9
-      - US_6379 @WangCai_1 9
-      - US_9101 @WangCai_1 9
-      - US_8091 @WangCai_1 7
-      - US_5500 @WangCai_1 9
-      - US_5600 @WangCai_1 8
-      - US_5004 @WangCai_1 8
-      - US_2375 @WangCai_1 8
-      - US_7001 @WangCai_1 9
-      - US_3389 @WangCai_1 7
-      - US_2376 @WangCai_1 8
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_4444 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3389 @WangCai_1 2
+      - ‌‌🇨🇦CA_4444 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_3389 @WangCai_1 3
+      - ‌‌🇨🇦CA_4444 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5601 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8009 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_2375 @WangCai_1 4
+      - ‌‌🇨🇦CA_2376 @WangCai_1 4
+      - ‌‌🇨🇦CA_3306 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1 4
+      - ‌‌🇨🇦CA_4444 @WangCai_1 4
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_5001 @WangCai_1 4
+      - ‌‌🇨🇦CA_5003 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5601 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7306 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1 4
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1 4
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8090 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8118 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9102 @WangCai_1 4
+      - DE_0443 @WangCai_1
+      - DE_2376 @WangCai_1
+      - DE_3306 @WangCai_1
+      - DE_3389 @WangCai_1
+      - DE_4444 @WangCai_1
+      - DE_5000 @WangCai_1
+      - DE_5003 @WangCai_1
+      - DE_5004 @WangCai_1
+      - DE_5500 @WangCai_1
+      - DE_5600 @WangCai_1
+      - DE_5601 @WangCai_1
+      - DE_6379 @WangCai_1
+      - DE_6679 @WangCai_1
+      - DE_6697 @WangCai_1
+      - DE_7001 @WangCai_1
+      - DE_7002 @WangCai_1
+      - DE_7306 @WangCai_1
+      - DE_7307 @WangCai_1
+      - DE_8000 @WangCai_1
+      - DE_8008 @WangCai_1
+      - DE_8009 @WangCai_1
+      - DE_8080 @WangCai_1
+      - DE_8090 @WangCai_1
+      - DE_8091 @WangCai_1
+      - DE_8118 @WangCai_1
+      - DE_8119 @WangCai_1
+      - DE_8881 @WangCai_1
+      - DE_8882 @WangCai_1
+      - DE_8888 @WangCai_1
+      - DE_9101 @WangCai_1
+      - DE_9102 @WangCai_1
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -1120,276 +692,169 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8118 @WangCai_1 2
-      - US_6697 @WangCai_1 2
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1 2
-      - US_5003 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_8080 @WangCai_1
-      - US_5000 @WangCai_1 2
-      - US_4444 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7002 @WangCai_1 2
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1 2
-      - US_8090 @WangCai_1
-      - US_8882 @WangCai_1 2
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1 2
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1
-      - US_7001 @WangCai_1 2
-      - US_3389 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_8118 @WangCai_1 3
-      - US_6697 @WangCai_1 3
-      - US_5601 @WangCai_1 2
-      - US_8119 @WangCai_1 3
-      - US_5003 @WangCai_1 2
-      - US_5001 @WangCai_1 2
-      - US_9102 @WangCai_1 3
-      - US_7306 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - US_8080 @WangCai_1 2
-      - US_5000 @WangCai_1 3
-      - US_4444 @WangCai_1 3
-      - US_0443 @WangCai_1 3
-      - US_8009 @WangCai_1 3
-      - US_8008 @WangCai_1 3
-      - US_7002 @WangCai_1 3
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 3
-      - US_6679 @WangCai_1 3
-      - US_8888 @WangCai_1 3
-      - US_8090 @WangCai_1 2
-      - US_8882 @WangCai_1 3
-      - US_6379 @WangCai_1 3
-      - US_9101 @WangCai_1 3
-      - US_8091 @WangCai_1 2
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1 3
-      - US_5004 @WangCai_1 3
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1 3
-      - US_3389 @WangCai_1 2
-      - US_2376 @WangCai_1 2
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 3
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1 3
-      - US_4444 @WangCai_1 4
-      - US_5000 @WangCai_1 4
-      - US_5001 @WangCai_1 3
-      - US_5003 @WangCai_1 3
-      - US_5004 @WangCai_1 4
-      - US_5500 @WangCai_1 4
-      - US_5600 @WangCai_1 4
-      - US_5601 @WangCai_1 3
-      - US_6379 @WangCai_1 4
-      - US_6679 @WangCai_1 4
-      - US_6697 @WangCai_1 4
-      - US_7001 @WangCai_1 4
-      - US_7002 @WangCai_1 4
-      - US_7306 @WangCai_1 3
-      - US_7307 @WangCai_1 3
-      - US_8000 @WangCai_1 4
-      - US_8008 @WangCai_1 4
-      - US_8009 @WangCai_1 4
-      - US_8080 @WangCai_1 3
-      - US_8090 @WangCai_1 3
-      - US_8091 @WangCai_1 3
-      - US_8118 @WangCai_1 4
-      - US_8119 @WangCai_1 4
-      - US_8881 @WangCai_1 4
-      - US_8882 @WangCai_1 4
-      - US_8888 @WangCai_1 4
-      - US_9101 @WangCai_1 4
-      - US_9102 @WangCai_1 4
-      - US_0443 @WangCai_1 5
-      - US_2375 @WangCai_1 4
-      - US_2376 @WangCai_1 4
-      - US_3306 @WangCai_1 4
-      - US_4444 @WangCai_1 5
-      - US_5000 @WangCai_1 5
-      - US_5003 @WangCai_1 4
-      - US_5004 @WangCai_1 5
-      - US_5500 @WangCai_1 5
-      - US_5600 @WangCai_1 5
-      - US_6379 @WangCai_1 5
-      - US_6679 @WangCai_1 5
-      - US_6697 @WangCai_1 5
-      - US_7001 @WangCai_1 5
-      - US_7002 @WangCai_1 5
-      - US_7307 @WangCai_1 4
-      - US_8000 @WangCai_1 5
-      - US_8008 @WangCai_1 5
-      - US_8009 @WangCai_1 5
-      - US_8118 @WangCai_1 5
-      - US_8119 @WangCai_1 5
-      - US_8881 @WangCai_1 5
-      - US_8882 @WangCai_1 5
-      - US_8888 @WangCai_1 5
-      - US_9101 @WangCai_1 5
-      - US_9102 @WangCai_1 5
-      - US_0443 @WangCai_1 6
-      - US_2375 @WangCai_1 5
-      - US_2376 @WangCai_1 5
-      - US_3306 @WangCai_1 5
-      - US_3389 @WangCai_1 4
-      - US_4444 @WangCai_1 6
-      - US_5000 @WangCai_1 6
-      - US_5001 @WangCai_1 4
-      - US_5003 @WangCai_1 5
-      - US_5004 @WangCai_1 6
-      - US_5500 @WangCai_1 6
-      - US_5600 @WangCai_1 6
-      - US_5601 @WangCai_1 4
-      - US_6379 @WangCai_1 6
-      - US_6679 @WangCai_1 6
-      - US_6697 @WangCai_1 6
-      - US_7001 @WangCai_1 6
-      - US_7002 @WangCai_1 6
-      - US_7306 @WangCai_1 4
-      - US_7307 @WangCai_1 5
-      - US_8000 @WangCai_1 6
-      - US_8008 @WangCai_1 6
-      - US_8009 @WangCai_1 6
-      - US_8080 @WangCai_1 4
-      - US_8090 @WangCai_1 4
-      - US_8091 @WangCai_1 4
-      - US_8118 @WangCai_1 6
-      - US_8119 @WangCai_1 6
-      - US_8881 @WangCai_1 6
-      - US_8882 @WangCai_1 6
-      - US_8888 @WangCai_1 6
-      - US_9101 @WangCai_1 6
-      - US_9102 @WangCai_1 6
-      - US_8008 @WangCai_1 7
-      - US_6679 @WangCai_1 7
-      - US_4444 @WangCai_1 7
-      - US_6379 @WangCai_1 7
-      - US_3389 @WangCai_1 5
-      - US_8080 @WangCai_1 5
-      - US_7307 @WangCai_1 6
-      - US_8091 @WangCai_1 5
-      - US_5500 @WangCai_1 7
-      - US_2375 @WangCai_1 6
-      - US_8009 @WangCai_1 7
-      - US_3306 @WangCai_1 6
-      - US_7002 @WangCai_1 7
-      - US_8000 @WangCai_1 7
-      - US_9101 @WangCai_1 7
-      - US_5004 @WangCai_1 7
-      - US_2376 @WangCai_1 6
-      - US_8888 @WangCai_1 7
-      - US_8882 @WangCai_1 7
-      - US_7001 @WangCai_1 7
-      - US_5003 @WangCai_1 6
-      - US_9102 @WangCai_1 7
-      - US_8881 @WangCai_1 7
-      - US_5001 @WangCai_1 5
-      - US_7306 @WangCai_1 5
-      - US_5601 @WangCai_1 5
-      - US_8119 @WangCai_1 7
-      - US_8118 @WangCai_1 7
-      - US_6697 @WangCai_1 7
-      - US_2376 @WangCai_1 7
-      - US_5500 @WangCai_1 8
-      - US_6679 @WangCai_1 8
-      - US_7002 @WangCai_1 8
-      - US_8009 @WangCai_1 8
-      - US_4444 @WangCai_1 8
-      - US_8080 @WangCai_1 6
-      - US_9102 @WangCai_1 8
-      - US_3389 @WangCai_1 6
-      - US_7001 @WangCai_1 8
-      - US_8008 @WangCai_1 8
-      - US_6379 @WangCai_1 8
-      - US_2375 @WangCai_1 7
-      - US_3306 @WangCai_1 7
-      - US_8881 @WangCai_1 8
-      - US_9101 @WangCai_1 8
-      - US_5600 @WangCai_1 7
-      - US_8091 @WangCai_1 6
-      - US_8000 @WangCai_1 8
-      - US_8118 @WangCai_1 8
-      - US_8882 @WangCai_1 8
-      - US_5601 @WangCai_1 6
-      - US_8119 @WangCai_1 8
-      - US_0443 @WangCai_1 7
-      - US_8888 @WangCai_1 8
-      - US_5003 @WangCai_1 7
-      - US_5001 @WangCai_1 6
-      - US_5000 @WangCai_1 7
-      - US_7306 @WangCai_1 6
-      - US_8118 @WangCai_1 9
-      - US_6697 @WangCai_1 8
-      - US_5601 @WangCai_1 7
-      - US_8119 @WangCai_1 9
-      - US_5003 @WangCai_1 8
-      - US_5001 @WangCai_1 7
-      - US_9102 @WangCai_1 9
-      - US_7306 @WangCai_1 7
-      - US_8881 @WangCai_1 9
-      - US_8080 @WangCai_1 7
-      - US_5000 @WangCai_1 8
-      - US_4444 @WangCai_1 9
-      - US_0443 @WangCai_1 8
-      - US_8009 @WangCai_1 9
-      - US_8008 @WangCai_1 9
-      - US_7002 @WangCai_1 9
-      - US_7307 @WangCai_1 7
-      - US_3306 @WangCai_1 8
-      - US_8000 @WangCai_1 9
-      - US_6679 @WangCai_1 9
-      - US_8888 @WangCai_1 9
-      - US_8090 @WangCai_1 5
-      - US_8882 @WangCai_1 9
-      - US_6379 @WangCai_1 9
-      - US_9101 @WangCai_1 9
-      - US_8091 @WangCai_1 7
-      - US_5500 @WangCai_1 9
-      - US_5600 @WangCai_1 8
-      - US_5004 @WangCai_1 8
-      - US_2375 @WangCai_1 8
-      - US_7001 @WangCai_1 9
-      - US_3389 @WangCai_1 7
-      - US_2376 @WangCai_1 8
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_4444 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3389 @WangCai_1 2
+      - ‌‌🇨🇦CA_4444 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_3389 @WangCai_1 3
+      - ‌‌🇨🇦CA_4444 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5601 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8009 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_2375 @WangCai_1 4
+      - ‌‌🇨🇦CA_2376 @WangCai_1 4
+      - ‌‌🇨🇦CA_3306 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1 4
+      - ‌‌🇨🇦CA_4444 @WangCai_1 4
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_5001 @WangCai_1 4
+      - ‌‌🇨🇦CA_5003 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5601 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7306 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1 4
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1 4
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8090 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8118 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9102 @WangCai_1 4
+      - DE_0443 @WangCai_1
+      - DE_2376 @WangCai_1
+      - DE_3306 @WangCai_1
+      - DE_3389 @WangCai_1
+      - DE_4444 @WangCai_1
+      - DE_5000 @WangCai_1
+      - DE_5003 @WangCai_1
+      - DE_5004 @WangCai_1
+      - DE_5500 @WangCai_1
+      - DE_5600 @WangCai_1
+      - DE_5601 @WangCai_1
+      - DE_6379 @WangCai_1
+      - DE_6679 @WangCai_1
+      - DE_6697 @WangCai_1
+      - DE_7001 @WangCai_1
+      - DE_7002 @WangCai_1
+      - DE_7306 @WangCai_1
+      - DE_7307 @WangCai_1
+      - DE_8000 @WangCai_1
+      - DE_8008 @WangCai_1
+      - DE_8009 @WangCai_1
+      - DE_8080 @WangCai_1
+      - DE_8090 @WangCai_1
+      - DE_8091 @WangCai_1
+      - DE_8118 @WangCai_1
+      - DE_8119 @WangCai_1
+      - DE_8881 @WangCai_1
+      - DE_8882 @WangCai_1
+      - DE_8888 @WangCai_1
+      - DE_9101 @WangCai_1
+      - DE_9102 @WangCai_1
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -1400,827 +865,506 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8118 @WangCai_1 2
-      - US_6697 @WangCai_1 2
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1 2
-      - US_5003 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_8080 @WangCai_1
-      - US_5000 @WangCai_1 2
-      - US_4444 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7002 @WangCai_1 2
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1 2
-      - US_8090 @WangCai_1
-      - US_8882 @WangCai_1 2
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1 2
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1
-      - US_7001 @WangCai_1 2
-      - US_3389 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_8118 @WangCai_1 3
-      - US_6697 @WangCai_1 3
-      - US_5601 @WangCai_1 2
-      - US_8119 @WangCai_1 3
-      - US_5003 @WangCai_1 2
-      - US_5001 @WangCai_1 2
-      - US_9102 @WangCai_1 3
-      - US_7306 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - US_8080 @WangCai_1 2
-      - US_5000 @WangCai_1 3
-      - US_4444 @WangCai_1 3
-      - US_0443 @WangCai_1 3
-      - US_8009 @WangCai_1 3
-      - US_8008 @WangCai_1 3
-      - US_7002 @WangCai_1 3
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 3
-      - US_6679 @WangCai_1 3
-      - US_8888 @WangCai_1 3
-      - US_8090 @WangCai_1 2
-      - US_8882 @WangCai_1 3
-      - US_6379 @WangCai_1 3
-      - US_9101 @WangCai_1 3
-      - US_8091 @WangCai_1 2
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1 3
-      - US_5004 @WangCai_1 3
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1 3
-      - US_3389 @WangCai_1 2
-      - US_2376 @WangCai_1 2
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 3
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1 3
-      - US_4444 @WangCai_1 4
-      - US_5000 @WangCai_1 4
-      - US_5001 @WangCai_1 3
-      - US_5003 @WangCai_1 3
-      - US_5004 @WangCai_1 4
-      - US_5500 @WangCai_1 4
-      - US_5600 @WangCai_1 4
-      - US_5601 @WangCai_1 3
-      - US_6379 @WangCai_1 4
-      - US_6679 @WangCai_1 4
-      - US_6697 @WangCai_1 4
-      - US_7001 @WangCai_1 4
-      - US_7002 @WangCai_1 4
-      - US_7306 @WangCai_1 3
-      - US_7307 @WangCai_1 3
-      - US_8000 @WangCai_1 4
-      - US_8008 @WangCai_1 4
-      - US_8009 @WangCai_1 4
-      - US_8080 @WangCai_1 3
-      - US_8090 @WangCai_1 3
-      - US_8091 @WangCai_1 3
-      - US_8118 @WangCai_1 4
-      - US_8119 @WangCai_1 4
-      - US_8881 @WangCai_1 4
-      - US_8882 @WangCai_1 4
-      - US_8888 @WangCai_1 4
-      - US_9101 @WangCai_1 4
-      - US_9102 @WangCai_1 4
-      - US_0443 @WangCai_1 5
-      - US_2375 @WangCai_1 4
-      - US_2376 @WangCai_1 4
-      - US_3306 @WangCai_1 4
-      - US_4444 @WangCai_1 5
-      - US_5000 @WangCai_1 5
-      - US_5003 @WangCai_1 4
-      - US_5004 @WangCai_1 5
-      - US_5500 @WangCai_1 5
-      - US_5600 @WangCai_1 5
-      - US_6379 @WangCai_1 5
-      - US_6679 @WangCai_1 5
-      - US_6697 @WangCai_1 5
-      - US_7001 @WangCai_1 5
-      - US_7002 @WangCai_1 5
-      - US_7307 @WangCai_1 4
-      - US_8000 @WangCai_1 5
-      - US_8008 @WangCai_1 5
-      - US_8009 @WangCai_1 5
-      - US_8118 @WangCai_1 5
-      - US_8119 @WangCai_1 5
-      - US_8881 @WangCai_1 5
-      - US_8882 @WangCai_1 5
-      - US_8888 @WangCai_1 5
-      - US_9101 @WangCai_1 5
-      - US_9102 @WangCai_1 5
-      - US_0443 @WangCai_1 6
-      - US_2375 @WangCai_1 5
-      - US_2376 @WangCai_1 5
-      - US_3306 @WangCai_1 5
-      - US_3389 @WangCai_1 4
-      - US_4444 @WangCai_1 6
-      - US_5000 @WangCai_1 6
-      - US_5001 @WangCai_1 4
-      - US_5003 @WangCai_1 5
-      - US_5004 @WangCai_1 6
-      - US_5500 @WangCai_1 6
-      - US_5600 @WangCai_1 6
-      - US_5601 @WangCai_1 4
-      - US_6379 @WangCai_1 6
-      - US_6679 @WangCai_1 6
-      - US_6697 @WangCai_1 6
-      - US_7001 @WangCai_1 6
-      - US_7002 @WangCai_1 6
-      - US_7306 @WangCai_1 4
-      - US_7307 @WangCai_1 5
-      - US_8000 @WangCai_1 6
-      - US_8008 @WangCai_1 6
-      - US_8009 @WangCai_1 6
-      - US_8080 @WangCai_1 4
-      - US_8090 @WangCai_1 4
-      - US_8091 @WangCai_1 4
-      - US_8118 @WangCai_1 6
-      - US_8119 @WangCai_1 6
-      - US_8881 @WangCai_1 6
-      - US_8882 @WangCai_1 6
-      - US_8888 @WangCai_1 6
-      - US_9101 @WangCai_1 6
-      - US_9102 @WangCai_1 6
-      - US_8008 @WangCai_1 7
-      - US_6679 @WangCai_1 7
-      - US_4444 @WangCai_1 7
-      - US_6379 @WangCai_1 7
-      - US_3389 @WangCai_1 5
-      - US_8080 @WangCai_1 5
-      - US_7307 @WangCai_1 6
-      - US_8091 @WangCai_1 5
-      - US_5500 @WangCai_1 7
-      - US_2375 @WangCai_1 6
-      - US_8009 @WangCai_1 7
-      - US_3306 @WangCai_1 6
-      - US_7002 @WangCai_1 7
-      - US_8000 @WangCai_1 7
-      - US_9101 @WangCai_1 7
-      - US_5004 @WangCai_1 7
-      - US_2376 @WangCai_1 6
-      - US_8888 @WangCai_1 7
-      - US_8882 @WangCai_1 7
-      - US_7001 @WangCai_1 7
-      - US_5003 @WangCai_1 6
-      - US_9102 @WangCai_1 7
-      - US_8881 @WangCai_1 7
-      - US_5001 @WangCai_1 5
-      - US_7306 @WangCai_1 5
-      - US_5601 @WangCai_1 5
-      - US_8119 @WangCai_1 7
-      - US_8118 @WangCai_1 7
-      - US_6697 @WangCai_1 7
-      - US_2376 @WangCai_1 7
-      - US_5500 @WangCai_1 8
-      - US_6679 @WangCai_1 8
-      - US_7002 @WangCai_1 8
-      - US_8009 @WangCai_1 8
-      - US_4444 @WangCai_1 8
-      - US_8080 @WangCai_1 6
-      - US_9102 @WangCai_1 8
-      - US_3389 @WangCai_1 6
-      - US_7001 @WangCai_1 8
-      - US_8008 @WangCai_1 8
-      - US_6379 @WangCai_1 8
-      - US_2375 @WangCai_1 7
-      - US_3306 @WangCai_1 7
-      - US_8881 @WangCai_1 8
-      - US_9101 @WangCai_1 8
-      - US_5600 @WangCai_1 7
-      - US_8091 @WangCai_1 6
-      - US_8000 @WangCai_1 8
-      - US_8118 @WangCai_1 8
-      - US_8882 @WangCai_1 8
-      - US_5601 @WangCai_1 6
-      - US_8119 @WangCai_1 8
-      - US_0443 @WangCai_1 7
-      - US_8888 @WangCai_1 8
-      - US_5003 @WangCai_1 7
-      - US_5001 @WangCai_1 6
-      - US_5000 @WangCai_1 7
-      - US_7306 @WangCai_1 6
-      - US_8118 @WangCai_1 9
-      - US_6697 @WangCai_1 8
-      - US_5601 @WangCai_1 7
-      - US_8119 @WangCai_1 9
-      - US_5003 @WangCai_1 8
-      - US_5001 @WangCai_1 7
-      - US_9102 @WangCai_1 9
-      - US_7306 @WangCai_1 7
-      - US_8881 @WangCai_1 9
-      - US_8080 @WangCai_1 7
-      - US_5000 @WangCai_1 8
-      - US_4444 @WangCai_1 9
-      - US_0443 @WangCai_1 8
-      - US_8009 @WangCai_1 9
-      - US_8008 @WangCai_1 9
-      - US_7002 @WangCai_1 9
-      - US_7307 @WangCai_1 7
-      - US_3306 @WangCai_1 8
-      - US_8000 @WangCai_1 9
-      - US_6679 @WangCai_1 9
-      - US_8888 @WangCai_1 9
-      - US_8090 @WangCai_1 5
-      - US_8882 @WangCai_1 9
-      - US_6379 @WangCai_1 9
-      - US_9101 @WangCai_1 9
-      - US_8091 @WangCai_1 7
-      - US_5500 @WangCai_1 9
-      - US_5600 @WangCai_1 8
-      - US_5004 @WangCai_1 8
-      - US_2375 @WangCai_1 8
-      - US_7001 @WangCai_1 9
-      - US_3389 @WangCai_1 7
-      - US_2376 @WangCai_1 8
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_4444 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3389 @WangCai_1 2
+      - ‌‌🇨🇦CA_4444 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_3389 @WangCai_1 3
+      - ‌‌🇨🇦CA_4444 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5601 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8009 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_2375 @WangCai_1 4
+      - ‌‌🇨🇦CA_2376 @WangCai_1 4
+      - ‌‌🇨🇦CA_3306 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1 4
+      - ‌‌🇨🇦CA_4444 @WangCai_1 4
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_5001 @WangCai_1 4
+      - ‌‌🇨🇦CA_5003 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5601 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7306 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1 4
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1 4
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8090 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8118 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9102 @WangCai_1 4
+      - DE_0443 @WangCai_1
+      - DE_2376 @WangCai_1
+      - DE_3306 @WangCai_1
+      - DE_3389 @WangCai_1
+      - DE_4444 @WangCai_1
+      - DE_5000 @WangCai_1
+      - DE_5003 @WangCai_1
+      - DE_5004 @WangCai_1
+      - DE_5500 @WangCai_1
+      - DE_5600 @WangCai_1
+      - DE_5601 @WangCai_1
+      - DE_6379 @WangCai_1
+      - DE_6679 @WangCai_1
+      - DE_6697 @WangCai_1
+      - DE_7001 @WangCai_1
+      - DE_7002 @WangCai_1
+      - DE_7306 @WangCai_1
+      - DE_7307 @WangCai_1
+      - DE_8000 @WangCai_1
+      - DE_8008 @WangCai_1
+      - DE_8009 @WangCai_1
+      - DE_8080 @WangCai_1
+      - DE_8090 @WangCai_1
+      - DE_8091 @WangCai_1
+      - DE_8118 @WangCai_1
+      - DE_8119 @WangCai_1
+      - DE_8881 @WangCai_1
+      - DE_8882 @WangCai_1
+      - DE_8888 @WangCai_1
+      - DE_9101 @WangCai_1
+      - DE_9102 @WangCai_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8118 @WangCai_1 2
-      - US_6697 @WangCai_1 2
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1 2
-      - US_5003 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_8080 @WangCai_1
-      - US_5000 @WangCai_1 2
-      - US_4444 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7002 @WangCai_1 2
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1 2
-      - US_8090 @WangCai_1
-      - US_8882 @WangCai_1 2
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1 2
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1
-      - US_7001 @WangCai_1 2
-      - US_3389 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_8118 @WangCai_1 3
-      - US_6697 @WangCai_1 3
-      - US_5601 @WangCai_1 2
-      - US_8119 @WangCai_1 3
-      - US_5003 @WangCai_1 2
-      - US_5001 @WangCai_1 2
-      - US_9102 @WangCai_1 3
-      - US_7306 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - US_8080 @WangCai_1 2
-      - US_5000 @WangCai_1 3
-      - US_4444 @WangCai_1 3
-      - US_0443 @WangCai_1 3
-      - US_8009 @WangCai_1 3
-      - US_8008 @WangCai_1 3
-      - US_7002 @WangCai_1 3
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 3
-      - US_6679 @WangCai_1 3
-      - US_8888 @WangCai_1 3
-      - US_8090 @WangCai_1 2
-      - US_8882 @WangCai_1 3
-      - US_6379 @WangCai_1 3
-      - US_9101 @WangCai_1 3
-      - US_8091 @WangCai_1 2
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1 3
-      - US_5004 @WangCai_1 3
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1 3
-      - US_3389 @WangCai_1 2
-      - US_2376 @WangCai_1 2
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 3
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1 3
-      - US_4444 @WangCai_1 4
-      - US_5000 @WangCai_1 4
-      - US_5001 @WangCai_1 3
-      - US_5003 @WangCai_1 3
-      - US_5004 @WangCai_1 4
-      - US_5500 @WangCai_1 4
-      - US_5600 @WangCai_1 4
-      - US_5601 @WangCai_1 3
-      - US_6379 @WangCai_1 4
-      - US_6679 @WangCai_1 4
-      - US_6697 @WangCai_1 4
-      - US_7001 @WangCai_1 4
-      - US_7002 @WangCai_1 4
-      - US_7306 @WangCai_1 3
-      - US_7307 @WangCai_1 3
-      - US_8000 @WangCai_1 4
-      - US_8008 @WangCai_1 4
-      - US_8009 @WangCai_1 4
-      - US_8080 @WangCai_1 3
-      - US_8090 @WangCai_1 3
-      - US_8091 @WangCai_1 3
-      - US_8118 @WangCai_1 4
-      - US_8119 @WangCai_1 4
-      - US_8881 @WangCai_1 4
-      - US_8882 @WangCai_1 4
-      - US_8888 @WangCai_1 4
-      - US_9101 @WangCai_1 4
-      - US_9102 @WangCai_1 4
-      - US_0443 @WangCai_1 5
-      - US_2375 @WangCai_1 4
-      - US_2376 @WangCai_1 4
-      - US_3306 @WangCai_1 4
-      - US_4444 @WangCai_1 5
-      - US_5000 @WangCai_1 5
-      - US_5003 @WangCai_1 4
-      - US_5004 @WangCai_1 5
-      - US_5500 @WangCai_1 5
-      - US_5600 @WangCai_1 5
-      - US_6379 @WangCai_1 5
-      - US_6679 @WangCai_1 5
-      - US_6697 @WangCai_1 5
-      - US_7001 @WangCai_1 5
-      - US_7002 @WangCai_1 5
-      - US_7307 @WangCai_1 4
-      - US_8000 @WangCai_1 5
-      - US_8008 @WangCai_1 5
-      - US_8009 @WangCai_1 5
-      - US_8118 @WangCai_1 5
-      - US_8119 @WangCai_1 5
-      - US_8881 @WangCai_1 5
-      - US_8882 @WangCai_1 5
-      - US_8888 @WangCai_1 5
-      - US_9101 @WangCai_1 5
-      - US_9102 @WangCai_1 5
-      - US_0443 @WangCai_1 6
-      - US_2375 @WangCai_1 5
-      - US_2376 @WangCai_1 5
-      - US_3306 @WangCai_1 5
-      - US_3389 @WangCai_1 4
-      - US_4444 @WangCai_1 6
-      - US_5000 @WangCai_1 6
-      - US_5001 @WangCai_1 4
-      - US_5003 @WangCai_1 5
-      - US_5004 @WangCai_1 6
-      - US_5500 @WangCai_1 6
-      - US_5600 @WangCai_1 6
-      - US_5601 @WangCai_1 4
-      - US_6379 @WangCai_1 6
-      - US_6679 @WangCai_1 6
-      - US_6697 @WangCai_1 6
-      - US_7001 @WangCai_1 6
-      - US_7002 @WangCai_1 6
-      - US_7306 @WangCai_1 4
-      - US_7307 @WangCai_1 5
-      - US_8000 @WangCai_1 6
-      - US_8008 @WangCai_1 6
-      - US_8009 @WangCai_1 6
-      - US_8080 @WangCai_1 4
-      - US_8090 @WangCai_1 4
-      - US_8091 @WangCai_1 4
-      - US_8118 @WangCai_1 6
-      - US_8119 @WangCai_1 6
-      - US_8881 @WangCai_1 6
-      - US_8882 @WangCai_1 6
-      - US_8888 @WangCai_1 6
-      - US_9101 @WangCai_1 6
-      - US_9102 @WangCai_1 6
-      - US_8008 @WangCai_1 7
-      - US_6679 @WangCai_1 7
-      - US_4444 @WangCai_1 7
-      - US_6379 @WangCai_1 7
-      - US_3389 @WangCai_1 5
-      - US_8080 @WangCai_1 5
-      - US_7307 @WangCai_1 6
-      - US_8091 @WangCai_1 5
-      - US_5500 @WangCai_1 7
-      - US_2375 @WangCai_1 6
-      - US_8009 @WangCai_1 7
-      - US_3306 @WangCai_1 6
-      - US_7002 @WangCai_1 7
-      - US_8000 @WangCai_1 7
-      - US_9101 @WangCai_1 7
-      - US_5004 @WangCai_1 7
-      - US_2376 @WangCai_1 6
-      - US_8888 @WangCai_1 7
-      - US_8882 @WangCai_1 7
-      - US_7001 @WangCai_1 7
-      - US_5003 @WangCai_1 6
-      - US_9102 @WangCai_1 7
-      - US_8881 @WangCai_1 7
-      - US_5001 @WangCai_1 5
-      - US_7306 @WangCai_1 5
-      - US_5601 @WangCai_1 5
-      - US_8119 @WangCai_1 7
-      - US_8118 @WangCai_1 7
-      - US_6697 @WangCai_1 7
-      - US_2376 @WangCai_1 7
-      - US_5500 @WangCai_1 8
-      - US_6679 @WangCai_1 8
-      - US_7002 @WangCai_1 8
-      - US_8009 @WangCai_1 8
-      - US_4444 @WangCai_1 8
-      - US_8080 @WangCai_1 6
-      - US_9102 @WangCai_1 8
-      - US_3389 @WangCai_1 6
-      - US_7001 @WangCai_1 8
-      - US_8008 @WangCai_1 8
-      - US_6379 @WangCai_1 8
-      - US_2375 @WangCai_1 7
-      - US_3306 @WangCai_1 7
-      - US_8881 @WangCai_1 8
-      - US_9101 @WangCai_1 8
-      - US_5600 @WangCai_1 7
-      - US_8091 @WangCai_1 6
-      - US_8000 @WangCai_1 8
-      - US_8118 @WangCai_1 8
-      - US_8882 @WangCai_1 8
-      - US_5601 @WangCai_1 6
-      - US_8119 @WangCai_1 8
-      - US_0443 @WangCai_1 7
-      - US_8888 @WangCai_1 8
-      - US_5003 @WangCai_1 7
-      - US_5001 @WangCai_1 6
-      - US_5000 @WangCai_1 7
-      - US_7306 @WangCai_1 6
-      - US_8118 @WangCai_1 9
-      - US_6697 @WangCai_1 8
-      - US_5601 @WangCai_1 7
-      - US_8119 @WangCai_1 9
-      - US_5003 @WangCai_1 8
-      - US_5001 @WangCai_1 7
-      - US_9102 @WangCai_1 9
-      - US_7306 @WangCai_1 7
-      - US_8881 @WangCai_1 9
-      - US_8080 @WangCai_1 7
-      - US_5000 @WangCai_1 8
-      - US_4444 @WangCai_1 9
-      - US_0443 @WangCai_1 8
-      - US_8009 @WangCai_1 9
-      - US_8008 @WangCai_1 9
-      - US_7002 @WangCai_1 9
-      - US_7307 @WangCai_1 7
-      - US_3306 @WangCai_1 8
-      - US_8000 @WangCai_1 9
-      - US_6679 @WangCai_1 9
-      - US_8888 @WangCai_1 9
-      - US_8090 @WangCai_1 5
-      - US_8882 @WangCai_1 9
-      - US_6379 @WangCai_1 9
-      - US_9101 @WangCai_1 9
-      - US_8091 @WangCai_1 7
-      - US_5500 @WangCai_1 9
-      - US_5600 @WangCai_1 8
-      - US_5004 @WangCai_1 8
-      - US_2375 @WangCai_1 8
-      - US_7001 @WangCai_1 9
-      - US_3389 @WangCai_1 7
-      - US_2376 @WangCai_1 8
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_4444 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3389 @WangCai_1 2
+      - ‌‌🇨🇦CA_4444 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_3389 @WangCai_1 3
+      - ‌‌🇨🇦CA_4444 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5601 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8009 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_2375 @WangCai_1 4
+      - ‌‌🇨🇦CA_2376 @WangCai_1 4
+      - ‌‌🇨🇦CA_3306 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1 4
+      - ‌‌🇨🇦CA_4444 @WangCai_1 4
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_5001 @WangCai_1 4
+      - ‌‌🇨🇦CA_5003 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5601 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7306 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1 4
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1 4
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8090 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8118 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9102 @WangCai_1 4
+      - DE_0443 @WangCai_1
+      - DE_2376 @WangCai_1
+      - DE_3306 @WangCai_1
+      - DE_3389 @WangCai_1
+      - DE_4444 @WangCai_1
+      - DE_5000 @WangCai_1
+      - DE_5003 @WangCai_1
+      - DE_5004 @WangCai_1
+      - DE_5500 @WangCai_1
+      - DE_5600 @WangCai_1
+      - DE_5601 @WangCai_1
+      - DE_6379 @WangCai_1
+      - DE_6679 @WangCai_1
+      - DE_6697 @WangCai_1
+      - DE_7001 @WangCai_1
+      - DE_7002 @WangCai_1
+      - DE_7306 @WangCai_1
+      - DE_7307 @WangCai_1
+      - DE_8000 @WangCai_1
+      - DE_8008 @WangCai_1
+      - DE_8009 @WangCai_1
+      - DE_8080 @WangCai_1
+      - DE_8090 @WangCai_1
+      - DE_8091 @WangCai_1
+      - DE_8118 @WangCai_1
+      - DE_8119 @WangCai_1
+      - DE_8881 @WangCai_1
+      - DE_8882 @WangCai_1
+      - DE_8888 @WangCai_1
+      - DE_9101 @WangCai_1
+      - DE_9102 @WangCai_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8118 @WangCai_1 2
-      - US_6697 @WangCai_1 2
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1 2
-      - US_5003 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_8080 @WangCai_1
-      - US_5000 @WangCai_1 2
-      - US_4444 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7002 @WangCai_1 2
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1 2
-      - US_8090 @WangCai_1
-      - US_8882 @WangCai_1 2
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1 2
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1
-      - US_7001 @WangCai_1 2
-      - US_3389 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_8118 @WangCai_1 3
-      - US_6697 @WangCai_1 3
-      - US_5601 @WangCai_1 2
-      - US_8119 @WangCai_1 3
-      - US_5003 @WangCai_1 2
-      - US_5001 @WangCai_1 2
-      - US_9102 @WangCai_1 3
-      - US_7306 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - US_8080 @WangCai_1 2
-      - US_5000 @WangCai_1 3
-      - US_4444 @WangCai_1 3
-      - US_0443 @WangCai_1 3
-      - US_8009 @WangCai_1 3
-      - US_8008 @WangCai_1 3
-      - US_7002 @WangCai_1 3
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 3
-      - US_6679 @WangCai_1 3
-      - US_8888 @WangCai_1 3
-      - US_8090 @WangCai_1 2
-      - US_8882 @WangCai_1 3
-      - US_6379 @WangCai_1 3
-      - US_9101 @WangCai_1 3
-      - US_8091 @WangCai_1 2
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1 3
-      - US_5004 @WangCai_1 3
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1 3
-      - US_3389 @WangCai_1 2
-      - US_2376 @WangCai_1 2
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 3
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1 3
-      - US_4444 @WangCai_1 4
-      - US_5000 @WangCai_1 4
-      - US_5001 @WangCai_1 3
-      - US_5003 @WangCai_1 3
-      - US_5004 @WangCai_1 4
-      - US_5500 @WangCai_1 4
-      - US_5600 @WangCai_1 4
-      - US_5601 @WangCai_1 3
-      - US_6379 @WangCai_1 4
-      - US_6679 @WangCai_1 4
-      - US_6697 @WangCai_1 4
-      - US_7001 @WangCai_1 4
-      - US_7002 @WangCai_1 4
-      - US_7306 @WangCai_1 3
-      - US_7307 @WangCai_1 3
-      - US_8000 @WangCai_1 4
-      - US_8008 @WangCai_1 4
-      - US_8009 @WangCai_1 4
-      - US_8080 @WangCai_1 3
-      - US_8090 @WangCai_1 3
-      - US_8091 @WangCai_1 3
-      - US_8118 @WangCai_1 4
-      - US_8119 @WangCai_1 4
-      - US_8881 @WangCai_1 4
-      - US_8882 @WangCai_1 4
-      - US_8888 @WangCai_1 4
-      - US_9101 @WangCai_1 4
-      - US_9102 @WangCai_1 4
-      - US_0443 @WangCai_1 5
-      - US_2375 @WangCai_1 4
-      - US_2376 @WangCai_1 4
-      - US_3306 @WangCai_1 4
-      - US_4444 @WangCai_1 5
-      - US_5000 @WangCai_1 5
-      - US_5003 @WangCai_1 4
-      - US_5004 @WangCai_1 5
-      - US_5500 @WangCai_1 5
-      - US_5600 @WangCai_1 5
-      - US_6379 @WangCai_1 5
-      - US_6679 @WangCai_1 5
-      - US_6697 @WangCai_1 5
-      - US_7001 @WangCai_1 5
-      - US_7002 @WangCai_1 5
-      - US_7307 @WangCai_1 4
-      - US_8000 @WangCai_1 5
-      - US_8008 @WangCai_1 5
-      - US_8009 @WangCai_1 5
-      - US_8118 @WangCai_1 5
-      - US_8119 @WangCai_1 5
-      - US_8881 @WangCai_1 5
-      - US_8882 @WangCai_1 5
-      - US_8888 @WangCai_1 5
-      - US_9101 @WangCai_1 5
-      - US_9102 @WangCai_1 5
-      - US_0443 @WangCai_1 6
-      - US_2375 @WangCai_1 5
-      - US_2376 @WangCai_1 5
-      - US_3306 @WangCai_1 5
-      - US_3389 @WangCai_1 4
-      - US_4444 @WangCai_1 6
-      - US_5000 @WangCai_1 6
-      - US_5001 @WangCai_1 4
-      - US_5003 @WangCai_1 5
-      - US_5004 @WangCai_1 6
-      - US_5500 @WangCai_1 6
-      - US_5600 @WangCai_1 6
-      - US_5601 @WangCai_1 4
-      - US_6379 @WangCai_1 6
-      - US_6679 @WangCai_1 6
-      - US_6697 @WangCai_1 6
-      - US_7001 @WangCai_1 6
-      - US_7002 @WangCai_1 6
-      - US_7306 @WangCai_1 4
-      - US_7307 @WangCai_1 5
-      - US_8000 @WangCai_1 6
-      - US_8008 @WangCai_1 6
-      - US_8009 @WangCai_1 6
-      - US_8080 @WangCai_1 4
-      - US_8090 @WangCai_1 4
-      - US_8091 @WangCai_1 4
-      - US_8118 @WangCai_1 6
-      - US_8119 @WangCai_1 6
-      - US_8881 @WangCai_1 6
-      - US_8882 @WangCai_1 6
-      - US_8888 @WangCai_1 6
-      - US_9101 @WangCai_1 6
-      - US_9102 @WangCai_1 6
-      - US_8008 @WangCai_1 7
-      - US_6679 @WangCai_1 7
-      - US_4444 @WangCai_1 7
-      - US_6379 @WangCai_1 7
-      - US_3389 @WangCai_1 5
-      - US_8080 @WangCai_1 5
-      - US_7307 @WangCai_1 6
-      - US_8091 @WangCai_1 5
-      - US_5500 @WangCai_1 7
-      - US_2375 @WangCai_1 6
-      - US_8009 @WangCai_1 7
-      - US_3306 @WangCai_1 6
-      - US_7002 @WangCai_1 7
-      - US_8000 @WangCai_1 7
-      - US_9101 @WangCai_1 7
-      - US_5004 @WangCai_1 7
-      - US_2376 @WangCai_1 6
-      - US_8888 @WangCai_1 7
-      - US_8882 @WangCai_1 7
-      - US_7001 @WangCai_1 7
-      - US_5003 @WangCai_1 6
-      - US_9102 @WangCai_1 7
-      - US_8881 @WangCai_1 7
-      - US_5001 @WangCai_1 5
-      - US_7306 @WangCai_1 5
-      - US_5601 @WangCai_1 5
-      - US_8119 @WangCai_1 7
-      - US_8118 @WangCai_1 7
-      - US_6697 @WangCai_1 7
-      - US_2376 @WangCai_1 7
-      - US_5500 @WangCai_1 8
-      - US_6679 @WangCai_1 8
-      - US_7002 @WangCai_1 8
-      - US_8009 @WangCai_1 8
-      - US_4444 @WangCai_1 8
-      - US_8080 @WangCai_1 6
-      - US_9102 @WangCai_1 8
-      - US_3389 @WangCai_1 6
-      - US_7001 @WangCai_1 8
-      - US_8008 @WangCai_1 8
-      - US_6379 @WangCai_1 8
-      - US_2375 @WangCai_1 7
-      - US_3306 @WangCai_1 7
-      - US_8881 @WangCai_1 8
-      - US_9101 @WangCai_1 8
-      - US_5600 @WangCai_1 7
-      - US_8091 @WangCai_1 6
-      - US_8000 @WangCai_1 8
-      - US_8118 @WangCai_1 8
-      - US_8882 @WangCai_1 8
-      - US_5601 @WangCai_1 6
-      - US_8119 @WangCai_1 8
-      - US_0443 @WangCai_1 7
-      - US_8888 @WangCai_1 8
-      - US_5003 @WangCai_1 7
-      - US_5001 @WangCai_1 6
-      - US_5000 @WangCai_1 7
-      - US_7306 @WangCai_1 6
-      - US_8118 @WangCai_1 9
-      - US_6697 @WangCai_1 8
-      - US_5601 @WangCai_1 7
-      - US_8119 @WangCai_1 9
-      - US_5003 @WangCai_1 8
-      - US_5001 @WangCai_1 7
-      - US_9102 @WangCai_1 9
-      - US_7306 @WangCai_1 7
-      - US_8881 @WangCai_1 9
-      - US_8080 @WangCai_1 7
-      - US_5000 @WangCai_1 8
-      - US_4444 @WangCai_1 9
-      - US_0443 @WangCai_1 8
-      - US_8009 @WangCai_1 9
-      - US_8008 @WangCai_1 9
-      - US_7002 @WangCai_1 9
-      - US_7307 @WangCai_1 7
-      - US_3306 @WangCai_1 8
-      - US_8000 @WangCai_1 9
-      - US_6679 @WangCai_1 9
-      - US_8888 @WangCai_1 9
-      - US_8090 @WangCai_1 5
-      - US_8882 @WangCai_1 9
-      - US_6379 @WangCai_1 9
-      - US_9101 @WangCai_1 9
-      - US_8091 @WangCai_1 7
-      - US_5500 @WangCai_1 9
-      - US_5600 @WangCai_1 8
-      - US_5004 @WangCai_1 8
-      - US_2375 @WangCai_1 8
-      - US_7001 @WangCai_1 9
-      - US_3389 @WangCai_1 7
-      - US_2376 @WangCai_1 8
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_4444 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3389 @WangCai_1 2
+      - ‌‌🇨🇦CA_4444 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_3389 @WangCai_1 3
+      - ‌‌🇨🇦CA_4444 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5601 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8009 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_2375 @WangCai_1 4
+      - ‌‌🇨🇦CA_2376 @WangCai_1 4
+      - ‌‌🇨🇦CA_3306 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1 4
+      - ‌‌🇨🇦CA_4444 @WangCai_1 4
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_5001 @WangCai_1 4
+      - ‌‌🇨🇦CA_5003 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5601 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7306 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1 4
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1 4
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8090 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8118 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9102 @WangCai_1 4
+      - DE_0443 @WangCai_1
+      - DE_2376 @WangCai_1
+      - DE_3306 @WangCai_1
+      - DE_3389 @WangCai_1
+      - DE_4444 @WangCai_1
+      - DE_5000 @WangCai_1
+      - DE_5003 @WangCai_1
+      - DE_5004 @WangCai_1
+      - DE_5500 @WangCai_1
+      - DE_5600 @WangCai_1
+      - DE_5601 @WangCai_1
+      - DE_6379 @WangCai_1
+      - DE_6679 @WangCai_1
+      - DE_6697 @WangCai_1
+      - DE_7001 @WangCai_1
+      - DE_7002 @WangCai_1
+      - DE_7306 @WangCai_1
+      - DE_7307 @WangCai_1
+      - DE_8000 @WangCai_1
+      - DE_8008 @WangCai_1
+      - DE_8009 @WangCai_1
+      - DE_8080 @WangCai_1
+      - DE_8090 @WangCai_1
+      - DE_8091 @WangCai_1
+      - DE_8118 @WangCai_1
+      - DE_8119 @WangCai_1
+      - DE_8881 @WangCai_1
+      - DE_8882 @WangCai_1
+      - DE_8888 @WangCai_1
+      - DE_9101 @WangCai_1
+      - DE_9102 @WangCai_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2236,276 +1380,169 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_9102 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_8118 @WangCai_1 2
-      - US_6697 @WangCai_1 2
-      - US_5601 @WangCai_1
-      - US_8119 @WangCai_1 2
-      - US_5003 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_9102 @WangCai_1 2
-      - US_7306 @WangCai_1
-      - US_8881 @WangCai_1 2
-      - US_8080 @WangCai_1
-      - US_5000 @WangCai_1 2
-      - US_4444 @WangCai_1 2
-      - US_0443 @WangCai_1 2
-      - US_8009 @WangCai_1 2
-      - US_8008 @WangCai_1 2
-      - US_7002 @WangCai_1 2
-      - US_7307 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_8000 @WangCai_1 2
-      - US_6679 @WangCai_1 2
-      - US_8888 @WangCai_1 2
-      - US_8090 @WangCai_1
-      - US_8882 @WangCai_1 2
-      - US_6379 @WangCai_1 2
-      - US_9101 @WangCai_1 2
-      - US_8091 @WangCai_1
-      - US_5500 @WangCai_1 2
-      - US_5600 @WangCai_1 2
-      - US_5004 @WangCai_1 2
-      - US_2375 @WangCai_1
-      - US_7001 @WangCai_1 2
-      - US_3389 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_8118 @WangCai_1 3
-      - US_6697 @WangCai_1 3
-      - US_5601 @WangCai_1 2
-      - US_8119 @WangCai_1 3
-      - US_5003 @WangCai_1 2
-      - US_5001 @WangCai_1 2
-      - US_9102 @WangCai_1 3
-      - US_7306 @WangCai_1 2
-      - US_8881 @WangCai_1 3
-      - US_8080 @WangCai_1 2
-      - US_5000 @WangCai_1 3
-      - US_4444 @WangCai_1 3
-      - US_0443 @WangCai_1 3
-      - US_8009 @WangCai_1 3
-      - US_8008 @WangCai_1 3
-      - US_7002 @WangCai_1 3
-      - US_7307 @WangCai_1 2
-      - US_3306 @WangCai_1 2
-      - US_8000 @WangCai_1 3
-      - US_6679 @WangCai_1 3
-      - US_8888 @WangCai_1 3
-      - US_8090 @WangCai_1 2
-      - US_8882 @WangCai_1 3
-      - US_6379 @WangCai_1 3
-      - US_9101 @WangCai_1 3
-      - US_8091 @WangCai_1 2
-      - US_5500 @WangCai_1 3
-      - US_5600 @WangCai_1 3
-      - US_5004 @WangCai_1 3
-      - US_2375 @WangCai_1 2
-      - US_7001 @WangCai_1 3
-      - US_3389 @WangCai_1 2
-      - US_2376 @WangCai_1 2
-      - US_0443 @WangCai_1 4
-      - US_2375 @WangCai_1 3
-      - US_2376 @WangCai_1 3
-      - US_3306 @WangCai_1 3
-      - US_3389 @WangCai_1 3
-      - US_4444 @WangCai_1 4
-      - US_5000 @WangCai_1 4
-      - US_5001 @WangCai_1 3
-      - US_5003 @WangCai_1 3
-      - US_5004 @WangCai_1 4
-      - US_5500 @WangCai_1 4
-      - US_5600 @WangCai_1 4
-      - US_5601 @WangCai_1 3
-      - US_6379 @WangCai_1 4
-      - US_6679 @WangCai_1 4
-      - US_6697 @WangCai_1 4
-      - US_7001 @WangCai_1 4
-      - US_7002 @WangCai_1 4
-      - US_7306 @WangCai_1 3
-      - US_7307 @WangCai_1 3
-      - US_8000 @WangCai_1 4
-      - US_8008 @WangCai_1 4
-      - US_8009 @WangCai_1 4
-      - US_8080 @WangCai_1 3
-      - US_8090 @WangCai_1 3
-      - US_8091 @WangCai_1 3
-      - US_8118 @WangCai_1 4
-      - US_8119 @WangCai_1 4
-      - US_8881 @WangCai_1 4
-      - US_8882 @WangCai_1 4
-      - US_8888 @WangCai_1 4
-      - US_9101 @WangCai_1 4
-      - US_9102 @WangCai_1 4
-      - US_0443 @WangCai_1 5
-      - US_2375 @WangCai_1 4
-      - US_2376 @WangCai_1 4
-      - US_3306 @WangCai_1 4
-      - US_4444 @WangCai_1 5
-      - US_5000 @WangCai_1 5
-      - US_5003 @WangCai_1 4
-      - US_5004 @WangCai_1 5
-      - US_5500 @WangCai_1 5
-      - US_5600 @WangCai_1 5
-      - US_6379 @WangCai_1 5
-      - US_6679 @WangCai_1 5
-      - US_6697 @WangCai_1 5
-      - US_7001 @WangCai_1 5
-      - US_7002 @WangCai_1 5
-      - US_7307 @WangCai_1 4
-      - US_8000 @WangCai_1 5
-      - US_8008 @WangCai_1 5
-      - US_8009 @WangCai_1 5
-      - US_8118 @WangCai_1 5
-      - US_8119 @WangCai_1 5
-      - US_8881 @WangCai_1 5
-      - US_8882 @WangCai_1 5
-      - US_8888 @WangCai_1 5
-      - US_9101 @WangCai_1 5
-      - US_9102 @WangCai_1 5
-      - US_0443 @WangCai_1 6
-      - US_2375 @WangCai_1 5
-      - US_2376 @WangCai_1 5
-      - US_3306 @WangCai_1 5
-      - US_3389 @WangCai_1 4
-      - US_4444 @WangCai_1 6
-      - US_5000 @WangCai_1 6
-      - US_5001 @WangCai_1 4
-      - US_5003 @WangCai_1 5
-      - US_5004 @WangCai_1 6
-      - US_5500 @WangCai_1 6
-      - US_5600 @WangCai_1 6
-      - US_5601 @WangCai_1 4
-      - US_6379 @WangCai_1 6
-      - US_6679 @WangCai_1 6
-      - US_6697 @WangCai_1 6
-      - US_7001 @WangCai_1 6
-      - US_7002 @WangCai_1 6
-      - US_7306 @WangCai_1 4
-      - US_7307 @WangCai_1 5
-      - US_8000 @WangCai_1 6
-      - US_8008 @WangCai_1 6
-      - US_8009 @WangCai_1 6
-      - US_8080 @WangCai_1 4
-      - US_8090 @WangCai_1 4
-      - US_8091 @WangCai_1 4
-      - US_8118 @WangCai_1 6
-      - US_8119 @WangCai_1 6
-      - US_8881 @WangCai_1 6
-      - US_8882 @WangCai_1 6
-      - US_8888 @WangCai_1 6
-      - US_9101 @WangCai_1 6
-      - US_9102 @WangCai_1 6
-      - US_8008 @WangCai_1 7
-      - US_6679 @WangCai_1 7
-      - US_4444 @WangCai_1 7
-      - US_6379 @WangCai_1 7
-      - US_3389 @WangCai_1 5
-      - US_8080 @WangCai_1 5
-      - US_7307 @WangCai_1 6
-      - US_8091 @WangCai_1 5
-      - US_5500 @WangCai_1 7
-      - US_2375 @WangCai_1 6
-      - US_8009 @WangCai_1 7
-      - US_3306 @WangCai_1 6
-      - US_7002 @WangCai_1 7
-      - US_8000 @WangCai_1 7
-      - US_9101 @WangCai_1 7
-      - US_5004 @WangCai_1 7
-      - US_2376 @WangCai_1 6
-      - US_8888 @WangCai_1 7
-      - US_8882 @WangCai_1 7
-      - US_7001 @WangCai_1 7
-      - US_5003 @WangCai_1 6
-      - US_9102 @WangCai_1 7
-      - US_8881 @WangCai_1 7
-      - US_5001 @WangCai_1 5
-      - US_7306 @WangCai_1 5
-      - US_5601 @WangCai_1 5
-      - US_8119 @WangCai_1 7
-      - US_8118 @WangCai_1 7
-      - US_6697 @WangCai_1 7
-      - US_2376 @WangCai_1 7
-      - US_5500 @WangCai_1 8
-      - US_6679 @WangCai_1 8
-      - US_7002 @WangCai_1 8
-      - US_8009 @WangCai_1 8
-      - US_4444 @WangCai_1 8
-      - US_8080 @WangCai_1 6
-      - US_9102 @WangCai_1 8
-      - US_3389 @WangCai_1 6
-      - US_7001 @WangCai_1 8
-      - US_8008 @WangCai_1 8
-      - US_6379 @WangCai_1 8
-      - US_2375 @WangCai_1 7
-      - US_3306 @WangCai_1 7
-      - US_8881 @WangCai_1 8
-      - US_9101 @WangCai_1 8
-      - US_5600 @WangCai_1 7
-      - US_8091 @WangCai_1 6
-      - US_8000 @WangCai_1 8
-      - US_8118 @WangCai_1 8
-      - US_8882 @WangCai_1 8
-      - US_5601 @WangCai_1 6
-      - US_8119 @WangCai_1 8
-      - US_0443 @WangCai_1 7
-      - US_8888 @WangCai_1 8
-      - US_5003 @WangCai_1 7
-      - US_5001 @WangCai_1 6
-      - US_5000 @WangCai_1 7
-      - US_7306 @WangCai_1 6
-      - US_8118 @WangCai_1 9
-      - US_6697 @WangCai_1 8
-      - US_5601 @WangCai_1 7
-      - US_8119 @WangCai_1 9
-      - US_5003 @WangCai_1 8
-      - US_5001 @WangCai_1 7
-      - US_9102 @WangCai_1 9
-      - US_7306 @WangCai_1 7
-      - US_8881 @WangCai_1 9
-      - US_8080 @WangCai_1 7
-      - US_5000 @WangCai_1 8
-      - US_4444 @WangCai_1 9
-      - US_0443 @WangCai_1 8
-      - US_8009 @WangCai_1 9
-      - US_8008 @WangCai_1 9
-      - US_7002 @WangCai_1 9
-      - US_7307 @WangCai_1 7
-      - US_3306 @WangCai_1 8
-      - US_8000 @WangCai_1 9
-      - US_6679 @WangCai_1 9
-      - US_8888 @WangCai_1 9
-      - US_8090 @WangCai_1 5
-      - US_8882 @WangCai_1 9
-      - US_6379 @WangCai_1 9
-      - US_9101 @WangCai_1 9
-      - US_8091 @WangCai_1 7
-      - US_5500 @WangCai_1 9
-      - US_5600 @WangCai_1 8
-      - US_5004 @WangCai_1 8
-      - US_2375 @WangCai_1 8
-      - US_7001 @WangCai_1 9
-      - US_3389 @WangCai_1 7
-      - US_2376 @WangCai_1 8
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_4444 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3389 @WangCai_1 2
+      - ‌‌🇨🇦CA_4444 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_3389 @WangCai_1 3
+      - ‌‌🇨🇦CA_4444 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5601 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8009 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_2375 @WangCai_1 4
+      - ‌‌🇨🇦CA_2376 @WangCai_1 4
+      - ‌‌🇨🇦CA_3306 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1 4
+      - ‌‌🇨🇦CA_4444 @WangCai_1 4
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_5001 @WangCai_1 4
+      - ‌‌🇨🇦CA_5003 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5601 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7306 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1 4
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1 4
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8090 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8118 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9102 @WangCai_1 4
+      - DE_0443 @WangCai_1
+      - DE_2376 @WangCai_1
+      - DE_3306 @WangCai_1
+      - DE_3389 @WangCai_1
+      - DE_4444 @WangCai_1
+      - DE_5000 @WangCai_1
+      - DE_5003 @WangCai_1
+      - DE_5004 @WangCai_1
+      - DE_5500 @WangCai_1
+      - DE_5600 @WangCai_1
+      - DE_5601 @WangCai_1
+      - DE_6379 @WangCai_1
+      - DE_6679 @WangCai_1
+      - DE_6697 @WangCai_1
+      - DE_7001 @WangCai_1
+      - DE_7002 @WangCai_1
+      - DE_7306 @WangCai_1
+      - DE_7307 @WangCai_1
+      - DE_8000 @WangCai_1
+      - DE_8008 @WangCai_1
+      - DE_8009 @WangCai_1
+      - DE_8080 @WangCai_1
+      - DE_8090 @WangCai_1
+      - DE_8091 @WangCai_1
+      - DE_8118 @WangCai_1
+      - DE_8119 @WangCai_1
+      - DE_8881 @WangCai_1
+      - DE_8882 @WangCai_1
+      - DE_8888 @WangCai_1
+      - DE_9101 @WangCai_1
+      - DE_9102 @WangCai_1
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
