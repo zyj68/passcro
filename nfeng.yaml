@@ -5,351 +5,111 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 TG@nfeng6#35, server: 120.232.174.63, port: 2080, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 TG@nfeng6#4, server: 120.196.205.92, port: 11811, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#27, server: fg01.nfeng6.pp.ua, port: 10041, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#30, server: fg01.nfeng6.pp.ua, port: 10013, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 俄罗斯 TG@nfeng6#55, server: fg01.nfeng6.pp.ua, port: 37818, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 加拿大 TG@nfeng6#46, server: fg01.nfeng6.pp.ua, port: 52125, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 加拿大 TG@nfeng6#99, server: fg01.nfeng6.pp.ua, port: 52116, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 TG@nfeng6#102, server: fg01.nfeng6.pp.ua, port: 52119, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 TG@nfeng6#30 2, server: fg01.nfeng6.pp.ua, port: 37817, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 新加坡 TG@nfeng6#6, server: 120.196.205.92, port: 11813, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 新加坡 TG@nfeng6#67, server: fg01.nfeng6.pp.ua, port: 37823, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 新加坡 TG@nfeng6#96, server: fg01.nfeng6.pp.ua, port: 52103, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 TG@nfeng6#97, server: fg01.nfeng6.pp.ua, port: 52104, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 TG@nfeng6#64, server: fg01.nfeng6.pp.ua, port: 37820, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 法国 TG@nfeng6#48, server: fg01.nfeng6.pp.ua, port: 10027, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 美国 TG@nfeng6#100, server: fg01.nfeng6.pp.ua, port: 52117, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 TG@nfeng6#7, server: 120.196.205.92, port: 11814, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 英国 TG@nfeng6#104, server: fg01.nfeng6.pp.ua, port: 52120, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国 TG@nfeng6#47, server: fg01.nfeng6.pp.ua, port: 37816, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#31, server: fg01.nfeng6.pp.ua, port: 10014, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#56 IPLC专线 | 10x, server: 120.232.174.63, port: 2083, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 TG@nfeng6#8, server: 120.196.205.92, port: 11815, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 台湾 TG@nfeng6#34, server: fg01.nfeng6.pp.ua, port: 10020, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 新加坡 TG@nfeng6#68, server: fg01.nfeng6.pp.ua, port: 37824, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 新加坡 TG@nfeng6#94, server: fg01.nfeng6.pp.ua, port: 52105, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 TG@nfeng6#16, server: fg01.nfeng6.pp.ua, port: 10047, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 日本 TG@nfeng6#65, server: fg01.nfeng6.pp.ua, port: 37821, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 日本 TG@nfeng6#92, server: fg01.nfeng6.pp.ua, port: 52106, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚 TG@nfeng6#45, server: fg01.nfeng6.pp.ua, port: 10046, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 美国 TG@nfeng6#101, server: fg01.nfeng6.pp.ua, port: 52118, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 TG@nfeng6#90, server: fg01.nfeng6.pp.ua, port: 52107, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 TG@nfeng6#21, server: fg01.nfeng6.pp.ua, port: 10032, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#32, server: fg01.nfeng6.pp.ua, port: 37814, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#57 IPLC专线 |5x, server: 120.232.174.63, port: 2086, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 TG@nfeng6#54, server: fg01.nfeng6.pp.ua, port: 10045, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 圣何塞 TG@nfeng6#89, server: fg01.nfeng6.pp.ua, port: 37825, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /baidu, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 日本 TG@nfeng6#66, server: fg01.nfeng6.pp.ua, port: 37822, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 美国 TG@nfeng6#12, server: fg01.nfeng6.pp.ua, port: 37813, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#27 2, server: fg01.nfeng6.pp.ua, port: 10041, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#33, server: fg01.nfeng6.pp.ua, port: 37815, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /baidu, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#57 IPLC专线 |2x, server: 120.232.174.63, port: 2080, type: vmess, uuid: 8eaf411f-dbb1-326e-89e5-2b579a8c948a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 TG@nfeng6#35 2, server: 120.232.174.63, port: 2080, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 TG@nfeng6#4 2, server: 120.196.205.92, port: 11811, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#27 3, server: fg01.nfeng6.pp.ua, port: 10041, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#30 3, server: fg01.nfeng6.pp.ua, port: 10013, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 俄罗斯 TG@nfeng6#55 2, server: fg01.nfeng6.pp.ua, port: 37818, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 加拿大 TG@nfeng6#46 2, server: fg01.nfeng6.pp.ua, port: 52125, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 加拿大 TG@nfeng6#99 2, server: fg01.nfeng6.pp.ua, port: 52116, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 TG@nfeng6#102 2, server: fg01.nfeng6.pp.ua, port: 52119, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 TG@nfeng6#30 2 2, server: fg01.nfeng6.pp.ua, port: 37817, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 新加坡 TG@nfeng6#6 2, server: 120.196.205.92, port: 11813, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 新加坡 TG@nfeng6#67 2, server: fg01.nfeng6.pp.ua, port: 37823, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 新加坡 TG@nfeng6#96 2, server: fg01.nfeng6.pp.ua, port: 52103, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 TG@nfeng6#97 2, server: fg01.nfeng6.pp.ua, port: 52104, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 TG@nfeng6#64 2, server: fg01.nfeng6.pp.ua, port: 37820, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 法国 TG@nfeng6#48 2, server: fg01.nfeng6.pp.ua, port: 10027, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 美国 TG@nfeng6#100 2, server: fg01.nfeng6.pp.ua, port: 52117, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 TG@nfeng6#7 2, server: 120.196.205.92, port: 11814, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 英国 TG@nfeng6#104 2, server: fg01.nfeng6.pp.ua, port: 52120, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国 TG@nfeng6#47 2, server: fg01.nfeng6.pp.ua, port: 37816, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#31 2, server: fg01.nfeng6.pp.ua, port: 10014, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#56 IPLC专线 | 10x 2, server: 120.232.174.63, port: 2083, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 TG@nfeng6#8 2, server: 120.196.205.92, port: 11815, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 台湾 TG@nfeng6#34 2, server: fg01.nfeng6.pp.ua, port: 10020, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 新加坡 TG@nfeng6#68 2, server: fg01.nfeng6.pp.ua, port: 37824, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 新加坡 TG@nfeng6#94 2, server: fg01.nfeng6.pp.ua, port: 52105, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 TG@nfeng6#16 2, server: fg01.nfeng6.pp.ua, port: 10047, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 日本 TG@nfeng6#65 2, server: fg01.nfeng6.pp.ua, port: 37821, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 日本 TG@nfeng6#92 2, server: fg01.nfeng6.pp.ua, port: 52106, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚 TG@nfeng6#45 2, server: fg01.nfeng6.pp.ua, port: 10046, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 美国 TG@nfeng6#101 2, server: fg01.nfeng6.pp.ua, port: 52118, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 TG@nfeng6#90 2, server: fg01.nfeng6.pp.ua, port: 52107, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 TG@nfeng6#21 2, server: fg01.nfeng6.pp.ua, port: 10032, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#32 2, server: fg01.nfeng6.pp.ua, port: 37814, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#57 IPLC专线 |5x 2, server: 120.232.174.63, port: 2086, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 TG@nfeng6#54 2, server: fg01.nfeng6.pp.ua, port: 10045, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 圣何塞 TG@nfeng6#89 2, server: fg01.nfeng6.pp.ua, port: 37825, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /baidu, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 日本 TG@nfeng6#66 2, server: fg01.nfeng6.pp.ua, port: 37822, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 美国 TG@nfeng6#12 2, server: fg01.nfeng6.pp.ua, port: 37813, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /g01, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#27 2 2, server: fg01.nfeng6.pp.ua, port: 10041, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#33 2, server: fg01.nfeng6.pp.ua, port: 37815, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /baidu, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: 香港 TG@nfeng6#57 IPLC专线 |2x 2, server: 120.232.174.63, port: 2080, type: vmess, uuid: ab74f283-7018-3bc3-bafe-8c28f125f07c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾 Basic 01 tg@nfeng6, server: basic-tw1.starscloud.in, port: 20005, type: trojan, password: 099619cf-34cb-3e90-bacd-48c281b114aa, sni: basic-tw1.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 台湾 Basic 02 tg@nfeng6, server: basic-tw2.starscloud.in, port: 20006, type: trojan, password: 099619cf-34cb-3e90-bacd-48c281b114aa, sni: basic-tw2.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 Basic 01 tg@nfeng6, server: basic-sg1.starscloud.in, port: 20008, type: trojan, password: 099619cf-34cb-3e90-bacd-48c281b114aa, sni: basic-sg1.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 日本 Basic 01 tg@nfeng6, server: basic-jp1.starscloud.in, port: 20008, type: trojan, password: 099619cf-34cb-3e90-bacd-48c281b114aa, sni: basic-jp1.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 日本 Basic 02 tg@nfeng6, server: basic-jp2.starscloud.in, port: 20009, type: trojan, password: 099619cf-34cb-3e90-bacd-48c281b114aa, sni: basic-jp2.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 美国 Basic 01 tg@nfeng6, server: basic-us1.starscloud.in, port: 20002, type: trojan, password: 099619cf-34cb-3e90-bacd-48c281b114aa, sni: basic-us1.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 美国 Basic 02 tg@nfeng6, server: basic-us2.starscloud.in, port: 20007, type: trojan, password: 099619cf-34cb-3e90-bacd-48c281b114aa, sni: basic-us2.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 韩国 Basic 01 tg@nfeng6, server: basic-kr1.starscloud.in, port: 20014, type: trojan, password: 099619cf-34cb-3e90-bacd-48c281b114aa, sni: basic-kr1.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 香港 Basic 01 tg@nfeng6, server: basic-hk1.starscloud.in, port: 20010, type: trojan, password: 099619cf-34cb-3e90-bacd-48c281b114aa, sni: basic-hk1.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 香港 Basic 02 tg@nfeng6, server: basic-hk2.starscloud.in, port: 20011, type: trojan, password: 099619cf-34cb-3e90-bacd-48c281b114aa, sni: basic-hk2.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 香港 Basic 03 tg@nfeng6, server: basic-hk3.starscloud.in, port: 20012, type: trojan, password: 099619cf-34cb-3e90-bacd-48c281b114aa, sni: basic-hk3.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 台湾 Basic 01 tg@nfeng6 2, server: basic-tw1.starscloud.in, port: 20005, type: trojan, password: 485ab718-e91d-36ac-8b85-b2a9e9abecbd, sni: basic-tw1.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 台湾 Basic 02 tg@nfeng6 2, server: basic-tw2.starscloud.in, port: 20006, type: trojan, password: 485ab718-e91d-36ac-8b85-b2a9e9abecbd, sni: basic-tw2.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 Basic 01 tg@nfeng6 2, server: basic-sg1.starscloud.in, port: 20008, type: trojan, password: 485ab718-e91d-36ac-8b85-b2a9e9abecbd, sni: basic-sg1.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 日本 Basic 01 tg@nfeng6 2, server: basic-jp1.starscloud.in, port: 20008, type: trojan, password: 485ab718-e91d-36ac-8b85-b2a9e9abecbd, sni: basic-jp1.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 日本 Basic 02 tg@nfeng6 2, server: basic-jp2.starscloud.in, port: 20009, type: trojan, password: 485ab718-e91d-36ac-8b85-b2a9e9abecbd, sni: basic-jp2.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 美国 Basic 01 tg@nfeng6 2, server: basic-us1.starscloud.in, port: 20002, type: trojan, password: 485ab718-e91d-36ac-8b85-b2a9e9abecbd, sni: basic-us1.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 美国 Basic 02 tg@nfeng6 2, server: basic-us2.starscloud.in, port: 20007, type: trojan, password: 485ab718-e91d-36ac-8b85-b2a9e9abecbd, sni: basic-us2.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 韩国 Basic 01 tg@nfeng6 2, server: basic-kr1.starscloud.in, port: 20014, type: trojan, password: 485ab718-e91d-36ac-8b85-b2a9e9abecbd, sni: basic-kr1.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 香港 Basic 01 tg@nfeng6 2, server: basic-hk1.starscloud.in, port: 20010, type: trojan, password: 485ab718-e91d-36ac-8b85-b2a9e9abecbd, sni: basic-hk1.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 香港 Basic 02 tg@nfeng6 2, server: basic-hk2.starscloud.in, port: 20011, type: trojan, password: 485ab718-e91d-36ac-8b85-b2a9e9abecbd, sni: basic-hk2.starscloud.in, skip-cert-verify: true, udp: true}
+  - {name: 香港 Basic 03 tg@nfeng6 2, server: basic-hk3.starscloud.in, port: 20012, type: trojan, password: 485ab718-e91d-36ac-8b85-b2a9e9abecbd, sni: basic-hk3.starscloud.in, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 TG@nfeng6#35
-      - 日本 TG@nfeng6#4
-      - 香港 TG@nfeng6#27
-      - 香港 TG@nfeng6#30
-      - 俄罗斯 TG@nfeng6#55
-      - 加拿大 TG@nfeng6#46
-      - 加拿大 TG@nfeng6#99
-      - 德国 TG@nfeng6#102
-      - 香港 TG@nfeng6#30 2
-      - 新加坡 TG@nfeng6#6
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#96
-      - 新加坡 TG@nfeng6#97
-      - 日本 TG@nfeng6#64
-      - 法国 TG@nfeng6#48
-      - 美国 TG@nfeng6#100
-      - 美国 TG@nfeng6#7
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 香港 TG@nfeng6#31
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x
-      - 香港 TG@nfeng6#8
-      - 台湾 TG@nfeng6#34
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#16
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 澳大利亚 TG@nfeng6#45
-      - 美国 TG@nfeng6#101
-      - 美国 TG@nfeng6#90
-      - 香港 TG@nfeng6#21
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#57 IPLC专线 |5x
-      - 俄罗斯 TG@nfeng6#54
-      - 圣何塞 TG@nfeng6#89
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#12
-      - 香港 TG@nfeng6#27 2
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#57 IPLC专线 |2x
-      - 香港 TG@nfeng6#35 2
-      - 日本 TG@nfeng6#4 2
-      - 香港 TG@nfeng6#27 3
-      - 香港 TG@nfeng6#30 3
-      - 俄罗斯 TG@nfeng6#55 2
-      - 加拿大 TG@nfeng6#46 2
-      - 加拿大 TG@nfeng6#99 2
-      - 德国 TG@nfeng6#102 2
-      - 香港 TG@nfeng6#30 2 2
-      - 新加坡 TG@nfeng6#6 2
-      - 新加坡 TG@nfeng6#67 2
-      - 新加坡 TG@nfeng6#96 2
-      - 新加坡 TG@nfeng6#97 2
-      - 日本 TG@nfeng6#64 2
-      - 法国 TG@nfeng6#48 2
-      - 美国 TG@nfeng6#100 2
-      - 美国 TG@nfeng6#7 2
-      - 英国 TG@nfeng6#104 2
-      - 英国 TG@nfeng6#47 2
-      - 香港 TG@nfeng6#31 2
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x 2
-      - 香港 TG@nfeng6#8 2
-      - 台湾 TG@nfeng6#34 2
-      - 新加坡 TG@nfeng6#68 2
-      - 新加坡 TG@nfeng6#94 2
-      - 日本 TG@nfeng6#16 2
-      - 日本 TG@nfeng6#65 2
-      - 日本 TG@nfeng6#92 2
-      - 澳大利亚 TG@nfeng6#45 2
-      - 美国 TG@nfeng6#101 2
-      - 美国 TG@nfeng6#90 2
-      - 香港 TG@nfeng6#21 2
-      - 香港 TG@nfeng6#32 2
-      - 香港 TG@nfeng6#57 IPLC专线 |5x 2
-      - 俄罗斯 TG@nfeng6#54 2
-      - 圣何塞 TG@nfeng6#89 2
-      - 日本 TG@nfeng6#66 2
-      - 美国 TG@nfeng6#12 2
-      - 香港 TG@nfeng6#27 2 2
-      - 香港 TG@nfeng6#33 2
-      - 香港 TG@nfeng6#57 IPLC专线 |2x 2
+      - 台湾 Basic 01 tg@nfeng6
+      - 台湾 Basic 02 tg@nfeng6
+      - 新加坡 Basic 01 tg@nfeng6
+      - 日本 Basic 01 tg@nfeng6
+      - 日本 Basic 02 tg@nfeng6
+      - 美国 Basic 01 tg@nfeng6
+      - 美国 Basic 02 tg@nfeng6
+      - 韩国 Basic 01 tg@nfeng6
+      - 香港 Basic 01 tg@nfeng6
+      - 香港 Basic 02 tg@nfeng6
+      - 香港 Basic 03 tg@nfeng6
+      - 台湾 Basic 01 tg@nfeng6 2
+      - 台湾 Basic 02 tg@nfeng6 2
+      - 新加坡 Basic 01 tg@nfeng6 2
+      - 日本 Basic 01 tg@nfeng6 2
+      - 日本 Basic 02 tg@nfeng6 2
+      - 美国 Basic 01 tg@nfeng6 2
+      - 美国 Basic 02 tg@nfeng6 2
+      - 韩国 Basic 01 tg@nfeng6 2
+      - 香港 Basic 01 tg@nfeng6 2
+      - 香港 Basic 02 tg@nfeng6 2
+      - 香港 Basic 03 tg@nfeng6 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 TG@nfeng6#35
-      - 日本 TG@nfeng6#4
-      - 香港 TG@nfeng6#27
-      - 香港 TG@nfeng6#30
-      - 俄罗斯 TG@nfeng6#55
-      - 加拿大 TG@nfeng6#46
-      - 加拿大 TG@nfeng6#99
-      - 德国 TG@nfeng6#102
-      - 香港 TG@nfeng6#30 2
-      - 新加坡 TG@nfeng6#6
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#96
-      - 新加坡 TG@nfeng6#97
-      - 日本 TG@nfeng6#64
-      - 法国 TG@nfeng6#48
-      - 美国 TG@nfeng6#100
-      - 美国 TG@nfeng6#7
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 香港 TG@nfeng6#31
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x
-      - 香港 TG@nfeng6#8
-      - 台湾 TG@nfeng6#34
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#16
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 澳大利亚 TG@nfeng6#45
-      - 美国 TG@nfeng6#101
-      - 美国 TG@nfeng6#90
-      - 香港 TG@nfeng6#21
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#57 IPLC专线 |5x
-      - 俄罗斯 TG@nfeng6#54
-      - 圣何塞 TG@nfeng6#89
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#12
-      - 香港 TG@nfeng6#27 2
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#57 IPLC专线 |2x
-      - 香港 TG@nfeng6#35 2
-      - 日本 TG@nfeng6#4 2
-      - 香港 TG@nfeng6#27 3
-      - 香港 TG@nfeng6#30 3
-      - 俄罗斯 TG@nfeng6#55 2
-      - 加拿大 TG@nfeng6#46 2
-      - 加拿大 TG@nfeng6#99 2
-      - 德国 TG@nfeng6#102 2
-      - 香港 TG@nfeng6#30 2 2
-      - 新加坡 TG@nfeng6#6 2
-      - 新加坡 TG@nfeng6#67 2
-      - 新加坡 TG@nfeng6#96 2
-      - 新加坡 TG@nfeng6#97 2
-      - 日本 TG@nfeng6#64 2
-      - 法国 TG@nfeng6#48 2
-      - 美国 TG@nfeng6#100 2
-      - 美国 TG@nfeng6#7 2
-      - 英国 TG@nfeng6#104 2
-      - 英国 TG@nfeng6#47 2
-      - 香港 TG@nfeng6#31 2
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x 2
-      - 香港 TG@nfeng6#8 2
-      - 台湾 TG@nfeng6#34 2
-      - 新加坡 TG@nfeng6#68 2
-      - 新加坡 TG@nfeng6#94 2
-      - 日本 TG@nfeng6#16 2
-      - 日本 TG@nfeng6#65 2
-      - 日本 TG@nfeng6#92 2
-      - 澳大利亚 TG@nfeng6#45 2
-      - 美国 TG@nfeng6#101 2
-      - 美国 TG@nfeng6#90 2
-      - 香港 TG@nfeng6#21 2
-      - 香港 TG@nfeng6#32 2
-      - 香港 TG@nfeng6#57 IPLC专线 |5x 2
-      - 俄罗斯 TG@nfeng6#54 2
-      - 圣何塞 TG@nfeng6#89 2
-      - 日本 TG@nfeng6#66 2
-      - 美国 TG@nfeng6#12 2
-      - 香港 TG@nfeng6#27 2 2
-      - 香港 TG@nfeng6#33 2
-      - 香港 TG@nfeng6#57 IPLC专线 |2x 2
+      - 台湾 Basic 01 tg@nfeng6
+      - 台湾 Basic 02 tg@nfeng6
+      - 新加坡 Basic 01 tg@nfeng6
+      - 日本 Basic 01 tg@nfeng6
+      - 日本 Basic 02 tg@nfeng6
+      - 美国 Basic 01 tg@nfeng6
+      - 美国 Basic 02 tg@nfeng6
+      - 韩国 Basic 01 tg@nfeng6
+      - 香港 Basic 01 tg@nfeng6
+      - 香港 Basic 02 tg@nfeng6
+      - 香港 Basic 03 tg@nfeng6
+      - 台湾 Basic 01 tg@nfeng6 2
+      - 台湾 Basic 02 tg@nfeng6 2
+      - 新加坡 Basic 01 tg@nfeng6 2
+      - 日本 Basic 01 tg@nfeng6 2
+      - 日本 Basic 02 tg@nfeng6 2
+      - 美国 Basic 01 tg@nfeng6 2
+      - 美国 Basic 02 tg@nfeng6 2
+      - 韩国 Basic 01 tg@nfeng6 2
+      - 香港 Basic 01 tg@nfeng6 2
+      - 香港 Basic 02 tg@nfeng6 2
+      - 香港 Basic 03 tg@nfeng6 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 TG@nfeng6#35
-      - 日本 TG@nfeng6#4
-      - 香港 TG@nfeng6#27
-      - 香港 TG@nfeng6#30
-      - 俄罗斯 TG@nfeng6#55
-      - 加拿大 TG@nfeng6#46
-      - 加拿大 TG@nfeng6#99
-      - 德国 TG@nfeng6#102
-      - 香港 TG@nfeng6#30 2
-      - 新加坡 TG@nfeng6#6
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#96
-      - 新加坡 TG@nfeng6#97
-      - 日本 TG@nfeng6#64
-      - 法国 TG@nfeng6#48
-      - 美国 TG@nfeng6#100
-      - 美国 TG@nfeng6#7
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 香港 TG@nfeng6#31
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x
-      - 香港 TG@nfeng6#8
-      - 台湾 TG@nfeng6#34
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#16
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 澳大利亚 TG@nfeng6#45
-      - 美国 TG@nfeng6#101
-      - 美国 TG@nfeng6#90
-      - 香港 TG@nfeng6#21
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#57 IPLC专线 |5x
-      - 俄罗斯 TG@nfeng6#54
-      - 圣何塞 TG@nfeng6#89
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#12
-      - 香港 TG@nfeng6#27 2
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#57 IPLC专线 |2x
-      - 香港 TG@nfeng6#35 2
-      - 日本 TG@nfeng6#4 2
-      - 香港 TG@nfeng6#27 3
-      - 香港 TG@nfeng6#30 3
-      - 俄罗斯 TG@nfeng6#55 2
-      - 加拿大 TG@nfeng6#46 2
-      - 加拿大 TG@nfeng6#99 2
-      - 德国 TG@nfeng6#102 2
-      - 香港 TG@nfeng6#30 2 2
-      - 新加坡 TG@nfeng6#6 2
-      - 新加坡 TG@nfeng6#67 2
-      - 新加坡 TG@nfeng6#96 2
-      - 新加坡 TG@nfeng6#97 2
-      - 日本 TG@nfeng6#64 2
-      - 法国 TG@nfeng6#48 2
-      - 美国 TG@nfeng6#100 2
-      - 美国 TG@nfeng6#7 2
-      - 英国 TG@nfeng6#104 2
-      - 英国 TG@nfeng6#47 2
-      - 香港 TG@nfeng6#31 2
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x 2
-      - 香港 TG@nfeng6#8 2
-      - 台湾 TG@nfeng6#34 2
-      - 新加坡 TG@nfeng6#68 2
-      - 新加坡 TG@nfeng6#94 2
-      - 日本 TG@nfeng6#16 2
-      - 日本 TG@nfeng6#65 2
-      - 日本 TG@nfeng6#92 2
-      - 澳大利亚 TG@nfeng6#45 2
-      - 美国 TG@nfeng6#101 2
-      - 美国 TG@nfeng6#90 2
-      - 香港 TG@nfeng6#21 2
-      - 香港 TG@nfeng6#32 2
-      - 香港 TG@nfeng6#57 IPLC专线 |5x 2
-      - 俄罗斯 TG@nfeng6#54 2
-      - 圣何塞 TG@nfeng6#89 2
-      - 日本 TG@nfeng6#66 2
-      - 美国 TG@nfeng6#12 2
-      - 香港 TG@nfeng6#27 2 2
-      - 香港 TG@nfeng6#33 2
-      - 香港 TG@nfeng6#57 IPLC专线 |2x 2
+      - 台湾 Basic 01 tg@nfeng6
+      - 台湾 Basic 02 tg@nfeng6
+      - 新加坡 Basic 01 tg@nfeng6
+      - 日本 Basic 01 tg@nfeng6
+      - 日本 Basic 02 tg@nfeng6
+      - 美国 Basic 01 tg@nfeng6
+      - 美国 Basic 02 tg@nfeng6
+      - 韩国 Basic 01 tg@nfeng6
+      - 香港 Basic 01 tg@nfeng6
+      - 香港 Basic 02 tg@nfeng6
+      - 香港 Basic 03 tg@nfeng6
+      - 台湾 Basic 01 tg@nfeng6 2
+      - 台湾 Basic 02 tg@nfeng6 2
+      - 新加坡 Basic 01 tg@nfeng6 2
+      - 日本 Basic 01 tg@nfeng6 2
+      - 日本 Basic 02 tg@nfeng6 2
+      - 美国 Basic 01 tg@nfeng6 2
+      - 美国 Basic 02 tg@nfeng6 2
+      - 韩国 Basic 01 tg@nfeng6 2
+      - 香港 Basic 01 tg@nfeng6 2
+      - 香港 Basic 02 tg@nfeng6 2
+      - 香港 Basic 03 tg@nfeng6 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -368,383 +128,125 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 TG@nfeng6#35
-      - 日本 TG@nfeng6#4
-      - 香港 TG@nfeng6#27
-      - 香港 TG@nfeng6#30
-      - 俄罗斯 TG@nfeng6#55
-      - 加拿大 TG@nfeng6#46
-      - 加拿大 TG@nfeng6#99
-      - 德国 TG@nfeng6#102
-      - 香港 TG@nfeng6#30 2
-      - 新加坡 TG@nfeng6#6
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#96
-      - 新加坡 TG@nfeng6#97
-      - 日本 TG@nfeng6#64
-      - 法国 TG@nfeng6#48
-      - 美国 TG@nfeng6#100
-      - 美国 TG@nfeng6#7
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 香港 TG@nfeng6#31
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x
-      - 香港 TG@nfeng6#8
-      - 台湾 TG@nfeng6#34
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#16
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 澳大利亚 TG@nfeng6#45
-      - 美国 TG@nfeng6#101
-      - 美国 TG@nfeng6#90
-      - 香港 TG@nfeng6#21
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#57 IPLC专线 |5x
-      - 俄罗斯 TG@nfeng6#54
-      - 圣何塞 TG@nfeng6#89
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#12
-      - 香港 TG@nfeng6#27 2
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#57 IPLC专线 |2x
-      - 香港 TG@nfeng6#35 2
-      - 日本 TG@nfeng6#4 2
-      - 香港 TG@nfeng6#27 3
-      - 香港 TG@nfeng6#30 3
-      - 俄罗斯 TG@nfeng6#55 2
-      - 加拿大 TG@nfeng6#46 2
-      - 加拿大 TG@nfeng6#99 2
-      - 德国 TG@nfeng6#102 2
-      - 香港 TG@nfeng6#30 2 2
-      - 新加坡 TG@nfeng6#6 2
-      - 新加坡 TG@nfeng6#67 2
-      - 新加坡 TG@nfeng6#96 2
-      - 新加坡 TG@nfeng6#97 2
-      - 日本 TG@nfeng6#64 2
-      - 法国 TG@nfeng6#48 2
-      - 美国 TG@nfeng6#100 2
-      - 美国 TG@nfeng6#7 2
-      - 英国 TG@nfeng6#104 2
-      - 英国 TG@nfeng6#47 2
-      - 香港 TG@nfeng6#31 2
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x 2
-      - 香港 TG@nfeng6#8 2
-      - 台湾 TG@nfeng6#34 2
-      - 新加坡 TG@nfeng6#68 2
-      - 新加坡 TG@nfeng6#94 2
-      - 日本 TG@nfeng6#16 2
-      - 日本 TG@nfeng6#65 2
-      - 日本 TG@nfeng6#92 2
-      - 澳大利亚 TG@nfeng6#45 2
-      - 美国 TG@nfeng6#101 2
-      - 美国 TG@nfeng6#90 2
-      - 香港 TG@nfeng6#21 2
-      - 香港 TG@nfeng6#32 2
-      - 香港 TG@nfeng6#57 IPLC专线 |5x 2
-      - 俄罗斯 TG@nfeng6#54 2
-      - 圣何塞 TG@nfeng6#89 2
-      - 日本 TG@nfeng6#66 2
-      - 美国 TG@nfeng6#12 2
-      - 香港 TG@nfeng6#27 2 2
-      - 香港 TG@nfeng6#33 2
-      - 香港 TG@nfeng6#57 IPLC专线 |2x 2
+      - 台湾 Basic 01 tg@nfeng6
+      - 台湾 Basic 02 tg@nfeng6
+      - 新加坡 Basic 01 tg@nfeng6
+      - 日本 Basic 01 tg@nfeng6
+      - 日本 Basic 02 tg@nfeng6
+      - 美国 Basic 01 tg@nfeng6
+      - 美国 Basic 02 tg@nfeng6
+      - 韩国 Basic 01 tg@nfeng6
+      - 香港 Basic 01 tg@nfeng6
+      - 香港 Basic 02 tg@nfeng6
+      - 香港 Basic 03 tg@nfeng6
+      - 台湾 Basic 01 tg@nfeng6 2
+      - 台湾 Basic 02 tg@nfeng6 2
+      - 新加坡 Basic 01 tg@nfeng6 2
+      - 日本 Basic 01 tg@nfeng6 2
+      - 日本 Basic 02 tg@nfeng6 2
+      - 美国 Basic 01 tg@nfeng6 2
+      - 美国 Basic 02 tg@nfeng6 2
+      - 韩国 Basic 01 tg@nfeng6 2
+      - 香港 Basic 01 tg@nfeng6 2
+      - 香港 Basic 02 tg@nfeng6 2
+      - 香港 Basic 03 tg@nfeng6 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 TG@nfeng6#35
-      - 香港 TG@nfeng6#27
-      - 香港 TG@nfeng6#30
-      - 香港 TG@nfeng6#30 2
-      - 香港 TG@nfeng6#31
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x
-      - 香港 TG@nfeng6#8
-      - 台湾 TG@nfeng6#34
-      - 香港 TG@nfeng6#21
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#57 IPLC专线 |5x
-      - 香港 TG@nfeng6#27 2
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#57 IPLC专线 |2x
-      - 香港 TG@nfeng6#35 2
-      - 香港 TG@nfeng6#27 3
-      - 香港 TG@nfeng6#30 3
-      - 香港 TG@nfeng6#30 2 2
-      - 香港 TG@nfeng6#31 2
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x 2
-      - 香港 TG@nfeng6#8 2
-      - 台湾 TG@nfeng6#34 2
-      - 香港 TG@nfeng6#21 2
-      - 香港 TG@nfeng6#32 2
-      - 香港 TG@nfeng6#57 IPLC专线 |5x 2
-      - 香港 TG@nfeng6#27 2 2
-      - 香港 TG@nfeng6#33 2
-      - 香港 TG@nfeng6#57 IPLC专线 |2x 2
+      - 台湾 Basic 01 tg@nfeng6
+      - 台湾 Basic 02 tg@nfeng6
+      - 香港 Basic 01 tg@nfeng6
+      - 香港 Basic 02 tg@nfeng6
+      - 香港 Basic 03 tg@nfeng6
+      - 台湾 Basic 01 tg@nfeng6 2
+      - 台湾 Basic 02 tg@nfeng6 2
+      - 香港 Basic 01 tg@nfeng6 2
+      - 香港 Basic 02 tg@nfeng6 2
+      - 香港 Basic 03 tg@nfeng6 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 TG@nfeng6#35
-      - 日本 TG@nfeng6#4
-      - 香港 TG@nfeng6#27
-      - 香港 TG@nfeng6#30
-      - 俄罗斯 TG@nfeng6#55
-      - 加拿大 TG@nfeng6#46
-      - 加拿大 TG@nfeng6#99
-      - 德国 TG@nfeng6#102
-      - 香港 TG@nfeng6#30 2
-      - 新加坡 TG@nfeng6#6
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#96
-      - 新加坡 TG@nfeng6#97
-      - 日本 TG@nfeng6#64
-      - 法国 TG@nfeng6#48
-      - 美国 TG@nfeng6#100
-      - 美国 TG@nfeng6#7
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 香港 TG@nfeng6#31
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x
-      - 香港 TG@nfeng6#8
-      - 台湾 TG@nfeng6#34
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#16
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 澳大利亚 TG@nfeng6#45
-      - 美国 TG@nfeng6#101
-      - 美国 TG@nfeng6#90
-      - 香港 TG@nfeng6#21
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#57 IPLC专线 |5x
-      - 俄罗斯 TG@nfeng6#54
-      - 圣何塞 TG@nfeng6#89
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#12
-      - 香港 TG@nfeng6#27 2
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#57 IPLC专线 |2x
-      - 香港 TG@nfeng6#35 2
-      - 日本 TG@nfeng6#4 2
-      - 香港 TG@nfeng6#27 3
-      - 香港 TG@nfeng6#30 3
-      - 俄罗斯 TG@nfeng6#55 2
-      - 加拿大 TG@nfeng6#46 2
-      - 加拿大 TG@nfeng6#99 2
-      - 德国 TG@nfeng6#102 2
-      - 香港 TG@nfeng6#30 2 2
-      - 新加坡 TG@nfeng6#6 2
-      - 新加坡 TG@nfeng6#67 2
-      - 新加坡 TG@nfeng6#96 2
-      - 新加坡 TG@nfeng6#97 2
-      - 日本 TG@nfeng6#64 2
-      - 法国 TG@nfeng6#48 2
-      - 美国 TG@nfeng6#100 2
-      - 美国 TG@nfeng6#7 2
-      - 英国 TG@nfeng6#104 2
-      - 英国 TG@nfeng6#47 2
-      - 香港 TG@nfeng6#31 2
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x 2
-      - 香港 TG@nfeng6#8 2
-      - 台湾 TG@nfeng6#34 2
-      - 新加坡 TG@nfeng6#68 2
-      - 新加坡 TG@nfeng6#94 2
-      - 日本 TG@nfeng6#16 2
-      - 日本 TG@nfeng6#65 2
-      - 日本 TG@nfeng6#92 2
-      - 澳大利亚 TG@nfeng6#45 2
-      - 美国 TG@nfeng6#101 2
-      - 美国 TG@nfeng6#90 2
-      - 香港 TG@nfeng6#21 2
-      - 香港 TG@nfeng6#32 2
-      - 香港 TG@nfeng6#57 IPLC专线 |5x 2
-      - 俄罗斯 TG@nfeng6#54 2
-      - 圣何塞 TG@nfeng6#89 2
-      - 日本 TG@nfeng6#66 2
-      - 美国 TG@nfeng6#12 2
-      - 香港 TG@nfeng6#27 2 2
-      - 香港 TG@nfeng6#33 2
-      - 香港 TG@nfeng6#57 IPLC专线 |2x 2
+      - 台湾 Basic 01 tg@nfeng6
+      - 台湾 Basic 02 tg@nfeng6
+      - 新加坡 Basic 01 tg@nfeng6
+      - 日本 Basic 01 tg@nfeng6
+      - 日本 Basic 02 tg@nfeng6
+      - 美国 Basic 01 tg@nfeng6
+      - 美国 Basic 02 tg@nfeng6
+      - 韩国 Basic 01 tg@nfeng6
+      - 香港 Basic 01 tg@nfeng6
+      - 香港 Basic 02 tg@nfeng6
+      - 香港 Basic 03 tg@nfeng6
+      - 台湾 Basic 01 tg@nfeng6 2
+      - 台湾 Basic 02 tg@nfeng6 2
+      - 新加坡 Basic 01 tg@nfeng6 2
+      - 日本 Basic 01 tg@nfeng6 2
+      - 日本 Basic 02 tg@nfeng6 2
+      - 美国 Basic 01 tg@nfeng6 2
+      - 美国 Basic 02 tg@nfeng6 2
+      - 韩国 Basic 01 tg@nfeng6 2
+      - 香港 Basic 01 tg@nfeng6 2
+      - 香港 Basic 02 tg@nfeng6 2
+      - 香港 Basic 03 tg@nfeng6 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 TG@nfeng6#35
-      - 日本 TG@nfeng6#4
-      - 香港 TG@nfeng6#27
-      - 香港 TG@nfeng6#30
-      - 俄罗斯 TG@nfeng6#55
-      - 加拿大 TG@nfeng6#46
-      - 加拿大 TG@nfeng6#99
-      - 德国 TG@nfeng6#102
-      - 香港 TG@nfeng6#30 2
-      - 新加坡 TG@nfeng6#6
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#96
-      - 新加坡 TG@nfeng6#97
-      - 日本 TG@nfeng6#64
-      - 法国 TG@nfeng6#48
-      - 美国 TG@nfeng6#100
-      - 美国 TG@nfeng6#7
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 香港 TG@nfeng6#31
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x
-      - 香港 TG@nfeng6#8
-      - 台湾 TG@nfeng6#34
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#16
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 澳大利亚 TG@nfeng6#45
-      - 美国 TG@nfeng6#101
-      - 美国 TG@nfeng6#90
-      - 香港 TG@nfeng6#21
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#57 IPLC专线 |5x
-      - 俄罗斯 TG@nfeng6#54
-      - 圣何塞 TG@nfeng6#89
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#12
-      - 香港 TG@nfeng6#27 2
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#57 IPLC专线 |2x
-      - 香港 TG@nfeng6#35 2
-      - 日本 TG@nfeng6#4 2
-      - 香港 TG@nfeng6#27 3
-      - 香港 TG@nfeng6#30 3
-      - 俄罗斯 TG@nfeng6#55 2
-      - 加拿大 TG@nfeng6#46 2
-      - 加拿大 TG@nfeng6#99 2
-      - 德国 TG@nfeng6#102 2
-      - 香港 TG@nfeng6#30 2 2
-      - 新加坡 TG@nfeng6#6 2
-      - 新加坡 TG@nfeng6#67 2
-      - 新加坡 TG@nfeng6#96 2
-      - 新加坡 TG@nfeng6#97 2
-      - 日本 TG@nfeng6#64 2
-      - 法国 TG@nfeng6#48 2
-      - 美国 TG@nfeng6#100 2
-      - 美国 TG@nfeng6#7 2
-      - 英国 TG@nfeng6#104 2
-      - 英国 TG@nfeng6#47 2
-      - 香港 TG@nfeng6#31 2
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x 2
-      - 香港 TG@nfeng6#8 2
-      - 台湾 TG@nfeng6#34 2
-      - 新加坡 TG@nfeng6#68 2
-      - 新加坡 TG@nfeng6#94 2
-      - 日本 TG@nfeng6#16 2
-      - 日本 TG@nfeng6#65 2
-      - 日本 TG@nfeng6#92 2
-      - 澳大利亚 TG@nfeng6#45 2
-      - 美国 TG@nfeng6#101 2
-      - 美国 TG@nfeng6#90 2
-      - 香港 TG@nfeng6#21 2
-      - 香港 TG@nfeng6#32 2
-      - 香港 TG@nfeng6#57 IPLC专线 |5x 2
-      - 俄罗斯 TG@nfeng6#54 2
-      - 圣何塞 TG@nfeng6#89 2
-      - 日本 TG@nfeng6#66 2
-      - 美国 TG@nfeng6#12 2
-      - 香港 TG@nfeng6#27 2 2
-      - 香港 TG@nfeng6#33 2
-      - 香港 TG@nfeng6#57 IPLC专线 |2x 2
+      - 台湾 Basic 01 tg@nfeng6
+      - 台湾 Basic 02 tg@nfeng6
+      - 新加坡 Basic 01 tg@nfeng6
+      - 日本 Basic 01 tg@nfeng6
+      - 日本 Basic 02 tg@nfeng6
+      - 美国 Basic 01 tg@nfeng6
+      - 美国 Basic 02 tg@nfeng6
+      - 韩国 Basic 01 tg@nfeng6
+      - 香港 Basic 01 tg@nfeng6
+      - 香港 Basic 02 tg@nfeng6
+      - 香港 Basic 03 tg@nfeng6
+      - 台湾 Basic 01 tg@nfeng6 2
+      - 台湾 Basic 02 tg@nfeng6 2
+      - 新加坡 Basic 01 tg@nfeng6 2
+      - 日本 Basic 01 tg@nfeng6 2
+      - 日本 Basic 02 tg@nfeng6 2
+      - 美国 Basic 01 tg@nfeng6 2
+      - 美国 Basic 02 tg@nfeng6 2
+      - 韩国 Basic 01 tg@nfeng6 2
+      - 香港 Basic 01 tg@nfeng6 2
+      - 香港 Basic 02 tg@nfeng6 2
+      - 香港 Basic 03 tg@nfeng6 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 TG@nfeng6#35
-      - 日本 TG@nfeng6#4
-      - 香港 TG@nfeng6#27
-      - 香港 TG@nfeng6#30
-      - 俄罗斯 TG@nfeng6#55
-      - 加拿大 TG@nfeng6#46
-      - 加拿大 TG@nfeng6#99
-      - 德国 TG@nfeng6#102
-      - 香港 TG@nfeng6#30 2
-      - 新加坡 TG@nfeng6#6
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#96
-      - 新加坡 TG@nfeng6#97
-      - 日本 TG@nfeng6#64
-      - 法国 TG@nfeng6#48
-      - 美国 TG@nfeng6#100
-      - 美国 TG@nfeng6#7
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 香港 TG@nfeng6#31
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x
-      - 香港 TG@nfeng6#8
-      - 台湾 TG@nfeng6#34
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#16
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 澳大利亚 TG@nfeng6#45
-      - 美国 TG@nfeng6#101
-      - 美国 TG@nfeng6#90
-      - 香港 TG@nfeng6#21
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#57 IPLC专线 |5x
-      - 俄罗斯 TG@nfeng6#54
-      - 圣何塞 TG@nfeng6#89
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#12
-      - 香港 TG@nfeng6#27 2
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#57 IPLC专线 |2x
-      - 香港 TG@nfeng6#35 2
-      - 日本 TG@nfeng6#4 2
-      - 香港 TG@nfeng6#27 3
-      - 香港 TG@nfeng6#30 3
-      - 俄罗斯 TG@nfeng6#55 2
-      - 加拿大 TG@nfeng6#46 2
-      - 加拿大 TG@nfeng6#99 2
-      - 德国 TG@nfeng6#102 2
-      - 香港 TG@nfeng6#30 2 2
-      - 新加坡 TG@nfeng6#6 2
-      - 新加坡 TG@nfeng6#67 2
-      - 新加坡 TG@nfeng6#96 2
-      - 新加坡 TG@nfeng6#97 2
-      - 日本 TG@nfeng6#64 2
-      - 法国 TG@nfeng6#48 2
-      - 美国 TG@nfeng6#100 2
-      - 美国 TG@nfeng6#7 2
-      - 英国 TG@nfeng6#104 2
-      - 英国 TG@nfeng6#47 2
-      - 香港 TG@nfeng6#31 2
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x 2
-      - 香港 TG@nfeng6#8 2
-      - 台湾 TG@nfeng6#34 2
-      - 新加坡 TG@nfeng6#68 2
-      - 新加坡 TG@nfeng6#94 2
-      - 日本 TG@nfeng6#16 2
-      - 日本 TG@nfeng6#65 2
-      - 日本 TG@nfeng6#92 2
-      - 澳大利亚 TG@nfeng6#45 2
-      - 美国 TG@nfeng6#101 2
-      - 美国 TG@nfeng6#90 2
-      - 香港 TG@nfeng6#21 2
-      - 香港 TG@nfeng6#32 2
-      - 香港 TG@nfeng6#57 IPLC专线 |5x 2
-      - 俄罗斯 TG@nfeng6#54 2
-      - 圣何塞 TG@nfeng6#89 2
-      - 日本 TG@nfeng6#66 2
-      - 美国 TG@nfeng6#12 2
-      - 香港 TG@nfeng6#27 2 2
-      - 香港 TG@nfeng6#33 2
-      - 香港 TG@nfeng6#57 IPLC专线 |2x 2
+      - 台湾 Basic 01 tg@nfeng6
+      - 台湾 Basic 02 tg@nfeng6
+      - 新加坡 Basic 01 tg@nfeng6
+      - 日本 Basic 01 tg@nfeng6
+      - 日本 Basic 02 tg@nfeng6
+      - 美国 Basic 01 tg@nfeng6
+      - 美国 Basic 02 tg@nfeng6
+      - 韩国 Basic 01 tg@nfeng6
+      - 香港 Basic 01 tg@nfeng6
+      - 香港 Basic 02 tg@nfeng6
+      - 香港 Basic 03 tg@nfeng6
+      - 台湾 Basic 01 tg@nfeng6 2
+      - 台湾 Basic 02 tg@nfeng6 2
+      - 新加坡 Basic 01 tg@nfeng6 2
+      - 日本 Basic 01 tg@nfeng6 2
+      - 日本 Basic 02 tg@nfeng6 2
+      - 美国 Basic 01 tg@nfeng6 2
+      - 美国 Basic 02 tg@nfeng6 2
+      - 韩国 Basic 01 tg@nfeng6 2
+      - 香港 Basic 01 tg@nfeng6 2
+      - 香港 Basic 02 tg@nfeng6 2
+      - 香港 Basic 03 tg@nfeng6 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -760,88 +262,28 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 TG@nfeng6#35
-      - 日本 TG@nfeng6#4
-      - 香港 TG@nfeng6#27
-      - 香港 TG@nfeng6#30
-      - 俄罗斯 TG@nfeng6#55
-      - 加拿大 TG@nfeng6#46
-      - 加拿大 TG@nfeng6#99
-      - 德国 TG@nfeng6#102
-      - 香港 TG@nfeng6#30 2
-      - 新加坡 TG@nfeng6#6
-      - 新加坡 TG@nfeng6#67
-      - 新加坡 TG@nfeng6#96
-      - 新加坡 TG@nfeng6#97
-      - 日本 TG@nfeng6#64
-      - 法国 TG@nfeng6#48
-      - 美国 TG@nfeng6#100
-      - 美国 TG@nfeng6#7
-      - 英国 TG@nfeng6#104
-      - 英国 TG@nfeng6#47
-      - 香港 TG@nfeng6#31
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x
-      - 香港 TG@nfeng6#8
-      - 台湾 TG@nfeng6#34
-      - 新加坡 TG@nfeng6#68
-      - 新加坡 TG@nfeng6#94
-      - 日本 TG@nfeng6#16
-      - 日本 TG@nfeng6#65
-      - 日本 TG@nfeng6#92
-      - 澳大利亚 TG@nfeng6#45
-      - 美国 TG@nfeng6#101
-      - 美国 TG@nfeng6#90
-      - 香港 TG@nfeng6#21
-      - 香港 TG@nfeng6#32
-      - 香港 TG@nfeng6#57 IPLC专线 |5x
-      - 俄罗斯 TG@nfeng6#54
-      - 圣何塞 TG@nfeng6#89
-      - 日本 TG@nfeng6#66
-      - 美国 TG@nfeng6#12
-      - 香港 TG@nfeng6#27 2
-      - 香港 TG@nfeng6#33
-      - 香港 TG@nfeng6#57 IPLC专线 |2x
-      - 香港 TG@nfeng6#35 2
-      - 日本 TG@nfeng6#4 2
-      - 香港 TG@nfeng6#27 3
-      - 香港 TG@nfeng6#30 3
-      - 俄罗斯 TG@nfeng6#55 2
-      - 加拿大 TG@nfeng6#46 2
-      - 加拿大 TG@nfeng6#99 2
-      - 德国 TG@nfeng6#102 2
-      - 香港 TG@nfeng6#30 2 2
-      - 新加坡 TG@nfeng6#6 2
-      - 新加坡 TG@nfeng6#67 2
-      - 新加坡 TG@nfeng6#96 2
-      - 新加坡 TG@nfeng6#97 2
-      - 日本 TG@nfeng6#64 2
-      - 法国 TG@nfeng6#48 2
-      - 美国 TG@nfeng6#100 2
-      - 美国 TG@nfeng6#7 2
-      - 英国 TG@nfeng6#104 2
-      - 英国 TG@nfeng6#47 2
-      - 香港 TG@nfeng6#31 2
-      - 香港 TG@nfeng6#56 IPLC专线 | 10x 2
-      - 香港 TG@nfeng6#8 2
-      - 台湾 TG@nfeng6#34 2
-      - 新加坡 TG@nfeng6#68 2
-      - 新加坡 TG@nfeng6#94 2
-      - 日本 TG@nfeng6#16 2
-      - 日本 TG@nfeng6#65 2
-      - 日本 TG@nfeng6#92 2
-      - 澳大利亚 TG@nfeng6#45 2
-      - 美国 TG@nfeng6#101 2
-      - 美国 TG@nfeng6#90 2
-      - 香港 TG@nfeng6#21 2
-      - 香港 TG@nfeng6#32 2
-      - 香港 TG@nfeng6#57 IPLC专线 |5x 2
-      - 俄罗斯 TG@nfeng6#54 2
-      - 圣何塞 TG@nfeng6#89 2
-      - 日本 TG@nfeng6#66 2
-      - 美国 TG@nfeng6#12 2
-      - 香港 TG@nfeng6#27 2 2
-      - 香港 TG@nfeng6#33 2
-      - 香港 TG@nfeng6#57 IPLC专线 |2x 2
+      - 台湾 Basic 01 tg@nfeng6
+      - 台湾 Basic 02 tg@nfeng6
+      - 新加坡 Basic 01 tg@nfeng6
+      - 日本 Basic 01 tg@nfeng6
+      - 日本 Basic 02 tg@nfeng6
+      - 美国 Basic 01 tg@nfeng6
+      - 美国 Basic 02 tg@nfeng6
+      - 韩国 Basic 01 tg@nfeng6
+      - 香港 Basic 01 tg@nfeng6
+      - 香港 Basic 02 tg@nfeng6
+      - 香港 Basic 03 tg@nfeng6
+      - 台湾 Basic 01 tg@nfeng6 2
+      - 台湾 Basic 02 tg@nfeng6 2
+      - 新加坡 Basic 01 tg@nfeng6 2
+      - 日本 Basic 01 tg@nfeng6 2
+      - 日本 Basic 02 tg@nfeng6 2
+      - 美国 Basic 01 tg@nfeng6 2
+      - 美国 Basic 02 tg@nfeng6 2
+      - 韩国 Basic 01 tg@nfeng6 2
+      - 香港 Basic 01 tg@nfeng6 2
+      - 香港 Basic 02 tg@nfeng6 2
+      - 香港 Basic 03 tg@nfeng6 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
