@@ -42,8 +42,8 @@ jobs:
          git config --local user.name "zhangkaigithub"
          git add subscribe/subs.txt
          git commit -m "更新订阅链接"
-    - name: 推送更改
-      uses:  ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.token }}
-        branch: main
+#     - name: 推送更改
+#       uses:  ad-m/github-push-action@master
+#       with:
+#         github_token: ${{ secrets.token }}
+#         branch: main
