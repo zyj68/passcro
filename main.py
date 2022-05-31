@@ -1,14 +1,14 @@
-import requests
-import json
-import time
-import re
-import logging
-import traceback
-import os
-import random
-import datetime
-# import utils
-import base64
+# import requests
+# import json
+# import time
+# import re
+# import logging
+# import traceback
+# import os
+# import random
+# import datetime
+# # import utils
+# import base64
 
 
 # def main(event, context):
@@ -45,6 +45,10 @@ import base64
 # if __name__ == '__main__':
     # main("", "")
 
+
+import urllib.request
+import os,re
+
 header = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
 }
@@ -57,9 +61,7 @@ def fetchsshadowshare(url):
     if not os.path.exists(dirs):
         os.makedirs(dirs)
     with open(dirs + '/' + 'subs.txt', 'w', encoding='utf-8') as f:
-        f.write(subnodes)
-        print('subs.txt' +'生成成功')
-
+        f.write(result)
 
 
 # 主函数入口
