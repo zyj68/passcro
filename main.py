@@ -46,7 +46,7 @@
     # main("", "")
 
 
-import urllib.request
+import requests
 import os,re
 
 header = {
