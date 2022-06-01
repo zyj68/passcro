@@ -63,7 +63,7 @@ def fetchsshadowshare(url):
     dirs = './subscribe'
     if not os.path.exists(dirs):
         os.makedirs(dirs)
-    with open(dirs + '/' + 'subs.txt', 'wb') as f:
+    with open(dirs + '/' + 'subs.txt', 'w', encoding='utf-8') as f:
         f.write(result)
 
 
