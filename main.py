@@ -47,11 +47,14 @@
 
 
 import requests
-import os,re
+import ssl,os,re
+
+context = ssl._create_unverified_context()
 
 header = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
 }
+
 def fetchsshadowshare(url):
     resp = requests.get(url,headers = header)
     result = resp.text.encode('utf-8').decode('utf-8')
@@ -60,7 +63,7 @@ def fetchsshadowshare(url):
     dirs = './subscribe'
     if not os.path.exists(dirs):
         os.makedirs(dirs)
-    with open(dirs + '/' + 'subs.txt', 'w', encoding='utf-8') as f:
+    with open(dirs + '/' + 'subs.txt', 'wb') as f:
         f.write(result)
 
 
