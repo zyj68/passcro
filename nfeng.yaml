@@ -5,55 +5,83 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_中国->🇹🇼_TW_台湾, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国, server: shcm.pdjc.cc, port: 42000, type: trojan, password: b7dcc148-c8a3-4173-931f-8ecf9413eb58, sni: shcm.pdjc.cc, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港->🇸🇬_SG_新加坡, server: azhk.r.optage.moe, port: 44605, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港->🇹🇼_TW_台湾, server: azhk.r.optage.moe, port: 44608, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港->🇧🇷_BR_巴西, server: azhk.r.optage.moe, port: 44612, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡 2, server: trojan1.udpgw.com, port: 443, type: trojan, password: affae2e0-e84b-11ec-b09f-1239d0255272, sni: trojan1.udpgw.com, skip-cert-verify: true, udp: true}
-  - {name: _US_美国, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 中国-tg频道:@bpjzx2, server: 116.129.254.65, port: 63086, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me.vpnhat}, udp: true}
+  - {name: 中国-tg频道:@bpjzx2 2, server: 120.241.236.152, port: 54101, type: ss, cipher: chacha20-ietf-poly1305, password: b2f1a0b4-1fbd-43b6-87bc-b5ab36b3c0f2, udp: true}
+  - {name: 美国-tg频道:@bpjzx2, server: 120.241.236.93, port: 51700, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true, udp: true}
+  - {name: 美国-tg频道:@bpjzx2 2, server: 120.241.236.93, port: 59143, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true, udp: true}
+  - {name: 香港-tg频道:@bpjzx2, server: 120.241.236.93, port: 46061, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true, udp: true}
+  - {name: 台湾-tg频道:@bpjzx2, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1c08f35bdafe74a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 330tw.fans8.xyz}, udp: true}
+  - {name: 中国-tg频道:@bpjzx2 3, server: 36.139.112.39, port: 21232, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /admin, ws-headers: {Host: tw.v2ssvps.com}, udp: true}
+  - {name: 美国-tg频道:@bpjzx2 3, server: azgy001.xiba1.xyz, port: 20714, type: trojan, password: 6089bbd2-2bef-3ee3-a329-1b1a4339d7ed, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国-tg频道:@bpjzx2 4, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 6089bbd2-2bef-3ee3-a329-1b1a4339d7ed, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中国-tg频道:@bpjzx2 4, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: 中国-tg频道:@bpjzx2 5, server: hn.zfnode.org, port: 20212, type: trojan, password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f, sni: hn.zfnode.org, skip-cert-verify: true, udp: true}
+  - {name: 中国-tg频道:@bpjzx2 6, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 美国-tg频道:@bpjzx2 5, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 中国-tg频道:@bpjzx2 7, server: shcm.pdjc.cc, port: 42000, type: trojan, password: b7dcc148-c8a3-4173-931f-8ecf9413eb58, sni: shcm.pdjc.cc, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇺🇸_US_美国
-      - _SG_新加坡
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇹🇼_TW_台湾
-      - _HK_香港->🇧🇷_BR_巴西
-      - _SG_新加坡 2
-      - _US_美国
+      - 中国-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 2
+      - 美国-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 2
+      - 香港-tg频道:@bpjzx2
+      - 台湾-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 6
+      - 新加坡-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 7
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇺🇸_US_美国
-      - _SG_新加坡
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇹🇼_TW_台湾
-      - _HK_香港->🇧🇷_BR_巴西
-      - _SG_新加坡 2
-      - _US_美国
+      - 中国-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 2
+      - 美国-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 2
+      - 香港-tg频道:@bpjzx2
+      - 台湾-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 6
+      - 新加坡-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 7
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇺🇸_US_美国
-      - _SG_新加坡
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇹🇼_TW_台湾
-      - _HK_香港->🇧🇷_BR_巴西
-      - _SG_新加坡 2
-      - _US_美国
+      - 中国-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 2
+      - 美国-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 2
+      - 香港-tg频道:@bpjzx2
+      - 台湾-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 6
+      - 新加坡-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 7
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,63 +100,89 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇺🇸_US_美国
-      - _SG_新加坡
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇹🇼_TW_台湾
-      - _HK_香港->🇧🇷_BR_巴西
-      - _SG_新加坡 2
-      - _US_美国
+      - 中国-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 2
+      - 美国-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 2
+      - 香港-tg频道:@bpjzx2
+      - 台湾-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 6
+      - 新加坡-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 7
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _CN_中国->🇹🇼_TW_台湾
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇹🇼_TW_台湾
-      - _HK_香港->🇧🇷_BR_巴西
+      - 香港-tg频道:@bpjzx2
+      - 台湾-tg频道:@bpjzx2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇺🇸_US_美国
-      - _SG_新加坡
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇹🇼_TW_台湾
-      - _HK_香港->🇧🇷_BR_巴西
-      - _SG_新加坡 2
-      - _US_美国
+      - 中国-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 2
+      - 美国-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 2
+      - 香港-tg频道:@bpjzx2
+      - 台湾-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 6
+      - 新加坡-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 7
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇺🇸_US_美国
-      - _SG_新加坡
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇹🇼_TW_台湾
-      - _HK_香港->🇧🇷_BR_巴西
-      - _SG_新加坡 2
-      - _US_美国
+      - 中国-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 2
+      - 美国-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 2
+      - 香港-tg频道:@bpjzx2
+      - 台湾-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 6
+      - 新加坡-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 7
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇺🇸_US_美国
-      - _SG_新加坡
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇹🇼_TW_台湾
-      - _HK_香港->🇧🇷_BR_巴西
-      - _SG_新加坡 2
-      - _US_美国
+      - 中国-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 2
+      - 美国-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 2
+      - 香港-tg频道:@bpjzx2
+      - 台湾-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 6
+      - 新加坡-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 7
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -144,14 +198,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇺🇸_US_美国
-      - _SG_新加坡
-      - _HK_香港->🇸🇬_SG_新加坡
-      - _HK_香港->🇹🇼_TW_台湾
-      - _HK_香港->🇧🇷_BR_巴西
-      - _SG_新加坡 2
-      - _US_美国
+      - 中国-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 2
+      - 美国-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 2
+      - 香港-tg频道:@bpjzx2
+      - 台湾-tg频道:@bpjzx2
+      - 中国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 3
+      - 美国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 4
+      - 中国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 6
+      - 新加坡-tg频道:@bpjzx2
+      - 美国-tg频道:@bpjzx2 5
+      - 中国-tg频道:@bpjzx2 7
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
