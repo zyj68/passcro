@@ -17,7 +17,7 @@ def safe_decode(s):
 def easyclash():
 
     try:
-        ctnt = requests.get('https://api.buliang0.cf/easyclash')
+        ctnt = requests.get('https://api.buliang0.cf/easyclash',headers = hdrs)
         yamltent = safe_decode(ctnt.text)
         dirs = './subscribe'
         if not os.path.exists(dirs):
@@ -27,7 +27,7 @@ def easyclash():
     except Exception as err:
         if err:
             try:
-                ctnt = requests.get('https://api.buliang0.cf/easyclash')
+                ctnt = requests.get('https://api.buliang0.cf/easyclash',headers = hdrs)
                 yamltent = safe_decode(ctnt.text)
                 dirs = './subscribe'
                 if not os.path.exists(dirs):
@@ -37,7 +37,7 @@ def easyclash():
             except Exception as err:
                 if err:                     
                     try:
-                        ctnt = requests.get('https://api.buliang0.cf/easyclash')
+                        ctnt = requests.get('https://api.buliang0.cf/easyclash',headers = hdrs)
                         yamltent = safe_decode(ctnt.text)
                         dirs = './subscribe'
                         if not os.path.exists(dirs):
