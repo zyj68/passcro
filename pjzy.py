@@ -37,18 +37,7 @@ def easyclash():
                     with open(dirs + '/' + 'easyclash.yaml', 'w', encoding='utf-8') as f:
                         f.write(yamltent)
             except Exception as err:
-                if err:                     
-                    try:
-                        ctnt = requests.get('https://api.buliang0.cf/easyclash',headers = hdrs)
-                        yamltent = safe_decode(ctnt.text)
-                        dirs = './subscribe'
-                        if not os.path.exists(dirs):
-                            os.makedirs(dirs)
-                        if rsp.status_code == 200:
-                            with open(dirs + '/' + 'easyclash.yaml', 'w', encoding='utf-8') as f:
-                                f.write(yamltent)
-                    except Exception:
-                        pass
+                pass
 
 
 
@@ -64,17 +53,7 @@ def pjzy():
             with open(dirs + '/' + 'pjzy.yaml', 'w', encoding='utf-8') as f:
                 f.write(yamltent)
     except Exception:
-        try:
-            rsp = requests.get(url,headers = hdrs)
-            yamltent = rsp.text.replace('(油管:破解资源君2.0)','')
-            dirs = './subscribe'
-            if not os.path.exists(dirs):
-                os.makedirs(dirs)
-            if rsp.status_code == 200:
-                with open(dirs + '/' + 'pjzy.yaml', 'w', encoding='utf-8') as f:
-                    f.write(yamltent)
-        except Exception:
-            pass
+        pass
 
 def Strongmiao168():
     url = 'https://raw.githubusercontent.com/Strongmiao168/Clash/main/'+time.strftime('%m%d')+'clash.yml'
@@ -88,18 +67,7 @@ def Strongmiao168():
             with open(dirs + '/' + 'Strongmiao168.yaml', 'w', encoding='utf-8') as f:
                 f.write(yamltent)
     except Exception:
-        try:
-            rsp = requests.get(url,headers = hdrs)
-            yamltent = rsp.text.replace('(油管:破解资源君2.0)','')
-            dirs = './subscribe'
-            if not os.path.exists(dirs):
-                os.makedirs(dirs)
-            if rsp.status_code == 200:
-                with open(dirs + '/' + 'Strongmiao168.yaml', 'w', encoding='utf-8') as f:
-                    f.write(yamltent)
-        except Exception:
-            pass
-
+        pass
 
 
 if __name__ == '__main__':
