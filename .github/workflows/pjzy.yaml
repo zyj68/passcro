@@ -40,7 +40,7 @@ jobs:
       run: |                 
          git config --local user.email "actions@gmail.com"
          git config --local user.name "zhkaction"
-         git add subscribe/pjzy.yaml
+         git add subscribe/*yaml
          git commit -m "更新订阅链接"
     - name: 推送更改
       uses:  ad-m/github-push-action@master
