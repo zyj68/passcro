@@ -34,13 +34,14 @@ jobs:
         pip install -r requirements.txt
     - name: 执行任务
       run: |
-        python pjzy.py
+        python ./utils/update.py
+        python ./utils/convertok.py
           
     - name: 提交更改
       run: |                 
          git config --local user.email "actions@gmail.com"
          git config --local user.name "zhkaction"
-         git add subscribe/*yaml
+         git add subs/*yaml
          git commit -m "更新订阅链接"
     - name: 推送更改
       uses:  ad-m/github-push-action@master
