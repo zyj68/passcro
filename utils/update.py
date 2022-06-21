@@ -20,10 +20,19 @@ def safe_decode(s):
         s = ori
     return s
 
+def safe_decode(s):
+    ori = s
+    try:
+        s = s + '=' * (4 - len(s) % 4) if len(s) % 4 else s
+        s = base64.urlsafe_b64decode(s).decode()
+    except Exception as er:
+        s = ori
+    return s
+
 def easyclash():
 
     try:
-        ctnt = requests.get('https://api.buliang0.cf/easyclash',headers = hdrs)
+        ctnt = requests.get('https://api.buliang0.cf/easyclash')
         yamltent = safe_decode(ctnt.text)
         dirs = './subs'
         if not os.path.exists(dirs):
@@ -33,8 +42,9 @@ def easyclash():
                 f.write(yamltent)
     except Exception as err:
         if err:
+            time.sleep(2)
             try:
-                ctnt = requests.get('https://api.buliang0.cf/easyclash',headers = hdrs)
+                ctnt = requests.get('https://api.buliang0.cf/easyclash')
                 yamltent = safe_decode(ctnt.text)
                 dirs = './subs'
                 if not os.path.exists(dirs):
@@ -43,7 +53,17 @@ def easyclash():
                     with open(dirs + '/' + 'easy.yaml', 'w', encoding='utf-8') as f:
                         f.write(yamltent)
             except Exception as err:
-                pass
+                if err:
+                    time.sleep(2)
+                    try:
+                        ctnt = requests.get('https://api.buliang0.cf/easyclash')
+                        yamltent = safe_decode(ctnt.text)
+                        dirs = './subs'
+                        if not os.path.exists(dirs):
+                            os.makedirs(dirs)
+                        if rsp.status_code == 200:
+                            with open(dirs + '/' + 'easy.yaml', 'w', encoding='utf-8') as f:
+                                f.write(yamltent)
 
 
 
