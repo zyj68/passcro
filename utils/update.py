@@ -81,7 +81,7 @@ def pjzy():
     except Exception:
         pass
 
-def Strongmiao168():
+def miao():
     url = 'https://raw.githubusercontent.com/Strongmiao168/Clash/main/'+time.strftime('%m%d')+'clash.yml'
     try:
         rsp = requests.get(url,headers = hdrs)
@@ -100,5 +100,5 @@ if __name__ == '__main__':
 
     pjzy()
     easyclash()
-    Strongmiao168()
+    miao()
 
