@@ -1,0 +1,1273 @@
+port: 7890
+socks-port: 7891
+mode: rule
+log-level: silent
+external-controller: 127.0.0.1:9090
+proxies:
+- {name: 更多免费高速v2ray、clash节点:www.v2rayfree.eu.or, server: www.v2rayfree.eu.org, port: 443, type: ss, cipher: aes-128-gcm, password: 6601fb90e9b3, udp: true}
+- {name: v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 1, server: 51.81.223.19, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: None, tls: false, skip-cert-verify: false, udp: true}
+- {name: v2rayfree.eu.org - 日本东京樱花网络数据中心 2, server: back.myuuusss.com, port: 443, type: vmess, uuid: 8bc68e0d-3c27-4ecd-8672-4824cb7eab2b, alterId: 0, cipher: None, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: back.myuuusss.com}}, udp: true}
+- {name: v2rayfree.eu.org - 日本  3, server: 146.56.47.161, port: 80, type: vmess, uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e, alterId: 0, cipher: None, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 146.56.47.161}}, udp: true}
+- {name: v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 4, server: 51.81.223.6, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: None, tls: false, skip-cert-verify: false, udp: true}
+- {name: v2rayfree.eu.org - 美国惠普HP 5, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 加拿大  6, server: 67us01.fans8.xyz, port: 443, type: trojan, password: eea69c69-9989-4576-8b60-f6476e694bd7, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 7, server: v47.v2dns.bar, port: 2052, type: vmess, uuid: 0c68af8a-961a-3065-a3a7-1800ebc70bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v47-unlimitndxd, headers: {Host: v47.v2dns.bar}}, udp: true}
+- {name: v2rayfree.eu.org - 美国Nokia 8, server: ss2.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 美国  9, server: wireless.starspace.link, port: 443, type: trojan, password: 5LN8SGTqxk336nFg, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 奥地利  1, server: 92.223.93.233, port: 1035, type: ss, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg, udp: true}
+- {name: v2rayfree.eu.org - 加拿大  11, server: 67tw01.fans8.xyz, port: 443, type: trojan, password: eea69c69-9989-4576-8b60-f6476e694bd7, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 美国  12, server: ga.gnailiad.ga, port: 23578, type: trojan, password: aBfOmU3irR, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 俄罗斯莫斯科Melbicom数据中心 1, server: 213.183.53.208, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+- {name: v2rayfree.eu.org - 美国  14, server: silicon.starspace.link, port: 443, type: trojan, password: 4ZPDeqJ6g766UKDJ, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 中国阿里云 15, server: 613hk.fans8.xyz, port: 443, type: trojan, password: eea69c69-9989-4576-8b60-f6476e694bd7, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 美国弗吉尼亚州阿什本Oracle云计算数据中心 16, server: usfree1.jiantian.xyz, port: 23425, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 美国CloudFlare节点 17, server: app.ssfree.ru, port: 443, type: vmess, uuid: 0abe8c32-f0b2-11ec-bc92-000017022008, alterId: 64, cipher: None, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /getweather, headers: {Host: app.ssfree.ru}}, udp: true}
+- {name: v2rayfree.eu.org - 美国弗吉尼亚州阿什本Oracle云计算数据中心 18, server: usfree2.jiantian.xyz, port: 32453, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 希腊  19, server: gnailiad.tk, port: 1443, type: vmess, uuid: 84c7039b-1d1e-4b78-aefd-1268e9c17f3d, alterId: 0, cipher: None, tls: true, skip-cert-verify: false, udp: true}
+- {name: v2rayfree.eu.org - 新加坡Linode数据中心 20, server: w13.udpgw.com, port: 443, type: trojan, password: 16877c70-e7b8-11ec-99f2-1239d0255272, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 新加坡Linode数据中心 21, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 欧盟  22, server: v2.ssrsub.com, port: 153, type: vmess, uuid: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: d76bb35696.laowanxiang.com}}, udp: true}
+- {name: v2rayfree.eu.org - 加拿大  23, server: bai-piao-wang-zhe.hk2.jackson2025.cf, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: None, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 527hk1.fans8.xyz}}, udp: true}
+- {name: v2rayfree.eu.org - 香港BGP.NET数据中心 24, server: 180.215.196.10, port: 39043, type: vmess, uuid: 1b2f44e4-a810-48a8-b620-a4567b46c9b7, alterId: 0, cipher: None, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 180.215.196.10}}, udp: true}
+- {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25, server: ca.922833.xyz, port: 443, type: vmess, uuid: 1c53df45-de66-4d2c-8438-41c131a4065c, alterId: 0, cipher: None, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess-ws, headers: {Host: ca.922833.xyz}}, udp: true}
+- {name: v2rayfree.eu.org - 俄罗斯  2, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+- {name: v2rayfree.eu.org - 英国  27, server: inap008.xmrth-node.xyz, port: 12265, type: vmess, uuid: 53ad95b1-8693-34e3-98d7-2010ad24aaf9, alterId: 2, cipher: None, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: inap008.xmrth-node.xyz}}, udp: true}
+- {name: v2rayfree.eu.org - 美国得克萨斯州达拉斯Linode数据中心 28, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: None, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}, udp: true}
+- {name: v2rayfree.eu.org - 法国OVH数据中心 29, server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: 54.37.192.112}}, udp: true}
+- {name: v2rayfree.eu.org - 加拿大  30, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: None, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 330tw.fans8.xyz}}, udp: true}
+- {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 31, server: lu1.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /go, headers: {Host: lu1.gogogoo.cyou}}, udp: true}
+- {name: v2rayfree.eu.org - 加拿大  32, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1c08f35bdafe74a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 330tw.fans8.xyz}}, udp: true}
+- {name: v2rayfree.eu.org - 加拿大  33, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1c08f35bdafe74a6a386907aa, alterId: 2, cipher: None, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+- {name: v2rayfree.eu.org - 加拿大  34, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: None, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+- {name: v2rayfree.eu.org - 俄罗斯  35, server: hkbgp1.jiantian.xyz, port: 14326, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 美国  36, server: gnailiad.ga, port: 39208, type: trojan, password: swXgcgRW7p, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 美国CloudFlare节点 37, server: sg01.czsx1624.tk, port: 443, type: vmess, uuid: d002b422-eace-4e01-bf58-e4bb0bcfe7af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /3a8545177/, headers: {Host: sg01.czsx1624.tk}}, udp: true}
+- {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 38, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 57229afb-d4e4-426e-bfdc-18fc1f3267fd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: v1.ssrsub.com}}, udp: true}
+- {name: v2rayfree.eu.org - 美国CloudFlare节点 39, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: v1.ssrsub.com}}, udp: true}
+- {name: v2rayfree.eu.org - 美国  40, server: gnailiad.gq, port: 2443, type: vmess, uuid: 0c500810-8ae6-44c4-86e4-f8230cb75e8c, alterId: 0, cipher: None, tls: true, skip-cert-verify: false, udp: true}
+- {name: v2rayfree.eu.org - 美国  41, server: gnailiad.gq, port: 59484, type: vmess, uuid: f377c443-b6a5-40ef-c52c-a0ba721805ff, alterId: 0, cipher: None, tls: true, skip-cert-verify: false, udp: true}
+- {name: v2rayfree.eu.org - 新加坡Amazon数据中心 42, server: gy02.20220512.cyou, port: 56655, type: trojan, password: 4021eb2b-2e7c-4bd8-a66a-a350a661f320, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 广东省江门市移动 43, server: scloud51.jafiyun.life, port: 22051, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 广东省江门市移动 44, server: scloud29.jafiyun.life, port: 22029, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, skip-cert-verify: true}
+- {name: v2rayfree.eu.org - 香港特别行政区 45, server: jp06.jafiyun.life, port: 21233, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, skip-cert-verify: true}
+proxy-groups:
+- name: Proxy
+  type: select
+  proxies:
+  - automatic
+  - 如有疑问咨询TG@beikui_bot
+  - 🇺🇸 Lv3 美国 01 IPL
+  - 北京移动-香港HKT-dip_1
+  - 北京移动-香港HGC-dip_1
+  - 北京移动-台北Seednet-dip_2
+  - 北京移动-LAX-Krypt_1
+  - 北京移动-Orange-Krypt_2
+  - 北京移动-LAX-Aiyun-dip_2
+  - 北京移动-台北Seednet-dip_3
+  - 北京移动-台北Seednet-dip_6
+  - 北京移动-Singapore-M247_3
+  - 北京移动-香港HGC-dip_2
+  - 北京移动-香港HKT-dip_3
+  - 北京移动-Tokyo-M247_2
+  - 台湾-1号 | 解锁流媒体 001
+  - 台湾-3号 | 解锁流媒体
+  - 台湾-2号 | 解锁流媒体 001
+  - 台湾-广州移动负载均衡 | 解锁流媒体
+  - 日本NTT-1号 | 解锁流媒体
+  - 日本NTT-2号 | 解锁流媒体
+  - 日本NTT-广州移动负载均衡 | 解锁流媒体
+  - 越南-2号
+  - 越南-3号 001
+  - 越南-4号
+  - 台湾Hinet | 解锁流媒体
+  - 日本①
+  - 日本②
+  - 香港②
+  - 香港04
+  - 美国03
+  - 印度01
+  - 香港HTK-广港隧�%9 001
+  - 香港HTK-杭港BGP隧�%9 001
+  - 香港Azure-杭港BGP隧�%9 001
+  - 香港BGP-广港隧�%9 001
+  - 香港BGP-杭港BGP隧�%9 001
+  - 香港HTK-广港隧�%9 002
+  - 香港HTK-杭港BGP隧�%9 002
+  - 香港Azure-杭港BGP隧�%9 002
+  - 香港BGP-广港隧�%9 002
+  - 香港BGP-杭港BGP隧�%9 002
+  - 日本NTT-2号
+  - 日本NTT-广州移动 | (中转)
+  - 台湾-1号 | 解锁流媒体 002
+  - 台湾-2号 | 解锁流媒体 002
+  - 台湾-广州移动负载均衡(中转) | 解锁流媒体
+  - 越南-1号
+  - 越南-3号 002
+  - 越南 | 广州移动(中转)
+  - 香港 001
+  - 香港 002
+  - 香港 003
+  - 🇭🇰 电信联通
+  - 🇸🇬 电信联通专线
+  - 俄罗斯
+  - 新加坡
+  - 新加坡2
+  - 瑞士
+  - 美国 001
+  - 美国INAP
+  - 荷兰
+  - TW02-V2-直连
+  - US02-V2-直连
+  - SG01-V2-直连 001
+  - SG02-V2-直连
+  - 香港 004
+  - 80 | 春川 | 001
+  - 80 | 春川 | 002
+  - 443 | 春川 |
+  - 美国 002
+  - SG01-V2-直连 002
+  - Amazon_Tokyo
+  - 莫斯科
+  - 春川 |
+  - 春川
+  - 🇨🇳 中国 广东省广州市 腾讯云 免流443端口
+  - 日本-tg频道:@bpjzx2
+  - "美国-tg频道:@bpjzx2\r 001"
+  - 澳大利亚-tg频道:@bpjzx2 001
+  - "新加坡-tg频道:@bpjzx2\r"
+  - "英国-tg频道:@bpjzx2\r 001"
+  - "英国-tg频道:@bpjzx2\r 002"
+  - "香港-tg频道:@bpjzx2\r 001"
+  - "中国-tg频道:@bpjzx2\r 001"
+  - 中国-tg频道:@bpjzx2 001
+  - 中国-tg频道:@bpjzx2 002
+  - "德国-tg频道:@bpjzx2\r 001"
+  - "阿联酋-tg频道:@bpjzx2\r"
+  - "美国-tg频道:@bpjzx2\r 002"
+  - "卢森堡-tg频道:@bpjzx2\r"
+  - 澳大利亚-tg频道:@bpjzx2 002
+  - 中国-tg频道:@bpjzx2 003
+  - "美国-tg频道:@bpjzx2\r 003"
+  - 中国-tg频道:@bpjzx2 004
+  - "越南-tg频道:@bpjzx2\r 001"
+  - 中国-tg频道:@bpjzx2 005
+  - "中国-tg频道:@bpjzx2\r 002"
+  - "越南-tg频道:@bpjzx2\r 002"
+  - 中国-tg频道:@bpjzx2 006
+  - 中国-tg频道:@bpjzx2 007
+  - "中国-tg频道:@bpjzx2\r 003"
+  - 中国-tg频道:@bpjzx2 008
+  - 中国-tg频道:@bpjzx2 009
+  - 中国-tg频道:@bpjzx2 010
+  - "韩国-tg频道:@bpjzx2\r 001"
+  - "德国-tg频道:@bpjzx2\r 002"
+  - 中国-tg频道:@bpjzx2 011
+  - 中国-tg频道:@bpjzx2 012
+  - "越南-tg频道:@bpjzx2\r 003"
+  - 中国-tg频道:@bpjzx2 013
+  - 中国-tg频道:@bpjzx2 014
+  - "越南-tg频道:@bpjzx2\r 004"
+  - "韩国-tg频道:@bpjzx2\r 002"
+  - "香港-tg频道:@bpjzx2\r 002"
+  - "韩国-tg频道:@bpjzx2\r 003"
+  - "香港-tg频道:@bpjzx2\r 003"
+  - "中国-tg频道:@bpjzx2\r 004"
+  - "中国-tg频道:@bpjzx2\r 005"
+  - "中国-tg频道:@bpjzx2\r 006"
+  - "中国-tg频道:@bpjzx2\r 007"
+  - 中国-tg频道:@bpjzx2 015
+  - "中国-tg频道:@bpjzx2\r 008"
+  - 中国-tg频道:@bpjzx2 016
+  - 🔈更新于06/21
+  - 新加坡(TG频道:@kxswa) 001
+  - 新加坡(TG频道:@kxswa) 002
+  - 越南(TG频道:@kxswa) 001
+  - 越南(TG频道:@kxswa) 002
+  - 越南(TG频道:@kxswa) 003
+  - 美国(TG频道:@kxswa) 001
+  - 美国(TG频道:@kxswa) 002
+  - 日本(TG频道:@kxswa) 001
+  - 美国(TG频道:@kxswa) 003
+  - (TG频道:@kxswa) 001
+  - (TG频道:@kxswa) 002
+  - 中国(TG频道:@kxswa)
+  - 美国(TG频道:@kxswa) 004
+  - (TG频道:@kxswa) 003
+  - 日本(TG频道:@kxswa) 002
+  - 日本(TG频道:@kxswa) 003
+  - 台湾(TG频道:@kxswa) 001
+  - (TG频道:@kxswa) 004
+  - 英国(TG频道:@kxswa) 001
+  - 美国(TG频道:@kxswa) 005
+  - 英国(TG频道:@kxswa) 002
+  - 美国(TG频道:@kxswa) 006
+  - 台湾(TG频道:@kxswa) 002
+  - 德国(TG频道:@kxswa)
+  - 美国(TG频道:@kxswa) 007
+  - 美国02|公益|×0.1
+  - 🇺🇲 美国 | Trojan | 體驗節點 | C | 2.5X | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+  - 🇺🇲 美国 | Trojan | 體驗節點 | D | 2.5X | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+  - 台湾家宽-广州微�%A
+  - 香港家庭宽频|NF解锁|SS|A0
+  - 香港IDC宽频|NF解锁|SS|A0
+  - 香港 A03^
+  - 🇭🇰 香港丝袜奶茶 02-D
+  - 台湾 I5 | IEPL,限时体验8小时 | 0x
+  - 🌎全球直连①
+  - 稳定高速可购买付费节点↓
+  - 套餐到期：长期有效
+  - 🌎全球直连③
+  - 🇯🇵 Unlimited Nhật Bản (1)
+  - 🇻🇳 Unlimited Việt Nam (16)
+  - 🇻🇳 Unlimited Việt Nam (21)
+  - 🇻🇳 Unlimited Việt Nam (9)
+  - 🇻🇳 Unlimited Việt Nam (6)
+  - TW02-V2-直连
+  - TW01-V2-直连
+  - 美国 001
+  - 🇺🇲 美国2
+  - 🇺🇲 美国3
+  - 🇺🇲 美国4
+  - 香港A-限速
+  - 香港B-限速
+  - 香港 [直连B] 1x
+  - 日本 [免流] 0.1x
+  - 台�%B
+  - 新加坡
+  - 香港
+  - 美国 002
+  - 台湾1
+  - 美国1
+  - github.com/freefq - 日本  1
+  - github.com/freefq - 中国阿里云 2
+  - github.com/freefq - 美国Nokia 3
+  - github.com/freefq - 美国CloudFlare公司CDN节点 4
+  - github.com/freefq - 美国惠普HP 5
+  - github.com/freefq - 美国  
+  - github.com/freefq - 美国加利福尼亚州洛杉矶Psychz Networks 7
+  - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 8
+  - github.com/freefq - 美国弗吉尼亚州阿什本Oracle云计算数据中心 9
+  - github.com/freefq - 乌克兰  10
+  - github.com/freefq - 俄罗斯  11
+  - github.com/freefq - 美国  12
+  - github.com/freefq - 加拿大  13
+  - github.com/freefq - 日本  14
+  - github.com/freefq - 俄罗斯  1
+  - github.com/freefq - 俄罗斯  16
+  - github.com/freefq - 欧盟  17
+  - github.com/freefq - 美国CloudFlare节点 18
+  - github.com/freefq - 加拿大  19
+  - github.com/freefq - 法国OVH数据中心 20
+  - github.com/freefq - 加拿大  21
+  - github.com/freefq - 印度孟买腾讯云 22
+  - github.com/freefq - 加拿大  23
+  - github.com/freefq - 欧盟  24
+  - github.com/freefq - 美国CloudFlare节点 25
+  - github.com/freefq - 俄罗斯  26
+  - github.com/freefq - 加拿大  27
+  - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 2
+  - github.com/freefq - 美国CloudFlare节点 29
+  - github.com/freefq - 美国CloudFlare公司CDN节点 30
+  - github.com/freefq - 香港BGP.NET数据中心 31
+  - github.com/freefq - 香港特别行政区 32
+  - github.com/freefq - 美国  33
+  - github.com/freefq - 新加坡Linode数据中心 34
+  - github.com/freefq - 美国弗吉尼亚州阿什本Oracle云计算数据中心 35
+  - github.com/freefq - 美国惠普公司 36
+  - github.com/freefq - 日本  37
+  - github.com/freefq - 美国  38
+  - github.com/freefq - 美国加利福尼亚州洛杉矶DDOSing Network 39
+  - Relay_CN-AU_08
+  - 台湾 1
+  - 台湾 2
+  - 台湾 3
+  - 台湾(阿伟) 4
+  - 台湾(阿伟) 5
+  - 台湾(阿伟) 6
+  - 台湾(阿伟) 7
+  - 台湾(阿伟) 8
+  - 韩国(阿伟) 1
+  - 韩国(阿伟) 2
+  - 韩国(阿伟) 3
+  - 韩国(阿伟) 4
+  - 日本(阿伟) 1
+  - 日本(阿伟) 2
+  - 日本(阿伟) 3
+  - 日本(阿伟) 4
+  - 日本(阿伟) 5
+  - 日本(阿伟) 6
+  - 日本(阿伟) 7
+  - 日本(阿伟) 8
+  - 日本(阿伟) 9
+  - 日本(阿伟) 10
+  - 日本(阿伟) 11
+  - 香港(阿伟) 1
+  - 香港(阿伟) 2
+  - 香港(阿伟) 3
+  - 香港(阿伟) 4
+  - 香港(阿伟) 5
+  - 香港(阿伟) 6
+  - 香港(阿伟) 7
+  - 香港(阿伟) 8
+  - 香港(阿伟) 9
+  - 香港(阿伟) 10
+  - 香港(阿伟) 11
+  - 香港(阿伟) 12
+  - 香港(阿伟) 13
+  - 香港(阿伟) 14
+  - 香港(阿伟) 15
+  - 香港(阿伟) 16
+  - 香港(阿伟) 17
+  - 新加坡(阿伟) 0
+  - 新加坡(阿伟) 1
+  - 新加坡(阿伟) 2
+  - 新加坡(阿伟) 3
+  - 新加坡(阿伟) 4
+  - 新加坡(阿伟) 5
+  - 新加坡(阿伟) 6
+  - 新加坡(阿伟) 7
+  - 新加坡(阿伟) 8
+  - 新加坡(阿伟) 9
+  - 新加坡(阿伟) 10
+  - 新加坡(阿伟) 11
+  - 美国(阿伟)
+  - 美国(阿伟) 2
+  - 美国(阿伟) 3
+  - 美国(阿伟) 4
+  - 美国(阿伟) 5
+  - 美国(阿伟) 6
+  - 美国(阿伟) 7
+  - 美国(阿伟) 8
+  - 美国(阿伟) 9
+  - 美国(阿伟) 10
+  - 美国(阿伟) 11
+  - 美国(阿伟) 12
+  - 美国(阿伟) 13
+  - 美国(阿伟) 14 001
+  - 美国(阿伟) 15
+  - 美国(阿伟) 16
+  - 美国(阿伟) 17
+  - 美国(阿伟) 18
+  - 美国(阿伟) 19
+  - 美国(阿伟) 20
+  - 美国(阿伟) 21
+  - 美国(阿伟) 22
+  - 美国(阿伟) 23 001
+  - 美国(阿伟) 24
+  - 美国(阿伟) 25
+  - 美国(阿伟) 26
+  - 美国(阿伟) 27
+  - 美国(阿伟) 28
+  - 美国(阿伟) 29
+  - 美国(阿伟) 30
+  - 美国(阿伟) 31
+  - 美国(阿伟) 14 002
+  - 美国(阿伟) 23 002
+  - 俄罗斯(阿伟)
+  - 英国(阿伟)
+  - 英国(阿伟) 2
+  - 瑞士(阿伟)
+  - 澳大利亚(阿伟)
+  - 更多免费高速v2ray、clash节点:www.v2rayfree.eu.or
+  - v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 1
+  - v2rayfree.eu.org - 日本东京樱花网络数据中心 2
+  - v2rayfree.eu.org - 日本  3
+  - v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 4
+  - v2rayfree.eu.org - 美国惠普HP 5
+  - v2rayfree.eu.org - 加拿大  6
+  - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 7
+  - v2rayfree.eu.org - 美国Nokia 8
+  - v2rayfree.eu.org - 美国  9
+  - v2rayfree.eu.org - 奥地利  1
+  - v2rayfree.eu.org - 加拿大  11
+  - v2rayfree.eu.org - 美国  12
+  - v2rayfree.eu.org - 俄罗斯莫斯科Melbicom数据中心 1
+  - v2rayfree.eu.org - 美国  14
+  - v2rayfree.eu.org - 中国阿里云 15
+  - v2rayfree.eu.org - 美国弗吉尼亚州阿什本Oracle云计算数据中心 16
+  - v2rayfree.eu.org - 美国CloudFlare节点 17
+  - v2rayfree.eu.org - 美国弗吉尼亚州阿什本Oracle云计算数据中心 18
+  - v2rayfree.eu.org - 希腊  19
+  - v2rayfree.eu.org - 新加坡Linode数据中心 20
+  - v2rayfree.eu.org - 新加坡Linode数据中心 21
+  - v2rayfree.eu.org - 欧盟  22
+  - v2rayfree.eu.org - 加拿大  23
+  - v2rayfree.eu.org - 香港BGP.NET数据中心 24
+  - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
+  - v2rayfree.eu.org - 俄罗斯  2
+  - v2rayfree.eu.org - 英国  27
+  - v2rayfree.eu.org - 美国得克萨斯州达拉斯Linode数据中心 28
+  - v2rayfree.eu.org - 法国OVH数据中心 29
+  - v2rayfree.eu.org - 加拿大  30
+  - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 31
+  - v2rayfree.eu.org - 加拿大  32
+  - v2rayfree.eu.org - 加拿大  33
+  - v2rayfree.eu.org - 加拿大  34
+  - v2rayfree.eu.org - 俄罗斯  35
+  - v2rayfree.eu.org - 美国  36
+  - v2rayfree.eu.org - 美国CloudFlare节点 37
+  - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 38
+  - v2rayfree.eu.org - 美国CloudFlare节点 39
+  - v2rayfree.eu.org - 美国  40
+  - v2rayfree.eu.org - 美国  41
+  - v2rayfree.eu.org - 新加坡Amazon数据中心 42
+  - v2rayfree.eu.org - 广东省江门市移动 43
+  - v2rayfree.eu.org - 广东省江门市移动 44
+  - v2rayfree.eu.org - 香港特别行政区 45
+- name: automatic
+  type: url-test
+  proxies:
+  - 如有疑问咨询TG@beikui_bot
+  - 🇺🇸 Lv3 美国 01 IPL
+  - 北京移动-香港HKT-dip_1
+  - 北京移动-香港HGC-dip_1
+  - 北京移动-台北Seednet-dip_2
+  - 北京移动-LAX-Krypt_1
+  - 北京移动-Orange-Krypt_2
+  - 北京移动-LAX-Aiyun-dip_2
+  - 北京移动-台北Seednet-dip_3
+  - 北京移动-台北Seednet-dip_6
+  - 北京移动-Singapore-M247_3
+  - 北京移动-香港HGC-dip_2
+  - 北京移动-香港HKT-dip_3
+  - 北京移动-Tokyo-M247_2
+  - 台湾-1号 | 解锁流媒体 001
+  - 台湾-3号 | 解锁流媒体
+  - 台湾-2号 | 解锁流媒体 001
+  - 台湾-广州移动负载均衡 | 解锁流媒体
+  - 日本NTT-1号 | 解锁流媒体
+  - 日本NTT-2号 | 解锁流媒体
+  - 日本NTT-广州移动负载均衡 | 解锁流媒体
+  - 越南-2号
+  - 越南-3号 001
+  - 越南-4号
+  - 台湾Hinet | 解锁流媒体
+  - 日本①
+  - 日本②
+  - 香港②
+  - 香港04
+  - 美国03
+  - 印度01
+  - 香港HTK-广港隧�%9 001
+  - 香港HTK-杭港BGP隧�%9 001
+  - 香港Azure-杭港BGP隧�%9 001
+  - 香港BGP-广港隧�%9 001
+  - 香港BGP-杭港BGP隧�%9 001
+  - 香港HTK-广港隧�%9 002
+  - 香港HTK-杭港BGP隧�%9 002
+  - 香港Azure-杭港BGP隧�%9 002
+  - 香港BGP-广港隧�%9 002
+  - 香港BGP-杭港BGP隧�%9 002
+  - 日本NTT-2号
+  - 日本NTT-广州移动 | (中转)
+  - 台湾-1号 | 解锁流媒体 002
+  - 台湾-2号 | 解锁流媒体 002
+  - 台湾-广州移动负载均衡(中转) | 解锁流媒体
+  - 越南-1号
+  - 越南-3号 002
+  - 越南 | 广州移动(中转)
+  - 香港 001
+  - 香港 002
+  - 香港 003
+  - 🇭🇰 电信联通
+  - 🇸🇬 电信联通专线
+  - 俄罗斯
+  - 新加坡
+  - 新加坡2
+  - 瑞士
+  - 美国 001
+  - 美国INAP
+  - 荷兰
+  - TW02-V2-直连
+  - US02-V2-直连
+  - SG01-V2-直连 001
+  - SG02-V2-直连
+  - 香港 004
+  - 80 | 春川 | 001
+  - 80 | 春川 | 002
+  - 443 | 春川 |
+  - 美国 002
+  - SG01-V2-直连 002
+  - Amazon_Tokyo
+  - 莫斯科
+  - 春川 |
+  - 春川
+  - 🇨🇳 中国 广东省广州市 腾讯云 免流443端口
+  - 日本-tg频道:@bpjzx2
+  - "美国-tg频道:@bpjzx2\r 001"
+  - 澳大利亚-tg频道:@bpjzx2 001
+  - "新加坡-tg频道:@bpjzx2\r"
+  - "英国-tg频道:@bpjzx2\r 001"
+  - "英国-tg频道:@bpjzx2\r 002"
+  - "香港-tg频道:@bpjzx2\r 001"
+  - "中国-tg频道:@bpjzx2\r 001"
+  - 中国-tg频道:@bpjzx2 001
+  - 中国-tg频道:@bpjzx2 002
+  - "德国-tg频道:@bpjzx2\r 001"
+  - "阿联酋-tg频道:@bpjzx2\r"
+  - "美国-tg频道:@bpjzx2\r 002"
+  - "卢森堡-tg频道:@bpjzx2\r"
+  - 澳大利亚-tg频道:@bpjzx2 002
+  - 中国-tg频道:@bpjzx2 003
+  - "美国-tg频道:@bpjzx2\r 003"
+  - 中国-tg频道:@bpjzx2 004
+  - "越南-tg频道:@bpjzx2\r 001"
+  - 中国-tg频道:@bpjzx2 005
+  - "中国-tg频道:@bpjzx2\r 002"
+  - "越南-tg频道:@bpjzx2\r 002"
+  - 中国-tg频道:@bpjzx2 006
+  - 中国-tg频道:@bpjzx2 007
+  - "中国-tg频道:@bpjzx2\r 003"
+  - 中国-tg频道:@bpjzx2 008
+  - 中国-tg频道:@bpjzx2 009
+  - 中国-tg频道:@bpjzx2 010
+  - "韩国-tg频道:@bpjzx2\r 001"
+  - "德国-tg频道:@bpjzx2\r 002"
+  - 中国-tg频道:@bpjzx2 011
+  - 中国-tg频道:@bpjzx2 012
+  - "越南-tg频道:@bpjzx2\r 003"
+  - 中国-tg频道:@bpjzx2 013
+  - 中国-tg频道:@bpjzx2 014
+  - "越南-tg频道:@bpjzx2\r 004"
+  - "韩国-tg频道:@bpjzx2\r 002"
+  - "香港-tg频道:@bpjzx2\r 002"
+  - "韩国-tg频道:@bpjzx2\r 003"
+  - "香港-tg频道:@bpjzx2\r 003"
+  - "中国-tg频道:@bpjzx2\r 004"
+  - "中国-tg频道:@bpjzx2\r 005"
+  - "中国-tg频道:@bpjzx2\r 006"
+  - "中国-tg频道:@bpjzx2\r 007"
+  - 中国-tg频道:@bpjzx2 015
+  - "中国-tg频道:@bpjzx2\r 008"
+  - 中国-tg频道:@bpjzx2 016
+  - 🔈更新于06/21
+  - 新加坡(TG频道:@kxswa) 001
+  - 新加坡(TG频道:@kxswa) 002
+  - 越南(TG频道:@kxswa) 001
+  - 越南(TG频道:@kxswa) 002
+  - 越南(TG频道:@kxswa) 003
+  - 美国(TG频道:@kxswa) 001
+  - 美国(TG频道:@kxswa) 002
+  - 日本(TG频道:@kxswa) 001
+  - 美国(TG频道:@kxswa) 003
+  - (TG频道:@kxswa) 001
+  - (TG频道:@kxswa) 002
+  - 中国(TG频道:@kxswa)
+  - 美国(TG频道:@kxswa) 004
+  - (TG频道:@kxswa) 003
+  - 日本(TG频道:@kxswa) 002
+  - 日本(TG频道:@kxswa) 003
+  - 台湾(TG频道:@kxswa) 001
+  - (TG频道:@kxswa) 004
+  - 英国(TG频道:@kxswa) 001
+  - 美国(TG频道:@kxswa) 005
+  - 英国(TG频道:@kxswa) 002
+  - 美国(TG频道:@kxswa) 006
+  - 台湾(TG频道:@kxswa) 002
+  - 德国(TG频道:@kxswa)
+  - 美国(TG频道:@kxswa) 007
+  - 美国02|公益|×0.1
+  - 🇺🇲 美国 | Trojan | 體驗節點 | C | 2.5X | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+  - 🇺🇲 美国 | Trojan | 體驗節點 | D | 2.5X | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
+  - 台湾家宽-广州微�%A
+  - 香港家庭宽频|NF解锁|SS|A0
+  - 香港IDC宽频|NF解锁|SS|A0
+  - 香港 A03^
+  - 🇭🇰 香港丝袜奶茶 02-D
+  - 台湾 I5 | IEPL,限时体验8小时 | 0x
+  - 🌎全球直连①
+  - 稳定高速可购买付费节点↓
+  - 套餐到期：长期有效
+  - 🌎全球直连③
+  - 🇯🇵 Unlimited Nhật Bản (1)
+  - 🇻🇳 Unlimited Việt Nam (16)
+  - 🇻🇳 Unlimited Việt Nam (21)
+  - 🇻🇳 Unlimited Việt Nam (9)
+  - 🇻🇳 Unlimited Việt Nam (6)
+  - TW02-V2-直连
+  - TW01-V2-直连
+  - 美国 001
+  - 🇺🇲 美国2
+  - 🇺🇲 美国3
+  - 🇺🇲 美国4
+  - 香港A-限速
+  - 香港B-限速
+  - 香港 [直连B] 1x
+  - 日本 [免流] 0.1x
+  - 台�%B
+  - 新加坡
+  - 香港
+  - 美国 002
+  - 台湾1
+  - 美国1
+  - github.com/freefq - 日本  1
+  - github.com/freefq - 中国阿里云 2
+  - github.com/freefq - 美国Nokia 3
+  - github.com/freefq - 美国CloudFlare公司CDN节点 4
+  - github.com/freefq - 美国惠普HP 5
+  - github.com/freefq - 美国  
+  - github.com/freefq - 美国加利福尼亚州洛杉矶Psychz Networks 7
+  - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 8
+  - github.com/freefq - 美国弗吉尼亚州阿什本Oracle云计算数据中心 9
+  - github.com/freefq - 乌克兰  10
+  - github.com/freefq - 俄罗斯  11
+  - github.com/freefq - 美国  12
+  - github.com/freefq - 加拿大  13
+  - github.com/freefq - 日本  14
+  - github.com/freefq - 俄罗斯  1
+  - github.com/freefq - 俄罗斯  16
+  - github.com/freefq - 欧盟  17
+  - github.com/freefq - 美国CloudFlare节点 18
+  - github.com/freefq - 加拿大  19
+  - github.com/freefq - 法国OVH数据中心 20
+  - github.com/freefq - 加拿大  21
+  - github.com/freefq - 印度孟买腾讯云 22
+  - github.com/freefq - 加拿大  23
+  - github.com/freefq - 欧盟  24
+  - github.com/freefq - 美国CloudFlare节点 25
+  - github.com/freefq - 俄罗斯  26
+  - github.com/freefq - 加拿大  27
+  - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 2
+  - github.com/freefq - 美国CloudFlare节点 29
+  - github.com/freefq - 美国CloudFlare公司CDN节点 30
+  - github.com/freefq - 香港BGP.NET数据中心 31
+  - github.com/freefq - 香港特别行政区 32
+  - github.com/freefq - 美国  33
+  - github.com/freefq - 新加坡Linode数据中心 34
+  - github.com/freefq - 美国弗吉尼亚州阿什本Oracle云计算数据中心 35
+  - github.com/freefq - 美国惠普公司 36
+  - github.com/freefq - 日本  37
+  - github.com/freefq - 美国  38
+  - github.com/freefq - 美国加利福尼亚州洛杉矶DDOSing Network 39
+  - Relay_CN-AU_08
+  - 台湾 1
+  - 台湾 2
+  - 台湾 3
+  - 台湾(阿伟) 4
+  - 台湾(阿伟) 5
+  - 台湾(阿伟) 6
+  - 台湾(阿伟) 7
+  - 台湾(阿伟) 8
+  - 韩国(阿伟) 1
+  - 韩国(阿伟) 2
+  - 韩国(阿伟) 3
+  - 韩国(阿伟) 4
+  - 日本(阿伟) 1
+  - 日本(阿伟) 2
+  - 日本(阿伟) 3
+  - 日本(阿伟) 4
+  - 日本(阿伟) 5
+  - 日本(阿伟) 6
+  - 日本(阿伟) 7
+  - 日本(阿伟) 8
+  - 日本(阿伟) 9
+  - 日本(阿伟) 10
+  - 日本(阿伟) 11
+  - 香港(阿伟) 1
+  - 香港(阿伟) 2
+  - 香港(阿伟) 3
+  - 香港(阿伟) 4
+  - 香港(阿伟) 5
+  - 香港(阿伟) 6
+  - 香港(阿伟) 7
+  - 香港(阿伟) 8
+  - 香港(阿伟) 9
+  - 香港(阿伟) 10
+  - 香港(阿伟) 11
+  - 香港(阿伟) 12
+  - 香港(阿伟) 13
+  - 香港(阿伟) 14
+  - 香港(阿伟) 15
+  - 香港(阿伟) 16
+  - 香港(阿伟) 17
+  - 新加坡(阿伟) 0
+  - 新加坡(阿伟) 1
+  - 新加坡(阿伟) 2
+  - 新加坡(阿伟) 3
+  - 新加坡(阿伟) 4
+  - 新加坡(阿伟) 5
+  - 新加坡(阿伟) 6
+  - 新加坡(阿伟) 7
+  - 新加坡(阿伟) 8
+  - 新加坡(阿伟) 9
+  - 新加坡(阿伟) 10
+  - 新加坡(阿伟) 11
+  - 美国(阿伟)
+  - 美国(阿伟) 2
+  - 美国(阿伟) 3
+  - 美国(阿伟) 4
+  - 美国(阿伟) 5
+  - 美国(阿伟) 6
+  - 美国(阿伟) 7
+  - 美国(阿伟) 8
+  - 美国(阿伟) 9
+  - 美国(阿伟) 10
+  - 美国(阿伟) 11
+  - 美国(阿伟) 12
+  - 美国(阿伟) 13
+  - 美国(阿伟) 14 001
+  - 美国(阿伟) 15
+  - 美国(阿伟) 16
+  - 美国(阿伟) 17
+  - 美国(阿伟) 18
+  - 美国(阿伟) 19
+  - 美国(阿伟) 20
+  - 美国(阿伟) 21
+  - 美国(阿伟) 22
+  - 美国(阿伟) 23 001
+  - 美国(阿伟) 24
+  - 美国(阿伟) 25
+  - 美国(阿伟) 26
+  - 美国(阿伟) 27
+  - 美国(阿伟) 28
+  - 美国(阿伟) 29
+  - 美国(阿伟) 30
+  - 美国(阿伟) 31
+  - 美国(阿伟) 14 002
+  - 美国(阿伟) 23 002
+  - 俄罗斯(阿伟)
+  - 英国(阿伟)
+  - 英国(阿伟) 2
+  - 瑞士(阿伟)
+  - 澳大利亚(阿伟)
+  - 更多免费高速v2ray、clash节点:www.v2rayfree.eu.or
+  - v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 1
+  - v2rayfree.eu.org - 日本东京樱花网络数据中心 2
+  - v2rayfree.eu.org - 日本  3
+  - v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 4
+  - v2rayfree.eu.org - 美国惠普HP 5
+  - v2rayfree.eu.org - 加拿大  6
+  - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 7
+  - v2rayfree.eu.org - 美国Nokia 8
+  - v2rayfree.eu.org - 美国  9
+  - v2rayfree.eu.org - 奥地利  1
+  - v2rayfree.eu.org - 加拿大  11
+  - v2rayfree.eu.org - 美国  12
+  - v2rayfree.eu.org - 俄罗斯莫斯科Melbicom数据中心 1
+  - v2rayfree.eu.org - 美国  14
+  - v2rayfree.eu.org - 中国阿里云 15
+  - v2rayfree.eu.org - 美国弗吉尼亚州阿什本Oracle云计算数据中心 16
+  - v2rayfree.eu.org - 美国CloudFlare节点 17
+  - v2rayfree.eu.org - 美国弗吉尼亚州阿什本Oracle云计算数据中心 18
+  - v2rayfree.eu.org - 希腊  19
+  - v2rayfree.eu.org - 新加坡Linode数据中心 20
+  - v2rayfree.eu.org - 新加坡Linode数据中心 21
+  - v2rayfree.eu.org - 欧盟  22
+  - v2rayfree.eu.org - 加拿大  23
+  - v2rayfree.eu.org - 香港BGP.NET数据中心 24
+  - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
+  - v2rayfree.eu.org - 俄罗斯  2
+  - v2rayfree.eu.org - 英国  27
+  - v2rayfree.eu.org - 美国得克萨斯州达拉斯Linode数据中心 28
+  - v2rayfree.eu.org - 法国OVH数据中心 29
+  - v2rayfree.eu.org - 加拿大  30
+  - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 31
+  - v2rayfree.eu.org - 加拿大  32
+  - v2rayfree.eu.org - 加拿大  33
+  - v2rayfree.eu.org - 加拿大  34
+  - v2rayfree.eu.org - 俄罗斯  35
+  - v2rayfree.eu.org - 美国  36
+  - v2rayfree.eu.org - 美国CloudFlare节点 37
+  - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 38
+  - v2rayfree.eu.org - 美国CloudFlare节点 39
+  - v2rayfree.eu.org - 美国  40
+  - v2rayfree.eu.org - 美国  41
+  - v2rayfree.eu.org - 新加坡Amazon数据中心 42
+  - v2rayfree.eu.org - 广东省江门市移动 43
+  - v2rayfree.eu.org - 广东省江门市移动 44
+  - v2rayfree.eu.org - 香港特别行政区 45
+  url: https://www.google.com/favicon.ico
+  interval: 300
+rules:
+- DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+- DOMAIN,safebrowsing.googleapis.com,DIRECT
+- DOMAIN,developer.apple.com,Proxy
+- DOMAIN-SUFFIX,digicert.com,Proxy
+- DOMAIN,ocsp.apple.com,Proxy
+- DOMAIN,ocsp.comodoca.com,Proxy
+- DOMAIN,ocsp.usertrust.com,Proxy
+- DOMAIN,ocsp.sectigo.com,Proxy
+- DOMAIN,ocsp.verisign.net,Proxy
+- DOMAIN-SUFFIX,apple-dns.net,Proxy
+- DOMAIN,testflight.apple.com,Proxy
+- DOMAIN,sandbox.itunes.apple.com,Proxy
+- DOMAIN,itunes.apple.com,Proxy
+- DOMAIN-SUFFIX,apps.apple.com,Proxy
+- DOMAIN-SUFFIX,blobstore.apple.com,Proxy
+- DOMAIN,cvws.icloud-content.com,Proxy
+- DOMAIN-SUFFIX,mzstatic.com,DIRECT
+- DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+- DOMAIN-SUFFIX,icloud-content.com,DIRECT
+- DOMAIN-SUFFIX,me.com,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,cdn20.com,DIRECT
+- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+- DOMAIN-SUFFIX,edgekey.net,DIRECT
+- DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT
+- DOMAIN-SUFFIX,mwcname.com,DIRECT
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+- DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-KEYWORD,-cn,DIRECT
+- DOMAIN-SUFFIX,126.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,127.net,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+- DOMAIN-SUFFIX,36kr.com,DIRECT
+- DOMAIN-SUFFIX,acfun.tv,DIRECT
+- DOMAIN-SUFFIX,air-matters.com,DIRECT
+- DOMAIN-SUFFIX,aixifan.com,DIRECT
+- DOMAIN-KEYWORD,alicdn,DIRECT
+- DOMAIN-KEYWORD,alipay,DIRECT
+- DOMAIN-KEYWORD,taobao,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,autonavi.com,DIRECT
+- DOMAIN-KEYWORD,baidu,DIRECT
+- DOMAIN-SUFFIX,bdimg.com,DIRECT
+- DOMAIN-SUFFIX,bdstatic.com,DIRECT
+- DOMAIN-SUFFIX,bilibili.com,DIRECT
+- DOMAIN-SUFFIX,bilivideo.com,DIRECT
+- DOMAIN-SUFFIX,caiyunapp.com,DIRECT
+- DOMAIN-SUFFIX,clouddn.com,DIRECT
+- DOMAIN-SUFFIX,cnbeta.com,DIRECT
+- DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
+- DOMAIN-SUFFIX,cootekservice.com,DIRECT
+- DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
+- DOMAIN-SUFFIX,dgtle.com,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,duokan.com,DIRECT
+- DOMAIN-SUFFIX,easou.com,DIRECT
+- DOMAIN-SUFFIX,ele.me,DIRECT
+- DOMAIN-SUFFIX,feng.com,DIRECT
+- DOMAIN-SUFFIX,fir.im,DIRECT
+- DOMAIN-SUFFIX,frdic.com,DIRECT
+- DOMAIN-SUFFIX,g-cores.com,DIRECT
+- DOMAIN-SUFFIX,godic.net,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN,cdn.hockeyapp.net,DIRECT
+- DOMAIN-SUFFIX,hongxiu.com,DIRECT
+- DOMAIN-SUFFIX,hxcdn.net,DIRECT
+- DOMAIN-SUFFIX,iciba.com,DIRECT
+- DOMAIN-SUFFIX,ifeng.com,DIRECT
+- DOMAIN-SUFFIX,ifengimg.com,DIRECT
+- DOMAIN-SUFFIX,ipip.net,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,jianshu.com,DIRECT
+- DOMAIN-SUFFIX,knewone.com,DIRECT
+- DOMAIN-SUFFIX,le.com,DIRECT
+- DOMAIN-SUFFIX,lecloud.com,DIRECT
+- DOMAIN-SUFFIX,lemicp.com,DIRECT
+- DOMAIN-SUFFIX,licdn.com,DIRECT
+- DOMAIN-SUFFIX,luoo.net,DIRECT
+- DOMAIN-SUFFIX,meituan.com,DIRECT
+- DOMAIN-SUFFIX,meituan.net,DIRECT
+- DOMAIN-SUFFIX,mi.com,DIRECT
+- DOMAIN-SUFFIX,miaopai.com,DIRECT
+- DOMAIN-SUFFIX,microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,miwifi.com,DIRECT
+- DOMAIN-SUFFIX,mob.com,DIRECT
+- DOMAIN-SUFFIX,netease.com,DIRECT
+- DOMAIN-SUFFIX,office.com,DIRECT
+- DOMAIN-SUFFIX,office365.com,DIRECT
+- DOMAIN-KEYWORD,officecdn,DIRECT
+- DOMAIN-SUFFIX,oschina.net,DIRECT
+- DOMAIN-SUFFIX,ppsimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,qdaily.com,DIRECT
+- DOMAIN-SUFFIX,qdmm.com,DIRECT
+- DOMAIN-SUFFIX,qhimg.com,DIRECT
+- DOMAIN-SUFFIX,qhres.com,DIRECT
+- DOMAIN-SUFFIX,qidian.com,DIRECT
+- DOMAIN-SUFFIX,qihucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiniu.com,DIRECT
+- DOMAIN-SUFFIX,qiniucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiyipic.com,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,qqurl.com,DIRECT
+- DOMAIN-SUFFIX,rarbg.to,DIRECT
+- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+- DOMAIN-SUFFIX,segmentfault.com,DIRECT
+- DOMAIN-SUFFIX,sinaapp.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,snapdrop.net,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,soku.com,DIRECT
+- DOMAIN-SUFFIX,speedtest.net,Proxy
+- DOMAIN-SUFFIX,sspai.com,DIRECT
+- DOMAIN-SUFFIX,suning.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,tencent.com,DIRECT
+- DOMAIN-SUFFIX,tenpay.com,DIRECT
+- DOMAIN-SUFFIX,tianyancha.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,tudou.com,DIRECT
+- DOMAIN-SUFFIX,umetrip.com,DIRECT
+- DOMAIN-SUFFIX,upaiyun.com,DIRECT
+- DOMAIN-SUFFIX,upyun.com,DIRECT
+- DOMAIN-SUFFIX,veryzhun.com,DIRECT
+- DOMAIN-SUFFIX,weather.com,DIRECT
+- DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,xiami.com,DIRECT
+- DOMAIN-SUFFIX,xiami.net,DIRECT
+- DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+- DOMAIN-SUFFIX,ximalaya.com,DIRECT
+- DOMAIN-SUFFIX,xmcdn.com,DIRECT
+- DOMAIN-SUFFIX,xunlei.com,DIRECT
+- DOMAIN-SUFFIX,yhd.com,DIRECT
+- DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
+- DOMAIN-SUFFIX,yinxiang.com,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,youdao.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,zealer.com,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,zhimg.com,DIRECT
+- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+- DOMAIN-SUFFIX,zoho.com,DIRECT
+- DOMAIN-KEYWORD,amazon,Proxy
+- DOMAIN-KEYWORD,google,Proxy
+- DOMAIN-KEYWORD,gmail,Proxy
+- DOMAIN-KEYWORD,youtube,Proxy
+- DOMAIN-KEYWORD,facebook,Proxy
+- DOMAIN-SUFFIX,fb.me,Proxy
+- DOMAIN-SUFFIX,fbcdn.net,Proxy
+- DOMAIN-KEYWORD,twitter,Proxy
+- DOMAIN-KEYWORD,instagram,Proxy
+- DOMAIN-KEYWORD,dropbox,Proxy
+- DOMAIN-SUFFIX,twimg.com,Proxy
+- DOMAIN-KEYWORD,blogspot,Proxy
+- DOMAIN-SUFFIX,youtu.be,Proxy
+- DOMAIN-KEYWORD,whatsapp,Proxy
+- DOMAIN-KEYWORD,admarvel,REJECT
+- DOMAIN-KEYWORD,admaster,REJECT
+- DOMAIN-KEYWORD,adsage,REJECT
+- DOMAIN-KEYWORD,adsmogo,REJECT
+- DOMAIN-KEYWORD,adsrvmedia,REJECT
+- DOMAIN-KEYWORD,adwords,REJECT
+- DOMAIN-KEYWORD,adservice,REJECT
+- DOMAIN-SUFFIX,appsflyer.com,REJECT
+- DOMAIN-KEYWORD,domob,REJECT
+- DOMAIN-SUFFIX,doubleclick.net,REJECT
+- DOMAIN-KEYWORD,duomeng,REJECT
+- DOMAIN-KEYWORD,dwtrack,REJECT
+- DOMAIN-KEYWORD,guanggao,REJECT
+- DOMAIN-KEYWORD,lianmeng,REJECT
+- DOMAIN-SUFFIX,mmstat.com,REJECT
+- DOMAIN-KEYWORD,mopub,REJECT
+- DOMAIN-KEYWORD,omgmta,REJECT
+- DOMAIN-KEYWORD,openx,REJECT
+- DOMAIN-KEYWORD,partnerad,REJECT
+- DOMAIN-KEYWORD,pingfore,REJECT
+- DOMAIN-KEYWORD,supersonicads,REJECT
+- DOMAIN-KEYWORD,uedas,REJECT
+- DOMAIN-KEYWORD,umeng,REJECT
+- DOMAIN-KEYWORD,usage,REJECT
+- DOMAIN-SUFFIX,vungle.com,REJECT
+- DOMAIN-KEYWORD,wlmonitor,REJECT
+- DOMAIN-KEYWORD,zjtoolbar,REJECT
+- DOMAIN-SUFFIX,9to5mac.com,Proxy
+- DOMAIN-SUFFIX,abpchina.org,Proxy
+- DOMAIN-SUFFIX,adblockplus.org,Proxy
+- DOMAIN-SUFFIX,adobe.com,Proxy
+- DOMAIN-SUFFIX,akamaized.net,Proxy
+- DOMAIN-SUFFIX,alfredapp.com,Proxy
+- DOMAIN-SUFFIX,amplitude.com,Proxy
+- DOMAIN-SUFFIX,ampproject.org,Proxy
+- DOMAIN-SUFFIX,android.com,Proxy
+- DOMAIN-SUFFIX,angularjs.org,Proxy
+- DOMAIN-SUFFIX,aolcdn.com,Proxy
+- DOMAIN-SUFFIX,apkpure.com,Proxy
+- DOMAIN-SUFFIX,appledaily.com,Proxy
+- DOMAIN-SUFFIX,appshopper.com,Proxy
+- DOMAIN-SUFFIX,appspot.com,Proxy
+- DOMAIN-SUFFIX,arcgis.com,Proxy
+- DOMAIN-SUFFIX,archive.org,Proxy
+- DOMAIN-SUFFIX,armorgames.com,Proxy
+- DOMAIN-SUFFIX,aspnetcdn.com,Proxy
+- DOMAIN-SUFFIX,att.com,Proxy
+- DOMAIN-SUFFIX,awsstatic.com,Proxy
+- DOMAIN-SUFFIX,azureedge.net,Proxy
+- DOMAIN-SUFFIX,azurewebsites.net,Proxy
+- DOMAIN-SUFFIX,bing.com,Proxy
+- DOMAIN-SUFFIX,bintray.com,Proxy
+- DOMAIN-SUFFIX,bit.com,Proxy
+- DOMAIN-SUFFIX,bit.ly,Proxy
+- DOMAIN-SUFFIX,bitbucket.org,Proxy
+- DOMAIN-SUFFIX,bjango.com,Proxy
+- DOMAIN-SUFFIX,bkrtx.com,Proxy
+- DOMAIN-SUFFIX,blog.com,Proxy
+- DOMAIN-SUFFIX,blogcdn.com,Proxy
+- DOMAIN-SUFFIX,blogger.com,Proxy
+- DOMAIN-SUFFIX,blogsmithmedia.com,Proxy
+- DOMAIN-SUFFIX,blogspot.com,Proxy
+- DOMAIN-SUFFIX,blogspot.hk,Proxy
+- DOMAIN-SUFFIX,bloomberg.com,Proxy
+- DOMAIN-SUFFIX,box.com,Proxy
+- DOMAIN-SUFFIX,box.net,Proxy
+- DOMAIN-SUFFIX,cachefly.net,Proxy
+- DOMAIN-SUFFIX,chromium.org,Proxy
+- DOMAIN-SUFFIX,cl.ly,Proxy
+- DOMAIN-SUFFIX,cloudflare.com,Proxy
+- DOMAIN-SUFFIX,cloudfront.net,Proxy
+- DOMAIN-SUFFIX,cloudmagic.com,Proxy
+- DOMAIN-SUFFIX,cmail19.com,Proxy
+- DOMAIN-SUFFIX,cnet.com,Proxy
+- DOMAIN-SUFFIX,cocoapods.org,Proxy
+- DOMAIN-SUFFIX,comodoca.com,Proxy
+- DOMAIN-SUFFIX,crashlytics.com,Proxy
+- DOMAIN-SUFFIX,culturedcode.com,Proxy
+- DOMAIN-SUFFIX,d.pr,Proxy
+- DOMAIN-SUFFIX,danilo.to,Proxy
+- DOMAIN-SUFFIX,dayone.me,Proxy
+- DOMAIN-SUFFIX,db.tt,Proxy
+- DOMAIN-SUFFIX,deskconnect.com,Proxy
+- DOMAIN-SUFFIX,disq.us,Proxy
+- DOMAIN-SUFFIX,disqus.com,Proxy
+- DOMAIN-SUFFIX,disquscdn.com,Proxy
+- DOMAIN-SUFFIX,dnsimple.com,Proxy
+- DOMAIN-SUFFIX,docker.com,Proxy
+- DOMAIN-SUFFIX,dribbble.com,Proxy
+- DOMAIN-SUFFIX,droplr.com,Proxy
+- DOMAIN-SUFFIX,duckduckgo.com,Proxy
+- DOMAIN-SUFFIX,dueapp.com,Proxy
+- DOMAIN-SUFFIX,dytt8.net,Proxy
+- DOMAIN-SUFFIX,edgecastcdn.net,Proxy
+- DOMAIN-SUFFIX,edgekey.net,Proxy
+- DOMAIN-SUFFIX,edgesuite.net,Proxy
+- DOMAIN-SUFFIX,engadget.com,Proxy
+- DOMAIN-SUFFIX,entrust.net,Proxy
+- DOMAIN-SUFFIX,eurekavpt.com,Proxy
+- DOMAIN-SUFFIX,evernote.com,Proxy
+- DOMAIN-SUFFIX,fabric.io,Proxy
+- DOMAIN-SUFFIX,fast.com,Proxy
+- DOMAIN-SUFFIX,fastly.net,Proxy
+- DOMAIN-SUFFIX,fc2.com,Proxy
+- DOMAIN-SUFFIX,feedburner.com,Proxy
+- DOMAIN-SUFFIX,feedly.com,Proxy
+- DOMAIN-SUFFIX,feedsportal.com,Proxy
+- DOMAIN-SUFFIX,fiftythree.com,Proxy
+- DOMAIN-SUFFIX,firebaseio.com,Proxy
+- DOMAIN-SUFFIX,flexibits.com,Proxy
+- DOMAIN-SUFFIX,flickr.com,Proxy
+- DOMAIN-SUFFIX,flipboard.com,Proxy
+- DOMAIN-SUFFIX,g.co,Proxy
+- DOMAIN-SUFFIX,gabia.net,Proxy
+- DOMAIN-SUFFIX,geni.us,Proxy
+- DOMAIN-SUFFIX,gfx.ms,Proxy
+- DOMAIN-SUFFIX,ggpht.com,Proxy
+- DOMAIN-SUFFIX,ghostnoteapp.com,Proxy
+- DOMAIN-SUFFIX,git.io,Proxy
+- DOMAIN-KEYWORD,github,Proxy
+- DOMAIN-SUFFIX,globalsign.com,Proxy
+- DOMAIN-SUFFIX,gmodules.com,Proxy
+- DOMAIN-SUFFIX,godaddy.com,Proxy
+- DOMAIN-SUFFIX,golang.org,Proxy
+- DOMAIN-SUFFIX,gongm.in,Proxy
+- DOMAIN-SUFFIX,goo.gl,Proxy
+- DOMAIN-SUFFIX,goodreaders.com,Proxy
+- DOMAIN-SUFFIX,goodreads.com,Proxy
+- DOMAIN-SUFFIX,gravatar.com,Proxy
+- DOMAIN-SUFFIX,gstatic.com,Proxy
+- DOMAIN-SUFFIX,gvt0.com,Proxy
+- DOMAIN-SUFFIX,hockeyapp.net,Proxy
+- DOMAIN-SUFFIX,hotmail.com,Proxy
+- DOMAIN-SUFFIX,icons8.com,Proxy
+- DOMAIN-SUFFIX,ifixit.com,Proxy
+- DOMAIN-SUFFIX,ift.tt,Proxy
+- DOMAIN-SUFFIX,ifttt.com,Proxy
+- DOMAIN-SUFFIX,iherb.com,Proxy
+- DOMAIN-SUFFIX,imageshack.us,Proxy
+- DOMAIN-SUFFIX,img.ly,Proxy
+- DOMAIN-SUFFIX,imgur.com,Proxy
+- DOMAIN-SUFFIX,imore.com,Proxy
+- DOMAIN-SUFFIX,instapaper.com,Proxy
+- DOMAIN-SUFFIX,ipn.li,Proxy
+- DOMAIN-SUFFIX,is.gd,Proxy
+- DOMAIN-SUFFIX,issuu.com,Proxy
+- DOMAIN-SUFFIX,itgonglun.com,Proxy
+- DOMAIN-SUFFIX,itun.es,Proxy
+- DOMAIN-SUFFIX,ixquick.com,Proxy
+- DOMAIN-SUFFIX,j.mp,Proxy
+- DOMAIN-SUFFIX,js.revsci.net,Proxy
+- DOMAIN-SUFFIX,jshint.com,Proxy
+- DOMAIN-SUFFIX,jtvnw.net,Proxy
+- DOMAIN-SUFFIX,justgetflux.com,Proxy
+- DOMAIN-SUFFIX,kat.cr,Proxy
+- DOMAIN-SUFFIX,klip.me,Proxy
+- DOMAIN-SUFFIX,libsyn.com,Proxy
+- DOMAIN-SUFFIX,linkedin.com,Proxy
+- DOMAIN-SUFFIX,linode.com,Proxy
+- DOMAIN-SUFFIX,lithium.com,Proxy
+- DOMAIN-SUFFIX,littlehj.com,Proxy
+- DOMAIN-SUFFIX,live.com,Proxy
+- DOMAIN-SUFFIX,live.net,Proxy
+- DOMAIN-SUFFIX,livefilestore.com,Proxy
+- DOMAIN-SUFFIX,llnwd.net,Proxy
+- DOMAIN-SUFFIX,macid.co,Proxy
+- DOMAIN-SUFFIX,macromedia.com,Proxy
+- DOMAIN-SUFFIX,macrumors.com,Proxy
+- DOMAIN-SUFFIX,mashable.com,Proxy
+- DOMAIN-SUFFIX,mathjax.org,Proxy
+- DOMAIN-SUFFIX,medium.com,Proxy
+- DOMAIN-SUFFIX,mega.co.nz,Proxy
+- DOMAIN-SUFFIX,mega.nz,Proxy
+- DOMAIN-SUFFIX,megaupload.com,Proxy
+- DOMAIN-SUFFIX,microsofttranslator.com,Proxy
+- DOMAIN-SUFFIX,mindnode.com,Proxy
+- DOMAIN-SUFFIX,mobile01.com,Proxy
+- DOMAIN-SUFFIX,modmyi.com,Proxy
+- DOMAIN-SUFFIX,msedge.net,Proxy
+- DOMAIN-SUFFIX,myfontastic.com,Proxy
+- DOMAIN-SUFFIX,name.com,Proxy
+- DOMAIN-SUFFIX,nextmedia.com,Proxy
+- DOMAIN-SUFFIX,nsstatic.net,Proxy
+- DOMAIN-SUFFIX,nssurge.com,Proxy
+- DOMAIN-SUFFIX,nyt.com,Proxy
+- DOMAIN-SUFFIX,nytimes.com,Proxy
+- DOMAIN-SUFFIX,omnigroup.com,Proxy
+- DOMAIN-SUFFIX,onedrive.com,Proxy
+- DOMAIN-SUFFIX,onenote.com,Proxy
+- DOMAIN-SUFFIX,ooyala.com,Proxy
+- DOMAIN-SUFFIX,openvpn.net,Proxy
+- DOMAIN-SUFFIX,openwrt.org,Proxy
+- DOMAIN-SUFFIX,orkut.com,Proxy
+- DOMAIN-SUFFIX,osxdaily.com,Proxy
+- DOMAIN-SUFFIX,outlook.com,Proxy
+- DOMAIN-SUFFIX,ow.ly,Proxy
+- DOMAIN-SUFFIX,paddleapi.com,Proxy
+- DOMAIN-SUFFIX,parallels.com,Proxy
+- DOMAIN-SUFFIX,parse.com,Proxy
+- DOMAIN-SUFFIX,pdfexpert.com,Proxy
+- DOMAIN-SUFFIX,periscope.tv,Proxy
+- DOMAIN-SUFFIX,pinboard.in,Proxy
+- DOMAIN-SUFFIX,pinterest.com,Proxy
+- DOMAIN-SUFFIX,pixelmator.com,Proxy
+- DOMAIN-SUFFIX,pixiv.net,Proxy
+- DOMAIN-SUFFIX,playpcesor.com,Proxy
+- DOMAIN-SUFFIX,playstation.com,Proxy
+- DOMAIN-SUFFIX,playstation.com.hk,Proxy
+- DOMAIN-SUFFIX,playstation.net,Proxy
+- DOMAIN-SUFFIX,playstationnetwork.com,Proxy
+- DOMAIN-SUFFIX,pushwoosh.com,Proxy
+- DOMAIN-SUFFIX,rime.im,Proxy
+- DOMAIN-SUFFIX,servebom.com,Proxy
+- DOMAIN-SUFFIX,sfx.ms,Proxy
+- DOMAIN-SUFFIX,shadowsocks.org,Proxy
+- DOMAIN-SUFFIX,sharethis.com,Proxy
+- DOMAIN-SUFFIX,shazam.com,Proxy
+- DOMAIN-SUFFIX,skype.com,Proxy
+- DOMAIN-SUFFIX,smartdnsProxy.com,Proxy
+- DOMAIN-SUFFIX,smartmailcloud.com,Proxy
+- DOMAIN-SUFFIX,sndcdn.com,Proxy
+- DOMAIN-SUFFIX,sony.com,Proxy
+- DOMAIN-SUFFIX,soundcloud.com,Proxy
+- DOMAIN-SUFFIX,sourceforge.net,Proxy
+- DOMAIN-SUFFIX,spotify.com,Proxy
+- DOMAIN-SUFFIX,squarespace.com,Proxy
+- DOMAIN-SUFFIX,sstatic.net,Proxy
+- DOMAIN-SUFFIX,st.luluku.pw,Proxy
+- DOMAIN-SUFFIX,stackoverflow.com,Proxy
+- DOMAIN-SUFFIX,startpage.com,Proxy
+- DOMAIN-SUFFIX,staticflickr.com,Proxy
+- DOMAIN-SUFFIX,steamcommunity.com,Proxy
+- DOMAIN-SUFFIX,symauth.com,Proxy
+- DOMAIN-SUFFIX,symcb.com,Proxy
+- DOMAIN-SUFFIX,symcd.com,Proxy
+- DOMAIN-SUFFIX,tapbots.com,Proxy
+- DOMAIN-SUFFIX,tapbots.net,Proxy
+- DOMAIN-SUFFIX,tdesktop.com,Proxy
+- DOMAIN-SUFFIX,techcrunch.com,Proxy
+- DOMAIN-SUFFIX,techsmith.com,Proxy
+- DOMAIN-SUFFIX,thepiratebay.org,Proxy
+- DOMAIN-SUFFIX,theverge.com,Proxy
+- DOMAIN-SUFFIX,time.com,Proxy
+- DOMAIN-SUFFIX,timeinc.net,Proxy
+- DOMAIN-SUFFIX,tiny.cc,Proxy
+- DOMAIN-SUFFIX,tinypic.com,Proxy
+- DOMAIN-SUFFIX,tmblr.co,Proxy
+- DOMAIN-SUFFIX,todoist.com,Proxy
+- DOMAIN-SUFFIX,trello.com,Proxy
+- DOMAIN-SUFFIX,trustasiassl.com,Proxy
+- DOMAIN-SUFFIX,tumblr.co,Proxy
+- DOMAIN-SUFFIX,tumblr.com,Proxy
+- DOMAIN-SUFFIX,tweetdeck.com,Proxy
+- DOMAIN-SUFFIX,tweetmarker.net,Proxy
+- DOMAIN-SUFFIX,twitch.tv,Proxy
+- DOMAIN-SUFFIX,txmblr.com,Proxy
+- DOMAIN-SUFFIX,typekit.net,Proxy
+- DOMAIN-SUFFIX,ubertags.com,Proxy
+- DOMAIN-SUFFIX,ublock.org,Proxy
+- DOMAIN-SUFFIX,ubnt.com,Proxy
+- DOMAIN-SUFFIX,ulyssesapp.com,Proxy
+- DOMAIN-SUFFIX,urchin.com,Proxy
+- DOMAIN-SUFFIX,usertrust.com,Proxy
+- DOMAIN-SUFFIX,v.gd,Proxy
+- DOMAIN-SUFFIX,v2ex.com,Proxy
+- DOMAIN-SUFFIX,vimeo.com,Proxy
+- DOMAIN-SUFFIX,vimeocdn.com,Proxy
+- DOMAIN-SUFFIX,vine.co,Proxy
+- DOMAIN-SUFFIX,vivaldi.com,Proxy
+- DOMAIN-SUFFIX,vox-cdn.com,Proxy
+- DOMAIN-SUFFIX,vsco.co,Proxy
+- DOMAIN-SUFFIX,vultr.com,Proxy
+- DOMAIN-SUFFIX,w.org,Proxy
+- DOMAIN-SUFFIX,w3schools.com,Proxy
+- DOMAIN-SUFFIX,webtype.com,Proxy
+- DOMAIN-SUFFIX,wikiwand.com,Proxy
+- DOMAIN-SUFFIX,wikileaks.org,Proxy
+- DOMAIN-SUFFIX,wikimedia.org,Proxy
+- DOMAIN-SUFFIX,wikipedia.com,Proxy
+- DOMAIN-SUFFIX,wikipedia.org,Proxy
+- DOMAIN-SUFFIX,windows.com,Proxy
+- DOMAIN-SUFFIX,windows.net,Proxy
+- DOMAIN-SUFFIX,wire.com,Proxy
+- DOMAIN-SUFFIX,wordpress.com,Proxy
+- DOMAIN-SUFFIX,workflowy.com,Proxy
+- DOMAIN-SUFFIX,wp.com,Proxy
+- DOMAIN-SUFFIX,wsj.com,Proxy
+- DOMAIN-SUFFIX,wsj.net,Proxy
+- DOMAIN-SUFFIX,xda-developers.com,Proxy
+- DOMAIN-SUFFIX,xeeno.com,Proxy
+- DOMAIN-SUFFIX,xiti.com,Proxy
+- DOMAIN-SUFFIX,yahoo.com,Proxy
+- DOMAIN-SUFFIX,yimg.com,Proxy
+- DOMAIN-SUFFIX,ying.com,Proxy
+- DOMAIN-SUFFIX,yoyo.org,Proxy
+- DOMAIN-SUFFIX,ytimg.com,Proxy
+- DOMAIN-SUFFIX,telegra.ph,Proxy
+- DOMAIN-SUFFIX,telegram.org,Proxy
+- IP-CIDR,91.108.4.0/22,Proxy
+- IP-CIDR,91.108.8.0/21,Proxy
+- IP-CIDR,91.108.16.0/22,Proxy
+- IP-CIDR,91.108.56.0/22,Proxy
+- IP-CIDR,149.154.160.0/20,Proxy
+- IP-CIDR6,2001:67c:4e8::/48,Proxy
+- IP-CIDR6,2001:b28:f23d::/48,Proxy
+- IP-CIDR6,2001:b28:f23f::/48,Proxy
+- DOMAIN,injections.adguard.org,DIRECT
+- DOMAIN,local.adguard.org,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- IP-CIDR,224.0.0.0/4,DIRECT
+- IP-CIDR6,fe80::/10,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,Proxy
