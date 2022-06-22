@@ -299,7 +299,7 @@ class sub_convert():
                         yaml_url['type'] = 'vmess'
                         yaml_url['uuid'] = vmess_json['id']
                         yaml_url['alterId'] = int(vmess_json.get('aid') or vmess_json.get('alterId') or 0)
-                        yaml_url['cipher'] = vmess_json.get('cipher') or  vmess_json.get('scy')
+                        yaml_url['cipher'] = vmess_json.get('cipher') or  vmess_json.get('scy') or 'auto'
                         yaml_url['tls'] = True if vmess_json.get('tls') in ['1','tls','true','True'] else False
                         yaml_url['skip-cert-verify'] = False
 
@@ -884,7 +884,7 @@ if __name__ == '__main__':
             'https://raw.githubusercontent.com/mzcorleone/clash/main/node-all.yaml',
             'https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2']
 
-    filname = ['xluck','lewis','poduv','jszk','frfq','corle','aibox']
+    filname = ['xzlucky','lewis','poduv','jszk','frfq','corle','aibox']
     for i in range(len(subs)):
         content = sub_convert.convert(subs[i], 'url', 'YAML')
         if not os.path.exists('./subs'):
