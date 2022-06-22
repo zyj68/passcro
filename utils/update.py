@@ -20,14 +20,7 @@ def safe_decode(s):
         s = ori
     return s
 
-def safe_decode(s):
-    ori = s
-    try:
-        s = s + '=' * (4 - len(s) % 4) if len(s) % 4 else s
-        s = base64.urlsafe_b64decode(s).decode()
-    except Exception as er:
-        s = ori
-    return s
+
 
 def easyclash():
 
