@@ -4,235 +4,95 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 台湾 I5 | IEPL,限时体验8小时 | 0x 001, server: 120.232.132.71, port: 25680, type: trojan, password: 3b4a79d, skip-cert-verify: true}
-  - {name: 香港 [免流] 0.1x, server: dnsfree01.theworkpc.com, port: 80, type: vmess, uuid: 3e0a6f9a-a478-4752-900d-837b39d70792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
-  - {name: 香港 A 三网直连优化 0.6X, server: hkt1.okr.pub, port: 13443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, skip-cert-verify: true}
-  - {name: 香港 [直连C] 1x, server: dnsfree01.theworkpc.com, port: 20943, type: vmess, uuid: 3e0a6f9a-a478-4752-900d-837b39d70792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
-  - {name: 香港 C 三网直连优化 0.6X, server: hkt1.okr.pub, port: 13443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, skip-cert-verify: true}
-  - {name: 香港 [直连D] 1x, server: dnsfree01.theworkpc.com, port: 20944, type: vmess, uuid: 3e0a6f9a-a478-4752-900d-837b39d70792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
-  - {name: 香港 B 三网直连优化 0.6X, server: hkt1.okr.pub, port: 13443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, skip-cert-verify: true}
-  - {name: 越南 B 移动电信优化, server: vn.xn--6p1awey07c.xyz, port: 18443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, skip-cert-verify: true}
-  - {name: 越南 C 移动电信优化, server: vn.xn--6p1awey07c.xyz, port: 18443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, skip-cert-verify: true}
-  - {name: 日本 [直连A] 1x, server: dnsfree02.theworkpc.com, port: 39812, type: vmess, uuid: 3e0a6f9a-a478-4752-900d-837b39d70792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
-  - {name: 越南 A 移动电信优化, server: vn.xn--6p1awey07c.xyz, port: 18443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, skip-cert-verify: true}
-  - {name: 🇺🇸 Lv3 美国 01 IPL, server: sadfsn.domainsv3.com, port: 8743, type: ss, cipher: aes-256-gcm, password: 890471c1b0e5e3ab2d32d77d564820ae, plugin: obfs, plugin-opts: {mode: http, host: d683b627697f.microsoft.com, uri: /}, udp: true}
-  - {name: 日本 A 跨境隧道优化, server: jp1.xn--6p1awey07c.xyz, port: 15443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, skip-cert-verify: true}
-  - {name: 台湾 B 跨境隧道优化, server: tw2.xn--6p1awey07c.xyz, port: 43443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, skip-cert-verify: true}
-  - {name: 台湾 A 跨境隧道优化, server: tw1.xn--6p1awey07c.xyz, port: 43443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, skip-cert-verify: true}
-  - {name: 台湾 C 跨境隧道优化, server: tw3.xn--6p1awey07c.xyz, port: 43443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, skip-cert-verify: true}
-  - {name: 日本 B 跨境隧道优化, server: jp2.xn--6p1awey07c.xyz, port: 15443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, skip-cert-verify: true}
-  - {name: 新加坡 C 跨境隧道优化, server: sg3.xn--6p1awey07c.xyz, port: 17443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, skip-cert-verify: true}
-  - {name: 新加坡 B 跨境隧道优化, server: sg2.xn--6p1awey07c.xyz, port: 17443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, skip-cert-verify: true}
-  - {name: 香港11, server: hk13.ningmengshui.xyz, port: 80, type: vmess, uuid: b17f9999-1608-4911-86f2-d0cf20bf1356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 香港22, server: 618hk.fans8.xyz, port: 443, type: trojan, password: 6f5e02bd-9b8f-44bc-b681-55150c102911, skip-cert-verify: true}
-  - {name: 日本1, server: 20.210.249.230, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 日本2, server: 20.222.169.127, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 韩国1, server: 20.214.174.83, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 香港33, server: 613hk.fans8.xyz, port: 443, type: trojan, password: 6f5e02bd-9b8f-44bc-b681-55150c102911, skip-cert-verify: true}
-  - {name: 新加坡11, server: sg0601.fans8.xyz, port: 443, type: trojan, password: 6f5e02bd-9b8f-44bc-b681-55150c102911, skip-cert-verify: true}
-  - {name: 日本11, server: 116.129.253.99, port: 30021, type: vmess, uuid: ae92efdd-696d-395f-81ae-3a9d06158d08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 台湾11, server: tw01.henet.cyou, port: 20000, type: vmess, uuid: 084f3cb4-fa17-42d3-81cc-6532e3fa224b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: 中国🇨�%B, server: 14.29.124.174, port: 11037, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 香港Azure-杭港BGP隧�%9, server: 36.134.116.212, port: 45102, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 香港BGP-杭港BGP隧�%9, server: 36.134.116.212, port: 45101, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 北京移动-香港HGC-dip_2, server: 36.138.197.169, port: 2701, type: vmess, uuid: 6861c307-5efd-3b8a-b7fa-248ad8dde74e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me.univstar}}, udp: true}
-  - {name: 越南 | 广州移动(中转), server: gzyd1.xxcv.cc, port: 20110, type: trojan, password: 25c723db-3393-4608-a97d-90c4ba3688cb, skip-cert-verify: true}
-  - {name: 这是教程赠送免费节点, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true}
-  - {name: 🌎全球直连①, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true}
-  - {name: 剩余流量：945054.68 GB, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true}
-  - {name: 套餐到期：长期有效, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true}
-  - {name: 🌎全球直连③, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true}
-  - {name: 台湾 I5 | IEPL,限时体验8小时 | 0x 002, server: 120.232.132.71, port: 25680, type: trojan, password: 3b4a79d, skip-cert-verify: true}
-  - {name: 香港A-限速, server: hkbgp1.jiantian.xyz, port: 14326, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true}
-  - {name: 台湾-2号 | 解锁流媒体, server: 165.154.253.34, port: 28443, type: trojan, password: 25c723db-3393-4608-a97d-90c4ba3688cb, skip-cert-verify: true}
+  - {name: 🔈更新于06/22, server: hk9.ningmengshui.xyz, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk9.ningmengshui.xyz}}, udp: true}
+  - {name: 香港(TG频道:@kxswa) 001, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: AZHJ001.xiba1.xyz, skip-cert-verify: true}
+  - {name: 台湾(TG频道:@kxswa) 001, server: 211.72.35.153, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true}
+  - {name: 香港(TG频道:@kxswa) 002, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: AZHJ001.xiba1.xyz, skip-cert-verify: true}
+  - {name: 香港(TG频道:@kxswa) 003, server: azhj001.xiba1.xyz, port: 20719, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: AZHJ001.xiba1.xyz, skip-cert-verify: true}
+  - {name: 香港(TG频道:@kxswa) 004, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: AZHJ001.xiba1.xyz, skip-cert-verify: true}
+  - {name: 香港(TG频道:@kxswa) 005, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: AZHJ001.xiba1.xyz, skip-cert-verify: true}
+  - {name: 香港(TG频道:@kxswa) 006, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: AZHJ001.xiba1.xyz, skip-cert-verify: true}
+  - {name: 香港(TG频道:@kxswa) 007, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: AZHJ001.xiba1.xyz, skip-cert-verify: true}
+  - {name: 台湾(TG频道:@kxswa) 002, server: 211.72.35.153, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true}
+  - {name: 台湾(TG频道:@kxswa) 003, server: 211.72.35.153, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true}
+  - {name: 香港(TG频道:@kxswa) 008, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: AZHJ001.xiba1.xyz, skip-cert-verify: true}
+  - {name: 越南(TG频道:@kxswa), server: 103.167.199.114, port: 80, type: vmess, uuid: e982184f-c6e0-4ba4-91cc-71eb6c702588, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /nkpvpn.site, headers: {Host: 103.167.199.114}}, udp: true}
+  - {name: 日本(TG频道:@kxswa), server: ocijp.n.optage.moe, port: 62500, type: trojan, password: 40de00aa-7287-45bd-ae92-cdfd5e8f9b85, sni: ocijp.n.optage.moe, skip-cert-verify: true}
+  - {name: 香港(TG频道:@kxswa) 009, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: AZHJ001.xiba1.xyz, skip-cert-verify: true}
+  - {name: 美国(TG频道:@kxswa) 001, server: 67us01.fans8.xyz, port: 443, type: trojan, password: 6f5e02bd-9b8f-44bc-b681-55150c102911, sni: 67us01.fans8.xyz, skip-cert-verify: true}
+  - {name: 美国(TG频道:@kxswa) 002, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us02.yiyodns.xyz, skip-cert-verify: true}
+  - {name: 台湾(TG频道:@kxswa) 004, server: 211.72.35.153, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true}
+  - {name: 美国(TG频道:@kxswa) 003, server: azqt001.xiba1.xyz, port: 20740, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: AZQT001.xiba1.xyz, skip-cert-verify: true}
+  - {name: 美国(TG频道:@kxswa) 004, server: v04.ssrsub.com, port: 153, type: vmess, uuid: 57229afb-d4e4-426e-bfdc-18fc1f3267fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: d76bb35696.laowanxiang.com}}, udp: true}
+  - {name: 美国(TG频道:@kxswa) 005, server: azqt001.xiba1.xyz, port: 20734, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: AZQT001.xiba1.xyz, skip-cert-verify: true}
+  - {name: 美国(TG频道:@kxswa) 006, server: 172.67.167.111, port: 443, type: vmess, uuid: 89b6075d-ea4a-43f4-a8a2-f155de987ab9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /wzjdvws, headers: {Host: 56789.gq}}, udp: true}
+  - {name: 中国(TG频道:@kxswa 001, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 美国(TG频道:@kxswa) 007, server: v04.ssrsub.com, port: 153, type: vmess, uuid: 57229afb-d4e4-426e-bfdc-18fc1f3267fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 中国(TG频道:@kxswa 002, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 美国(TG频道:@kxswa) 008, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: AZQT001.xiba1.xyz, skip-cert-verify: true}
+  - {name: 新加坡(TG频道:@kxswa, server: 165.232.169.142, port: 29332, type: ss, cipher: aes-256-cfb, password: 1e5111699c45496da84112f35db665c4, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
-  - automatic
-  - "香港-tg频道:@bpjzx2_1\r"
-  - "日本-tg频道:@bpjzx2_1\r"
-  - "新加坡-tg频道:@bpjzx2_1\r"
-  - "日本-tg频道:@bpjzx2_2\r"
-  - "新加坡-tg频道:@bpjzx2_2\r"
-  - "台湾-tg频道:@bpjzx2_1\r"
-  - "台湾-tg频道:@bpjzx2_2\r"
-  - "台湾-tg频道:@bpjzx2_3\r"
-  - "越南-tg频道:@bpjzx2\r"
-  - "台湾-tg频道:@bpjzx2_4\r"
-  - 香港-tg频道:@bpjzx2_2
-  - "美国-tg频道:@bpjzx2\r"
-  - "新加坡-tg频道:@bpjzx2_3\r"
-  - 香港免流-tg频道:@bpjzx2
-  - "新加坡-tg频道:@bpjzx2_4\r"
-  - 香港-tg频道:@bpjzx2_3
-  - 香港-tg频道:@bpjzx2_4
-  - "香港-tg频道:@bpjzx2_5\r"
-  - 中国-tg频道:@bpjzx2_1
-  - 中国-tg频道:@bpjzx2_2
+  - ♻️ automatic
   - 🔈更新于06/22
-  - 中国(TG频道:@kxswa) 001
-  - 越南(TG频道:@kxswa) 001
-  - 越南(TG频道:@kxswa) 002
-  - 中国(TG频道:@kxswa) 002
-  - (TG频道:@kxswa) 001
+  - 香港(TG频道:@kxswa) 001
+  - 台湾(TG频道:@kxswa) 001
+  - 香港(TG频道:@kxswa) 002
+  - 香港(TG频道:@kxswa) 003
+  - 香港(TG频道:@kxswa) 004
+  - 香港(TG频道:@kxswa) 005
+  - 香港(TG频道:@kxswa) 006
+  - 香港(TG频道:@kxswa) 007
+  - 台湾(TG频道:@kxswa) 002
+  - 台湾(TG频道:@kxswa) 003
+  - 香港(TG频道:@kxswa) 008
+  - 越南(TG频道:@kxswa)
+  - 日本(TG频道:@kxswa)
+  - 香港(TG频道:@kxswa) 009
   - 美国(TG频道:@kxswa) 001
   - 美国(TG频道:@kxswa) 002
-  - 德国(TG频道:@kxswa) 001
+  - 台湾(TG频道:@kxswa) 004
   - 美国(TG频道:@kxswa) 003
-  - 中国(TG频道:@kxswa) 003
-  - (TG频道:@kxswa) 002
-  - 德国(TG频道:@kxswa) 002
   - 美国(TG频道:@kxswa) 004
-  - (TG频道:@kxswa) 003
   - 美国(TG频道:@kxswa) 005
-  - 德国(TG频道:@kxswa) 003
   - 美国(TG频道:@kxswa) 006
-  - 中国(TG频道:@kxswa) 004
-  - 澳大利亚(TG频道:@kxswa)
-  - 越南(TG频道:@kxswa) 003
-  - 中国(TG频道:@kxswa
+  - 中国(TG频道:@kxswa 001
   - 美国(TG频道:@kxswa) 007
-  - 德国(TG频道:@kxswa) 004
-  - 印度(TG频道:@kxswa)
-  - 中国(TG频道:@kxswa) 005
-  - 新加坡(TG频道:@kxswa)
-  - 荷兰(TG频道:@kxswa 001
-  - 荷兰(TG频道:@kxswa 002
-  - 台湾 I5 | IEPL,限时体验8小时 | 0x 001
-  - 香港 [免流] 0.1x
-  - 香港 A 三网直连优化 0.6X
-  - 香港 [直连C] 1x
-  - 香港 C 三网直连优化 0.6X
-  - 香港 [直连D] 1x
-  - 香港 B 三网直连优化 0.6X
-  - 越南 B 移动电信优化
-  - 越南 C 移动电信优化
-  - 日本 [直连A] 1x
-  - 越南 A 移动电信优化
-  - 🇺🇸 Lv3 美国 01 IPL
-  - 日本 A 跨境隧道优化
-  - 台湾 B 跨境隧道优化
-  - 台湾 A 跨境隧道优化
-  - 台湾 C 跨境隧道优化
-  - 日本 B 跨境隧道优化
-  - 新加坡 C 跨境隧道优化
-  - 新加坡 B 跨境隧道优化
-  - 香港11
-  - 香港22
-  - 日本1
-  - 日本2
-  - 韩国1
-  - 香港33
-  - 新加坡11
-  - 日本11
-  - 台湾11
-  - 中国🇨�%B
-  - 香港Azure-杭港BGP隧�%9
-  - 香港BGP-杭港BGP隧�%9
-  - 北京移动-香港HGC-dip_2
-  - 越南 | 广州移动(中转)
-  - 这是教程赠送免费节点
-  - 🌎全球直连①
-  - 剩余流量：945054.68 GB
-  - 套餐到期：长期有效
-  - 🌎全球直连③
-  - 台湾 I5 | IEPL,限时体验8小时 | 0x 002
-  - 香港A-限速
-  - 台湾-2号 | 解锁流媒体
-- name: automatic
+  - 中国(TG频道:@kxswa 002
+  - 美国(TG频道:@kxswa) 008
+  - 新加坡(TG频道:@kxswa
+- name: ♻️ automatic
   type: url-test
   proxies:
-  - "香港-tg频道:@bpjzx2_1\r"
-  - "日本-tg频道:@bpjzx2_1\r"
-  - "新加坡-tg频道:@bpjzx2_1\r"
-  - "日本-tg频道:@bpjzx2_2\r"
-  - "新加坡-tg频道:@bpjzx2_2\r"
-  - "台湾-tg频道:@bpjzx2_1\r"
-  - "台湾-tg频道:@bpjzx2_2\r"
-  - "台湾-tg频道:@bpjzx2_3\r"
-  - "越南-tg频道:@bpjzx2\r"
-  - "台湾-tg频道:@bpjzx2_4\r"
-  - 香港-tg频道:@bpjzx2_2
-  - "美国-tg频道:@bpjzx2\r"
-  - "新加坡-tg频道:@bpjzx2_3\r"
-  - 香港免流-tg频道:@bpjzx2
-  - "新加坡-tg频道:@bpjzx2_4\r"
-  - 香港-tg频道:@bpjzx2_3
-  - 香港-tg频道:@bpjzx2_4
-  - "香港-tg频道:@bpjzx2_5\r"
-  - 中国-tg频道:@bpjzx2_1
-  - 中国-tg频道:@bpjzx2_2
   - 🔈更新于06/22
-  - 中国(TG频道:@kxswa) 001
-  - 越南(TG频道:@kxswa) 001
-  - 越南(TG频道:@kxswa) 002
-  - 中国(TG频道:@kxswa) 002
-  - (TG频道:@kxswa) 001
+  - 香港(TG频道:@kxswa) 001
+  - 台湾(TG频道:@kxswa) 001
+  - 香港(TG频道:@kxswa) 002
+  - 香港(TG频道:@kxswa) 003
+  - 香港(TG频道:@kxswa) 004
+  - 香港(TG频道:@kxswa) 005
+  - 香港(TG频道:@kxswa) 006
+  - 香港(TG频道:@kxswa) 007
+  - 台湾(TG频道:@kxswa) 002
+  - 台湾(TG频道:@kxswa) 003
+  - 香港(TG频道:@kxswa) 008
+  - 越南(TG频道:@kxswa)
+  - 日本(TG频道:@kxswa)
+  - 香港(TG频道:@kxswa) 009
   - 美国(TG频道:@kxswa) 001
   - 美国(TG频道:@kxswa) 002
-  - 德国(TG频道:@kxswa) 001
+  - 台湾(TG频道:@kxswa) 004
   - 美国(TG频道:@kxswa) 003
-  - 中国(TG频道:@kxswa) 003
-  - (TG频道:@kxswa) 002
-  - 德国(TG频道:@kxswa) 002
   - 美国(TG频道:@kxswa) 004
-  - (TG频道:@kxswa) 003
   - 美国(TG频道:@kxswa) 005
-  - 德国(TG频道:@kxswa) 003
   - 美国(TG频道:@kxswa) 006
-  - 中国(TG频道:@kxswa) 004
-  - 澳大利亚(TG频道:@kxswa)
-  - 越南(TG频道:@kxswa) 003
-  - 中国(TG频道:@kxswa
+  - 中国(TG频道:@kxswa 001
   - 美国(TG频道:@kxswa) 007
-  - 德国(TG频道:@kxswa) 004
-  - 印度(TG频道:@kxswa)
-  - 中国(TG频道:@kxswa) 005
-  - 新加坡(TG频道:@kxswa)
-  - 荷兰(TG频道:@kxswa 001
-  - 荷兰(TG频道:@kxswa 002
-  - 台湾 I5 | IEPL,限时体验8小时 | 0x 001
-  - 香港 [免流] 0.1x
-  - 香港 A 三网直连优化 0.6X
-  - 香港 [直连C] 1x
-  - 香港 C 三网直连优化 0.6X
-  - 香港 [直连D] 1x
-  - 香港 B 三网直连优化 0.6X
-  - 越南 B 移动电信优化
-  - 越南 C 移动电信优化
-  - 日本 [直连A] 1x
-  - 越南 A 移动电信优化
-  - 🇺🇸 Lv3 美国 01 IPL
-  - 日本 A 跨境隧道优化
-  - 台湾 B 跨境隧道优化
-  - 台湾 A 跨境隧道优化
-  - 台湾 C 跨境隧道优化
-  - 日本 B 跨境隧道优化
-  - 新加坡 C 跨境隧道优化
-  - 新加坡 B 跨境隧道优化
-  - 香港11
-  - 香港22
-  - 日本1
-  - 日本2
-  - 韩国1
-  - 香港33
-  - 新加坡11
-  - 日本11
-  - 台湾11
-  - 中国🇨�%B
-  - 香港Azure-杭港BGP隧�%9
-  - 香港BGP-杭港BGP隧�%9
-  - 北京移动-香港HGC-dip_2
-  - 越南 | 广州移动(中转)
-  - 这是教程赠送免费节点
-  - 🌎全球直连①
-  - 剩余流量：945054.68 GB
-  - 套餐到期：长期有效
-  - 🌎全球直连③
-  - 台湾 I5 | IEPL,限时体验8小时 | 0x 002
-  - 香港A-限速
-  - 台湾-2号 | 解锁流媒体
+  - 中国(TG频道:@kxswa 002
+  - 美国(TG频道:@kxswa) 008
+  - 新加坡(TG频道:@kxswa
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
