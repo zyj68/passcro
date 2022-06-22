@@ -4,88 +4,40 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-- {name: 🔈更新于06/22, server: cmhk1.linhun11.xyz, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, sni: cmhk1.linhun11.xyz, skip-cert-verify: true}
-- {name: 中国(TG频道:@kxswa) 001, type: ssr, server: 120.233.185.189, port: 11807, cipher: chacha20-ietf, password: Fhbe0z, obfs: tls1.2_ticket_auth, protocol: auth_aes128_sha1, obfs-param: Vm0wd2VHUXhUWGROVldSWVYwZG9WMWx0ZEhkVU1WcDBUVmM1VjAxWGVGWlZNbmhQWVd4YWMxZHFRbUZXVmxsM1ZtMTRZV015VGtsaVJtUnBWa1phZVZkV1pEUlpWMDE0V2toR1UySklRazlWYlRWRFpWWmtWMVZyZEZSTlZUVklWbTAxVDJGR1NuVlJiR2hYWWxSV1JGWkZXbUZXYkdSeVYyeENWMkV3Y0ZSV1ZWcFNaSGM5UFE9PQ, protocol-param: 13370:DqGDfE, udp: true}
-- {name: 越南(TG频道:@kxswa) 001, server: vietnam.hn9.shopvpn.net, port: 80, type: vmess, uuid: 77a81e4d-2f3d-4005-857e-4ba60140a539, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shopvpn.net, headers: {Host: vietnam.hn9.shopvpn.net}}, udp: true}
-- {name: 越南(TG频道:@kxswa) 002, server: 103.167.199.121, port: 80, type: vmess, uuid: e982184f-c6e0-4ba4-91cc-71eb6c702588, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /nkpvpn.site, headers: {Host: 103.167.199.121}}, udp: true}
-- {name: 中国(TG频道:@kxswa) 002, server: hn.zfnode.org, port: 30217, type: trojan, password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f, skip-cert-verify: true}
-- {name: (TG频道:@kxswa) 001, server: 103.173.255.127, port: 28443, type: trojan, password: 25c723db-3393-4608-a97d-90c4ba3688cb, skip-cert-verify: true}
-- {name: 美国(TG频道:@kxswa) 001, server: 192.9.183.183, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, skip-cert-verify: true}
-- {name: 美国(TG频道:@kxswa) 002, server: hongkong1.shopvpn.net, port: 80, type: vmess, uuid: 77a81e4d-2f3d-4005-857e-4ba60140a539, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shopvpn.net, headers: {Host: hongkong1.shopvpn.net}}, udp: true}
-- {name: 德国(TG频道:@kxswa) 001, server: 172.104.251.52, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, skip-cert-verify: true}
-- {name: 美国(TG频道:@kxswa) 003, server: ss2.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: ss2.2046.gq, skip-cert-verify: true}
-- {name: 中国(TG频道:@kxswa) 003, type: ssr, server: 120.233.185.189, port: 11804, cipher: chacha20-ietf, password: Fhbe0z, obfs: tls1.2_ticket_auth, protocol: auth_aes128_sha1, obfs-param: Vm0wd2VHUXhUWGROVldSWVYwZG9WMWx0ZEhkVU1WcDBUVmM1VjAxWGVGWlZNbmhQWVd4YWMxZHFRbUZXVmxsM1ZtMTRZV015VGtsaVJtUnBWa1phZVZkV1pEUlpWMDE0V2toR1UySklRazlWYlRWRFpWWmtWMVZyZEZSTlZUVklWbTAxVDJGR1NuVlJiR2hYWWxSV1JGWkZXbUZXYkdSeVYyeENWMkV3Y0ZSV1ZWcFNaSGM5UFE9PQ, protocol-param: 13370:DqGDfE, udp: true}
-- {name: (TG频道:@kxswa) 002, server: 103.173.255.234, port: 28443, type: trojan, password: 25c723db-3393-4608-a97d-90c4ba3688cb, skip-cert-verify: true}
-- {name: 德国(TG频道:@kxswa) 002, server: 172.104.244.36, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, skip-cert-verify: true}
-- {name: 美国(TG频道:@kxswa) 004, server: 23.224.33.72, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, skip-cert-verify: true}
-- {name: (TG频道:@kxswa) 003, server: 103.173.255.21, port: 28443, type: trojan, password: 25c723db-3393-4608-a97d-90c4ba3688cb, skip-cert-verify: true}
-- {name: 美国(TG频道:@kxswa) 005, server: 67us01.fans8.xyz, port: 443, type: trojan, password: 64e4a3ac-7699-4614-9c53-9e1da3dccf5a, sni: 67us01.fans8.xyz, skip-cert-verify: true}
-- {name: 德国(TG频道:@kxswa) 003, server: 172.104.205.212, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, skip-cert-verify: true}
-- {name: 美国(TG频道:@kxswa) 006, server: 152.69.199.111, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 152.69.199.111}}, udp: true}
-- {name: 中国(TG频道:@kxswa) 004, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true}
-- {name: 澳大利亚(TG频道:@kxswa), server: kr04.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, sni: kr04.wangxd.life, skip-cert-verify: true}
-- {name: 越南(TG频道:@kxswa) 003, server: vietnam.hn6.shopvpn.net, port: 80, type: vmess, uuid: 77a81e4d-2f3d-4005-857e-4ba60140a539, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shopvpn.net, headers: {Host: vietnam.hn6.shopvpn.net}}, udp: true}
-- {name: 中国(TG频道:@kxswa, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-- {name: 美国(TG频道:@kxswa) 007, server: 141.147.191.85, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, skip-cert-verify: true}
-- {name: 德国(TG频道:@kxswa) 004, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true}
-- {name: 印度(TG频道:@kxswa), server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true}
-- {name: 中国(TG频道:@kxswa) 005, server: 43.248.79.72, port: 80, type: vmess, uuid: b17f9999-1608-4911-86f2-d0cf20bf1356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 43.248.79.72}}, udp: true}
-- {name: 新加坡(TG频道:@kxswa), server: singapore2.shopvpn.net, port: 80, type: vmess, uuid: 77a81e4d-2f3d-4005-857e-4ba60140a539, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shopvpn.net, headers: {Host: singapore2.shopvpn.net}}, udp: true}
-- {name: 荷兰(TG频道:@kxswa 001, server: 213.183.59.214, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-- {name: 荷兰(TG频道:@kxswa 002, server: 213.183.59.214, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: 🔈更新于06/22, server: cmhk1.linhun11.xyz, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, sni: cmhk1.linhun11.xyz, skip-cert-verify: true}
+  - {name: 中国(TG频道:@kxswa) 001, type: ssr, server: 120.233.185.189, port: 11807, cipher: chacha20-ietf, password: Fhbe0z, obfs: tls1.2_ticket_auth, protocol: auth_aes128_sha1, obfs-param: Vm0wd2VHUXhUWGROVldSWVYwZG9WMWx0ZEhkVU1WcDBUVmM1VjAxWGVGWlZNbmhQWVd4YWMxZHFRbUZXVmxsM1ZtMTRZV015VGtsaVJtUnBWa1phZVZkV1pEUlpWMDE0V2toR1UySklRazlWYlRWRFpWWmtWMVZyZEZSTlZUVklWbTAxVDJGR1NuVlJiR2hYWWxSV1JGWkZXbUZXYkdSeVYyeENWMkV3Y0ZSV1ZWcFNaSGM5UFE9PQ, protocol-param: 13370:DqGDfE, udp: true}
+  - {name: 越南(TG频道:@kxswa) 001, server: vietnam.hn9.shopvpn.net, port: 80, type: vmess, uuid: 77a81e4d-2f3d-4005-857e-4ba60140a539, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shopvpn.net, headers: {Host: vietnam.hn9.shopvpn.net}}, udp: true}
+  - {name: 越南(TG频道:@kxswa) 002, server: 103.167.199.121, port: 80, type: vmess, uuid: e982184f-c6e0-4ba4-91cc-71eb6c702588, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /nkpvpn.site, headers: {Host: 103.167.199.121}}, udp: true}
+  - {name: 中国(TG频道:@kxswa) 002, server: hn.zfnode.org, port: 30217, type: trojan, password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f, skip-cert-verify: true}
+  - {name: (TG频道:@kxswa) 001, server: 103.173.255.127, port: 28443, type: trojan, password: 25c723db-3393-4608-a97d-90c4ba3688cb, skip-cert-verify: true}
+  - {name: 美国(TG频道:@kxswa) 001, server: 192.9.183.183, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, skip-cert-verify: true}
+  - {name: 美国(TG频道:@kxswa) 002, server: hongkong1.shopvpn.net, port: 80, type: vmess, uuid: 77a81e4d-2f3d-4005-857e-4ba60140a539, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shopvpn.net, headers: {Host: hongkong1.shopvpn.net}}, udp: true}
+  - {name: 德国(TG频道:@kxswa) 001, server: 172.104.251.52, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, skip-cert-verify: true}
+  - {name: 美国(TG频道:@kxswa) 003, server: ss2.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: ss2.2046.gq, skip-cert-verify: true}
+  - {name: 中国(TG频道:@kxswa) 003, type: ssr, server: 120.233.185.189, port: 11804, cipher: chacha20-ietf, password: Fhbe0z, obfs: tls1.2_ticket_auth, protocol: auth_aes128_sha1, obfs-param: Vm0wd2VHUXhUWGROVldSWVYwZG9WMWx0ZEhkVU1WcDBUVmM1VjAxWGVGWlZNbmhQWVd4YWMxZHFRbUZXVmxsM1ZtMTRZV015VGtsaVJtUnBWa1phZVZkV1pEUlpWMDE0V2toR1UySklRazlWYlRWRFpWWmtWMVZyZEZSTlZUVklWbTAxVDJGR1NuVlJiR2hYWWxSV1JGWkZXbUZXYkdSeVYyeENWMkV3Y0ZSV1ZWcFNaSGM5UFE9PQ, protocol-param: 13370:DqGDfE, udp: true}
+  - {name: (TG频道:@kxswa) 002, server: 103.173.255.234, port: 28443, type: trojan, password: 25c723db-3393-4608-a97d-90c4ba3688cb, skip-cert-verify: true}
+  - {name: 德国(TG频道:@kxswa) 002, server: 172.104.244.36, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, skip-cert-verify: true}
+  - {name: 美国(TG频道:@kxswa) 004, server: 23.224.33.72, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, skip-cert-verify: true}
+  - {name: (TG频道:@kxswa) 003, server: 103.173.255.21, port: 28443, type: trojan, password: 25c723db-3393-4608-a97d-90c4ba3688cb, skip-cert-verify: true}
+  - {name: 美国(TG频道:@kxswa) 005, server: 67us01.fans8.xyz, port: 443, type: trojan, password: 64e4a3ac-7699-4614-9c53-9e1da3dccf5a, sni: 67us01.fans8.xyz, skip-cert-verify: true}
+  - {name: 德国(TG频道:@kxswa) 003, server: 172.104.205.212, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, skip-cert-verify: true}
+  - {name: 美国(TG频道:@kxswa) 006, server: 152.69.199.111, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 152.69.199.111}}, udp: true}
+  - {name: 中国(TG频道:@kxswa) 004, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true}
+  - {name: 澳大利亚(TG频道:@kxswa), server: kr04.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, sni: kr04.wangxd.life, skip-cert-verify: true}
+  - {name: 越南(TG频道:@kxswa) 003, server: vietnam.hn6.shopvpn.net, port: 80, type: vmess, uuid: 77a81e4d-2f3d-4005-857e-4ba60140a539, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shopvpn.net, headers: {Host: vietnam.hn6.shopvpn.net}}, udp: true}
+  - {name: 中国(TG频道:@kxswa, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 美国(TG频道:@kxswa) 007, server: 141.147.191.85, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, skip-cert-verify: true}
+  - {name: 德国(TG频道:@kxswa) 004, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true}
+  - {name: 印度(TG频道:@kxswa), server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true}
+  - {name: 中国(TG频道:@kxswa) 005, server: 43.248.79.72, port: 80, type: vmess, uuid: b17f9999-1608-4911-86f2-d0cf20bf1356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 43.248.79.72}}, udp: true}
+  - {name: 新加坡(TG频道:@kxswa), server: singapore2.shopvpn.net, port: 80, type: vmess, uuid: 77a81e4d-2f3d-4005-857e-4ba60140a539, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shopvpn.net, headers: {Host: singapore2.shopvpn.net}}, udp: true}
+  - {name: 荷兰(TG频道:@kxswa 001, server: 213.183.59.214, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 荷兰(TG频道:@kxswa 002, server: 213.183.59.214, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - automatic
-  - 有问题咨询TG@beikui_bot
-  - 旧金山
-  - Amazon_Tokyo 001
-  - 春川 001
-  - 春川 002
-  - Amazon_Tokyo 002
-  - 香港 001
-  - 美国 001
-  - 美国 002
-  - 新加坡 001
-  - 新加坡3
-  - 香港DMIT
-  - 日本高速
-  - 日本-优化
-  - 日本高速-优化
-  - 香港 002
-  - 日本
-  - 东京
-  - 美国 003
-  - 美国 004
-  - 韩国
-  - 新加坡 002
-  - 韩�%B
-  - 以下共100G流量
-  - 香港2-电信/联通
-  - 香港3-电信/移动
-  - 香港25-电信/移动
-  - 台湾4-联通/移动
-  - 美国5-全网优化
-  - 美国6-电信/联通
-  - 美国16-全网优化
-  - 美国26-全网优化
-  - 韩国7-全网优化
-  - 韩国8-全网优化
-  - 韩国27-全网优化
-  - 韩国28-电信优化
-  - 日本9-移动/联通
-  - 日本18-全网优化
-  - 阿布扎比19-电信/移动/南方联通
-  - 德国11-联通优化
-  - 英国12-北方联通
-  - 印度13-移动/南方联通
-  - 新加坡14-电信/移动
-  - 俄罗斯17-电信/联通
-  - 悉尼21-全网优化
-  - 巴西22-全网优化
-  - 以色列23-全网优化
-  - 土耳其24-电信/联通
   - "香港-tg频道:@bpjzx2_1\r"
   - "日本-tg频道:@bpjzx2_1\r"
   - "新加坡-tg频道:@bpjzx2_1\r"
@@ -138,54 +90,6 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - 有问题咨询TG@beikui_bot
-  - 旧金山
-  - Amazon_Tokyo 001
-  - 春川 001
-  - 春川 002
-  - Amazon_Tokyo 002
-  - 香港 001
-  - 美国 001
-  - 美国 002
-  - 新加坡 001
-  - 新加坡3
-  - 香港DMIT
-  - 日本高速
-  - 日本-优化
-  - 日本高速-优化
-  - 香港 002
-  - 日本
-  - 东京
-  - 美国 003
-  - 美国 004
-  - 韩国
-  - 新加坡 002
-  - 韩�%B
-  - 以下共100G流量
-  - 香港2-电信/联通
-  - 香港3-电信/移动
-  - 香港25-电信/移动
-  - 台湾4-联通/移动
-  - 美国5-全网优化
-  - 美国6-电信/联通
-  - 美国16-全网优化
-  - 美国26-全网优化
-  - 韩国7-全网优化
-  - 韩国8-全网优化
-  - 韩国27-全网优化
-  - 韩国28-电信优化
-  - 日本9-移动/联通
-  - 日本18-全网优化
-  - 阿布扎比19-电信/移动/南方联通
-  - 德国11-联通优化
-  - 英国12-北方联通
-  - 印度13-移动/南方联通
-  - 新加坡14-电信/移动
-  - 俄罗斯17-电信/联通
-  - 悉尼21-全网优化
-  - 巴西22-全网优化
-  - 以色列23-全网优化
-  - 土耳其24-电信/联通
   - "香港-tg频道:@bpjzx2_1\r"
   - "日本-tg频道:@bpjzx2_1\r"
   - "新加坡-tg频道:@bpjzx2_1\r"
