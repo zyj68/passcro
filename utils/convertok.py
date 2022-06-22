@@ -22,11 +22,11 @@ class sub_convert():
             dict
         Base64 To Dict:
             raw_base64
-            convert --> transfer --> base64_decode --> format --> yaml_encode
+            convert --> transfer --> base64_decode --> format --> yaml_encode --> format
             dict
     第二步堆栈:
         dict
-        convert --> makeup --> format
+        convert --> makeup( --> format)
         yaml_final
     第三步堆栈:
         YAML To YAML:
@@ -43,7 +43,7 @@ class sub_convert():
             base64_final
     """
 
-    def convert(raw_input, input_type='url', output_type='url', custom_set={'dup_rm_enabled': False, 'format_name_enabled': False}): # {'input_type': ['url', 'content'],'output_type': ['url', 'YAML', 'Base64']}
+    def convert(raw_input, input_type='url', output_type='url'): # {'input_type': ['url', 'content'],'output_type': ['url', 'YAML', 'Base64']}
         # convert Url to YAML or Base64
         if input_type == 'url': # 获取 URL 订阅链接内容
             sub_content = ''
@@ -211,15 +211,21 @@ class sub_convert():
             if output == False:
                 for item in sub_content_yaml['proxies']:# 对转换过程中出现的不标准配置格式转换
                     try:
+                        if item['type'] == 'vmess' and 'ws-path' in item.keys():
+                            item['ws-opts'] = {'path': item.pop('ws-path')}
                         if item['type'] == 'vmess' and 'HOST' in item['ws-headers'].keys():
                             item['ws-headers']['Host'] = item['ws-headers'].pop("HOST")
+                        if item['type'] == 'vmess' and 'ws-headers' in item.keys():
+                            item['ws-opts']['headers'] = item.pop('ws-headers')
+
+
                     except KeyError:
                         if '.' not in item['server']:
                             sub_content_yaml['proxies'].remove(item)
                         pass
 
             return sub_content_yaml # 返回字典, output 值为 True 时返回修饰过的 YAML 文本
-    def makeup(input): # 对节点进行区域的筛选和重命名，输出 YAML 文本 
+    def makeup(input): # 对节点进行重命名和格式化，输出 YAML 文本 
         # 区域判断(Clash YAML): https://blog.csdn.net/CSDN_duomaomao/article/details/89712826 (ip-api)
         if isinstance(input, dict):
             sub_content = input
@@ -256,7 +262,7 @@ class sub_convert():
         yaml_content_dic = clashmodel
 
         yaml_content_raw = yaml.dump(yaml_content_dic, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2) # yaml.dump 显示中文方法 https://blog.csdn.net/weixin_41548578/article/details/90651464 yaml.dump 各种参数 https://blog.csdn.net/swinfans/article/details/88770119
-        yaml_content = yaml_content_raw.replace('\'', '').replace('False', 'false').replace('True', 'true')
+        yaml_content = yaml_content_raw.replace('\'', '').replace('False', 'false').replace('True', 'true').replace('- {name','  - {name')
 
 
         return yaml_content # 输出 YAML 格式文本
@@ -876,15 +882,15 @@ clashmodel = {'port': 7890, 'socks-port': 7891, 'mode': 'rule', 'log-level': 'si
 
 
 if __name__ == '__main__':
-    subs = ['https://gitlab.com/xlzlucky/bpjd/-/raw/main/freejd',
+    subs = ['https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2'
+            'https://gitlab.com/xlzlucky/bpjd/-/raw/main/freejd',
             'https://raw.githubusercontent.com/Lewis-1217/FreeNodes/main/bpjzx2',
             'https://raw.githubusercontent.com/poduv/poduv/i/long',
             'https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg',
             'https://raw.githubusercontent.com/freefq/free/master/v2',
-            'https://raw.githubusercontent.com/mzcorleone/clash/main/node-all.yaml',
-            'https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2']
+            'https://raw.githubusercontent.com/mzcorleone/clash/main/node-all.yaml',]
 
-    filname = ['xzlucky','lewis','poduv','jszk','frfq','corle','aibox']
+    filname = ['xluck','lewis','poduv','jszk','frfq','corle','aibox']
     for i in range(len(subs)):
         content = sub_convert.convert(subs[i], 'url', 'YAML')
         if not os.path.exists('./subs'):
@@ -893,7 +899,6 @@ if __name__ == '__main__':
         file.write(content)
         file.close()
         print(f'Writing content to temp.working.yaml\n')
-
 
 
 
