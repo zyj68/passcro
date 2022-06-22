@@ -884,7 +884,7 @@ if __name__ == '__main__':
             'https://raw.githubusercontent.com/mzcorleone/clash/main/node-all.yaml',
             'https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2']
 
-    filname = ['xzlucky','lewis','poduv','jszk','frfq','corle','aibox']
+    filname = ['xluck','lewis','poduv','jszk','frfq','corle','aibox']
     for i in range(len(subs)):
         content = sub_convert.convert(subs[i], 'url', 'YAML')
         if not os.path.exists('./subs'):
