@@ -253,12 +253,12 @@ class sub_convert():
         print('共发现:{}个节点'.format(len(proxies_list)))
 
 
+        url_names = [i['name'].strip() for i in proxies_list if i['server'] != '127.0.0.1']
         url_list = [str(i) for i in proxies_list if i['server'] != '127.0.0.1']
-        url_names = [i['name'] for i in proxies_list if i['server'] != '127.0.0.1']
 
         clashmodel['proxies'] = url_list
-        clashmodel['proxy-groups'][0]['proxies'].extend(url_names)
-        clashmodel['proxy-groups'][1]['proxies'].extend(url_names)
+        clashmodel['proxy-groups'][0]['proxies']= ['♻️ automatic'] + url_names
+        clashmodel['proxy-groups'][1]['proxies']=url_names
         yaml_content_dic = clashmodel
 
         yaml_content_raw = yaml.dump(yaml_content_dic, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2) # yaml.dump 显示中文方法 https://blog.csdn.net/weixin_41548578/article/details/90651464 yaml.dump 各种参数 https://blog.csdn.net/swinfans/article/details/88770119
@@ -645,7 +645,7 @@ external-controller: 127.0.0.1:23941
 
 clashmodel = {'port': 7890, 'socks-port': 7891, 'mode': 'rule', 'log-level': 'silent', 'external-controller': '127.0.0.1:9090', 
          'proxies': [],
-         'proxy-groups': [{'name': 'Proxy', 'type': 'select', 'proxies': ['automatic']}, {'name': 'automatic', 'type': 'url-test', 'proxies': [], 'url': 'https://www.google.com/favicon.ico', 'interval': 300}],
+         'proxy-groups': [{'name': 'Proxy', 'type': 'select', 'proxies': ['♻️ automatic']}, {'name': '♻️ automatic', 'type': 'url-test', 'proxies': [], 'url': 'https://www.google.com/favicon.ico', 'interval': 300}],
          'rules': ['DOMAIN,safebrowsing.urlsec.qq.com,DIRECT', 'DOMAIN,safebrowsing.googleapis.com,DIRECT',
                    'DOMAIN,developer.apple.com,Proxy', 'DOMAIN-SUFFIX,digicert.com,Proxy',
                    'DOMAIN,ocsp.apple.com,Proxy', 'DOMAIN,ocsp.comodoca.com,Proxy',
@@ -882,13 +882,14 @@ clashmodel = {'port': 7890, 'socks-port': 7891, 'mode': 'rule', 'log-level': 'si
 
 
 if __name__ == '__main__':
-    subs = ['https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2'
+    subs = [
+            'https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2',
             'https://gitlab.com/xlzlucky/bpjd/-/raw/main/freejd',
             'https://raw.githubusercontent.com/Lewis-1217/FreeNodes/main/bpjzx2',
             'https://raw.githubusercontent.com/poduv/poduv/i/long',
             'https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg',
             'https://raw.githubusercontent.com/freefq/free/master/v2',
-            'https://raw.githubusercontent.com/mzcorleone/clash/main/node-all.yaml',]
+            'https://raw.githubusercontent.com/mzcorleone/clash/main/node-all.yaml']
 
     filname = ['xluck','lewis','poduv','jszk','frfq','corle','aibox']
     for i in range(len(subs)):
@@ -899,6 +900,7 @@ if __name__ == '__main__':
         file.write(content)
         file.close()
         print(f'Writing content to temp.working.yaml\n')
+
 
 
 
