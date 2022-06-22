@@ -4,53 +4,26 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-- {name: 日本-tg频道:@bpjzx2, server: jp1.wanss.win, port: 23344, type: vmess, uuid: 48C166B2-BFC2-512E-4D67-47C2F7B2CE5C, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.wanss.win}}, udp: true}
-- {name: 美国-tg频道:@bpjzx2\r 001, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: edge.apple.com, skip-cert-verify: true}
-- {name: 澳大利亚-tg频道:@bpjzx2 001, server: 185.167.116.24, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-- {name: 新加坡-tg频道:@bpjzx2\r, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true}
-- {name: 英国-tg频道:@bpjzx2\r 001, server: jgwld4.gaox.ml, port: 443, type: trojan, password: 58d32c66-43b1-4561-9951-d87c9123774e, sni: jgwld4.gaox.ml, skip-cert-verify: true}
-- {name: 英国-tg频道:@bpjzx2\r 002, server: 144.24.87.99, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: true}
-- {name: 香港-tg频道:@bpjzx2\r 001, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2\r 001, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2 001, type: ssr, server: 183.232.141.82, port: 561, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
-- {name: 中国-tg频道:@bpjzx2 002, type: ssr, server: 183.232.141.82, port: 562, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
-- {name: 德国-tg频道:@bpjzx2\r 001, server: 172.104.251.52, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: true}
-- {name: 阿联酋-tg频道:@bpjzx2\r, server: 193.123.69.94, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: true}
-- {name: 美国-tg频道:@bpjzx2\r 002, server: 67us01.fans8.xyz, port: 443, type: trojan, password: 6ba87c27-a1f0-4702-9c4e-3cba6fbd7e93, sni: 67us01.fans8.xyz, skip-cert-verify: true}
-- {name: 卢森堡-tg频道:@bpjzx2\r, server: 91.243.81.190, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: true}
-- {name: 澳大利亚-tg频道:@bpjzx2 002, server: 185.167.116.24, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-- {name: 中国-tg频道:@bpjzx2 003, type: ssr, server: 183.232.141.114, port: 561, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
-- {name: 美国-tg频道:@bpjzx2\r 003, server: 0001.us.genzpn.com, port: 443, type: trojan, password: 4f4418cd-385c-4203-a323-1b4d2be8e495, sni: 0001.us.genzpn.com, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2 004, type: ssr, server: 112.64.98.228, port: 561, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
-- {name: 越南-tg频道:@bpjzx2\r 001, server: 103.173.155.72, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2 005, type: ssr, server: 183.232.141.109, port: 562, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
-- {name: 中国-tg频道:@bpjzx2\r 002, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true}
-- {name: 越南-tg频道:@bpjzx2\r 002, server: 103.173.255.228, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2 006, type: ssr, server: 112.65.53.150, port: 561, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
-- {name: 中国-tg频道:@bpjzx2 007, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-- {name: 中国-tg频道:@bpjzx2\r 003, server: gzyd1.xxcv.cc, port: 20130, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, sni: gzyd1.xxcv.cc, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2 008, type: ssr, server: 139.226.78.148, port: 561, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
-- {name: 中国-tg频道:@bpjzx2 009, type: ssr, server: 112.65.53.150, port: 562, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
-- {name: 中国-tg频道:@bpjzx2 010, type: ssr, server: 139.226.78.148, port: 562, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
-- {name: 韩国-tg频道:@bpjzx2\r 001, server: 3.35.48.120, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: true}
-- {name: 德国-tg频道:@bpjzx2\r 002, server: 172.104.205.212, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2 011, type: ssr, server: 112.65.53.150, port: 560, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
-- {name: 中国-tg频道:@bpjzx2 012, type: ssr, server: cngzcm.duraker.xyz, port: 562, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, protocol-param: 21322:12345678, udp: true}
-- {name: 越南-tg频道:@bpjzx2\r 003, server: 103.173.255.21, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2 013, type: ssr, server: 112.65.53.150, port: 563, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
-- {name: 中国-tg频道:@bpjzx2 014, type: ssr, server: 112.64.98.228, port: 560, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
-- {name: 越南-tg频道:@bpjzx2\r 004, server: 103.173.255.234, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: true}
-- {name: 韩国-tg频道:@bpjzx2\r 002, server: 0001.kr.genzpn.com, port: 443, type: trojan, password: 4f4418cd-385c-4203-a323-1b4d2be8e495, sni: 0001.kr.genzpn.com, skip-cert-verify: true}
-- {name: 香港-tg频道:@bpjzx2\r 002, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true}
-- {name: 韩国-tg频道:@bpjzx2\r 003, server: 3.39.235.8, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: true}
-- {name: 香港-tg频道:@bpjzx2\r 003, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2\r 004, server: 103.56.62.145, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2\r 005, server: 116.129.253.201, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2\r 006, server: 103.56.60.235, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2\r 007, server: 103.56.60.235, port: 3381, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2 015, type: ssr, server: 183.232.141.114, port: 563, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
-- {name: 中国-tg频道:@bpjzx2\r 008, server: 103.56.60.235, port: 3381, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true}
-- {name: 中国-tg频道:@bpjzx2 016, type: ssr, server: 183.232.141.114, port: 564, cipher: chacha20-ietf, password: mblank1port, obfs: plain, protocol: auth_aes128_md5, obfs-param: ZEM1dFpTOTJjRzVvWVhR, protocol-param: 21322:12345678, udp: true}
+- {name: 香港-tg频道:@bpjzx2_1\r, server: hkt1.okr.pub, port: 13443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: cdn.xn--6p1awey07c.xyz, skip-cert-verify: true}
+- {name: 日本-tg频道:@bpjzx2_1\r, server: jp2.xn--6p1awey07c.xyz, port: 15443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: cdn.xn--6p1awey07c.xyz, skip-cert-verify: true}
+- {name: 新加坡-tg频道:@bpjzx2_1\r, server: sg2.xn--6p1awey07c.xyz, port: 17443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: cdn.xn--6p1awey07c.xyz, skip-cert-verify: true}
+- {name: 日本-tg频道:@bpjzx2_2\r, server: jp1.xn--6p1awey07c.xyz, port: 15443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: cdn.xn--6p1awey07c.xyz, skip-cert-verify: true}
+- {name: 新加坡-tg频道:@bpjzx2_2\r, server: sg3.xn--6p1awey07c.xyz, port: 17443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: cdn.xn--6p1awey07c.xyz, skip-cert-verify: true}
+- {name: 台湾-tg频道:@bpjzx2_1\r, server: tw2.xn--6p1awey07c.xyz, port: 43443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: cdn.xn--6p1awey07c.xyz, skip-cert-verify: true}
+- {name: 台湾-tg频道:@bpjzx2_2\r, server: tw1.xn--6p1awey07c.xyz, port: 43443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: cdn.xn--6p1awey07c.xyz, skip-cert-verify: true}
+- {name: 台湾-tg频道:@bpjzx2_3\r, server: tw3.xn--6p1awey07c.xyz, port: 43443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: cdn.xn--6p1awey07c.xyz, skip-cert-verify: true}
+- {name: 越南-tg频道:@bpjzx2\r, server: vn.xn--6p1awey07c.xyz, port: 18443, type: trojan, password: 0e4be520-5039-4df3-975a-1939ea8b52ce, sni: cdn.xn--6p1awey07c.xyz, skip-cert-verify: true}
+- {name: 台湾-tg频道:@bpjzx2_4\r, server: 67tw01.fans8.xyz, port: 443, type: trojan, password: 6f5e02bd-9b8f-44bc-b681-55150c102911, sni: 67tw01.fans8.xyz, skip-cert-verify: true}
+- {name: 香港-tg频道:@bpjzx2_2, server: dnsfree01.theworkpc.com, port: 20944, type: vmess, uuid: 3e0a6f9a-a478-4752-900d-837b39d70792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+- {name: 美国-tg频道:@bpjzx2\r, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: edge.apple.com, skip-cert-verify: true}
+- {name: 新加坡-tg频道:@bpjzx2_3\r, server: sg0601.fans8.xyz, port: 443, type: trojan, password: 6f5e02bd-9b8f-44bc-b681-55150c102911, sni: sg0601.fans8.xyz, skip-cert-verify: true}
+- {name: 香港免流-tg频道:@bpjzx2, server: dnsfree01.theworkpc.com, port: 80, type: vmess, uuid: 3e0a6f9a-a478-4752-900d-837b39d70792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+- {name: 新加坡-tg频道:@bpjzx2_4\r, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true}
+- {name: 香港-tg频道:@bpjzx2_3, server: dnsfree01.theworkpc.com, port: 20943, type: vmess, uuid: 3e0a6f9a-a478-4752-900d-837b39d70792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+- {name: 香港-tg频道:@bpjzx2_4, server: dnsfree01.theworkpc.com, port: 20943, type: vmess, uuid: d58a521b-4a23-47c5-b1d3-05ee1504c69b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+- {name: 香港-tg频道:@bpjzx2_5\r, server: 618hk.fans8.xyz, port: 443, type: trojan, password: 6f5e02bd-9b8f-44bc-b681-55150c102911, sni: 618hk.fans8.xyz, skip-cert-verify: true}
+- {name: 中国-tg频道:@bpjzx2_1, type: ssr, server: 120.233.185.189, port: 11804, cipher: chacha20-ietf, password: Fhbe0z, obfs: tls1.2_ticket_auth, protocol: auth_aes128_sha1, obfs-param: Vm0wd2QyUXlWa2hWV0doVlYwZFNUMVpzWkZOWFZsbDNXa2M1VjAxWGVEQmFSV2hyVmxVeFYyTkVRbFZXYlUweFZtcEJlRmRIVmtkWGJGcE9ZbTFvVVZkV1pEUlpWMDE0V2toR1VtSlZXbGhXYlhoelRURmFkRTFVVWxwV01ERTFWa2QwYzJGV1NuUlZia0pYWVRGd2FGcFdXbXRXTVhCRlZXeHdWMDFFUlRCV01uUnZVakZWZVZOcmJGSmhlbXhYV1d4U1YxSkdjRmRYYlhSWFRWWmFlVnBGV2xOVWJGcFZWbXRzVjJKVVFYaFdSRXBIVWpGT2RWWnNTbWxTTW1oWlYxZDRVMVl4U2tkWGExcFlZbFZhV0ZsclpGTmxWbGw1WlVWT1YwMXJWak5aTUZwVFZqRmFWMk5HVG1GVFIwMDFWVVpGT1ZCUg==, protocol-param: 13370:DqGDfE, udp: true}
+- {name: 中国-tg频道:@bpjzx2_2, type: ssr, server: 120.233.185.189, port: 11807, cipher: chacha20-ietf, password: Fhbe0z, obfs: tls1.2_ticket_auth, protocol: auth_aes128_sha1, obfs-param: Vm0wd2QyUXlWa2hWV0doVlYwZFNUMVpzWkZOWFZsbDNXa2M1VjAxWGVEQmFSV2hyVmxVeFYyTkVRbFZXYlUweFZtcEJlRmRIVmtkWGJGcE9ZbTFvVVZkV1pEUlpWMDE0V2toR1VtSlZXbGhXYlhoelRURmFkRTFVVWxwV01ERTFWa2QwYzJGV1NuUlZia0pYWVRGd2FGcFdXbXRXTVhCRlZXeHdWMDFFUlRCV01uUnZVakZWZVZOcmJGSmhlbXhYV1d4U1YxSkdjRmRYYlhSWFRWWmFlVnBGV2xOVWJGcFZWbXRzVjJKVVFYaFdSRXBIVWpGT2RWWnNTbWxTTW1oWlYxZDRVMVl4U2tkWGExcFlZbFZhV0ZsclpGTmxWbGw1WlVWT1YwMXJWak5aTUZwVFZqRmFWMk5HVG1GVFIwMDFWVVpGT1ZCUg==, protocol-param: 13370:DqGDfE, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
@@ -109,53 +82,26 @@ proxy-groups:
   - 莫斯科
   - 春川
   - 🇨🇳 中国 广东省广州市 腾讯云 免流443端口
-  - 日本-tg频道:@bpjzx2
-  - "美国-tg频道:@bpjzx2\r 001"
-  - 澳大利亚-tg频道:@bpjzx2 001
-  - "新加坡-tg频道:@bpjzx2\r"
-  - "英国-tg频道:@bpjzx2\r 001"
-  - "英国-tg频道:@bpjzx2\r 002"
-  - "香港-tg频道:@bpjzx2\r 001"
-  - "中国-tg频道:@bpjzx2\r 001"
-  - 中国-tg频道:@bpjzx2 001
-  - 中国-tg频道:@bpjzx2 002
-  - "德国-tg频道:@bpjzx2\r 001"
-  - "阿联酋-tg频道:@bpjzx2\r"
-  - "美国-tg频道:@bpjzx2\r 002"
-  - "卢森堡-tg频道:@bpjzx2\r"
-  - 澳大利亚-tg频道:@bpjzx2 002
-  - 中国-tg频道:@bpjzx2 003
-  - "美国-tg频道:@bpjzx2\r 003"
-  - 中国-tg频道:@bpjzx2 004
-  - "越南-tg频道:@bpjzx2\r 001"
-  - 中国-tg频道:@bpjzx2 005
-  - "中国-tg频道:@bpjzx2\r 002"
-  - "越南-tg频道:@bpjzx2\r 002"
-  - 中国-tg频道:@bpjzx2 006
-  - 中国-tg频道:@bpjzx2 007
-  - "中国-tg频道:@bpjzx2\r 003"
-  - 中国-tg频道:@bpjzx2 008
-  - 中国-tg频道:@bpjzx2 009
-  - 中国-tg频道:@bpjzx2 010
-  - "韩国-tg频道:@bpjzx2\r 001"
-  - "德国-tg频道:@bpjzx2\r 002"
-  - 中国-tg频道:@bpjzx2 011
-  - 中国-tg频道:@bpjzx2 012
-  - "越南-tg频道:@bpjzx2\r 003"
-  - 中国-tg频道:@bpjzx2 013
-  - 中国-tg频道:@bpjzx2 014
-  - "越南-tg频道:@bpjzx2\r 004"
-  - "韩国-tg频道:@bpjzx2\r 002"
-  - "香港-tg频道:@bpjzx2\r 002"
-  - "韩国-tg频道:@bpjzx2\r 003"
-  - "香港-tg频道:@bpjzx2\r 003"
-  - "中国-tg频道:@bpjzx2\r 004"
-  - "中国-tg频道:@bpjzx2\r 005"
-  - "中国-tg频道:@bpjzx2\r 006"
-  - "中国-tg频道:@bpjzx2\r 007"
-  - 中国-tg频道:@bpjzx2 015
-  - "中国-tg频道:@bpjzx2\r 008"
-  - 中国-tg频道:@bpjzx2 016
+  - "香港-tg频道:@bpjzx2_1\r"
+  - "日本-tg频道:@bpjzx2_1\r"
+  - "新加坡-tg频道:@bpjzx2_1\r"
+  - "日本-tg频道:@bpjzx2_2\r"
+  - "新加坡-tg频道:@bpjzx2_2\r"
+  - "台湾-tg频道:@bpjzx2_1\r"
+  - "台湾-tg频道:@bpjzx2_2\r"
+  - "台湾-tg频道:@bpjzx2_3\r"
+  - "越南-tg频道:@bpjzx2\r"
+  - "台湾-tg频道:@bpjzx2_4\r"
+  - 香港-tg频道:@bpjzx2_2
+  - "美国-tg频道:@bpjzx2\r"
+  - "新加坡-tg频道:@bpjzx2_3\r"
+  - 香港免流-tg频道:@bpjzx2
+  - "新加坡-tg频道:@bpjzx2_4\r"
+  - 香港-tg频道:@bpjzx2_3
+  - 香港-tg频道:@bpjzx2_4
+  - "香港-tg频道:@bpjzx2_5\r"
+  - 中国-tg频道:@bpjzx2_1
+  - 中国-tg频道:@bpjzx2_2
 - name: automatic
   type: url-test
   proxies:
@@ -212,53 +158,26 @@ proxy-groups:
   - 莫斯科
   - 春川
   - 🇨🇳 中国 广东省广州市 腾讯云 免流443端口
-  - 日本-tg频道:@bpjzx2
-  - "美国-tg频道:@bpjzx2\r 001"
-  - 澳大利亚-tg频道:@bpjzx2 001
-  - "新加坡-tg频道:@bpjzx2\r"
-  - "英国-tg频道:@bpjzx2\r 001"
-  - "英国-tg频道:@bpjzx2\r 002"
-  - "香港-tg频道:@bpjzx2\r 001"
-  - "中国-tg频道:@bpjzx2\r 001"
-  - 中国-tg频道:@bpjzx2 001
-  - 中国-tg频道:@bpjzx2 002
-  - "德国-tg频道:@bpjzx2\r 001"
-  - "阿联酋-tg频道:@bpjzx2\r"
-  - "美国-tg频道:@bpjzx2\r 002"
-  - "卢森堡-tg频道:@bpjzx2\r"
-  - 澳大利亚-tg频道:@bpjzx2 002
-  - 中国-tg频道:@bpjzx2 003
-  - "美国-tg频道:@bpjzx2\r 003"
-  - 中国-tg频道:@bpjzx2 004
-  - "越南-tg频道:@bpjzx2\r 001"
-  - 中国-tg频道:@bpjzx2 005
-  - "中国-tg频道:@bpjzx2\r 002"
-  - "越南-tg频道:@bpjzx2\r 002"
-  - 中国-tg频道:@bpjzx2 006
-  - 中国-tg频道:@bpjzx2 007
-  - "中国-tg频道:@bpjzx2\r 003"
-  - 中国-tg频道:@bpjzx2 008
-  - 中国-tg频道:@bpjzx2 009
-  - 中国-tg频道:@bpjzx2 010
-  - "韩国-tg频道:@bpjzx2\r 001"
-  - "德国-tg频道:@bpjzx2\r 002"
-  - 中国-tg频道:@bpjzx2 011
-  - 中国-tg频道:@bpjzx2 012
-  - "越南-tg频道:@bpjzx2\r 003"
-  - 中国-tg频道:@bpjzx2 013
-  - 中国-tg频道:@bpjzx2 014
-  - "越南-tg频道:@bpjzx2\r 004"
-  - "韩国-tg频道:@bpjzx2\r 002"
-  - "香港-tg频道:@bpjzx2\r 002"
-  - "韩国-tg频道:@bpjzx2\r 003"
-  - "香港-tg频道:@bpjzx2\r 003"
-  - "中国-tg频道:@bpjzx2\r 004"
-  - "中国-tg频道:@bpjzx2\r 005"
-  - "中国-tg频道:@bpjzx2\r 006"
-  - "中国-tg频道:@bpjzx2\r 007"
-  - 中国-tg频道:@bpjzx2 015
-  - "中国-tg频道:@bpjzx2\r 008"
-  - 中国-tg频道:@bpjzx2 016
+  - "香港-tg频道:@bpjzx2_1\r"
+  - "日本-tg频道:@bpjzx2_1\r"
+  - "新加坡-tg频道:@bpjzx2_1\r"
+  - "日本-tg频道:@bpjzx2_2\r"
+  - "新加坡-tg频道:@bpjzx2_2\r"
+  - "台湾-tg频道:@bpjzx2_1\r"
+  - "台湾-tg频道:@bpjzx2_2\r"
+  - "台湾-tg频道:@bpjzx2_3\r"
+  - "越南-tg频道:@bpjzx2\r"
+  - "台湾-tg频道:@bpjzx2_4\r"
+  - 香港-tg频道:@bpjzx2_2
+  - "美国-tg频道:@bpjzx2\r"
+  - "新加坡-tg频道:@bpjzx2_3\r"
+  - 香港免流-tg频道:@bpjzx2
+  - "新加坡-tg频道:@bpjzx2_4\r"
+  - 香港-tg频道:@bpjzx2_3
+  - 香港-tg频道:@bpjzx2_4
+  - "香港-tg频道:@bpjzx2_5\r"
+  - 中国-tg频道:@bpjzx2_1
+  - 中国-tg频道:@bpjzx2_2
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
