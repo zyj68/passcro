@@ -26,7 +26,7 @@ class sub_convert():
             dict
     第二步堆栈:
         dict
-        convert --> makeup( --> format)
+        convert --> makeup --> format
         yaml_final
     第三步堆栈:
         YAML To YAML:
@@ -139,7 +139,7 @@ class sub_convert():
                 try_load = yaml.safe_load(sub_content)
                 if output == False:
                     sub_content_yaml = try_load
-                else:
+                elif output == True:
                     sub_content_yaml = sub_content
             except Exception:
                 try:
@@ -153,49 +153,8 @@ class sub_convert():
                     for line in lines:
                         value_list = re.split(r': |, ', line)
                         if len(value_list) > 6:
-                            value_list_fix = []
-                            for value in value_list:
-                                for char in il_chars:
-                                    value_il = False
-                                    if char in value:
-                                        value_il = True
-                                        break
-                                if value_il == True and ('{' not in value and '}' not in value):
-                                    value = '"' + value + '"'
-                                    value_list_fix.append(value)
-                                elif value_il == True and '}' in value:
-                                    if '}}' in value:
-                                        host_part = value.replace('}}','')
-                                        host_value = '"'+host_part+'"}}'
-                                        value_list_fix.append(host_value)
-                                    elif '}}' not in value:
-                                        host_part = value.replace('}','')
-                                        host_value = '"'+host_part+'"}'
-                                        value_list_fix.append(host_value)
-                                else:
-                                    value_list_fix.append(value)
-                                line_fix = line
-                            for index in range(len(value_list_fix)):
-                                line_fix = line_fix.replace(value_list[index], value_list_fix[index])
-                            line_fix_list.append(line_fix)
-                        elif len(value_list) == 2:
-                            value_list_fix = []
-                            for value in value_list:
-                                for char in il_chars:
-                                    value_il = False
-                                    if char in value:
-                                        value_il = True
-                                        break
-                                if value_il == True:
-                                    value = '"' + value + '"'
-                                value_list_fix.append(value)
-                            line_fix = line
-                            for index in range(len(value_list_fix)):
-                                line_fix = line_fix.replace(value_list[index], value_list_fix[index])
-                            line_fix_list.append(line_fix)
-                        elif len(value_list) == 1:
-                            if ':' in line:
-                                line_fix_list.append(line)
+                            line = re.sub(r'name: *([^:]*?[|\[\]].*?)(, *\b\w*?:)',r'name: "\1"\2',line)
+                            line_fix_list.append(line)
                         else:
                             line_fix_list.append(line)
 
@@ -252,7 +211,6 @@ class sub_convert():
 
         print('共发现:{}个节点'.format(len(proxies_list)))
 
-
         url_names = [i['name'].strip() for i in proxies_list if i['server'] != '127.0.0.1']
         url_list = [str(i) for i in proxies_list if i['server'] != '127.0.0.1']
 
@@ -264,7 +222,7 @@ class sub_convert():
         yaml_content_raw = yaml.dump(yaml_content_dic, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2) # yaml.dump 显示中文方法 https://blog.csdn.net/weixin_41548578/article/details/90651464 yaml.dump 各种参数 https://blog.csdn.net/swinfans/article/details/88770119
         yaml_content = yaml_content_raw.replace('\'', '').replace('False', 'false').replace('True', 'true').replace('- {name','  - {name')
 
-
+        yaml_content = sub_convert.format(yaml_content,True)
         return yaml_content # 输出 YAML 格式文本
 
     def yaml_encode(url_content): # 将 URL 内容转换为 YAML (输出默认 YAML 格式)
@@ -552,10 +510,10 @@ class sub_convert():
                     trojan_proxy = str('trojan://' + str(proxy['password']) + '@' + str(proxy['server']) + ':' + str(proxy['port']) + trojan_go + '#' + str(urllib.parse.quote(proxy['name'])) + '\n')
                     protocol_url.append(trojan_proxy)
 
-                #elif proxy['type'] == 'ssr':
-                    #ssr_base64_decoded = str(proxy['server']) + ':' + str(proxy['port']) + ':' + str(proxy['protocol']) 
-                    #ssr_base64_decoded = ssr_base64_decoded + ':' + str(proxy['cipher']) + ':' + str(proxy['obfs']) + ':' + str(sub_convert.base64_encode(proxy['password'])) + '/?'
-                    #protocol_url.append(vmessr_proxy)
+                # elif proxy['type'] == 'ssr':
+                #     ssr_base64_decoded = str(proxy['server']) + ':' + str(proxy['port']) + ':' + str(proxy['protocol']) 
+                #     ssr_base64_decoded = ssr_base64_decoded + ':' + str(proxy['cipher']) + ':' + str(proxy['obfs']) + ':' + str(sub_convert.base64_encode(proxy['password'])) + '/?'
+                #     protocol_url.append(ssr_proxy)
 
             yaml_content = ''.join(protocol_url)
             return yaml_content
@@ -882,16 +840,17 @@ clashmodel = {'port': 7890, 'socks-port': 7891, 'mode': 'rule', 'log-level': 'si
 
 
 if __name__ == '__main__':
-    subs = [
-            'https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2',
-            'https://gitlab.com/xlzlucky/bpjd/-/raw/main/freejd',
-            'https://raw.githubusercontent.com/Lewis-1217/FreeNodes/main/bpjzx2',
-            'https://raw.githubusercontent.com/poduv/poduv/i/long',
-            'https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg',
-            'https://raw.githubusercontent.com/freefq/free/master/v2',
-            'https://raw.githubusercontent.com/mzcorleone/clash/main/node-all.yaml']
-
-    filname = ['xluck','lewis','poduv','jszk','frfq','corle','aibox']
+    # subs = [
+    #         'https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2',
+    #         'https://gitlab.com/xlzlucky/bpjd/-/raw/main/freejd',
+    #         'https://raw.githubusercontent.com/Lewis-1217/FreeNodes/main/bpjzx2',
+    #         'https://raw.githubusercontent.com/poduv/poduv/i/long',
+    #         'https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg',
+    #         'https://raw.githubusercontent.com/freefq/free/master/v2',
+    #         'https://raw.githubusercontent.com/mzcorleone/clash/main/node-all.yaml'
+    #         ]
+    subs = ['https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg']
+    filname = ['aibox','xluck','lewis','poduv','jszk','frfq','corle',]
     for i in range(len(subs)):
         content = sub_convert.convert(subs[i], 'url', 'YAML')
         if not os.path.exists('./subs'):
