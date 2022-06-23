@@ -145,7 +145,7 @@ class sub_convert():
                 try:
                     sub_content = sub_content.replace('\'', '').replace('"', '')
                     url_list = []
-                    il_chars = ['|', '?', '[', ']', '@', '!', '%']
+                    il_chars = ['|','丨', '?', '[', ']', '@', '!', '%']
 
                     lines = re.split(r'\n+', sub_content)
                     line_fix_list = []
@@ -153,7 +153,7 @@ class sub_convert():
                     for line in lines:
                         value_list = re.split(r': |, ', line)
                         if len(value_list) > 6:
-                            line = re.sub(r'name: *([^:]*?[|\[\]].*?)(, *\b\w*?:)',r'name: "\1"\2',line)
+                            line = re.sub(r'name: *([^:]*?[|丨\[\]].*?)(, *\b\w*?:)',r'name: "\1"\2',line)
                             line_fix_list.append(line)
                         else:
                             line_fix_list.append(line)
