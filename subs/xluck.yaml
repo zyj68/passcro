@@ -5,156 +5,215 @@ log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
   - {name: 有问题咨询TG@beikui_bot, server: hkbgp1.jiantian.xyz, port: 14326, type: trojan, password: 952eeefe-196d-4d67-a447-52577d694f96, skip-cert-verify: true}
-  - {name: Amazon_Tokyo, server: 54.65.100.2, port: 44573, type: vmess, uuid: d7ae61b6-c008-4b28-ad87-176ff9547d41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "Lv2 新加坡 01 [1.5]", server: ersgdf.passwordv2.com, port: 7400, type: vmess, uuid: de4ad116-f467-439f-bfd1-2a0c835e9742, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "Lv2 美国 03 [1.5%5", server: lsdrtx.passwordv2.com, port: 7502, type: ss, cipher: aes-128-gcm, password: de4ad116-f467-439f-bfd1-2a0c835e9742, udp: true}
-  - {name: 🇨🇳 v1丨印度丨北京- HK隧道-印度丨中转丨2, server: zhuanfabj1.yooo.me, port: 44174, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇨🇳 v1丨印度丨北京- HK隧道-印度丨顺手更新下订阅, server: zhuanfabj1.yooo.me, port: 44174, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇹🇼 v1丨台湾三网丨联通中继, server: zhuanfabj1.yooo.me, port: 32369, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇹🇼 v1丨台湾丨原生丨中台中继丨, server: zhuanfabj1.yooo.me, port: 32699, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇹🇼 v1丨台湾丨原生丨静态, server: zhuanfabj1.yooo.me, port: 32781, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇹🇼 v1丨台湾丨隧道中转丨1, server: zhuanfabj1.yooo.me, port: 32699, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇹🇼 v1丨台湾丨隧道中转丨2, server: zhuanfabj1.yooo.me, port: 32369, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇹🇼 v1丨台湾丨隧道中转丨解锁流媒体, server: zhuanfabj1.yooo.me, port: 32781, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇸🇬 v1丨新加坡丨 私人订制, server: zhuanfabj2.yooo.me, port: 3526, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇸🇬 v1丨新加坡丨中继丨HK隧道, server: zhuanfabj2.yooo.me, port: 3218, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇨🇳 v1丨新加坡丨北京-新加坡丨, server: zhuanfabj2.yooo.me, port: 3218, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇯🇵 v1丨日本丨中继丨东京丨2丨1Gbps, server: zhuanfabj1.yooo.me, port: 8641, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇨🇳 v1丨泰国丨北京- HK隧道-泰国丨2丨萨瓦迪卡, server: zhuanfabj1.yooo.me, port: 38216, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇹🇭 v1丨泰国丨直接丨1丨, server: zhuanfabj1.yooo.me, port: 38216, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇺🇲 v1丨美国丨原生丨三网优化丨广移中继, server: zhuanfabj1.yooo.me, port: 35790, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇺🇲 v1丨美国丨隧道中转丨解锁流媒体1, server: zhuanfabj1.yooo.me, port: 36289, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇺🇲 v1丨美国丨隧道中转丨解锁流媒体2, server: zhuanfabj1.yooo.me, port: 14094, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇬🇧 v1丨英国丨1, server: zhuanfabj1.yooo.me, port: 32362, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇬🇧 v1丨英国丨中港中转丨2, server: zhuanfabj1.yooo.me, port: 32361, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇻🇳 v1丨越南丨京港中继丨Trojan, server: zhuanfabj1.yooo.me, port: 23987, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇻🇳 v1丨越南丨直连丨解锁新加坡, server: zhuanfabj1.yooo.me, port: 23987, type: vmess, uuid: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 🇨🇳 v1丨韩国丨微软丨北京-韩国丨2丨1Gbps, server: zhuanfabj1.yooo.me, port: 36777, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 🇨🇳 v1丨香港丨微软丨1丨北京—香港丨, server: zhuanfabj1.yooo.me, port: 45024, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}
-  - {name: 香�%A 001, server: 36.134.116.212, port: 45139, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 香�%A 002, server: 36.134.116.212, port: 45101, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: 高级+专线+台湾+0 001, server: 122.9.113.185, port: 12052, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 标准+专线+香港+0 001, server: 122.9.113.185, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+香港+0 001, server: 122.9.113.185, port: 12004, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+香港+0 002, server: 122.9.113.185, port: 12005, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+香港+0 003, server: 122.9.113.185, port: 12003, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+香港+0 004, server: 122.9.113.185, port: 12001, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+越�%9, server: 122.9.113.185, port: 12062, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+乌克�%B, server: 117.78.39.17, port: 12111, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+法�%B, server: 117.78.39.17, port: 12104, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+以色�%9, server: 117.78.39.17, port: 12109, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+西班�%9, server: 117.78.39.17, port: 12092, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: "购物+专线+俄罗斯+[3.0%5", server: 117.78.39.17, port: 12095, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: "购物+专线+土耳其+[3.0%5", server: 117.78.39.17, port: 12098, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+德国+0, server: 117.78.39.17, port: 12107, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+伦敦+0 001, server: 117.78.39.17, port: 12101, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+韩国+0, server: 140.210.142.199, port: 12041, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+荷�%B, server: 117.78.39.17, port: 12113, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+日本+0 001, server: 140.210.142.199, port: 12026, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+悉�%B, server: 122.9.113.185, port: 12099, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 标准+专线+美国+0 001, server: 140.210.142.199, port: 11031, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+意大�%A, server: 117.78.39.17, port: 12093, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+匈牙�%A, server: 117.78.39.17, port: 12096, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+伦敦+0 002, server: 117.78.39.17, port: 12102, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+加拿大+0, server: 140.210.142.199, port: 12106, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: "日用+专线+美国+[0.2%5", server: 140.210.142.199, port: 10004, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: "日用+专线+日本+[0.2%5", server: 140.210.142.199, port: 10003, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+美国+0 001, server: 140.210.142.199, port: 12035, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+美国+0 002, server: 140.210.142.199, port: 12031, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+美国+0 003, server: 140.210.142.199, port: 12037, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+美国+0 004, server: 140.210.142.199, port: 12034, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+美国+0 005, server: 140.210.142.199, port: 12033, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+日本+0 002, server: 140.210.142.199, port: 12028, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+日本+0 003, server: 140.210.142.199, port: 12023, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+日本+0 004, server: 140.210.142.199, port: 12022, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+日本+0 005, server: 140.210.142.199, port: 12027, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+日本+0 006, server: 140.210.142.199, port: 12021, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 标准+专线+日本+0, server: 140.210.142.199, port: 11022, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+印�%B, server: 122.9.113.185, port: 12114, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+日本+0 007, server: 140.210.142.199, port: 12024, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+狮城+0 001, server: 122.9.113.185, port: 12012, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 标准+专线+狮城+0 001, server: 122.9.113.185, port: 11012, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+日本+0 008, server: 140.210.142.199, port: 12025, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 标准+专线+狮城+0 002, server: 122.9.113.185, port: 11013, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 特殊+专线+菲律�%B, server: 122.9.113.185, port: 12091, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+狮城+0 002, server: 122.9.113.185, port: 12011, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+狮城+0 003, server: 122.9.113.185, port: 12013, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+狮城+0 004, server: 122.9.113.185, port: 12014, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+狮城+0 005, server: 122.9.113.185, port: 12015, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+台湾+0 002, server: 122.9.113.185, port: 12051, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 标准+专线+香港+0 002, server: 122.9.113.185, port: 11003, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 标准+专线+台湾+0, server: 122.9.113.185, port: 11051, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 高级+专线+香港+0 005, server: 122.9.113.185, port: 12002, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 标准+专线+美国+0 002, server: 140.210.142.199, port: 11032, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: 标准+专线+狮城+0 003, server: 122.9.113.185, port: 11011, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 5a039c2d15.iqiyi.com, uri: /}, udp: true}
+  - {name: GLaDOS-N2-01 001, server: ffbf920.nb.gladns.com, port: 3389, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: GLaDOS-N2-04 001, server: ffbf920.ne.gladns.com, port: 3389, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: GLaDOS-N2-05 001, server: ffbf920.nf.gladns.com, port: 3389, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: GLaDOS-N2-06 001, server: ffbf920.ng.gladns.com, port: 3389, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: GLaDOS-N2-07, server: ffbf920.nh.gladns.com, port: 3389, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: GLaDOS-Portalgun-00 001, server: ffbf920.v1.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22ffbf920.fm.huawei.com:68447%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Portalgun-01 001, server: ffbf920.v2.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22ffbf920.fm.huawei.com:68447%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Portalgun-02 001, server: ffbf920.v3.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22ffbf920.fm.huawei.com:68447%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Portalgun-04 001, server: ffbf920.v5.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22ffbf920.fm.huawei.com:68447%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Portalgun-07 001, server: ffbf920.v8.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22ffbf920.fm.huawei.com:68447%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Portalgun-06 001, server: ffbf920.v7.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22ffbf920.fm.huawei.com:68447%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Portalgun-05, server: ffbf920.v6.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22ffbf920.fm.huawei.com:68447%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Portalgun-08, server: ffbf920.v9.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22ffbf920.fm.huawei.com:68447%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-US-1-Netflix 001, server: ffbf920.f4.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22ffbf920.fm.apple.com:68447%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-US-2-Netflix 001, server: ffbf920.f5.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22ffbf920.fm.apple.com:68447%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-US-3-Netflix, server: ffbf920.f6.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22ffbf920.fm.apple.com:68447%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: US-GLaDOS-GEO-00 001, server: ffbf920.ga.gladns.com, port: 3381, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: US-GLaDOS-GEO-01 001, server: ffbf920.gb.gladns.com, port: 3381, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: US-GLaDOS-GEO-02, server: ffbf920.gc.gladns.com, port: 3381, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: JP-GLaDOS-GEO-00, server: ffbf920.ga.gladns.com, port: 3382, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: JP-GLaDOS-GEO-01 001, server: ffbf920.gb.gladns.com, port: 3382, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: JP-GLaDOS-GEO-02 001, server: ffbf920.gc.gladns.com, port: 3382, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: TW-GLaDOS-GEO-00 001, server: ffbf920.ga.gladns.com, port: 3383, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: TW-GLaDOS-GEO-01, server: ffbf920.gb.gladns.com, port: 3383, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: TW-GLaDOS-GEO-02, server: ffbf920.gc.gladns.com, port: 3383, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: HK-GLaDOS-GEO-00 001, server: ffbf920.ga.gladns.com, port: 3384, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: HK-GLaDOS-GEO-01 001, server: ffbf920.gb.gladns.com, port: 3384, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: HK-GLaDOS-GEO-02 001, server: ffbf920.gc.gladns.com, port: 3384, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: SG-GLaDOS-GEO-00 001, server: ffbf920.ga.gladns.com, port: 3385, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: SG-GLaDOS-GEO-02 001, server: ffbf920.gc.gladns.com, port: 3385, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: UK-GLaDOS-GEO-00 001, server: ffbf920.ga.gladns.com, port: 3386, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: SG-GLaDOS-GEO-01 001, server: ffbf920.gb.gladns.com, port: 3385, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: UK-GLaDOS-GEO-01, server: ffbf920.gb.gladns.com, port: 3386, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
+  - {name: UK-GLaDOS-GEO-02 001, server: ffbf920.gc.gladns.com, port: 3386, type: trojan, password: e0208b1222027607, skip-cert-verify: true}
   - {name: GLaDOS-N2-00, server: c68b799.pa.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
-  - {name: GLaDOS-N2-01, server: c68b799.pb.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: GLaDOS-N2-01 002, server: c68b799.pb.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
   - {name: GLaDOS-N2-02, server: c68b799.pc.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
   - {name: GLaDOS-N2-03, server: c68b799.pd.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
-  - {name: GLaDOS-N2-05, server: c68b799.pf.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
-  - {name: GLaDOS-N2-06, server: c68b799.pg.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
-  - {name: GLaDOS-N2-07, server: c68b799.ph.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
-  - {name: GLaDOS-Portalgun-03, server: c68b799.v4.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
-  - {name: GLaDOS-Portalgun-04, server: c68b799.v5.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
-  - {name: GLaDOS-Portalgun-05, server: c68b799.v6.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
-  - {name: GLaDOS-Portalgun-06, server: c68b799.v7.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
-  - {name: GLaDOS-Portalgun-07, server: c68b799.v8.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
-  - {name: GLaDOS-Portalgun-08, server: c68b799.v9.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
-  - {name: GLaDOS-US-1-Netflix, server: c68b799.f4.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.apple.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
-  - {name: GLaDOS-US-2-Netflix, server: c68b799.f5.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.apple.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
-  - {name: GLaDOS-US-3-Netflix, server: c68b799.f6.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.apple.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-N2-04 002, server: c68b799.pe.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: GLaDOS-N2-05 002, server: c68b799.pf.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: GLaDOS-N2-06 002, server: c68b799.pg.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: GLaDOS-N2-08, server: c68b799.pi.gladns.com, port: 3389, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: GLaDOS-Portalgun-00 002, server: c68b799.v1.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Portalgun-01 002, server: c68b799.v2.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Portalgun-02 002, server: c68b799.v3.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Portalgun-04 002, server: c68b799.v5.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Portalgun-06 002, server: c68b799.v7.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Portalgun-07 002, server: c68b799.v8.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-US-1-Netflix 002, server: c68b799.f4.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.apple.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-US-2-Netflix 002, server: c68b799.f5.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.apple.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
   - {name: GLaDOS-TW-1-Netflix, server: c68b799.f1.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.apple.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
   - {name: GLaDOS-TW-3-Netflix, server: c68b799.f3.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%22c68b799.fm.apple.com:50307%22,%22Host%22:%22tls.apple.com%22%7D"}}, udp: true}
-  - {name: JP-GLaDOS-GEO-00, server: c68b799.ga.gladns.com, port: 3382, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
-  - {name: HK-GLaDOS-GEO-00, server: c68b799.ga.gladns.com, port: 3384, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
-  - {name: SG-GLaDOS-GEO-00, server: c68b799.ga.gladns.com, port: 3385, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
-  - {name: UK-GLaDOS-GEO-01, server: c68b799.gb.gladns.com, port: 3386, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
-  - {name: UK-GLaDOS-GEO-02, server: c68b799.gc.gladns.com, port: 3386, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
-  - {name: HK-GLaDOS-GEO-01, server: c68b799.gb.gladns.com, port: 3384, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
-  - {name: HK-GLaDOS-GEO-02, server: c68b799.gc.gladns.com, port: 3384, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
-  - {name: 美�%B, server: n1.emovpn.xyz, port: 1268, type: ss, cipher: chacha20-ietf-poly1305, password: 7db7ecd7-2f1e-402a-b650-6b7ee8bd43b7, udp: true}
-  - {name: 新加�%A 001, server: n24.emovpn.xyz, port: 1274, type: ss, cipher: chacha20-ietf-poly1305, password: 7db7ecd7-2f1e-402a-b650-6b7ee8bd43b7, udp: true}
-  - {name: 新加�%A 002, server: n25.emovpn.xyz, port: 1246, type: ss, cipher: chacha20-ietf-poly1305, password: 7db7ecd7-2f1e-402a-b650-6b7ee8bd43b7, udp: true}
-  - {name: 美国 001, server: v19.emovpn.xyz, port: 127, type: vmess, uuid: 7db7ecd7-2f1e-402a-b650-6b7ee8bd43b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: AZQT001.xiba1.xyz, port: 20731, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: HJ001.xiba1.xyz, port: 20762, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: AZQT001.xiba1.xyz, port: 20728, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: AZQT001.xiba1.xyz, port: 20741, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003, server: AZQT001.xiba1.xyz, port: 20729, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: AZQT001.xiba1.xyz, port: 20740, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004, server: AZQT001.xiba1.xyz, port: 20730, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003, server: AZQT001.xiba1.xyz, port: 20739, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004, server: AZQT001.xiba1.xyz, port: 20742, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005, server: AZQT001.xiba1.xyz, port: 20733, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005, server: AZQT001.xiba1.xyz, port: 20732, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006, server: AZQT001.xiba1.xyz, port: 20734, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007, server: AZQT001.xiba1.xyz, port: 20735, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008, server: AZQT001.xiba1.xyz, port: 20736, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: AZQT001.xiba1.xyz, port: 20743, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: AZQT001.xiba1.xyz, port: 20744, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: AZQT001.xiba1.xyz, port: 20745, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003, server: AZQT001.xiba1.xyz, port: 20746, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004, server: AZQT001.xiba1.xyz, port: 20747, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005, server: AZQT001.xiba1.xyz, port: 20748, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: azgy001.xiba1.xyz, port: 20716, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: azgy001.xiba1.xyz, port: 20714, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui, server: AZHJ001.xiba1.xyz, port: 20715, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 009, server: AZHJ001.xiba1.xyz, port: 20717, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: azgy001.xiba1.xyz, port: 20713, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: AZHJ001.xiba1.xyz, port: 20718, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: AZHJ001.xiba1.xyz, port: 20720, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003, server: AZHJ001.xiba1.xyz, port: 20721, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004, server: AZHJ001.xiba1.xyz, port: 20724, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005, server: AZHJ001.xiba1.xyz, port: 20725, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006, server: AZHJ001.xiba1.xyz, port: 20726, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007, server: AZHJ001.xiba1.xyz, port: 20727, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: azgy001.xiba1.xyz, port: 6003, type: trojan, password: 25c9b640-e4a8-3e96-8a01-880a21fe8966, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 010, server: AZQT001.xiba1.xyz, port: 20731, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: HJ001.xiba1.xyz, port: 20762, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006, server: AZQT001.xiba1.xyz, port: 20741, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 011, server: AZQT001.xiba1.xyz, port: 20729, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007, server: AZQT001.xiba1.xyz, port: 20740, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 012, server: AZQT001.xiba1.xyz, port: 20730, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008, server: AZQT001.xiba1.xyz, port: 20739, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 013, server: AZQT001.xiba1.xyz, port: 20733, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 014, server: AZQT001.xiba1.xyz, port: 20734, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 015, server: AZQT001.xiba1.xyz, port: 20735, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006, server: AZQT001.xiba1.xyz, port: 20743, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: AZQT001.xiba1.xyz, port: 20745, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007, server: AZQT001.xiba1.xyz, port: 20746, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008, server: AZQT001.xiba1.xyz, port: 20747, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 009, server: AZQT001.xiba1.xyz, port: 20748, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: azgy001.xiba1.xyz, port: 20716, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: azgy001.xiba1.xyz, port: 20714, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui, server: AZHJ001.xiba1.xyz, port: 20719, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008, server: AZHJ001.xiba1.xyz, port: 20718, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 009, server: AZHJ001.xiba1.xyz, port: 20720, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 010, server: AZHJ001.xiba1.xyz, port: 20721, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 011, server: AZHJ001.xiba1.xyz, port: 20723, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 012, server: AZHJ001.xiba1.xyz, port: 20725, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 013, server: AZHJ001.xiba1.xyz, port: 20727, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: azgy001.xiba1.xyz, port: 6004, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003, server: azgy001.xiba1.xyz, port: 6003, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡1-1000M带宽-解锁流媒体, server: sg.v2yyds.cc, port: 35211, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡2-1000M带宽-解锁流媒体, server: sg.v2yyds.cc, port: 35212, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡3-1000M带宽-解锁流媒体, server: sg.v2yyds.cc, port: 35213, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡4-1000M带宽-解锁流媒体, server: sg.v2yyds.cc, port: 35214, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: 🇬🇧 英国1-1000M-解锁流媒体, server: gb.v2yyds.com, port: 32911, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: 🇬🇧 英国3-1000M-解锁流媒体, server: gb.v2yyds.com, port: 32913, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: 🇩🇪 德国1-500M-解锁流媒体, server: de.v2yyds.com, port: 32911, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: 🇩🇪 德国2-500M-解锁流媒体, server: de.v2yyds.com, port: 32912, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: 美国INAP 001, server: us2.nodegz.top, port: 443, type: trojan, password: 5b6510ab-0b33-39c9-b3cf-b76548fd41cb, skip-cert-verify: true}
-  - {name: 美国 002, server: us1.nodegz.top, port: 443, type: trojan, password: 5b6510ab-0b33-39c9-b3cf-b76548fd41cb, skip-cert-verify: true}
-  - {name: 日本, server: jp1.nodegz.top, port: 443, type: trojan, password: 5b6510ab-0b33-39c9-b3cf-b76548fd41cb, skip-cert-verify: true}
-  - {name: 新加坡 001, server: sg1.nodegz.top, port: 443, type: trojan, password: 5b6510ab-0b33-39c9-b3cf-b76548fd41cb, skip-cert-verify: true}
-  - {name: 美国 003, server: us1.nodegz.top, port: 443, type: trojan, password: af87b819-4880-38f6-91ba-87a3393af9a1, skip-cert-verify: true}
-  - {name: 新加坡 002, server: sg1.nodegz.top, port: 443, type: trojan, password: af87b819-4880-38f6-91ba-87a3393af9a1, skip-cert-verify: true}
-  - {name: 新加坡2, server: sg1.crunode.top, port: 443, type: trojan, password: af87b819-4880-38f6-91ba-87a3393af9a1, skip-cert-verify: true}
-  - {name: 俄罗斯 001, server: ru1.nodegz.top, port: 443, type: trojan, password: af87b819-4880-38f6-91ba-87a3393af9a1, skip-cert-verify: true}
-  - {name: 美国 004, server: us1.nodegz.top, port: 443, type: trojan, password: fb91776a-a0ec-3814-a5c8-1881996fda6d, skip-cert-verify: true}
-  - {name: 美国INAP 002, server: us2.nodegz.top, port: 443, type: trojan, password: fb91776a-a0ec-3814-a5c8-1881996fda6d, skip-cert-verify: true}
-  - {name: 新加坡 003, server: sg1.nodegz.top, port: 443, type: trojan, password: fb91776a-a0ec-3814-a5c8-1881996fda6d, skip-cert-verify: true}
-  - {name: 俄罗斯 002, server: ru1.nodegz.top, port: 443, type: trojan, password: fb91776a-a0ec-3814-a5c8-1881996fda6d, skip-cert-verify: true}
-  - {name: 美国 005, server: us1.nodegz.top, port: 443, type: trojan, password: 5e5f8e9c-36b3-3b3c-9e6c-c0e7635621b1, skip-cert-verify: true}
-  - {name: 瑞士, server: ch1.nodegz.top, port: 443, type: trojan, password: 5e5f8e9c-36b3-3b3c-9e6c-c0e7635621b1, skip-cert-verify: true}
-  - {name: 美国INAP 003, server: us2.nodegz.top, port: 443, type: trojan, password: 5e5f8e9c-36b3-3b3c-9e6c-c0e7635621b1, skip-cert-verify: true}
-  - {name: 新加坡 004, server: sg1.nodegz.top, port: 443, type: trojan, password: 5e5f8e9c-36b3-3b3c-9e6c-c0e7635621b1, skip-cert-verify: true}
-  - {name: 美国 006, server: us1.nodegz.top, port: 443, type: trojan, password: 0d15e40f-7093-392f-99fa-1bf845050bfe, skip-cert-verify: true}
-  - {name: 美国INAP 004, server: us2.nodegz.top, port: 443, type: trojan, password: 0d15e40f-7093-392f-99fa-1bf845050bfe, skip-cert-verify: true}
-  - {name: 新加坡 005, server: sg1.nodegz.top, port: 443, type: trojan, password: 0d15e40f-7093-392f-99fa-1bf845050bfe, skip-cert-verify: true}
-  - {name: beikui 001, server: AZQT001.xiba1.xyz, port: 20731, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
+  - {name: US-GLaDOS-GEO-00 002, server: c68b799.ga.gladns.com, port: 3381, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: US-GLaDOS-GEO-01 002, server: c68b799.gb.gladns.com, port: 3381, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: JP-GLaDOS-GEO-01 002, server: c68b799.gb.gladns.com, port: 3382, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: JP-GLaDOS-GEO-02 002, server: c68b799.gc.gladns.com, port: 3382, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: TW-GLaDOS-GEO-00 002, server: c68b799.ga.gladns.com, port: 3383, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: HK-GLaDOS-GEO-00 002, server: c68b799.ga.gladns.com, port: 3384, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: HK-GLaDOS-GEO-01 002, server: c68b799.gb.gladns.com, port: 3384, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: HK-GLaDOS-GEO-02 002, server: c68b799.gc.gladns.com, port: 3384, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: SG-GLaDOS-GEO-00 002, server: c68b799.ga.gladns.com, port: 3385, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: SG-GLaDOS-GEO-01 002, server: c68b799.gb.gladns.com, port: 3385, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: SG-GLaDOS-GEO-02 002, server: c68b799.gc.gladns.com, port: 3385, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: UK-GLaDOS-GEO-00 002, server: c68b799.ga.gladns.com, port: 3386, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: UK-GLaDOS-GEO-02 002, server: c68b799.gc.gladns.com, port: 3386, type: trojan, password: 8d105878309ac3ef, skip-cert-verify: true}
+  - {name: 江苏BGP, server: 43.248.79.72, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 香港 001, server: hk1.ningmengshui.xyz, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.youku.com}}, udp: true}
+  - {name: 日本 001, server: 138.2.35.172, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 日本 002, server: 138.2.59.97, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 台湾-1号 | 解锁流媒体, server: 165.154.243.208, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true}
+  - {name: 台湾-2号 | 解锁流媒体, server: 165.154.253.34, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true}
+  - {name: 台湾-3号 | 解锁流媒体, server: 165.154.253.49, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true}
+  - {name: 台湾-广州移动负载均衡 | 解锁流媒体, server: gzyd1.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true}
+  - {name: 台湾-广州移动2负载均衡 | 解锁流媒体, server: gzyd2.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true}
+  - {name: 台湾-河南移动负载均衡 | 解锁流媒体, server: hnyd.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true}
+  - {name: 日本NTT-1号 | 解锁流媒体, server: 203.138.98.199, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true}
+  - {name: 日本NTT-2号 | 解锁流媒体, server: 164.70.68.67, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true}
+  - {name: 日本NTT-广州移动负载均衡 | 解锁流媒体, server: gzyd1.52147.top, port: 30130, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true}
+  - {name: 日本NTT-广州移动2负载均衡 | 解锁流媒体, server: gzyd2.52147.top, port: 30130, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, skip-cert-verify: true}
+  - {name: beiku 001, server: hk.2046.gq, port: 8888, type: ss, cipher: chacha20-ietf-poly1305, password: 794871c6-022b-4498-b816-296e8a581d86, udp: true}
+  - {name: beikui 001, server: vs.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true}
+  - {name: beikui 002, server: d3.2046.gq, port: 443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true}
+  - {name: beikui 003, server: ru.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true}
+  - {name: beikui 004, server: kk.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true}
+  - {name: beikui 005, server: ss2.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true}
+  - {name: beikui 006, server: 47.243.98.203, port: 41716, type: vmess, uuid: b9856fed-b1b7-45d4-f621-2c6f94a914ed, alterId: 10, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: beikui 007, server: 20.239.179.123, port: 12388, type: trojan, password: bbb001ed-df3d-4e9b-aae3-d1fc278c20b1, skip-cert-verify: true}
+  - {name: beiku 002, server: 20.239.67.237, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: beiku 003, server: 20.187.100.208, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: beiku 004, server: 20.222.100.86, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: beikui 008, server: bai-piao-wang-zhe.jp.884899.cf, port: 80, type: vmess, uuid: b1135a1d-0586-4c30-b61e-fa7c17d1f439, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: bai-piao-wang-zhe.jp.884899.cf}}, udp: true}
+  - {name: beikui 009, server: 36.138.197.169, port: 2504, type: vmess, uuid: 6861c307-5efd-3b8a-b7fa-248ad8dde74e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me.vpnhat}}, udp: true}
+  - {name: beikui 010, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 8e295665-f1af-3973-bc49-02e180e35b5f, skip-cert-verify: true}
+  - {name: beikui 011, server: 67us01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, skip-cert-verify: true}
+  - {name: beikui 012, server: scloud54.jafiyun.life, port: 22054, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, skip-cert-verify: true}
+  - {name: beikui 013, server: us.v2yyds.cc, port: 32911, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: beikui 014, server: de.v2yyds.com, port: 32912, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: beikui 015, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true}
+  - {name: beikui 016, server: node-hk.pyhdxy.top, port: 10000, type: trojan, password: f9628fbd-ef2a-4d8a-baa7-9b8a56a91091, skip-cert-verify: true}
+  - {name: beikui 017, server: sg.v2yyds.cc, port: 35212, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: beikui 018, server: scloud58.jafiyun.life, port: 22058, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, skip-cert-verify: true}
+  - {name: beikui 019, server: 611hk01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, skip-cert-verify: true}
+  - {name: beikui 020, server: tw-tb-b.zc20200426.club, port: 39998, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: beikui 021, server: v19.emovpn.xyz, port: 127, type: vmess, uuid: c9576ede-c2be-4800-bb86-221290531d71, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: beikui 022, server: gb.v2yyds.com, port: 32913, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: beikui 023, server: gb.v2yyds.com, port: 32912, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: beikui 024, server: v125.v2dns.bar, port: 80, type: vmess, uuid: 0c68af8a-961a-3065-a3a7-1800ebc70bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v1252N93nZez6Py, headers: {Host: v125.v2dns.bar}}, udp: true}
+  - {name: beikui 025, server: hkbgp1.jiantian.xyz, port: 14326, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true}
+  - {name: beikui 026, server: hkbgp1.jiantian.xyz, port: 14326, type: trojan, password: 952eeefe-196d-4d67-a447-52577d694f96, skip-cert-verify: true}
+  - {name: beikui 027, server: 43.128.1.42, port: 13759, type: vmess, uuid: 908275f3-4866-4751-c17a-8b4cf06f06ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: beikui 028, server: sg.v2yyds.cc, port: 35213, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: beikui 029, server: 2.game.speed.zz.001.oooooooooo.icu, port: 53945, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: beikui 030, server: scloud52.jafiyun.life, port: 22052, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, skip-cert-verify: true}
+  - {name: beikui 031, server: azqt001.xiba1.xyz, port: 20740, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 032, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 033, server: azqt001.xiba1.xyz, port: 20732, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 034, server: azqt001.xiba1.xyz, port: 20739, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 035, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 036, server: azqt001.xiba1.xyz, port: 20728, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 037, server: azqt001.xiba1.xyz, port: 20729, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 038, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 039, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 040, server: azqt001.xiba1.xyz, port: 20735, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 041, server: azqt001.xiba1.xyz, port: 20746, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 042, server: azqt001.xiba1.xyz, port: 20744, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 043, server: azhj001.xiba1.xyz, port: 20715, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 044, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 045, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 046, server: azqt001.xiba1.xyz, port: 20733, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
+  - {name: beikui 047, server: azqt001.xiba1.xyz, port: 20739, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
+  - {name: beikui 048, server: azqt001.xiba1.xyz, port: 20733, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
+  - {name: beikui 049, server: azqt001.xiba1.xyz, port: 20735, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
+  - {name: beikui 050, server: azqt001.xiba1.xyz, port: 20729, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
+  - {name: beikui 051, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
+  - {name: beikui 052, server: azqt001.xiba1.xyz, port: 20731, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
+  - {name: beikui 053, server: azqt001.xiba1.xyz, port: 20740, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
+  - {name: beikui 054, server: azqt001.xiba1.xyz, port: 20742, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
+  - {name: beikui 055, server: azqt001.xiba1.xyz, port: 20732, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
+  - {name: beikui 056, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
+  - {name: beikui 057, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 058, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 059, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 060, server: azqt001.xiba1.xyz, port: 20740, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 061, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 062, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 063, server: azqt001.xiba1.xyz, port: 20733, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 064, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 065, server: azqt001.xiba1.xyz, port: 20739, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 066, server: azqt001.xiba1.xyz, port: 20728, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 067, server: azqt001.xiba1.xyz, port: 20729, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 068, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 069, server: azqt001.xiba1.xyz, port: 20732, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 070, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 071, server: azqt001.xiba1.xyz, port: 20734, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
+  - {name: beikui 072, server: AZQT001.xiba1.xyz, port: 20731, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 2, server: HJ001.xiba1.xyz, port: 20762, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 3, server: AZQT001.xiba1.xyz, port: 20728, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 4, server: AZQT001.xiba1.xyz, port: 20741, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
@@ -168,17 +227,24 @@ proxies:
   - {name: beikui 12, server: AZQT001.xiba1.xyz, port: 20734, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 13, server: AZQT001.xiba1.xyz, port: 20735, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 14, server: AZQT001.xiba1.xyz, port: 20736, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
+  - {name: beikui 15, server: AZQT001.xiba1.xyz, port: 20743, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 16, server: AZQT001.xiba1.xyz, port: 20744, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 17, server: AZQT001.xiba1.xyz, port: 20745, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 18, server: AZQT001.xiba1.xyz, port: 20746, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 19, server: AZQT001.xiba1.xyz, port: 20747, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 20, server: AZQT001.xiba1.xyz, port: 20748, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
+  - {name: beikui 21, server: azgy001.xiba1.xyz, port: 20716, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 22, server: azgy001.xiba1.xyz, port: 20714, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
+  - {name: beikui 23, server: AZHJ001.xiba1.xyz, port: 20715, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
+  - {name: beikui 25, server: azgy001.xiba1.xyz, port: 20713, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 26, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
+  - {name: beikui 27, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 28, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
+  - {name: beikui 29, server: AZHJ001.xiba1.xyz, port: 20719, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 30, server: AZHJ001.xiba1.xyz, port: 20718, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 31, server: AZHJ001.xiba1.xyz, port: 20720, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 32, server: AZHJ001.xiba1.xyz, port: 20721, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
+  - {name: beikui 33, server: AZHJ001.xiba1.xyz, port: 20722, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 34, server: AZHJ001.xiba1.xyz, port: 20723, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 35, server: AZHJ001.xiba1.xyz, port: 20724, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 36, server: AZHJ001.xiba1.xyz, port: 20725, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
@@ -186,272 +252,235 @@ proxies:
   - {name: beikui 38, server: AZHJ001.xiba1.xyz, port: 20727, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 39, server: azgy001.xiba1.xyz, port: 6004, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
   - {name: beikui 40, server: azgy001.xiba1.xyz, port: 6003, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, skip-cert-verify: true}
-  - {name: beikui 002, server: azqt001.xiba1.xyz, port: 20740, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 003, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 004, server: azqt001.xiba1.xyz, port: 20732, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 005, server: azqt001.xiba1.xyz, port: 20739, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 006, server: azqt001.xiba1.xyz, port: 20736, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 007, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 008, server: azqt001.xiba1.xyz, port: 20728, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 009, server: azqt001.xiba1.xyz, port: 20729, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 010, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 011, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 012, server: azqt001.xiba1.xyz, port: 20735, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 013, server: azqt001.xiba1.xyz, port: 20746, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 014, server: azqt001.xiba1.xyz, port: 20744, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 015, server: azgy001.xiba1.xyz, port: 6004, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 016, server: azhj001.xiba1.xyz, port: 20715, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 017, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 018, server: azqt001.xiba1.xyz, port: 20733, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, skip-cert-verify: true}
-  - {name: beikui 019, server: azqt001.xiba1.xyz, port: 20739, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
-  - {name: beikui 020, server: azqt001.xiba1.xyz, port: 20733, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
-  - {name: beikui 021, server: azqt001.xiba1.xyz, port: 20735, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
-  - {name: beikui 022, server: azqt001.xiba1.xyz, port: 20729, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
-  - {name: beikui 023, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
-  - {name: beikui 024, server: azqt001.xiba1.xyz, port: 20731, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
-  - {name: beikui 025, server: azqt001.xiba1.xyz, port: 20740, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
-  - {name: beikui 026, server: azqt001.xiba1.xyz, port: 20742, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
-  - {name: beikui 027, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, skip-cert-verify: true}
-  - {name: beikui 028, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
-  - {name: beikui 029, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
-  - {name: beikui 030, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
-  - {name: beikui 031, server: azqt001.xiba1.xyz, port: 20740, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
-  - {name: beikui 032, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
-  - {name: beikui 033, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
-  - {name: beikui 034, server: azqt001.xiba1.xyz, port: 20733, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
-  - {name: beikui 035, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
-  - {name: beikui 036, server: azqt001.xiba1.xyz, port: 20728, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
-  - {name: beikui 037, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
-  - {name: beikui 038, server: azqt001.xiba1.xyz, port: 20732, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
-  - {name: beikui 039, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
-  - {name: beikui 040, server: azqt001.xiba1.xyz, port: 20734, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, skip-cert-verify: true}
-  - {name: beiku 001, server: hk.2046.gq, port: 8888, type: ss, cipher: chacha20-ietf-poly1305, password: 794871c6-022b-4498-b816-296e8a581d86, udp: true}
-  - {name: beikui 041, server: sgg.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true}
-  - {name: beikui 042, server: d3.2046.gq, port: 443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true}
-  - {name: beikui 043, server: ru.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true}
-  - {name: beikui 044, server: kk.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true}
-  - {name: beikui 045, server: 47.243.98.203, port: 41716, type: vmess, uuid: b9856fed-b1b7-45d4-f621-2c6f94a914ed, alterId: 10, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beiku 002, server: 20.239.67.237, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: beiku 003, server: 20.222.100.86, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: beikui 046, server: ersgdf.passwordv2.com, port: 7400, type: vmess, uuid: de4ad116-f467-439f-bfd1-2a0c835e9742, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 047, server: bai-piao-wang-zhe.jp.884899.cf, port: 80, type: vmess, uuid: b1135a1d-0586-4c30-b61e-fa7c17d1f439, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: bai-piao-wang-zhe.jp.884899.cf}}, udp: true}
-  - {name: beikui 048, server: 67sg01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, skip-cert-verify: true}
-  - {name: beikui 049, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 8e295665-f1af-3973-bc49-02e180e35b5f, skip-cert-verify: true}
-  - {name: beikui 050, server: 67us01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, skip-cert-verify: true}
-  - {name: beikui 051, server: 51.81.223.19, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beiku 004, server: lsdrtx.passwordv2.com, port: 7502, type: ss, cipher: aes-128-gcm, password: de4ad116-f467-439f-bfd1-2a0c835e9742, udp: true}
-  - {name: beikui 052, server: de.v2yyds.com, port: 32912, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: beikui 053, server: cnus.v2yyds.cc, port: 32913, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: beikui 054, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true}
-  - {name: beikui 055, server: sg.v2yyds.cc, port: 35211, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: beikui 056, server: node-hk.pyhdxy.top, port: 10000, type: trojan, password: f9628fbd-ef2a-4d8a-baa7-9b8a56a91091, skip-cert-verify: true}
-  - {name: beikui 057, server: sg.v2yyds.cc, port: 35212, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: beikui 058, server: 611hk01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, skip-cert-verify: true}
-  - {name: beikui 059, server: v19.emovpn.xyz, port: 127, type: vmess, uuid: c9576ede-c2be-4800-bb86-221290531d71, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
-  - {name: beikui 060, server: gb.v2yyds.com, port: 32913, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: beiku 005, server: n24.emovpn.xyz, port: 1274, type: ss, cipher: chacha20-ietf-poly1305, password: c9576ede-c2be-4800-bb86-221290531d71, udp: true}
-  - {name: beikui 061, server: hkbgp1.jiantian.xyz, port: 14326, type: trojan, password: 952eeefe-196d-4d67-a447-52577d694f96, skip-cert-verify: true}
-  - {name: beikui 062, server: 43.128.1.42, port: 13759, type: vmess, uuid: 908275f3-4866-4751-c17a-8b4cf06f06ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: beikui 063, server: 2.game.speed.zz.001.oooooooooo.icu, port: 53945, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 064, server: sg.v2yyds.cc, port: 35213, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
-  - {name: beikui 065, server: scloud52.jafiyun.life, port: 22052, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, skip-cert-verify: true}
-  - {name: beikui 066, server: g1.v2.gay, port: 2052, type: vmess, uuid: 0c68af8a-961a-3065-a3a7-1800ebc70bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v47-unlimitndxd, headers: {Host: v47.v2dns.bar}}, udp: true}
-  - {name: beikui 067, server: scloud55.jafiyun.life, port: 22055, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, skip-cert-verify: true}
-  - {name: beikui 068, server: cf.fullcloud.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxsg.fovi.tk}}, udp: true}
-  - {name: beikui 069, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true}
+  - {name: 俄罗斯 001, server: ru1.nodegz.top, port: 443, type: trojan, password: 0d15e40f-7093-392f-99fa-1bf845050bfe, skip-cert-verify: true}
+  - {name: 新加坡 001, server: sg1.nodegz.top, port: 443, type: trojan, password: 0d15e40f-7093-392f-99fa-1bf845050bfe, skip-cert-verify: true}
+  - {name: 美国 001, server: us1.nodegz.top, port: 443, type: trojan, password: 0d15e40f-7093-392f-99fa-1bf845050bfe, skip-cert-verify: true}
+  - {name: 俄罗斯 002, server: ru1.nodegz.top, port: 443, type: trojan, password: 5e5f8e9c-36b3-3b3c-9e6c-c0e7635621b1, skip-cert-verify: true}
+  - {name: 新加坡 002, server: sg1.nodegz.top, port: 443, type: trojan, password: 5e5f8e9c-36b3-3b3c-9e6c-c0e7635621b1, skip-cert-verify: true}
+  - {name: 美国 002, server: us1.nodegz.top, port: 443, type: trojan, password: 5e5f8e9c-36b3-3b3c-9e6c-c0e7635621b1, skip-cert-verify: true}
+  - {name: 俄罗斯 003, server: ru1.nodegz.top, port: 443, type: trojan, password: fb91776a-a0ec-3814-a5c8-1881996fda6d, skip-cert-verify: true}
+  - {name: 新加坡 003, server: sg1.nodegz.top, port: 443, type: trojan, password: fb91776a-a0ec-3814-a5c8-1881996fda6d, skip-cert-verify: true}
+  - {name: 美国 003, server: us1.nodegz.top, port: 443, type: trojan, password: fb91776a-a0ec-3814-a5c8-1881996fda6d, skip-cert-verify: true}
+  - {name: 俄罗斯 004, server: ru1.nodegz.top, port: 443, type: trojan, password: af87b819-4880-38f6-91ba-87a3393af9a1, skip-cert-verify: true}
+  - {name: 新加坡 004, server: sg1.nodegz.top, port: 443, type: trojan, password: af87b819-4880-38f6-91ba-87a3393af9a1, skip-cert-verify: true}
+  - {name: 美国 004, server: us1.nodegz.top, port: 443, type: trojan, password: af87b819-4880-38f6-91ba-87a3393af9a1, skip-cert-verify: true}
+  - {name: 俄罗斯 005, server: ru1.nodegz.top, port: 443, type: trojan, password: 5b6510ab-0b33-39c9-b3cf-b76548fd41cb, skip-cert-verify: true}
+  - {name: 新加坡 005, server: sg1.nodegz.top, port: 443, type: trojan, password: 5b6510ab-0b33-39c9-b3cf-b76548fd41cb, skip-cert-verify: true}
+  - {name: 美国 005, server: us1.nodegz.top, port: 443, type: trojan, password: 5b6510ab-0b33-39c9-b3cf-b76548fd41cb, skip-cert-verify: true}
+  - {name: 香�%A, server: 36.134.116.212, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 0489fad1-e23d-4f47-b759-ddc4d4122498, udp: true}
+  - {name: 台�%B, server: 36.139.154.17, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 0489fad1-e23d-4f47-b759-ddc4d4122498, udp: true}
+  - {name: 香港 002, server: no2.tinkhub.me, port: 443, type: vmess, uuid: f0bcf78c-c0e3-4715-a312-612441e70a2d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: no2.tinkhub.me}}, udp: true}
+  - {name: 香港HTK-广港隧�%9, server: 36.139.154.162, port: 45135, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: 香港HTK-广港隧道, server: gy.ziqiyun.xyz, port: 42875, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: 台湾家宽-广港隧�%9, server: 36.139.154.162, port: 45238, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: 台湾家宽-杭港BGP隧�%9, server: 36.134.116.212, port: 45223, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: 美�%B 001, server: n23.emovpn.xyz, port: 1264, type: ss, cipher: chacha20-ietf-poly1305, password: 7db7ecd7-2f1e-402a-b650-6b7ee8bd43b7, udp: true}
+  - {name: 美国 006, server: v19.emovpn.xyz, port: 127, type: vmess, uuid: 7db7ecd7-2f1e-402a-b650-6b7ee8bd43b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: AZQT001.xiba1.xyz, port: 20731, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui, server: HJ001.xiba1.xyz, port: 20762, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: AZQT001.xiba1.xyz, port: 20728, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: AZQT001.xiba1.xyz, port: 20741, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003, server: AZQT001.xiba1.xyz, port: 20729, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: AZQT001.xiba1.xyz, port: 20740, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003, server: AZQT001.xiba1.xyz, port: 20739, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004, server: AZQT001.xiba1.xyz, port: 20742, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005, server: AZQT001.xiba1.xyz, port: 20732, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004, server: AZQT001.xiba1.xyz, port: 20734, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005, server: AZQT001.xiba1.xyz, port: 20735, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006, server: AZQT001.xiba1.xyz, port: 20736, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: AZQT001.xiba1.xyz, port: 20743, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: AZQT001.xiba1.xyz, port: 20744, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui, server: AZQT001.xiba1.xyz, port: 20745, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003, server: AZQT001.xiba1.xyz, port: 20746, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004, server: AZQT001.xiba1.xyz, port: 20747, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005, server: AZQT001.xiba1.xyz, port: 20748, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui, server: azgy001.xiba1.xyz, port: 20716, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui, server: azgy001.xiba1.xyz, port: 20714, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui, server: AZHJ001.xiba1.xyz, port: 20715, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007, server: AZHJ001.xiba1.xyz, port: 20717, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: azgy001.xiba1.xyz, port: 20713, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui, server: AZHJ001.xiba1.xyz, port: 20719, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: AZHJ001.xiba1.xyz, port: 20718, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: AZHJ001.xiba1.xyz, port: 20720, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003, server: AZHJ001.xiba1.xyz, port: 20721, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004, server: AZHJ001.xiba1.xyz, port: 20722, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005, server: AZHJ001.xiba1.xyz, port: 20723, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006, server: AZHJ001.xiba1.xyz, port: 20724, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007, server: AZHJ001.xiba1.xyz, port: 20725, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008, server: AZHJ001.xiba1.xyz, port: 20726, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 009, server: AZHJ001.xiba1.xyz, port: 20727, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001, server: azgy001.xiba1.xyz, port: 6004, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002, server: azgy001.xiba1.xyz, port: 6003, type: trojan, password: 6f98011f-a408-329e-a430-c319056cfeb5, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡1-1000M带宽-解锁流媒体, server: sg.v2yyds.cc, port: 35211, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡2-1000M带宽-解锁流媒体, server: sg.v2yyds.cc, port: 35212, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡3-1000M带宽-解锁流媒体, server: sg.v2yyds.cc, port: 35213, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡4-1000M带宽-解锁流媒体, server: sg.v2yyds.cc, port: 35214, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: 🇺🇲 美国原生1-20000M-解锁流媒体, server: us.v2yyds.cc, port: 32911, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: 🇺🇲 美国原生2-20000M-解锁流媒体, server: us.v2yyds.cc, port: 32912, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: 🇺🇲 美国原生3-20000M-解锁流媒体, server: cnus.v2yyds.cc, port: 32913, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: 🇬🇧 英国1-1000M-解锁流媒体, server: gb.v2yyds.com, port: 32911, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: 🇬🇧 英国2-1000M-解锁流媒体, server: gb.v2yyds.com, port: 32912, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: 🇬🇧 英国3-1000M-解锁流媒体, server: gb.v2yyds.com, port: 32913, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: 🇩🇪 德国1-500M-解锁流媒体, server: de.v2yyds.com, port: 32911, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: 🇩🇪 德国2-500M-解锁流媒体, server: de.v2yyds.com, port: 32912, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, skip-cert-verify: true}
+  - {name: Amazon_Tokyo, server: 54.65.100.2, port: 44573, type: vmess, uuid: d7ae61b6-c008-4b28-ad87-176ff9547d41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 80 | 春川 | 001, server: chunchuan-01.aikala.shop, port: 80, type: vmess, uuid: bea6470b-a7b8-465f-b95d-7f0c681dba1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: down.dingtalk.com}}, udp: true}
+  - {name: 80 | 春川 | 002, server: chunchuan-02.aikala.shop, port: 80, type: vmess, uuid: bea6470b-a7b8-465f-b95d-7f0c681dba1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: down.dingtalk.com}}, udp: true}
+  - {name: 443 | 春川, server: chunchuan-02.aikala.shop, port: 443, type: vmess, uuid: bea6470b-a7b8-465f-b95d-7f0c681dba1a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: down.dingtalk.com}}, udp: true}
+  - {name: 美�%B 002, server: 45.11.3.244, port: 23456, type: ss, cipher: aes-256-gcm, password: 06158686, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
   - 有问题咨询TG@beikui_bot
-  - Amazon_Tokyo
-  - Lv2 新加坡 01 [1.5]
-  - Lv2 美国 03 [1.5%5
-  - 🇨🇳 v1丨印度丨北京- HK隧道-印度丨中转丨2
-  - 🇨🇳 v1丨印度丨北京- HK隧道-印度丨顺手更新下订阅
-  - 🇹🇼 v1丨台湾三网丨联通中继
-  - 🇹🇼 v1丨台湾丨原生丨中台中继丨
-  - 🇹🇼 v1丨台湾丨原生丨静态
-  - 🇹🇼 v1丨台湾丨隧道中转丨1
-  - 🇹🇼 v1丨台湾丨隧道中转丨2
-  - 🇹🇼 v1丨台湾丨隧道中转丨解锁流媒体
-  - 🇸🇬 v1丨新加坡丨 私人订制
-  - 🇸🇬 v1丨新加坡丨中继丨HK隧道
-  - 🇨🇳 v1丨新加坡丨北京-新加坡丨
-  - 🇯🇵 v1丨日本丨中继丨东京丨2丨1Gbps
-  - 🇨🇳 v1丨泰国丨北京- HK隧道-泰国丨2丨萨瓦迪卡
-  - 🇹🇭 v1丨泰国丨直接丨1丨
-  - 🇺🇲 v1丨美国丨原生丨三网优化丨广移中继
-  - 🇺🇲 v1丨美国丨隧道中转丨解锁流媒体1
-  - 🇺🇲 v1丨美国丨隧道中转丨解锁流媒体2
-  - 🇬🇧 v1丨英国丨1
-  - 🇬🇧 v1丨英国丨中港中转丨2
-  - 🇻🇳 v1丨越南丨京港中继丨Trojan
-  - 🇻🇳 v1丨越南丨直连丨解锁新加坡
-  - 🇨🇳 v1丨韩国丨微软丨北京-韩国丨2丨1Gbps
-  - 🇨🇳 v1丨香港丨微软丨1丨北京—香港丨
-  - 香�%A 001
-  - 香�%A 002
+  - 高级+专线+台湾+0 001
+  - 标准+专线+香港+0 001
+  - 高级+专线+香港+0 001
+  - 高级+专线+香港+0 002
+  - 高级+专线+香港+0 003
+  - 高级+专线+香港+0 004
+  - 特殊+专线+越�%9
+  - 特殊+专线+乌克�%B
+  - 特殊+专线+法�%B
+  - 特殊+专线+以色�%9
+  - 特殊+专线+西班�%9
+  - 购物+专线+俄罗斯+[3.0%5
+  - 购物+专线+土耳其+[3.0%5
+  - 特殊+专线+德国+0
+  - 特殊+专线+伦敦+0 001
+  - 高级+专线+韩国+0
+  - 特殊+专线+荷�%B
+  - 高级+专线+日本+0 001
+  - 特殊+专线+悉�%B
+  - 标准+专线+美国+0 001
+  - 特殊+专线+意大�%A
+  - 特殊+专线+匈牙�%A
+  - 特殊+专线+伦敦+0 002
+  - 特殊+专线+加拿大+0
+  - 日用+专线+美国+[0.2%5
+  - 日用+专线+日本+[0.2%5
+  - 高级+专线+美国+0 001
+  - 高级+专线+美国+0 002
+  - 高级+专线+美国+0 003
+  - 高级+专线+美国+0 004
+  - 高级+专线+美国+0 005
+  - 高级+专线+日本+0 002
+  - 高级+专线+日本+0 003
+  - 高级+专线+日本+0 004
+  - 高级+专线+日本+0 005
+  - 高级+专线+日本+0 006
+  - 标准+专线+日本+0
+  - 特殊+专线+印�%B
+  - 高级+专线+日本+0 007
+  - 高级+专线+狮城+0 001
+  - 标准+专线+狮城+0 001
+  - 高级+专线+日本+0 008
+  - 标准+专线+狮城+0 002
+  - 特殊+专线+菲律�%B
+  - 高级+专线+狮城+0 002
+  - 高级+专线+狮城+0 003
+  - 高级+专线+狮城+0 004
+  - 高级+专线+狮城+0 005
+  - 高级+专线+台湾+0 002
+  - 标准+专线+香港+0 002
+  - 标准+专线+台湾+0
+  - 高级+专线+香港+0 005
+  - 标准+专线+美国+0 002
+  - 标准+专线+狮城+0 003
+  - GLaDOS-N2-01 001
+  - GLaDOS-N2-04 001
+  - GLaDOS-N2-05 001
+  - GLaDOS-N2-06 001
+  - GLaDOS-N2-07
+  - GLaDOS-Portalgun-00 001
+  - GLaDOS-Portalgun-01 001
+  - GLaDOS-Portalgun-02 001
+  - GLaDOS-Portalgun-04 001
+  - GLaDOS-Portalgun-07 001
+  - GLaDOS-Portalgun-06 001
+  - GLaDOS-Portalgun-05
+  - GLaDOS-Portalgun-08
+  - GLaDOS-US-1-Netflix 001
+  - GLaDOS-US-2-Netflix 001
+  - GLaDOS-US-3-Netflix
+  - US-GLaDOS-GEO-00 001
+  - US-GLaDOS-GEO-01 001
+  - US-GLaDOS-GEO-02
+  - JP-GLaDOS-GEO-00
+  - JP-GLaDOS-GEO-01 001
+  - JP-GLaDOS-GEO-02 001
+  - TW-GLaDOS-GEO-00 001
+  - TW-GLaDOS-GEO-01
+  - TW-GLaDOS-GEO-02
+  - HK-GLaDOS-GEO-00 001
+  - HK-GLaDOS-GEO-01 001
+  - HK-GLaDOS-GEO-02 001
+  - SG-GLaDOS-GEO-00 001
+  - SG-GLaDOS-GEO-02 001
+  - UK-GLaDOS-GEO-00 001
+  - SG-GLaDOS-GEO-01 001
+  - UK-GLaDOS-GEO-01
+  - UK-GLaDOS-GEO-02 001
   - GLaDOS-N2-00
-  - GLaDOS-N2-01
+  - GLaDOS-N2-01 002
   - GLaDOS-N2-02
   - GLaDOS-N2-03
-  - GLaDOS-N2-05
-  - GLaDOS-N2-06
-  - GLaDOS-N2-07
-  - GLaDOS-Portalgun-03
-  - GLaDOS-Portalgun-04
-  - GLaDOS-Portalgun-05
-  - GLaDOS-Portalgun-06
-  - GLaDOS-Portalgun-07
-  - GLaDOS-Portalgun-08
-  - GLaDOS-US-1-Netflix
-  - GLaDOS-US-2-Netflix
-  - GLaDOS-US-3-Netflix
+  - GLaDOS-N2-04 002
+  - GLaDOS-N2-05 002
+  - GLaDOS-N2-06 002
+  - GLaDOS-N2-08
+  - GLaDOS-Portalgun-00 002
+  - GLaDOS-Portalgun-01 002
+  - GLaDOS-Portalgun-02 002
+  - GLaDOS-Portalgun-04 002
+  - GLaDOS-Portalgun-06 002
+  - GLaDOS-Portalgun-07 002
+  - GLaDOS-US-1-Netflix 002
+  - GLaDOS-US-2-Netflix 002
   - GLaDOS-TW-1-Netflix
   - GLaDOS-TW-3-Netflix
-  - JP-GLaDOS-GEO-00
-  - HK-GLaDOS-GEO-00
-  - SG-GLaDOS-GEO-00
-  - UK-GLaDOS-GEO-01
-  - UK-GLaDOS-GEO-02
-  - HK-GLaDOS-GEO-01
-  - HK-GLaDOS-GEO-02
-  - 美�%B
-  - 新加�%A 001
-  - 新加�%A 002
-  - 美国 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 009
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 010
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 011
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 012
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 013
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 014
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 015
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 009
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 009
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 010
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 011
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 012
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 013
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
-  - 🇸🇬 新加坡1-1000M带宽-解锁流媒体
-  - 🇸🇬 新加坡2-1000M带宽-解锁流媒体
-  - 🇸🇬 新加坡3-1000M带宽-解锁流媒体
-  - 🇸🇬 新加坡4-1000M带宽-解锁流媒体
-  - 🇬🇧 英国1-1000M-解锁流媒体
-  - 🇬🇧 英国3-1000M-解锁流媒体
-  - 🇩🇪 德国1-500M-解锁流媒体
-  - 🇩🇪 德国2-500M-解锁流媒体
-  - 美国INAP 001
-  - 美国 002
-  - 日本
-  - 新加坡 001
-  - 美国 003
-  - 新加坡 002
-  - 新加坡2
-  - 俄罗斯 001
-  - 美国 004
-  - 美国INAP 002
-  - 新加坡 003
-  - 俄罗斯 002
-  - 美国 005
-  - 瑞士
-  - 美国INAP 003
-  - 新加坡 004
-  - 美国 006
-  - 美国INAP 004
-  - 新加坡 005
+  - US-GLaDOS-GEO-00 002
+  - US-GLaDOS-GEO-01 002
+  - JP-GLaDOS-GEO-01 002
+  - JP-GLaDOS-GEO-02 002
+  - TW-GLaDOS-GEO-00 002
+  - HK-GLaDOS-GEO-00 002
+  - HK-GLaDOS-GEO-01 002
+  - HK-GLaDOS-GEO-02 002
+  - SG-GLaDOS-GEO-00 002
+  - SG-GLaDOS-GEO-01 002
+  - SG-GLaDOS-GEO-02 002
+  - UK-GLaDOS-GEO-00 002
+  - UK-GLaDOS-GEO-02 002
+  - 江苏BGP
+  - 香港 001
+  - 日本 001
+  - 日本 002
+  - 台湾-1号 | 解锁流媒体
+  - 台湾-2号 | 解锁流媒体
+  - 台湾-3号 | 解锁流媒体
+  - 台湾-广州移动负载均衡 | 解锁流媒体
+  - 台湾-广州移动2负载均衡 | 解锁流媒体
+  - 台湾-河南移动负载均衡 | 解锁流媒体
+  - 日本NTT-1号 | 解锁流媒体
+  - 日本NTT-2号 | 解锁流媒体
+  - 日本NTT-广州移动负载均衡 | 解锁流媒体
+  - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+  - beiku 001
   - beikui 001
-  - beikui 2
-  - beikui 3
-  - beikui 4
-  - beikui 5
-  - beikui 6
-  - beikui 7
-  - beikui 8
-  - beikui 9
-  - beikui 10
-  - beikui 11
-  - beikui 12
-  - beikui 13
-  - beikui 14
-  - beikui 16
-  - beikui 17
-  - beikui 18
-  - beikui 19
-  - beikui 20
-  - beikui 22
-  - beikui 26
-  - beikui 28
-  - beikui 30
-  - beikui 31
-  - beikui 32
-  - beikui 34
-  - beikui 35
-  - beikui 36
-  - beikui 37
-  - beikui 38
-  - beikui 39
-  - beikui 40
   - beikui 002
   - beikui 003
   - beikui 004
   - beikui 005
   - beikui 006
   - beikui 007
+  - beiku 002
+  - beiku 003
+  - beiku 004
   - beikui 008
   - beikui 009
   - beikui 010
@@ -485,21 +514,17 @@ proxy-groups:
   - beikui 038
   - beikui 039
   - beikui 040
-  - beiku 001
   - beikui 041
   - beikui 042
   - beikui 043
   - beikui 044
   - beikui 045
-  - beiku 002
-  - beiku 003
   - beikui 046
   - beikui 047
   - beikui 048
   - beikui 049
   - beikui 050
   - beikui 051
-  - beiku 004
   - beikui 052
   - beikui 053
   - beikui 054
@@ -509,7 +534,6 @@ proxy-groups:
   - beikui 058
   - beikui 059
   - beikui 060
-  - beiku 005
   - beikui 061
   - beikui 062
   - beikui 063
@@ -519,197 +543,274 @@ proxy-groups:
   - beikui 067
   - beikui 068
   - beikui 069
+  - beikui 070
+  - beikui 071
+  - beikui 072
+  - beikui 2
+  - beikui 3
+  - beikui 4
+  - beikui 5
+  - beikui 6
+  - beikui 7
+  - beikui 8
+  - beikui 9
+  - beikui 10
+  - beikui 11
+  - beikui 12
+  - beikui 13
+  - beikui 14
+  - beikui 15
+  - beikui 16
+  - beikui 17
+  - beikui 18
+  - beikui 19
+  - beikui 20
+  - beikui 21
+  - beikui 22
+  - beikui 23
+  - beikui 25
+  - beikui 26
+  - beikui 27
+  - beikui 28
+  - beikui 29
+  - beikui 30
+  - beikui 31
+  - beikui 32
+  - beikui 33
+  - beikui 34
+  - beikui 35
+  - beikui 36
+  - beikui 37
+  - beikui 38
+  - beikui 39
+  - beikui 40
+  - 俄罗斯 001
+  - 新加坡 001
+  - 美国 001
+  - 俄罗斯 002
+  - 新加坡 002
+  - 美国 002
+  - 俄罗斯 003
+  - 新加坡 003
+  - 美国 003
+  - 俄罗斯 004
+  - 新加坡 004
+  - 美国 004
+  - 俄罗斯 005
+  - 新加坡 005
+  - 美国 005
+  - 香�%A
+  - 台�%B
+  - 香港 002
+  - 香港HTK-广港隧�%9
+  - 香港HTK-广港隧道
+  - 台湾家宽-广港隧�%9
+  - 台湾家宽-杭港BGP隧�%9
+  - 美�%B 001
+  - 美国 006
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 009
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
+  - 🇸🇬 新加坡1-1000M带宽-解锁流媒体
+  - 🇸🇬 新加坡2-1000M带宽-解锁流媒体
+  - 🇸🇬 新加坡3-1000M带宽-解锁流媒体
+  - 🇸🇬 新加坡4-1000M带宽-解锁流媒体
+  - 🇺🇲 美国原生1-20000M-解锁流媒体
+  - 🇺🇲 美国原生2-20000M-解锁流媒体
+  - 🇺🇲 美国原生3-20000M-解锁流媒体
+  - 🇬🇧 英国1-1000M-解锁流媒体
+  - 🇬🇧 英国2-1000M-解锁流媒体
+  - 🇬🇧 英国3-1000M-解锁流媒体
+  - 🇩🇪 德国1-500M-解锁流媒体
+  - 🇩🇪 德国2-500M-解锁流媒体
+  - Amazon_Tokyo
+  - 80 | 春川 | 001
+  - 80 | 春川 | 002
+  - 443 | 春川
+  - 美�%B 002
 - name: ♻️ automatic
   type: url-test
   proxies:
   - 有问题咨询TG@beikui_bot
-  - Amazon_Tokyo
-  - Lv2 新加坡 01 [1.5]
-  - Lv2 美国 03 [1.5%5
-  - 🇨🇳 v1丨印度丨北京- HK隧道-印度丨中转丨2
-  - 🇨🇳 v1丨印度丨北京- HK隧道-印度丨顺手更新下订阅
-  - 🇹🇼 v1丨台湾三网丨联通中继
-  - 🇹🇼 v1丨台湾丨原生丨中台中继丨
-  - 🇹🇼 v1丨台湾丨原生丨静态
-  - 🇹🇼 v1丨台湾丨隧道中转丨1
-  - 🇹🇼 v1丨台湾丨隧道中转丨2
-  - 🇹🇼 v1丨台湾丨隧道中转丨解锁流媒体
-  - 🇸🇬 v1丨新加坡丨 私人订制
-  - 🇸🇬 v1丨新加坡丨中继丨HK隧道
-  - 🇨🇳 v1丨新加坡丨北京-新加坡丨
-  - 🇯🇵 v1丨日本丨中继丨东京丨2丨1Gbps
-  - 🇨🇳 v1丨泰国丨北京- HK隧道-泰国丨2丨萨瓦迪卡
-  - 🇹🇭 v1丨泰国丨直接丨1丨
-  - 🇺🇲 v1丨美国丨原生丨三网优化丨广移中继
-  - 🇺🇲 v1丨美国丨隧道中转丨解锁流媒体1
-  - 🇺🇲 v1丨美国丨隧道中转丨解锁流媒体2
-  - 🇬🇧 v1丨英国丨1
-  - 🇬🇧 v1丨英国丨中港中转丨2
-  - 🇻🇳 v1丨越南丨京港中继丨Trojan
-  - 🇻🇳 v1丨越南丨直连丨解锁新加坡
-  - 🇨🇳 v1丨韩国丨微软丨北京-韩国丨2丨1Gbps
-  - 🇨🇳 v1丨香港丨微软丨1丨北京—香港丨
-  - 香�%A 001
-  - 香�%A 002
+  - 高级+专线+台湾+0 001
+  - 标准+专线+香港+0 001
+  - 高级+专线+香港+0 001
+  - 高级+专线+香港+0 002
+  - 高级+专线+香港+0 003
+  - 高级+专线+香港+0 004
+  - 特殊+专线+越�%9
+  - 特殊+专线+乌克�%B
+  - 特殊+专线+法�%B
+  - 特殊+专线+以色�%9
+  - 特殊+专线+西班�%9
+  - 购物+专线+俄罗斯+[3.0%5
+  - 购物+专线+土耳其+[3.0%5
+  - 特殊+专线+德国+0
+  - 特殊+专线+伦敦+0 001
+  - 高级+专线+韩国+0
+  - 特殊+专线+荷�%B
+  - 高级+专线+日本+0 001
+  - 特殊+专线+悉�%B
+  - 标准+专线+美国+0 001
+  - 特殊+专线+意大�%A
+  - 特殊+专线+匈牙�%A
+  - 特殊+专线+伦敦+0 002
+  - 特殊+专线+加拿大+0
+  - 日用+专线+美国+[0.2%5
+  - 日用+专线+日本+[0.2%5
+  - 高级+专线+美国+0 001
+  - 高级+专线+美国+0 002
+  - 高级+专线+美国+0 003
+  - 高级+专线+美国+0 004
+  - 高级+专线+美国+0 005
+  - 高级+专线+日本+0 002
+  - 高级+专线+日本+0 003
+  - 高级+专线+日本+0 004
+  - 高级+专线+日本+0 005
+  - 高级+专线+日本+0 006
+  - 标准+专线+日本+0
+  - 特殊+专线+印�%B
+  - 高级+专线+日本+0 007
+  - 高级+专线+狮城+0 001
+  - 标准+专线+狮城+0 001
+  - 高级+专线+日本+0 008
+  - 标准+专线+狮城+0 002
+  - 特殊+专线+菲律�%B
+  - 高级+专线+狮城+0 002
+  - 高级+专线+狮城+0 003
+  - 高级+专线+狮城+0 004
+  - 高级+专线+狮城+0 005
+  - 高级+专线+台湾+0 002
+  - 标准+专线+香港+0 002
+  - 标准+专线+台湾+0
+  - 高级+专线+香港+0 005
+  - 标准+专线+美国+0 002
+  - 标准+专线+狮城+0 003
+  - GLaDOS-N2-01 001
+  - GLaDOS-N2-04 001
+  - GLaDOS-N2-05 001
+  - GLaDOS-N2-06 001
+  - GLaDOS-N2-07
+  - GLaDOS-Portalgun-00 001
+  - GLaDOS-Portalgun-01 001
+  - GLaDOS-Portalgun-02 001
+  - GLaDOS-Portalgun-04 001
+  - GLaDOS-Portalgun-07 001
+  - GLaDOS-Portalgun-06 001
+  - GLaDOS-Portalgun-05
+  - GLaDOS-Portalgun-08
+  - GLaDOS-US-1-Netflix 001
+  - GLaDOS-US-2-Netflix 001
+  - GLaDOS-US-3-Netflix
+  - US-GLaDOS-GEO-00 001
+  - US-GLaDOS-GEO-01 001
+  - US-GLaDOS-GEO-02
+  - JP-GLaDOS-GEO-00
+  - JP-GLaDOS-GEO-01 001
+  - JP-GLaDOS-GEO-02 001
+  - TW-GLaDOS-GEO-00 001
+  - TW-GLaDOS-GEO-01
+  - TW-GLaDOS-GEO-02
+  - HK-GLaDOS-GEO-00 001
+  - HK-GLaDOS-GEO-01 001
+  - HK-GLaDOS-GEO-02 001
+  - SG-GLaDOS-GEO-00 001
+  - SG-GLaDOS-GEO-02 001
+  - UK-GLaDOS-GEO-00 001
+  - SG-GLaDOS-GEO-01 001
+  - UK-GLaDOS-GEO-01
+  - UK-GLaDOS-GEO-02 001
   - GLaDOS-N2-00
-  - GLaDOS-N2-01
+  - GLaDOS-N2-01 002
   - GLaDOS-N2-02
   - GLaDOS-N2-03
-  - GLaDOS-N2-05
-  - GLaDOS-N2-06
-  - GLaDOS-N2-07
-  - GLaDOS-Portalgun-03
-  - GLaDOS-Portalgun-04
-  - GLaDOS-Portalgun-05
-  - GLaDOS-Portalgun-06
-  - GLaDOS-Portalgun-07
-  - GLaDOS-Portalgun-08
-  - GLaDOS-US-1-Netflix
-  - GLaDOS-US-2-Netflix
-  - GLaDOS-US-3-Netflix
+  - GLaDOS-N2-04 002
+  - GLaDOS-N2-05 002
+  - GLaDOS-N2-06 002
+  - GLaDOS-N2-08
+  - GLaDOS-Portalgun-00 002
+  - GLaDOS-Portalgun-01 002
+  - GLaDOS-Portalgun-02 002
+  - GLaDOS-Portalgun-04 002
+  - GLaDOS-Portalgun-06 002
+  - GLaDOS-Portalgun-07 002
+  - GLaDOS-US-1-Netflix 002
+  - GLaDOS-US-2-Netflix 002
   - GLaDOS-TW-1-Netflix
   - GLaDOS-TW-3-Netflix
-  - JP-GLaDOS-GEO-00
-  - HK-GLaDOS-GEO-00
-  - SG-GLaDOS-GEO-00
-  - UK-GLaDOS-GEO-01
-  - UK-GLaDOS-GEO-02
-  - HK-GLaDOS-GEO-01
-  - HK-GLaDOS-GEO-02
-  - 美�%B
-  - 新加�%A 001
-  - 新加�%A 002
-  - 美国 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 009
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 010
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 011
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 012
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 013
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 014
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 015
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 009
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 009
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 010
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 011
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 012
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 013
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
-  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
-  - 🇸🇬 新加坡1-1000M带宽-解锁流媒体
-  - 🇸🇬 新加坡2-1000M带宽-解锁流媒体
-  - 🇸🇬 新加坡3-1000M带宽-解锁流媒体
-  - 🇸🇬 新加坡4-1000M带宽-解锁流媒体
-  - 🇬🇧 英国1-1000M-解锁流媒体
-  - 🇬🇧 英国3-1000M-解锁流媒体
-  - 🇩🇪 德国1-500M-解锁流媒体
-  - 🇩🇪 德国2-500M-解锁流媒体
-  - 美国INAP 001
-  - 美国 002
-  - 日本
-  - 新加坡 001
-  - 美国 003
-  - 新加坡 002
-  - 新加坡2
-  - 俄罗斯 001
-  - 美国 004
-  - 美国INAP 002
-  - 新加坡 003
-  - 俄罗斯 002
-  - 美国 005
-  - 瑞士
-  - 美国INAP 003
-  - 新加坡 004
-  - 美国 006
-  - 美国INAP 004
-  - 新加坡 005
+  - US-GLaDOS-GEO-00 002
+  - US-GLaDOS-GEO-01 002
+  - JP-GLaDOS-GEO-01 002
+  - JP-GLaDOS-GEO-02 002
+  - TW-GLaDOS-GEO-00 002
+  - HK-GLaDOS-GEO-00 002
+  - HK-GLaDOS-GEO-01 002
+  - HK-GLaDOS-GEO-02 002
+  - SG-GLaDOS-GEO-00 002
+  - SG-GLaDOS-GEO-01 002
+  - SG-GLaDOS-GEO-02 002
+  - UK-GLaDOS-GEO-00 002
+  - UK-GLaDOS-GEO-02 002
+  - 江苏BGP
+  - 香港 001
+  - 日本 001
+  - 日本 002
+  - 台湾-1号 | 解锁流媒体
+  - 台湾-2号 | 解锁流媒体
+  - 台湾-3号 | 解锁流媒体
+  - 台湾-广州移动负载均衡 | 解锁流媒体
+  - 台湾-广州移动2负载均衡 | 解锁流媒体
+  - 台湾-河南移动负载均衡 | 解锁流媒体
+  - 日本NTT-1号 | 解锁流媒体
+  - 日本NTT-2号 | 解锁流媒体
+  - 日本NTT-广州移动负载均衡 | 解锁流媒体
+  - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+  - beiku 001
   - beikui 001
-  - beikui 2
-  - beikui 3
-  - beikui 4
-  - beikui 5
-  - beikui 6
-  - beikui 7
-  - beikui 8
-  - beikui 9
-  - beikui 10
-  - beikui 11
-  - beikui 12
-  - beikui 13
-  - beikui 14
-  - beikui 16
-  - beikui 17
-  - beikui 18
-  - beikui 19
-  - beikui 20
-  - beikui 22
-  - beikui 26
-  - beikui 28
-  - beikui 30
-  - beikui 31
-  - beikui 32
-  - beikui 34
-  - beikui 35
-  - beikui 36
-  - beikui 37
-  - beikui 38
-  - beikui 39
-  - beikui 40
   - beikui 002
   - beikui 003
   - beikui 004
   - beikui 005
   - beikui 006
   - beikui 007
+  - beiku 002
+  - beiku 003
+  - beiku 004
   - beikui 008
   - beikui 009
   - beikui 010
@@ -743,21 +844,17 @@ proxy-groups:
   - beikui 038
   - beikui 039
   - beikui 040
-  - beiku 001
   - beikui 041
   - beikui 042
   - beikui 043
   - beikui 044
   - beikui 045
-  - beiku 002
-  - beiku 003
   - beikui 046
   - beikui 047
   - beikui 048
   - beikui 049
   - beikui 050
   - beikui 051
-  - beiku 004
   - beikui 052
   - beikui 053
   - beikui 054
@@ -767,7 +864,6 @@ proxy-groups:
   - beikui 058
   - beikui 059
   - beikui 060
-  - beiku 005
   - beikui 061
   - beikui 062
   - beikui 063
@@ -777,6 +873,126 @@ proxy-groups:
   - beikui 067
   - beikui 068
   - beikui 069
+  - beikui 070
+  - beikui 071
+  - beikui 072
+  - beikui 2
+  - beikui 3
+  - beikui 4
+  - beikui 5
+  - beikui 6
+  - beikui 7
+  - beikui 8
+  - beikui 9
+  - beikui 10
+  - beikui 11
+  - beikui 12
+  - beikui 13
+  - beikui 14
+  - beikui 15
+  - beikui 16
+  - beikui 17
+  - beikui 18
+  - beikui 19
+  - beikui 20
+  - beikui 21
+  - beikui 22
+  - beikui 23
+  - beikui 25
+  - beikui 26
+  - beikui 27
+  - beikui 28
+  - beikui 29
+  - beikui 30
+  - beikui 31
+  - beikui 32
+  - beikui 33
+  - beikui 34
+  - beikui 35
+  - beikui 36
+  - beikui 37
+  - beikui 38
+  - beikui 39
+  - beikui 40
+  - 俄罗斯 001
+  - 新加坡 001
+  - 美国 001
+  - 俄罗斯 002
+  - 新加坡 002
+  - 美国 002
+  - 俄罗斯 003
+  - 新加坡 003
+  - 美国 003
+  - 俄罗斯 004
+  - 新加坡 004
+  - 美国 004
+  - 俄罗斯 005
+  - 新加坡 005
+  - 美国 005
+  - 香�%A
+  - 台�%B
+  - 香港 002
+  - 香港HTK-广港隧�%9
+  - 香港HTK-广港隧道
+  - 台湾家宽-广港隧�%9
+  - 台湾家宽-杭港BGP隧�%9
+  - 美�%B 001
+  - 美国 006
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 003
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 004
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 005
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 006
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 007
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 008
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 009
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 001
+  - kuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikuikui 002
+  - 🇸🇬 新加坡1-1000M带宽-解锁流媒体
+  - 🇸🇬 新加坡2-1000M带宽-解锁流媒体
+  - 🇸🇬 新加坡3-1000M带宽-解锁流媒体
+  - 🇸🇬 新加坡4-1000M带宽-解锁流媒体
+  - 🇺🇲 美国原生1-20000M-解锁流媒体
+  - 🇺🇲 美国原生2-20000M-解锁流媒体
+  - 🇺🇲 美国原生3-20000M-解锁流媒体
+  - 🇬🇧 英国1-1000M-解锁流媒体
+  - 🇬🇧 英国2-1000M-解锁流媒体
+  - 🇬🇧 英国3-1000M-解锁流媒体
+  - 🇩🇪 德国1-500M-解锁流媒体
+  - 🇩🇪 德国2-500M-解锁流媒体
+  - Amazon_Tokyo
+  - 80 | 春川 | 001
+  - 80 | 春川 | 002
+  - 443 | 春川
+  - 美�%B 002
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
