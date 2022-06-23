@@ -51,6 +51,7 @@ class sub_convert():
                 a_content = []
                 for url in raw_input:
                     s = requests.Session()
+                    s.headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36"}
                     s.mount('http://', HTTPAdapter(max_retries=5))
                     s.mount('https://', HTTPAdapter(max_retries=5))
                     try:
@@ -153,7 +154,10 @@ class sub_convert():
                     for line in lines:
                         value_list = re.split(r': |, ', line)
                         if len(value_list) > 6:
-                            line = re.sub(r'name: *([^:]*?[|丨\[\]].*?)(, *\b\w*?:)',r'name: "\1"\2',line)
+                            # '- {name: 🇨🇳 v1丨印度丨北京- HK隧道-印度丨顺手更新下订阅, server: zhuanfabj1.yooo.me, port: 44174, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}'
+                            line = re.sub(r'name: *([^:]*?[\[\]?,][^:]*?)(, *\b\w*?:)',r'name: "\1"\2',line)
+                            # '  - {name: GLaDOS-Portalgun-08, server: c68b799.v9.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /t, ws-headers: {Host: %7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D}, udp: true}'
+                            line = re.sub(r'{Host: *([^}]*?[%].*?)}', r'{Host: "\1"}', line)
                             line_fix_list.append(line)
                         else:
                             line_fix_list.append(line)
@@ -211,7 +215,9 @@ class sub_convert():
 
         print('共发现:{}个节点'.format(len(proxies_list)))
 
-        url_names = [i['name'].strip() for i in proxies_list if i['server'] != '127.0.0.1']
+        for i in proxies_list:
+            i['name'] = i['name'].strip()
+        url_names = [i['name'] for i in proxies_list if i['server'] != '127.0.0.1']
         url_list = [str(i) for i in proxies_list if i['server'] != '127.0.0.1']
 
         clashmodel['proxies'] = url_list
