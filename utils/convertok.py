@@ -840,16 +840,14 @@ clashmodel = {'port': 7890, 'socks-port': 7891, 'mode': 'rule', 'log-level': 'si
 
 
 if __name__ == '__main__':
-    # subs = [
-    #         'https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2',
-    #         'https://gitlab.com/xlzlucky/bpjd/-/raw/main/freejd',
-    #         'https://raw.githubusercontent.com/Lewis-1217/FreeNodes/main/bpjzx2',
-    #         'https://raw.githubusercontent.com/poduv/poduv/i/long',
-    #         'https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg',
-    #         'https://raw.githubusercontent.com/freefq/free/master/v2',
-    #         'https://raw.githubusercontent.com/mzcorleone/clash/main/node-all.yaml'
-    #         ]
-    subs = ['https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg']
+    subs = ['https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2',
+            'https://gitlab.com/xlzlucky/bpjd/-/raw/main/freejd',
+            'https://raw.githubusercontent.com/Lewis-1217/FreeNodes/main/bpjzx2',
+            'https://raw.githubusercontent.com/poduv/poduv/i/long',
+            'https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg',
+            'https://raw.githubusercontent.com/freefq/free/master/v2',
+            'https://raw.githubusercontent.com/mzcorleone/clash/main/node-all.yaml']
+
     filname = ['aibox','xluck','lewis','poduv','jszk','frfq','corle',]
     for i in range(len(subs)):
         content = sub_convert.convert(subs[i], 'url', 'YAML')
