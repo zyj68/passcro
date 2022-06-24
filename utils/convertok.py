@@ -155,10 +155,12 @@ class sub_convert():
                         value_list = re.split(r': |, ', line)
                         if len(value_list) > 6:
                             # '- {name: 🇨🇳 v1丨印度丨北京- HK隧道-印度丨顺手更新下订阅, server: zhuanfabj1.yooo.me, port: 44174, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}'
-                            line = re.sub(r'(name: *[^:]*?)(?<=,| )[?@!%]([^:]*?, *\b\w*?:)',r'\1\2',bb)
+                            # line = re.sub(r'(name: *[^:]*?)(?<=,| )[?@!%]([^:]*?, *\b\w*?:)',r'\1\2',bb)
                             line = re.sub(r'name: *([^:]*?[\[\]?,][^:]*?)(, *\b\w*?:)',r'name: "\1"\2',line)
                             # '  - {name: GLaDOS-Portalgun-08, server: c68b799.v9.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /t, ws-headers: {Host: %7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D}, udp: true}'
-                            line = re.sub(r'{Host: *([^}]*?[%].*?)}', r'{Host: "\1"}', line)
+                            line = re.sub(r'path: *([^:]*?[?%][^:]*?)((, *\b\w*?:)|(}))',r'path: "\1"\2',line)
+                            line = re.sub(r'{Host: *([^}]*?[?%].*?)}', r'{Host: "\1"}', line)
+
                             try:
                                 yaml.safe_load(line)
                                 line_fix_list.append(line)
@@ -175,7 +177,7 @@ class sub_convert():
 
                     if output == False:
                         sub_content_yaml = yaml.safe_load(sub_content)
-                    elif: output == True# output 值为 True 时返回修饰过的 YAML 文本
+                    else: # output 值为 True 时返回修饰过的 YAML 文本
                         sub_content_yaml = sub_content
                 except:
                     print('Sub_content 格式错误')
@@ -268,7 +270,7 @@ class sub_convert():
                             flags.update(dict(span))
                             vmess_json = flags
                         else:
-                            loge(f'v2ray节点解析失败,链接:  {node}')
+                            print(f'v2ray节点解析失败,链接:  {node}')
 
                     if vmess_json['id'] == '' or vmess_json['id'] is None:
                         print('v2ray节点格式错误')
@@ -319,13 +321,14 @@ class sub_convert():
                         flags = dict()
                         param = node_tent
                         if param.find('#') > -1:
-                            flags['name'] = sub_convert.safe_unquote(param[param.find('#') + 1:-1])
-                            param = sub_convert.safe_decode(param[:param.find('#')])
+                            flags['name'] = sub_convert.safe_unquote(param[param.find('#') + 1:])
+                            param = param[:param.find('#')]
+                            param = sub_convert.safe_decode(param) if '@' not in param else param
 
                         if param.find('?') > -1:
                             plugin = sub_convert.safe_unquote(param[param.find('?') + 1:])
-                            param = sub_convert.safe_decode(re.match(r'(.*?)(?=\?|/\?)',param).group(1))
-
+                            param = re.match(r'(.*?)(?=\?|/\?)',param).group(1)
+                            param = sub_convert.safe_decode(param) if '@' not in param else param
                             for p in plugin.split(';'):
                                 key_value = p.split('=')
                                 flags[key_value[0]]=sub_convert.safe_decode(key_value[1])
@@ -341,7 +344,7 @@ class sub_convert():
                                 flags['port'] = matcher.group(4)
                             ss_json = flags
                         else:
-                            loge(f'ss节点解析失败,链接:  {node}')
+                            print(f'ss节点解析失败,链接:  {line}')
 
                         nodname = ss_json.get('name') or ss_json.get('remarks') or 'ss_node'
 
@@ -441,10 +444,8 @@ class sub_convert():
                         server_part_list = server_part_list[3:]
 
                         for config in server_part_list:
-                            if 'sni=' in config:
+                            if 'sni=' in config or 'peer' in config:
                                 yaml_url.setdefault('sni', config[4:])
-                            elif 'peer' in config:
-                                yaml_url.setdefault('peer', config[4:])
                             elif 'allowInsecure=' in config or 'tls=' in config:
                                 if config[-1] == 0:
                                     yaml_url.setdefault('tls', False)
