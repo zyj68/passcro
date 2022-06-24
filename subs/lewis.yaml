@@ -4,20 +4,20 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 新加坡-tg频道:@bpjzx2-1, server: sg.v2yyds.cc, port: 35214, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, sni: sg.v2yyds.cc, skip-cert-verify: true}
-  - {name: 香港-tg频道:@bpjzx2-2, server: node-hk.pyhdxy.top, port: 10000, type: trojan, password: f9628fbd-ef2a-4d8a-baa7-9b8a56a91091, sni: node-hk.pyhdxy.top, skip-cert-verify: true}
+  - {name: 新加坡-tg频道:@bpjzx2-1, server: sg.v2yyds.cc, port: 35214, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, sni: sg.v2yyds.cc, skip-cert-verify: false, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-2, server: node-hk.pyhdxy.top, port: 10000, type: trojan, password: f9628fbd-ef2a-4d8a-baa7-9b8a56a91091, sni: node-hk.pyhdxy.top, skip-cert-verify: false, udp: true}
   - {name: 新加坡-tg频道:@bpjzx2-3, server: 2.game.speed.zz.001.oooooooooo.icu, port: 53945, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-4, server: gnailiad.ga, port: 39208, type: trojan, password: swXgcgRW7p, sni: gnailiad.ga, skip-cert-verify: true}
-  - {name: 新加坡-tg频道:@bpjzx2-5, server: sg.v2yyds.cc, port: 35212, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, sni: sg.v2yyds.cc, skip-cert-verify: true}
-  - {name: 新加坡-tg频道:@bpjzx2-6, server: sg.v2yyds.cc, port: 35213, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, sni: sg.v2yyds.cc, skip-cert-verify: true}
+  - {name: 美国-tg频道:@bpjzx2-4, server: gnailiad.ga, port: 39208, type: trojan, password: swXgcgRW7p, sni: gnailiad.ga, skip-cert-verify: false, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2-5, server: sg.v2yyds.cc, port: 35212, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, sni: sg.v2yyds.cc, skip-cert-verify: false, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2-6, server: sg.v2yyds.cc, port: 35213, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, sni: sg.v2yyds.cc, skip-cert-verify: false, udp: true}
   - {name: 东京-tg频道:@bpjzx2-7, server: 20.222.100.86, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 香港-tg频道:@bpjzx2-8, server: 615hk.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, sni: 615hk.fans8.xyz, skip-cert-verify: true}
-  - {name: 新加坡-tg频道:@bpjzx2-9, server: 67sg01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, sni: 67sg01.fans8.xyz, skip-cert-verify: true}
+  - {name: 香港-tg频道:@bpjzx2-8, server: 615hk.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, sni: 615hk.fans8.xyz, skip-cert-verify: false, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2-9, server: 67sg01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, sni: 67sg01.fans8.xyz, skip-cert-verify: false, udp: true}
   - {name: 香港-tg频道:@bpjzx2-10, server: 20.187.100.208, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 日本-tg频道:@bpjzx2-11, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, sni: jgwdb1.gaox.ml, skip-cert-verify: true}
-  - {name: 新加坡-tg频道:@bpjzx2-12, server: sgg.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: sgg.2046.gq, skip-cert-verify: true}
+  - {name: 日本-tg频道:@bpjzx2-11, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, sni: jgwdb1.gaox.ml, skip-cert-verify: false, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2-12, server: sgg.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: sgg.2046.gq, skip-cert-verify: false, udp: true}
   - {name: 香港-tg频道:@bpjzx2-13, server: 20.239.67.237, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 香港-tg频道:@bpjzx2-14, server: 611hk01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, sni: 611hk01.fans8.xyz, skip-cert-verify: true}
+  - {name: 香港-tg频道:@bpjzx2-14, server: 611hk01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, sni: 611hk01.fans8.xyz, skip-cert-verify: false, udp: true}
   - {name: 新加坡-tg频道:@bpjzx2-15, type: ssr, server: 120.233.185.189, port: 11807, cipher: chacha20-ietf, password: Fhbe0z, obfs: tls1.2_ticket_auth, protocol: auth_aes128_sha1, obfs-param: Vm0wd2QyUXlWa2hWV0doVlYwZFNUMVpzWkZOWFZsbDNXa2M1VjAxWGVEQmFSV2hyVmxVeFYyTkVRbFZXYlUweFZtcEJlRmRIVmtkWGJGcE9ZbTFvVVZkV1pEUlpWMDE0V2toR1VtSlZXbGhXYlhoelRURmFkRTFVVWxwV01ERTFWa2QwYzJGV1NuUlZia0pYWVRGd2FGcFdXbXRXTVhCRlZXeHdWMDFFUlRCV01uUnZVakZWZVZOcmJGSmhlbXhYV1d4U1YxSkdjRmRYYlhSWFRWWmFlVnBGV2xOVWJGcFZWbXRzVjJKVVFYaFdSRXBIVWpGT2RWWnNTbWxTTW1oWlYxZDRVMVl4U2tkWGExcFlZbFZhV0ZsclpGTmxWbGw1WlVWT1YwMXJWak5aTUZwVFZqRmFWMk5HVG1GVFIwMDFWVVpGT1ZCUg, protocol-param: 13370:DqGDfE, udp: true}
 proxy-groups:
 - name: Proxy
