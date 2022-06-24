@@ -4,174 +4,61 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 有问题咨询TG@beikui_bot, server: hkbgp1.jiantian.xyz, port: 14326, type: trojan, password: 952eeefe-196d-4d67-a447-52577d694f96, sni: =hkbgp1.jiantian.xyz, skip-cert-verify: false, udp: true}
-  - {name: 日本 001, server: ocrb2.moonfree.top, port: 443, type: vmess, uuid: 749247ba-f14d-4cca-a0a1-096629ccad5e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ocrb2.moonfree.top}}, udp: true}
-  - {name: 日本2, server: ocrb1.moonfree.top, port: 443, type: vmess, uuid: 749247ba-f14d-4cca-a0a1-096629ccad5e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ocrb1.moonfree.top}}, udp: true}
-  - {name: 日本(中转), server: sh.moonfree.top, port: 11262, type: vmess, uuid: 749247ba-f14d-4cca-a0a1-096629ccad5e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ocrb2.moonfree.top}}, udp: true}
-  - {name: 日本2(中转), server: sh.moonfree.top, port: 11263, type: vmess, uuid: 749247ba-f14d-4cca-a0a1-096629ccad5e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ocrb1.moonfree.top}}, udp: true}
-  - {name: 日本(中转广移), server: gy.moonfree.top, port: 17252, type: vmess, uuid: 749247ba-f14d-4cca-a0a1-096629ccad5e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ocrb2.moonfree.top}}, udp: true}
-  - {name: 台湾-1号 | 解锁流媒体, server: 165.154.243.208, port: 28443, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 台湾-2号 | 解锁流媒体, server: 165.154.253.34, port: 28443, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 台湾-3号 | 解锁流媒体, server: 165.154.253.49, port: 28443, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 台湾-广州移动负载均衡(中转) | 解锁流媒体, server: gzyd1.52147.top, port: 20160, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 台湾-广州移动2负载均衡(中转) | 解锁流媒体, server: gzyd2.52147.top, port: 20160, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 台湾-河南移动负载均衡(中转) | 解锁流媒体, server: hnyd.52147.top, port: 20160, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 北京游戏节点1号-限速5Mdps 001, server: 180.76.106.137, port: 80, type: vmess, uuid: 04ea7f40-6d96-4cb3-b557-f33fc8893e49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 180.76.106.137}}, udp: true}
-  - {name: 上海游戏节点1号-限速5Mdps 001, server: 43.142.93.89, port: 8080, type: vmess, uuid: 04ea7f40-6d96-4cb3-b557-f33fc8893e49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 43.142.93.89}}, udp: true}
-  - {name: 广州游戏节点1号-限速5Mdps 001, server: 8.134.219.59, port: 80, type: vmess, uuid: 04ea7f40-6d96-4cb3-b557-f33fc8893e49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 8.134.219.59}}, udp: true}
-  - {name: 广州游戏节点2号-限速5Mdps 001, server: 106.12.140.40, port: 80, type: vmess, uuid: 04ea7f40-6d96-4cb3-b557-f33fc8893e49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 106.12.140.40}}, udp: true}
-  - {name: 80-日本2号 001, server: 45.11.1.68, port: 80, type: vmess, uuid: 04ea7f40-6d96-4cb3-b557-f33fc8893e49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 45.11.1.68}}, udp: true}
-  - {name: 80-美国4号 001, server: 45.138.70.40, port: 80, type: vmess, uuid: 04ea7f40-6d96-4cb3-b557-f33fc8893e49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 45.138.70.40}}, udp: true}
-  - {name: 香港 A 深度隧道优化, server: hkg1.xn--6p1awey07c.xyz, port: 20443, type: trojan, password: 5da72533-8f20-45f3-bc64-be25064e51be, sni: =cdn2.xn--6p1awey07c.xyz, skip-cert-verify: false, udp: true}
-  - {name: 台湾 A 跨境隧道优化, server: tw1.xn--6p1awey07c.xyz, port: 43443, type: trojan, password: 5da72533-8f20-45f3-bc64-be25064e51be, sni: =cdn.xn--6p1awey07c.xyz, skip-cert-verify: false, udp: true}
-  - {name: 日本 A 跨境隧道优化, server: jp1.xn--6p1awey07c.xyz, port: 15443, type: trojan, password: 5da72533-8f20-45f3-bc64-be25064e51be, sni: =cdn.xn--6p1awey07c.xyz, skip-cert-verify: false, udp: true}
-  - {name: 新加坡 A 跨境隧道优化, server: sg1.xn--6p1awey07c.xyz, port: 17443, type: trojan, password: 5da72533-8f20-45f3-bc64-be25064e51be, sni: =cdn.xn--6p1awey07c.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 A 跨境隧道优化, server: hkt1.xn--6p1awey07c.xyz, port: 31443, type: trojan, password: 5da72533-8f20-45f3-bc64-be25064e51be, sni: =cdn.xn--6p1awey07c.xyz, skip-cert-verify: false, udp: true}
-  - {name: 菲律宾 A 跨境隧道优化, server: flb1.xn--6p1awey07c.xyz, port: 21443, type: trojan, password: 5da72533-8f20-45f3-bc64-be25064e51be, sni: =cdn2.xn--6p1awey07c.xyz, skip-cert-verify: false, udp: true}
-  - {name: 日本| 流媒体 001, type: ssr, server: xy114x236x205x89xy.mcdn.bilivideo.life, port: 32340, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
-  - {name: 韩国| 流媒体, type: ssr, server: xy114x236x205x89xy.mcdn.bilivideo.life, port: 32341, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
-  - {name: 香港| 流媒体, type: ssr, server: xy114x236x205x89xy.mcdn.bilivideo.life, port: 33340, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
-  - {name: 日本| 流媒体 002, type: ssr, server: xy114x236x205x89xy.mcdn.bilivideo.life, port: 32342, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
-  - {name: kui 001, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
-  - {name: kui 002, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
-  - {name: kui 003, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
-  - {name: kui 004, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
-  - {name: kui 005, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
-  - {name: 俄罗斯, server: 46.232.120.106, port: 14326, type: trojan, password: cb5e2135-4d64-4454-be98-5bae4f2618d1, sni: =hkbgp1.jiantian.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港Az-优化2, server: m.mjmjmjmj.cyou, port: 16627, type: vmess, uuid: 0cc037af-4cb7-49d3-8ef6-23cbfc7b08af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.mjmjmjmj.cyou}}, udp: true}
-  - {name: 香港Az-优化3, server: t.mjmjmjmj.cyou, port: 16627, type: vmess, uuid: 0cc037af-4cb7-49d3-8ef6-23cbfc7b08af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.mjmjmjmj.cyou}}, udp: true}
-  - {name: 香港HKT-优化2, server: m.mjmjmjmj.cyou, port: 16620, type: vmess, uuid: 0cc037af-4cb7-49d3-8ef6-23cbfc7b08af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.mjmjmjmj.cyou}}, udp: true}
-  - {name: 台湾-智能, server: g.mjmjmjmj.cyou, port: 16616, type: vmess, uuid: 0cc037af-4cb7-49d3-8ef6-23cbfc7b08af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: g.mjmjmjmj.cyou}}, udp: true}
-  - {name: 台湾Hinet～广州移动 | 解锁流媒体, server: 183.232.230.214, port: 49871, type: ss, cipher: chacha20-ietf-poly1305, password: d84fd904-268c-4b42-93cc-39a710042377, udp: true}
-  - {name: 香港 001, server: AZHJ001.xiba1.xyz, port: 20723, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 002, server: AZHJ001.xiba1.xyz, port: 20727, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: 新加坡 001, server: AZQT001.xiba1.xyz, port: 20741, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 003, server: AZHJ001.xiba1.xyz, port: 20719, type: trojan, password: edf44557-5aa8-3af5-8710-634e1516782a, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 004, server: 20.247.105.52, port: 80, type: vmess, uuid: fa0f98d8-1caf-4ebe-9ec4-5980c294e98f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.247.105.52}}, udp: true}
-  - {name: 香港 005, server: 20.247.105.202, port: 80, type: vmess, uuid: fa0f98d8-1caf-4ebe-9ec4-5980c294e98f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.247.105.202}}, udp: true}
-  - {name: 日本 002, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
-  - {name: 日本 003, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
-  - {name: 日本 004, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
-  - {name: 香港3, server: node-hk.pyhdxy.top, port: 10000, type: trojan, password: f9628fbd-ef2a-4d8a-baa7-9b8a56a91091, sni: =node-hk.pyhdxy.top, skip-cert-verify: false, udp: true}
-  - {name: 香港1, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 8e295665-f1af-3973-bc49-02e180e35b5f, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: 有问题咨询TG  @beikui_bot, server: usfree2.jiantian.xyz, port: 32462, type: trojan, password: 952eeefe-196d-4d67-a447-52577d694f96, sni: =usfree2.jiantian.xyz, skip-cert-verify: false, udp: true}
   - {name: 春川 001, server: chunchuan-02.aikala.shop, port: 443, type: vmess, uuid: bea6470b-a7b8-465f-b95d-7f0c681dba1a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: down.dingtalk.com}}, udp: true}
   - {name: 春川 002, server: chunchuan-01.aikala.shop, port: 80, type: vmess, uuid: bea6470b-a7b8-465f-b95d-7f0c681dba1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: down.dingtalk.com}}, udp: true}
-  - {name: 旧金山, server: sfo1.nuker.biz, port: 443, type: vmess, uuid: d7ae61b6-c008-4b28-ad87-176ff9547d41, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sfo1.nuker.biz}}, udp: true}
   - {name: Amazon_Tokyo, server: 54.65.100.2, port: 44573, type: vmess, uuid: d7ae61b6-c008-4b28-ad87-176ff9547d41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 广港隧道-香港htk, server: 36.139.154.162, port: 45271, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 广港隧道-台湾, server: 36.139.154.162, port: 45273, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 广港隧道-香港bgp, server: 36.139.154.162, port: 45275, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 广港隧道-香港Azure, server: 36.139.154.162, port: 45276, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 广港隧道-美国, server: 36.139.154.162, port: 45281, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 广港隧道-日本, server: 36.139.154.162, port: 45280, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 晥日隧道-日本, server: 58.242.130.170, port: 45164, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 杭港BGP隧道-香港htk, server: 36.134.116.212, port: 45249, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 杭港BGP隧道-台湾, server: 36.134.116.212, port: 45253, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 杭港BGP隧道-香港bgp, server: 36.134.116.212, port: 45254, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 杭港BGP隧道-香港Azure, server: 36.134.116.212, port: 45255, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 广港BGP隧道-香港htk, server: 36.139.9.191, port: 45705, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 广港BGP隧道-台湾, server: 36.139.9.191, port: 45706, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 广港BGP隧道-香港bgp, server: 36.139.9.191, port: 45707, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 广港BGP隧道-香港Azure, server: 36.139.9.191, port: 45713, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: 新加坡 002, server: sg1.nodegz.top, port: 443, type: trojan, password: 0d15e40f-7093-392f-99fa-1bf845050bfe, sni: =sg1.nodegz.top, skip-cert-verify: false, udp: true}
-  - {name: 美国, server: us1.nodegz.top, port: 443, type: trojan, password: 0d15e40f-7093-392f-99fa-1bf845050bfe, sni: =us1.nodegz.top, skip-cert-verify: false, udp: true}
-  - {name: beikui 001, server: AZQT001.xiba1.xyz, port: 20731, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 2, server: HJ001.xiba1.xyz, port: 20762, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 3, server: AZQT001.xiba1.xyz, port: 20728, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 4, server: AZQT001.xiba1.xyz, port: 20741, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 5, server: AZQT001.xiba1.xyz, port: 20729, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 6, server: AZQT001.xiba1.xyz, port: 20740, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 7, server: AZQT001.xiba1.xyz, port: 20730, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 8, server: AZQT001.xiba1.xyz, port: 20739, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 9, server: AZQT001.xiba1.xyz, port: 20742, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 10, server: AZQT001.xiba1.xyz, port: 20733, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 11, server: AZQT001.xiba1.xyz, port: 20732, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 12, server: AZQT001.xiba1.xyz, port: 20734, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 13, server: AZQT001.xiba1.xyz, port: 20735, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 14, server: AZQT001.xiba1.xyz, port: 20736, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 15, server: AZQT001.xiba1.xyz, port: 20743, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 16, server: AZQT001.xiba1.xyz, port: 20744, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 17, server: AZQT001.xiba1.xyz, port: 20745, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 18, server: AZQT001.xiba1.xyz, port: 20746, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 19, server: AZQT001.xiba1.xyz, port: 20747, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 20, server: AZQT001.xiba1.xyz, port: 20748, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 21, server: azgy001.xiba1.xyz, port: 20716, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 22, server: azgy001.xiba1.xyz, port: 20714, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 23, server: AZHJ001.xiba1.xyz, port: 20715, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 25, server: azgy001.xiba1.xyz, port: 20713, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 26, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 27, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 28, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 29, server: AZHJ001.xiba1.xyz, port: 20719, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 30, server: AZHJ001.xiba1.xyz, port: 20718, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 31, server: AZHJ001.xiba1.xyz, port: 20720, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 32, server: AZHJ001.xiba1.xyz, port: 20721, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 33, server: AZHJ001.xiba1.xyz, port: 20722, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 34, server: AZHJ001.xiba1.xyz, port: 20723, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 35, server: AZHJ001.xiba1.xyz, port: 20724, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 38, server: AZHJ001.xiba1.xyz, port: 20727, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 39, server: azgy001.xiba1.xyz, port: 6004, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 40, server: azgy001.xiba1.xyz, port: 6003, type: trojan, password: 5b104b19-679c-30a4-8e5a-cf6f0be5328c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 002, server: azqt001.xiba1.xyz, port: 20740, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 003, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 004, server: azqt001.xiba1.xyz, port: 20732, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 005, server: azqt001.xiba1.xyz, port: 20739, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 006, server: azqt001.xiba1.xyz, port: 20736, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 007, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 008, server: azqt001.xiba1.xyz, port: 20728, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 009, server: azqt001.xiba1.xyz, port: 20729, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 010, server: azqt001.xiba1.xyz, port: 20731, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 011, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azhj001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 012, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azhj001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 013, server: azqt001.xiba1.xyz, port: 20735, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 014, server: azqt001.xiba1.xyz, port: 20746, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 015, server: azqt001.xiba1.xyz, port: 20744, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 016, server: azgy001.xiba1.xyz, port: 6004, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azgy001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 017, server: azhj001.xiba1.xyz, port: 20715, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azhj001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 018, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azhj001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 019, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azhj001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 020, server: azqt001.xiba1.xyz, port: 20733, type: trojan, password: 5abd9b83-295e-35e4-b0b3-deed61eea35f, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 021, server: azqt001.xiba1.xyz, port: 20739, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 022, server: azqt001.xiba1.xyz, port: 20733, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 023, server: azqt001.xiba1.xyz, port: 20735, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 024, server: azqt001.xiba1.xyz, port: 20729, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 025, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 026, server: azqt001.xiba1.xyz, port: 20731, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 027, server: azqt001.xiba1.xyz, port: 20740, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 028, server: azqt001.xiba1.xyz, port: 20742, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 029, server: azqt001.xiba1.xyz, port: 20732, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 030, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 031, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: =azhj001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 032, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: =azhj001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 033, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: =azhj001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 034, server: azqt001.xiba1.xyz, port: 20740, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 035, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: =azhj001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 036, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: =azhj001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 037, server: azqt001.xiba1.xyz, port: 20739, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 038, server: azqt001.xiba1.xyz, port: 20728, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 039, server: azqt001.xiba1.xyz, port: 20729, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 040, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 041, server: azqt001.xiba1.xyz, port: 20732, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 042, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 043, server: azqt001.xiba1.xyz, port: 20734, type: trojan, password: 64207627-dea7-38c0-b587-089bc1d32801, sni: =azqt001.xiba1.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 044, server: vs.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: =vs.2046.gq, skip-cert-verify: false, udp: true}
-  - {name: beikui 045, server: sgg.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: =sgg.2046.gq, skip-cert-verify: false, udp: true}
-  - {name: beikui 046, server: d3.2046.gq, port: 443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: =d3.2046.gq, skip-cert-verify: false, udp: true}
-  - {name: beikui 047, server: ru.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: =ru.2046.gq, skip-cert-verify: false, udp: true}
-  - {name: beikui 048, server: kk.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: =kk.2046.gq, skip-cert-verify: false, udp: true}
-  - {name: beikui 049, server: ss2.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: =ss2.2046.gq, skip-cert-verify: false, udp: true}
-  - {name: 江苏移动, server: 221.181.168.11, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: Az香港2, server: hk2.ningmengshui.xyz, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: Az香港3, server: hk3.ningmengshui.xyz, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: Az香港5, server: hk5.ningmengshui.xyz, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: Az香港10, server: hk10.ningmengshui.xyz, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: Opc日本3, server: 138.2.59.97, port: 80, type: vmess, uuid: 01981120-6a45-4e7a-9dc6-18f7f1cee658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: beikui 001, server: AZQT001.xiba1.xyz, port: 20731, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 002, server: AZQT001.xiba1.xyz, port: 20728, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 003, server: AZQT001.xiba1.xyz, port: 20741, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 004, server: AZQT001.xiba1.xyz, port: 20729, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 005, server: AZQT001.xiba1.xyz, port: 20740, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 006, server: AZQT001.xiba1.xyz, port: 20730, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 007, server: AZQT001.xiba1.xyz, port: 20739, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 008, server: AZQT001.xiba1.xyz, port: 20742, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 009, server: AZQT001.xiba1.xyz, port: 20733, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 010, server: AZQT001.xiba1.xyz, port: 20732, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 011, server: AZQT001.xiba1.xyz, port: 20734, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 012, server: AZQT001.xiba1.xyz, port: 20735, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 013, server: AZQT001.xiba1.xyz, port: 20736, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 014, server: AZQT001.xiba1.xyz, port: 20743, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 015, server: AZQT001.xiba1.xyz, port: 20744, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 016, server: AZQT001.xiba1.xyz, port: 20745, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 017, server: AZQT001.xiba1.xyz, port: 20746, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 018, server: AZQT001.xiba1.xyz, port: 20747, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 019, server: AZQT001.xiba1.xyz, port: 20748, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 020, server: azgy001.xiba1.xyz, port: 20713, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 021, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 022, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 023, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 024, server: azgy001.xiba1.xyz, port: 6003, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: 台湾-1号 | 解锁流媒体 001, server: 165.154.243.208, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 台湾-2号 | 解锁流媒体 001, server: 165.154.253.34, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 台湾-3号 | 解锁流媒体 001, server: 165.154.253.49, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 台湾-广州移动负载均衡 | 解锁流媒体, server: gzyd1.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 台湾-广州移动2负载均衡 | 解锁流媒体, server: gzyd2.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 台湾-河南移动负载均衡 | 解锁流媒体, server: hnyd.52147.top, port: 30170, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 日本NTT-1号 | 解锁流媒体, server: 203.138.98.199, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 日本NTT-2号 | 解锁流媒体, server: 164.70.68.67, port: 28000, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 日本NTT-广州移动负载均衡 | 解锁流媒体, server: gzyd1.52147.top, port: 30130, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 日本NTT-广州移动2负载均衡 | 解锁流媒体, server: gzyd2.52147.top, port: 30130, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 日本NTT-河南移动负载均衡 | 解锁流媒体, server: hnyd.52147.top, port: 30130, type: trojan, password: d84fd904-268c-4b42-93cc-39a710042377, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 日本NTT-1号, server: 203.138.98.199, port: 28443, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 日本NTT-2号, server: 164.70.68.67, port: 28443, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 日本NTT-广州移动 | (中转), server: gzyd1.52147.top, port: 20120, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 日本NTT-广州移动2 | (中转), server: gzyd2.52147.top, port: 20120, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 日本NTT-河南移动 | (中转), server: hnyd.52147.top, port: 20120, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 台湾-1号 | 解锁流媒体 002, server: 165.154.243.208, port: 28443, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 台湾-2号 | 解锁流媒体 002, server: 165.154.253.34, port: 28443, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 台湾-3号 | 解锁流媒体 002, server: 165.154.253.49, port: 28443, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 台湾-广州移动负载均衡(中转) | 解锁流媒体, server: gzyd1.52147.top, port: 20160, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
+  - {name: 台湾-广州移动2负载均衡(中转) | 解锁流媒体, server: gzyd2.52147.top, port: 20160, type: trojan, password: 6d2b7ae6-7b67-4116-b6ae-3069c54d2042, sni: =huayun.xyz, skip-cert-verify: false, udp: true}
   - {name: univstar-台湾_1, server: 36.139.115.52, port: 11203, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-台湾_2, server: 36.139.115.52, port: 11204, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-台湾_3, server: 36.139.115.52, port: 11205, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-台湾_4, server: 36.139.115.52, port: 11206, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-SG_1 001, server: 36.139.115.52, port: 11207, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: univstar-SG_2, server: 36.139.115.52, port: 11208, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: univstar-SG_2 001, server: 36.139.115.52, port: 11208, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-US_1 001, server: 36.139.115.52, port: 11401, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-US_2 001, server: 36.139.115.52, port: 11402, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-US_3, server: 36.139.115.52, port: 11403, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
@@ -183,24 +70,28 @@ proxies:
   - {name: univstar-台湾_7, server: 120.197.130.126, port: 13103, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-台湾_8, server: 120.197.130.126, port: 13104, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-SG_3, server: 120.197.130.126, port: 13006, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: univstar-SG_4, server: 120.197.130.126, port: 13007, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-JP_1 001, server: 120.197.130.126, port: 13008, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-JP_2 001, server: 120.197.130.126, port: 13009, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-US_4, server: 120.197.130.126, port: 13201, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-US_5, server: 120.197.130.126, port: 13202, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-US_6, server: 120.197.130.126, port: 13203, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: univstar-KR_1 001, server: 120.197.130.126, port: 13101, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: univstar-KR_2 001, server: 120.197.130.126, port: 13102, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-香港_4, server: 120.197.130.126, port: 13001, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-香港_5, server: 120.197.130.126, port: 13002, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-香港_6, server: 120.197.130.126, port: 13003, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-台湾, server: 139.227.78.64, port: 17006, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-SG_1 002, server: 139.227.78.64, port: 17009, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: univstar-SG_2 002, server: 139.227.78.64, port: 17010, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-JP_1 002, server: 139.227.78.64, port: 17007, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-JP_2 002, server: 139.227.78.64, port: 17008, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-US_1 002, server: 139.227.78.64, port: 17004, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-US_2 002, server: 139.227.78.64, port: 17005, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-GB_1, server: 139.227.78.64, port: 17104, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-GB_2, server: 139.227.78.64, port: 17105, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: univstar-KR_1 001, server: 139.227.78.64, port: 17101, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: univstar-KR_2, server: 139.227.78.64, port: 17102, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: univstar-KR_1 002, server: 139.227.78.64, port: 17101, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: univstar-KR_2 002, server: 139.227.78.64, port: 17102, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-香港_1 002, server: 139.227.78.64, port: 17001, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-香港_2 002, server: 139.227.78.64, port: 17002, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-香港_3 002, server: 139.227.78.64, port: 17003, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
@@ -216,7 +107,6 @@ proxies:
   - {name: univstar-SG-iepl, server: 120.233.7.221, port: 32005, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-JP-iepl, server: 120.233.7.221, port: 32004, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-US-iepl_1, server: 120.233.7.221, port: 32006, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: univstar-香港-iepl_1, server: 120.233.7.221, port: 32001, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-香港-iepl_2, server: 120.233.7.221, port: 32002, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-台湾-iepl_2, server: 120.233.7.221, port: 18004, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-台湾-iepl_3, server: 120.233.7.221, port: 18005, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
@@ -229,156 +119,62 @@ proxies:
   - {name: univstar-TR, server: 139.227.78.64, port: 17111, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-BR, server: 139.227.78.64, port: 17112, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: univstar-台北Hinet-dip_1, server: 111.241.109.247, port: 39998, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: univstar-台北Hinet-dip_2, server: 111.241.208.44, port: 39998, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
   - {name: univstar-花莲Hinet-dip, server: 36.227.223.133, port: 39999, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: univstar-香港HKT-dip, server: 203.218.84.13, port: 39999, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: univstar-香港HKT_2, server: 42.3.19.58, port: 39999, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: univstar-香港HKBN-dip, server: 183.178.223.60, port: 39999, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: univstar-KR_1 002, server: 120.197.130.126, port: 13101, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: univstar-高雄Hinet-dip, server: 114.47.109.153, port: 39999, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
   - {name: univstar-香港HKT_1, server: 116.49.76.103, port: 39999, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 北京游戏节点1号-限速5Mdps 002, server: 180.76.106.137, port: 80, type: vmess, uuid: 04ea7f40-6d96-4cb3-b557-f33fc8893e49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 180.76.106.137}}, udp: true}
-  - {name: 上海游戏节点1号-限速5Mdps 002, server: 43.142.93.89, port: 8080, type: vmess, uuid: 04ea7f40-6d96-4cb3-b557-f33fc8893e49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 43.142.93.89}}, udp: true}
-  - {name: 广州游戏节点1号-限速5Mdps 002, server: 8.134.219.59, port: 80, type: vmess, uuid: 04ea7f40-6d96-4cb3-b557-f33fc8893e49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 8.134.219.59}}, udp: true}
-  - {name: 广州游戏节点2号-限速5Mdps 002, server: 106.12.140.40, port: 80, type: vmess, uuid: 04ea7f40-6d96-4cb3-b557-f33fc8893e49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 106.12.140.40}}, udp: true}
-  - {name: 80-日本1号, server: 45.11.1.72, port: 80, type: vmess, uuid: 04ea7f40-6d96-4cb3-b557-f33fc8893e49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 45.11.1.72}}, udp: true}
-  - {name: 80-日本2号 002, server: 45.11.1.68, port: 80, type: vmess, uuid: 04ea7f40-6d96-4cb3-b557-f33fc8893e49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 45.11.1.68}}, udp: true}
-  - {name: 80-美国4号 002, server: 45.138.70.40, port: 80, type: vmess, uuid: 04ea7f40-6d96-4cb3-b557-f33fc8893e49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 45.138.70.40}}, udp: true}
-  - {name: beikui 050, server: AZQT001.xiba1.xyz, port: 20731, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 051, server: AZQT001.xiba1.xyz, port: 20728, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 052, server: AZQT001.xiba1.xyz, port: 20741, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 053, server: AZQT001.xiba1.xyz, port: 20729, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 054, server: AZQT001.xiba1.xyz, port: 20740, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 055, server: AZQT001.xiba1.xyz, port: 20730, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 056, server: AZQT001.xiba1.xyz, port: 20739, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 057, server: AZQT001.xiba1.xyz, port: 20742, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 058, server: AZQT001.xiba1.xyz, port: 20733, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 059, server: AZQT001.xiba1.xyz, port: 20732, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 060, server: AZQT001.xiba1.xyz, port: 20734, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 061, server: AZQT001.xiba1.xyz, port: 20735, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 062, server: AZQT001.xiba1.xyz, port: 20736, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 063, server: AZQT001.xiba1.xyz, port: 20744, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 064, server: AZQT001.xiba1.xyz, port: 20745, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 065, server: AZQT001.xiba1.xyz, port: 20746, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 066, server: AZQT001.xiba1.xyz, port: 20747, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 067, server: AZQT001.xiba1.xyz, port: 20748, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 068, server: azgy001.xiba1.xyz, port: 20713, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 069, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 070, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 071, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 072, server: azgy001.xiba1.xyz, port: 6004, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
-  - {name: beikui 073, server: azgy001.xiba1.xyz, port: 6003, type: trojan, password: 965425cb-5d9e-306a-94bf-9961dd0ecf17, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: univstar-香港HKBN-dip, server: 183.178.223.60, port: 39999, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: beikui 025, server: hk.2046.gq, port: 8888, type: ss, cipher: chacha20-ietf-poly1305, password: 794871c6-022b-4498-b816-296e8a581d86, udp: true}
+  - {name: beikui 026, server: vs.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: =vs.2046.gq, skip-cert-verify: false, udp: true}
+  - {name: beikui 027, server: sgg.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: =sgg.2046.gq, skip-cert-verify: false, udp: true}
+  - {name: beikui 028, server: d3.2046.gq, port: 443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: =d3.2046.gq, skip-cert-verify: false, udp: true}
+  - {name: beikui 029, server: kk.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: =kk.2046.gq, skip-cert-verify: false, udp: true}
+  - {name: beikui 030, server: ss2.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, sni: =ss2.2046.gq, skip-cert-verify: false, udp: true}
+  - {name: 广港隧道-香港htk, server: 36.139.154.162, port: 45271, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: 广港隧道-台湾, server: 36.139.154.162, port: 45273, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: 广港隧道-香港bgp, server: 36.139.154.162, port: 45275, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: 广港隧道-日本, server: 36.139.154.162, port: 45280, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: 杭港BGP隧道-香港htk, server: 36.134.116.212, port: 45249, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: 杭港BGP隧道-香港bgp, server: 36.134.116.212, port: 45254, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: 广港BGP隧道-香港htk, server: 36.139.9.191, port: 45705, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: 广港BGP隧道-香港bgp, server: 36.139.9.191, port: 45707, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: ^SG-01-TR-1X, server: sg-01.licom.ml, port: 8443, type: trojan, password: 59854d1d-545f-417a-963e-f3bd22373157, sni: =sg-01.licom.ml, skip-cert-verify: false, udp: true}
+  - {name: ^SG-03-TR-1X, server: sg-03.licom.ml, port: 8443, type: trojan, password: 59854d1d-545f-417a-963e-f3bd22373157, sni: =sg-03.licom.ml, skip-cert-verify: false, udp: true}
+  - {name: ^SG-04-TR-1X, server: sg-04.licom.ml, port: 8443, type: trojan, password: 59854d1d-545f-417a-963e-f3bd22373157, sni: =sg-04.licom.ml, skip-cert-verify: false, udp: true}
+  - {name: ^SG-02-TR-1X, server: sg-02.licom.ml, port: 8443, type: trojan, password: 59854d1d-545f-417a-963e-f3bd22373157, sni: =sg-02.licom.ml, skip-cert-verify: false, udp: true}
+  - {name: US-04-V2-5X-免流:8080, server: us-04.licom.ml, port: 8080, type: vmess, uuid: 59854d1d-545f-417a-963e-f3bd22373157, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us-04.licom.ml}}, udp: true}
+  - {name: US 04|2.5X|TR, server: us-04.licom.ml, port: 8443, type: trojan, password: 59854d1d-545f-417a-963e-f3bd22373157, sni: =us-04.licom.ml, skip-cert-verify: false, udp: true}
+  - {name: JP-02-SS-3X-上海联通, server: cn.shcu.986888.xyz, port: 29134, type: ss, cipher: aes-128-gcm, password: 59854d1d-545f-417a-963e-f3bd22373157, udp: true}
+  - {name: JP-03-SS-3X-上海联通, server: cn.shcu.986888.xyz, port: 27024, type: ss, cipher: aes-128-gcm, password: 59854d1d-545f-417a-963e-f3bd22373157, udp: true}
+  - {name: SG-01-SS-3X-上海联通, server: cn.shcu.986888.xyz, port: 19343, type: ss, cipher: aes-128-gcm, password: 59854d1d-545f-417a-963e-f3bd22373157, udp: true}
+  - {name: SG-03-SS-3X-深圳移动, server: cn.gysz1.986888.xyz, port: 52922, type: ss, cipher: chacha20-ietf-poly1305, password: 59854d1d-545f-417a-963e-f3bd22373157, udp: true}
+  - {name: SG-04-SS-3X-深圳移动, server: cn.gysz1.986888.xyz, port: 51222, type: ss, cipher: aes-128-gcm, password: 59854d1d-545f-417a-963e-f3bd22373157, udp: true}
+  - {name: SG-02-SS-3X-上海移动, server: cn.cmcmyd.986888.xyz, port: 28106, type: ss, cipher: chacha20-ietf-poly1305, password: 59854d1d-545f-417a-963e-f3bd22373157, udp: true}
+  - {name: 洛杉矶直连|解锁奈飞US, server: lsj1.yushen.shop, port: 10080, type: vmess, uuid: 405c48dc-2722-4095-bbf0-2591daad873d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lsj1.yushen.shop}}, udp: true}
+  - {name: 俄罗斯直连V2, server: 46.29.161.247, port: 10021, type: vmess, uuid: 405c48dc-2722-4095-bbf0-2591daad873d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 46.29.161.247}}, udp: true}
+  - {name: 东京直连V2, server: 18.182.22.120, port: 10021, type: vmess, uuid: 405c48dc-2722-4095-bbf0-2591daad873d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 18.182.22.120}}, udp: true}
+  - {name: 美国西部直连V2, server: 18.237.49.108, port: 10021, type: vmess, uuid: 405c48dc-2722-4095-bbf0-2591daad873d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 18.237.49.108}}, udp: true}
+  - {name: 新加坡直连-1, server: 129.150.44.76, port: 10021, type: vmess, uuid: 405c48dc-2722-4095-bbf0-2591daad873d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 129.150.44.76}}, udp: true}
+  - {name: 「🇰🇷」妖书「解锁⦻1」, server: tt3.tjvpn.top, port: 2053, type: trojan, password: c0cd552a-eafa-4427-b341-f419b4a68e6d, sni: =tt3.tjvpn.top, skip-cert-verify: false, udp: true}
+  - {name: 「🇬🇧」飞书「解锁⦻1」, server: tt0.tjvpn.top, port: 2083, type: trojan, password: c0cd552a-eafa-4427-b341-f419b4a68e6d, sni: =tt0.tjvpn.top, skip-cert-verify: false, udp: true}
+  - {name: 「🇭🇰」史书「直连⦻1」, server: tv2.tjvpn.top, port: 8443, type: vmess, uuid: c0cd552a-eafa-4427-b341-f419b4a68e6d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: kui 001, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
+  - {name: kui 002, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
+  - {name: kui 003, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
+  - {name: kui 004, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
+  - {name: kui 005, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
+  - {name: 俄罗斯, server: 46.232.120.106, port: 14326, type: trojan, password: cb5e2135-4d64-4454-be98-5bae4f2618d1, sni: =hkbgp1.jiantian.xyz, skip-cert-verify: false, udp: true}
+  - {name: 美国, server: 45.11.3.244, port: 23456, type: ss, cipher: aes-256-gcm, password: 06158686, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 有问题咨询TG@beikui_bot
-  - 日本 001
-  - 日本2
-  - 日本(中转)
-  - 日本2(中转)
-  - 日本(中转广移)
-  - 台湾-1号 | 解锁流媒体
-  - 台湾-2号 | 解锁流媒体
-  - 台湾-3号 | 解锁流媒体
-  - 台湾-广州移动负载均衡(中转) | 解锁流媒体
-  - 台湾-广州移动2负载均衡(中转) | 解锁流媒体
-  - 台湾-河南移动负载均衡(中转) | 解锁流媒体
-  - 北京游戏节点1号-限速5Mdps 001
-  - 上海游戏节点1号-限速5Mdps 001
-  - 广州游戏节点1号-限速5Mdps 001
-  - 广州游戏节点2号-限速5Mdps 001
-  - 80-日本2号 001
-  - 80-美国4号 001
-  - 香港 A 深度隧道优化
-  - 台湾 A 跨境隧道优化
-  - 日本 A 跨境隧道优化
-  - 新加坡 A 跨境隧道优化
-  - 香港 A 跨境隧道优化
-  - 菲律宾 A 跨境隧道优化
-  - 日本| 流媒体 001
-  - 韩国| 流媒体
-  - 香港| 流媒体
-  - 日本| 流媒体 002
-  - kui 001
-  - kui 002
-  - kui 003
-  - kui 004
-  - kui 005
-  - 俄罗斯
-  - 香港Az-优化2
-  - 香港Az-优化3
-  - 香港HKT-优化2
-  - 台湾-智能
-  - 台湾Hinet～广州移动 | 解锁流媒体
-  - 香港 001
-  - 香港 002
-  - 新加坡 001
-  - 香港 003
-  - 香港 004
-  - 香港 005
-  - 日本 002
-  - 日本 003
-  - 日本 004
-  - 香港3
-  - 香港1
+  - 有问题咨询TG  @beikui_bot
   - 春川 001
   - 春川 002
-  - 旧金山
   - Amazon_Tokyo
-  - 广港隧道-香港htk
-  - 广港隧道-台湾
-  - 广港隧道-香港bgp
-  - 广港隧道-香港Azure
-  - 广港隧道-美国
-  - 广港隧道-日本
-  - 晥日隧道-日本
-  - 杭港BGP隧道-香港htk
-  - 杭港BGP隧道-台湾
-  - 杭港BGP隧道-香港bgp
-  - 杭港BGP隧道-香港Azure
-  - 广港BGP隧道-香港htk
-  - 广港BGP隧道-台湾
-  - 广港BGP隧道-香港bgp
-  - 广港BGP隧道-香港Azure
-  - 新加坡 002
-  - 美国
   - beikui 001
-  - beikui 2
-  - beikui 3
-  - beikui 4
-  - beikui 5
-  - beikui 6
-  - beikui 7
-  - beikui 8
-  - beikui 9
-  - beikui 10
-  - beikui 11
-  - beikui 12
-  - beikui 13
-  - beikui 14
-  - beikui 15
-  - beikui 16
-  - beikui 17
-  - beikui 18
-  - beikui 19
-  - beikui 20
-  - beikui 21
-  - beikui 22
-  - beikui 23
-  - beikui 25
-  - beikui 26
-  - beikui 27
-  - beikui 28
-  - beikui 29
-  - beikui 30
-  - beikui 31
-  - beikui 32
-  - beikui 33
-  - beikui 34
-  - beikui 35
-  - beikui 38
-  - beikui 39
-  - beikui 40
   - beikui 002
   - beikui 003
   - beikui 004
@@ -402,43 +198,33 @@ proxy-groups:
   - beikui 022
   - beikui 023
   - beikui 024
-  - beikui 025
-  - beikui 026
-  - beikui 027
-  - beikui 028
-  - beikui 029
-  - beikui 030
-  - beikui 031
-  - beikui 032
-  - beikui 033
-  - beikui 034
-  - beikui 035
-  - beikui 036
-  - beikui 037
-  - beikui 038
-  - beikui 039
-  - beikui 040
-  - beikui 041
-  - beikui 042
-  - beikui 043
-  - beikui 044
-  - beikui 045
-  - beikui 046
-  - beikui 047
-  - beikui 048
-  - beikui 049
-  - 江苏移动
-  - Az香港2
-  - Az香港3
-  - Az香港5
-  - Az香港10
-  - Opc日本3
+  - 台湾-1号 | 解锁流媒体 001
+  - 台湾-2号 | 解锁流媒体 001
+  - 台湾-3号 | 解锁流媒体 001
+  - 台湾-广州移动负载均衡 | 解锁流媒体
+  - 台湾-广州移动2负载均衡 | 解锁流媒体
+  - 台湾-河南移动负载均衡 | 解锁流媒体
+  - 日本NTT-1号 | 解锁流媒体
+  - 日本NTT-2号 | 解锁流媒体
+  - 日本NTT-广州移动负载均衡 | 解锁流媒体
+  - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+  - 日本NTT-河南移动负载均衡 | 解锁流媒体
+  - 日本NTT-1号
+  - 日本NTT-2号
+  - 日本NTT-广州移动 | (中转)
+  - 日本NTT-广州移动2 | (中转)
+  - 日本NTT-河南移动 | (中转)
+  - 台湾-1号 | 解锁流媒体 002
+  - 台湾-2号 | 解锁流媒体 002
+  - 台湾-3号 | 解锁流媒体 002
+  - 台湾-广州移动负载均衡(中转) | 解锁流媒体
+  - 台湾-广州移动2负载均衡(中转) | 解锁流媒体
   - univstar-台湾_1
   - univstar-台湾_2
   - univstar-台湾_3
   - univstar-台湾_4
   - univstar-SG_1 001
-  - univstar-SG_2
+  - univstar-SG_2 001
   - univstar-US_1 001
   - univstar-US_2 001
   - univstar-US_3
@@ -450,24 +236,28 @@ proxy-groups:
   - univstar-台湾_7
   - univstar-台湾_8
   - univstar-SG_3
+  - univstar-SG_4
   - univstar-JP_1 001
   - univstar-JP_2 001
   - univstar-US_4
   - univstar-US_5
   - univstar-US_6
+  - univstar-KR_1 001
+  - univstar-KR_2 001
   - univstar-香港_4
   - univstar-香港_5
   - univstar-香港_6
   - univstar-台湾
   - univstar-SG_1 002
+  - univstar-SG_2 002
   - univstar-JP_1 002
   - univstar-JP_2 002
   - univstar-US_1 002
   - univstar-US_2 002
   - univstar-GB_1
   - univstar-GB_2
-  - univstar-KR_1 001
-  - univstar-KR_2
+  - univstar-KR_1 002
+  - univstar-KR_2 002
   - univstar-香港_1 002
   - univstar-香港_2 002
   - univstar-香港_3 002
@@ -483,7 +273,6 @@ proxy-groups:
   - univstar-SG-iepl
   - univstar-JP-iepl
   - univstar-US-iepl_1
-  - univstar-香港-iepl_1
   - univstar-香港-iepl_2
   - univstar-台湾-iepl_2
   - univstar-台湾-iepl_3
@@ -496,154 +285,60 @@ proxy-groups:
   - univstar-TR
   - univstar-BR
   - univstar-台北Hinet-dip_1
+  - univstar-台北Hinet-dip_2
   - univstar-花莲Hinet-dip
-  - univstar-香港HKT-dip
-  - univstar-香港HKT_2
-  - univstar-香港HKBN-dip
-  - univstar-KR_1 002
+  - univstar-高雄Hinet-dip
   - univstar-香港HKT_1
-  - 北京游戏节点1号-限速5Mdps 002
-  - 上海游戏节点1号-限速5Mdps 002
-  - 广州游戏节点1号-限速5Mdps 002
-  - 广州游戏节点2号-限速5Mdps 002
-  - 80-日本1号
-  - 80-日本2号 002
-  - 80-美国4号 002
-  - beikui 050
-  - beikui 051
-  - beikui 052
-  - beikui 053
-  - beikui 054
-  - beikui 055
-  - beikui 056
-  - beikui 057
-  - beikui 058
-  - beikui 059
-  - beikui 060
-  - beikui 061
-  - beikui 062
-  - beikui 063
-  - beikui 064
-  - beikui 065
-  - beikui 066
-  - beikui 067
-  - beikui 068
-  - beikui 069
-  - beikui 070
-  - beikui 071
-  - beikui 072
-  - beikui 073
+  - univstar-香港HKBN-dip
+  - beikui 025
+  - beikui 026
+  - beikui 027
+  - beikui 028
+  - beikui 029
+  - beikui 030
+  - 广港隧道-香港htk
+  - 广港隧道-台湾
+  - 广港隧道-香港bgp
+  - 广港隧道-日本
+  - 杭港BGP隧道-香港htk
+  - 杭港BGP隧道-香港bgp
+  - 广港BGP隧道-香港htk
+  - 广港BGP隧道-香港bgp
+  - ^SG-01-TR-1X
+  - ^SG-03-TR-1X
+  - ^SG-04-TR-1X
+  - ^SG-02-TR-1X
+  - US-04-V2-5X-免流:8080
+  - US 04|2.5X|TR
+  - JP-02-SS-3X-上海联通
+  - JP-03-SS-3X-上海联通
+  - SG-01-SS-3X-上海联通
+  - SG-03-SS-3X-深圳移动
+  - SG-04-SS-3X-深圳移动
+  - SG-02-SS-3X-上海移动
+  - 洛杉矶直连|解锁奈飞US
+  - 俄罗斯直连V2
+  - 东京直连V2
+  - 美国西部直连V2
+  - 新加坡直连-1
+  - 「🇰🇷」妖书「解锁⦻1」
+  - 「🇬🇧」飞书「解锁⦻1」
+  - 「🇭🇰」史书「直连⦻1」
+  - kui 001
+  - kui 002
+  - kui 003
+  - kui 004
+  - kui 005
+  - 俄罗斯
+  - 美国
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 有问题咨询TG@beikui_bot
-  - 日本 001
-  - 日本2
-  - 日本(中转)
-  - 日本2(中转)
-  - 日本(中转广移)
-  - 台湾-1号 | 解锁流媒体
-  - 台湾-2号 | 解锁流媒体
-  - 台湾-3号 | 解锁流媒体
-  - 台湾-广州移动负载均衡(中转) | 解锁流媒体
-  - 台湾-广州移动2负载均衡(中转) | 解锁流媒体
-  - 台湾-河南移动负载均衡(中转) | 解锁流媒体
-  - 北京游戏节点1号-限速5Mdps 001
-  - 上海游戏节点1号-限速5Mdps 001
-  - 广州游戏节点1号-限速5Mdps 001
-  - 广州游戏节点2号-限速5Mdps 001
-  - 80-日本2号 001
-  - 80-美国4号 001
-  - 香港 A 深度隧道优化
-  - 台湾 A 跨境隧道优化
-  - 日本 A 跨境隧道优化
-  - 新加坡 A 跨境隧道优化
-  - 香港 A 跨境隧道优化
-  - 菲律宾 A 跨境隧道优化
-  - 日本| 流媒体 001
-  - 韩国| 流媒体
-  - 香港| 流媒体
-  - 日本| 流媒体 002
-  - kui 001
-  - kui 002
-  - kui 003
-  - kui 004
-  - kui 005
-  - 俄罗斯
-  - 香港Az-优化2
-  - 香港Az-优化3
-  - 香港HKT-优化2
-  - 台湾-智能
-  - 台湾Hinet～广州移动 | 解锁流媒体
-  - 香港 001
-  - 香港 002
-  - 新加坡 001
-  - 香港 003
-  - 香港 004
-  - 香港 005
-  - 日本 002
-  - 日本 003
-  - 日本 004
-  - 香港3
-  - 香港1
+  - 有问题咨询TG  @beikui_bot
   - 春川 001
   - 春川 002
-  - 旧金山
   - Amazon_Tokyo
-  - 广港隧道-香港htk
-  - 广港隧道-台湾
-  - 广港隧道-香港bgp
-  - 广港隧道-香港Azure
-  - 广港隧道-美国
-  - 广港隧道-日本
-  - 晥日隧道-日本
-  - 杭港BGP隧道-香港htk
-  - 杭港BGP隧道-台湾
-  - 杭港BGP隧道-香港bgp
-  - 杭港BGP隧道-香港Azure
-  - 广港BGP隧道-香港htk
-  - 广港BGP隧道-台湾
-  - 广港BGP隧道-香港bgp
-  - 广港BGP隧道-香港Azure
-  - 新加坡 002
-  - 美国
   - beikui 001
-  - beikui 2
-  - beikui 3
-  - beikui 4
-  - beikui 5
-  - beikui 6
-  - beikui 7
-  - beikui 8
-  - beikui 9
-  - beikui 10
-  - beikui 11
-  - beikui 12
-  - beikui 13
-  - beikui 14
-  - beikui 15
-  - beikui 16
-  - beikui 17
-  - beikui 18
-  - beikui 19
-  - beikui 20
-  - beikui 21
-  - beikui 22
-  - beikui 23
-  - beikui 25
-  - beikui 26
-  - beikui 27
-  - beikui 28
-  - beikui 29
-  - beikui 30
-  - beikui 31
-  - beikui 32
-  - beikui 33
-  - beikui 34
-  - beikui 35
-  - beikui 38
-  - beikui 39
-  - beikui 40
   - beikui 002
   - beikui 003
   - beikui 004
@@ -667,43 +362,33 @@ proxy-groups:
   - beikui 022
   - beikui 023
   - beikui 024
-  - beikui 025
-  - beikui 026
-  - beikui 027
-  - beikui 028
-  - beikui 029
-  - beikui 030
-  - beikui 031
-  - beikui 032
-  - beikui 033
-  - beikui 034
-  - beikui 035
-  - beikui 036
-  - beikui 037
-  - beikui 038
-  - beikui 039
-  - beikui 040
-  - beikui 041
-  - beikui 042
-  - beikui 043
-  - beikui 044
-  - beikui 045
-  - beikui 046
-  - beikui 047
-  - beikui 048
-  - beikui 049
-  - 江苏移动
-  - Az香港2
-  - Az香港3
-  - Az香港5
-  - Az香港10
-  - Opc日本3
+  - 台湾-1号 | 解锁流媒体 001
+  - 台湾-2号 | 解锁流媒体 001
+  - 台湾-3号 | 解锁流媒体 001
+  - 台湾-广州移动负载均衡 | 解锁流媒体
+  - 台湾-广州移动2负载均衡 | 解锁流媒体
+  - 台湾-河南移动负载均衡 | 解锁流媒体
+  - 日本NTT-1号 | 解锁流媒体
+  - 日本NTT-2号 | 解锁流媒体
+  - 日本NTT-广州移动负载均衡 | 解锁流媒体
+  - 日本NTT-广州移动2负载均衡 | 解锁流媒体
+  - 日本NTT-河南移动负载均衡 | 解锁流媒体
+  - 日本NTT-1号
+  - 日本NTT-2号
+  - 日本NTT-广州移动 | (中转)
+  - 日本NTT-广州移动2 | (中转)
+  - 日本NTT-河南移动 | (中转)
+  - 台湾-1号 | 解锁流媒体 002
+  - 台湾-2号 | 解锁流媒体 002
+  - 台湾-3号 | 解锁流媒体 002
+  - 台湾-广州移动负载均衡(中转) | 解锁流媒体
+  - 台湾-广州移动2负载均衡(中转) | 解锁流媒体
   - univstar-台湾_1
   - univstar-台湾_2
   - univstar-台湾_3
   - univstar-台湾_4
   - univstar-SG_1 001
-  - univstar-SG_2
+  - univstar-SG_2 001
   - univstar-US_1 001
   - univstar-US_2 001
   - univstar-US_3
@@ -715,24 +400,28 @@ proxy-groups:
   - univstar-台湾_7
   - univstar-台湾_8
   - univstar-SG_3
+  - univstar-SG_4
   - univstar-JP_1 001
   - univstar-JP_2 001
   - univstar-US_4
   - univstar-US_5
   - univstar-US_6
+  - univstar-KR_1 001
+  - univstar-KR_2 001
   - univstar-香港_4
   - univstar-香港_5
   - univstar-香港_6
   - univstar-台湾
   - univstar-SG_1 002
+  - univstar-SG_2 002
   - univstar-JP_1 002
   - univstar-JP_2 002
   - univstar-US_1 002
   - univstar-US_2 002
   - univstar-GB_1
   - univstar-GB_2
-  - univstar-KR_1 001
-  - univstar-KR_2
+  - univstar-KR_1 002
+  - univstar-KR_2 002
   - univstar-香港_1 002
   - univstar-香港_2 002
   - univstar-香港_3 002
@@ -748,7 +437,6 @@ proxy-groups:
   - univstar-SG-iepl
   - univstar-JP-iepl
   - univstar-US-iepl_1
-  - univstar-香港-iepl_1
   - univstar-香港-iepl_2
   - univstar-台湾-iepl_2
   - univstar-台湾-iepl_3
@@ -761,43 +449,52 @@ proxy-groups:
   - univstar-TR
   - univstar-BR
   - univstar-台北Hinet-dip_1
+  - univstar-台北Hinet-dip_2
   - univstar-花莲Hinet-dip
-  - univstar-香港HKT-dip
-  - univstar-香港HKT_2
-  - univstar-香港HKBN-dip
-  - univstar-KR_1 002
+  - univstar-高雄Hinet-dip
   - univstar-香港HKT_1
-  - 北京游戏节点1号-限速5Mdps 002
-  - 上海游戏节点1号-限速5Mdps 002
-  - 广州游戏节点1号-限速5Mdps 002
-  - 广州游戏节点2号-限速5Mdps 002
-  - 80-日本1号
-  - 80-日本2号 002
-  - 80-美国4号 002
-  - beikui 050
-  - beikui 051
-  - beikui 052
-  - beikui 053
-  - beikui 054
-  - beikui 055
-  - beikui 056
-  - beikui 057
-  - beikui 058
-  - beikui 059
-  - beikui 060
-  - beikui 061
-  - beikui 062
-  - beikui 063
-  - beikui 064
-  - beikui 065
-  - beikui 066
-  - beikui 067
-  - beikui 068
-  - beikui 069
-  - beikui 070
-  - beikui 071
-  - beikui 072
-  - beikui 073
+  - univstar-香港HKBN-dip
+  - beikui 025
+  - beikui 026
+  - beikui 027
+  - beikui 028
+  - beikui 029
+  - beikui 030
+  - 广港隧道-香港htk
+  - 广港隧道-台湾
+  - 广港隧道-香港bgp
+  - 广港隧道-日本
+  - 杭港BGP隧道-香港htk
+  - 杭港BGP隧道-香港bgp
+  - 广港BGP隧道-香港htk
+  - 广港BGP隧道-香港bgp
+  - ^SG-01-TR-1X
+  - ^SG-03-TR-1X
+  - ^SG-04-TR-1X
+  - ^SG-02-TR-1X
+  - US-04-V2-5X-免流:8080
+  - US 04|2.5X|TR
+  - JP-02-SS-3X-上海联通
+  - JP-03-SS-3X-上海联通
+  - SG-01-SS-3X-上海联通
+  - SG-03-SS-3X-深圳移动
+  - SG-04-SS-3X-深圳移动
+  - SG-02-SS-3X-上海移动
+  - 洛杉矶直连|解锁奈飞US
+  - 俄罗斯直连V2
+  - 东京直连V2
+  - 美国西部直连V2
+  - 新加坡直连-1
+  - 「🇰🇷」妖书「解锁⦻1」
+  - 「🇬🇧」飞书「解锁⦻1」
+  - 「🇭🇰」史书「直连⦻1」
+  - kui 001
+  - kui 002
+  - kui 003
+  - kui 004
+  - kui 005
+  - 俄罗斯
+  - 美国
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
