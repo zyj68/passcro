@@ -65,6 +65,7 @@ class sub_convert():
                 sub_content = sub_convert.transfer(''.join(a_content))
             else:
                 s = requests.Session()
+                s.headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36"}
                 s.mount('http://', HTTPAdapter(max_retries=5))
                 s.mount('https://', HTTPAdapter(max_retries=5))
                 try:
@@ -92,26 +93,26 @@ class sub_convert():
         else:
             return '订阅内容解析错误'
     def transfer(sub_content): # 将 URLnode 内容转换为 YAML 格式
-        if '</b>' not in sub_content:
-            if 'proxies:' in sub_content: # 判断字符串是否在文本中，是，判断为YAML。https://cloud.tencent.com/developer/article/1699719
-                url_content = sub_convert.format(sub_content)
+
+        if 'proxies:' in sub_content: # 判断字符串是否在文本中，是，判断为YAML。https://cloud.tencent.com/developer/article/1699719
+            url_content = sub_convert.format(sub_content)
+            return url_content
+            #return self.url_content.replace('\r','') # 去除‘回车\r符’ https://blog.csdn.net/jerrygaoling/article/details/81051447
+        elif '://'  in sub_content: # 同上，是，判断为 Urlnode 链接内容。
+            url_content = sub_convert.yaml_encode(sub_convert.format(sub_content))
+            return url_content
+        else: # 判断 Base64.
+            try:
+                url_content = sub_convert.base64_decode(sub_content)
+                url_content = sub_convert.yaml_encode(sub_convert.format(url_content))
                 return url_content
-                #return self.url_content.replace('\r','') # 去除‘回车\r符’ https://blog.csdn.net/jerrygaoling/article/details/81051447
-            elif '://'  in sub_content: # 同上，是，判断为 Urlnode 链接内容。
-                url_content = sub_convert.yaml_encode(sub_convert.format(sub_content))
-                return url_content
-            else: # 判断 Base64.
-                try:
-                    url_content = sub_convert.base64_decode(sub_content)
-                    url_content = sub_convert.yaml_encode(sub_convert.format(url_content))
-                    return url_content
-                except Exception: # 万能异常 https://blog.csdn.net/Candance_star/article/details/94135515
-                    print('订阅内容解析错误')
-                    return '订阅内容解析错误'
-        else:
-            print('订阅内容解析错误')
-            return '订阅内容解析错误'
-    def format(sub_content, output=False): # 对节点 Url 进行格式化处理, 输出节点的字典格式, output 为真时输出 YAML 文本
+            except Exception: # 万能异常 https://blog.csdn.net/Candance_star/article/details/94135515
+                print('订阅内容解析错误')
+                return '订阅内容解析错误'
+
+
+
+    def format(sub_content, output=False): # 对节点 Url 进行格式化处理, 输出节点的//分行,或者字典格式与YAML文本格式互换
 
         if 'proxies:' not in sub_content: # 对 URL 内容进行格式化处理
             url_list = []
@@ -150,23 +151,31 @@ class sub_convert():
 
                     lines = re.split(r'\n+', sub_content)
                     line_fix_list = []
-
                     for line in lines:
                         value_list = re.split(r': |, ', line)
                         if len(value_list) > 6:
                             # '- {name: 🇨🇳 v1丨印度丨北京- HK隧道-印度丨顺手更新下订阅, server: zhuanfabj1.yooo.me, port: 44174, type: trojan, password: 1973d939-d6fc-3ead-9a46-fcd771c71dd0, skip-cert-verify: true}'
+                            line = re.sub(r'(name: *[^:]*?)(?<=,| )[?@!%]([^:]*?, *\b\w*?:)',r'\1\2',bb)
                             line = re.sub(r'name: *([^:]*?[\[\]?,][^:]*?)(, *\b\w*?:)',r'name: "\1"\2',line)
                             # '  - {name: GLaDOS-Portalgun-08, server: c68b799.v9.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /t, ws-headers: {Host: %7B%22Edge%22:%22c68b799.fm.huawei.com:50307%22,%22Host%22:%22tls.apple.com%22%7D}, udp: true}'
                             line = re.sub(r'{Host: *([^}]*?[%].*?)}', r'{Host: "\1"}', line)
-                            line_fix_list.append(line)
+                            try:
+                                yaml.safe_load(line)
+                                line_fix_list.append(line)
+                            except Exception:
+                                print(f'yaml格式有非法字符 :  {line}')
                         else:
-                            line_fix_list.append(line)
+                            try:
+                                yaml.safe_load(line)
+                                line_fix_list.append(line)
+                            except Exception:
+                                print(f'yaml格式有非法字符 :  {line}')
 
                     sub_content = '\n'.join(line_fix_list).replace('False', 'false').replace('True', 'true')
 
                     if output == False:
                         sub_content_yaml = yaml.safe_load(sub_content)
-                    else: # output 值为 True 时返回修饰过的 YAML 文本
+                    elif: output == True# output 值为 True 时返回修饰过的 YAML 文本
                         sub_content_yaml = sub_content
                 except:
                     print('Sub_content 格式错误')
@@ -229,6 +238,7 @@ class sub_convert():
         yaml_content = yaml_content_raw.replace('\'', '').replace('False', 'false').replace('True', 'true').replace('- {name','  - {name')
 
         yaml_content = sub_convert.format(yaml_content,True)
+
         return yaml_content # 输出 YAML 格式文本
 
     def yaml_encode(url_content): # 将 URL 内容转换为 YAML (输出默认 YAML 格式)
@@ -433,6 +443,8 @@ class sub_convert():
                         for config in server_part_list:
                             if 'sni=' in config:
                                 yaml_url.setdefault('sni', config[4:])
+                            elif 'peer' in config:
+                                yaml_url.setdefault('peer', config[4:])
                             elif 'allowInsecure=' in config or 'tls=' in config:
                                 if config[-1] == 0:
                                     yaml_url.setdefault('tls', False)
@@ -445,7 +457,8 @@ class sub_convert():
                                 if config[9:] != 'tls':
                                     yaml_url.setdefault('tls', False)
 
-                        yaml_url.setdefault('skip-cert-verify', True)
+                        yaml_url.setdefault('skip-cert-verify', False)
+                        yaml_url.setdefault('udp', True)
 
                         url_list.append(yaml_url)
                 except Exception as err:
@@ -846,6 +859,7 @@ clashmodel = {'port': 7890, 'socks-port': 7891, 'mode': 'rule', 'log-level': 'si
 
 
 if __name__ == '__main__':
+
     subs = ['https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2',
             'https://gitlab.com/xlzlucky/bpjd/-/raw/main/freejd',
             'https://raw.githubusercontent.com/Lewis-1217/FreeNodes/main/bpjzx2',
@@ -863,7 +877,6 @@ if __name__ == '__main__':
         file.write(content)
         file.close()
         print(f'Writing content to temp.working.yaml\n')
-
 
 
 
