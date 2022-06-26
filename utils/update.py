@@ -13,31 +13,6 @@ hdrs = {'User-Agent':'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) App
 
 
 
-def easy():
-
-    try:
-        ctnt = requests.get('https://api.buliang0.cf/easyclash',headers = hdrs)
-        yamltent = safe_decode(ctnt.text)
-        dirs = './subs'
-        if not os.path.exists(dirs):
-            os.makedirs(dirs)
-        if ctnt.status_code == 200:
-            with open(dirs + '/' + 'easy.yaml', 'w', encoding='utf-8') as f:
-                f.write(yamltent)
-    except Exception as err:
-        if  err:
-            try:
-                ctnt = requests.get('https://api.buliang0.cf/easyclash',headers = hdrs)
-                yamltent = safe_decode(ctnt.text)
-                dirs = './subs'
-                if not os.path.exists(dirs):
-                    os.makedirs(dirs)
-                if ctnt.status_code == 200:
-                    with open(dirs + '/' + 'easy.yaml', 'w', encoding='utf-8') as f:
-                        f.write(yamltent)
-            except Exception as err:
-                pass
-
 
 def pjzy():
 
@@ -72,6 +47,5 @@ def miao():
 if __name__ == '__main__':
 
     pjzy()
-    easy()
     miao()
 
