@@ -5,397 +5,139 @@ log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
   - {name: 有问题咨询TG@beikui_bot, server: chunchuan-02.aikala.shop, port: 443, type: vmess, uuid: bea6470b-a7b8-465f-b95d-7f0c681dba1a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: down.dingtalk.com}}, udp: true}
-  - {name: 韩国 001, server: chunchuan-02.aikala.shop, port: 80, type: vmess, uuid: bea6470b-a7b8-465f-b95d-7f0c681dba1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: down.dingtalk.com}}, udp: true}
-  - {name: 韩国 002, server: chunchuan-01.aikala.shop, port: 80, type: vmess, uuid: bea6470b-a7b8-465f-b95d-7f0c681dba1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: down.dingtalk.com}}, udp: true}
-  - {name: beikui 001, server: 52.140.223.251, port: 55782, type: vmess, uuid: e38a3615-e1b0-46d4-a965-5642ff066430, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: kui 001, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
   - {name: kui 002, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
   - {name: kui 003, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
-  - {name: beikui 002, server: 29.wgong1.top, port: 52229, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 003, server: 30.wgong1.top, port: 52230, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 004, server: 31.wgong1.top, port: 52231, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 005, server: 32.wgong1.top, port: 52232, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 006, server: 33.wgong1.top, port: 52233, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 007, server: 34.wgong1.top, port: 52234, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 008, server: 111.wgong1.top, port: 52211, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 009, server: 112.wgong1.top, port: 52212, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 010, server: 113.wgong1.top, port: 52213, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 011, server: 114.wgong1.top, port: 52214, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 012, server: 115.wgong1.top, port: 52215, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 013, server: 116.wgong1.top, port: 52216, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 014, server: 117.wgong1.top, port: 52217, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 015, server: 118.wgong1.top, port: 52218, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 016, server: 119.wgong1.top, port: 52219, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 017, server: 120.wgong1.top, port: 52220, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 018, server: 122.wgong1.top, port: 52222, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 019, server: 123.wgong1.top, port: 52223, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 020, server: 124.wgong1.top, port: 52224, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 021, server: 133.wgong1.top, port: 52333, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 022, server: 134.wgong1.top, port: 52334, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 023, server: 135.wgong1.top, port: 52335, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 024, server: 75.wgong2.xyz, port: 52275, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 025, server: 76.wgong2.xyz, port: 52276, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 026, server: 77.wgong2.xyz, port: 52277, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 027, server: 78.wgong2.xyz, port: 52278, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 028, server: 79.wgong2.xyz, port: 52279, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 029, server: 80.wgong2.xyz, port: 52280, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 030, server: 81.wgong2.xyz, port: 52281, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 031, server: 82.wgong2.xyz, port: 52282, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 032, server: 83.wgong2.xyz, port: 52283, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 033, server: 84.wgong2.xyz, port: 52284, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 034, server: 85.wgong2.xyz, port: 52285, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 035, server: 86.wgong2.xyz, port: 52286, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 036, server: 98.wgong2.xyz, port: 52298, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 037, server: 99.wgong2.xyz, port: 52299, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 038, server: 100.wgong2.xyz, port: 11220, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 039, server: 101.wgong2.xyz, port: 52201, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 040, server: 102.wgong2.xyz, port: 11221, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 041, server: 103.wgong2.xyz, port: 52203, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 042, server: 104.wgong2.xyz, port: 11222, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 043, server: 105.wgong2.xyz, port: 52205, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 044, server: 106.wgong2.xyz, port: 11223, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 045, server: 107.wgong2.xyz, port: 52207, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 046, server: 108.wgong2.xyz, port: 11224, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 047, server: 109.wgong2.xyz, port: 52209, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 048, server: 110.wgong2.xyz, port: 52210, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 049, server: v6.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: beikui 050, server: v25.heduian.online, port: 51024, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: beikui 051, server: bgpv2.ktyjsq.com, port: 12221, type: vmess, uuid: 71421b16-e5ae-36df-8f0c-c9cc90d14fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 052, server: bgpv2.ktyjsq.com, port: 12222, type: vmess, uuid: 71421b16-e5ae-36df-8f0c-c9cc90d14fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 053, server: bgpv2.ktyjsq.com, port: 12223, type: vmess, uuid: 71421b16-e5ae-36df-8f0c-c9cc90d14fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 054, server: bgpv2.ktyjsq.com, port: 12007, type: vmess, uuid: 71421b16-e5ae-36df-8f0c-c9cc90d14fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 055, server: bgpv2.ktyjsq.com, port: 12005, type: vmess, uuid: 71421b16-e5ae-36df-8f0c-c9cc90d14fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 056, server: bgpv2.ktyjsq.com, port: 12228, type: vmess, uuid: 71421b16-e5ae-36df-8f0c-c9cc90d14fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 057, server: bgpv2.ktyjsq.com, port: 12205, type: vmess, uuid: 71421b16-e5ae-36df-8f0c-c9cc90d14fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 058, server: bgpv2.ktyjsq.com, port: 12229, type: vmess, uuid: 71421b16-e5ae-36df-8f0c-c9cc90d14fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 059, server: lc-hk01-direct01.lc-hk01.lc-node.com, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lc-hk01-direct01.lc-hk01.lc-node.com}}, udp: true}
-  - {name: beikui 060, server: lc-hk04-direct01.lc-hk04.lc-node.com, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lc-hk04-direct01.lc-hk04.lc-node.com}}, udp: true}
-  - {name: beikui 061, server: vu-kr01-direct01.vu-kr01.lc-node.com, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vu-kr01-direct01.vu-kr01.lc-node.com}}, udp: true}
-  - {name: beikui 062, server: lc-kr02-direct01.lc-kr02.lc-node.com, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lc-kr02-direct01.lc-kr02.lc-node.com}}, udp: true}
-  - {name: beikui 063, server: in-jp-1.iivvppnn.info, port: 38301, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: 俄罗斯直连V2, server: 46.29.161.247, port: 10021, type: vmess, uuid: 405c48dc-2722-4095-bbf0-2591daad873d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 46.29.161.247}}, udp: true}
-  - {name: 新加坡直连-2, server: 138.2.93.123, port: 10021, type: vmess, uuid: 405c48dc-2722-4095-bbf0-2591daad873d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 138.2.93.123}}, udp: true}
-  - {name: 日本, type: ssr, server: xy114x236x205x89xy.mcdn.bilivideo.life, port: 32340, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
-  - {name: 韩国 003, type: ssr, server: xy114x236x205x89xy.mcdn.bilivideo.life, port: 32341, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
-  - {name: 香港 001, type: ssr, server: xy114x236x205x89xy.mcdn.bilivideo.life, port: 33340, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
-  - {name: 香港 002, type: ssr, server: xy114x236x205x89xy.mcdn.bilivideo.life, port: 33341, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
-  - {name: beikui 064, server: 29.wgong1.top, port: 52229, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 065, server: 30.wgong1.top, port: 52230, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 066, server: 31.wgong1.top, port: 52231, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 067, server: 32.wgong1.top, port: 52232, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 068, server: 33.wgong1.top, port: 52233, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 069, server: 34.wgong1.top, port: 52234, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 070, server: 111.wgong1.top, port: 52211, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 071, server: 112.wgong1.top, port: 52212, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 072, server: 113.wgong1.top, port: 52213, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 073, server: 114.wgong1.top, port: 52214, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 074, server: 115.wgong1.top, port: 52215, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 075, server: 116.wgong1.top, port: 52216, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 076, server: 117.wgong1.top, port: 52217, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 077, server: 118.wgong1.top, port: 52218, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 078, server: 119.wgong1.top, port: 52219, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 079, server: 120.wgong1.top, port: 52220, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 080, server: 121.wgong1.top, port: 52221, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 081, server: 122.wgong1.top, port: 52222, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 082, server: 123.wgong1.top, port: 52223, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 083, server: 124.wgong1.top, port: 52224, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 084, server: 133.wgong1.top, port: 52333, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 085, server: 134.wgong1.top, port: 52334, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 086, server: 135.wgong1.top, port: 52335, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 087, server: 75.wgong2.xyz, port: 52275, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 088, server: 76.wgong2.xyz, port: 52276, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 089, server: 77.wgong2.xyz, port: 52277, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 090, server: 78.wgong2.xyz, port: 52278, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 091, server: 79.wgong2.xyz, port: 52279, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 092, server: 80.wgong2.xyz, port: 52280, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 093, server: 81.wgong2.xyz, port: 52281, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 094, server: 82.wgong2.xyz, port: 52282, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 095, server: 83.wgong2.xyz, port: 52283, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 096, server: 84.wgong2.xyz, port: 52284, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 097, server: 85.wgong2.xyz, port: 52285, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 098, server: 98.wgong2.xyz, port: 52298, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 099, server: 99.wgong2.xyz, port: 52299, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 100, server: 86.wgong2.xyz, port: 52286, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 101, server: 100.wgong2.xyz, port: 11220, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 102, server: 103.wgong2.xyz, port: 52203, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 103, server: 101.wgong2.xyz, port: 52201, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 104, server: 102.wgong2.xyz, port: 11221, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 105, server: 104.wgong2.xyz, port: 11222, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 106, server: 105.wgong2.xyz, port: 52205, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 107, server: 106.wgong2.xyz, port: 11223, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 108, server: 108.wgong2.xyz, port: 11224, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 109, server: 109.wgong2.xyz, port: 52209, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: beikui 110, server: 110.wgong2.xyz, port: 52210, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 美国120G流量, server: 36.139.154.17, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: afd78a4e-b0ff-4e30-acd5-3a88ff6cac25, udp: true}
-  - {name: 台湾120G流量 001, server: 36.139.154.17, port: 45394, type: vmess, uuid: 865f317d-156b-4b4c-947b-78e18d3cebce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 36.139.154.17}}, udp: true}
-  - {name: 台湾120G流量 002, server: 36.139.154.17, port: 45394, type: vmess, uuid: c030fd57-c96b-452d-84d4-fad02b86e467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 36.139.154.17}}, udp: true}
-  - {name: 台湾120g流量, server: 36.139.154.17, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 46c4efd6-50bc-45e0-becd-5d96f759ae76, udp: true}
-  - {name: 台湾120G流量 003, server: 36.139.154.17, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: c0a4c4d8-50ff-40fe-9120-18501874364e, udp: true}
-  - {name: 英国120G流量, server: 36.139.154.17, port: 45413, type: vmess, uuid: 20f731db-9c56-451f-b926-4e33186dfcbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 36.139.154.17}}, udp: true}
+  - {name: kui 004, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
+  - {name: beikui 11 001, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: f6f51e72-46a6-385b-9947-db5e448ea9b8, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 13, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: f6f51e72-46a6-385b-9947-db5e448ea9b8, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 15 001, server: AZHJ001.xiba1.xyz, port: 20718, type: trojan, password: f6f51e72-46a6-385b-9947-db5e448ea9b8, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 18 001, server: AZHJ001.xiba1.xyz, port: 20722, type: trojan, password: f6f51e72-46a6-385b-9947-db5e448ea9b8, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 12, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: f6f51e72-46a6-385b-9947-db5e448ea9b8, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 14, server: AZHJ001.xiba1.xyz, port: 20719, type: trojan, password: f6f51e72-46a6-385b-9947-db5e448ea9b8, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 16 001, server: AZHJ001.xiba1.xyz, port: 20720, type: trojan, password: f6f51e72-46a6-385b-9947-db5e448ea9b8, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 17 001, server: AZHJ001.xiba1.xyz, port: 20721, type: trojan, password: f6f51e72-46a6-385b-9947-db5e448ea9b8, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 20 001, server: AZHJ001.xiba1.xyz, port: 20724, type: trojan, password: f6f51e72-46a6-385b-9947-db5e448ea9b8, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 21, server: AZHJ001.xiba1.xyz, port: 20725, type: trojan, password: f6f51e72-46a6-385b-9947-db5e448ea9b8, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 15 002, server: AZHJ001.xiba1.xyz, port: 20718, type: trojan, password: 551dc041-3fa0-3cdc-81cd-25720c382630, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 17 002, server: AZHJ001.xiba1.xyz, port: 20721, type: trojan, password: 551dc041-3fa0-3cdc-81cd-25720c382630, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 19, server: AZHJ001.xiba1.xyz, port: 20723, type: trojan, password: 551dc041-3fa0-3cdc-81cd-25720c382630, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 25 001, server: azgy001.xiba1.xyz, port: 6003, type: trojan, password: 551dc041-3fa0-3cdc-81cd-25720c382630, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 6, server: azgy001.xiba1.xyz, port: 20716, type: trojan, password: 97808a17-2e97-3840-8a36-b7bc5203200c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 15 003, server: AZHJ001.xiba1.xyz, port: 20718, type: trojan, password: 97808a17-2e97-3840-8a36-b7bc5203200c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 20 002, server: AZHJ001.xiba1.xyz, port: 20724, type: trojan, password: 97808a17-2e97-3840-8a36-b7bc5203200c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 22, server: AZHJ001.xiba1.xyz, port: 20726, type: trojan, password: 97808a17-2e97-3840-8a36-b7bc5203200c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 25 002, server: azgy001.xiba1.xyz, port: 6003, type: trojan, password: 97808a17-2e97-3840-8a36-b7bc5203200c, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 4, server: HJ001.xiba1.xyz, port: 20769, type: trojan, password: 367d94ea-f0b8-328e-8257-8a099b45d272, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 5, server: HJ001.xiba1.xyz, port: 20770, type: trojan, password: 367d94ea-f0b8-328e-8257-8a099b45d272, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 11 002, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 367d94ea-f0b8-328e-8257-8a099b45d272, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 16 002, server: AZHJ001.xiba1.xyz, port: 20720, type: trojan, password: 367d94ea-f0b8-328e-8257-8a099b45d272, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 18 002, server: AZHJ001.xiba1.xyz, port: 20722, type: trojan, password: 367d94ea-f0b8-328e-8257-8a099b45d272, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 20 003, server: AZHJ001.xiba1.xyz, port: 20724, type: trojan, password: 367d94ea-f0b8-328e-8257-8a099b45d272, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 24, server: azgy001.xiba1.xyz, port: 6004, type: trojan, password: 367d94ea-f0b8-328e-8257-8a099b45d272, sni: =ssl.ssl12.xyz, skip-cert-verify: false, udp: true}
+  - {name: 新加坡 001, server: 36.134.116.212, port: 45149, type: vmess, uuid: 60ee343c-6574-43ba-9f89-26ba2a154999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 36.134.116.212}}, udp: true}
+  - {name: 台湾 001, server: 36.139.154.17, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 438eb205-b45d-48bf-aec1-c1587b581ea0, udp: true}
+  - {name: 新加坡 002, server: 36.139.154.162, port: 45149, type: vmess, uuid: 25066212-3c68-4f60-9845-80632aa27a20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 36.139.154.162}}, udp: true}
+  - {name: 台湾 002, server: 36.134.116.212, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 16a6617b-2c13-4473-9f8f-9606c9d9a0d4, udp: true}
+  - {name: 台湾 003, server: 36.139.154.17, port: 45394, type: vmess, uuid: 1cb6f041-a1b4-4d6b-b72c-bcb879e1017d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 36.139.154.17}}, udp: true}
+  - {name: 英国, server: 36.139.154.17, port: 45324, type: ss, cipher: chacha20-ietf-poly1305, password: 37991120-21c6-41e2-a557-8115b9983386, udp: true}
+  - {name: 日本, server: 36.139.154.17, port: 45184, type: vmess, uuid: 11d24df8-4651-4db7-97d7-b0bb70b73ba5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 36.139.154.17}}, udp: true}
+  - {name: 日本05 | 测试 | 流媒体, type: ssr, server: xy114x236x205x89xy.mcdn.bilivideo.life, port: 32340, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
+  - {name: 日本06 | 测试 | 流媒体, type: ssr, server: xy114x236x205x89xy.mcdn.bilivideo.life, port: 32342, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
+  - {name: 韩国03 | 测试 | 流媒体, type: ssr, server: xy114x236x205x89xy.mcdn.bilivideo.life, port: 32341, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
+  - {name: 香港04 | 测试 | 流媒体, type: ssr, server: xy114x236x205x89xy.mcdn.bilivideo.life, port: 33340, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
   - 有问题咨询TG@beikui_bot
-  - 韩国 001
-  - 韩国 002
-  - beikui 001
   - kui 001
   - kui 002
   - kui 003
-  - beikui 002
-  - beikui 003
-  - beikui 004
-  - beikui 005
-  - beikui 006
-  - beikui 007
-  - beikui 008
-  - beikui 009
-  - beikui 010
-  - beikui 011
-  - beikui 012
-  - beikui 013
-  - beikui 014
-  - beikui 015
-  - beikui 016
-  - beikui 017
-  - beikui 018
-  - beikui 019
-  - beikui 020
-  - beikui 021
-  - beikui 022
-  - beikui 023
-  - beikui 024
-  - beikui 025
-  - beikui 026
-  - beikui 027
-  - beikui 028
-  - beikui 029
-  - beikui 030
-  - beikui 031
-  - beikui 032
-  - beikui 033
-  - beikui 034
-  - beikui 035
-  - beikui 036
-  - beikui 037
-  - beikui 038
-  - beikui 039
-  - beikui 040
-  - beikui 041
-  - beikui 042
-  - beikui 043
-  - beikui 044
-  - beikui 045
-  - beikui 046
-  - beikui 047
-  - beikui 048
-  - beikui 049
-  - beikui 050
-  - beikui 051
-  - beikui 052
-  - beikui 053
-  - beikui 054
-  - beikui 055
-  - beikui 056
-  - beikui 057
-  - beikui 058
-  - beikui 059
-  - beikui 060
-  - beikui 061
-  - beikui 062
-  - beikui 063
-  - 俄罗斯直连V2
-  - 新加坡直连-2
+  - kui 004
+  - beikui 11 001
+  - beikui 13
+  - beikui 15 001
+  - beikui 18 001
+  - beikui 12
+  - beikui 14
+  - beikui 16 001
+  - beikui 17 001
+  - beikui 20 001
+  - beikui 21
+  - beikui 15 002
+  - beikui 17 002
+  - beikui 19
+  - beikui 25 001
+  - beikui 6
+  - beikui 15 003
+  - beikui 20 002
+  - beikui 22
+  - beikui 25 002
+  - beikui 4
+  - beikui 5
+  - beikui 11 002
+  - beikui 16 002
+  - beikui 18 002
+  - beikui 20 003
+  - beikui 24
+  - 新加坡 001
+  - 台湾 001
+  - 新加坡 002
+  - 台湾 002
+  - 台湾 003
+  - 英国
   - 日本
-  - 韩国 003
-  - 香港 001
-  - 香港 002
-  - beikui 064
-  - beikui 065
-  - beikui 066
-  - beikui 067
-  - beikui 068
-  - beikui 069
-  - beikui 070
-  - beikui 071
-  - beikui 072
-  - beikui 073
-  - beikui 074
-  - beikui 075
-  - beikui 076
-  - beikui 077
-  - beikui 078
-  - beikui 079
-  - beikui 080
-  - beikui 081
-  - beikui 082
-  - beikui 083
-  - beikui 084
-  - beikui 085
-  - beikui 086
-  - beikui 087
-  - beikui 088
-  - beikui 089
-  - beikui 090
-  - beikui 091
-  - beikui 092
-  - beikui 093
-  - beikui 094
-  - beikui 095
-  - beikui 096
-  - beikui 097
-  - beikui 098
-  - beikui 099
-  - beikui 100
-  - beikui 101
-  - beikui 102
-  - beikui 103
-  - beikui 104
-  - beikui 105
-  - beikui 106
-  - beikui 107
-  - beikui 108
-  - beikui 109
-  - beikui 110
-  - 美国120G流量
-  - 台湾120G流量 001
-  - 台湾120G流量 002
-  - 台湾120g流量
-  - 台湾120G流量 003
-  - 英国120G流量
+  - 日本05 | 测试 | 流媒体
+  - 日本06 | 测试 | 流媒体
+  - 韩国03 | 测试 | 流媒体
+  - 香港04 | 测试 | 流媒体
 - name: ♻️ automatic
   type: url-test
   proxies:
   - 有问题咨询TG@beikui_bot
-  - 韩国 001
-  - 韩国 002
-  - beikui 001
   - kui 001
   - kui 002
   - kui 003
-  - beikui 002
-  - beikui 003
-  - beikui 004
-  - beikui 005
-  - beikui 006
-  - beikui 007
-  - beikui 008
-  - beikui 009
-  - beikui 010
-  - beikui 011
-  - beikui 012
-  - beikui 013
-  - beikui 014
-  - beikui 015
-  - beikui 016
-  - beikui 017
-  - beikui 018
-  - beikui 019
-  - beikui 020
-  - beikui 021
-  - beikui 022
-  - beikui 023
-  - beikui 024
-  - beikui 025
-  - beikui 026
-  - beikui 027
-  - beikui 028
-  - beikui 029
-  - beikui 030
-  - beikui 031
-  - beikui 032
-  - beikui 033
-  - beikui 034
-  - beikui 035
-  - beikui 036
-  - beikui 037
-  - beikui 038
-  - beikui 039
-  - beikui 040
-  - beikui 041
-  - beikui 042
-  - beikui 043
-  - beikui 044
-  - beikui 045
-  - beikui 046
-  - beikui 047
-  - beikui 048
-  - beikui 049
-  - beikui 050
-  - beikui 051
-  - beikui 052
-  - beikui 053
-  - beikui 054
-  - beikui 055
-  - beikui 056
-  - beikui 057
-  - beikui 058
-  - beikui 059
-  - beikui 060
-  - beikui 061
-  - beikui 062
-  - beikui 063
-  - 俄罗斯直连V2
-  - 新加坡直连-2
+  - kui 004
+  - beikui 11 001
+  - beikui 13
+  - beikui 15 001
+  - beikui 18 001
+  - beikui 12
+  - beikui 14
+  - beikui 16 001
+  - beikui 17 001
+  - beikui 20 001
+  - beikui 21
+  - beikui 15 002
+  - beikui 17 002
+  - beikui 19
+  - beikui 25 001
+  - beikui 6
+  - beikui 15 003
+  - beikui 20 002
+  - beikui 22
+  - beikui 25 002
+  - beikui 4
+  - beikui 5
+  - beikui 11 002
+  - beikui 16 002
+  - beikui 18 002
+  - beikui 20 003
+  - beikui 24
+  - 新加坡 001
+  - 台湾 001
+  - 新加坡 002
+  - 台湾 002
+  - 台湾 003
+  - 英国
   - 日本
-  - 韩国 003
-  - 香港 001
-  - 香港 002
-  - beikui 064
-  - beikui 065
-  - beikui 066
-  - beikui 067
-  - beikui 068
-  - beikui 069
-  - beikui 070
-  - beikui 071
-  - beikui 072
-  - beikui 073
-  - beikui 074
-  - beikui 075
-  - beikui 076
-  - beikui 077
-  - beikui 078
-  - beikui 079
-  - beikui 080
-  - beikui 081
-  - beikui 082
-  - beikui 083
-  - beikui 084
-  - beikui 085
-  - beikui 086
-  - beikui 087
-  - beikui 088
-  - beikui 089
-  - beikui 090
-  - beikui 091
-  - beikui 092
-  - beikui 093
-  - beikui 094
-  - beikui 095
-  - beikui 096
-  - beikui 097
-  - beikui 098
-  - beikui 099
-  - beikui 100
-  - beikui 101
-  - beikui 102
-  - beikui 103
-  - beikui 104
-  - beikui 105
-  - beikui 106
-  - beikui 107
-  - beikui 108
-  - beikui 109
-  - beikui 110
-  - 美国120G流量
-  - 台湾120G流量 001
-  - 台湾120G流量 002
-  - 台湾120g流量
-  - 台湾120G流量 003
-  - 英国120G流量
+  - 日本05 | 测试 | 流媒体
+  - 日本06 | 测试 | 流媒体
+  - 韩国03 | 测试 | 流媒体
+  - 香港04 | 测试 | 流媒体
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
