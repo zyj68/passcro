@@ -4,489 +4,360 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 有问题咨询TG @beikui_bot, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
-  - {name: 美国, server: 119.36.161.40, port: 443, type: vmess, uuid: 5e38275e-f168-11ec-a6d0-42010a800003, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /HbedXBnw/, headers: {Host: us.batcloud.bond}}, udp: true}
-  - {name: 韩国, server: 36.139.154.162, port: 45303, type: trojan, password: 45a02ace-0d89-45a8-92a1-ecaf81d870b9, sni: =hg01.chunyua.online, skip-cert-verify: false, udp: true}
-  - {name: 香港, server: pp1.zhengzhongfeizhu.xyz, port: 33005, type: vmess, uuid: eb2f8154-ff58-3b99-b393-28c8eecdbe64, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: kui 001, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
-  - {name: kui 002, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
-  - {name: kui 003, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: false, udp: true}
-  - {name: 台湾 301 001, type: ssr, server: tw301.sagittarius-link.com, port: 62301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 台湾 302 001, type: ssr, server: tw302.sagittarius-link.com, port: 62302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 台湾 501 - Media 001, type: ssr, server: tw501.sagittarius-link.com, port: 62501, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 台湾 502 - Media, type: ssr, server: tw502.sagittarius-link.com, port: 62502, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 新加坡 301 001, type: ssr, server: sg301.sagittarius-link.com, port: 64301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 新加坡 302 001, type: ssr, server: sg302.sagittarius-link.com, port: 64302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 新加坡 501 001, type: ssr, server: sg501.sagittarius-link.com, port: 64501, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 新加坡 502 001, type: ssr, server: sg502.sagittarius-link.com, port: 64502, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 日本 301 001, type: ssr, server: 81301.bftp.sagittarius-link.com, port: 60301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 日本 302 001, type: ssr, server: 81302.rt0n.sagittarius-link.com, port: 60302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 日本 303 001, type: ssr, server: 81303.rt5y.sagittarius-link.com, port: 60303, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 日本 304 001, type: ssr, server: 81304.xwd1.sagittarius-link.com, port: 60304, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 日本 501 001, type: ssr, server: jp501.sagittarius-link.com, port: 60501, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 日本 502 001, type: ssr, server: jp502.sagittarius-link.com, port: 60502, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 日本 503 001, type: ssr, server: jp503.sagittarius-link.com, port: 60503, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 日本 504 001, type: ssr, server: jp504.sagittarius-link.com, port: 60504, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 英国 501 001, type: ssr, server: as59895-lhr01.edge.2elh8f.com, port: 1934, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 香港 301 001, type: ssr, server: hk301.sagittarius-link.com, port: 61301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 香港 302 001, type: ssr, server: hk302.sagittarius-link.com, port: 61302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 香港 303 001, type: ssr, server: hk303.sagittarius-link.com, port: 61303, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 香港 304 001, type: ssr, server: hk304.sagittarius-link.com, port: 61304, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 香港 501 001, type: ssr, server: hk501.sagittarius-link.com, port: 61501, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 香港 502 001, type: ssr, server: hk502.sagittarius-link.com, port: 61502, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 香港 503 001, type: ssr, server: hk503.sagittarius-link.com, port: 61503, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: 香港 504 001, type: ssr, server: hk504.sagittarius-link.com, port: 61504, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
-  - {name: "[LV3·原生] 香港01 | IEPL 专线 | 1倍率  001", server: pp1.zhengzhongfeizhu.xyz, port: 33009, type: vmess, uuid: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[LV2·原生] 美国04 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-usa4-243, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
-  - {name: "[LV2·原生] 香港01 | IEPL 专线 | 3倍率 001", server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: vmess, uuid: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[LV2·原生] 香港02 | IEPL 专线 | 3倍率 001", server: pp1.zhengzhongfeizhu.xyz, port: 33003, type: vmess, uuid: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[LV2·原生] 香港03 | IEPL 专线 | 3倍率 001", server: pp1.zhengzhongfeizhu.xyz, port: 33004, type: vmess, uuid: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[LV2·原生] 香港04 | IEPL 专线 | 3倍率 001", server: pp1.zhengzhongfeizhu.xyz, port: 33005, type: vmess, uuid: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[LV2·原生] 香港B1 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-hgc1, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
-  - {name: "[LV2·原生] 香港B2 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-hgc2, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
-  - {name: "[LV2·原生] 香港B3 | 中转 001", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-hgc3, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
-  - {name: "[LV1·解锁] 狮城02 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp2, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
-  - {name: "[LV1·解锁] 狮城03 | 中转 001", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp3, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
-  - {name: "[LV1·解锁] 狮城04 | 中转 001", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp4, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
-  - {name: 台湾 301 002, type: ssr, server: tw301.sagittarius-link.com, port: 62301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 台湾 302 002, type: ssr, server: tw302.sagittarius-link.com, port: 62302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 台湾 501 - Media 002, type: ssr, server: tw501.sagittarius-link.com, port: 62501, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 新加坡 301 002, type: ssr, server: sg301.sagittarius-link.com, port: 64301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 新加坡 302 002, type: ssr, server: sg302.sagittarius-link.com, port: 64302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 新加坡 501 002, type: ssr, server: sg501.sagittarius-link.com, port: 64501, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 新加坡 502 002, type: ssr, server: sg502.sagittarius-link.com, port: 64502, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 日本 301 002, type: ssr, server: 81301.bftp.sagittarius-link.com, port: 60301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 日本 302 002, type: ssr, server: 81302.rt0n.sagittarius-link.com, port: 60302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 日本 303 002, type: ssr, server: 81303.rt5y.sagittarius-link.com, port: 60303, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 日本 304 002, type: ssr, server: 81304.xwd1.sagittarius-link.com, port: 60304, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 日本 501 002, type: ssr, server: jp501.sagittarius-link.com, port: 60501, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 日本 502 002, type: ssr, server: jp502.sagittarius-link.com, port: 60502, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 日本 503 002, type: ssr, server: jp503.sagittarius-link.com, port: 60503, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 日本 504 002, type: ssr, server: jp504.sagittarius-link.com, port: 60504, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 英国 501 002, type: ssr, server: as59895-lhr01.edge.2elh8f.com, port: 1934, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 香港 301 002, type: ssr, server: hk301.sagittarius-link.com, port: 61301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 香港 302 002, type: ssr, server: hk302.sagittarius-link.com, port: 61302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 香港 303 002, type: ssr, server: hk303.sagittarius-link.com, port: 61303, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 香港 304 002, type: ssr, server: hk304.sagittarius-link.com, port: 61304, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 香港 501 002, type: ssr, server: hk501.sagittarius-link.com, port: 61501, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 香港 502 002, type: ssr, server: hk502.sagittarius-link.com, port: 61502, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 香港 503 002, type: ssr, server: hk503.sagittarius-link.com, port: 61503, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 香港 504 002, type: ssr, server: hk504.sagittarius-link.com, port: 61504, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 220214a8ec.download.windowsupdate.com, protocol-param: 22021:uvhMXE, udp: true}
-  - {name: 俄罗斯 ❀大妮妮❀1倍 001, server: dx.yhy520.xyz, port: 58828, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 俄罗斯 ❀小妮妮❀1倍 001, server: lt.yhy520.xyz, port: 58813, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 印尼 ❀原生❀大妮妮❀1倍 001, server: dx.yhy520.xyz, port: 58824, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 印尼 ❀原生❀小妮妮❀1倍 001, server: lt.yhy520.xyz, port: 58829, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 印度 ❀大妮妮❀1倍 001, server: dx.yhy520.xyz, port: 58811, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 印度 ❀小妮妮❀1倍 001, server: lt.yhy520.xyz, port: 58812, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 台湾 ❀原生❀大妮妮❀1倍 001, server: dx.yhy520.xyz, port: 58821, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 台湾 ❀原生❀小妮妮❀1倍 001, server: lt.yhy520.xyz, port: 58827, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 新加坡 ❀小妮妮❀1倍 001, server: lt.yhy520.xyz, port: 58808, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 日本 ❀大妮妮❀1倍 001, server: dx.yhy520.xyz, port: 58805, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 日本 ❀小妮妮❀1倍 001, server: lt.yhy520.xyz, port: 58806, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 泰国 ❀原生❀大妮妮❀1倍\t 001, server: dx.yhy520.xyz, port: 58825, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 泰国 ❀原生❀小妮妮❀1倍 001, server: lt.yhy520.xyz, port: 58830, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 美国 ❀原生❀大妮妮❀1倍 001, server: dx.yhy520.xyz, port: 58816, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 美国 ❀原生❀小妮妮❀1倍 001, server: lt.yhy520.xyz, port: 58832, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 美国 ❀大妮妮❀1倍 001, server: dx.yhy520.xyz, port: 58817, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 美国 ❀小妮妮❀1倍, server: lt.yhy520.xyz, port: 58818, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 越南 ❀原生❀大妮妮❀1倍 001, server: dx.yhy520.xyz, port: 58814, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 越南 ❀原生❀小妮妮❀1倍 001, server: lt.yhy520.xyz, port: 58831, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 韩国 ❀大妮妮❀1倍 001, server: dx.yhy520.xyz, port: 58809, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 韩国 ❀小妮妮❀1倍 001, server: lt.yhy520.xyz, port: 58810, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 ❀原生❀大妮妮❀1倍, server: dx.yhy520.xyz, port: 58801, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 ❀原生❀小妮妮❀1倍 001, server: lt.yhy520.xyz, port: 58820, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 ❀大妮妮1号❀1倍 001, server: dx.yhy520.xyz, port: 58803, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 ❀大妮妮2号❀1倍, server: lt.yhy520.xyz, port: 58819, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 ❀小妮妮1号❀1倍 001, server: dx.yhy520.xyz, port: 58804, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 ❀小妮妮2号❀1倍 001, server: lt.yhy520.xyz, port: 58802, type: trojan, password: 38f72cd9-0cbc-3b1e-ab65-e8e3642855ae, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: "[LV1·解锁] 狮城04 | 中转 002", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp4, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
-  - {name: "[LV2·原生] 香港03 | IEPL 专线 | 3倍率 002", server: pp1.zhengzhongfeizhu.xyz, port: 33004, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[LV2·原生] 香港04 | IEPL 专线 | 3倍率 002", server: pp1.zhengzhongfeizhu.xyz, port: 33005, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[LV2·原生] 香港B4 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-hgc4, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
-  - {name: "[LV3·原生] 香港01 | IEPL 专线 | 1倍率  002", server: pp1.zhengzhongfeizhu.xyz, port: 33009, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 台湾 301 003, type: ssr, server: tw301.sagittarius-link.com, port: 62301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
-  - {name: 台湾 302 003, type: ssr, server: tw302.sagittarius-link.com, port: 62302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
-  - {name: 新加坡 301 003, type: ssr, server: sg301.sagittarius-link.com, port: 64301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
-  - {name: 新加坡 302 003, type: ssr, server: sg302.sagittarius-link.com, port: 64302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
-  - {name: 日本 301 003, type: ssr, server: 81301.bftp.sagittarius-link.com, port: 60301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
-  - {name: 日本 302 003, type: ssr, server: 81302.rt0n.sagittarius-link.com, port: 60302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
-  - {name: 日本 303 003, type: ssr, server: 81303.rt5y.sagittarius-link.com, port: 60303, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
-  - {name: 日本 304 003, type: ssr, server: 81304.xwd1.sagittarius-link.com, port: 60304, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
-  - {name: 香港 301 003, type: ssr, server: hk301.sagittarius-link.com, port: 61301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
-  - {name: 香港 302 003, type: ssr, server: hk302.sagittarius-link.com, port: 61302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
-  - {name: 香港 303 003, type: ssr, server: hk303.sagittarius-link.com, port: 61303, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
-  - {name: 香港 304 003, type: ssr, server: hk304.sagittarius-link.com, port: 61304, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
-  - {name: 俄罗斯 ❀大妮妮❀1倍 002, server: dx.yhy520.xyz, port: 58828, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 俄罗斯 ❀小妮妮❀1倍 002, server: lt.yhy520.xyz, port: 58813, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 印尼 ❀原生❀大妮妮❀1倍 002, server: dx.yhy520.xyz, port: 58824, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 印尼 ❀原生❀小妮妮❀1倍 002, server: lt.yhy520.xyz, port: 58829, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 印度 ❀大妮妮❀1倍 002, server: dx.yhy520.xyz, port: 58811, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 印度 ❀小妮妮❀1倍 002, server: lt.yhy520.xyz, port: 58812, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 台湾 ❀原生❀大妮妮❀1倍 002, server: dx.yhy520.xyz, port: 58821, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 台湾 ❀原生❀小妮妮❀1倍 002, server: lt.yhy520.xyz, port: 58827, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 新加坡 ❀小妮妮❀1倍 002, server: lt.yhy520.xyz, port: 58808, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 日本 ❀大妮妮❀1倍 002, server: dx.yhy520.xyz, port: 58805, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 日本 ❀小妮妮❀1倍 002, server: lt.yhy520.xyz, port: 58806, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 泰国 ❀原生❀大妮妮❀1倍\t 002, server: dx.yhy520.xyz, port: 58825, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 泰国 ❀原生❀小妮妮❀1倍 002, server: lt.yhy520.xyz, port: 58830, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 美国 ❀原生❀大妮妮❀1倍 002, server: dx.yhy520.xyz, port: 58816, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 美国 ❀原生❀小妮妮❀1倍 002, server: lt.yhy520.xyz, port: 58832, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 美国 ❀大妮妮❀1倍 002, server: dx.yhy520.xyz, port: 58817, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 越南 ❀原生❀大妮妮❀1倍 002, server: dx.yhy520.xyz, port: 58814, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 越南 ❀原生❀小妮妮❀1倍 002, server: lt.yhy520.xyz, port: 58831, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 韩国 ❀大妮妮❀1倍 002, server: dx.yhy520.xyz, port: 58809, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 韩国 ❀小妮妮❀1倍 002, server: lt.yhy520.xyz, port: 58810, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 ❀原生❀小妮妮❀1倍 002, server: lt.yhy520.xyz, port: 58820, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 ❀大妮妮1号❀1倍 002, server: dx.yhy520.xyz, port: 58803, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 ❀小妮妮1号❀1倍 002, server: dx.yhy520.xyz, port: 58804, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: 香港 ❀小妮妮2号❀1倍 002, server: lt.yhy520.xyz, port: 58802, type: trojan, password: 1e51e81c-18ac-34ad-9209-85e83d795847, sni: =soolos.xyz, skip-cert-verify: false, udp: true}
-  - {name: "[LV1·解锁] 狮城03 | 中转 002", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp3, headers: {Host: "%7B%22Host%22:%22pp1.zhengzhongfeizhu.xyz%22%7D"}}, udp: true}
-  - {name: "[LV2·原生] 香港01 | IEPL 专线 | 3倍率 002", server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[LV2·原生] 香港02 | IEPL 专线 | 3倍率 002", server: pp1.zhengzhongfeizhu.xyz, port: 33003, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[LV2·原生] 香港03 | IEPL 专线 | 3倍率 003", server: pp1.zhengzhongfeizhu.xyz, port: 33004, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[LV2·原生] 香港B3 | 中转 002", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-hgc3, headers: {Host: "%7B%22Host%22:%22pp1.zhengzhongfeizhu.xyz%22%7D"}}, udp: true}
-  - {name: "[LV3·原生] 香港01 | IEPL 专线 | 1倍率  003", server: pp1.zhengzhongfeizhu.xyz, port: 33009, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 有问题咨询TG @beikui_bot, server: 138.2.59.97, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: beikui 5 001, server: az.az-bgp.chuangshi999.xyz, port: 22818, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: =xg1.xianggang1.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 6, server: cs.bgp.liuliangzhuanfa.xyz, port: 32510, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: =xg1.xianggang1.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 8 001, server: az.az-bgp.chuangshi999.xyz, port: 39675, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: =aa1.liumeit.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 9 001, server: az.az-bgp.chuangshi999.xyz, port: 64340, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: =rb1.riben1.xyz, skip-cert-verify: false, udp: true}
+  - {name: beikui 10 001, server: az.az-bgp.chuangshi999.xyz, port: 33346, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: =yd1.fengzi.uk, skip-cert-verify: false, udp: true}
+  - {name: beikui 11 001, server: cs.bgp.liuliangzhuanfa.xyz, port: 33514, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: =yd1.fengzi.uk, skip-cert-verify: false, udp: true}
+  - {name: beikui 12 001, server: hlu.bgp2.liuliangzhuanfa.xyz, port: 47718, type: trojan, password: 3536a621-0a73-426c-a9f5-880d21bfd7ac, sni: =yd1.fengzi.uk, skip-cert-verify: false, udp: true}
+  - {name: beikui, server: t.mjmjmjmj.cyou, port: 16627, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22t.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 2, server: u.mjmjmjmj.cyou, port: 16634, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 3, server: g.mjmjmjmj.cyou, port: 16618, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22g.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 4, server: t.mjmjmjmj.cyou, port: 16620, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22t.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 5 002, server: t.mjmjmjmj.cyou, port: 16618, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22t.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 7, server: u.mjmjmjmj.cyou, port: 16616, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 8 002, server: m.mjmjmjmj.cyou, port: 16617, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22m.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 9 002, server: m.mjmjmjmj.cyou, port: 26623, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22m.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 10 002, server: u.mjmjmjmj.cyou, port: 16631, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 11 002, server: u.mjmjmjmj.cyou, port: 16626, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 12 002, server: m.mjmjmjmj.cyou, port: 16641, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22m.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 13, server: u.mjmjmjmj.cyou, port: 16620, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 14, server: u.mjmjmjmj.cyou, port: 16648, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 15, server: u.mjmjmjmj.cyou, port: 16641, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 16, server: t.mjmjmjmj.cyou, port: 16630, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22t.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 17, server: u.mjmjmjmj.cyou, port: 16643, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 18, server: u.mjmjmjmj.cyou, port: 16644, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 19, server: u.mjmjmjmj.cyou, port: 23309, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 20, server: t.mjmjmjmj.cyou, port: 16628, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22t.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 21, server: m.mjmjmjmj.cyou, port: 16643, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22m.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 22, server: m.mjmjmjmj.cyou, port: 23309, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22m.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 23, server: m.mjmjmjmj.cyou, port: 16646, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22m.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 24, server: m.mjmjmjmj.cyou, port: 16644, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22m.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 25, server: m.mjmjmjmj.cyou, port: 16630, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22m.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 26, server: u.mjmjmjmj.cyou, port: 16637, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 27, server: u.mjmjmjmj.cyou, port: 16628, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 28, server: u.mjmjmjmj.cyou, port: 16640, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 29, server: u.mjmjmjmj.cyou, port: 16629, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 30, server: u.mjmjmjmj.cyou, port: 26623, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 31, server: t.mjmjmjmj.cyou, port: 16644, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22t.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 32, server: u.mjmjmjmj.cyou, port: 16636, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 33, server: u.mjmjmjmj.cyou, port: 16646, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22u.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: beikui 34, server: m.mjmjmjmj.cyou, port: 16618, type: vmess, uuid: b586f912-c4b4-4c4d-b4c7-973a67bbf89d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22m.mjmjmjmj.cyou%22%7D"}}, udp: true}
+  - {name: 美国 001, server: v19.emovpn.xyz, port: 127, type: vmess, uuid: c8f0221c-d1da-4d61-aa0f-7b9889856e33, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: 新加坡 001, server: n25.emovpn.xyz, port: 1246, type: ss, cipher: chacha20-ietf-poly1305, password: 177fb4f9-f416-45e9-bd1f-4c28307be367, udp: true}
+  - {name: 美国 002, server: v19.emovpn.xyz, port: 127, type: vmess, uuid: f813fe78-8159-4aa3-b363-cb82183776f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: 新加坡 002, server: n24.emovpn.xyz, port: 1274, type: ss, cipher: chacha20-ietf-poly1305, password: 971cef92-ed6a-43c3-9005-8e27c0ea0e73, udp: true}
+  - {name: 新加坡 003, server: n24.emovpn.xyz, port: 1274, type: ss, cipher: chacha20-ietf-poly1305, password: 42575fa4-d6db-497e-ac5c-8d3d992663c0, udp: true}
+  - {name: 新加坡 004, server: n24.emovpn.xyz, port: 1274, type: ss, cipher: chacha20-ietf-poly1305, password: a6a6d724-c1ad-4c18-aa07-b784b34491a9, udp: true}
+  - {name: 美国 003, server: v20.emovpn.xyz, port: 1256, type: vmess, uuid: ed8a43ac-b02b-4026-a101-f4df7c35e480, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: 美国 004, server: v19.emovpn.xyz, port: 127, type: vmess, uuid: bfe9cd16-1c95-4cf8-9ec2-c18fb08f9f68, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: 新加坡 005, server: n25.emovpn.xyz, port: 1246, type: ss, cipher: chacha20-ietf-poly1305, password: 520faa7a-e763-457d-ab9a-de4b6607df77, udp: true}
+  - {name: 美国 005, server: v20.emovpn.xyz, port: 1256, type: vmess, uuid: 4a3ad34e-a12c-4e72-8fcb-47accba9e218, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: 新加坡 006, server: n25.emovpn.xyz, port: 1246, type: ss, cipher: chacha20-ietf-poly1305, password: 1aa8948e-1ec1-455f-9e0e-16deebe5502e, udp: true}
+  - {name: 新加坡 007, server: n24.emovpn.xyz, port: 1274, type: ss, cipher: chacha20-ietf-poly1305, password: 30fd975c-5bbb-4502-96f1-b01cec401de1, udp: true}
+  - {name: lv1 台湾Hinet1 直连, server: ntw01.vsvideo.live, port: 25634, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: lv1 台湾Hinet2 直连, server: ntw02.vsvideo.live, port: 25634, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: false, udp: true}
+  - {name: lv1 台湾TFN1 直连, server: 211.23.149.95, port: 25634, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: "[LV1·解锁] 狮城03 | 中转 001", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp3, headers: {Host: "%7B%22Host%22:%22pp1.zhengzhongfeizhu.xyz%22%7D"}}, udp: true}
+  - {name: "[LV1·解锁] 狮城04 | 中转 001", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp4, headers: {Host: "%7B%22Host%22:%22pp1.zhengzhongfeizhu.xyz%22%7D"}}, udp: true}
+  - {name: "[LV1·解锁] 狮城05 | 中转 001", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp5, headers: {Host: "%7B%22Host%22:%22pp1.zhengzhongfeizhu.xyz%22%7D"}}, udp: true}
+  - {name: "[LV2·原生] 美国03 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-usa3-242, headers: {Host: "%7B%22Host%22:%22pp1.zhengzhongfeizhu.xyz%22%7D"}}, udp: true}
+  - {name: "[LV2·原生] 美国04 | 中转 001", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-usa4-243, headers: {Host: "%7B%22Host%22:%22pp1.zhengzhongfeizhu.xyz%22%7D"}}, udp: true}
+  - {name: 台湾 301 001, type: ssr, server: tw301.sagittarius-link.com, port: 62301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
+  - {name: 台湾 302 001, type: ssr, server: tw302.sagittarius-link.com, port: 62302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
+  - {name: 新加坡 301 001, type: ssr, server: sg301.sagittarius-link.com, port: 64301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
+  - {name: 新加坡 302 001, type: ssr, server: sg302.sagittarius-link.com, port: 64302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
+  - {name: 日本 301 001, type: ssr, server: 81301.bftp.sagittarius-link.com, port: 60301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
+  - {name: 日本 302 001, type: ssr, server: 81302.rt0n.sagittarius-link.com, port: 60302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
+  - {name: 日本 303 001, type: ssr, server: 81303.rt5y.sagittarius-link.com, port: 60303, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
+  - {name: 日本 304 001, type: ssr, server: 81304.xwd1.sagittarius-link.com, port: 60304, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
+  - {name: 香港 301 001, type: ssr, server: hk301.sagittarius-link.com, port: 61301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
+  - {name: 香港 302 001, type: ssr, server: hk302.sagittarius-link.com, port: 61302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
+  - {name: 香港 303 001, type: ssr, server: hk303.sagittarius-link.com, port: 61303, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
+  - {name: 香港 304 001, type: ssr, server: hk304.sagittarius-link.com, port: 61304, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 226808a429.download.windowsupdate.com, protocol-param: 22680:YD5Wmy, udp: true}
+  - {name: 台湾 301 002, type: ssr, server: tw301.sagittarius-link.com, port: 62301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 台湾 302 002, type: ssr, server: tw302.sagittarius-link.com, port: 62302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 台湾 501 - Media, type: ssr, server: tw501.sagittarius-link.com, port: 62501, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 新加坡 301 002, type: ssr, server: sg301.sagittarius-link.com, port: 64301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 新加坡 302 002, type: ssr, server: sg302.sagittarius-link.com, port: 64302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 新加坡 501, type: ssr, server: sg501.sagittarius-link.com, port: 64501, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 新加坡 502, type: ssr, server: sg502.sagittarius-link.com, port: 64502, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 日本 301 002, type: ssr, server: 81301.bftp.sagittarius-link.com, port: 60301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 日本 302 002, type: ssr, server: 81302.rt0n.sagittarius-link.com, port: 60302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 日本 303 002, type: ssr, server: 81303.rt5y.sagittarius-link.com, port: 60303, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 日本 304 002, type: ssr, server: 81304.xwd1.sagittarius-link.com, port: 60304, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 日本 501, type: ssr, server: jp501.sagittarius-link.com, port: 60501, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 日本 502, type: ssr, server: jp502.sagittarius-link.com, port: 60502, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 日本 503, type: ssr, server: jp503.sagittarius-link.com, port: 60503, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 日本 504, type: ssr, server: jp504.sagittarius-link.com, port: 60504, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 英国 501, type: ssr, server: as59895-lhr01.edge.2elh8f.com, port: 1934, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 香港 301 002, type: ssr, server: hk301.sagittarius-link.com, port: 61301, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 香港 302 002, type: ssr, server: hk302.sagittarius-link.com, port: 61302, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 香港 303 002, type: ssr, server: hk303.sagittarius-link.com, port: 61303, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 香港 304 002, type: ssr, server: hk304.sagittarius-link.com, port: 61304, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 香港 501, type: ssr, server: hk501.sagittarius-link.com, port: 61501, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 香港 502, type: ssr, server: hk502.sagittarius-link.com, port: 61502, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 香港 503, type: ssr, server: hk503.sagittarius-link.com, port: 61503, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: 香港 504, type: ssr, server: hk504.sagittarius-link.com, port: 61504, cipher: none, password: 5GMSIjTiXS8, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 2380122338.download.windowsupdate.com, protocol-param: 23801:hp492b0mq6o, udp: true}
+  - {name: Az香港1, server: hk1.ningmengshui.xyz, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.youku.com}}, udp: true}
   - {name: Az香港2, server: hk2.ningmengshui.xyz, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: Az香港3, server: hk3.ningmengshui.xyz, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: Az香港5, server: hk5.ningmengshui.xyz, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: Az香港7, server: hk7.ningmengshui.xyz, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: Az香港8, server: hk8.ningmengshui.xyz, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: Az香港9, server: hk9.ningmengshui.xyz, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dm.toutiao.com}}, udp: true}
   - {name: Az香港10, server: hk10.ningmengshui.xyz, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: Az香港13, server: hk13.ningmengshui.xyz, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: opc日本1, server: 138.2.35.172, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: opc日本2, server: 152.69.199.111, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.youku.com}}, udp: true}
-  - {name: Opc日本3, server: 138.2.59.97, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: HK01-V2-直连, server: hk01.henet.cyou, port: 20000, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: JP01-V2-直连, server: jp01.henet.cyou, port: 20000, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: JP02-V2-直连, server: jp02.henet.cyou, port: 20000, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: TW01-V2-直连, server: tw01.henet.cyou, port: 20000, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: TW02-V2-直连, server: tw02.henet.cyou, port: 20000, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: US01-V2-直连, server: us01.henet.cyou, port: 20000, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: US02-V2-直连, server: us02.henet.cyou, port: 20000, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: SG01-V2-直连, server: sg01.henet.cyou, port: 20000, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: SG02-V2-直连, server: sg02.henet.cyou, port: 20000, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: HK01-V2-AWSBJ, server: bj1.xlao.cn, port: 30001, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: JP01-V2-AWSBJ, server: bj1.xlao.cn, port: 30002, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: JP02-V2-AWSBJ, server: bj1.xlao.cn, port: 30003, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: TW01-V2-AWSBJ, server: bj1.xlao.cn, port: 30004, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: TW02-V2-AWSBJ, server: bj1.xlao.cn, port: 30005, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: US01-V2-AWSBJ, server: bj1.xlao.cn, port: 30006, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: US02-V2-AWSBJ, server: bj1.xlao.cn, port: 30007, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: SG01-V2-AWSBJ, server: bj1.xlao.cn, port: 30008, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: SG02-V2-AWSBJ, server: bj1.xlao.cn, port: 30009, type: vmess, uuid: b3ea4273-e3a8-46a3-93b2-1aaa1c9dbd61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: "[LV2·原生] 香港02 | IEPL 专线 | 3倍率 003", server: pp1.zhengzhongfeizhu.xyz, port: 33003, type: vmess, uuid: eb2f8154-ff58-3b99-b393-28c8eecdbe64, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[LV2·原生] 香港03 | IEPL 专线 | 3倍率 004", server: pp1.zhengzhongfeizhu.xyz, port: 33004, type: vmess, uuid: eb2f8154-ff58-3b99-b393-28c8eecdbe64, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[LV1·解锁] 狮城01 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: a2a37460-2a05-3211-b0d6-d0b37971f84e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp1, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
-  - {name: "[LV1·解锁] 狮城03 | 中转 003", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: a2a37460-2a05-3211-b0d6-d0b37971f84e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp3, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
-  - {name: "[LV1·解锁] 狮城04 | 中转 003", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: a2a37460-2a05-3211-b0d6-d0b37971f84e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp4, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
-  - {name: beikui 4, type: ssr, server: cdn01.122888.xyz, port: 26000, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
-  - {name: beikui 5, type: ssr, server: cdn01.122888.xyz, port: 26001, cipher: chacha20-ietf, password: NZLAIb7anGV3Jrnb, obfs: plain, protocol: auth_aes128_sha1, obfs-param: 0f6c61454.microsoft.com, protocol-param: 1454:ANN4bqEunef35mOH, udp: true}
+  - {name: "[LV1·解锁] 狮城01 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp1, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
+  - {name: "[LV1·解锁] 狮城03 | 中转 002", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp3, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
+  - {name: "[LV1·解锁] 狮城04 | 中转 002", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp4, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
+  - {name: "[LV1·解锁] 狮城05 | 中转 002", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-sp5, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
+  - {name: "[LV2·原生] 美国04 | 中转 002", server: pp1.zhengzhongfeizhu.xyz, port: 43960, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /j20-usa4-243, headers: {Host: pp1.zhengzhongfeizhu.xyz}}, udp: true}
+  - {name: "[LV2·原生] 香港01 | IEPL 专线 | 3倍率", server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[LV2·原生] 香港02 | IEPL 专线 | 3倍率", server: pp1.zhengzhongfeizhu.xyz, port: 33003, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[LV2·原生] 香港03 | IEPL 专线 | 3倍率", server: pp1.zhengzhongfeizhu.xyz, port: 33004, type: vmess, uuid: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬SG 001, server: 81.90.189.23, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 🇸🇬SG 002, server: 81.90.189.23, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 🇸🇬SG 003, server: 81.90.189.23, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 四川, server: 36.170.51.77, port: 80, type: vmess, uuid: b77d30e8-785d-431c-975d-392662b576f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 宁夏 001, server: 68.79.47.58, port: 8090, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 宁夏 002, server: 71.131.207.203, port: 8090, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 四川移动, server: 36.170.51.72, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 江苏, server: 43.248.79.72, port: 80, type: vmess, uuid: 28b777bd-a5fd-4ee4-98a0-0f414b7a51e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
   - 有问题咨询TG @beikui_bot
-  - 美国
-  - 韩国
-  - 香港
-  - kui 001
-  - kui 002
-  - kui 003
+  - beikui 5 001
+  - beikui 6
+  - beikui 8 001
+  - beikui 9 001
+  - beikui 10 001
+  - beikui 11 001
+  - beikui 12 001
+  - beikui
+  - beikui 2
+  - beikui 3
+  - beikui 4
+  - beikui 5 002
+  - beikui 7
+  - beikui 8 002
+  - beikui 9 002
+  - beikui 10 002
+  - beikui 11 002
+  - beikui 12 002
+  - beikui 13
+  - beikui 14
+  - beikui 15
+  - beikui 16
+  - beikui 17
+  - beikui 18
+  - beikui 19
+  - beikui 20
+  - beikui 21
+  - beikui 22
+  - beikui 23
+  - beikui 24
+  - beikui 25
+  - beikui 26
+  - beikui 27
+  - beikui 28
+  - beikui 29
+  - beikui 30
+  - beikui 31
+  - beikui 32
+  - beikui 33
+  - beikui 34
+  - 美国 001
+  - 新加坡 001
+  - 美国 002
+  - 新加坡 002
+  - 新加坡 003
+  - 新加坡 004
+  - 美国 003
+  - 美国 004
+  - 新加坡 005
+  - 美国 005
+  - 新加坡 006
+  - 新加坡 007
+  - lv1 台湾Hinet1 直连
+  - lv1 台湾Hinet2 直连
+  - lv1 台湾TFN1 直连
   - 台湾 301 001
   - 台湾 302 001
-  - 台湾 501 - Media 001
-  - 台湾 502 - Media
   - 新加坡 301 001
   - 新加坡 302 001
-  - 新加坡 501 001
-  - 新加坡 502 001
   - 日本 301 001
   - 日本 302 001
   - 日本 303 001
   - 日本 304 001
-  - 日本 501 001
-  - 日本 502 001
-  - 日本 503 001
-  - 日本 504 001
-  - 英国 501 001
   - 香港 301 001
   - 香港 302 001
   - 香港 303 001
   - 香港 304 001
-  - 香港 501 001
-  - 香港 502 001
-  - 香港 503 001
-  - 香港 504 001
   - 台湾 301 002
   - 台湾 302 002
-  - 台湾 501 - Media 002
+  - 台湾 501 - Media
   - 新加坡 301 002
   - 新加坡 302 002
-  - 新加坡 501 002
-  - 新加坡 502 002
+  - 新加坡 501
+  - 新加坡 502
   - 日本 301 002
   - 日本 302 002
   - 日本 303 002
   - 日本 304 002
-  - 日本 501 002
-  - 日本 502 002
-  - 日本 503 002
-  - 日本 504 002
-  - 英国 501 002
+  - 日本 501
+  - 日本 502
+  - 日本 503
+  - 日本 504
+  - 英国 501
   - 香港 301 002
   - 香港 302 002
   - 香港 303 002
   - 香港 304 002
-  - 香港 501 002
-  - 香港 502 002
-  - 香港 503 002
-  - 香港 504 002
-  - 俄罗斯 ❀大妮妮❀1倍 001
-  - 俄罗斯 ❀小妮妮❀1倍 001
-  - 印尼 ❀原生❀大妮妮❀1倍 001
-  - 印尼 ❀原生❀小妮妮❀1倍 001
-  - 印度 ❀大妮妮❀1倍 001
-  - 印度 ❀小妮妮❀1倍 001
-  - 台湾 ❀原生❀大妮妮❀1倍 001
-  - 台湾 ❀原生❀小妮妮❀1倍 001
-  - 新加坡 ❀小妮妮❀1倍 001
-  - 日本 ❀大妮妮❀1倍 001
-  - 日本 ❀小妮妮❀1倍 001
-  - 泰国 ❀原生❀大妮妮❀1倍\t 001
-  - 泰国 ❀原生❀小妮妮❀1倍 001
-  - 美国 ❀原生❀大妮妮❀1倍 001
-  - 美国 ❀原生❀小妮妮❀1倍 001
-  - 美国 ❀大妮妮❀1倍 001
-  - 美国 ❀小妮妮❀1倍
-  - 越南 ❀原生❀大妮妮❀1倍 001
-  - 越南 ❀原生❀小妮妮❀1倍 001
-  - 韩国 ❀大妮妮❀1倍 001
-  - 韩国 ❀小妮妮❀1倍 001
-  - 香港 ❀原生❀大妮妮❀1倍
-  - 香港 ❀原生❀小妮妮❀1倍 001
-  - 香港 ❀大妮妮1号❀1倍 001
-  - 香港 ❀大妮妮2号❀1倍
-  - 香港 ❀小妮妮1号❀1倍 001
-  - 香港 ❀小妮妮2号❀1倍 001
-  - 台湾 301 003
-  - 台湾 302 003
-  - 新加坡 301 003
-  - 新加坡 302 003
-  - 日本 301 003
-  - 日本 302 003
-  - 日本 303 003
-  - 日本 304 003
-  - 香港 301 003
-  - 香港 302 003
-  - 香港 303 003
-  - 香港 304 003
-  - 俄罗斯 ❀大妮妮❀1倍 002
-  - 俄罗斯 ❀小妮妮❀1倍 002
-  - 印尼 ❀原生❀大妮妮❀1倍 002
-  - 印尼 ❀原生❀小妮妮❀1倍 002
-  - 印度 ❀大妮妮❀1倍 002
-  - 印度 ❀小妮妮❀1倍 002
-  - 台湾 ❀原生❀大妮妮❀1倍 002
-  - 台湾 ❀原生❀小妮妮❀1倍 002
-  - 新加坡 ❀小妮妮❀1倍 002
-  - 日本 ❀大妮妮❀1倍 002
-  - 日本 ❀小妮妮❀1倍 002
-  - 泰国 ❀原生❀大妮妮❀1倍\t 002
-  - 泰国 ❀原生❀小妮妮❀1倍 002
-  - 美国 ❀原生❀大妮妮❀1倍 002
-  - 美国 ❀原生❀小妮妮❀1倍 002
-  - 美国 ❀大妮妮❀1倍 002
-  - 越南 ❀原生❀大妮妮❀1倍 002
-  - 越南 ❀原生❀小妮妮❀1倍 002
-  - 韩国 ❀大妮妮❀1倍 002
-  - 韩国 ❀小妮妮❀1倍 002
-  - 香港 ❀原生❀小妮妮❀1倍 002
-  - 香港 ❀大妮妮1号❀1倍 002
-  - 香港 ❀小妮妮1号❀1倍 002
-  - 香港 ❀小妮妮2号❀1倍 002
+  - 香港 501
+  - 香港 502
+  - 香港 503
+  - 香港 504
+  - Az香港1
   - Az香港2
   - Az香港3
   - Az香港5
   - Az香港7
   - Az香港8
+  - Az香港9
   - Az香港10
   - Az香港13
   - opc日本1
   - opc日本2
-  - Opc日本3
-  - HK01-V2-直连
-  - JP01-V2-直连
-  - JP02-V2-直连
-  - TW01-V2-直连
-  - TW02-V2-直连
-  - US01-V2-直连
-  - US02-V2-直连
-  - SG01-V2-直连
-  - SG02-V2-直连
-  - HK01-V2-AWSBJ
-  - JP01-V2-AWSBJ
-  - JP02-V2-AWSBJ
-  - TW01-V2-AWSBJ
-  - TW02-V2-AWSBJ
-  - US01-V2-AWSBJ
-  - US02-V2-AWSBJ
-  - SG01-V2-AWSBJ
-  - SG02-V2-AWSBJ
-  - beikui 4
-  - beikui 5
+  - 🇸🇬SG 001
+  - 🇸🇬SG 002
+  - 🇸🇬SG 003
+  - 四川
+  - 宁夏 001
+  - 宁夏 002
+  - 四川移动
+  - 江苏
 - name: ♻️ automatic
   type: url-test
   proxies:
   - 有问题咨询TG @beikui_bot
-  - 美国
-  - 韩国
-  - 香港
-  - kui 001
-  - kui 002
-  - kui 003
+  - beikui 5 001
+  - beikui 6
+  - beikui 8 001
+  - beikui 9 001
+  - beikui 10 001
+  - beikui 11 001
+  - beikui 12 001
+  - beikui
+  - beikui 2
+  - beikui 3
+  - beikui 4
+  - beikui 5 002
+  - beikui 7
+  - beikui 8 002
+  - beikui 9 002
+  - beikui 10 002
+  - beikui 11 002
+  - beikui 12 002
+  - beikui 13
+  - beikui 14
+  - beikui 15
+  - beikui 16
+  - beikui 17
+  - beikui 18
+  - beikui 19
+  - beikui 20
+  - beikui 21
+  - beikui 22
+  - beikui 23
+  - beikui 24
+  - beikui 25
+  - beikui 26
+  - beikui 27
+  - beikui 28
+  - beikui 29
+  - beikui 30
+  - beikui 31
+  - beikui 32
+  - beikui 33
+  - beikui 34
+  - 美国 001
+  - 新加坡 001
+  - 美国 002
+  - 新加坡 002
+  - 新加坡 003
+  - 新加坡 004
+  - 美国 003
+  - 美国 004
+  - 新加坡 005
+  - 美国 005
+  - 新加坡 006
+  - 新加坡 007
+  - lv1 台湾Hinet1 直连
+  - lv1 台湾Hinet2 直连
+  - lv1 台湾TFN1 直连
   - 台湾 301 001
   - 台湾 302 001
-  - 台湾 501 - Media 001
-  - 台湾 502 - Media
   - 新加坡 301 001
   - 新加坡 302 001
-  - 新加坡 501 001
-  - 新加坡 502 001
   - 日本 301 001
   - 日本 302 001
   - 日本 303 001
   - 日本 304 001
-  - 日本 501 001
-  - 日本 502 001
-  - 日本 503 001
-  - 日本 504 001
-  - 英国 501 001
   - 香港 301 001
   - 香港 302 001
   - 香港 303 001
   - 香港 304 001
-  - 香港 501 001
-  - 香港 502 001
-  - 香港 503 001
-  - 香港 504 001
   - 台湾 301 002
   - 台湾 302 002
-  - 台湾 501 - Media 002
+  - 台湾 501 - Media
   - 新加坡 301 002
   - 新加坡 302 002
-  - 新加坡 501 002
-  - 新加坡 502 002
+  - 新加坡 501
+  - 新加坡 502
   - 日本 301 002
   - 日本 302 002
   - 日本 303 002
   - 日本 304 002
-  - 日本 501 002
-  - 日本 502 002
-  - 日本 503 002
-  - 日本 504 002
-  - 英国 501 002
+  - 日本 501
+  - 日本 502
+  - 日本 503
+  - 日本 504
+  - 英国 501
   - 香港 301 002
   - 香港 302 002
   - 香港 303 002
   - 香港 304 002
-  - 香港 501 002
-  - 香港 502 002
-  - 香港 503 002
-  - 香港 504 002
-  - 俄罗斯 ❀大妮妮❀1倍 001
-  - 俄罗斯 ❀小妮妮❀1倍 001
-  - 印尼 ❀原生❀大妮妮❀1倍 001
-  - 印尼 ❀原生❀小妮妮❀1倍 001
-  - 印度 ❀大妮妮❀1倍 001
-  - 印度 ❀小妮妮❀1倍 001
-  - 台湾 ❀原生❀大妮妮❀1倍 001
-  - 台湾 ❀原生❀小妮妮❀1倍 001
-  - 新加坡 ❀小妮妮❀1倍 001
-  - 日本 ❀大妮妮❀1倍 001
-  - 日本 ❀小妮妮❀1倍 001
-  - 泰国 ❀原生❀大妮妮❀1倍\t 001
-  - 泰国 ❀原生❀小妮妮❀1倍 001
-  - 美国 ❀原生❀大妮妮❀1倍 001
-  - 美国 ❀原生❀小妮妮❀1倍 001
-  - 美国 ❀大妮妮❀1倍 001
-  - 美国 ❀小妮妮❀1倍
-  - 越南 ❀原生❀大妮妮❀1倍 001
-  - 越南 ❀原生❀小妮妮❀1倍 001
-  - 韩国 ❀大妮妮❀1倍 001
-  - 韩国 ❀小妮妮❀1倍 001
-  - 香港 ❀原生❀大妮妮❀1倍
-  - 香港 ❀原生❀小妮妮❀1倍 001
-  - 香港 ❀大妮妮1号❀1倍 001
-  - 香港 ❀大妮妮2号❀1倍
-  - 香港 ❀小妮妮1号❀1倍 001
-  - 香港 ❀小妮妮2号❀1倍 001
-  - 台湾 301 003
-  - 台湾 302 003
-  - 新加坡 301 003
-  - 新加坡 302 003
-  - 日本 301 003
-  - 日本 302 003
-  - 日本 303 003
-  - 日本 304 003
-  - 香港 301 003
-  - 香港 302 003
-  - 香港 303 003
-  - 香港 304 003
-  - 俄罗斯 ❀大妮妮❀1倍 002
-  - 俄罗斯 ❀小妮妮❀1倍 002
-  - 印尼 ❀原生❀大妮妮❀1倍 002
-  - 印尼 ❀原生❀小妮妮❀1倍 002
-  - 印度 ❀大妮妮❀1倍 002
-  - 印度 ❀小妮妮❀1倍 002
-  - 台湾 ❀原生❀大妮妮❀1倍 002
-  - 台湾 ❀原生❀小妮妮❀1倍 002
-  - 新加坡 ❀小妮妮❀1倍 002
-  - 日本 ❀大妮妮❀1倍 002
-  - 日本 ❀小妮妮❀1倍 002
-  - 泰国 ❀原生❀大妮妮❀1倍\t 002
-  - 泰国 ❀原生❀小妮妮❀1倍 002
-  - 美国 ❀原生❀大妮妮❀1倍 002
-  - 美国 ❀原生❀小妮妮❀1倍 002
-  - 美国 ❀大妮妮❀1倍 002
-  - 越南 ❀原生❀大妮妮❀1倍 002
-  - 越南 ❀原生❀小妮妮❀1倍 002
-  - 韩国 ❀大妮妮❀1倍 002
-  - 韩国 ❀小妮妮❀1倍 002
-  - 香港 ❀原生❀小妮妮❀1倍 002
-  - 香港 ❀大妮妮1号❀1倍 002
-  - 香港 ❀小妮妮1号❀1倍 002
-  - 香港 ❀小妮妮2号❀1倍 002
+  - 香港 501
+  - 香港 502
+  - 香港 503
+  - 香港 504
+  - Az香港1
   - Az香港2
   - Az香港3
   - Az香港5
   - Az香港7
   - Az香港8
+  - Az香港9
   - Az香港10
   - Az香港13
   - opc日本1
   - opc日本2
-  - Opc日本3
-  - HK01-V2-直连
-  - JP01-V2-直连
-  - JP02-V2-直连
-  - TW01-V2-直连
-  - TW02-V2-直连
-  - US01-V2-直连
-  - US02-V2-直连
-  - SG01-V2-直连
-  - SG02-V2-直连
-  - HK01-V2-AWSBJ
-  - JP01-V2-AWSBJ
-  - JP02-V2-AWSBJ
-  - TW01-V2-AWSBJ
-  - TW02-V2-AWSBJ
-  - US01-V2-AWSBJ
-  - US02-V2-AWSBJ
-  - SG01-V2-AWSBJ
-  - SG02-V2-AWSBJ
-  - beikui 4
-  - beikui 5
+  - 🇸🇬SG 001
+  - 🇸🇬SG 002
+  - 🇸🇬SG 003
+  - 四川
+  - 宁夏 001
+  - 宁夏 002
+  - 四川移动
+  - 江苏
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
