@@ -2,6 +2,8 @@
 # -*- encoding: utf-8 -*-
 # thanks to github:tbbatbb
 
+
+
 import requests, re, yaml
 from re import Pattern
 from typing import Any, Dict, List
@@ -18,7 +20,8 @@ clash_output_tpl:str = './utils/clash.config.template.yaml'
     
 clash_extra:List[str] = ['https://free886.herokuapp.com/clash/proxies']
 
-blacklist:List[str] = list(map(lambda l:l.replace('\r', '').replace('\n', '').split(':'), open('./utils/blacklists.txt').readlines()))
+blacklist:List[str] = list(map(lambda l:l.replace('\r', '').replace('\n', '').split(':'),
+        ['game.tcpbbr.net:5228','213.183.53.177:9037','jp.tcpbbr.net:443','tw.tcpbbr.net:443']))
 
 def clash_urls(html:str) -> List[str]:
     '''
