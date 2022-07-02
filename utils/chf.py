@@ -1,6 +1,6 @@
 #!python3.8
 # -*- encoding: utf-8 -*-
-# thanks to github:tbbatbb
+# thans to github:tbbatbb
 
 
 
@@ -15,7 +15,7 @@ rss_url:str = 'https://www.cfmem.com/feeds/posts/default?alt=rss'
 clash_reg:Pattern = re.compile(r'clash订阅链接：(https?.+?)(?:&lt;|<)/span(?:&gt;|>)')
 
 
-clash_output_file:str = './subs/clash.config.yaml'
+clash_output_file:str = './subs/chf.yaml'
 clash_output_tpl:str = './utils/clash.config.template.yaml'
     
 clash_extra:List[str] = ['https://free886.herokuapp.com/clash/proxies']
@@ -81,7 +81,7 @@ def main():
 
     clash_merged:str = merge_clash(clash_configs)
 
-    with open(cf.yaml, 'w') as f: f.write(clash_merged)
+    with open(clash_output_file, 'w') as f: f.write(clash_merged)
 
 if __name__ == '__main__':
     main()
