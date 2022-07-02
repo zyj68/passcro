@@ -1,8 +1,3 @@
-# from tbbatbb
-#!python3.8
-# -*- encoding: utf-8 -*-
-
-
 
 
 import requests, re, yaml
