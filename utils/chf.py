@@ -1,5 +1,6 @@
 #!python3.8
 # -*- encoding: utf-8 -*-
+# thanks to github:tbbatbb
 
 import requests, re, yaml
 from re import Pattern
@@ -63,11 +64,6 @@ def merge_clash(configs:List[str]) -> str:
 
     return yaml.safe_dump(config_template, indent=2, allow_unicode=True)
 
-def merge_v2ray(configs:List[str]) -> str:
-    '''
-    Merge Multiple V2Ray Configurations
-    '''
-    return '\n'.join(configs)
 
 def main():
     rss_text:str = fetch_html(rss_url)
@@ -76,12 +72,11 @@ def main():
         return
     clash_url_list:List[str] = clash_urls(rss_text)
 
-    print(f'[+] Got {len(clash_url_list)} Clash URLs, {len(v2ray_url_list)} V2Ray URLs')
+    print(f'[+] Got {len(clash_url_list)} Clash URLs')
 
     clash_configs:List[str] = list(filter(lambda h: h is not None and len(h) > 0, map(lambda u: fetch_html(u), clash_url_list)))
 
     clash_merged:str = merge_clash(clash_configs)
-    v2ray_merged:str = merge_v2ray(v2ray_configs)
 
     with open(cf.yaml, 'w') as f: f.write(clash_merged)
 
