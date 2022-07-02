@@ -16,7 +16,7 @@ clash_output_tpl:str = './utils/clash.config.template.yaml'
     
 clash_extra:List[str] = ['https://free886.herokuapp.com/clash/proxies']
 
-blacklist:List[str] = list(map(lambda l:l.replace('\r', '').replace('\n', '').split(':'), open('blacklists.txt').readlines()))
+blacklist:List[str] = list(map(lambda l:l.replace('\r', '').replace('\n', '').split(':'), open('./utils/blacklists.txt').readlines()))
 
 def clash_urls(html:str) -> List[str]:
     '''
