@@ -1,6 +1,7 @@
+# from tbbatbb
 #!python3.8
 # -*- encoding: utf-8 -*-
-# thans to github:tbbatbb
+
 
 
 
