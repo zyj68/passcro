@@ -33,7 +33,6 @@ def miao():
     url = 'https://raw.githubusercontent.com/Strongmiao168/Clash/main/'+time.strftime('%m%d')+'clash.yml'
     try:
         rsp = requests.get(url,headers = hdrs)
-        yamltent = rsp.text.replace('(油管:破解资源君2.0)','')
         dirs = './subs'
         if not os.path.exists(dirs):
             os.makedirs(dirs)
