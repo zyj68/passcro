@@ -1769,19 +1769,19 @@ proxies:
 - cipher: aes-128-cfb
   name: CN_4_14@3
   password: QazEdcTgb159@$*
-  port: 24009
+  port: 25247
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
   name: CN_5_14@4
   password: QazEdcTgb159@$*
-  port: 24000
+  port: 25219
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
   name: CN_6_14@5
   password: QazEdcTgb159@$*
-  port: 25261
+  port: 25287
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
@@ -1793,7 +1793,7 @@ proxies:
 - cipher: aes-128-cfb
   name: CN_8_14@7
   password: QazEdcTgb159@$*
-  port: 11033
+  port: 11007
   server: 14.29.124.174
   type: ss
 - name: CZ_9_14@8
@@ -1803,42 +1803,35 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: CZ_10_14@9
-  password: 3gLlCYBipVwr6Y5F
-  port: 443
-  server: v2cross.com.02.v2ce.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: GB_12_14@11
+- name: GB_11_14@10
   password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157
   port: 443
   server: jgwld2.gaox.ml
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: GB_13_14@12
+- name: GB_12_14@11
   password: 02e653c9-7c93-46a9-999d-11834bd0c577
   port: 443
   server: jgwld1.gaox.ml
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: HK_14_14@13
+- name: HK_13_14@12
   password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
   port: 443
   server: tj-hk01.yiyodns.xyz
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: JP_16_14@15
+- name: JP_15_14@14
   password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2
   port: 443
   server: jgwdb4.gaox.ml
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: JP_17_14@16
+- name: JP_16_14@15
   password: 8d2d5953-d649-4034-94f2-72f2df2623da
   port: 443
   server: jgwdb3.gaox.ml
@@ -1846,43 +1839,57 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: LT_18_14@17
+  name: LT_17_14@16
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 46.183.185.15
   type: ss
-- name: RU_20_14@19
-  password: 27e58714-2c0b-4fa4-afb6-b91ec041b1cf
-  port: 19374
-  server: hkbgp1.jiantian.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: RU_21_14@20
-  password: 61c4c45e-d5c8-47ed-ae28-cee95f09b3b7
-  port: 58443
-  server: t03.ssrsub.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: RU_22_14@21
+- name: RU_18_14@17
   password: 27e58714-2c0b-4fa4-afb6-b91ec041b1cf
   port: 14572
   server: hkbgp2.jiantian.xyz
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: SG_23_14@22
+- name: RU_19_14@18
+  password: 61c4c45e-d5c8-47ed-ae28-cee95f09b3b7
+  port: 58443
+  server: t03.ssrsub.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: SG_20_14@19
   password: affae2e0-e84b-11ec-b09f-1239d0255272
   port: 443
   server: trojan1.udpgw.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: SG_24_14@23
+- name: SG_21_14@20
   password: sharecentre
   port: 443
   server: sg.sharecentrepro.tk
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: UA_22_14@21
+  password: kGrwqmB1nEKUsDwE
+  port: 443
+  server: v2cross.com.05.v2ce.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: UA_23_14@22
+  password: HTrovQkamDxNfaD5
+  port: 443
+  server: cz5.v2ce.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: UA_24_14@23
+  password: ZD4dLSBXiMrmzdLd
+  port: 443
+  server: v2cross.com.03.v2ce.com
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -1893,143 +1900,114 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: UA_26_14@25
-  password: kGrwqmB1nEKUsDwE
-  port: 443
-  server: v2cross.com.05.v2ce.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: UA_27_14@26
-  password: HTrovQkamDxNfaD5
-  port: 443
-  server: cz5.v2ce.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: UA_28_14@27
-  password: ZD4dLSBXiMrmzdLd
-  port: 443
-  server: v2cross.com.03.v2ce.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - cipher: aes-256-gcm
-  name: US_30_14@29
+  name: US_26_14@25
   password: 3f411e87-3e93-4f23-bc22-263a748bc8c5
   port: 4649
   server: 164.92.99.255
   type: ss
-- cipher: aes-256-cfb
-  name: US_31_14@30
-  obfs: tls1.2_ticket_auth
-  password: YFVrXZgRo
-  port: 8081
-  protocol: origin
-  server: us-am32-5.eqnode.net
-  type: ssr
-- name: US_32_14@31
-  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
-  port: 443
-  server: tj-sg02.yiyodns.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: US_33_14@32
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  port: 3052
-  server: kr05.wangxd.life
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: US_34_14@33
-  password: 05742120-ce23-4cc8-88f5-6d221ce45bf4
-  port: 443
-  server: fhcarm1.gaox.ml
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: US_35_14@34
-  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
-  port: 443
-  server: tj-us01.yiyodns.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: US_36_14@35
-  password: f39bd244-f5fe-415c-8b98-a1e5250bf178
-  port: 443
-  server: fhcarm2.gaox.ml
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: US_37_14@36
-  password: sharecentre
-  port: 443
-  server: ussc.scsevers.cf
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: US_38_14@37
-  password: da777aae-defb-41d0-a183-2c27da2b4677
-  port: 443
-  server: jgwdj3.gaox.ml
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: US_39_14@38
-  password: 685022af-2086-454c-8725-8ff6b6ab1d13
-  port: 22168
-  server: bai-piao-wang-zhe10.98848.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: US_40_14@39
-  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
-  port: 443
-  server: tj-us02.yiyodns.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: US_41_14@40
-  password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11
-  port: 443
-  server: jgwhdlb3.gaox.ml
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: US_42_14@41
-  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-  port: 12340
-  server: s1.hazz.win
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: US_43_14@42
-  password: 54080134-2cba-4535-8599-95650bd9aa54
-  port: 443
-  server: jgwhdlb2.gaox.ml
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: US_44_14@43
+- name: US_28_14@27
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   port: 3052
   server: lsj02.wangxd.life
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: US_45_14@44
+- name: US_29_14@28
+  password: 9c822f05-cfdc-479a-9534-60f3d4127435
+  port: 443
+  server: jgwcc2.gaox.ml
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: US_30_14@29
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  port: 12340
+  server: s1.hazz.win
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: US_31_14@30
+  password: 685022af-2086-454c-8725-8ff6b6ab1d13
+  port: 22168
+  server: bai-piao-wang-zhe10.98848.xyz
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: US_32_14@31
+  password: 685022af-2086-454c-8725-8ff6b6ab1d13
+  port: 50858
+  server: bai-piao-wang-zhe10.98848.xyz
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: US_33_14@32
+  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
+  port: 443
+  server: tj-sg02.yiyodns.xyz
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: US_34_14@33
+  password: f39bd244-f5fe-415c-8b98-a1e5250bf178
+  port: 443
+  server: fhcarm2.gaox.ml
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: US_35_14@34
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  port: 12340
+  server: s2.hazz.win
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: US_36_14@35
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  port: 3052
+  server: kr05.wangxd.life
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: US_37_14@36
+  password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11
+  port: 443
+  server: jgwhdlb3.gaox.ml
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: US_38_14@37
+  password: 05742120-ce23-4cc8-88f5-6d221ce45bf4
+  port: 443
+  server: fhcarm1.gaox.ml
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: US_39_14@38
   password: dfbf0d67-f03d-4184-a224-c2d64a571f99
   port: 12340
   server: s3.hazz.win
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: US_46_14@45
-  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-  port: 12340
-  server: s2.hazz.win
+- name: US_40_14@39
+  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
+  port: 443
+  server: tj-us01.yiyodns.xyz
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: US_41_14@40
+  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
+  port: 443
+  server: tj-us02.yiyodns.xyz
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: US_42_14@41
+  password: sharecentre
+  port: 443
+  server: ussc.scsevers.cf
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -2300,22 +2278,23 @@ proxy-groups:
   - CN_7_14@6
   - CN_8_14@7
   - CZ_9_14@8
-  - CZ_10_14@9
+  - GB_11_14@10
   - GB_12_14@11
-  - GB_13_14@12
-  - HK_14_14@13
+  - HK_13_14@12
+  - JP_15_14@14
   - JP_16_14@15
-  - JP_17_14@16
-  - LT_18_14@17
-  - RU_20_14@19
-  - RU_21_14@20
-  - RU_22_14@21
-  - SG_23_14@22
-  - SG_24_14@23
+  - LT_17_14@16
+  - RU_18_14@17
+  - RU_19_14@18
+  - SG_20_14@19
+  - SG_21_14@20
+  - UA_22_14@21
+  - UA_23_14@22
+  - UA_24_14@23
   - UA_25_14@24
-  - UA_26_14@25
-  - UA_27_14@26
-  - UA_28_14@27
+  - US_26_14@25
+  - US_28_14@27
+  - US_29_14@28
   - US_30_14@29
   - US_31_14@30
   - US_32_14@31
@@ -2329,10 +2308,6 @@ proxy-groups:
   - US_40_14@39
   - US_41_14@40
   - US_42_14@41
-  - US_43_14@42
-  - US_44_14@43
-  - US_45_14@44
-  - US_46_14@45
   type: select
 - interval: 300
   name: ♻️ 自动选择
@@ -2599,22 +2574,23 @@ proxy-groups:
   - CN_7_14@6
   - CN_8_14@7
   - CZ_9_14@8
-  - CZ_10_14@9
+  - GB_11_14@10
   - GB_12_14@11
-  - GB_13_14@12
-  - HK_14_14@13
+  - HK_13_14@12
+  - JP_15_14@14
   - JP_16_14@15
-  - JP_17_14@16
-  - LT_18_14@17
-  - RU_20_14@19
-  - RU_21_14@20
-  - RU_22_14@21
-  - SG_23_14@22
-  - SG_24_14@23
+  - LT_17_14@16
+  - RU_18_14@17
+  - RU_19_14@18
+  - SG_20_14@19
+  - SG_21_14@20
+  - UA_22_14@21
+  - UA_23_14@22
+  - UA_24_14@23
   - UA_25_14@24
-  - UA_26_14@25
-  - UA_27_14@26
-  - UA_28_14@27
+  - US_26_14@25
+  - US_28_14@27
+  - US_29_14@28
   - US_30_14@29
   - US_31_14@30
   - US_32_14@31
@@ -2628,10 +2604,6 @@ proxy-groups:
   - US_40_14@39
   - US_41_14@40
   - US_42_14@41
-  - US_43_14@42
-  - US_44_14@43
-  - US_45_14@44
-  - US_46_14@45
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2902,22 +2874,23 @@ proxy-groups:
   - CN_7_14@6
   - CN_8_14@7
   - CZ_9_14@8
-  - CZ_10_14@9
+  - GB_11_14@10
   - GB_12_14@11
-  - GB_13_14@12
-  - HK_14_14@13
+  - HK_13_14@12
+  - JP_15_14@14
   - JP_16_14@15
-  - JP_17_14@16
-  - LT_18_14@17
-  - RU_20_14@19
-  - RU_21_14@20
-  - RU_22_14@21
-  - SG_23_14@22
-  - SG_24_14@23
+  - LT_17_14@16
+  - RU_18_14@17
+  - RU_19_14@18
+  - SG_20_14@19
+  - SG_21_14@20
+  - UA_22_14@21
+  - UA_23_14@22
+  - UA_24_14@23
   - UA_25_14@24
-  - UA_26_14@25
-  - UA_27_14@26
-  - UA_28_14@27
+  - US_26_14@25
+  - US_28_14@27
+  - US_29_14@28
   - US_30_14@29
   - US_31_14@30
   - US_32_14@31
@@ -2931,10 +2904,6 @@ proxy-groups:
   - US_40_14@39
   - US_41_14@40
   - US_42_14@41
-  - US_43_14@42
-  - US_44_14@43
-  - US_45_14@44
-  - US_46_14@45
   type: select
 - name: 📲 电报信息
   proxies:
@@ -3202,22 +3171,23 @@ proxy-groups:
   - CN_7_14@6
   - CN_8_14@7
   - CZ_9_14@8
-  - CZ_10_14@9
+  - GB_11_14@10
   - GB_12_14@11
-  - GB_13_14@12
-  - HK_14_14@13
+  - HK_13_14@12
+  - JP_15_14@14
   - JP_16_14@15
-  - JP_17_14@16
-  - LT_18_14@17
-  - RU_20_14@19
-  - RU_21_14@20
-  - RU_22_14@21
-  - SG_23_14@22
-  - SG_24_14@23
+  - LT_17_14@16
+  - RU_18_14@17
+  - RU_19_14@18
+  - SG_20_14@19
+  - SG_21_14@20
+  - UA_22_14@21
+  - UA_23_14@22
+  - UA_24_14@23
   - UA_25_14@24
-  - UA_26_14@25
-  - UA_27_14@26
-  - UA_28_14@27
+  - US_26_14@25
+  - US_28_14@27
+  - US_29_14@28
   - US_30_14@29
   - US_31_14@30
   - US_32_14@31
@@ -3231,10 +3201,6 @@ proxy-groups:
   - US_40_14@39
   - US_41_14@40
   - US_42_14@41
-  - US_43_14@42
-  - US_44_14@43
-  - US_45_14@44
-  - US_46_14@45
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
@@ -3502,22 +3468,23 @@ proxy-groups:
   - CN_7_14@6
   - CN_8_14@7
   - CZ_9_14@8
-  - CZ_10_14@9
+  - GB_11_14@10
   - GB_12_14@11
-  - GB_13_14@12
-  - HK_14_14@13
+  - HK_13_14@12
+  - JP_15_14@14
   - JP_16_14@15
-  - JP_17_14@16
-  - LT_18_14@17
-  - RU_20_14@19
-  - RU_21_14@20
-  - RU_22_14@21
-  - SG_23_14@22
-  - SG_24_14@23
+  - LT_17_14@16
+  - RU_18_14@17
+  - RU_19_14@18
+  - SG_20_14@19
+  - SG_21_14@20
+  - UA_22_14@21
+  - UA_23_14@22
+  - UA_24_14@23
   - UA_25_14@24
-  - UA_26_14@25
-  - UA_27_14@26
-  - UA_28_14@27
+  - US_26_14@25
+  - US_28_14@27
+  - US_29_14@28
   - US_30_14@29
   - US_31_14@30
   - US_32_14@31
@@ -3531,10 +3498,6 @@ proxy-groups:
   - US_40_14@39
   - US_41_14@40
   - US_42_14@41
-  - US_43_14@42
-  - US_44_14@43
-  - US_45_14@44
-  - US_46_14@45
   type: select
 - name: 🍎 苹果服务
   proxies:
@@ -3802,22 +3765,23 @@ proxy-groups:
   - CN_7_14@6
   - CN_8_14@7
   - CZ_9_14@8
-  - CZ_10_14@9
+  - GB_11_14@10
   - GB_12_14@11
-  - GB_13_14@12
-  - HK_14_14@13
+  - HK_13_14@12
+  - JP_15_14@14
   - JP_16_14@15
-  - JP_17_14@16
-  - LT_18_14@17
-  - RU_20_14@19
-  - RU_21_14@20
-  - RU_22_14@21
-  - SG_23_14@22
-  - SG_24_14@23
+  - LT_17_14@16
+  - RU_18_14@17
+  - RU_19_14@18
+  - SG_20_14@19
+  - SG_21_14@20
+  - UA_22_14@21
+  - UA_23_14@22
+  - UA_24_14@23
   - UA_25_14@24
-  - UA_26_14@25
-  - UA_27_14@26
-  - UA_28_14@27
+  - US_26_14@25
+  - US_28_14@27
+  - US_29_14@28
   - US_30_14@29
   - US_31_14@30
   - US_32_14@31
@@ -3831,10 +3795,6 @@ proxy-groups:
   - US_40_14@39
   - US_41_14@40
   - US_42_14@41
-  - US_43_14@42
-  - US_44_14@43
-  - US_45_14@44
-  - US_46_14@45
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -4119,22 +4079,23 @@ proxy-groups:
   - CN_7_14@6
   - CN_8_14@7
   - CZ_9_14@8
-  - CZ_10_14@9
+  - GB_11_14@10
   - GB_12_14@11
-  - GB_13_14@12
-  - HK_14_14@13
+  - HK_13_14@12
+  - JP_15_14@14
   - JP_16_14@15
-  - JP_17_14@16
-  - LT_18_14@17
-  - RU_20_14@19
-  - RU_21_14@20
-  - RU_22_14@21
-  - SG_23_14@22
-  - SG_24_14@23
+  - LT_17_14@16
+  - RU_18_14@17
+  - RU_19_14@18
+  - SG_20_14@19
+  - SG_21_14@20
+  - UA_22_14@21
+  - UA_23_14@22
+  - UA_24_14@23
   - UA_25_14@24
-  - UA_26_14@25
-  - UA_27_14@26
-  - UA_28_14@27
+  - US_26_14@25
+  - US_28_14@27
+  - US_29_14@28
   - US_30_14@29
   - US_31_14@30
   - US_32_14@31
@@ -4148,10 +4109,6 @@ proxy-groups:
   - US_40_14@39
   - US_41_14@40
   - US_42_14@41
-  - US_43_14@42
-  - US_44_14@43
-  - US_45_14@44
-  - US_46_14@45
   type: select
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
