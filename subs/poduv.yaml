@@ -4,110 +4,122 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 中国(TG频道:@kxswa) 001, server: bgphk4.vip.www.klrxyru.cn, port: 577, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: 中国(TG频道:@kxswa) 002, server: bgphk1.vip.www.klrxyru.cn, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: 中国(TG频道:@kxswa) 003, server: bgphk2.vip.www.klrxyru.cn, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: 卢森堡(TG频道:@kxswa), server: 91.243.81.248, port: 28000, type: trojan, password: f5f239fc-d21a-45ba-aeaf-b137d7d730a6, skip-cert-verify: false, udp: true}
-  - {name: 中国(TG频道:@kxswa) 004, server: shkr2.vip.www.klrxyru.cn, port: 1552, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: 8d83584393.wns.windows.com, udp: true}
-  - {name: 中国(TG频道:@kxswa) 005, server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i1.onebox6.org}}, udp: true}
-  - {name: 新加坡(TG频道:@kxswa) 001, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: false, udp: true}
-  - {name: 美国(TG频道:@kxswa) 001, server: 20.214.249.46, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 中国(TG频道:@kxswa) 006, server: shkr2.vip.www.klrxyru.cn, port: 1552, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: 8d83584393.wns.windows.com, udp: true}
-  - {name: 美国(TG频道:@kxswa) 002, server: 20.210.207.22, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 台湾(TG频道:@kxswa), server: hinet.52147.top, port: 28443, type: trojan, password: 62de567b-6b72-4b8f-bc2b-c2d0d492adca, sni: hinet.52147.top, skip-cert-verify: false, udp: true}
-  - {name: 美国(TG频道:@kxswa) 003, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: false, udp: true}
+  - {name: 台湾(TG频道:@kxswa) 001, server: tw02.henet.cyou, port: 20000, type: vmess, uuid: 7016e349-afae-4ece-a3bb-f02e113d8c8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
+  - {name: 中国(TG频道:@kxswa) 001, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: false, udp: true}
+  - {name: 中国(TG频道:@kxswa) 002, server: bgpddns.rentidnf.com, port: 58033, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: 中国(TG频道:@kxswa) 003, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 美国(TG频道:@kxswa) 001, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: false, udp: true}
   - {name: 香港(TG频道:@kxswa), server: 47.243.31.8, port: 51657, type: vmess, uuid: f0eb8855-d3a4-4fc4-98b6-711681c756b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 中国(TG频道:@kxswa) 007, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: false, udp: true}
-  - {name: 新加坡(TG频道:@kxswa) 002, server: 626sg05.ok365.cyou, port: 80, type: trojan, password: 54f4dd9a-6a6c-4c84-b328-4a51da70793e, sni: 626sg05.ok365.cyou, skip-cert-verify: false, udp: true}
-  - {name: 中国(TG频道:@kxswa) 008, server: aiashar1.www.klrxyru.cn, port: 1651, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: 中国(TG频道:@kxswa) 009, server: relayus4.vip.www.klrxyru.cn, port: 1404, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: 8d83584393.wns.windows.com, udp: true}
-  - {name: 俄罗斯联邦(TG频道:@kxswa), server: v2.tgfaka.com, port: 48443, type: vmess, uuid: ec3e47e9-8dd7-4302-aa1a-a5658d34e931, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: douyincdn.com}}, udp: true}
-  - {name: 中国(TG频道:@kxswa) 010, server: relayjp3.vip.www.klrxyru.cn, port: 1453, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: 美国(TG频道:@kxswa) 004, server: v04.ssrsub.com, port: 153, type: vmess, uuid: ec3e47e9-8dd7-4302-aa1a-a5658d34e931, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: douyincdn.com}}, udp: true}
-  - {name: 中国(TG频道:@kxswa) 011, server: relayus2.vip.www.klrxyru.cn, port: 1402, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: 中国(TG频道:@kxswa) 012, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: ip3884414509.mobgslb.tbcache.com, skip-cert-verify: false, udp: true}
-  - {name: 新加坡(TG频道:@kxswa) 003, server: 625tw.ok365.cyou, port: 443, type: trojan, password: 54f4dd9a-6a6c-4c84-b328-4a51da70793e, sni: 625tw.ok365.cyou, skip-cert-verify: false, udp: true}
-  - {name: 中国(TG频道:@kxswa) 013, server: relayjp1.vip.www.klrxyru.cn, port: 1451, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: 中国(TG频道:@kxswa) 014, server: in04.my1188.org, port: 63028, type: vmess, uuid: 0f01682d-2454-3fd5-beec-53ea4cec7e0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: in04.my1188.org}}, udp: true}
-  - {name: 中国(TG频道:@kxswa) 015, server: relayus4.vip.www.klrxyru.cn, port: 1404, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: 8d83584393.wns.windows.com, udp: true}
-  - {name: 中国(TG频道:@kxswa) 016, server: qdcukr1.vip.www.klrxyru.cn, port: 1551, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: 8d83584393.wns.windows.com, udp: true}
-  - {name: 中国(TG频道:@kxswa) 017, server: pp1.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: 捷克(TG频道:@kxswa), server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, sni: v2cross.com.04.v2ce.com, skip-cert-verify: false, udp: true}
-  - {name: 中国(TG频道:@kxswa) 018, server: aiashar1.www.klrxyru.cn, port: 1651, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: 中国(TG频道:@kxswa) 019, server: aiaus1.game.www.klrxyru.cn, port: 1420, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: 中国(TG频道:@kxswa) 020, server: xiamen.udns.cloud, port: 10271, type: ss, cipher: chacha20-ietf-poly1305, password: 31e459a9-4102-455b-9f33-c6dcfc7e64ef, udp: true}
+  - {name: 台湾(TG频道:@kxswa) 002, server: b.tw.hideu.tw, port: 10629, type: ssr, cipher: none, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 139242:c6YW3v, obfs-param: "", udp: true}
+  - {name: 中国(TG频道:@kxswa) 004, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 美国(TG频道:@kxswa) 002, server: 104.243.30.252, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
+  - {name: 韩国(TG频道:@kxswa), server: 3.34.255.166, port: 443, type: vmess, uuid: 391d08b3-b9d6-44b2-8f51-03dff2c761fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 3.34.255.166}}, udp: true}
+  - {name: 美国(TG频道:@kxswa) 003, server: 167.88.61.50, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 台湾(TG频道:@kxswa) 003, server: tw01.henet.cyou, port: 20000, type: vmess, uuid: 7016e349-afae-4ece-a3bb-f02e113d8c8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
+  - {name: 中国(TG频道:@kxswa) 005, server: 106.75.233.91, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: false, udp: true}
+  - {name: 英国(TG频道:@kxswa), server: 54.36.174.181, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 中国(TG频道:@kxswa) 006, server: 106.75.233.91, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: false, udp: true}
+  - {name: 美国(TG频道:@kxswa) 004, server: 38.114.114.19, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国(TG频道:@kxswa) 005, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: (TG频道:@kxswa) 001, server: 36.72img.xyz, port: 443, type: vmess, uuid: b605dc8f-249f-4f08-9793-571acf746dab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 36.72img.xyz}}, udp: true}
+  - {name: 美国(TG频道:@kxswa) 006, server: 38.68.135.18, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 日本(TG频道:@kxswa), server: 85.208.108.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 荷兰(TG频道:@kxswa), server: youtube-bai-piao-wang-zhe.nl.884899.cf, port: 41196, type: trojan, password: 94afcc56-cc1c-4cd4-8c82-1215cd052795, sni: youtube-bai-piao-wang-zhe.nl.884899.cf, skip-cert-verify: false, udp: true}
+  - {name: 中国(TG频道:@kxswa) 007, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 美国(TG频道:@kxswa) 007, server: 38.75.136.21, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国(TG频道:@kxswa) 008, server: su11.chaoxn.top, port: 80, type: vmess, uuid: 9e4a7268-4c66-49d9-b6fb-59e33c8c7c59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: su11.chaoxn.top}}, udp: true}
+  - {name: 中国(TG频道:@kxswa) 008, server: db.xmrthnode.com, port: 42003, type: vmess, uuid: f34f0236-1813-3429-840e-141748f60253, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /th, headers: {Host: 802941729-server.s0.aicdn.com}}, udp: true}
+  - {name: 中国(TG频道:@kxswa) 009, server: 103.56.62.145, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: false, udp: true}
+  - {name: 美国(TG频道:@kxswa) 009, server: 167.88.61.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国(TG频道:@kxswa) 010, server: 38.121.43.71, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国(TG频道:@kxswa) 011, server: 38.114.114.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国(TG频道:@kxswa) 012, server: v116.v2dns.bar, port: 80, type: vmess, uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v116-DtoEwAEX, headers: {Host: v116.v2dns.bar}}, udp: true}
+  - {name: (TG频道:@kxswa) 002, server: 34.72img.xyz, port: 443, type: vmess, uuid: b605dc8f-249f-4f08-9793-571acf746dab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 34.72img.xyz}}, udp: true}
+  - {name: 美国(TG频道:@kxswa) 013, server: 38.75.136.102, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国(TG频道:@kxswa) 014, server: 38.114.114.19, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国(TG频道:@kxswa) 015, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国(TG频道:@kxswa) 016, server: 38.75.136.102, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 中国(TG频道:@kxswa) 010, server: 71.131.222.153, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: a997fd8e-59d7-47cf-afe8-2204bd286017, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
+  - 台湾(TG频道:@kxswa) 001
   - 中国(TG频道:@kxswa) 001
   - 中国(TG频道:@kxswa) 002
   - 中国(TG频道:@kxswa) 003
-  - 卢森堡(TG频道:@kxswa)
-  - 中国(TG频道:@kxswa) 004
-  - 中国(TG频道:@kxswa) 005
-  - 新加坡(TG频道:@kxswa) 001
   - 美国(TG频道:@kxswa) 001
-  - 中国(TG频道:@kxswa) 006
-  - 美国(TG频道:@kxswa) 002
-  - 台湾(TG频道:@kxswa)
-  - 美国(TG频道:@kxswa) 003
   - 香港(TG频道:@kxswa)
+  - 台湾(TG频道:@kxswa) 002
+  - 中国(TG频道:@kxswa) 004
+  - 美国(TG频道:@kxswa) 002
+  - 韩国(TG频道:@kxswa)
+  - 美国(TG频道:@kxswa) 003
+  - 台湾(TG频道:@kxswa) 003
+  - 中国(TG频道:@kxswa) 005
+  - 英国(TG频道:@kxswa)
+  - 中国(TG频道:@kxswa) 006
+  - 美国(TG频道:@kxswa) 004
+  - 美国(TG频道:@kxswa) 005
+  - (TG频道:@kxswa) 001
+  - 美国(TG频道:@kxswa) 006
+  - 日本(TG频道:@kxswa)
+  - 荷兰(TG频道:@kxswa)
   - 中国(TG频道:@kxswa) 007
-  - 新加坡(TG频道:@kxswa) 002
+  - 美国(TG频道:@kxswa) 007
+  - 美国(TG频道:@kxswa) 008
   - 中国(TG频道:@kxswa) 008
   - 中国(TG频道:@kxswa) 009
-  - 俄罗斯联邦(TG频道:@kxswa)
+  - 美国(TG频道:@kxswa) 009
+  - 美国(TG频道:@kxswa) 010
+  - 美国(TG频道:@kxswa) 011
+  - 美国(TG频道:@kxswa) 012
+  - (TG频道:@kxswa) 002
+  - 美国(TG频道:@kxswa) 013
+  - 美国(TG频道:@kxswa) 014
+  - 美国(TG频道:@kxswa) 015
+  - 美国(TG频道:@kxswa) 016
   - 中国(TG频道:@kxswa) 010
-  - 美国(TG频道:@kxswa) 004
-  - 中国(TG频道:@kxswa) 011
-  - 中国(TG频道:@kxswa) 012
-  - 新加坡(TG频道:@kxswa) 003
-  - 中国(TG频道:@kxswa) 013
-  - 中国(TG频道:@kxswa) 014
-  - 中国(TG频道:@kxswa) 015
-  - 中国(TG频道:@kxswa) 016
-  - 中国(TG频道:@kxswa) 017
-  - 捷克(TG频道:@kxswa)
-  - 中国(TG频道:@kxswa) 018
-  - 中国(TG频道:@kxswa) 019
-  - 中国(TG频道:@kxswa) 020
 - name: ♻️ automatic
   type: url-test
   proxies:
+  - 台湾(TG频道:@kxswa) 001
   - 中国(TG频道:@kxswa) 001
   - 中国(TG频道:@kxswa) 002
   - 中国(TG频道:@kxswa) 003
-  - 卢森堡(TG频道:@kxswa)
-  - 中国(TG频道:@kxswa) 004
-  - 中国(TG频道:@kxswa) 005
-  - 新加坡(TG频道:@kxswa) 001
   - 美国(TG频道:@kxswa) 001
-  - 中国(TG频道:@kxswa) 006
-  - 美国(TG频道:@kxswa) 002
-  - 台湾(TG频道:@kxswa)
-  - 美国(TG频道:@kxswa) 003
   - 香港(TG频道:@kxswa)
+  - 台湾(TG频道:@kxswa) 002
+  - 中国(TG频道:@kxswa) 004
+  - 美国(TG频道:@kxswa) 002
+  - 韩国(TG频道:@kxswa)
+  - 美国(TG频道:@kxswa) 003
+  - 台湾(TG频道:@kxswa) 003
+  - 中国(TG频道:@kxswa) 005
+  - 英国(TG频道:@kxswa)
+  - 中国(TG频道:@kxswa) 006
+  - 美国(TG频道:@kxswa) 004
+  - 美国(TG频道:@kxswa) 005
+  - (TG频道:@kxswa) 001
+  - 美国(TG频道:@kxswa) 006
+  - 日本(TG频道:@kxswa)
+  - 荷兰(TG频道:@kxswa)
   - 中国(TG频道:@kxswa) 007
-  - 新加坡(TG频道:@kxswa) 002
+  - 美国(TG频道:@kxswa) 007
+  - 美国(TG频道:@kxswa) 008
   - 中国(TG频道:@kxswa) 008
   - 中国(TG频道:@kxswa) 009
-  - 俄罗斯联邦(TG频道:@kxswa)
+  - 美国(TG频道:@kxswa) 009
+  - 美国(TG频道:@kxswa) 010
+  - 美国(TG频道:@kxswa) 011
+  - 美国(TG频道:@kxswa) 012
+  - (TG频道:@kxswa) 002
+  - 美国(TG频道:@kxswa) 013
+  - 美国(TG频道:@kxswa) 014
+  - 美国(TG频道:@kxswa) 015
+  - 美国(TG频道:@kxswa) 016
   - 中国(TG频道:@kxswa) 010
-  - 美国(TG频道:@kxswa) 004
-  - 中国(TG频道:@kxswa) 011
-  - 中国(TG频道:@kxswa) 012
-  - 新加坡(TG频道:@kxswa) 003
-  - 中国(TG频道:@kxswa) 013
-  - 中国(TG频道:@kxswa) 014
-  - 中国(TG频道:@kxswa) 015
-  - 中国(TG频道:@kxswa) 016
-  - 中国(TG频道:@kxswa) 017
-  - 捷克(TG频道:@kxswa)
-  - 中国(TG频道:@kxswa) 018
-  - 中国(TG频道:@kxswa) 019
-  - 中国(TG频道:@kxswa) 020
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
