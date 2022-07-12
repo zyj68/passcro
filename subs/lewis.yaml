@@ -4,152 +4,119 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 荷兰-tg频道:@bpjzx2-22, server: 85.208.108.59, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-23, server: 38.75.136.21, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-24, server: 38.68.134.85, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-25, server: su4.chaoxn.top, port: 80, type: vmess, uuid: 9e4a7268-4c66-49d9-b6fb-59e33c8c7c59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: su4.chaoxn.top}}, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-26, server: 38.68.135.18, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-27, server: su10.chaoxn.top, port: 80, type: vmess, uuid: 9e4a7268-4c66-49d9-b6fb-59e33c8c7c59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: su10.chaoxn.top}}, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-28, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-29, server: su11.chaoxn.top, port: 80, type: vmess, uuid: 9e4a7268-4c66-49d9-b6fb-59e33c8c7c59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: su11.chaoxn.top}}, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-30, server: 38.68.134.85, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-31, server: s2.520guge.com, port: 443, type: vmess, uuid: cf1819c8-e530-4626-aec0-87ac04200385, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: s2.520guge.com}}, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-32, server: 38.68.134.85, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-33, server: 626sg05.ok365.cyou, port: 80, type: trojan, password: 6f42acc5-995e-4060-9292-f7cc7641a830, skip-cert-verify: false, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-34, server: 38.121.43.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-35, server: 38.114.114.19, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-36, server: 38.68.134.85, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-37, server: 38.68.135.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 荷兰-tg频道:@bpjzx2-38, server: 85.208.108.59, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-39, server: 38.75.136.21, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-40, server: 38.114.114.19, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-41, server: 38.114.114.19, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-42, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-43, server: 38.75.136.102, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 荷兰-tg频道:@bpjzx2-44, server: 85.208.108.59, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 日本-tg频道:@bpjzx2-45, server: 146.56.110.129, port: 26401, type: vmess, uuid: 8906c760-4d98-4301-d84d-5b21937d7d61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 加拿大-tg频道:@bpjzx2-46, server: 625us.ok365.cyou, port: 443, type: trojan, password: 6f42acc5-995e-4060-9292-f7cc7641a830, skip-cert-verify: false, udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-47, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: false, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-48, server: 38.75.136.21, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 荷兰-tg频道:@bpjzx2-49, server: 85.208.108.59, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-50, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, skip-cert-verify: false, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-51, server: 38.114.114.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-52, server: 38.121.43.71, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-53, server: 38.75.136.21, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-54, server: 38.75.136.102, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-55, server: 38.68.134.85, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-56, server: 38.75.136.21, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-57, server: 38.75.136.21, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-58, server: sg-02.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, skip-cert-verify: false, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-59, server: 38.114.114.19, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 荷兰-tg频道:@bpjzx2-60, server: 85.208.108.59, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-61, server: 38.75.136.21, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-62, server: tj-sg02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: false, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-63, server: 38.121.43.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-64, server: 104.243.25.95, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: 日本-tg频道:@bpjzx2-65, server: azhk.r.optage.moe, port: 62501, type: trojan, password: 1a475206-fd91-4a45-ba83-5b23aeacae62, skip-cert-verify: false, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-66, server: 38.68.135.18, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-67, server: 38.75.136.21, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 阿姆斯特丹-tg频道:@bpjzx2-1, server: 120.233.7.233, port: 1700, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 阿姆斯特丹-tg频道:@bpjzx2-2, server: 120.233.7.232, port: 1700, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 法兰福特-tg频道:@bpjzx2-1, server: 120.233.7.233, port: 2403, type: ssr, cipher: aes-256-cfb, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 法兰福特-tg频道:@bpjzx2-2, server: 120.233.7.232, port: 2403, type: ssr, cipher: aes-256-cfb, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 法兰福特-tg频道:@bpjzx2-3, server: 120.233.7.233, port: 2402, type: ssr, cipher: aes-256-cfb, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 法兰福特-tg频道:@bpjzx2-4, server: 120.233.7.232, port: 2402, type: ssr, cipher: aes-256-cfb, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 法兰福特-tg频道:@bpjzx2-5, server: 120.233.7.233, port: 2401, type: ssr, cipher: aes-256-cfb, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 法兰福特-tg频道:@bpjzx2-6, server: 120.233.7.232, port: 2401, type: ssr, cipher: aes-256-cfb, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-1, server: 120.233.7.233, port: 874, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-2, server: 120.233.7.232, port: 874, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-3, server: 120.233.29.214, port: 1801, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-4, server: 120.233.29.214, port: 1800, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-5, server: 120.233.29.213, port: 1800, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-6, server: 120.233.29.212, port: 1800, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-7, server: 120.233.29.211, port: 1800, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-8, server: 120.233.29.210, port: 1800, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-9, server: 120.233.7.233, port: 1159, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-10, server: 120.233.7.232, port: 1159, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-11, server: 120.233.7.233, port: 1158, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-12, server: 120.233.7.232, port: 1158, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-13, server: 120.233.29.214, port: 1098, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-14, server: 120.233.29.213, port: 1098, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-15, server: 120.233.29.212, port: 1098, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-16, server: 120.233.29.211, port: 1098, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 弗里蒙特-tg频道:@bpjzx2-17, server: 120.233.29.210, port: 1098, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 洛杉矶-tg频道:@bpjzx2-1, server: 120.233.29.214, port: 6203, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 洛杉矶-tg频道:@bpjzx2-2, server: 120.233.29.213, port: 6203, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 洛杉矶-tg频道:@bpjzx2-3, server: 120.233.29.212, port: 6203, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 洛杉矶-tg频道:@bpjzx2-4, server: 120.233.29.211, port: 6203, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 洛杉矶-tg频道:@bpjzx2-5, server: 120.233.29.210, port: 6203, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 洛杉矶-tg频道:@bpjzx2-6, server: 120.233.29.214, port: 6202, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 洛杉矶-tg频道:@bpjzx2-7, server: 120.233.29.213, port: 6202, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 洛杉矶-tg频道:@bpjzx2-8, server: 120.233.29.212, port: 6202, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 洛杉矶-tg频道:@bpjzx2-9, server: 120.233.29.211, port: 6202, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
+  - {name: 洛杉矶-tg频道:@bpjzx2-10, server: 120.233.29.210, port: 6202, type: ssr, cipher: rc4-md5, password: v-y=, protocol: auth_aes128_md5, obfs: plain, protocol-param: 138565:9630., obfs-param: "", udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 荷兰-tg频道:@bpjzx2-22
-  - 美国-tg频道:@bpjzx2-23
-  - 美国-tg频道:@bpjzx2-24
-  - 美国-tg频道:@bpjzx2-25
-  - 美国-tg频道:@bpjzx2-26
-  - 美国-tg频道:@bpjzx2-27
-  - 美国-tg频道:@bpjzx2-28
-  - 美国-tg频道:@bpjzx2-29
-  - 美国-tg频道:@bpjzx2-30
-  - 美国-tg频道:@bpjzx2-31
-  - 美国-tg频道:@bpjzx2-32
-  - 新加坡-tg频道:@bpjzx2-33
-  - 美国-tg频道:@bpjzx2-34
-  - 美国-tg频道:@bpjzx2-35
-  - 美国-tg频道:@bpjzx2-36
-  - 美国-tg频道:@bpjzx2-37
-  - 荷兰-tg频道:@bpjzx2-38
-  - 美国-tg频道:@bpjzx2-39
-  - 美国-tg频道:@bpjzx2-40
-  - 美国-tg频道:@bpjzx2-41
-  - 美国-tg频道:@bpjzx2-42
-  - 美国-tg频道:@bpjzx2-43
-  - 荷兰-tg频道:@bpjzx2-44
-  - 日本-tg频道:@bpjzx2-45
-  - 加拿大-tg频道:@bpjzx2-46
-  - 台湾-tg频道:@bpjzx2-47
-  - 美国-tg频道:@bpjzx2-48
-  - 荷兰-tg频道:@bpjzx2-49
-  - 美国-tg频道:@bpjzx2-50
-  - 美国-tg频道:@bpjzx2-51
-  - 美国-tg频道:@bpjzx2-52
-  - 美国-tg频道:@bpjzx2-53
-  - 美国-tg频道:@bpjzx2-54
-  - 美国-tg频道:@bpjzx2-55
-  - 美国-tg频道:@bpjzx2-56
-  - 美国-tg频道:@bpjzx2-57
-  - 新加坡-tg频道:@bpjzx2-58
-  - 美国-tg频道:@bpjzx2-59
-  - 荷兰-tg频道:@bpjzx2-60
-  - 美国-tg频道:@bpjzx2-61
-  - 美国-tg频道:@bpjzx2-62
-  - 美国-tg频道:@bpjzx2-63
-  - 美国-tg频道:@bpjzx2-64
-  - 日本-tg频道:@bpjzx2-65
-  - 美国-tg频道:@bpjzx2-66
-  - 美国-tg频道:@bpjzx2-67
+  - 阿姆斯特丹-tg频道:@bpjzx2-1
+  - 阿姆斯特丹-tg频道:@bpjzx2-2
+  - 法兰福特-tg频道:@bpjzx2-1
+  - 法兰福特-tg频道:@bpjzx2-2
+  - 法兰福特-tg频道:@bpjzx2-3
+  - 法兰福特-tg频道:@bpjzx2-4
+  - 法兰福特-tg频道:@bpjzx2-5
+  - 法兰福特-tg频道:@bpjzx2-6
+  - 弗里蒙特-tg频道:@bpjzx2-1
+  - 弗里蒙特-tg频道:@bpjzx2-2
+  - 弗里蒙特-tg频道:@bpjzx2-3
+  - 弗里蒙特-tg频道:@bpjzx2-4
+  - 弗里蒙特-tg频道:@bpjzx2-5
+  - 弗里蒙特-tg频道:@bpjzx2-6
+  - 弗里蒙特-tg频道:@bpjzx2-7
+  - 弗里蒙特-tg频道:@bpjzx2-8
+  - 弗里蒙特-tg频道:@bpjzx2-9
+  - 弗里蒙特-tg频道:@bpjzx2-10
+  - 弗里蒙特-tg频道:@bpjzx2-11
+  - 弗里蒙特-tg频道:@bpjzx2-12
+  - 弗里蒙特-tg频道:@bpjzx2-13
+  - 弗里蒙特-tg频道:@bpjzx2-14
+  - 弗里蒙特-tg频道:@bpjzx2-15
+  - 弗里蒙特-tg频道:@bpjzx2-16
+  - 弗里蒙特-tg频道:@bpjzx2-17
+  - 洛杉矶-tg频道:@bpjzx2-1
+  - 洛杉矶-tg频道:@bpjzx2-2
+  - 洛杉矶-tg频道:@bpjzx2-3
+  - 洛杉矶-tg频道:@bpjzx2-4
+  - 洛杉矶-tg频道:@bpjzx2-5
+  - 洛杉矶-tg频道:@bpjzx2-6
+  - 洛杉矶-tg频道:@bpjzx2-7
+  - 洛杉矶-tg频道:@bpjzx2-8
+  - 洛杉矶-tg频道:@bpjzx2-9
+  - 洛杉矶-tg频道:@bpjzx2-10
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 荷兰-tg频道:@bpjzx2-22
-  - 美国-tg频道:@bpjzx2-23
-  - 美国-tg频道:@bpjzx2-24
-  - 美国-tg频道:@bpjzx2-25
-  - 美国-tg频道:@bpjzx2-26
-  - 美国-tg频道:@bpjzx2-27
-  - 美国-tg频道:@bpjzx2-28
-  - 美国-tg频道:@bpjzx2-29
-  - 美国-tg频道:@bpjzx2-30
-  - 美国-tg频道:@bpjzx2-31
-  - 美国-tg频道:@bpjzx2-32
-  - 新加坡-tg频道:@bpjzx2-33
-  - 美国-tg频道:@bpjzx2-34
-  - 美国-tg频道:@bpjzx2-35
-  - 美国-tg频道:@bpjzx2-36
-  - 美国-tg频道:@bpjzx2-37
-  - 荷兰-tg频道:@bpjzx2-38
-  - 美国-tg频道:@bpjzx2-39
-  - 美国-tg频道:@bpjzx2-40
-  - 美国-tg频道:@bpjzx2-41
-  - 美国-tg频道:@bpjzx2-42
-  - 美国-tg频道:@bpjzx2-43
-  - 荷兰-tg频道:@bpjzx2-44
-  - 日本-tg频道:@bpjzx2-45
-  - 加拿大-tg频道:@bpjzx2-46
-  - 台湾-tg频道:@bpjzx2-47
-  - 美国-tg频道:@bpjzx2-48
-  - 荷兰-tg频道:@bpjzx2-49
-  - 美国-tg频道:@bpjzx2-50
-  - 美国-tg频道:@bpjzx2-51
-  - 美国-tg频道:@bpjzx2-52
-  - 美国-tg频道:@bpjzx2-53
-  - 美国-tg频道:@bpjzx2-54
-  - 美国-tg频道:@bpjzx2-55
-  - 美国-tg频道:@bpjzx2-56
-  - 美国-tg频道:@bpjzx2-57
-  - 新加坡-tg频道:@bpjzx2-58
-  - 美国-tg频道:@bpjzx2-59
-  - 荷兰-tg频道:@bpjzx2-60
-  - 美国-tg频道:@bpjzx2-61
-  - 美国-tg频道:@bpjzx2-62
-  - 美国-tg频道:@bpjzx2-63
-  - 美国-tg频道:@bpjzx2-64
-  - 日本-tg频道:@bpjzx2-65
-  - 美国-tg频道:@bpjzx2-66
-  - 美国-tg频道:@bpjzx2-67
+  - 阿姆斯特丹-tg频道:@bpjzx2-1
+  - 阿姆斯特丹-tg频道:@bpjzx2-2
+  - 法兰福特-tg频道:@bpjzx2-1
+  - 法兰福特-tg频道:@bpjzx2-2
+  - 法兰福特-tg频道:@bpjzx2-3
+  - 法兰福特-tg频道:@bpjzx2-4
+  - 法兰福特-tg频道:@bpjzx2-5
+  - 法兰福特-tg频道:@bpjzx2-6
+  - 弗里蒙特-tg频道:@bpjzx2-1
+  - 弗里蒙特-tg频道:@bpjzx2-2
+  - 弗里蒙特-tg频道:@bpjzx2-3
+  - 弗里蒙特-tg频道:@bpjzx2-4
+  - 弗里蒙特-tg频道:@bpjzx2-5
+  - 弗里蒙特-tg频道:@bpjzx2-6
+  - 弗里蒙特-tg频道:@bpjzx2-7
+  - 弗里蒙特-tg频道:@bpjzx2-8
+  - 弗里蒙特-tg频道:@bpjzx2-9
+  - 弗里蒙特-tg频道:@bpjzx2-10
+  - 弗里蒙特-tg频道:@bpjzx2-11
+  - 弗里蒙特-tg频道:@bpjzx2-12
+  - 弗里蒙特-tg频道:@bpjzx2-13
+  - 弗里蒙特-tg频道:@bpjzx2-14
+  - 弗里蒙特-tg频道:@bpjzx2-15
+  - 弗里蒙特-tg频道:@bpjzx2-16
+  - 弗里蒙特-tg频道:@bpjzx2-17
+  - 洛杉矶-tg频道:@bpjzx2-1
+  - 洛杉矶-tg频道:@bpjzx2-2
+  - 洛杉矶-tg频道:@bpjzx2-3
+  - 洛杉矶-tg频道:@bpjzx2-4
+  - 洛杉矶-tg频道:@bpjzx2-5
+  - 洛杉矶-tg频道:@bpjzx2-6
+  - 洛杉矶-tg频道:@bpjzx2-7
+  - 洛杉矶-tg频道:@bpjzx2-8
+  - 洛杉矶-tg频道:@bpjzx2-9
+  - 洛杉矶-tg频道:@bpjzx2-10
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
