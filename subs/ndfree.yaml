@@ -4,338 +4,137 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇺🇸 US_1470 |nodefree.org免费节点日更, server: 51.81.223.0, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1173 |nodefree.org免费节点日更, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 US_998 |nodefree.org免费节点日更, server: 38.114.114.19, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 US_1448 |nodefree.org免费节点日更, server: 51.81.223.17, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1452 |nodefree.org免费节点日更, server: 51.81.223.12, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1293 |nodefree.org免费节点日更, server: 167.88.61.50, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 US_1106 |nodefree.org免费节点日更, server: 38.68.135.18, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 US_1484 |nodefree.org免费节点日更, server: 51.81.223.29, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1457 |nodefree.org免费节点日更, server: 51.81.223.32, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1430 |nodefree.org免费节点日更, server: 38.68.134.85, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 US_1359 |nodefree.org免费节点日更, server: 38.114.114.19, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 US_1439 |nodefree.org免费节点日更, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 US_1274 | nodefree.org免费节点日更, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 US_1292 | nodefree.org免费节点日更, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 US_1073 | nodefree.org免费节点日更, server: 38.75.136.102, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 US_1264 |nodefree.org免费节点日更, server: 38.114.114.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 US_1471 |nodefree.org免费节点日更, server: 51.81.223.19, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1061 | nodefree.org免费节点日更, server: 38.75.136.102, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 US_1447 |nodefree.org免费节点日更, server: 51.81.223.21, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1467 |nodefree.org免费节点日更, server: 51.81.223.26, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1161 | nodefree.org免费节点日更, server: 38.68.134.85, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇳🇱 NL_717 |nodefree.org免费节点日更, server: youtube-bai-piao-wang-zhe.nl.884899.cf, port: 41196, type: trojan, password: 94afcc56-cc1c-4cd4-8c82-1215cd052795, skip-cert-verify: false}
-  - {name: 🇺🇸 US_990 |nodefree.org免费节点日更, server: 38.68.134.85, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 US_975 |nodefree.org免费节点日更, server: 38.121.43.71, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 US_1348 |nodefree.org免费节点日更, server: 38.75.136.21, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 US_1053 |nodefree.org免费节点日更, server: 38.75.136.102, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 US_1415 | nodefree.org免费节点日更, server: 167.88.61.50, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇺🇸 US_1321 |nodefree.org免费节点日更, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 US_1323 |nodefree.org免费节点日更, server: 38.121.43.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 US_948 |nodefree.org免费节点日更, server: 167.88.61.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 US_1131 |nodefree.org免费节点日更, server: 38.121.43.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 US_1273 |nodefree.org免费节点日更, server: 38.75.136.21, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 US_1309 |nodefree.org免费节点日更, server: 167.88.61.2, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇸 US_932 |nodefree.org免费节点日更, server: 167.88.61.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 US_991 | nodefree.org免费节点日更, server: 38.75.136.102, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇫🇷 FR_408 |nodefree.org免费节点日更, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 US_1398 |nodefree.org免费节点日更, server: 38.68.135.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 US_1320 |nodefree.org免费节点日更, server: 38.121.43.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇨🇦 CA_215 | nodefree.org免费节点日更, server: 625tw.ok365.cyou, port: 443, type: trojan, password: 6f42acc5-995e-4060-9292-f7cc7641a830, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1051 |nodefree.org免费节点日更, server: 38.68.134.85, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇸🇬 SG_898 | nodefree.org免费节点日更, server: 626sg05.ok365.cyou, port: 80, type: trojan, password: 6f42acc5-995e-4060-9292-f7cc7641a830, skip-cert-verify: false}
-  - {name: 🇸🇬 SG_875 |nodefree.org免费节点日更, server: 194.124.35.23, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇸 US_1472 |nodefree.org免费节点日更, server: 51.81.223.15, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1464 |nodefree.org免费节点日更, server: 51.81.223.18, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1474 |nodefree.org免费节点日更, server: 51.81.223.25, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1445 |nodefree.org免费节点日更, server: 51.81.223.6, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1455 |nodefree.org免费节点日更, server: 51.81.223.20, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1480 |nodefree.org免费节点日更, server: 51.81.223.36, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1483 |nodefree.org免费节点日更, server: 51.81.223.13, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1318 | nodefree.org免费节点日更, server: 167.88.61.2, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇸 US_1529 | nodefree.org免费节点日更, server: usfree1.jiantian.xyz, port: 23425, type: trojan, password: 27e58714-2c0b-4fa4-afb6-b91ec041b1cf, skip-cert-verify: false}
-  - {name: 🇺🇸 US_953 |nodefree.org免费节点日更, server: 38.75.136.21, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 US_1129 |nodefree.org免费节点日更, server: 38.75.136.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 US_1466 |nodefree.org免费节点日更, server: 51.81.223.31, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1473 |nodefree.org免费节点日更, server: 51.81.223.4, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1454 |nodefree.org免费节点日更, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1285 |nodefree.org免费节点日更, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 US_1251 |nodefree.org免费节点日更, server: 38.114.114.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇺🇸 US_1054 |nodefree.org免费节点日更, server: 38.75.136.102, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 US_1140 |nodefree.org免费节点日更, server: 38.75.136.102, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 US_1105 |nodefree.org免费节点日更, server: 38.68.135.18, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 US_1155 |nodefree.org免费节点日更, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇨🇦 CA_213 | nodefree.org免费节点日更, server: 625us.ok365.cyou, port: 443, type: trojan, password: 6f42acc5-995e-4060-9292-f7cc7641a830, skip-cert-verify: false}
-  - {name: 🇺🇸 US_1334 |nodefree.org免费节点日更, server: 38.75.136.21, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇳🇱 NL_666 |nodefree.org免费节点日更, server: 85.208.108.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 US_1453 | nodefree.org免费节点日更, server: vfly8.win, port: 443, type: vmess, uuid: 8fc94fe3-cfb1-4bc7-e43b-26d4d1e5f4cd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /myblog, headers: {Host: vfly8.win}}}
-  - {name: 🇦🇺 AU_104 | nodefree.org免费节点日更, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
-  - {name: 🇺🇸 US_1381 |nodefree.org免费节点日更, server: 38.114.114.19, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 US_1243 | nodefree.org免费节点日更, server: 38.75.136.21, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 US_1412 |nodefree.org免费节点日更, server: 38.75.136.102, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇺🇸 US_1383 |nodefree.org免费节点日更, server: 38.114.114.19, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 US_1077 | nodefree.org免费节点日更, server: 38.75.136.102, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇺🇸 US_1262 |nodefree.org免费节点日更, server: 38.114.114.19, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 US_1409 |nodefree.org免费节点日更, server: 38.68.135.18, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 US_1378 |nodefree.org免费节点日更, server: 38.114.114.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 US_1313 | nodefree.org免费节点日更, server: 167.88.61.2, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇸 US_1246 |nodefree.org免费节点日更, server: 38.75.136.102, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 US_1414 |nodefree.org免费节点日更, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
-  - {name: 🇺🇸 US_1072 |nodefree.org免费节点日更, server: 38.75.136.102, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇺🇸 US_1305 |nodefree.org免费节点日更, server: 38.121.43.71, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 US_1388 |nodefree.org免费节点日更, server: 38.68.134.85, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 US_936 |nodefree.org免费节点日更, server: 38.121.43.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇫🇷 FR_373 |nodefree.org免费节点日更, server: 54.36.174.181, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇺🇸 US_1071 |nodefree.org免费节点日更, server: 38.75.136.102, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 US_1314 |nodefree.org免费节点日更, server: 167.88.61.2, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇸 US_1075 | nodefree.org免费节点日更, server: 38.75.136.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 US_979 |nodefree.org免费节点日更, server: 38.75.136.102, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇺🇸 US_1400 |nodefree.org免费节点日更, server: 38.68.135.18, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 US_1317 |nodefree.org免费节点日更, server: 167.88.61.2, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇸 US_1278 |nodefree.org免费节点日更, server: 38.121.43.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 US_934 |nodefree.org免费节点日更, server: 38.121.43.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 US_1067 | nodefree.org免费节点日更, server: 38.75.136.102, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 US_1056 |nodefree.org免费节点日更, server: 38.121.43.71, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 US_1050 |nodefree.org免费节点日更, server: 38.68.135.18, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 US_1079 |nodefree.org免费节点日更, server: 167.88.61.50, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 US_960 |nodefree.org免费节点日更, server: 167.88.61.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 US_1269 | nodefree.org免费节点日更, server: 38.114.114.19, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 US_1271 | nodefree.org免费节点日更, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 US_1063 | nodefree.org免费节点日更, server: 38.75.136.102, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 US_1081 |nodefree.org免费节点日更, server: 167.88.61.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 US_1380 |nodefree.org免费节点日更, server: 38.114.114.19, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 US_1419 |nodefree.org免费节点日更, server: 167.88.61.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 US_980 | nodefree.org免费节点日更, server: 38.68.134.85, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇺🇸 US_1023 |nodefree.org免费节点日更, server: 38.114.114.19, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 US_1009 | nodefree.org免费节点日更, server: 38.114.114.19, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 US_1008 |nodefree.org免费节点日更, server: 38.114.114.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 US_1349 |nodefree.org免费节点日更, server: 38.114.114.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 US_955 |nodefree.org免费节点日更, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇸🇬 新加坡(nodefree.org免费节点日更), server: bai-piao-wang-zhe.us.567568.ml, port: 19568, type: trojan, password: AglrNchEnS, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡(nodefree.org免费节点日更) 2, server: bai-piao-wang-zhe.us.567568.ml, port: 12337, type: trojan, password: df8ebf95-bd60-4f7e-a505-fe8db5ba3342, skip-cert-verify: false}
+  - {name: 🇯🇵 欧洲(nodefree.org免费节点日更), server: 85.208.108.20, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更), server: 194.156.231.251, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 2, server: 85.208.108.21, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 3, server: 85.208.108.21, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇯🇵 欧洲(nodefree.org免费节点日更) 2, server: jgwld4.gaox.ml, port: 443, type: trojan, password: 58d32c66-43b1-4561-9951-d87c9123774e, sni: jgwld4.gaox.ml, skip-cert-verify: false}
+  - {name: 🇯🇵 美国(nodefree.org免费节点日更), server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: false}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 4, server: 85.208.108.59, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇯🇵 沙特(nodefree.org免费节点日更), server: 85.208.108.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇸🇬 新加坡(nodefree.org免费节点日更) 3, server: 194.156.231.223, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 5, server: 85.208.108.21, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇯🇵 波兰(nodefree.org免费节点日更), server: 54.36.174.181, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇯🇵 加拿大(nodefree.org免费节点日更), server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 6, server: 194.156.231.251, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 法国(nodefree.org免费节点日更), server: 51.38.118.42, port: 817, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 7, server: 194.156.231.223, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 法国(nodefree.org免费节点日更) 2, server: 51.38.118.42, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: 🇯🇵 法国(nodefree.org免费节点日更) 3, server: 51.38.118.42, port: 818, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: 🇯🇵 法国(nodefree.org免费节点日更) 4, server: 51.38.118.42, port: 819, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: 🇸🇬 新加坡(nodefree.org免费节点日更) 4, server: 194.156.231.223, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 法国(nodefree.org免费节点日更) 5, server: 51.38.118.42, port: 813, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 8, server: 89.31.126.31, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 法国(nodefree.org免费节点日更) 6, server: 51.38.118.42, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 9, server: 5.183.176.92, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 法国(nodefree.org免费节点日更) 7, server: 51.38.118.42, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 10, server: 5.183.176.92, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 11, server: 5.183.176.92, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 12, server: 5.183.176.92, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 13, server: 5.183.176.92, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 新加坡(nodefree.org免费节点日更) 5, server: 81.90.189.7, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 欧洲(nodefree.org免费节点日更) 3, server: v2cross.com.02.v2ce.com, port: 443, type: trojan, password: 3gLlCYBipVwr6Y5F, skip-cert-verify: false}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 14, server: 5.183.176.92, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本(nodefree.org免费节点日更) 15, server: 5.183.176.92, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 新加坡(nodefree.org免费节点日更) 6, server: 194.124.35.23, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 美国(nodefree.org免费节点日更) 2, server: 92.38.176.81, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: 🇸🇬 新加坡(nodefree.org免费节点日更) 7, server: 194.124.35.23, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 新加坡(nodefree.org免费节点日更) 8, server: 194.124.35.23, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 新加坡(nodefree.org免费节点日更) 9, server: 194.124.35.23, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 新加坡(nodefree.org免费节点日更) 10, server: 81.90.189.7, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 新加坡(nodefree.org免费节点日更) 11, server: 81.90.189.7, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 🇺🇸 US_1470 |nodefree.org免费节点日更
-  - 🇺🇸 US_1173 |nodefree.org免费节点日更
-  - 🇺🇸 US_998 |nodefree.org免费节点日更
-  - 🇺🇸 US_1448 |nodefree.org免费节点日更
-  - 🇺🇸 US_1452 |nodefree.org免费节点日更
-  - 🇺🇸 US_1293 |nodefree.org免费节点日更
-  - 🇺🇸 US_1106 |nodefree.org免费节点日更
-  - 🇺🇸 US_1484 |nodefree.org免费节点日更
-  - 🇺🇸 US_1457 |nodefree.org免费节点日更
-  - 🇺🇸 US_1430 |nodefree.org免费节点日更
-  - 🇺🇸 US_1359 |nodefree.org免费节点日更
-  - 🇺🇸 US_1439 |nodefree.org免费节点日更
-  - 🇺🇸 US_1274 | nodefree.org免费节点日更
-  - 🇺🇸 US_1292 | nodefree.org免费节点日更
-  - 🇺🇸 US_1073 | nodefree.org免费节点日更
-  - 🇺🇸 US_1264 |nodefree.org免费节点日更
-  - 🇺🇸 US_1471 |nodefree.org免费节点日更
-  - 🇺🇸 US_1061 | nodefree.org免费节点日更
-  - 🇺🇸 US_1447 |nodefree.org免费节点日更
-  - 🇺🇸 US_1467 |nodefree.org免费节点日更
-  - 🇺🇸 US_1161 | nodefree.org免费节点日更
-  - 🇳🇱 NL_717 |nodefree.org免费节点日更
-  - 🇺🇸 US_990 |nodefree.org免费节点日更
-  - 🇺🇸 US_975 |nodefree.org免费节点日更
-  - 🇺🇸 US_1348 |nodefree.org免费节点日更
-  - 🇺🇸 US_1053 |nodefree.org免费节点日更
-  - 🇺🇸 US_1415 | nodefree.org免费节点日更
-  - 🇺🇸 US_1321 |nodefree.org免费节点日更
-  - 🇺🇸 US_1323 |nodefree.org免费节点日更
-  - 🇺🇸 US_948 |nodefree.org免费节点日更
-  - 🇺🇸 US_1131 |nodefree.org免费节点日更
-  - 🇺🇸 US_1273 |nodefree.org免费节点日更
-  - 🇺🇸 US_1309 |nodefree.org免费节点日更
-  - 🇺🇸 US_932 |nodefree.org免费节点日更
-  - 🇺🇸 US_991 | nodefree.org免费节点日更
-  - 🇫🇷 FR_408 |nodefree.org免费节点日更
-  - 🇺🇸 US_1398 |nodefree.org免费节点日更
-  - 🇺🇸 US_1320 |nodefree.org免费节点日更
-  - 🇨🇦 CA_215 | nodefree.org免费节点日更
-  - 🇺🇸 US_1051 |nodefree.org免费节点日更
-  - 🇸🇬 SG_898 | nodefree.org免费节点日更
-  - 🇸🇬 SG_875 |nodefree.org免费节点日更
-  - 🇺🇸 US_1472 |nodefree.org免费节点日更
-  - 🇺🇸 US_1464 |nodefree.org免费节点日更
-  - 🇺🇸 US_1474 |nodefree.org免费节点日更
-  - 🇺🇸 US_1445 |nodefree.org免费节点日更
-  - 🇺🇸 US_1455 |nodefree.org免费节点日更
-  - 🇺🇸 US_1480 |nodefree.org免费节点日更
-  - 🇺🇸 US_1483 |nodefree.org免费节点日更
-  - 🇺🇸 US_1318 | nodefree.org免费节点日更
-  - 🇺🇸 US_1529 | nodefree.org免费节点日更
-  - 🇺🇸 US_953 |nodefree.org免费节点日更
-  - 🇺🇸 US_1129 |nodefree.org免费节点日更
-  - 🇺🇸 US_1466 |nodefree.org免费节点日更
-  - 🇺🇸 US_1473 |nodefree.org免费节点日更
-  - 🇺🇸 US_1454 |nodefree.org免费节点日更
-  - 🇺🇸 US_1285 |nodefree.org免费节点日更
-  - 🇺🇸 US_1251 |nodefree.org免费节点日更
-  - 🇺🇸 US_1054 |nodefree.org免费节点日更
-  - 🇺🇸 US_1140 |nodefree.org免费节点日更
-  - 🇺🇸 US_1105 |nodefree.org免费节点日更
-  - 🇺🇸 US_1155 |nodefree.org免费节点日更
-  - 🇨🇦 CA_213 | nodefree.org免费节点日更
-  - 🇺🇸 US_1334 |nodefree.org免费节点日更
-  - 🇳🇱 NL_666 |nodefree.org免费节点日更
-  - 🇺🇸 US_1453 | nodefree.org免费节点日更
-  - 🇦🇺 AU_104 | nodefree.org免费节点日更
-  - 🇺🇸 US_1381 |nodefree.org免费节点日更
-  - 🇺🇸 US_1243 | nodefree.org免费节点日更
-  - 🇺🇸 US_1412 |nodefree.org免费节点日更
-  - 🇺🇸 US_1383 |nodefree.org免费节点日更
-  - 🇺🇸 US_1077 | nodefree.org免费节点日更
-  - 🇺🇸 US_1262 |nodefree.org免费节点日更
-  - 🇺🇸 US_1409 |nodefree.org免费节点日更
-  - 🇺🇸 US_1378 |nodefree.org免费节点日更
-  - 🇺🇸 US_1313 | nodefree.org免费节点日更
-  - 🇺🇸 US_1246 |nodefree.org免费节点日更
-  - 🇺🇸 US_1414 |nodefree.org免费节点日更
-  - 🇺🇸 US_1072 |nodefree.org免费节点日更
-  - 🇺🇸 US_1305 |nodefree.org免费节点日更
-  - 🇺🇸 US_1388 |nodefree.org免费节点日更
-  - 🇺🇸 US_936 |nodefree.org免费节点日更
-  - 🇫🇷 FR_373 |nodefree.org免费节点日更
-  - 🇺🇸 US_1071 |nodefree.org免费节点日更
-  - 🇺🇸 US_1314 |nodefree.org免费节点日更
-  - 🇺🇸 US_1075 | nodefree.org免费节点日更
-  - 🇺🇸 US_979 |nodefree.org免费节点日更
-  - 🇺🇸 US_1400 |nodefree.org免费节点日更
-  - 🇺🇸 US_1317 |nodefree.org免费节点日更
-  - 🇺🇸 US_1278 |nodefree.org免费节点日更
-  - 🇺🇸 US_934 |nodefree.org免费节点日更
-  - 🇺🇸 US_1067 | nodefree.org免费节点日更
-  - 🇺🇸 US_1056 |nodefree.org免费节点日更
-  - 🇺🇸 US_1050 |nodefree.org免费节点日更
-  - 🇺🇸 US_1079 |nodefree.org免费节点日更
-  - 🇺🇸 US_960 |nodefree.org免费节点日更
-  - 🇺🇸 US_1269 | nodefree.org免费节点日更
-  - 🇺🇸 US_1271 | nodefree.org免费节点日更
-  - 🇺🇸 US_1063 | nodefree.org免费节点日更
-  - 🇺🇸 US_1081 |nodefree.org免费节点日更
-  - 🇺🇸 US_1380 |nodefree.org免费节点日更
-  - 🇺🇸 US_1419 |nodefree.org免费节点日更
-  - 🇺🇸 US_980 | nodefree.org免费节点日更
-  - 🇺🇸 US_1023 |nodefree.org免费节点日更
-  - 🇺🇸 US_1009 | nodefree.org免费节点日更
-  - 🇺🇸 US_1008 |nodefree.org免费节点日更
-  - 🇺🇸 US_1349 |nodefree.org免费节点日更
-  - 🇺🇸 US_955 |nodefree.org免费节点日更
+  - 🇸🇬 新加坡(nodefree.org免费节点日更)
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 2
+  - 🇯🇵 欧洲(nodefree.org免费节点日更)
+  - 🇯🇵 日本(nodefree.org免费节点日更)
+  - 🇯🇵 日本(nodefree.org免费节点日更) 2
+  - 🇯🇵 日本(nodefree.org免费节点日更) 3
+  - 🇯🇵 欧洲(nodefree.org免费节点日更) 2
+  - 🇯🇵 美国(nodefree.org免费节点日更)
+  - 🇯🇵 日本(nodefree.org免费节点日更) 4
+  - 🇯🇵 沙特(nodefree.org免费节点日更)
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 3
+  - 🇯🇵 日本(nodefree.org免费节点日更) 5
+  - 🇯🇵 波兰(nodefree.org免费节点日更)
+  - 🇯🇵 加拿大(nodefree.org免费节点日更)
+  - 🇯🇵 日本(nodefree.org免费节点日更) 6
+  - 🇯🇵 法国(nodefree.org免费节点日更)
+  - 🇯🇵 日本(nodefree.org免费节点日更) 7
+  - 🇯🇵 法国(nodefree.org免费节点日更) 2
+  - 🇯🇵 法国(nodefree.org免费节点日更) 3
+  - 🇯🇵 法国(nodefree.org免费节点日更) 4
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 4
+  - 🇯🇵 法国(nodefree.org免费节点日更) 5
+  - 🇯🇵 日本(nodefree.org免费节点日更) 8
+  - 🇯🇵 法国(nodefree.org免费节点日更) 6
+  - 🇯🇵 日本(nodefree.org免费节点日更) 9
+  - 🇯🇵 法国(nodefree.org免费节点日更) 7
+  - 🇯🇵 日本(nodefree.org免费节点日更) 10
+  - 🇯🇵 日本(nodefree.org免费节点日更) 11
+  - 🇯🇵 日本(nodefree.org免费节点日更) 12
+  - 🇯🇵 日本(nodefree.org免费节点日更) 13
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 5
+  - 🇯🇵 欧洲(nodefree.org免费节点日更) 3
+  - 🇯🇵 日本(nodefree.org免费节点日更) 14
+  - 🇯🇵 日本(nodefree.org免费节点日更) 15
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 6
+  - 🇯🇵 美国(nodefree.org免费节点日更) 2
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 7
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 8
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 9
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 10
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 11
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 🇺🇸 US_1470 |nodefree.org免费节点日更
-  - 🇺🇸 US_1173 |nodefree.org免费节点日更
-  - 🇺🇸 US_998 |nodefree.org免费节点日更
-  - 🇺🇸 US_1448 |nodefree.org免费节点日更
-  - 🇺🇸 US_1452 |nodefree.org免费节点日更
-  - 🇺🇸 US_1293 |nodefree.org免费节点日更
-  - 🇺🇸 US_1106 |nodefree.org免费节点日更
-  - 🇺🇸 US_1484 |nodefree.org免费节点日更
-  - 🇺🇸 US_1457 |nodefree.org免费节点日更
-  - 🇺🇸 US_1430 |nodefree.org免费节点日更
-  - 🇺🇸 US_1359 |nodefree.org免费节点日更
-  - 🇺🇸 US_1439 |nodefree.org免费节点日更
-  - 🇺🇸 US_1274 | nodefree.org免费节点日更
-  - 🇺🇸 US_1292 | nodefree.org免费节点日更
-  - 🇺🇸 US_1073 | nodefree.org免费节点日更
-  - 🇺🇸 US_1264 |nodefree.org免费节点日更
-  - 🇺🇸 US_1471 |nodefree.org免费节点日更
-  - 🇺🇸 US_1061 | nodefree.org免费节点日更
-  - 🇺🇸 US_1447 |nodefree.org免费节点日更
-  - 🇺🇸 US_1467 |nodefree.org免费节点日更
-  - 🇺🇸 US_1161 | nodefree.org免费节点日更
-  - 🇳🇱 NL_717 |nodefree.org免费节点日更
-  - 🇺🇸 US_990 |nodefree.org免费节点日更
-  - 🇺🇸 US_975 |nodefree.org免费节点日更
-  - 🇺🇸 US_1348 |nodefree.org免费节点日更
-  - 🇺🇸 US_1053 |nodefree.org免费节点日更
-  - 🇺🇸 US_1415 | nodefree.org免费节点日更
-  - 🇺🇸 US_1321 |nodefree.org免费节点日更
-  - 🇺🇸 US_1323 |nodefree.org免费节点日更
-  - 🇺🇸 US_948 |nodefree.org免费节点日更
-  - 🇺🇸 US_1131 |nodefree.org免费节点日更
-  - 🇺🇸 US_1273 |nodefree.org免费节点日更
-  - 🇺🇸 US_1309 |nodefree.org免费节点日更
-  - 🇺🇸 US_932 |nodefree.org免费节点日更
-  - 🇺🇸 US_991 | nodefree.org免费节点日更
-  - 🇫🇷 FR_408 |nodefree.org免费节点日更
-  - 🇺🇸 US_1398 |nodefree.org免费节点日更
-  - 🇺🇸 US_1320 |nodefree.org免费节点日更
-  - 🇨🇦 CA_215 | nodefree.org免费节点日更
-  - 🇺🇸 US_1051 |nodefree.org免费节点日更
-  - 🇸🇬 SG_898 | nodefree.org免费节点日更
-  - 🇸🇬 SG_875 |nodefree.org免费节点日更
-  - 🇺🇸 US_1472 |nodefree.org免费节点日更
-  - 🇺🇸 US_1464 |nodefree.org免费节点日更
-  - 🇺🇸 US_1474 |nodefree.org免费节点日更
-  - 🇺🇸 US_1445 |nodefree.org免费节点日更
-  - 🇺🇸 US_1455 |nodefree.org免费节点日更
-  - 🇺🇸 US_1480 |nodefree.org免费节点日更
-  - 🇺🇸 US_1483 |nodefree.org免费节点日更
-  - 🇺🇸 US_1318 | nodefree.org免费节点日更
-  - 🇺🇸 US_1529 | nodefree.org免费节点日更
-  - 🇺🇸 US_953 |nodefree.org免费节点日更
-  - 🇺🇸 US_1129 |nodefree.org免费节点日更
-  - 🇺🇸 US_1466 |nodefree.org免费节点日更
-  - 🇺🇸 US_1473 |nodefree.org免费节点日更
-  - 🇺🇸 US_1454 |nodefree.org免费节点日更
-  - 🇺🇸 US_1285 |nodefree.org免费节点日更
-  - 🇺🇸 US_1251 |nodefree.org免费节点日更
-  - 🇺🇸 US_1054 |nodefree.org免费节点日更
-  - 🇺🇸 US_1140 |nodefree.org免费节点日更
-  - 🇺🇸 US_1105 |nodefree.org免费节点日更
-  - 🇺🇸 US_1155 |nodefree.org免费节点日更
-  - 🇨🇦 CA_213 | nodefree.org免费节点日更
-  - 🇺🇸 US_1334 |nodefree.org免费节点日更
-  - 🇳🇱 NL_666 |nodefree.org免费节点日更
-  - 🇺🇸 US_1453 | nodefree.org免费节点日更
-  - 🇦🇺 AU_104 | nodefree.org免费节点日更
-  - 🇺🇸 US_1381 |nodefree.org免费节点日更
-  - 🇺🇸 US_1243 | nodefree.org免费节点日更
-  - 🇺🇸 US_1412 |nodefree.org免费节点日更
-  - 🇺🇸 US_1383 |nodefree.org免费节点日更
-  - 🇺🇸 US_1077 | nodefree.org免费节点日更
-  - 🇺🇸 US_1262 |nodefree.org免费节点日更
-  - 🇺🇸 US_1409 |nodefree.org免费节点日更
-  - 🇺🇸 US_1378 |nodefree.org免费节点日更
-  - 🇺🇸 US_1313 | nodefree.org免费节点日更
-  - 🇺🇸 US_1246 |nodefree.org免费节点日更
-  - 🇺🇸 US_1414 |nodefree.org免费节点日更
-  - 🇺🇸 US_1072 |nodefree.org免费节点日更
-  - 🇺🇸 US_1305 |nodefree.org免费节点日更
-  - 🇺🇸 US_1388 |nodefree.org免费节点日更
-  - 🇺🇸 US_936 |nodefree.org免费节点日更
-  - 🇫🇷 FR_373 |nodefree.org免费节点日更
-  - 🇺🇸 US_1071 |nodefree.org免费节点日更
-  - 🇺🇸 US_1314 |nodefree.org免费节点日更
-  - 🇺🇸 US_1075 | nodefree.org免费节点日更
-  - 🇺🇸 US_979 |nodefree.org免费节点日更
-  - 🇺🇸 US_1400 |nodefree.org免费节点日更
-  - 🇺🇸 US_1317 |nodefree.org免费节点日更
-  - 🇺🇸 US_1278 |nodefree.org免费节点日更
-  - 🇺🇸 US_934 |nodefree.org免费节点日更
-  - 🇺🇸 US_1067 | nodefree.org免费节点日更
-  - 🇺🇸 US_1056 |nodefree.org免费节点日更
-  - 🇺🇸 US_1050 |nodefree.org免费节点日更
-  - 🇺🇸 US_1079 |nodefree.org免费节点日更
-  - 🇺🇸 US_960 |nodefree.org免费节点日更
-  - 🇺🇸 US_1269 | nodefree.org免费节点日更
-  - 🇺🇸 US_1271 | nodefree.org免费节点日更
-  - 🇺🇸 US_1063 | nodefree.org免费节点日更
-  - 🇺🇸 US_1081 |nodefree.org免费节点日更
-  - 🇺🇸 US_1380 |nodefree.org免费节点日更
-  - 🇺🇸 US_1419 |nodefree.org免费节点日更
-  - 🇺🇸 US_980 | nodefree.org免费节点日更
-  - 🇺🇸 US_1023 |nodefree.org免费节点日更
-  - 🇺🇸 US_1009 | nodefree.org免费节点日更
-  - 🇺🇸 US_1008 |nodefree.org免费节点日更
-  - 🇺🇸 US_1349 |nodefree.org免费节点日更
-  - 🇺🇸 US_955 |nodefree.org免费节点日更
+  - 🇸🇬 新加坡(nodefree.org免费节点日更)
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 2
+  - 🇯🇵 欧洲(nodefree.org免费节点日更)
+  - 🇯🇵 日本(nodefree.org免费节点日更)
+  - 🇯🇵 日本(nodefree.org免费节点日更) 2
+  - 🇯🇵 日本(nodefree.org免费节点日更) 3
+  - 🇯🇵 欧洲(nodefree.org免费节点日更) 2
+  - 🇯🇵 美国(nodefree.org免费节点日更)
+  - 🇯🇵 日本(nodefree.org免费节点日更) 4
+  - 🇯🇵 沙特(nodefree.org免费节点日更)
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 3
+  - 🇯🇵 日本(nodefree.org免费节点日更) 5
+  - 🇯🇵 波兰(nodefree.org免费节点日更)
+  - 🇯🇵 加拿大(nodefree.org免费节点日更)
+  - 🇯🇵 日本(nodefree.org免费节点日更) 6
+  - 🇯🇵 法国(nodefree.org免费节点日更)
+  - 🇯🇵 日本(nodefree.org免费节点日更) 7
+  - 🇯🇵 法国(nodefree.org免费节点日更) 2
+  - 🇯🇵 法国(nodefree.org免费节点日更) 3
+  - 🇯🇵 法国(nodefree.org免费节点日更) 4
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 4
+  - 🇯🇵 法国(nodefree.org免费节点日更) 5
+  - 🇯🇵 日本(nodefree.org免费节点日更) 8
+  - 🇯🇵 法国(nodefree.org免费节点日更) 6
+  - 🇯🇵 日本(nodefree.org免费节点日更) 9
+  - 🇯🇵 法国(nodefree.org免费节点日更) 7
+  - 🇯🇵 日本(nodefree.org免费节点日更) 10
+  - 🇯🇵 日本(nodefree.org免费节点日更) 11
+  - 🇯🇵 日本(nodefree.org免费节点日更) 12
+  - 🇯🇵 日本(nodefree.org免费节点日更) 13
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 5
+  - 🇯🇵 欧洲(nodefree.org免费节点日更) 3
+  - 🇯🇵 日本(nodefree.org免费节点日更) 14
+  - 🇯🇵 日本(nodefree.org免费节点日更) 15
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 6
+  - 🇯🇵 美国(nodefree.org免费节点日更) 2
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 7
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 8
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 9
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 10
+  - 🇸🇬 新加坡(nodefree.org免费节点日更) 11
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
