@@ -4,152 +4,238 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 有问题咨询TG:@beikui_bot, server: cn03.downloadmovie.cn, port: 65041, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn03.downloadmovie.cn}}, udp: true}
-  - {name: kuige 001, server: cn01.downloadmovie.cn, port: 65039, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn01.downloadmovie.cn}}, udp: true}
-  - {name: kuige 002, server: cn02.downloadmovie.cn, port: 65003, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn02.downloadmovie.cn}}, udp: true}
+  - {name: 有问题咨询TG:beikui_bot, server: tw01.henet.cyou, port: 30000, type: trojan, password: 73b6dd15-a43d-446f-9a35-081a16c6a065, skip-cert-verify: true, udp: true}
+  - {name: kuige 001, server: auto-moble.downloadmovie.cn, port: 65001, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: auto-moble.downloadmovie.cn}}, udp: true}
+  - {name: kuige 002, server: auto-moble.downloadmovie.cn, port: 65022, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: auto-moble.downloadmovie.cn}}, udp: true}
   - {name: kuige 003, server: auto-moble.downloadmovie.cn, port: 65023, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: auto-moble.downloadmovie.cn}}, udp: true}
-  - {name: kuige 004, server: cn03.downloadmovie.cn, port: 65035, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn03.downloadmovie.cn}}, udp: true}
-  - {name: kuige 005, server: cn05.downloadmovie.cn, port: 65037, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn05.downloadmovie.cn}}, udp: true}
-  - {name: kuige 006, server: cn01.downloadmovie.cn, port: 65015, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn01.downloadmovie.cn}}, udp: true}
-  - {name: kuige 007, server: best01.downloadmovie.cn, port: 65091, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best01.downloadmovie.cn}}, udp: true}
-  - {name: kuige 008, server: best02.downloadmovie.cn, port: 65091, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best02.downloadmovie.cn}}, udp: true}
-  - {name: kuige 009, server: best04.downloadmovie.cn, port: 65073, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best04.downloadmovie.cn}}, udp: true}
-  - {name: kuige 010, server: best02.downloadmovie.cn, port: 65090, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best02.downloadmovie.cn}}, udp: true}
-  - {name: kuige 011, server: best03.downloadmovie.cn, port: 65090, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best03.downloadmovie.cn}}, udp: true}
-  - {name: kuige 012, server: best03.downloadmovie.cn, port: 65089, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best03.downloadmovie.cn}}, udp: true}
-  - {name: kuige 013, server: best01.downloadmovie.cn, port: 65069, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best01.downloadmovie.cn}}, udp: true}
-  - {name: kuige 014, server: best03.downloadmovie.cn, port: 65078, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best03.downloadmovie.cn}}, udp: true}
-  - {name: kuige 015, server: best01.downloadmovie.cn, port: 65077, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best01.downloadmovie.cn}}, udp: true}
-  - {name: kuige 016, server: best03.downloadmovie.cn, port: 65077, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best03.downloadmovie.cn}}, udp: true}
-  - {name: kuige 017, server: best04.downloadmovie.cn, port: 65067, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best04.downloadmovie.cn}}, udp: true}
-  - {name: kuige 018, server: best03.downloadmovie.cn, port: 65067, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best03.downloadmovie.cn}}, udp: true}
-  - {name: 日本-1号, server: 203.138.98.199, port: 38000, type: trojan, password: 9af3bd34-168d-406b-a4fd-fcfba1ee1497, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 日本, server: jp1.nodegz.top, port: 443, type: trojan, password: a94a4944-993b-3d37-a32d-01867c8da959, sni: =jp1.nodegz.top, skip-cert-verify: true, udp: true}
-  - {name: United States 01, server: 207.2.120.172, port: 443, type: trojan, password: c1a78daa-a4d8-3fc3-a346-e9bf7fdcbd8c, sni: =20020517.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: Sg, server: sg01.henet.cyou, port: 20000, type: vmess, uuid: 8ee6fe7e-3105-40aa-9c3e-e2c7465d889c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: United States 02 001, server: 45.137.97.205, port: 443, type: trojan, password: f00835de-aebb-37d7-917b-f1401388db44, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 02 002, server: 45.137.97.205, port: 443, type: trojan, password: 16c6cd63-60dc-34fc-9aab-3f58570b24bb, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 02 003, server: 45.137.97.205, port: 443, type: trojan, password: 3f31f409-f301-367f-9673-ce150da39742, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 02 004, server: 45.137.97.205, port: 443, type: trojan, password: 57172c15-f184-3597-be60-fa864d09b7e5, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 02 005, server: 45.137.97.205, port: 443, type: trojan, password: 50f0b0f0-c380-3976-ac00-2e5d32632a27, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 001, server: 165.154.235.49, port: 443, type: trojan, password: ca7e6a7d-4bb4-3222-89f6-b6606ba8c4c9, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 002, server: 165.154.235.49, port: 443, type: trojan, password: 140ccb66-d5bc-30ce-8ad7-83fdfa9d5236, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 003, server: 165.154.235.49, port: 443, type: trojan, password: e8d20d04-9a08-3b6b-bdb3-ea665aad4ea2, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 004, server: 165.154.235.49, port: 443, type: trojan, password: 95c91ca8-4d4b-31c3-88d2-471cd341e35a, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 02 006, server: 45.137.97.205, port: 443, type: trojan, password: 7889e75d-0965-329d-b2b6-952b2e126dfd, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 005, server: 165.154.235.49, port: 443, type: trojan, password: 7ac67209-ae2b-361e-856d-d8c71c9b1d0e, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 006, server: 165.154.235.49, port: 443, type: trojan, password: 0d805698-5127-3191-9f18-f176aff340ca, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 007, server: 165.154.235.49, port: 443, type: trojan, password: 4b08837d-bc21-3d7b-abb1-1227852f0386, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 008, server: 165.154.235.49, port: 443, type: trojan, password: 35cd6245-c54b-35d2-9a91-b9b9f394ccd1, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 009, server: 165.154.235.49, port: 443, type: trojan, password: b34aa3fe-11de-36e7-b348-209560184890, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 010, server: 165.154.235.49, port: 443, type: trojan, password: 2b1cfe32-52aa-3d37-a45e-5cbedcbfdfe0, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 02 007, server: 45.137.97.205, port: 443, type: trojan, password: 96430a89-0f4a-3780-a7ee-69af97bd1c90, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 02 008, server: 45.137.97.205, port: 443, type: trojan, password: ced4b297-4b05-31b2-9744-5a41460e0b92, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 02 009, server: 45.137.97.205, port: 443, type: trojan, password: 714dc15d-083b-3ebf-984a-998b885cf11c, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 02 010, server: 45.137.97.205, port: 443, type: trojan, password: 7aa4ac59-139d-3db7-9cc3-4cc6409766e3, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 02 011, server: 45.137.97.205, port: 443, type: trojan, password: cb247f28-edb8-3486-9593-5a1649c287f3, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 02 012, server: 45.137.97.205, port: 443, type: trojan, password: c562507b-6c2f-3162-9433-4c3630c18698, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 02 013, server: 45.137.97.205, port: 443, type: trojan, password: bc514931-8312-3b0e-a623-ed327eaa12ea, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 011, server: 165.154.235.49, port: 443, type: trojan, password: 3d6541c8-2b8c-3539-9a67-4529ab8a6dad, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 012, server: 165.154.235.49, port: 443, type: trojan, password: 4f98f4e0-8faf-3fc2-8557-15191524411d, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 013, server: 165.154.235.49, port: 443, type: trojan, password: 7fdac8f8-2a2a-3432-8f29-5dcca84aaae3, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 014, server: 165.154.235.49, port: 443, type: trojan, password: 4fab2b3b-ff32-3547-9e95-16678429a3f8, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 015, server: 165.154.235.49, port: 443, type: trojan, password: 34c2ebbd-8ecf-3c1c-a945-19cd394a3e43, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 016, server: 165.154.235.49, port: 443, type: trojan, password: 882b31b4-bc3f-3e25-880f-251a3bbf70bb, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 017, server: 165.154.235.49, port: 443, type: trojan, password: 492b9080-d091-38cb-a8d9-cca058be7a0a, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: United States 03 018, server: 165.154.235.49, port: 443, type: trojan, password: aa06007a-d14d-33d3-91a3-4480ee5f4295, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: South Korea 02, server: hk02.bp777.buzz, port: 21665, type: vmess, uuid: 8e44e9de-87d4-45f4-821f-283b9369073f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk02.bp777.buzz}}, udp: true}
-  - {name: South Korea 03, server: hk03.bp777.buzz, port: 21665, type: vmess, uuid: bcaf96ca-d524-4931-bb85-14247ad3801c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk03.bp777.buzz}}, udp: true}
-  - {name: South Korea 04, server: hk04.bp777.buzz, port: 21665, type: vmess, uuid: b0fa6b76-5817-416e-8034-7b0c129c7f7a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk04.bp777.buzz}}, udp: true}
-  - {name: South Korea 16 001, server: hk16.bp777.buzz, port: 21665, type: vmess, uuid: e9efd94c-1e18-4da7-9bfb-f56fb472aa24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk16.bp777.buzz}}, udp: true}
-  - {name: South Korea 17 001, server: hk17.bp777.buzz, port: 21665, type: vmess, uuid: 5ce5f83c-4f82-4cca-88a2-399a7f9b28bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk17.bp777.buzz}}, udp: true}
-  - {name: South Korea 11, server: hk11.bp777.buzz, port: 21665, type: vmess, uuid: ea056a52-64a4-4aa2-9ad5-8d628823f615, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk11.bp777.buzz}}, udp: true}
-  - {name: South Korea 15 001, server: hk15.bp777.buzz, port: 21665, type: vmess, uuid: ea056a52-64a4-4aa2-9ad5-8d628823f615, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk15.bp777.buzz}}, udp: true}
-  - {name: South Korea 18 001, server: hk18.bp777.buzz, port: 21665, type: vmess, uuid: 07898420-dc51-4daf-99dd-0cbe007172ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk18.bp777.buzz}}, udp: true}
-  - {name: South Korea 17 002, server: hk17.bp777.buzz, port: 21665, type: vmess, uuid: a4560c02-fa4b-43c3-9584-2ccdf44220f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk17.bp777.buzz}}, udp: true}
-  - {name: South Korea 17 003, server: hk17.bp777.buzz, port: 21665, type: vmess, uuid: a5b66531-e930-4b5c-8d09-1b779e5c91bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk17.bp777.buzz}}, udp: true}
-  - {name: South Korea 15 002, server: hk15.bp777.buzz, port: 21665, type: vmess, uuid: 1b5afa45-be53-4cd9-a8cb-ee7385d9c123, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk15.bp777.buzz}}, udp: true}
-  - {name: South Korea 16 002, server: hk16.bp777.buzz, port: 21665, type: vmess, uuid: 0696dab7-da01-44d4-8a5d-135026053a14, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk16.bp777.buzz}}, udp: true}
-  - {name: South Korea 16 003, server: hk16.bp777.buzz, port: 21665, type: vmess, uuid: 767aa88d-c904-4bd7-82c8-57753a358a4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk16.bp777.buzz}}, udp: true}
-  - {name: South Korea 16 004, server: hk16.bp777.buzz, port: 21665, type: vmess, uuid: 6dfb0dc2-6faa-4953-917a-0a91d6f10a57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk16.bp777.buzz}}, udp: true}
-  - {name: South Korea 16 005, server: hk16.bp777.buzz, port: 21665, type: vmess, uuid: c542e0aa-7b21-4ae4-a0d8-9423f0cc1b3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk16.bp777.buzz}}, udp: true}
-  - {name: South Korea 15 003, server: hk15.bp777.buzz, port: 21665, type: vmess, uuid: a4e03884-306d-42e4-85ee-2d89eabe6d2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk15.bp777.buzz}}, udp: true}
-  - {name: South Korea 17 004, server: hk17.bp777.buzz, port: 21665, type: vmess, uuid: 89e4d975-eb64-4024-9610-0bd916e45839, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk17.bp777.buzz}}, udp: true}
-  - {name: South Korea 15 004, server: hk15.bp777.buzz, port: 21665, type: vmess, uuid: 7fabbd79-81ed-4d29-b890-3cde8f2c264e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk15.bp777.buzz}}, udp: true}
-  - {name: South Korea 17 005, server: hk17.bp777.buzz, port: 21665, type: vmess, uuid: a3144d02-36f4-468c-9a2b-cbe9dc56e3ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk17.bp777.buzz}}, udp: true}
-  - {name: South Korea 18 002, server: hk18.bp777.buzz, port: 21665, type: vmess, uuid: 62840602-e13f-4563-b492-8afd969e207d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk18.bp777.buzz}}, udp: true}
-  - {name: South Korea 18 003, server: hk18.bp777.buzz, port: 21665, type: vmess, uuid: 57dd8fa2-1088-43bc-85df-7eeb9745f806, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk18.bp777.buzz}}, udp: true}
-  - {name: South Korea 18 004, server: hk18.bp777.buzz, port: 21665, type: vmess, uuid: d3505a71-f707-4dd7-af11-f7f35bf1e677, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk18.bp777.buzz}}, udp: true}
-  - {name: South Korea 17 006, server: hk17.bp777.buzz, port: 21665, type: vmess, uuid: 5c5d1dcf-92fd-4aa4-9136-1efecfb3b399, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk17.bp777.buzz}}, udp: true}
-  - {name: South Korea 18 005, server: hk18.bp777.buzz, port: 21665, type: vmess, uuid: 1015d5a1-443f-4549-aa96-8113aaee8c98, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk18.bp777.buzz}}, udp: true}
-  - {name: South Korea 17 007, server: hk17.bp777.buzz, port: 21665, type: vmess, uuid: bc6cd945-e98e-44bf-acc6-96374f7d4d60, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk17.bp777.buzz}}, udp: true}
-  - {name: South Korea 18 006, server: hk18.bp777.buzz, port: 21665, type: vmess, uuid: f5969b01-c239-4b18-9aab-637a5cabb627, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk18.bp777.buzz}}, udp: true}
-  - {name: South Korea 17 008, server: hk17.bp777.buzz, port: 21665, type: vmess, uuid: e1b9a15f-74b2-4acd-8e42-d2ca6099f7d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk17.bp777.buzz}}, udp: true}
-  - {name: South Korea 18 007, server: hk18.bp777.buzz, port: 21665, type: vmess, uuid: 2ad3fec6-aa85-49af-96be-3c33fa98933a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk18.bp777.buzz}}, udp: true}
-  - {name: TW, server: tw01.henet.cyou, port: 20000, type: vmess, uuid: 8ee6fe7e-3105-40aa-9c3e-e2c7465d889c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
-  - {name: 香港 001, server: 103.253.43.228, port: 38000, type: trojan, password: bf943e60-be9d-41cc-9a10-14ae7066569b, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 002, server: 103.253.43.228, port: 38000, type: trojan, password: 5839b0e8-d8ce-42c5-86d1-eb56a06c450d, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 003, server: 103.253.43.228, port: 38000, type: trojan, password: e8a52329-e5be-4de5-9b24-306bd4d88e9f, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 004, server: 103.253.43.228, port: 38000, type: trojan, password: 175c218a-fb8d-46b0-a7af-b9ff6a719856, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 005, server: 103.253.43.228, port: 38000, type: trojan, password: 23549a5e-83be-4a9a-b022-2a0546d31c93, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 006, server: 103.253.43.228, port: 38000, type: trojan, password: 03ed3a34-6e07-4e96-b37a-ecf7ecc1c50c, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 007, server: 103.253.43.228, port: 38000, type: trojan, password: b628fbad-7e6d-4926-8dcb-5e52c77dfd1b, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 008, server: 103.253.43.228, port: 38000, type: trojan, password: e7396f47-affd-4c31-86e6-1108d809c883, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 009, server: 103.253.43.228, port: 38000, type: trojan, password: 852fac80-4fe3-40ae-b9ee-3291c327c704, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 010, server: 103.253.43.228, port: 38000, type: trojan, password: 741840d2-5060-4e98-91ba-5c9b51d99718, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 011, server: 103.253.43.228, port: 38000, type: trojan, password: bb17cd59-0839-4824-b734-ace2b6bca6d4, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 012, server: 103.253.43.228, port: 38000, type: trojan, password: c49c48be-a34b-4f39-96b6-a78f55be9da7, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 013, server: 103.253.43.228, port: 38000, type: trojan, password: cf18400b-0935-4c24-9911-88a7174ab2ba, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 014, server: 103.253.43.228, port: 38000, type: trojan, password: 48a55ebb-54f2-4757-8899-047933695eb2, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 015, server: 103.253.43.228, port: 38000, type: trojan, password: da8e0008-3c2b-4363-b582-0d9a981cebea, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 香港 016, server: 103.253.43.228, port: 38000, type: trojan, password: acd057d0-106f-4ce4-8f58-81482579c4e7, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: beikui 001, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 002, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 003, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 004, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 005, server: pp1.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 006, server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 007, server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 008, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 009, server: pp1.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 010, server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 011, server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 012, server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 013, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 014, server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 015, server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 016, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 017, server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 018, server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 019, server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 020, server: pp1.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 021, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 022, server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 023, server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 024, server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 025, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 026, server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 027, server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 028, server: pp1.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 029, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 030, server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 031, server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 032, server: pp1.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 033, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 034, server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 035, server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 036, server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 037, server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 038, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 039, server: pp1.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 040, server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: beikui 041, server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: kuige 004, server: auto-unicom.downloadmovie.cn, port: 65010, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: auto-unicom.downloadmovie.cn}}, udp: true}
+  - {name: kuige 005, server: cn01.downloadmovie.cn, port: 65002, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn01.downloadmovie.cn}}, udp: true}
+  - {name: kuige 006, server: cn03.downloadmovie.cn, port: 65027, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn03.downloadmovie.cn}}, udp: true}
+  - {name: kuige 007, server: cn05.downloadmovie.cn, port: 65038, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn05.downloadmovie.cn}}, udp: true}
+  - {name: kuige 008, server: cn01.downloadmovie.cn, port: 65039, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn01.downloadmovie.cn}}, udp: true}
+  - {name: kuige 009, server: cn02.downloadmovie.cn, port: 65063, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn02.downloadmovie.cn}}, udp: true}
+  - {name: kuige 010, server: cn04.downloadmovie.cn, port: 65025, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn04.downloadmovie.cn}}, udp: true}
+  - {name: kuige 011, server: cn01.downloadmovie.cn, port: 65033, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn01.downloadmovie.cn}}, udp: true}
+  - {name: kuige 012, server: cn03.downloadmovie.cn, port: 65035, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn03.downloadmovie.cn}}, udp: true}
+  - {name: kuige 013, server: cn05.downloadmovie.cn, port: 65037, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn05.downloadmovie.cn}}, udp: true}
+  - {name: kuige 014, server: cn04.downloadmovie.cn, port: 65045, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn04.downloadmovie.cn}}, udp: true}
+  - {name: kuige 015, server: best02.downloadmovie.cn, port: 65064, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best02.downloadmovie.cn}}, udp: true}
+  - {name: kuige 016, server: best01.downloadmovie.cn, port: 65043, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best01.downloadmovie.cn}}, udp: true}
+  - {name: kuige 017, server: best02.downloadmovie.cn, port: 65043, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best02.downloadmovie.cn}}, udp: true}
+  - {name: kuige 018, server: cn03.downloadmovie.cn, port: 65084, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: cn03.downloadmovie.cn}}, udp: true}
+  - {name: kuige 019, server: best03.downloadmovie.cn, port: 65096, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best03.downloadmovie.cn}}, udp: true}
+  - {name: kuige 020, server: best01.downloadmovie.cn, port: 65072, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best01.downloadmovie.cn}}, udp: true}
+  - {name: kuige 021, server: best02.downloadmovie.cn, port: 65072, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best02.downloadmovie.cn}}, udp: true}
+  - {name: kuige 022, server: best01.downloadmovie.cn, port: 65087, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best01.downloadmovie.cn}}, udp: true}
+  - {name: kuige 023, server: best01.downloadmovie.cn, port: 65073, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best01.downloadmovie.cn}}, udp: true}
+  - {name: kuige 024, server: best02.downloadmovie.cn, port: 65093, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best02.downloadmovie.cn}}, udp: true}
+  - {name: kuige 025, server: best04.downloadmovie.cn, port: 65078, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best04.downloadmovie.cn}}, udp: true}
+  - {name: kuige 026, server: best03.downloadmovie.cn, port: 65097, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best03.downloadmovie.cn}}, udp: true}
+  - {name: kuige 027, server: best01.downloadmovie.cn, port: 65068, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best01.downloadmovie.cn}}, udp: true}
+  - {name: kuige 028, server: best02.downloadmovie.cn, port: 65068, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best02.downloadmovie.cn}}, udp: true}
+  - {name: kuige 029, server: best03.downloadmovie.cn, port: 65068, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best03.downloadmovie.cn}}, udp: true}
+  - {name: kuige 030, server: best01.downloadmovie.cn, port: 65075, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best01.downloadmovie.cn}}, udp: true}
+  - {name: kuige 031, server: best04.downloadmovie.cn, port: 65075, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best04.downloadmovie.cn}}, udp: true}
+  - {name: kuige 032, server: best01.downloadmovie.cn, port: 65081, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best01.downloadmovie.cn}}, udp: true}
+  - {name: kuige 033, server: best02.downloadmovie.cn, port: 65081, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best02.downloadmovie.cn}}, udp: true}
+  - {name: kuige 034, server: best01.downloadmovie.cn, port: 65095, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best01.downloadmovie.cn}}, udp: true}
+  - {name: kuige 035, server: best02.downloadmovie.cn, port: 65095, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best02.downloadmovie.cn}}, udp: true}
+  - {name: kuige 036, server: best03.downloadmovie.cn, port: 65065, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best03.downloadmovie.cn}}, udp: true}
+  - {name: kuige 037, server: best01.downloadmovie.cn, port: 65066, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best01.downloadmovie.cn}}, udp: true}
+  - {name: kuige 038, server: best02.downloadmovie.cn, port: 65066, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best02.downloadmovie.cn}}, udp: true}
+  - {name: kuige 039, server: best02.downloadmovie.cn, port: 65086, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best02.downloadmovie.cn}}, udp: true}
+  - {name: kuige 040, server: best03.downloadmovie.cn, port: 65057, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best03.downloadmovie.cn}}, udp: true}
+  - {name: 香港 001, server: no2.tinkhub.me, port: 443, type: vmess, uuid: fa76e450-e663-45ac-b134-9038c5b052dc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: no2.tinkhub.me}}, udp: true}
+  - {name: 香港 002, server: no2.tinkhub.me, port: 443, type: vmess, uuid: 9419a52d-b04c-4ca6-84fc-f0497f7f4699, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: no2.tinkhub.me}}, udp: true}
+  - {name: 香港 003, server: no2.tinkhub.me, port: 443, type: vmess, uuid: c89cf59e-26d2-443a-aa80-847bab3aa856, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: no2.tinkhub.me}}, udp: true}
+  - {name: TW01-V2-直连, server: tw01.henet.cyou, port: 20000, type: vmess, uuid: dd043aa3-36bf-4766-aaa8-1c99f6f0edeb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
+  - {name: SG02-V2-直连, server: sg02.henet.cyou, port: 20000, type: vmess, uuid: c2d0b0f3-3a85-490d-833f-24a9c9284578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
+  - {name: TW01-TROJAN-直连, server: tw01.henet.cyou, port: 30000, type: trojan, password: 7e1b922b-f7c9-440c-82d9-abbf9680b9a4, skip-cert-verify: true, udp: true}
+  - {name: 香港 004, server: no2.tinkhub.me, port: 443, type: vmess, uuid: 4268ac2d-072a-498a-9281-7baeb2d0cc46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: no2.tinkhub.me}}, udp: true}
+  - {name: 2香港集群-全网优化, server: 2hkclu.pronetworklink.net, port: 443, type: trojan, password: befda2df-cf17-43f5-b229-a78007879516, skip-cert-verify: true, udp: true}
+  - {name: 18日本集群-联通/移动, server: 18jpclu.pronetworklink.net, port: 443, type: trojan, password: 33ac7f73-f2ea-4179-9386-03581de1ae7e, skip-cert-verify: true, udp: true}
+  - {name: 7韩国集群-全网优化, server: 7krclu.pronetworklink.net, port: 443, type: trojan, password: 6a81d160-0553-4814-96be-81931e3cfcc7, skip-cert-verify: true, udp: true}
+  - {name: 11德国集群-电信/移动, server: 11declu.pronetworklink.net, port: 443, type: trojan, password: 56654eb4-4db0-4443-a0bb-4147ac0aa56f, skip-cert-verify: true, udp: true}
+  - {name: US01-V2-直连, server: us01.henet.cyou, port: 20000, type: vmess, uuid: 026939c1-7742-463f-97ec-ba8037eeea91, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
+  - {name: 香港 005, server: no2.tinkhub.me, port: 443, type: vmess, uuid: df86f7c5-79ed-45b7-bc7d-c6759253abbd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: no2.tinkhub.me}}, udp: true}
+  - {name: 10阿联酋集群-电信/移动, server: 10uaeclu.pronetworklink.net, port: 443, type: trojan, password: dae3ea43-9d17-4f8c-a7ca-cc1cf06a81d6, skip-cert-verify: true, udp: true}
+  - {name: TW02-V2-直连 001, server: tw02.henet.cyou, port: 20000, type: vmess, uuid: 857f94e5-c273-46ae-8157-cfcafde9f08b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
+  - {name: US01-TROJAN-直连, server: us01.henet.cyou, port: 30000, type: trojan, password: e5a2bd1a-53da-473e-a81b-573b4758b66b, skip-cert-verify: true, udp: true}
+  - {name: TW02-V2-直连 002, server: tw02.henet.cyou, port: 20000, type: vmess, uuid: f77d0173-893b-4726-a88d-69d9eda3579a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
+  - {name: 12英国集群-北方联通, server: 12ukclu.pronetworklink.net, port: 443, type: trojan, password: 93a30832-7f00-408b-9374-8159690b88ad, skip-cert-verify: true, udp: true}
+  - {name: 13印度集群-移动/南方联通, server: 13inclu.pronetworklink.net, port: 443, type: trojan, password: 5a50c177-6361-4262-a492-ffe9d56868bb, skip-cert-verify: true, udp: true}
+  - {name: 14新加坡集群-全网优化, server: 14sgclu.pronetworklink.net, port: 443, type: trojan, password: deaf8b76-a397-4f9a-b6ff-0cef3c154b86, skip-cert-verify: true, udp: true}
+  - {name: SG01-V2-直连, server: sg01.henet.cyou, port: 20000, type: vmess, uuid: 9de08dca-c684-4032-b6e8-6b1e5bb3c2b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
+  - {name: JP02-V2-GDGZ, server: gdgz.henet.cyou, port: 30003, type: vmess, uuid: af6714cf-32f4-4fa4-8cd7-a198b52fa97c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}, udp: true}
+  - {name: 17俄罗斯-全网优化, server: 17ruclu.pronetworklink.net, port: 443, type: trojan, password: 9c622b38-9a5d-4617-acc4-5fe925f93467, skip-cert-verify: true, udp: true}
+  - {name: 香港-日本A, server: 20.205.115.140, port: 10000, type: vmess, uuid: de4ceb36-b708-4658-81b2-2f2612e39a23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 香港-西雅图, server: 20.205.115.140, port: 10003, type: vmess, uuid: de4ceb36-b708-4658-81b2-2f2612e39a23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇯🇵公益节点-东京, server: shcm.20220512.cyou, port: 56914, type: trojan, password: 62191a61-4c4a-4d6b-815f-320cb8877c18, sni: =gjp.333003.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本 001, server: jp.bw3.hyperlinkvpn.xyz, port: 52000, type: trojan, password: 0aa9e572-ca8b-4d2c-bef6-501fc3eacbb8, skip-cert-verify: true, udp: true}
+  - {name: 日本 002, server: jp.bw2.hyperlinkvpn.xyz, port: 52000, type: trojan, password: 0aa9e572-ca8b-4d2c-bef6-501fc3eacbb8, skip-cert-verify: true, udp: true}
+  - {name: 美国, server: b-t.us.hyperlinkvpn.xyz, port: 50500, type: trojan, password: dacbc926-ea36-4be2-9f52-f343d353a2de, skip-cert-verify: true, udp: true}
+  - {name: United States 02 001, server: 45.137.97.205, port: 443, type: trojan, password: c1a78daa-a4d8-3fc3-a346-e9bf7fdcbd8c, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 001, server: 165.154.235.49, port: 443, type: trojan, password: c1a78daa-a4d8-3fc3-a346-e9bf7fdcbd8c, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 002, server: 45.137.97.205, port: 443, type: trojan, password: f3eaab6f-45ce-347a-a13d-543254ce0a69, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 002, server: 165.154.235.49, port: 443, type: trojan, password: f3eaab6f-45ce-347a-a13d-543254ce0a69, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 003, server: 45.137.97.205, port: 443, type: trojan, password: a786ad3c-0aec-3751-aa72-67a380c9da42, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 003, server: 165.154.235.49, port: 443, type: trojan, password: a786ad3c-0aec-3751-aa72-67a380c9da42, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 004, server: 45.137.97.205, port: 443, type: trojan, password: 20285447-9d23-3fee-a6aa-f8f2bb3edec3, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 004, server: 165.154.235.49, port: 443, type: trojan, password: 20285447-9d23-3fee-a6aa-f8f2bb3edec3, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 005, server: 45.137.97.205, port: 443, type: trojan, password: c5300851-4bca-3a1d-94a2-33ff203d3827, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 005, server: 165.154.235.49, port: 443, type: trojan, password: c5300851-4bca-3a1d-94a2-33ff203d3827, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 006, server: 45.137.97.205, port: 443, type: trojan, password: 7f649ad2-c55d-3ece-95f0-0a7d66d1d718, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 006, server: 165.154.235.49, port: 443, type: trojan, password: 7f649ad2-c55d-3ece-95f0-0a7d66d1d718, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 007, server: 45.137.97.205, port: 443, type: trojan, password: 22816dda-617f-3e63-a9a2-cee703fef5d9, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 007, server: 165.154.235.49, port: 443, type: trojan, password: 22816dda-617f-3e63-a9a2-cee703fef5d9, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 006, server: 103.253.43.228, port: 38000, type: trojan, password: 5839b0e8-d8ce-42c5-86d1-eb56a06c450d, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 日本-3号 001, server: 157.120.35.234, port: 38000, type: trojan, password: 5839b0e8-d8ce-42c5-86d1-eb56a06c450d, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet 001, server: hinet2.52147.top, port: 38000, type: trojan, password: e8a52329-e5be-4de5-9b24-306bd4d88e9f, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 香港 007, server: 103.253.43.228, port: 38000, type: trojan, password: e8a52329-e5be-4de5-9b24-306bd4d88e9f, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet 002, server: hinet2.52147.top, port: 38000, type: trojan, password: 23549a5e-83be-4a9a-b022-2a0546d31c93, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet 003, server: hinet2.52147.top, port: 38000, type: trojan, password: 03ed3a34-6e07-4e96-b37a-ecf7ecc1c50c, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 日本-3号 002, server: 157.120.35.234, port: 38000, type: trojan, password: 03ed3a34-6e07-4e96-b37a-ecf7ecc1c50c, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet 004, server: hinet2.52147.top, port: 38000, type: trojan, password: b628fbad-7e6d-4926-8dcb-5e52c77dfd1b, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 香港 008, server: 103.253.43.228, port: 38000, type: trojan, password: b628fbad-7e6d-4926-8dcb-5e52c77dfd1b, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 日本-3号 003, server: 157.120.35.234, port: 38000, type: trojan, password: b628fbad-7e6d-4926-8dcb-5e52c77dfd1b, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 香港 009, server: 103.253.43.228, port: 38000, type: trojan, password: e7396f47-affd-4c31-86e6-1108d809c883, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 香港 010, server: 103.253.43.228, port: 38000, type: trojan, password: 852fac80-4fe3-40ae-b9ee-3291c327c704, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet 005, server: hinet2.52147.top, port: 38000, type: trojan, password: 852fac80-4fe3-40ae-b9ee-3291c327c704, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 香港 011, server: 103.253.43.228, port: 38000, type: trojan, password: 741840d2-5060-4e98-91ba-5c9b51d99718, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet 006, server: hinet2.52147.top, port: 38000, type: trojan, password: c49c48be-a34b-4f39-96b6-a78f55be9da7, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet 007, server: hinet2.52147.top, port: 38000, type: trojan, password: cf18400b-0935-4c24-9911-88a7174ab2ba, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet 008, server: hinet2.52147.top, port: 38000, type: trojan, password: 48a55ebb-54f2-4757-8899-047933695eb2, sni: =www.download.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: United States 02 008, server: 45.137.97.205, port: 443, type: trojan, password: f00835de-aebb-37d7-917b-f1401388db44, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 008, server: 165.154.235.49, port: 443, type: trojan, password: f00835de-aebb-37d7-917b-f1401388db44, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 009, server: 45.137.97.205, port: 443, type: trojan, password: 16c6cd63-60dc-34fc-9aab-3f58570b24bb, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 009, server: 165.154.235.49, port: 443, type: trojan, password: 16c6cd63-60dc-34fc-9aab-3f58570b24bb, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 010, server: 45.137.97.205, port: 443, type: trojan, password: 3f31f409-f301-367f-9673-ce150da39742, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 010, server: 165.154.235.49, port: 443, type: trojan, password: 3f31f409-f301-367f-9673-ce150da39742, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 011, server: 45.137.97.205, port: 443, type: trojan, password: 00360d9b-a2d5-3e74-a59c-b9d4e040b212, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 011, server: 165.154.235.49, port: 443, type: trojan, password: 00360d9b-a2d5-3e74-a59c-b9d4e040b212, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 012, server: 45.137.97.205, port: 443, type: trojan, password: 57172c15-f184-3597-be60-fa864d09b7e5, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 012, server: 165.154.235.49, port: 443, type: trojan, password: 57172c15-f184-3597-be60-fa864d09b7e5, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 013, server: 45.137.97.205, port: 443, type: trojan, password: 50f0b0f0-c380-3976-ac00-2e5d32632a27, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 013, server: 165.154.235.49, port: 443, type: trojan, password: 50f0b0f0-c380-3976-ac00-2e5d32632a27, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 014, server: 45.137.97.205, port: 443, type: trojan, password: ca7e6a7d-4bb4-3222-89f6-b6606ba8c4c9, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 014, server: 165.154.235.49, port: 443, type: trojan, password: ca7e6a7d-4bb4-3222-89f6-b6606ba8c4c9, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 015, server: 45.137.97.205, port: 443, type: trojan, password: 140ccb66-d5bc-30ce-8ad7-83fdfa9d5236, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 015, server: 165.154.235.49, port: 443, type: trojan, password: 140ccb66-d5bc-30ce-8ad7-83fdfa9d5236, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 016, server: 45.137.97.205, port: 443, type: trojan, password: e8d20d04-9a08-3b6b-bdb3-ea665aad4ea2, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 016, server: 165.154.235.49, port: 443, type: trojan, password: e8d20d04-9a08-3b6b-bdb3-ea665aad4ea2, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 017, server: 45.137.97.205, port: 443, type: trojan, password: 95c91ca8-4d4b-31c3-88d2-471cd341e35a, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 017, server: 165.154.235.49, port: 443, type: trojan, password: 95c91ca8-4d4b-31c3-88d2-471cd341e35a, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 018, server: 45.137.97.205, port: 443, type: trojan, password: 7889e75d-0965-329d-b2b6-952b2e126dfd, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 018, server: 165.154.235.49, port: 443, type: trojan, password: 7889e75d-0965-329d-b2b6-952b2e126dfd, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 019, server: 45.137.97.205, port: 443, type: trojan, password: c2183864-c65f-3281-bdc7-d5ef6c4f5e77, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 019, server: 165.154.235.49, port: 443, type: trojan, password: c2183864-c65f-3281-bdc7-d5ef6c4f5e77, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 020, server: 45.137.97.205, port: 443, type: trojan, password: 7ac67209-ae2b-361e-856d-d8c71c9b1d0e, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 020, server: 165.154.235.49, port: 443, type: trojan, password: 7ac67209-ae2b-361e-856d-d8c71c9b1d0e, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 021, server: 45.137.97.205, port: 443, type: trojan, password: 4b08837d-bc21-3d7b-abb1-1227852f0386, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 021, server: 165.154.235.49, port: 443, type: trojan, password: 4b08837d-bc21-3d7b-abb1-1227852f0386, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 022, server: 45.137.97.205, port: 443, type: trojan, password: 0d805698-5127-3191-9f18-f176aff340ca, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 022, server: 165.154.235.49, port: 443, type: trojan, password: 0d805698-5127-3191-9f18-f176aff340ca, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 023, server: 45.137.97.205, port: 443, type: trojan, password: 35cd6245-c54b-35d2-9a91-b9b9f394ccd1, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 023, server: 165.154.235.49, port: 443, type: trojan, password: 35cd6245-c54b-35d2-9a91-b9b9f394ccd1, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 024, server: 45.137.97.205, port: 443, type: trojan, password: b34aa3fe-11de-36e7-b348-209560184890, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 024, server: 165.154.235.49, port: 443, type: trojan, password: b34aa3fe-11de-36e7-b348-209560184890, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 025, server: 45.137.97.205, port: 443, type: trojan, password: 2b1cfe32-52aa-3d37-a45e-5cbedcbfdfe0, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 025, server: 165.154.235.49, port: 443, type: trojan, password: 2b1cfe32-52aa-3d37-a45e-5cbedcbfdfe0, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 026, server: 45.137.97.205, port: 443, type: trojan, password: fefdeab7-d21b-365a-9a9c-1b1d97c3c458, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 026, server: 165.154.235.49, port: 443, type: trojan, password: fefdeab7-d21b-365a-9a9c-1b1d97c3c458, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 027, server: 45.137.97.205, port: 443, type: trojan, password: 96430a89-0f4a-3780-a7ee-69af97bd1c90, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 027, server: 165.154.235.49, port: 443, type: trojan, password: 96430a89-0f4a-3780-a7ee-69af97bd1c90, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 028, server: 45.137.97.205, port: 443, type: trojan, password: ced4b297-4b05-31b2-9744-5a41460e0b92, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 028, server: 165.154.235.49, port: 443, type: trojan, password: ced4b297-4b05-31b2-9744-5a41460e0b92, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 029, server: 45.137.97.205, port: 443, type: trojan, password: 714dc15d-083b-3ebf-984a-998b885cf11c, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 029, server: 165.154.235.49, port: 443, type: trojan, password: 714dc15d-083b-3ebf-984a-998b885cf11c, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 030, server: 45.137.97.205, port: 443, type: trojan, password: 7aa4ac59-139d-3db7-9cc3-4cc6409766e3, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 030, server: 165.154.235.49, port: 443, type: trojan, password: 7aa4ac59-139d-3db7-9cc3-4cc6409766e3, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 031, server: 45.137.97.205, port: 443, type: trojan, password: 1307a88c-8e09-3636-b7b0-9f7acc046872, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 031, server: 165.154.235.49, port: 443, type: trojan, password: 1307a88c-8e09-3636-b7b0-9f7acc046872, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 032, server: 45.137.97.205, port: 443, type: trojan, password: cb247f28-edb8-3486-9593-5a1649c287f3, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 032, server: 165.154.235.49, port: 443, type: trojan, password: cb247f28-edb8-3486-9593-5a1649c287f3, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 033, server: 45.137.97.205, port: 443, type: trojan, password: c562507b-6c2f-3162-9433-4c3630c18698, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 033, server: 165.154.235.49, port: 443, type: trojan, password: c562507b-6c2f-3162-9433-4c3630c18698, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 034, server: 45.137.97.205, port: 443, type: trojan, password: bc514931-8312-3b0e-a623-ed327eaa12ea, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 034, server: 165.154.235.49, port: 443, type: trojan, password: bc514931-8312-3b0e-a623-ed327eaa12ea, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 035, server: 45.137.97.205, port: 443, type: trojan, password: fc285d8b-b458-3653-935d-2b472d8d73cf, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 035, server: 165.154.235.49, port: 443, type: trojan, password: fc285d8b-b458-3653-935d-2b472d8d73cf, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 036, server: 45.137.97.205, port: 443, type: trojan, password: 294b8506-1f47-38e5-87fa-43f56df72930, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 036, server: 165.154.235.49, port: 443, type: trojan, password: 294b8506-1f47-38e5-87fa-43f56df72930, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 037, server: 45.137.97.205, port: 443, type: trojan, password: 3d6541c8-2b8c-3539-9a67-4529ab8a6dad, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 037, server: 165.154.235.49, port: 443, type: trojan, password: 3d6541c8-2b8c-3539-9a67-4529ab8a6dad, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 038, server: 45.137.97.205, port: 443, type: trojan, password: 4f98f4e0-8faf-3fc2-8557-15191524411d, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 038, server: 165.154.235.49, port: 443, type: trojan, password: 4f98f4e0-8faf-3fc2-8557-15191524411d, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 039, server: 45.137.97.205, port: 443, type: trojan, password: 7fdac8f8-2a2a-3432-8f29-5dcca84aaae3, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 039, server: 165.154.235.49, port: 443, type: trojan, password: 7fdac8f8-2a2a-3432-8f29-5dcca84aaae3, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 040, server: 45.137.97.205, port: 443, type: trojan, password: 4fab2b3b-ff32-3547-9e95-16678429a3f8, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 040, server: 165.154.235.49, port: 443, type: trojan, password: 4fab2b3b-ff32-3547-9e95-16678429a3f8, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 041, server: 45.137.97.205, port: 443, type: trojan, password: 34c2ebbd-8ecf-3c1c-a945-19cd394a3e43, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 041, server: 165.154.235.49, port: 443, type: trojan, password: 34c2ebbd-8ecf-3c1c-a945-19cd394a3e43, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 02 042, server: 45.137.97.205, port: 443, type: trojan, password: 492b9080-d091-38cb-a8d9-cca058be7a0a, sni: =20020526.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: United States 03 042, server: 165.154.235.49, port: 443, type: trojan, password: 492b9080-d091-38cb-a8d9-cca058be7a0a, sni: =20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
+  - {name: South Korea 07, server: hk07.bp777.buzz, port: 21665, type: vmess, uuid: 8e44e9de-87d4-45f4-821f-283b9369073f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk07.bp777.buzz}}, udp: true}
+  - {name: South Korea 08 001, server: hk08.bp777.buzz, port: 21665, type: vmess, uuid: a4560c02-fa4b-43c3-9584-2ccdf44220f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk08.bp777.buzz}}, udp: true}
+  - {name: South Korea 11, server: hk11.bp777.buzz, port: 21665, type: vmess, uuid: a5b66531-e930-4b5c-8d09-1b779e5c91bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk11.bp777.buzz}}, udp: true}
+  - {name: South Korea 12, server: hk12.bp777.buzz, port: 21665, type: vmess, uuid: 1b5afa45-be53-4cd9-a8cb-ee7385d9c123, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk12.bp777.buzz}}, udp: true}
+  - {name: South Korea 13 001, server: hk13.bp777.buzz, port: 21665, type: vmess, uuid: 0696dab7-da01-44d4-8a5d-135026053a14, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk13.bp777.buzz}}, udp: true}
+  - {name: South Korea 14 001, server: hk14.bp777.buzz, port: 21665, type: vmess, uuid: 767aa88d-c904-4bd7-82c8-57753a358a4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk14.bp777.buzz}}, udp: true}
+  - {name: South Korea 14 002, server: hk14.bp777.buzz, port: 21665, type: vmess, uuid: 6dfb0dc2-6faa-4953-917a-0a91d6f10a57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk14.bp777.buzz}}, udp: true}
+  - {name: South Korea 15 001, server: hk15.bp777.buzz, port: 21665, type: vmess, uuid: c542e0aa-7b21-4ae4-a0d8-9423f0cc1b3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk15.bp777.buzz}}, udp: true}
+  - {name: South Korea 15 002, server: hk15.bp777.buzz, port: 21665, type: vmess, uuid: 89e4d975-eb64-4024-9610-0bd916e45839, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk15.bp777.buzz}}, udp: true}
+  - {name: South Korea 08 002, server: hk08.bp777.buzz, port: 21665, type: vmess, uuid: 7fabbd79-81ed-4d29-b890-3cde8f2c264e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk08.bp777.buzz}}, udp: true}
+  - {name: South Korea 10, server: hk10.bp777.buzz, port: 21665, type: vmess, uuid: a3144d02-36f4-468c-9a2b-cbe9dc56e3ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk10.bp777.buzz}}, udp: true}
+  - {name: South Korea 08 003, server: hk08.bp777.buzz, port: 21665, type: vmess, uuid: 57dd8fa2-1088-43bc-85df-7eeb9745f806, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk08.bp777.buzz}}, udp: true}
+  - {name: South Korea 09 001, server: hk09.bp777.buzz, port: 21665, type: vmess, uuid: 5c5d1dcf-92fd-4aa4-9136-1efecfb3b399, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk09.bp777.buzz}}, udp: true}
+  - {name: South Korea 14 003, server: hk14.bp777.buzz, port: 21665, type: vmess, uuid: 1015d5a1-443f-4549-aa96-8113aaee8c98, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk14.bp777.buzz}}, udp: true}
+  - {name: South Korea 13 002, server: hk13.bp777.buzz, port: 21665, type: vmess, uuid: bc6cd945-e98e-44bf-acc6-96374f7d4d60, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk13.bp777.buzz}}, udp: true}
+  - {name: South Korea 08 004, server: hk08.bp777.buzz, port: 21665, type: vmess, uuid: 2ad3fec6-aa85-49af-96be-3c33fa98933a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk08.bp777.buzz}}, udp: true}
+  - {name: South Korea 09 002, server: hk09.bp777.buzz, port: 21665, type: vmess, uuid: e1b9a15f-74b2-4acd-8e42-d2ca6099f7d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk09.bp777.buzz}}, udp: true}
+  - {name: South Korea 08 005, server: hk08.bp777.buzz, port: 21665, type: vmess, uuid: f5969b01-c239-4b18-9aab-637a5cabb627, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk08.bp777.buzz}}, udp: true}
+  - {name: beikui 001, server: pp1.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 002, server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 003, server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 004, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 005, server: pp1.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 006, server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 007, server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 008, server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 009, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 010, server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 011, server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 012, server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 013, server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 014, server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 015, server: pp1.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 016, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 017, server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 018, server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 019, server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 020, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 021, server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 022, server: pp1.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 023, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 024, server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 025, server: pp1.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 026, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 027, server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 028, server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 029, server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 030, server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 031, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 032, server: pp1.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 033, server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 034, server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: =111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 035, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 036, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: true, udp: true}
+  - {name: beikui 037, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: =edge.apple.com, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 有问题咨询TG:@beikui_bot
+  - 有问题咨询TG:beikui_bot
   - kuige 001
   - kuige 002
   - kuige 003
@@ -168,86 +254,176 @@ proxy-groups:
   - kuige 016
   - kuige 017
   - kuige 018
-  - 日本-1号
-  - 日本
-  - United States 01
-  - Sg
-  - United States 02 001
-  - United States 02 002
-  - United States 02 003
-  - United States 02 004
-  - United States 02 005
-  - United States 03 001
-  - United States 03 002
-  - United States 03 003
-  - United States 03 004
-  - United States 02 006
-  - United States 03 005
-  - United States 03 006
-  - United States 03 007
-  - United States 03 008
-  - United States 03 009
-  - United States 03 010
-  - United States 02 007
-  - United States 02 008
-  - United States 02 009
-  - United States 02 010
-  - United States 02 011
-  - United States 02 012
-  - United States 02 013
-  - United States 03 011
-  - United States 03 012
-  - United States 03 013
-  - United States 03 014
-  - United States 03 015
-  - United States 03 016
-  - United States 03 017
-  - United States 03 018
-  - South Korea 02
-  - South Korea 03
-  - South Korea 04
-  - South Korea 16 001
-  - South Korea 17 001
-  - South Korea 11
-  - South Korea 15 001
-  - South Korea 18 001
-  - South Korea 17 002
-  - South Korea 17 003
-  - South Korea 15 002
-  - South Korea 16 002
-  - South Korea 16 003
-  - South Korea 16 004
-  - South Korea 16 005
-  - South Korea 15 003
-  - South Korea 17 004
-  - South Korea 15 004
-  - South Korea 17 005
-  - South Korea 18 002
-  - South Korea 18 003
-  - South Korea 18 004
-  - South Korea 17 006
-  - South Korea 18 005
-  - South Korea 17 007
-  - South Korea 18 006
-  - South Korea 17 008
-  - South Korea 18 007
-  - TW
+  - kuige 019
+  - kuige 020
+  - kuige 021
+  - kuige 022
+  - kuige 023
+  - kuige 024
+  - kuige 025
+  - kuige 026
+  - kuige 027
+  - kuige 028
+  - kuige 029
+  - kuige 030
+  - kuige 031
+  - kuige 032
+  - kuige 033
+  - kuige 034
+  - kuige 035
+  - kuige 036
+  - kuige 037
+  - kuige 038
+  - kuige 039
+  - kuige 040
   - 香港 001
   - 香港 002
   - 香港 003
+  - TW01-V2-直连
+  - SG02-V2-直连
+  - TW01-TROJAN-直连
   - 香港 004
+  - 2香港集群-全网优化
+  - 18日本集群-联通/移动
+  - 7韩国集群-全网优化
+  - 11德国集群-电信/移动
+  - US01-V2-直连
   - 香港 005
+  - 10阿联酋集群-电信/移动
+  - TW02-V2-直连 001
+  - US01-TROJAN-直连
+  - TW02-V2-直连 002
+  - 12英国集群-北方联通
+  - 13印度集群-移动/南方联通
+  - 14新加坡集群-全网优化
+  - SG01-V2-直连
+  - JP02-V2-GDGZ
+  - 17俄罗斯-全网优化
+  - 香港-日本A
+  - 香港-西雅图
+  - 🇯🇵公益节点-东京
+  - 日本 001
+  - 日本 002
+  - 美国
+  - United States 02 001
+  - United States 03 001
+  - United States 02 002
+  - United States 03 002
+  - United States 02 003
+  - United States 03 003
+  - United States 02 004
+  - United States 03 004
+  - United States 02 005
+  - United States 03 005
+  - United States 02 006
+  - United States 03 006
+  - United States 02 007
+  - United States 03 007
   - 香港 006
+  - 日本-3号 001
+  - 台湾Hinet 001
   - 香港 007
+  - 台湾Hinet 002
+  - 台湾Hinet 003
+  - 日本-3号 002
+  - 台湾Hinet 004
   - 香港 008
+  - 日本-3号 003
   - 香港 009
   - 香港 010
+  - 台湾Hinet 005
   - 香港 011
-  - 香港 012
-  - 香港 013
-  - 香港 014
-  - 香港 015
-  - 香港 016
+  - 台湾Hinet 006
+  - 台湾Hinet 007
+  - 台湾Hinet 008
+  - United States 02 008
+  - United States 03 008
+  - United States 02 009
+  - United States 03 009
+  - United States 02 010
+  - United States 03 010
+  - United States 02 011
+  - United States 03 011
+  - United States 02 012
+  - United States 03 012
+  - United States 02 013
+  - United States 03 013
+  - United States 02 014
+  - United States 03 014
+  - United States 02 015
+  - United States 03 015
+  - United States 02 016
+  - United States 03 016
+  - United States 02 017
+  - United States 03 017
+  - United States 02 018
+  - United States 03 018
+  - United States 02 019
+  - United States 03 019
+  - United States 02 020
+  - United States 03 020
+  - United States 02 021
+  - United States 03 021
+  - United States 02 022
+  - United States 03 022
+  - United States 02 023
+  - United States 03 023
+  - United States 02 024
+  - United States 03 024
+  - United States 02 025
+  - United States 03 025
+  - United States 02 026
+  - United States 03 026
+  - United States 02 027
+  - United States 03 027
+  - United States 02 028
+  - United States 03 028
+  - United States 02 029
+  - United States 03 029
+  - United States 02 030
+  - United States 03 030
+  - United States 02 031
+  - United States 03 031
+  - United States 02 032
+  - United States 03 032
+  - United States 02 033
+  - United States 03 033
+  - United States 02 034
+  - United States 03 034
+  - United States 02 035
+  - United States 03 035
+  - United States 02 036
+  - United States 03 036
+  - United States 02 037
+  - United States 03 037
+  - United States 02 038
+  - United States 03 038
+  - United States 02 039
+  - United States 03 039
+  - United States 02 040
+  - United States 03 040
+  - United States 02 041
+  - United States 03 041
+  - United States 02 042
+  - United States 03 042
+  - South Korea 07
+  - South Korea 08 001
+  - South Korea 11
+  - South Korea 12
+  - South Korea 13 001
+  - South Korea 14 001
+  - South Korea 14 002
+  - South Korea 15 001
+  - South Korea 15 002
+  - South Korea 08 002
+  - South Korea 10
+  - South Korea 08 003
+  - South Korea 09 001
+  - South Korea 14 003
+  - South Korea 13 002
+  - South Korea 08 004
+  - South Korea 09 002
+  - South Korea 08 005
   - beikui 001
   - beikui 002
   - beikui 003
@@ -285,14 +461,10 @@ proxy-groups:
   - beikui 035
   - beikui 036
   - beikui 037
-  - beikui 038
-  - beikui 039
-  - beikui 040
-  - beikui 041
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 有问题咨询TG:@beikui_bot
+  - 有问题咨询TG:beikui_bot
   - kuige 001
   - kuige 002
   - kuige 003
@@ -311,86 +483,176 @@ proxy-groups:
   - kuige 016
   - kuige 017
   - kuige 018
-  - 日本-1号
-  - 日本
-  - United States 01
-  - Sg
-  - United States 02 001
-  - United States 02 002
-  - United States 02 003
-  - United States 02 004
-  - United States 02 005
-  - United States 03 001
-  - United States 03 002
-  - United States 03 003
-  - United States 03 004
-  - United States 02 006
-  - United States 03 005
-  - United States 03 006
-  - United States 03 007
-  - United States 03 008
-  - United States 03 009
-  - United States 03 010
-  - United States 02 007
-  - United States 02 008
-  - United States 02 009
-  - United States 02 010
-  - United States 02 011
-  - United States 02 012
-  - United States 02 013
-  - United States 03 011
-  - United States 03 012
-  - United States 03 013
-  - United States 03 014
-  - United States 03 015
-  - United States 03 016
-  - United States 03 017
-  - United States 03 018
-  - South Korea 02
-  - South Korea 03
-  - South Korea 04
-  - South Korea 16 001
-  - South Korea 17 001
-  - South Korea 11
-  - South Korea 15 001
-  - South Korea 18 001
-  - South Korea 17 002
-  - South Korea 17 003
-  - South Korea 15 002
-  - South Korea 16 002
-  - South Korea 16 003
-  - South Korea 16 004
-  - South Korea 16 005
-  - South Korea 15 003
-  - South Korea 17 004
-  - South Korea 15 004
-  - South Korea 17 005
-  - South Korea 18 002
-  - South Korea 18 003
-  - South Korea 18 004
-  - South Korea 17 006
-  - South Korea 18 005
-  - South Korea 17 007
-  - South Korea 18 006
-  - South Korea 17 008
-  - South Korea 18 007
-  - TW
+  - kuige 019
+  - kuige 020
+  - kuige 021
+  - kuige 022
+  - kuige 023
+  - kuige 024
+  - kuige 025
+  - kuige 026
+  - kuige 027
+  - kuige 028
+  - kuige 029
+  - kuige 030
+  - kuige 031
+  - kuige 032
+  - kuige 033
+  - kuige 034
+  - kuige 035
+  - kuige 036
+  - kuige 037
+  - kuige 038
+  - kuige 039
+  - kuige 040
   - 香港 001
   - 香港 002
   - 香港 003
+  - TW01-V2-直连
+  - SG02-V2-直连
+  - TW01-TROJAN-直连
   - 香港 004
+  - 2香港集群-全网优化
+  - 18日本集群-联通/移动
+  - 7韩国集群-全网优化
+  - 11德国集群-电信/移动
+  - US01-V2-直连
   - 香港 005
+  - 10阿联酋集群-电信/移动
+  - TW02-V2-直连 001
+  - US01-TROJAN-直连
+  - TW02-V2-直连 002
+  - 12英国集群-北方联通
+  - 13印度集群-移动/南方联通
+  - 14新加坡集群-全网优化
+  - SG01-V2-直连
+  - JP02-V2-GDGZ
+  - 17俄罗斯-全网优化
+  - 香港-日本A
+  - 香港-西雅图
+  - 🇯🇵公益节点-东京
+  - 日本 001
+  - 日本 002
+  - 美国
+  - United States 02 001
+  - United States 03 001
+  - United States 02 002
+  - United States 03 002
+  - United States 02 003
+  - United States 03 003
+  - United States 02 004
+  - United States 03 004
+  - United States 02 005
+  - United States 03 005
+  - United States 02 006
+  - United States 03 006
+  - United States 02 007
+  - United States 03 007
   - 香港 006
+  - 日本-3号 001
+  - 台湾Hinet 001
   - 香港 007
+  - 台湾Hinet 002
+  - 台湾Hinet 003
+  - 日本-3号 002
+  - 台湾Hinet 004
   - 香港 008
+  - 日本-3号 003
   - 香港 009
   - 香港 010
+  - 台湾Hinet 005
   - 香港 011
-  - 香港 012
-  - 香港 013
-  - 香港 014
-  - 香港 015
-  - 香港 016
+  - 台湾Hinet 006
+  - 台湾Hinet 007
+  - 台湾Hinet 008
+  - United States 02 008
+  - United States 03 008
+  - United States 02 009
+  - United States 03 009
+  - United States 02 010
+  - United States 03 010
+  - United States 02 011
+  - United States 03 011
+  - United States 02 012
+  - United States 03 012
+  - United States 02 013
+  - United States 03 013
+  - United States 02 014
+  - United States 03 014
+  - United States 02 015
+  - United States 03 015
+  - United States 02 016
+  - United States 03 016
+  - United States 02 017
+  - United States 03 017
+  - United States 02 018
+  - United States 03 018
+  - United States 02 019
+  - United States 03 019
+  - United States 02 020
+  - United States 03 020
+  - United States 02 021
+  - United States 03 021
+  - United States 02 022
+  - United States 03 022
+  - United States 02 023
+  - United States 03 023
+  - United States 02 024
+  - United States 03 024
+  - United States 02 025
+  - United States 03 025
+  - United States 02 026
+  - United States 03 026
+  - United States 02 027
+  - United States 03 027
+  - United States 02 028
+  - United States 03 028
+  - United States 02 029
+  - United States 03 029
+  - United States 02 030
+  - United States 03 030
+  - United States 02 031
+  - United States 03 031
+  - United States 02 032
+  - United States 03 032
+  - United States 02 033
+  - United States 03 033
+  - United States 02 034
+  - United States 03 034
+  - United States 02 035
+  - United States 03 035
+  - United States 02 036
+  - United States 03 036
+  - United States 02 037
+  - United States 03 037
+  - United States 02 038
+  - United States 03 038
+  - United States 02 039
+  - United States 03 039
+  - United States 02 040
+  - United States 03 040
+  - United States 02 041
+  - United States 03 041
+  - United States 02 042
+  - United States 03 042
+  - South Korea 07
+  - South Korea 08 001
+  - South Korea 11
+  - South Korea 12
+  - South Korea 13 001
+  - South Korea 14 001
+  - South Korea 14 002
+  - South Korea 15 001
+  - South Korea 15 002
+  - South Korea 08 002
+  - South Korea 10
+  - South Korea 08 003
+  - South Korea 09 001
+  - South Korea 14 003
+  - South Korea 13 002
+  - South Korea 08 004
+  - South Korea 09 002
+  - South Korea 08 005
   - beikui 001
   - beikui 002
   - beikui 003
@@ -428,10 +690,6 @@ proxy-groups:
   - beikui 035
   - beikui 036
   - beikui 037
-  - beikui 038
-  - beikui 039
-  - beikui 040
-  - beikui 041
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
