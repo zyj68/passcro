@@ -4,122 +4,161 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 美国 G51 | 直连 | 0x, server: 141.98.168.251, port: 443, type: trojan, password: LiX1tV, skip-cert-verify: true, udp: true}
-  - {name: 日本高速限时免费, server: jpaws.keai.shop, port: 6633, type: trojan, password: 550b88d7-b7e3-4b18-95dd-f1bd25551b52, skip-cert-verify: true, udp: true}
-  - {name: South Korea 13, server: hk13.bp777.buzz, port: 21665, type: vmess, uuid: bc6cd945-e98e-44bf-acc6-96374f7d4d60, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk13.bp777.buzz}}, udp: true}
-  - {name: South Korea 11, server: hk11.bp777.buzz, port: 21665, type: vmess, uuid: a5b66531-e930-4b5c-8d09-1b779e5c91bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk11.bp777.buzz}}, udp: true}
-  - {name: US_2, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
-  - {name: South Korea 14, server: hk14.bp777.buzz, port: 21665, type: vmess, uuid: 1015d5a1-443f-4549-aa96-8113aaee8c98, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk14.bp777.buzz}}, udp: true}
-  - {name: 美国免费节点+1x, server: usa.keai.shop, port: 4433, type: trojan, password: 550b88d7-b7e3-4b18-95dd-f1bd25551b52, skip-cert-verify: true, udp: true}
-  - {name: luffy, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true, udp: true}
-  - {name: NL, server: youtube-bai-piao-wang-zhe.nl.884899.cf, port: 41196, type: trojan, password: 94afcc56-cc1c-4cd4-8c82-1215cd052795, skip-cert-verify: true, udp: true}
-  - {name: US+7+|+Airproxies, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
-  - {name: AU_2, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
-  - {name: 美国免费优化, server: cdn.xiaolicdn.eu.org, port: 443, type: vmess, uuid: 550b88d7-b7e3-4b18-95dd-f1bd25551b52, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: usa.keai.shop}}, udp: true}
-  - {name: 日本 A | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: 3ba517b0-5a6d-3a9d-9e3e-3db1c49d706e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /jp1, headers: {Host: freewaytunnel.dev}}, udp: true}
-  - {name: 日本 B | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: 3ba517b0-5a6d-3a9d-9e3e-3db1c49d706e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /jp2, headers: {Host: freewaytunnel.dev}}, udp: true}
+  - {name: "[岛主公益节点]香港微软云10Gbps", server: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, port: 443, type: trojan, password: trojan-daozhu-uallen-qbit-azure-hk, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸US_5001 @WangCai_1, server: 167.88.63.59, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸US_3389 @WangCai_1, server: 167.88.63.59, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸US_3306 @WangCai_1, server: 167.88.63.59, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸US_8008 @WangCai_1, server: 167.88.63.59, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 🇺🇸US_2375 @WangCai_1, server: 167.88.63.59, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 德国test, server: 52.58.249.78, port: 57824, type: ss, cipher: chacha20-ietf-poly1305, password: pryhyxya, udp: true}
+  - {name: 香港 2 广港 2x, server: cn1.node.zeroteam.top, port: 37672, type: trojan, password: 3d9e1871-4078-4a09-b428-dba99c694996, skip-cert-verify: true, udp: true}
+  - {name: 台湾 1 广港 2x, server: cn1.node.zeroteam.top, port: 54847, type: trojan, password: 3d9e1871-4078-4a09-b428-dba99c694996, skip-cert-verify: true, udp: true}
+  - {name: 香港 1 广港 2x, server: cn1.node.zeroteam.top, port: 45992, type: trojan, password: 3d9e1871-4078-4a09-b428-dba99c694996, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 1 广新 2x, server: cn1.node.zeroteam.top, port: 41954, type: trojan, password: 3d9e1871-4078-4a09-b428-dba99c694996, skip-cert-verify: true, udp: true}
+  - {name: 日本 1 广日 2x, server: cn1.node.zeroteam.top, port: 20446, type: trojan, password: 3d9e1871-4078-4a09-b428-dba99c694996, skip-cert-verify: true, udp: true}
+  - {name: 香港5-IEPL-倍率1.0, server: ss.hk5.se.sx.cn, port: 1105, type: ss, cipher: chacha20-ietf-poly1305, password: IFwhCTW3sX, udp: true}
+  - {name: 香港3-IEPL-倍率1.0, server: ss.hk3.se.sx.cn, port: 1103, type: ss, cipher: chacha20-ietf-poly1305, password: IFwhCTW3sX, udp: true}
+  - {name: 公告:netfix,pronhub会员请在tg群组领取，明天上线新加坡节点, server: sh1.fkfirewall.top, port: 31111, type: ss, cipher: aes-128-gcm, password: aa6ee75e-015f-4432-adf8-85bc612459dd, udp: true}
+  - {name: 流量低至0.8元25G,全场8折优惠码:114514, server: sh1.fkfirewall.top, port: 31111, type: ss, cipher: aes-128-gcm, password: aa6ee75e-015f-4432-adf8-85bc612459dd, udp: true}
+  - {name: "[beta]hyp试验加速节点", server: sh1.fkfirewall.top, port: 31111, type: ss, cipher: aes-128-gcm, password: aa6ee75e-015f-4432-adf8-85bc612459dd, udp: true}
+  - {name: "🇭🇰[高速]香港4-广港隧道-稳定-1.8X", server: gz1.fkfirewall.top, port: 18625, type: vmess, uuid: aa6ee75e-015f-4432-adf8-85bc612459dd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /run, headers: {Host: hk1.fkfirewall.top}}, udp: true}
+  - {name: 台湾Sky | 解锁流媒体, server: 103.186.187.52, port: 443, type: trojan, password: 09553aee-5191-4870-a312-51d053ea668b, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet～广州移动2(中转) | 解锁流媒体, server: gzyd2.52147.top, port: 30010, type: trojan, password: 09553aee-5191-4870-a312-51d053ea668b, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet～河南移动(中转) | 解锁流媒体, server: hnyd.52147.top, port: 30010, type: trojan, password: 09553aee-5191-4870-a312-51d053ea668b, skip-cert-verify: true, udp: true}
+  - {name: 日本NTT-1号 | 解锁流媒体, server: 203.138.98.199, port: 443, type: trojan, password: 09553aee-5191-4870-a312-51d053ea668b, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet | 解锁流媒体, server: hinet.52147.top, port: 443, type: trojan, password: 09553aee-5191-4870-a312-51d053ea668b, skip-cert-verify: true, udp: true}
+  - {name: 日本NTT-河南移动 | (中转), server: hnyd.52147.top, port: 30130, type: trojan, password: 09553aee-5191-4870-a312-51d053ea668b, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet-广移2 | 解锁流媒体, server: gzyd2.52147.top, port: 30010, type: trojan, password: 7da84a56-a1e2-48f3-a690-374a3973d7e8, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet-广州移动 | 解锁流媒体, server: gzyd1.52147.top, port: 30010, type: trojan, password: 7da84a56-a1e2-48f3-a690-374a3973d7e8, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 美国 | 2.5倍率 | 簽到可免費使用 | 體驗節點 | C | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 美国 | 2.5倍率 | 簽到可免費使用 | 體驗節點 | D | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 美国 | 2.5倍率 | 簽到可免費使用 | 體驗節點 | B | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, skip-cert-verify: true, udp: true}
+  - {name: "[直连]日本 04", server: supernortheast.xn--mesv7f5toqlp.club, port: 12004, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, skip-cert-verify: true, udp: true}
+  - {name: "[直连]日本 03", server: supernortheast.xn--mesv7f5toqlp.club, port: 12003, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, skip-cert-verify: true, udp: true}
+  - {name: "[直连]日本 02", server: supernortheast.xn--mesv7f5toqlp.club, port: 12002, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, skip-cert-verify: true, udp: true}
+  - {name: "[直连]日本 01", server: supernortheast.xn--mesv7f5toqlp.club, port: 12001, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, skip-cert-verify: true, udp: true}
+  - {name: "[直连]新加坡 04", server: supersouth.xn--mesv7f5toqlp.club, port: 12004, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, skip-cert-verify: true, udp: true}
+  - {name: "[直连]新加坡 03", server: supersouth.xn--mesv7f5toqlp.club, port: 12003, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, skip-cert-verify: true, udp: true}
+  - {name: "[直连]新加坡 02", server: supersouth.xn--mesv7f5toqlp.club, port: 12002, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, skip-cert-verify: true, udp: true}
+  - {name: "[直连]新加坡 01", server: supersouth.xn--mesv7f5toqlp.club, port: 12001, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, skip-cert-verify: true, udp: true}
+  - {name: 套餐到期：2022-08-20, server: supersouth.xn--mesv7f5toqlp.club, port: 12001, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, skip-cert-verify: true, udp: true}
+  - {name: 剩余流量：15102.9 GB, server: supersouth.xn--mesv7f5toqlp.club, port: 12001, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, skip-cert-verify: true, udp: true}
+  - {name: "香港✈️中转 [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 45379, type: trojan, password: "82a235da-41e1-4ee4-811a-f72859be81a1", skip-cert-verify: true, udp: true}
+  - {name: "台湾✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 31097, type: trojan, password: "82a235da-41e1-4ee4-811a-f72859be81a1", skip-cert-verify: true, udp: true}
+  - {name: "俄罗斯✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 42167, type: trojan, password: "82a235da-41e1-4ee4-811a-f72859be81a1", skip-cert-verify: true, udp: true}
+  - {name: JP, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
+  - {name: US, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
+  - {name: 美利坚合众国, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
   - {name: 香港 D | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: 3ba517b0-5a6d-3a9d-9e3e-3db1c49d706e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hgc, headers: {Host: freewaytunnel.dev}}, udp: true}
-  - {name: 香港 E | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: 3ba517b0-5a6d-3a9d-9e3e-3db1c49d706e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /wtt, headers: {Host: freewaytunnel.dev}}, udp: true}
-  - {name: 韓國 A | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: 3ba517b0-5a6d-3a9d-9e3e-3db1c49d706e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /kr, headers: {Host: freewaytunnel.dev}}, udp: true}
-  - {name: 台湾 B | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: 3ba517b0-5a6d-3a9d-9e3e-3db1c49d706e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tw2, headers: {Host: freewaytunnel.dev}}, udp: true}
-  - {name: ghnvb, server: 73hk03.ok365.cyou, port: 12359, type: trojan, password: a8926bac-51cf-4f4a-86fb-cff09ca7939f, skip-cert-verify: true, udp: true}
-  - {name: kgdtbb, server: 73hk02.ok365.cyou, port: 80, type: trojan, password: a8926bac-51cf-4f4a-86fb-cff09ca7939f, skip-cert-verify: true, udp: true}
-  - {name: lhddv, server: 715hk01.ok365.cyou, port: 80, type: trojan, password: a8926bac-51cf-4f4a-86fb-cff09ca7939f, skip-cert-verify: true, udp: true}
-  - {name: vunbc, server: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, port: 443, type: trojan, password: trojan-daozhu-uallen-qbit-azure-hk, skip-cert-verify: true, udp: true}
-  - {name: cdcbgu, server: gzyd1.52147.top, port: 30010, type: trojan, password: 7da84a56-a1e2-48f3-a690-374a3973d7e8, skip-cert-verify: true, udp: true}
-  - {name: lbxtb, server: gzyd1.52147.top, port: 30180, type: trojan, password: 09553aee-5191-4870-a312-51d053ea668b, skip-cert-verify: true, udp: true}
-  - {name: jcdybn, server: 716sg.ok365.cyou, port: 80, type: trojan, password: a8926bac-51cf-4f4a-86fb-cff09ca7939f, skip-cert-verify: true, udp: true}
-  - {name: ncxtbm, server: gzyd1.52147.top, port: 30180, type: trojan, password: 7da84a56-a1e2-48f3-a690-374a3973d7e8, skip-cert-verify: true, udp: true}
-  - {name: mcdyn, server: 103.253.43.228, port: 443, type: trojan, password: 48a55ebb-54f2-4757-8899-047933695eb2, skip-cert-verify: true, udp: true}
-  - {name: zxhvn, server: 20.187.93.241, port: 80, type: vmess, uuid: f30d6272-7320-4adf-8656-ef6c2a8f055a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: hfsfb, server: gdgz.henet.cyou, port: 30011, type: ss, cipher: chacha20-ietf-poly1305, password: c2d0b0f3-3a85-490d-833f-24a9c9284578, udp: true}
-  - {name: mcdthb, server: jp-03.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, skip-cert-verify: true, udp: true}
-  - {name: cxduj, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, skip-cert-verify: true, udp: true}
-  - {name: jfswyh, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, skip-cert-verify: true, udp: true}
-  - {name: nxsthh, server: 157.120.35.234, port: 443, type: trojan, password: 852fac80-4fe3-40ae-b9ee-3291c327c704, skip-cert-verify: true, udp: true}
-  - {name: TW, server: gdgz.henet.cyou, port: 30011, type: ss, cipher: chacha20-ietf-poly1305, password: 026939c1-7742-463f-97ec-ba8037eeea91, udp: true}
-  - {name: 香港, server: 103.253.43.228, port: 443, type: trojan, password: 5839b0e8-d8ce-42c5-86d1-eb56a06c450d, skip-cert-verify: true, udp: true}
-  - {name: 日本-1号, server: 203.138.98.199, port: 443, type: trojan, password: 741840d2-5060-4e98-91ba-5c9b51d99718, skip-cert-verify: true, udp: true}
+  - {name: 香港 A | 中继 | Prepaid Users, server: freewaytunnel.dev, port: 12100, type: vmess, uuid: 3ba517b0-5a6d-3a9d-9e3e-3db1c49d706e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hk1, headers: {Host: freewaytunnel.dev}}, udp: true}
+  - {name: 香港HKT, server: hkt.52147.top, port: 443, type: trojan, password: c49c48be-a34b-4f39-96b6-a78f55be9da7, skip-cert-verify: true, udp: true}
+  - {name: South Korea 12, server: hk12.bp777.buzz, port: 21665, type: vmess, uuid: 7fabbd79-81ed-4d29-b890-3cde8f2c264e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk12.bp777.buzz}}, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 美国 G51 | 直连 | 0x
-  - 日本高速限时免费
-  - South Korea 13
-  - South Korea 11
-  - US_2
-  - South Korea 14
-  - 美国免费节点+1x
-  - luffy
-  - NL
-  - US+7+|+Airproxies
-  - AU_2
-  - 美国免费优化
-  - 日本 A | 中继 | Prepaid Users
-  - 日本 B | 中继 | Prepaid Users
+  - "[岛主公益节点]香港微软云10Gbps"
+  - 🇺🇸US_5001 @WangCai_1
+  - 🇺🇸US_3389 @WangCai_1
+  - 🇺🇸US_3306 @WangCai_1
+  - 🇺🇸US_8008 @WangCai_1
+  - 🇺🇸US_2375 @WangCai_1
+  - 德国test
+  - 香港 2 广港 2x
+  - 台湾 1 广港 2x
+  - 香港 1 广港 2x
+  - 新加坡 1 广新 2x
+  - 日本 1 广日 2x
+  - 香港5-IEPL-倍率1.0
+  - 香港3-IEPL-倍率1.0
+  - 公告:netfix,pronhub会员请在tg群组领取，明天上线新加坡节点
+  - 流量低至0.8元25G,全场8折优惠码:114514
+  - "[beta]hyp试验加速节点"
+  - 🇭🇰[高速]香港4-广港隧道-稳定-1.8X
+  - 台湾Sky | 解锁流媒体
+  - 台湾Hinet～广州移动2(中转) | 解锁流媒体
+  - 台湾Hinet～河南移动(中转) | 解锁流媒体
+  - 日本NTT-1号 | 解锁流媒体
+  - 台湾Hinet | 解锁流媒体
+  - 日本NTT-河南移动 | (中转)
+  - 台湾Hinet-广移2 | 解锁流媒体
+  - 台湾Hinet-广州移动 | 解锁流媒体
+  - 🇺🇲 美国 | 2.5倍率 | 簽到可免費使用 | 體驗節點 | C | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+  - 🇺🇲 美国 | 2.5倍率 | 簽到可免費使用 | 體驗節點 | D | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+  - 🇺🇲 美国 | 2.5倍率 | 簽到可免費使用 | 體驗節點 | B | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+  - "[直连]日本 04"
+  - "[直连]日本 03"
+  - "[直连]日本 02"
+  - "[直连]日本 01"
+  - "[直连]新加坡 04"
+  - "[直连]新加坡 03"
+  - "[直连]新加坡 02"
+  - "[直连]新加坡 01"
+  - 套餐到期：2022-08-20
+  - 剩余流量：15102.9 GB
+  - 香港✈️中转 [湘沪BGP]
+  - 台湾✈️中转  [湘沪BGP]
+  - 俄罗斯✈️中转  [湘沪BGP]
+  - JP
+  - US
+  - 美利坚合众国
   - 香港 D | 中继 | Prepaid Users
-  - 香港 E | 中继 | Prepaid Users
-  - 韓國 A | 中继 | Prepaid Users
-  - 台湾 B | 中继 | Prepaid Users
-  - ghnvb
-  - kgdtbb
-  - lhddv
-  - vunbc
-  - cdcbgu
-  - lbxtb
-  - jcdybn
-  - ncxtbm
-  - mcdyn
-  - zxhvn
-  - hfsfb
-  - mcdthb
-  - cxduj
-  - jfswyh
-  - nxsthh
-  - TW
-  - 香港
-  - 日本-1号
+  - 香港 A | 中继 | Prepaid Users
+  - 香港HKT
+  - South Korea 12
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 美国 G51 | 直连 | 0x
-  - 日本高速限时免费
-  - South Korea 13
-  - South Korea 11
-  - US_2
-  - South Korea 14
-  - 美国免费节点+1x
-  - luffy
-  - NL
-  - US+7+|+Airproxies
-  - AU_2
-  - 美国免费优化
-  - 日本 A | 中继 | Prepaid Users
-  - 日本 B | 中继 | Prepaid Users
+  - "[岛主公益节点]香港微软云10Gbps"
+  - 🇺🇸US_5001 @WangCai_1
+  - 🇺🇸US_3389 @WangCai_1
+  - 🇺🇸US_3306 @WangCai_1
+  - 🇺🇸US_8008 @WangCai_1
+  - 🇺🇸US_2375 @WangCai_1
+  - 德国test
+  - 香港 2 广港 2x
+  - 台湾 1 广港 2x
+  - 香港 1 广港 2x
+  - 新加坡 1 广新 2x
+  - 日本 1 广日 2x
+  - 香港5-IEPL-倍率1.0
+  - 香港3-IEPL-倍率1.0
+  - 公告:netfix,pronhub会员请在tg群组领取，明天上线新加坡节点
+  - 流量低至0.8元25G,全场8折优惠码:114514
+  - "[beta]hyp试验加速节点"
+  - 🇭🇰[高速]香港4-广港隧道-稳定-1.8X
+  - 台湾Sky | 解锁流媒体
+  - 台湾Hinet～广州移动2(中转) | 解锁流媒体
+  - 台湾Hinet～河南移动(中转) | 解锁流媒体
+  - 日本NTT-1号 | 解锁流媒体
+  - 台湾Hinet | 解锁流媒体
+  - 日本NTT-河南移动 | (中转)
+  - 台湾Hinet-广移2 | 解锁流媒体
+  - 台湾Hinet-广州移动 | 解锁流媒体
+  - 🇺🇲 美国 | 2.5倍率 | 簽到可免費使用 | 體驗節點 | C | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+  - 🇺🇲 美国 | 2.5倍率 | 簽到可免費使用 | 體驗節點 | D | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+  - 🇺🇲 美国 | 2.5倍率 | 簽到可免費使用 | 體驗節點 | B | 官網 | ninihao.cc | 体验节点不等于付费节点效果喔 |
+  - "[直连]日本 04"
+  - "[直连]日本 03"
+  - "[直连]日本 02"
+  - "[直连]日本 01"
+  - "[直连]新加坡 04"
+  - "[直连]新加坡 03"
+  - "[直连]新加坡 02"
+  - "[直连]新加坡 01"
+  - 套餐到期：2022-08-20
+  - 剩余流量：15102.9 GB
+  - 香港✈️中转 [湘沪BGP]
+  - 台湾✈️中转  [湘沪BGP]
+  - 俄罗斯✈️中转  [湘沪BGP]
+  - JP
+  - US
+  - 美利坚合众国
   - 香港 D | 中继 | Prepaid Users
-  - 香港 E | 中继 | Prepaid Users
-  - 韓國 A | 中继 | Prepaid Users
-  - 台湾 B | 中继 | Prepaid Users
-  - ghnvb
-  - kgdtbb
-  - lhddv
-  - vunbc
-  - cdcbgu
-  - lbxtb
-  - jcdybn
-  - ncxtbm
-  - mcdyn
-  - zxhvn
-  - hfsfb
-  - mcdthb
-  - cxduj
-  - jfswyh
-  - nxsthh
-  - TW
-  - 香港
-  - 日本-1号
+  - 香港 A | 中继 | Prepaid Users
+  - 香港HKT
+  - South Korea 12
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
