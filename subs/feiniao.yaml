@@ -4,93 +4,95 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 节点若失效，请更新订阅，使用前最好更新一次，更新报错请先开启代理翻墙（官网feiniaoyun.tk）, server: a.b.c, port: 1, type: ss, cipher: chacha20-ietf-poly1305, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, udp: true}
-  - {name: 推荐使用Clash客户端，建议Clash客户端设置24h自动更新订阅（不推荐使用V2Ray客户端）, server: a.b.c, port: 1, type: ss, cipher: chacha20-ietf-poly1305, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, udp: true}
-  - {name: 带【奈飞】字样的节点，完整解锁奈飞，支持奈飞非自制剧，建议自备香港区可看的奈飞账号, server: a.b.c, port: 1, type: ss, cipher: chacha20-ietf-poly1305, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, udp: true}
-  - {name: 🇨🇳 台湾|01奈飞直连, server: tw01.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: tw01.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾|01奈飞广州移动中转, server: q7rxpd.mispeed.org, port: 53016, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: tw01.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾|01奈飞广州电信中转, server: gd.nmslsb.com, port: 52153, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: tw01.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾|03广州移动中转, server: q7rxpd.mispeed.org, port: 11763, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: tw03.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 台湾|02广州移动中转, server: q7rxpd.mispeed.org, port: 12976, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: tw02.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡|04|LIN, server: sgmax04.170809.xyz, port: 443, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: sgmax04.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡|04|LIN广州移动中转, server: q7rxpd.mispeed.org, port: 20961, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: sgmax04.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡|03|OC, server: 0a01f3ad01.170809.xyz, port: 443, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: 0a01f3ad01.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡|01|LIN, server: sgmax01.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: sgmax01.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡|03|LIN, server: sgmax03.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: sgmax03.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡|02|LIN, server: sgmax02.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: sgmax02.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡|01|OC, server: sg01.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: sg01.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度|02|LIN, server: in02.170809.xyz, port: 443, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: in02.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国|01|LIN, server: uk01.170809.xyz, port: 443, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: uk01.170809.xyz%3A, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国|01|LIN广州移动中转, server: q7rxpd.mispeed.org, port: 21813, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: uk01.170809.xyz%3A, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 韩国|01|AZ, server: kr01.170809.xyz, port: 45625, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: kr01.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 韩国|01|AZ中转, server: q7rxpd.mispeed.org, port: 41739, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: kr01.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本|01|LIN, server: jp01.170809.xyz, port: 443, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: jp01.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本|01|LIN香港AZ中转, server: q7rxpd.mispeed.org, port: 33170, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: jp01.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本|高速|03|LIN, server: jpmax03.170809.xyz, port: 443, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: jpmax03.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本|高速|01|LIN, server: jpmax01.170809.xyz, port: 443, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: jpmax01.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本|03|LINAZ中转, server: q7rxpd.mispeed.org, port: 10701, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: jpmax03.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本|02|LIN02, server: jpmax02.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: jpmax02.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本|02|LIN广州电信中转, server: gd.nmslsb.com, port: 50614, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: jpmax02.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本|05|LIN, server: jpmax05.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: jpmax05.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本|03|LIN, server: jp03.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: jp03.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本|02|LIN, server: jp02.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: jp02.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本|05|LIN2, server: jp05.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: jp05.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 美国|高速|01|LIN, server: usmax01.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 美国|01|LIN, server: us01.170809.xyz, port: 443, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 美国|02|RN, server: usmax02.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: usmax02.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 美国|02|RN广州电信中转, server: gd.nmslsb.com, port: 58825, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: usmax02.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 美国|03|RN, server: usmax03.170809.xyz, port: 443, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: usmax03.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 美国|03RN, server: us03.170809.xyz, port: 443, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: us03.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 美国|04|RN, server: usmax04.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: usmax04.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 美国|04|RN广州电信中转, server: gd.nmslsb.com, port: 59361, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: usmax04.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|13高速, server: hk13.170809.xyz, port: 14444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hk13.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|13广州电信中转, server: gd.nmslsb.com, port: 56481, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hk13.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|13广州移动中转, server: gy2.zfnode.org, port: 39082, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hk13.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|13湖南联通中转, server: hn2.zfnode.org, port: 43648, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hk13.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|13|BGP广州移动中转, server: gy2.zfnode.org, port: 32871, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax13.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|23|BGP广州电信中转, server: gd.nmslsb.com, port: 53584, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax23.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|13|奈飞BGP广移中转, server: q7rxpd.mispeed.org, port: 59523, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax13.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|12HKT, server: hkmax12.170809.xyz, port: 10041, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax12.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|13|奈飞BGP, server: hkmax13.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax13.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|23|奈飞BGP, server: hkmax23.170809.xyz, port: 444, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax23.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|23|奈飞BGP广州移动, server: gy2.zfnode.org, port: 27558, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax23.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|04AZ高速2倍率, server: hkmax04.170809.xyz, port: 443, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax04.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|04广港移动隧道2倍率, server: q7rxpd.mispeed.org, port: 32201, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax04.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|12广港电信隧道2倍率, server: gd.nmslsb.com, port: 50776, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hk12.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|02沪港联通隧道2倍率, server: w1a3.ddns.tunnels.farm, port: 55540, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax02.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|12|沪港联通隧道2倍率, server: w1a3.ddns.tunnels.farm, port: 15920, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax12.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|03广港移动隧道2倍率, server: q7rxpd.mispeed.org, port: 56402, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax12.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|17广港移动隧道2倍率, server: q7rxpd.mispeed.org, port: 53413, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax17.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港|20广港移动隧道2倍率, server: q7rxpd.mispeed.org, port: 40030, type: trojan, password: a3c7768e-7a1a-442e-8a85-cc824a00160e, sni: hkmax20.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: JCBB_香港01【vip1】, server: gkdcm.myjcbbcn.top, port: 25899, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港02【vip1】, server: gkdcu.myjcbbcn.top, port: 25899, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港03【vip1】, server: gkdcm.myjcbbcn.top, port: 25898, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港04【vip1】, server: gkdcu.myjcbbcn.top, port: 25898, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港05【vip1】, server: gkdcm.myjcbbcn.top, port: 25897, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港06【vip1】, server: gkdcu.myjcbbcn.top, port: 25897, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港07【vip1】, server: gkdcm.myjcbbcn.top, port: 25896, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港08【vip1】, server: gkdcu.myjcbbcn.top, port: 25896, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_新加坡01【vip1】, server: gkdcm.myjcbbcn.top, port: 25895, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_新加坡02【vip1】, server: gkdcu.myjcbbcn.top, port: 25895, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_新加坡03【vip1】, server: gkdcm.myjcbbcn.top, port: 25894, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_新加坡04【vip1】, server: gkdcu.myjcbbcn.top, port: 25894, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_日本01【vip1】, server: gkdcm.myjcbbcn.top, port: 25888, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_日本02【vip1】, server: gkdcu.myjcbbcn.top, port: 25888, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_日本03【vip1】, server: gkdcm.myjcbbcn.top, port: 25887, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_日本04【vip1】, server: gkdcu.myjcbbcn.top, port: 25887, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_美国01【vip1】, server: gkdcm.myjcbbcn.top, port: 25886, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_美国02【vip1】, server: gkdcu.myjcbbcn.top, port: 25886, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_美国03【vip1】, server: gkdcm.myjcbbcn.top, port: 25885, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_美国04【vip1】, server: gkdcu.myjcbbcn.top, port: 25885, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_英国01【vip1】, server: gkdcm.myjcbbcn.top, port: 25884, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_英国02【vip1】, server: gkdcu.myjcbbcn.top, port: 25884, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_德国01【vip1】, server: gkdcm.myjcbbcn.top, port: 25883, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_德国02【vip1】, server: gkdcu.myjcbbcn.top, port: 25883, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_印度01【vip1】, server: gkdcm.myjcbbcn.top, port: 25882, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_印度02【vip1】, server: gkdcu.myjcbbcn.top, port: 25882, type: vmess, uuid: c59e68e1-0388-4024-aead-c61b1345f2e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: 🇸🇬 新加坡1|流解, server: 13.229.54.75, port: 10800, type: trojan, password: 2c417f76-019f-4677-9ddf-e6590954a43a, sni: sg1.tgads123.com, skip-cert-verify: true, udp: true}
-  - {name: 韩国 负载均衡 备用, server: ocikr.n.optage.moe, port: 62500, type: trojan, password: 2c417f76-019f-4677-9ddf-e6590954a43a, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 日本东京 负载均衡 备用, server: ocijp.n.optage.moe, port: 62500, type: trojan, password: 2c417f76-019f-4677-9ddf-e6590954a43a, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 节点若失效，请更新订阅，使用前最好更新一次，更新报错请先开启代理翻墙（官网feiniaoyun.tk）, server: a.b.c, port: 1, type: ss, cipher: chacha20-ietf-poly1305, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, udp: true}
+  - {name: 推荐使用Clash客户端，建议Clash客户端设置24h自动更新订阅（不推荐使用V2Ray客户端）, server: a.b.c, port: 1, type: ss, cipher: chacha20-ietf-poly1305, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, udp: true}
+  - {name: 带【奈飞】字样的节点，完整解锁奈飞，支持奈飞非自制剧，建议自备香港区可看的奈飞账号, server: a.b.c, port: 1, type: ss, cipher: chacha20-ietf-poly1305, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, udp: true}
+  - {name: 🇨🇳 台湾|01奈飞直连, server: tw01.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: tw01.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾|01奈飞广州移动中转, server: q7rxpd.mispeed.org, port: 53016, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: tw01.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾|01奈飞广州移动中转2, server: gy2.zfnode.org, port: 23404, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: tw01.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾|03广州移动中转, server: q7rxpd.mispeed.org, port: 11763, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: tw03.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 台湾|02广州移动中转, server: q7rxpd.mispeed.org, port: 12976, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: tw02.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡|04|LIN, server: sgmax04.170809.xyz, port: 443, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: sgmax04.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡|04|LIN广州移动中转, server: q7rxpd.mispeed.org, port: 20961, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: sgmax04.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡|03|OC, server: 0a01f3ad01.170809.xyz, port: 443, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: 0a01f3ad01.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡|01|LIN, server: sgmax01.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: sgmax01.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡|03|LIN, server: sgmax03.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: sgmax03.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡|02|LIN, server: sgmax02.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: sgmax02.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡|01|OC, server: sg01.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: sg01.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 印度|02|LIN, server: in02.170809.xyz, port: 443, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: in02.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国|01|LIN, server: uk01.170809.xyz, port: 443, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: uk01.170809.xyz%3A, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国|01|LIN广州移动中转, server: q7rxpd.mispeed.org, port: 21813, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: uk01.170809.xyz%3A, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国|01|AZ, server: kr01.170809.xyz, port: 45625, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: kr01.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国|01|AZ中转, server: q7rxpd.mispeed.org, port: 41739, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: kr01.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|01|LIN, server: jp01.170809.xyz, port: 443, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: jp01.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|01|LIN香港AZ中转, server: q7rxpd.mispeed.org, port: 33170, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: jp01.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|高速|03|LIN, server: jpmax03.170809.xyz, port: 443, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: jpmax03.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|高速|01|LIN, server: jpmax01.170809.xyz, port: 443, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: jpmax01.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|03|LINAZ中转, server: q7rxpd.mispeed.org, port: 10701, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: jpmax03.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|02|LIN02, server: jpmax02.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: jpmax02.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|02|LIN广州电信中转, server: gd.nmslsb.com, port: 50614, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: jpmax02.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|05|LIN, server: jpmax05.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: jpmax05.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|03|LIN, server: jp03.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: jp03.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|02|LIN, server: jp02.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: jp02.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|05|LIN2, server: jp05.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: jp05.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 美国|高速|01|LIN, server: usmax01.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 美国|01|LIN, server: us01.170809.xyz, port: 443, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 美国|02|RN, server: usmax02.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: usmax02.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 美国|02|RN广州电信中转, server: gd.nmslsb.com, port: 58825, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: usmax02.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 美国|03|RN, server: usmax03.170809.xyz, port: 443, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: usmax03.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 美国|03RN, server: us03.170809.xyz, port: 443, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: us03.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 美国|04|RN, server: usmax04.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: usmax04.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 美国|04|RN广州电信中转, server: gd.nmslsb.com, port: 59361, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: usmax04.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|13高速, server: hk13.170809.xyz, port: 14444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hk13.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|13广州移动中转1, server: gy.zfnode.org, port: 11068, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hk13.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|13广州移动中转2, server: gy2.zfnode.org, port: 39082, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hk13.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|13湖南联通中转, server: hn2.zfnode.org, port: 43648, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hk13.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|13|BGP广州移动中转, server: gy2.zfnode.org, port: 32871, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax13.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|23|BGP广州电信中转, server: gd.nmslsb.com, port: 53584, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax23.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|13|奈飞BGP广移中转, server: q7rxpd.mispeed.org, port: 59523, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax13.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|13|奈飞BGP广港移动隧道2倍率, server: gy2.zfnode.org, port: 36936, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax13.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|12HKT, server: hkmax12.170809.xyz, port: 10041, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax12.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|13|奈飞BGP, server: hkmax13.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax13.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|23|奈飞BGP, server: hkmax23.170809.xyz, port: 444, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax23.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|23|BGP广港移动隧道2倍率, server: gy.zfnode.org, port: 46832, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax23.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|23|奈飞BGP广州移动, server: gy2.zfnode.org, port: 27558, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax23.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|04AZ高速2倍率, server: hkmax04.170809.xyz, port: 443, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax04.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|04广港移动隧道2倍率, server: q7rxpd.mispeed.org, port: 32201, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax04.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|12广港移动隧道2倍率, server: gy2.zfnode.org, port: 20835, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax12.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|02沪港联通隧道2倍率, server: w1a3.ddns.tunnels.farm, port: 55540, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax02.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|12|沪港联通隧道2倍率, server: w1a3.ddns.tunnels.farm, port: 15920, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax12.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|03广港移动隧道2倍率, server: q7rxpd.mispeed.org, port: 56402, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax12.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|17广港移动隧道2倍率, server: q7rxpd.mispeed.org, port: 53413, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax17.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|20广港移动隧道2倍率, server: q7rxpd.mispeed.org, port: 40030, type: trojan, password: cc5d7974-8cf4-44ff-84fd-9a9a6cce172e, sni: hkmax20.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: JCBB_香港01【vip1】, server: gkdcm.myjcbbcn.top, port: 25899, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港02【vip1】, server: gkdcu.myjcbbcn.top, port: 25899, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港03【vip1】, server: gkdcm.myjcbbcn.top, port: 25898, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港04【vip1】, server: gkdcu.myjcbbcn.top, port: 25898, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港05【vip1】, server: gkdcm.myjcbbcn.top, port: 25897, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港06【vip1】, server: gkdcu.myjcbbcn.top, port: 25897, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港07【vip1】, server: gkdcm.myjcbbcn.top, port: 25896, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港08【vip1】, server: gkdcu.myjcbbcn.top, port: 25896, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_新加坡01【vip1】, server: gkdcm.myjcbbcn.top, port: 25895, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_新加坡02【vip1】, server: gkdcu.myjcbbcn.top, port: 25895, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_新加坡03【vip1】, server: gkdcm.myjcbbcn.top, port: 25894, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_新加坡04【vip1】, server: gkdcu.myjcbbcn.top, port: 25894, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_日本01【vip1】, server: gkdcm.myjcbbcn.top, port: 25888, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_日本02【vip1】, server: gkdcu.myjcbbcn.top, port: 25888, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_日本03【vip1】, server: gkdcm.myjcbbcn.top, port: 25887, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_日本04【vip1】, server: gkdcu.myjcbbcn.top, port: 25887, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_美国01【vip1】, server: gkdcm.myjcbbcn.top, port: 25886, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_美国02【vip1】, server: gkdcu.myjcbbcn.top, port: 25886, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_美国03【vip1】, server: gkdcm.myjcbbcn.top, port: 25885, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_美国04【vip1】, server: gkdcu.myjcbbcn.top, port: 25885, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_英国01【vip1】, server: gkdcm.myjcbbcn.top, port: 25884, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_英国02【vip1】, server: gkdcu.myjcbbcn.top, port: 25884, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_德国01【vip1】, server: gkdcm.myjcbbcn.top, port: 25883, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_德国02【vip1】, server: gkdcu.myjcbbcn.top, port: 25883, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_印度01【vip1】, server: gkdcm.myjcbbcn.top, port: 25882, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_印度02【vip1】, server: gkdcu.myjcbbcn.top, port: 25882, type: vmess, uuid: 826241f2-8bbd-4fdb-8108-64124d94a950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: 🇸🇬 新加坡1|流解, server: 13.229.54.75, port: 10800, type: trojan, password: 79c5ec9b-c593-4c3a-8c7c-d01c87532652, sni: sg1.tgads123.com, skip-cert-verify: true, udp: true}
+  - {name: 韩国 负载均衡 备用, server: ocikr.n.optage.moe, port: 62500, type: trojan, password: 79c5ec9b-c593-4c3a-8c7c-d01c87532652, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 日本东京 负载均衡 备用, server: ocijp.n.optage.moe, port: 62500, type: trojan, password: 79c5ec9b-c593-4c3a-8c7c-d01c87532652, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
@@ -101,7 +103,7 @@ proxy-groups:
   - 带【奈飞】字样的节点，完整解锁奈飞，支持奈飞非自制剧，建议自备香港区可看的奈飞账号
   - 🇨🇳 台湾|01奈飞直连
   - 🇨🇳 台湾|01奈飞广州移动中转
-  - 🇨🇳 台湾|01奈飞广州电信中转
+  - 🇨🇳 台湾|01奈飞广州移动中转2
   - 🇨🇳 台湾|03广州移动中转
   - 🇨🇳 台湾|02广州移动中转
   - 🇸🇬 新加坡|04|LIN
@@ -136,19 +138,21 @@ proxy-groups:
   - 🇺🇲 美国|04|RN
   - 🇺🇲 美国|04|RN广州电信中转
   - 🇭🇰 香港|13高速
-  - 🇭🇰 香港|13广州电信中转
-  - 🇭🇰 香港|13广州移动中转
+  - 🇭🇰 香港|13广州移动中转1
+  - 🇭🇰 香港|13广州移动中转2
   - 🇭🇰 香港|13湖南联通中转
   - 🇭🇰 香港|13|BGP广州移动中转
   - 🇭🇰 香港|23|BGP广州电信中转
   - 🇭🇰 香港|13|奈飞BGP广移中转
+  - 🇭🇰 香港|13|奈飞BGP广港移动隧道2倍率
   - 🇭🇰 香港|12HKT
   - 🇭🇰 香港|13|奈飞BGP
   - 🇭🇰 香港|23|奈飞BGP
+  - 🇭🇰 香港|23|BGP广港移动隧道2倍率
   - 🇭🇰 香港|23|奈飞BGP广州移动
   - 🇭🇰 香港|04AZ高速2倍率
   - 🇭🇰 香港|04广港移动隧道2倍率
-  - 🇭🇰 香港|12广港电信隧道2倍率
+  - 🇭🇰 香港|12广港移动隧道2倍率
   - 🇭🇰 香港|02沪港联通隧道2倍率
   - 🇭🇰 香港|12|沪港联通隧道2倍率
   - 🇭🇰 香港|03广港移动隧道2倍率
@@ -191,7 +195,7 @@ proxy-groups:
   - 带【奈飞】字样的节点，完整解锁奈飞，支持奈飞非自制剧，建议自备香港区可看的奈飞账号
   - 🇨🇳 台湾|01奈飞直连
   - 🇨🇳 台湾|01奈飞广州移动中转
-  - 🇨🇳 台湾|01奈飞广州电信中转
+  - 🇨🇳 台湾|01奈飞广州移动中转2
   - 🇨🇳 台湾|03广州移动中转
   - 🇨🇳 台湾|02广州移动中转
   - 🇸🇬 新加坡|04|LIN
@@ -226,19 +230,21 @@ proxy-groups:
   - 🇺🇲 美国|04|RN
   - 🇺🇲 美国|04|RN广州电信中转
   - 🇭🇰 香港|13高速
-  - 🇭🇰 香港|13广州电信中转
-  - 🇭🇰 香港|13广州移动中转
+  - 🇭🇰 香港|13广州移动中转1
+  - 🇭🇰 香港|13广州移动中转2
   - 🇭🇰 香港|13湖南联通中转
   - 🇭🇰 香港|13|BGP广州移动中转
   - 🇭🇰 香港|23|BGP广州电信中转
   - 🇭🇰 香港|13|奈飞BGP广移中转
+  - 🇭🇰 香港|13|奈飞BGP广港移动隧道2倍率
   - 🇭🇰 香港|12HKT
   - 🇭🇰 香港|13|奈飞BGP
   - 🇭🇰 香港|23|奈飞BGP
+  - 🇭🇰 香港|23|BGP广港移动隧道2倍率
   - 🇭🇰 香港|23|奈飞BGP广州移动
   - 🇭🇰 香港|04AZ高速2倍率
   - 🇭🇰 香港|04广港移动隧道2倍率
-  - 🇭🇰 香港|12广港电信隧道2倍率
+  - 🇭🇰 香港|12广港移动隧道2倍率
   - 🇭🇰 香港|02沪港联通隧道2倍率
   - 🇭🇰 香港|12|沪港联通隧道2倍率
   - 🇭🇰 香港|03广港移动隧道2倍率
