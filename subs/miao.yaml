@@ -4,158 +4,164 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /rocket, headers: {host: YouTube-aweikeji}}, server: best03.downloadmovie.cn, port: 65081, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /rocket, headers: {host: "%7B%22Host%22:%22cn04.downloadmovie.cn%22%7D"}}, server: cn04.downloadmovie.cn, port: 65025, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_3, ws-opts: {path: /rocket, headers: {host: "%7B%22Host%22:%22cn04.downloadmovie.cn%22%7D"}}, server: cn04.downloadmovie.cn, port: 65036, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_4, ws-opts: {path: /rocket, headers: {host: 116.129.254.177}}, server: 116.129.254.177, port: 65075, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
+- {type: trojan, name: 🇮🇳印度(欢迎订阅Youtube元亨利贞), server: in-04.licom.ml, port: 8443, password: ce433528-39fa-4711-bc0d-25a5b1579574, udp: true, skip-cert-verify: true, sni: in-04.licom.ml}
+- {type: ss, name: 🇨🇦加拿大(欢迎订阅Youtube元亨利贞)_1, server: 196.247.59.154, port: 802, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /rocket, headers: {host: "%7B%22Host%22:%22cn04.downloadmovie.cn%22%7D"}}, server: cn04.downloadmovie.cn, port: 65036, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: ingress-i1.onebox6.org}}, server: ingress-i1.onebox6.org, port: 38701, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_3, ws-opts: {path: /rocket, headers: {host: best02.downloadmovie.cn}}, server: best02.downloadmovie.cn, port: 65087, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_4, ws-opts: {path: /rocket}, server: 120.233.150.146, port: 65082, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
 - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_5, ws-opts: {path: /rocket, headers: {host: 120.233.150.146}}, server: 120.233.150.146, port: 65001, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_6, ws-opts: {path: /rocket, headers: {host: "%7B%22Host%22:%22cn05.downloadmovie.cn%22%7D"}}, server: cn05.downloadmovie.cn, port: 65026, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: ss, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_1, server: 85.208.108.93, port: 7306, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-- {type: vmess, name: (欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /sshkit/5206194863/62c7702a0ea8b/, headers: {host: sg1-v2ray.sshkit.org}}, server: 104.18.24.139, port: 80, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, network: ws}
-- {type: trojan, name: 🇮🇳印度(欢迎订阅Youtube元亨利贞)_1, server: in-03.licom.ml, port: 8443, password: ce433528-39fa-4711-bc0d-25a5b1579574, udp: true, skip-cert-verify: true, sni: in-03.licom.ml}
-- {type: trojan, name: 🇮🇳印度(欢迎订阅Youtube元亨利贞)_2, server: in-04.licom.ml, port: 8443, password: ce433528-39fa-4711-bc0d-25a5b1579574, udp: true, skip-cert-verify: true, sni: in-04.licom.ml}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_7, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: ingress-i1.onebox6.org}}, server: ingress-i1.onebox6.org, port: 38701, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_8, ws-opts: {path: /rocket}, server: 120.233.29.189, port: 65039, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_9, ws-opts: {path: /rocket}, server: 120.233.150.146, port: 65031, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: trojan, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_10, server: gzyd2.52147.top, port: 30010, password: 666dcf90-7f85-4f30-a36f-c1bffcf06b32, udp: true, skip-cert-verify: true, sni: www.download.windowsupdate1.com}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_11, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: in-us-1.onebox6.org}}, server: in-us-1.onebox6.org, port: 38401, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_12, ws-opts: {path: /rocket, headers: {host: YouTube-aweikeji}}, server: best03.downloadmovie.cn, port: 65081, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_13, ws-opts: {path: /rocket, headers: {host: best02.downloadmovie.cn}}, server: best02.downloadmovie.cn, port: 65087, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_14, ws-opts: {path: /rocket, headers: {host: 120.233.150.146}}, server: 120.233.150.146, port: 65095, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_15, ws-opts: {path: /rocket, headers: {host: 120.233.29.189}}, server: 120.233.29.189, port: 65086, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_1, server: sg.guiqing.ml, port: 43956, uuid: 91df6837-896d-45bc-ec6f-0fe4b792b369, alterId: 0, cipher: auto, network: tcp}
-- {type: trojan, name: 🇸🇬新加坡(欢迎订阅Youtube元亨利贞), server: supersouth.xn--mesv7f5toqlp.club, port: 12003, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, udp: true, skip-cert-verify: true, sni: supersouth.xn--mesv7f5toqlp.club}
-- {type: trojan, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_16, server: hlu.bgp2.liuliangzhuanfa.xyz, port: 45379, password: c810fe45-44c3-4fe0-a680-a3ebf8bd461a, udp: true, skip-cert-verify: true, sni: xg1.xianggang1.xyz}
-- {type: trojan, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_17, server: hlu.bgp2.liuliangzhuanfa.xyz, port: 31097, password: c810fe45-44c3-4fe0-a680-a3ebf8bd461a, udp: true, skip-cert-verify: true, sni: aa1.liumeit.xyz}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_18, ws-opts: {path: /rocket, headers: {host: cn05.downloadmovie.cn}}, server: cn05.downloadmovie.cn, port: 65037, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_19, ws-opts: {path: /rocket}, server: 120.233.150.146, port: 65082, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_20, ws-opts: {path: /rocket, headers: {host: "%7B%22Host%22:%22cn04.downloadmovie.cn%22%7D"}}, server: cn04.downloadmovie.cn, port: 65025, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇰🇷韩国(欢迎订阅Youtube元亨利贞), server: 146.56.110.129, port: 53702, uuid: d0ee8ec0-ef63-41aa-9087-11edf7a978b9, alterId: 0, cipher: auto, network: tcp}
-- {type: ss, name: 🇨🇦加拿大(欢迎订阅Youtube元亨利贞)_1, server: 196.247.59.154, port: 806, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-- {type: ss, name: 🇨🇦加拿大(欢迎订阅Youtube元亨利贞)_2, server: 196.247.59.154, port: 802, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-- {type: ss, name: 🇫🇷法国(欢迎订阅Youtube元亨利贞), server: 51.38.118.42, port: 811, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
-- {type: ss, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_2, server: 85.208.108.93, port: 7306, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-- {type: vmess, name: 🇨🇴哥伦比亚(欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /chcar, headers: {host: v2fly.samrt.website}}, server: v2fly.sab.quest, port: 443, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, network: ws, tls: true}
-- {type: vmess, name: 🇭🇺匈牙利(欢迎订阅Youtube元亨利贞), server: 185.225.69.134, port: 45081, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, network: tcp}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_21, ws-opts: {path: /rocket, headers: {host: best01.downloadmovie.cn}}, server: best01.downloadmovie.cn, port: 65076, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇴哥伦比亚(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /chcar, headers: {host: v2fly.samrt.website}}, server: 188.114.97.110, port: 443, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, network: ws, tls: true}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_22, ws-opts: {path: /rocket}, server: 120.233.150.146, port: 65068, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_23, ws-opts: {path: /rocket, headers: {host: 120.233.150.146}}, server: 120.233.150.146, port: 65068, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /vmess-ws-makae, headers: {host: bn-id01.ipv2ray.xyz}}, server: api.qiscus.com, port: 443, uuid: 8f9b60e6-1db3-42e4-97b9-1e311f427649, alterId: 0, cipher: auto, network: ws, tls: true}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_24, ws-opts: {path: /rocket, headers: {host: 120.233.150.146}}, server: 120.233.150.146, port: 65001, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_25, ws-opts: {path: /rocket}, server: 120.233.150.146, port: 65001, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
-- {type: ss, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞), server: 161.35.69.20, port: 811, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
-- {type: trojan, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_3, server: 45.88.148.234, port: 443, password: 666dcf90-7f85-4f30-a36f-c1bffcf06b32, udp: true, skip-cert-verify: true, sni: www.download.windowsupdate1.com}
-- {type: vmess, name: (欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /sshkit/5206194863/62c7702a0ea8b/, headers: {host: sg1-v2ray.sshkit.org}}, server: 104.18.24.139, port: 80, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, network: ws}
-- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_26, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: data-hk-v1.shwjfkw.cn}}, server: data-hk-v1.shwjfkw.cn, port: 50207, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, network: ws}
-- {type: trojan, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_4, server: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, port: 443, password: trojan-daozhu-uallen-qbit-azure-hk, udp: true, skip-cert-verify: true}
-- {type: trojan, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_27, server: hlu.bgp2.liuliangzhuanfa.xyz, port: 42167, password: c810fe45-44c3-4fe0-a680-a3ebf8bd461a, udp: true, skip-cert-verify: true, sni: els1.eluosi1.xyz}
-- {type: vmess, name: (欢迎订阅Youtube元亨利贞)_3, ws-opts: {path: /api/v3/download.getFile, headers: {host: v2.tgfaka.com}}, server: v2.tgfaka.com, port: 8443, uuid: 6938c10f-c1a0-43e3-8321-099055f79853, alterId: 0, cipher: auto, network: ws, tls: true}
-- {type: vmess, name: (欢迎订阅Youtube元亨利贞)_4, ws-opts: {path: /api/v3/download.getFile, headers: {host: v2.tgfaka.com}}, server: v2.tgfaka.com, port: 8443, uuid: 00b19c02-bc00-440a-a397-faf70ac3f44e, alterId: 0, cipher: auto, network: ws, tls: true}
+- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_6, server: 120.233.7.221, port: 18007, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, network: tcp}
+- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_7, ws-opts: {path: /rocket}, server: 120.233.29.189, port: 65039, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_8, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: ingress-i2.iivvppnn.info}}, server: ingress-i2.iivvppnn.info, port: 38106, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_9, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: in-jp-1.iivvppnn.info}}, server: in-jp-1.iivvppnn.info, port: 38301, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_10, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: in-us-1.onebox6.org}}, server: in-us-1.onebox6.org, port: 38401, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, network: ws}
+- {type: trojan, name: 🇭🇰香港(欢迎订阅Youtube元亨利贞)_1, server: 73hk01.ok365.cyou, port: 80, password: 7751af91-420a-4479-bb22-415e3ed9bdc7, udp: true, skip-cert-verify: true}
+- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_11, server: 120.241.236.215, port: 16216, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, network: tcp}
+- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_12, ws-opts: {path: /rocket, headers: {host: cn01.downloadmovie.cn}}, server: cn01.downloadmovie.cn, port: 65033, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_13, server: 36.139.115.52, port: 11208, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, network: tcp}
+- {type: vmess, name: 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_1, server: tw-tb-c.zc20200426.club, port: 39999, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, network: tcp, tls: true}
+- {type: trojan, name: 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_2, server: hinet.52147.top, port: 443, password: 0ecc6dac-81c5-4d81-a368-6d86b763a828, udp: true, skip-cert-verify: true, sni: www.download.windowsupdate1.com}
+- {type: vmess, name: 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_1, server: 146.56.110.129, port: 53702, uuid: d0ee8ec0-ef63-41aa-9087-11edf7a978b9, alterId: 0, cipher: auto, network: tcp}
+- {type: ss, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_1, server: 185.172.113.102, port: 804, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+- {type: trojan, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_2, server: 157.120.35.234, port: 443, password: 0ecc6dac-81c5-4d81-a368-6d86b763a828, udp: true, skip-cert-verify: true, sni: www.download.windowsupdate1.com}
+- {type: vmess, name: (欢迎订阅Youtube元亨利贞), ws-opts: {path: /sshkit/5206194863/62c7702a0ea8b/, headers: {host: sg1-v2ray.sshkit.org}}, server: 104.18.24.139, port: 80, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /index, headers: {host: 87318706-ws.va.huya.com}}, server: xmrh021.xmrth-node.xyz, port: 15886, uuid: fc076cb5-c7cd-3e08-881f-b55a329a9671, alterId: 0, cipher: auto, network: ws}
+- {type: trojan, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_2, server: 45.82.253.234, port: 443, password: 0ecc6dac-81c5-4d81-a368-6d86b763a828, udp: true, skip-cert-verify: true, sni: www.download.windowsupdate1.com}
+- {type: trojan, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_3, server: 212.90.123.130, port: 443, password: 0ecc6dac-81c5-4d81-a368-6d86b763a828, udp: true, skip-cert-verify: true, sni: www.download.windowsupdate1.com}
+- {type: vmess, name: 🇸🇬新加坡(欢迎订阅Youtube元亨利贞)_1, server: 47.241.220.160, port: 28475, uuid: 5b00ad6f-bc33-4946-8a32-b7e59620e935, alterId: 0, cipher: auto, network: tcp}
+- {type: ss, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_4, server: 38.143.66.20, port: 9102, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+- {type: trojan, name: 🇭🇰香港(欢迎订阅Youtube元亨利贞)_2, server: 715hk03.ok365.cyou, port: 12388, password: 7751af91-420a-4479-bb22-415e3ed9bdc7, udp: true, skip-cert-verify: true}
+- {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_5, ws-opts: {path: /hello}, server: 192.210.206.50, port: 11188, uuid: de0ff7f6-370e-41c9-c24a-b932c7c1ad58, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_6, server: 23.224.152.24, port: 25609, uuid: c9939714-04d7-45f9-dd33-30ec6057239b, alterId: 0, cipher: auto, network: tcp}
+- {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_7, ws-opts: {path: /hello, headers: {host: 107.173.166.160}}, server: 107.173.166.160, port: 11188, uuid: d644ebef-f0e6-468f-d122-cea661ed9d09, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_8, ws-opts: {path: /index, headers: {host: 87318706-ws.va.huya.com}}, server: xmrh014.xmrth-node.xyz, port: 15885, uuid: ab3f9ddc-7c35-3793-98f0-1c37eb9741e1, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_9, ws-opts: {path: /17af76e1-a5d7-41ab-ae87-b48f185075d1-vmess}, server: xr-1.herokuapp.com, port: 443, uuid: 17af76e1-a5d7-41ab-ae87-b48f185075d1, alterId: 0, cipher: auto, network: ws, tls: true}
+- {type: ss, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_10, server: 92.38.176.81, port: 811, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+- {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_11, server: 129.146.133.157, port: 51009, uuid: 81714cef-9bde-4a08-aa50-d6bc0172d78b, alterId: 0, cipher: auto, network: tcp}
+- {type: vmess, name: 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_2, server: chess.magicefire.com, port: 443, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, network: tcp, tls: true}
+- {type: vmess, name: 🇨🇿捷克(欢迎订阅Youtube元亨利贞), ws-opts: {path: /, headers: {host: YouTube-aweikeji}}, server: 195.133.53.192, port: 43688, uuid: bd1c8b57-0a9e-4e9f-a261-48e90c871e41, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇦🇪阿联酋(欢迎订阅Youtube元亨利贞), ws-opts: {path: /hello}, server: 193.123.67.0, port: 11188, uuid: 280683d0-369c-42e9-be4b-e723a73b7785, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇻🇳越南(欢迎订阅Youtube元亨利贞), ws-opts: {path: /, headers: {host: frontier-i18n.tiktokv.com}}, server: phanthikimngan.ddns.net, port: 80, uuid: 1c458173-44c7-4528-c3a7-981140369f00, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇫🇷法国(欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /path/273213070933, headers: {host: www.98272029.xyz}}, server: 51.195.35.134, port: 443, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, network: ws, tls: true}
+- {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_14, server: 116.129.254.192, port: 16268, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, network: tcp}
+- {type: ss, name: 🇨🇦加拿大(欢迎订阅Youtube元亨利贞)_2, server: 196.247.59.154, port: 806, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+- {type: ss, name: 🇮🇹意大利(欢迎订阅Youtube元亨利贞), server: 92.223.93.233, port: 1035, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg}
+- {type: ss, name: 🇫🇷法国(欢迎订阅Youtube元亨利贞)_2, server: 51.38.118.42, port: 811, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+- {type: ss, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_3, server: 185.172.113.101, port: 800, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+- {type: ss, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_12, server: 169.197.141.5, port: 3306, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+- {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_13, server: 150.230.197.142, port: 44634, uuid: c2d05105-857a-4c94-be34-5534e7e8285f, alterId: 0, cipher: auto, network: tcp}
+- {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_14, ws-opts: {path: /v116-DtoEwAEX, headers: {host: v116.v2dns.bar}}, server: v116.v2dns.bar, port: 80, uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_15, ws-opts: {path: /index, headers: {host: file-1250914411.cos.ap-hongkong.myqcloud.com}}, server: xmrh023.xmrth-node.xyz, port: 15886, uuid: fc076cb5-c7cd-3e08-881f-b55a329a9671, alterId: 0, cipher: auto, network: ws}
+- {type: vmess, name: 🇸🇬新加坡(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /}, server: 8.214.33.158, port: 80, uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef, alterId: 0, cipher: auto, network: ws}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
+  - 🇮🇳印度(欢迎订阅Youtube元亨利贞)
+  - 🇨🇦加拿大(欢迎订阅Youtube元亨利贞)_1
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_1
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_2
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_3
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_4
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_5
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_6
-  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_1
-  - (欢迎订阅Youtube元亨利贞)_1
-  - 🇮🇳印度(欢迎订阅Youtube元亨利贞)_1
-  - 🇮🇳印度(欢迎订阅Youtube元亨利贞)_2
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_7
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_8
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_9
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_10
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_1
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_11
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_12
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_13
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_14
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_15
-  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_1
-  - 🇸🇬新加坡(欢迎订阅Youtube元亨利贞)
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_16
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_17
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_18
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_19
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_20
-  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)
-  - 🇨🇦加拿大(欢迎订阅Youtube元亨利贞)_1
-  - 🇨🇦加拿大(欢迎订阅Youtube元亨利贞)_2
-  - 🇫🇷法国(欢迎订阅Youtube元亨利贞)
+  - 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_1
+  - 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_2
+  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_1
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_1
   - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_2
-  - 🇨🇴哥伦比亚(欢迎订阅Youtube元亨利贞)_1
-  - 🇭🇺匈牙利(欢迎订阅Youtube元亨利贞)
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_21
-  - 🇨🇴哥伦比亚(欢迎订阅Youtube元亨利贞)_2
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_22
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_23
+  - (欢迎订阅Youtube元亨利贞)
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_1
   - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_2
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_24
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_25
-  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)
   - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_3
-  - (欢迎订阅Youtube元亨利贞)_2
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_26
+  - 🇸🇬新加坡(欢迎订阅Youtube元亨利贞)_1
   - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_4
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_27
-  - (欢迎订阅Youtube元亨利贞)_3
-  - (欢迎订阅Youtube元亨利贞)_4
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_2
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_5
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_6
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_7
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_8
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_9
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_10
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_11
+  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_2
+  - 🇨🇿捷克(欢迎订阅Youtube元亨利贞)
+  - 🇦🇪阿联酋(欢迎订阅Youtube元亨利贞)
+  - 🇻🇳越南(欢迎订阅Youtube元亨利贞)
+  - 🇫🇷法国(欢迎订阅Youtube元亨利贞)_1
+  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_14
+  - 🇨🇦加拿大(欢迎订阅Youtube元亨利贞)_2
+  - 🇮🇹意大利(欢迎订阅Youtube元亨利贞)
+  - 🇫🇷法国(欢迎订阅Youtube元亨利贞)_2
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_3
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_12
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_13
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_14
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_15
+  - 🇸🇬新加坡(欢迎订阅Youtube元亨利贞)_2
 - name: ♻️ automatic
   type: url-test
   proxies:
+  - 🇮🇳印度(欢迎订阅Youtube元亨利贞)
+  - 🇨🇦加拿大(欢迎订阅Youtube元亨利贞)_1
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_1
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_2
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_3
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_4
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_5
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_6
-  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_1
-  - (欢迎订阅Youtube元亨利贞)_1
-  - 🇮🇳印度(欢迎订阅Youtube元亨利贞)_1
-  - 🇮🇳印度(欢迎订阅Youtube元亨利贞)_2
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_7
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_8
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_9
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_10
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_1
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_11
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_12
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_13
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_14
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_15
-  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_1
-  - 🇸🇬新加坡(欢迎订阅Youtube元亨利贞)
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_16
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_17
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_18
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_19
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_20
-  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)
-  - 🇨🇦加拿大(欢迎订阅Youtube元亨利贞)_1
-  - 🇨🇦加拿大(欢迎订阅Youtube元亨利贞)_2
-  - 🇫🇷法国(欢迎订阅Youtube元亨利贞)
+  - 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_1
+  - 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_2
+  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_1
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_1
   - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_2
-  - 🇨🇴哥伦比亚(欢迎订阅Youtube元亨利贞)_1
-  - 🇭🇺匈牙利(欢迎订阅Youtube元亨利贞)
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_21
-  - 🇨🇴哥伦比亚(欢迎订阅Youtube元亨利贞)_2
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_22
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_23
+  - (欢迎订阅Youtube元亨利贞)
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_1
   - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_2
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_24
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_25
-  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)
   - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_3
-  - (欢迎订阅Youtube元亨利贞)_2
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_26
+  - 🇸🇬新加坡(欢迎订阅Youtube元亨利贞)_1
   - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_4
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_27
-  - (欢迎订阅Youtube元亨利贞)_3
-  - (欢迎订阅Youtube元亨利贞)_4
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_2
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_5
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_6
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_7
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_8
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_9
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_10
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_11
+  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_2
+  - 🇨🇿捷克(欢迎订阅Youtube元亨利贞)
+  - 🇦🇪阿联酋(欢迎订阅Youtube元亨利贞)
+  - 🇻🇳越南(欢迎订阅Youtube元亨利贞)
+  - 🇫🇷法国(欢迎订阅Youtube元亨利贞)_1
+  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_14
+  - 🇨🇦加拿大(欢迎订阅Youtube元亨利贞)_2
+  - 🇮🇹意大利(欢迎订阅Youtube元亨利贞)
+  - 🇫🇷法国(欢迎订阅Youtube元亨利贞)_2
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_3
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_12
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_13
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_14
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_15
+  - 🇸🇬新加坡(欢迎订阅Youtube元亨利贞)_2
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
