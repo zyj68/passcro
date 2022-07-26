@@ -4,39 +4,32 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: JCBB_香港01【vip1】, server: gkdcm.myjcbbcn.top, port: 25899, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港02【vip1】, server: gkdcu.myjcbbcn.top, port: 25899, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港03【vip1】, server: gkdcm.myjcbbcn.top, port: 25898, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港04【vip1】, server: gkdcu.myjcbbcn.top, port: 25898, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港05【vip1】, server: gkdcm.myjcbbcn.top, port: 25897, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港06【vip1】, server: gkdcu.myjcbbcn.top, port: 25897, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港07【vip1】, server: gkdcm.myjcbbcn.top, port: 25896, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_香港08【vip1】, server: gkdcu.myjcbbcn.top, port: 25896, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_新加坡01【vip1】, server: gkdcm.myjcbbcn.top, port: 25895, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_新加坡02【vip1】, server: gkdcu.myjcbbcn.top, port: 25895, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_新加坡03【vip1】, server: gkdcm.myjcbbcn.top, port: 25894, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_新加坡04【vip1】, server: gkdcu.myjcbbcn.top, port: 25894, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_日本01【vip1】, server: gkdcm.myjcbbcn.top, port: 25888, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_日本02【vip1】, server: gkdcu.myjcbbcn.top, port: 25888, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_日本03【vip1】, server: gkdcm.myjcbbcn.top, port: 25887, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_日本04【vip1】, server: gkdcu.myjcbbcn.top, port: 25887, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_美国01【vip1】, server: gkdcm.myjcbbcn.top, port: 25886, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_美国02【vip1】, server: gkdcu.myjcbbcn.top, port: 25886, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_美国03【vip1】, server: gkdcm.myjcbbcn.top, port: 25885, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_美国04【vip1】, server: gkdcu.myjcbbcn.top, port: 25885, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_英国01【vip1】, server: gkdcm.myjcbbcn.top, port: 25884, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_英国02【vip1】, server: gkdcu.myjcbbcn.top, port: 25884, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_德国01【vip1】, server: gkdcm.myjcbbcn.top, port: 25883, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_德国02【vip1】, server: gkdcu.myjcbbcn.top, port: 25883, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_印度01【vip1】, server: gkdcm.myjcbbcn.top, port: 25882, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
-  - {name: JCBB_印度02【vip1】, server: gkdcu.myjcbbcn.top, port: 25882, type: vmess, uuid: ef172dd1-ffbf-4a77-8378-eeff20b786cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
-  - {name: 🇭🇰 香港1|IEPL|流解|2x, server: 14.119.87.171, port: 34800, type: trojan, password: ee8d711b-7e4b-4215-995c-7b61ce2cc4e0, sni: hk1.tgads123.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡1|流解, server: 13.229.54.75, port: 10800, type: trojan, password: ee8d711b-7e4b-4215-995c-7b61ce2cc4e0, sni: sg1.tgads123.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡2|流解, server: 13.229.108.156, port: 10800, type: trojan, password: ee8d711b-7e4b-4215-995c-7b61ce2cc4e0, sni: sg2.tgads123.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡3|流解, server: 13.229.238.45, port: 10800, type: trojan, password: ee8d711b-7e4b-4215-995c-7b61ce2cc4e0, sni: sg3.tgads123.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡4|流解, server: 13.212.75.204, port: 10800, type: trojan, password: ee8d711b-7e4b-4215-995c-7b61ce2cc4e0, sni: sg4.tgads123.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡5|流解, server: 54.179.44.168, port: 10800, type: trojan, password: ee8d711b-7e4b-4215-995c-7b61ce2cc4e0, sni: sg5.tgads123.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡6|流解, server: 13.212.75.2, port: 10800, type: trojan, password: ee8d711b-7e4b-4215-995c-7b61ce2cc4e0, sni: sg6.tgads123.com, skip-cert-verify: true, udp: true}
+  - {name: JCBB_香港01【vip1】, server: gkdcm.myjcbbcn.top, port: 25899, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港02【vip1】, server: gkdcu.myjcbbcn.top, port: 25899, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港03【vip1】, server: gkdcm.myjcbbcn.top, port: 25898, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港04【vip1】, server: gkdcu.myjcbbcn.top, port: 25898, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港05【vip1】, server: gkdcm.myjcbbcn.top, port: 25897, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港06【vip1】, server: gkdcu.myjcbbcn.top, port: 25897, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港07【vip1】, server: gkdcm.myjcbbcn.top, port: 25896, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_香港08【vip1】, server: gkdcu.myjcbbcn.top, port: 25896, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_新加坡01【vip1】, server: gkdcm.myjcbbcn.top, port: 25895, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_新加坡02【vip1】, server: gkdcu.myjcbbcn.top, port: 25895, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_新加坡03【vip1】, server: gkdcm.myjcbbcn.top, port: 25894, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_新加坡04【vip1】, server: gkdcu.myjcbbcn.top, port: 25894, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_日本01【vip1】, server: gkdcm.myjcbbcn.top, port: 25888, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_日本02【vip1】, server: gkdcu.myjcbbcn.top, port: 25888, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_日本03【vip1】, server: gkdcm.myjcbbcn.top, port: 25887, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_日本04【vip1】, server: gkdcu.myjcbbcn.top, port: 25887, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_美国01【vip1】, server: gkdcm.myjcbbcn.top, port: 25886, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_美国02【vip1】, server: gkdcu.myjcbbcn.top, port: 25886, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_美国03【vip1】, server: gkdcm.myjcbbcn.top, port: 25885, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_美国04【vip1】, server: gkdcu.myjcbbcn.top, port: 25885, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_英国01【vip1】, server: gkdcm.myjcbbcn.top, port: 25884, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_英国02【vip1】, server: gkdcu.myjcbbcn.top, port: 25884, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_德国01【vip1】, server: gkdcm.myjcbbcn.top, port: 25883, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_德国02【vip1】, server: gkdcu.myjcbbcn.top, port: 25883, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_印度01【vip1】, server: gkdcm.myjcbbcn.top, port: 25882, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcm.myjcbbcn.top}}, udp: true}
+  - {name: JCBB_印度02【vip1】, server: gkdcu.myjcbbcn.top, port: 25882, type: vmess, uuid: 68e9a530-df26-407e-b5ee-1c55e4a281dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gkdcu.myjcbbcn.top}}, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
@@ -68,13 +61,6 @@ proxy-groups:
   - JCBB_德国02【vip1】
   - JCBB_印度01【vip1】
   - JCBB_印度02【vip1】
-  - 🇭🇰 香港1|IEPL|流解|2x
-  - 🇸🇬 新加坡1|流解
-  - 🇸🇬 新加坡2|流解
-  - 🇸🇬 新加坡3|流解
-  - 🇸🇬 新加坡4|流解
-  - 🇸🇬 新加坡5|流解
-  - 🇸🇬 新加坡6|流解
 - name: ♻️ automatic
   type: url-test
   proxies:
@@ -104,13 +90,6 @@ proxy-groups:
   - JCBB_德国02【vip1】
   - JCBB_印度01【vip1】
   - JCBB_印度02【vip1】
-  - 🇭🇰 香港1|IEPL|流解|2x
-  - 🇸🇬 新加坡1|流解
-  - 🇸🇬 新加坡2|流解
-  - 🇸🇬 新加坡3|流解
-  - 🇸🇬 新加坡4|流解
-  - 🇸🇬 新加坡5|流解
-  - 🇸🇬 新加坡6|流解
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
