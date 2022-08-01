@@ -4,194 +4,128 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
+  - {name: 444, server: 18.142.180.184, port: 80, type: vmess, uuid: 9341cd63-f637-410b-a169-b5a1ef11c0ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
   - {name: United States 01, server: us01.wol1.ml, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 223c5c98-e1a8-49e0-8e15-07373e09e077, udp: true}
-  - {name: 美国-中转, server: 36.139.9.191, port: 46364, type: trojan, password: 94iseCfAId, skip-cert-verify: true, udp: true}
-  - {name: 台湾Hinet | 解锁流媒体, server: hinet.52147.top, port: 443, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
-  - {name: 越南-2号, server: 103.173.255.127, port: 443, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
-  - {name: 越南-3号, server: 103.173.255.228, port: 443, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
-  - {name: 新加坡G-Core | 解锁流媒体, server: 91.243.81.248, port: 443, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
-  - {name: 越南-4号, server: 103.173.255.234, port: 443, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
-  - {name: 距离下次重置剩余：5 天, server: 103.167.135.6, port: 28443, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
-  - {name: 日本NTT-2号 | 解锁流媒体, server: 157.120.35.234, port: 443, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
-  - {name: 日本NTT-1号 | 解锁流媒体, server: 203.138.98.199, port: 443, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
-  - {name: 日本NTT-河南移动负载均衡 | 解锁流媒体, server: hnyd.52147.top, port: 30130, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
-  - {name: 剩余流量：4454.21 GB, server: 103.167.135.6, port: 28443, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
-  - {name: 越南-1号, server: 103.173.255.21, port: 443, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
-  - {name: 日本 | 解锁 | SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20139, type: ss, cipher: chacha20-ietf-poly1305, password: 24f0014e-2c0f-4700-9bfa-ff656fbfa7bd, udp: true}
-  - {name: 台湾 ② | 解锁 | SS, server: uydyfkghjrtcsdx.gdjxjjsnxjen.cyou, port: 20143, type: ss, cipher: chacha20-ietf-poly1305, password: 24f0014e-2c0f-4700-9bfa-ff656fbfa7bd, udp: true}
-  - {name: 中国-香港04|Trojan, server: 19204tj.matrixxx888.com, port: 19204, type: trojan, password: 084a8035-579c-3486-bb59-b6ab3b31b131, skip-cert-verify: true, udp: true}
-  - {name: 中国-香港05|Trojan, server: 19205tj.matrixxx888.com, port: 19205, type: trojan, password: 084a8035-579c-3486-bb59-b6ab3b31b131, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 V327U-4X-BGP-HK-NF, server: qvfajoir.nodelist.xyz, port: 1327, type: ssr, cipher: chacha20-ietf, password: 0\x06\x084, protocol: auth_aes128_md5, obfs: plain, protocol-param: 20972:WMNMEc, obfs-param: "", udp: true}
-  - {name: 🇭🇰 V426U-4X-BGP-HK-NF, server: qvfajoir.nodelist.xyz, port: 1426, type: ssr, cipher: chacha20-ietf, password: 0\x06\x084, protocol: auth_aes128_md5, obfs: plain, protocol-param: 20972:WMNMEc, obfs-param: "", udp: true}
-  - {name: 🇭🇰 V402U-1X-BGP-HK-NF, server: fmpnschx.nodelist.xyz, port: 1402, type: ssr, cipher: chacha20-ietf, password: 0\x06\x084, protocol: auth_aes128_md5, obfs: plain, protocol-param: 20972:WMNMEc, obfs-param: "", udp: true}
-  - {name: 🇭🇰 V403U-1X-BGP-HK-NF, server: fmpnschx.nodelist.xyz, port: 1403, type: ssr, cipher: chacha20-ietf, password: 0\x06\x084, protocol: auth_aes128_md5, obfs: plain, protocol-param: 20972:WMNMEc, obfs-param: "", udp: true}
-  - {name: 🇭🇰 V304U-1X-BGP-HK-NF, server: fmpnschx.nodelist.xyz, port: 1304, type: ssr, cipher: chacha20-ietf, password: 0\x06\x084, protocol: auth_aes128_md5, obfs: plain, protocol-param: 20972:WMNMEc, obfs-param: "", udp: true}
-  - {name: 🇭🇰 V326U-4X-BGP-HK-NF, server: qvfajoir.nodelist.xyz, port: 1326, type: ssr, cipher: chacha20-ietf, password: 0\x06\x084, protocol: auth_aes128_md5, obfs: plain, protocol-param: 20972:WMNMEc, obfs-param: "", udp: true}
-  - {name: 🇭🇰 V328U-4X-BGP-HK-NF, server: qvfajoir.nodelist.xyz, port: 1328, type: ssr, cipher: chacha20-ietf, password: 0\x06\x084, protocol: auth_aes128_md5, obfs: plain, protocol-param: 20972:WMNMEc, obfs-param: "", udp: true}
-  - {name: 🇭🇰 V406U-1X-BGP-HK-NF, server: fmpnschx.nodelist.xyz, port: 1406, type: ssr, cipher: chacha20-ietf, password: 0\x06\x084, protocol: auth_aes128_md5, obfs: plain, protocol-param: 20972:WMNMEc, obfs-param: "", udp: true}
-  - {name: "🇭🇰 香港 Aliyun [01]", server: 8.218.136.255, port: 152, type: ss, cipher: aes-128-gcm, password: VXPipi29nxMO, plugin: obfs, plugin-opts: {mode: tls, host: 1baf570191.wns.windows.com, uri: /}, udp: true}
-  - {name: "🇭🇰 香港 Aliyun [02]", server: 8.218.150.155, port: 152, type: ss, cipher: aes-128-gcm, password: VXPipi29nxMO, plugin: obfs, plugin-opts: {mode: tls, host: 1baf570191.wns.windows.com, uri: /}, udp: true}
-  - {name: "🇨🇳 台湾 Lite [02]", server: 120.233.29.202, port: 252, type: ss, cipher: aes-128-gcm, password: VXPipi29nxMO, plugin: obfs, plugin-opts: {mode: tls, host: 1baf570191.wns.windows.com, uri: /}, udp: true}
-  - {name: "🇭🇰 香港 Aliyun [03]", server: 8.218.150.146, port: 152, type: ss, cipher: aes-128-gcm, password: VXPipi29nxMO, plugin: obfs, plugin-opts: {mode: tls, host: 1baf570191.wns.windows.com, uri: /}, udp: true}
-  - {name: 🇸🇬-新加坡---37, server: jgwxjp.jddsb.cf, port: 443, type: vmess, uuid: e4f9fb28-6817-46df-97d3-3bc22d7f3524, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: jgwxjp.jddsb.cf}}, udp: true}
-  - {name: 🇹🇼-台湾---43, server: hinet2.52147.top, port: 28443, type: trojan, password: 68e5d5f2-878f-4887-884f-2c51e7021f19, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰-香港---79, server: 210.0.158.220, port: 28443, type: trojan, password: 68e5d5f2-878f-4887-884f-2c51e7021f19, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵-日本---80, server: 203.138.98.199, port: 443, type: trojan, password: 68e5d5f2-878f-4887-884f-2c51e7021f19, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷-韩国---38, server: jgwse.jddsb.cf, port: 443, type: vmess, uuid: e4f9fb28-6817-46df-97d3-3bc22d7f3524, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: jgwse.jddsb.cf}}, udp: true}
-  - {name: 🇯🇵-日本---82, server: 157.120.35.234, port: 443, type: trojan, password: 68e5d5f2-878f-4887-884f-2c51e7021f19, skip-cert-verify: true, udp: true}
-  - {name: v2ray-az-hk01(hgc香港Netflix), server: az.hk01.paopaocloud.cyou, port: 10032, type: vmess, uuid: ef3e72ca-83d1-3927-bee9-1601a061008a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: paopao.v2.hk01.paopaocloud.cyou}}, udp: true}
-  - {name: v2ray-az-tw01(台湾Netflix), server: az.hk01.paopaocloud.cyou, port: 10006, type: vmess, uuid: ef3e72ca-83d1-3927-bee9-1601a061008a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: paopao.v2.tw01.paopaocloud.cyou}}, udp: true}
-  - {name: v2ray美国06, server: paopao.v2.us06.paopaocloud.cyou, port: 3306, type: vmess, uuid: ef3e72ca-83d1-3927-bee9-1601a061008a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: paopao.v2.us06.paopaocloud.cyou}}, udp: true}
-  - {name: v2ray新加坡01(Netflix), server: paopao.v2.sgp01.paopaocloud.cyou, port: 10551, type: vmess, uuid: ef3e72ca-83d1-3927-bee9-1601a061008a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: paopao.v2.sgp01.paopaocloud.cyou}}, udp: true}
-  - {name: v2ray-az-jp05(日本Netflix|Abema|...), server: az.hk01.paopaocloud.cyou, port: 10004, type: vmess, uuid: ef3e72ca-83d1-3927-bee9-1601a061008a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: paopao.v2.jp05.paopaocloud.cyou}}, udp: true}
-  - {name: v2ray-ah-hk03(香港Netflix), server: ah.yd01.paopaocloud.cyou, port: 10001, type: vmess, uuid: ef3e72ca-83d1-3927-bee9-1601a061008a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: paopao.v2.hk03.paopaocloud.cyou}}, udp: true}
-  - {name: v2ray-jm-hk04(香港Netflix), server: jm.yd02.paopaocloud.cyou, port: 10002, type: vmess, uuid: ef3e72ca-83d1-3927-bee9-1601a061008a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: paopao.v2.hk04.paopaocloud.cyou}}, udp: true}
-  - {name: v2ray-ah-hk04(香港Netflix), server: ah.yd01.paopaocloud.cyou, port: 10002, type: vmess, uuid: ef3e72ca-83d1-3927-bee9-1601a061008a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: paopao.v2.hk04.paopaocloud.cyou}}, udp: true}
-  - {name: v2ray-ah-az02(香港), server: ah.yd01.paopaocloud.cyou, port: 10010, type: vmess, uuid: ef3e72ca-83d1-3927-bee9-1601a061008a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: paopao.v2.az01.paopaocloud.cyou}}, udp: true}
-  - {name: v2ray-ah-sgp01(新加坡), server: ah.yd01.paopaocloud.cyou, port: 10014, type: vmess, uuid: ef3e72ca-83d1-3927-bee9-1601a061008a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: paopao.v2.sgp01.paopaocloud.cyou}}, udp: true}
-  - {name: TW TPE H TR(trojan), server: tw-tpe-h-tr.cdn.savoy.click, port: 10089, type: trojan, password: uDTmEAGwuCUZXZvwhWJk, skip-cert-verify: true, udp: true}
-  - {name: US LAX CTG 01 V2(vmess), server: us-lax-ctg-01-v2.cdn.savoy.click, port: 888, type: vmess, uuid: b536533e-6fa0-4575-a1f8-bbf81a194f44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}, udp: true}
+  - {name: 555, server: 141.94.141.20, port: 80, type: vmess, uuid: 9341cd63-f637-410b-a169-b5a1ef11c0ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 333, server: 170.187.182.64, port: 443, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
+  - {name: 222, server: 172.104.63.112, port: 443, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
+  - {name: 1111, server: 45.33.61.143, port: 443, type: trojan, password: 2ad895a4-90e1-460d-9291-bbfb3463190e, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK_105, server: hkcn2.doubledou.win, port: 4588, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, skip-cert-verify: true, udp: true}
+  - {name: 日64, server: z5.topman8849.cc, port: 45331, type: vmess, uuid: fbe6b485-7c09-371e-9ad0-0b41b433a0ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 日59, server: v59.topman8849.cc, port: 41332, type: vmess, uuid: fbe6b485-7c09-371e-9ad0-0b41b433a0ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 港62, server: z3.topman8849.cc, port: 45338, type: vmess, uuid: fbe6b485-7c09-371e-9ad0-0b41b433a0ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: "新加坡✈️中转 [广州BGP]", server: az1.bgp.zhongzhuan1.xyz, port: 30484, type: trojan, password: "6e6a3d98-1988-4c78-b430-01a3edc0f063", skip-cert-verify: true, udp: true}
+  - {name: "台湾✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 31097, type: trojan, password: "6e6a3d98-1988-4c78-b430-01a3edc0f063", skip-cert-verify: true, udp: true}
+  - {name: "香港✈️中转 [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 45379, type: trojan, password: "6e6a3d98-1988-4c78-b430-01a3edc0f063", skip-cert-verify: true, udp: true}
+  - {name: "新加坡✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 26539, type: trojan, password: "6e6a3d98-1988-4c78-b430-01a3edc0f063", skip-cert-verify: true, udp: true}
+  - {name: "韩国✈️中转 [广州BGP]", server: az1.bgp.zhongzhuan1.xyz, port: 39124, type: trojan, password: "6e6a3d98-1988-4c78-b430-01a3edc0f063", skip-cert-verify: true, udp: true}
+  - {name: "俄罗斯✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 42167, type: trojan, password: "6e6a3d98-1988-4c78-b430-01a3edc0f063", skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰Hong Kong 01, server: HK-01.Standard.KuaiLian-Node.cyou, port: 15312, type: ss, cipher: aes-256-gcm, password: 1d6d22d2-eff3-45e5-9056-49b97e4a472e, udp: true}
+  - {name: US SJC CTG 02 V2(vmess), server: us-sjc-ctg-02-v2.node.inforun.work, port: 888, type: vmess, uuid: b536533e-6fa0-4575-a1f8-bbf81a194f44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}, udp: true}
+  - {name: TW TPE HQ V2(vmess), server: tw-tpe-hq-v2.node.inforun.work, port: 10188, type: vmess, uuid: b536533e-6fa0-4575-a1f8-bbf81a194f44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}, udp: true}
   - {name: SG SIN KRN TR(trojan), server: sg-sin-krn-tr.node.inforun.work, port: 12889, type: trojan, password: uDTmEAGwuCUZXZvwhWJk, skip-cert-verify: true, udp: true}
-  - {name: HK HKG IT2 SVM TR(trojan), server: hk-hkg-it2-svm-tr.node.inforun.work, port: 13889, type: trojan, password: uDTmEAGwuCUZXZvwhWJk, skip-cert-verify: true, udp: true}
+  - {name: HK HKG GZ.HK HKT TR B(trojan), server: hk-gz-hk-hkt-tr-b.cdn.savoy.click, port: 889, type: trojan, password: uDTmEAGwuCUZXZvwhWJk, skip-cert-verify: true, udp: true}
   - {name: SG SIN KRN V2(vmess), server: sg-sin-krn-v2.node.inforun.work, port: 12888, type: vmess, uuid: b536533e-6fa0-4575-a1f8-bbf81a194f44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}, udp: true}
   - {name: JP TYO 04 V2(vmess), server: jp-nrt-04-v2.cdn.savoy.click, port: 888, type: vmess, uuid: b536533e-6fa0-4575-a1f8-bbf81a194f44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}, udp: true}
-  - {name: HK HKG SH.HK HGC 1G TR(trojan), server: sh-hk-hgc-1g-tr.node.inforun.work, port: 889, type: trojan, password: uDTmEAGwuCUZXZvwhWJk, skip-cert-verify: true, udp: true}
-  - {name: US SJC NA TR(trojan), server: us-sjc-na-tr.node.inforun.work, port: 10689, type: trojan, password: uDTmEAGwuCUZXZvwhWJk, skip-cert-verify: true, udp: true}
-  - {name: 深圳移动-台湾-iepl@vpnpool_2, server: 120.233.7.221, port: 18005, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 上海移动-台湾@vpnpool_1, server: 36.138.178.22, port: 13004, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: HK HKG HGC A V2(vmess), server: hk-hkg-hgc-a-v2.node.inforun.work, port: 888, type: vmess, uuid: b536533e-6fa0-4575-a1f8-bbf81a194f44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}, udp: true}
+  - {name: 🇻🇳-越南---85, server: 103.173.155.72, port: 443, type: trojan, password: 68e5d5f2-878f-4887-884f-2c51e7021f19, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼-台湾---43, server: hinet2.52147.top, port: 28443, type: trojan, password: 68e5d5f2-878f-4887-884f-2c51e7021f19, skip-cert-verify: true, udp: true}
+  - {name: US, Dallas, server: 93.179.112.70, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
+  - {name: 深圳移动-香港-iepl@vpnpool_1, server: 120.233.7.221, port: 18002, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 深圳移动-香港-iepl@vpnpool_3, server: 120.233.7.221, port: 32002, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 上海移动-台湾@vpnpool_3, server: 36.138.178.22, port: 13104, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 深圳移动-台湾@vpnpool, server: 120.197.130.126, port: 17006, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 上海移动-KR@vpnpool, server: 36.138.178.22, port: 13101, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 上海移动-SG@vpnpool_2, server: 36.138.178.22, port: 13007, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 深圳移动-香港@vpnpool_4, server: 120.197.130.126, port: 17001, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 上海移动-台湾@vpnpool_1, server: 36.138.178.22, port: 13004, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 上海移动-香港@vpnpool_1, server: 36.138.178.22, port: 13001, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 上海移动-香港@vpnpool_3, server: 36.138.178.22, port: 13003, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 上海移动-SG@vpnpool_1, server: 36.138.178.22, port: 13006, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 深圳移动-台湾-iepl@vpnpool_3, server: 120.233.7.221, port: 32003, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 深圳移动-US-iepl@vpnpool_2, server: 120.233.7.221, port: 18007, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 上海移动-US@vpnpool_2, server: 36.138.178.22, port: 13203, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 上海移动-台湾@vpnpool_2, server: 36.138.178.22, port: 13005, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
+  - 444
   - United States 01
-  - 美国-中转
-  - 台湾Hinet | 解锁流媒体
-  - 越南-2号
-  - 越南-3号
-  - 新加坡G-Core | 解锁流媒体
-  - 越南-4号
-  - 距离下次重置剩余：5 天
-  - 日本NTT-2号 | 解锁流媒体
-  - 日本NTT-1号 | 解锁流媒体
-  - 日本NTT-河南移动负载均衡 | 解锁流媒体
-  - 剩余流量：4454.21 GB
-  - 越南-1号
-  - 日本 | 解锁 | SS
-  - 台湾 ② | 解锁 | SS
-  - 中国-香港04|Trojan
-  - 中国-香港05|Trojan
-  - 🇭🇰 V327U-4X-BGP-HK-NF
-  - 🇭🇰 V426U-4X-BGP-HK-NF
-  - 🇭🇰 V402U-1X-BGP-HK-NF
-  - 🇭🇰 V403U-1X-BGP-HK-NF
-  - 🇭🇰 V304U-1X-BGP-HK-NF
-  - 🇭🇰 V326U-4X-BGP-HK-NF
-  - 🇭🇰 V328U-4X-BGP-HK-NF
-  - 🇭🇰 V406U-1X-BGP-HK-NF
-  - 🇭🇰 香港 Aliyun [01]
-  - 🇭🇰 香港 Aliyun [02]
-  - 🇨🇳 台湾 Lite [02]
-  - 🇭🇰 香港 Aliyun [03]
-  - 🇸🇬-新加坡---37
-  - 🇹🇼-台湾---43
-  - 🇭🇰-香港---79
-  - 🇯🇵-日本---80
-  - 🇰🇷-韩国---38
-  - 🇯🇵-日本---82
-  - v2ray-az-hk01(hgc香港Netflix)
-  - v2ray-az-tw01(台湾Netflix)
-  - v2ray美国06
-  - v2ray新加坡01(Netflix)
-  - v2ray-az-jp05(日本Netflix|Abema|...)
-  - v2ray-ah-hk03(香港Netflix)
-  - v2ray-jm-hk04(香港Netflix)
-  - v2ray-ah-hk04(香港Netflix)
-  - v2ray-ah-az02(香港)
-  - v2ray-ah-sgp01(新加坡)
-  - TW TPE H TR(trojan)
-  - US LAX CTG 01 V2(vmess)
+  - 555
+  - 333
+  - 222
+  - 1111
+  - 🇭🇰 HK_105
+  - 日64
+  - 日59
+  - 港62
+  - 新加坡✈️中转 [广州BGP]
+  - 台湾✈️中转  [湘沪BGP]
+  - 香港✈️中转 [湘沪BGP]
+  - 新加坡✈️中转  [湘沪BGP]
+  - 韩国✈️中转 [广州BGP]
+  - 俄罗斯✈️中转  [湘沪BGP]
+  - 🇭🇰Hong Kong 01
+  - US SJC CTG 02 V2(vmess)
+  - TW TPE HQ V2(vmess)
   - SG SIN KRN TR(trojan)
-  - HK HKG IT2 SVM TR(trojan)
+  - HK HKG GZ.HK HKT TR B(trojan)
   - SG SIN KRN V2(vmess)
   - JP TYO 04 V2(vmess)
-  - HK HKG SH.HK HGC 1G TR(trojan)
-  - US SJC NA TR(trojan)
-  - 深圳移动-台湾-iepl@vpnpool_2
-  - 上海移动-台湾@vpnpool_1
+  - HK HKG HGC A V2(vmess)
+  - 🇻🇳-越南---85
+  - 🇹🇼-台湾---43
+  - US, Dallas
+  - 深圳移动-香港-iepl@vpnpool_1
+  - 深圳移动-香港-iepl@vpnpool_3
   - 上海移动-台湾@vpnpool_3
-  - 深圳移动-台湾@vpnpool
-  - 上海移动-KR@vpnpool
-  - 上海移动-SG@vpnpool_2
-  - 深圳移动-香港@vpnpool_4
+  - 上海移动-台湾@vpnpool_1
+  - 上海移动-香港@vpnpool_1
+  - 上海移动-香港@vpnpool_3
+  - 上海移动-SG@vpnpool_1
+  - 深圳移动-台湾-iepl@vpnpool_3
+  - 深圳移动-US-iepl@vpnpool_2
+  - 上海移动-US@vpnpool_2
+  - 上海移动-台湾@vpnpool_2
 - name: ♻️ automatic
   type: url-test
   proxies:
+  - 444
   - United States 01
-  - 美国-中转
-  - 台湾Hinet | 解锁流媒体
-  - 越南-2号
-  - 越南-3号
-  - 新加坡G-Core | 解锁流媒体
-  - 越南-4号
-  - 距离下次重置剩余：5 天
-  - 日本NTT-2号 | 解锁流媒体
-  - 日本NTT-1号 | 解锁流媒体
-  - 日本NTT-河南移动负载均衡 | 解锁流媒体
-  - 剩余流量：4454.21 GB
-  - 越南-1号
-  - 日本 | 解锁 | SS
-  - 台湾 ② | 解锁 | SS
-  - 中国-香港04|Trojan
-  - 中国-香港05|Trojan
-  - 🇭🇰 V327U-4X-BGP-HK-NF
-  - 🇭🇰 V426U-4X-BGP-HK-NF
-  - 🇭🇰 V402U-1X-BGP-HK-NF
-  - 🇭🇰 V403U-1X-BGP-HK-NF
-  - 🇭🇰 V304U-1X-BGP-HK-NF
-  - 🇭🇰 V326U-4X-BGP-HK-NF
-  - 🇭🇰 V328U-4X-BGP-HK-NF
-  - 🇭🇰 V406U-1X-BGP-HK-NF
-  - 🇭🇰 香港 Aliyun [01]
-  - 🇭🇰 香港 Aliyun [02]
-  - 🇨🇳 台湾 Lite [02]
-  - 🇭🇰 香港 Aliyun [03]
-  - 🇸🇬-新加坡---37
-  - 🇹🇼-台湾---43
-  - 🇭🇰-香港---79
-  - 🇯🇵-日本---80
-  - 🇰🇷-韩国---38
-  - 🇯🇵-日本---82
-  - v2ray-az-hk01(hgc香港Netflix)
-  - v2ray-az-tw01(台湾Netflix)
-  - v2ray美国06
-  - v2ray新加坡01(Netflix)
-  - v2ray-az-jp05(日本Netflix|Abema|...)
-  - v2ray-ah-hk03(香港Netflix)
-  - v2ray-jm-hk04(香港Netflix)
-  - v2ray-ah-hk04(香港Netflix)
-  - v2ray-ah-az02(香港)
-  - v2ray-ah-sgp01(新加坡)
-  - TW TPE H TR(trojan)
-  - US LAX CTG 01 V2(vmess)
+  - 555
+  - 333
+  - 222
+  - 1111
+  - 🇭🇰 HK_105
+  - 日64
+  - 日59
+  - 港62
+  - 新加坡✈️中转 [广州BGP]
+  - 台湾✈️中转  [湘沪BGP]
+  - 香港✈️中转 [湘沪BGP]
+  - 新加坡✈️中转  [湘沪BGP]
+  - 韩国✈️中转 [广州BGP]
+  - 俄罗斯✈️中转  [湘沪BGP]
+  - 🇭🇰Hong Kong 01
+  - US SJC CTG 02 V2(vmess)
+  - TW TPE HQ V2(vmess)
   - SG SIN KRN TR(trojan)
-  - HK HKG IT2 SVM TR(trojan)
+  - HK HKG GZ.HK HKT TR B(trojan)
   - SG SIN KRN V2(vmess)
   - JP TYO 04 V2(vmess)
-  - HK HKG SH.HK HGC 1G TR(trojan)
-  - US SJC NA TR(trojan)
-  - 深圳移动-台湾-iepl@vpnpool_2
-  - 上海移动-台湾@vpnpool_1
+  - HK HKG HGC A V2(vmess)
+  - 🇻🇳-越南---85
+  - 🇹🇼-台湾---43
+  - US, Dallas
+  - 深圳移动-香港-iepl@vpnpool_1
+  - 深圳移动-香港-iepl@vpnpool_3
   - 上海移动-台湾@vpnpool_3
-  - 深圳移动-台湾@vpnpool
-  - 上海移动-KR@vpnpool
-  - 上海移动-SG@vpnpool_2
-  - 深圳移动-香港@vpnpool_4
+  - 上海移动-台湾@vpnpool_1
+  - 上海移动-香港@vpnpool_1
+  - 上海移动-香港@vpnpool_3
+  - 上海移动-SG@vpnpool_1
+  - 深圳移动-台湾-iepl@vpnpool_3
+  - 深圳移动-US-iepl@vpnpool_2
+  - 上海移动-US@vpnpool_2
+  - 上海移动-台湾@vpnpool_2
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
