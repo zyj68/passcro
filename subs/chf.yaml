@@ -3779,34 +3779,34 @@ proxies:
   server: 185.167.116.253
   type: ss
 - cipher: aes-256-gcm
-  name: FR_21_25@20
-  password: kDWvXYZoTBcGkC4
-  port: 8882
+  name: FR_16_25@15
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: FR_18_25@17
+  password: Y6R9pAtvxxzmGC
+  port: 8888
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: FR_22_25@21
+  name: FR_20_25@19
   password: KixLvKzwjekG00rm
   port: 8080
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: FR_23_25@22
+  name: FR_22_25@21
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
   name: FR_24_25@23
-  password: Y6R9pAtvxxzmGC
-  port: 8888
+  password: kDWvXYZoTBcGkC4
+  port: 8882
   server: 145.239.1.100
-  type: ss
-- cipher: aes-256-gcm
-  name: FR_25_25@24
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 149.202.82.172
   type: ss
 - name: GB_26_25@25
   password: ce433528-39fa-4711-bc0d-25a5b1579574
@@ -3830,56 +3830,44 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   name: US_33_25@32
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.64.138.145
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 38.68.134.85
   type: ss
 - cipher: aes-256-gcm
-  name: US_34_25@33
+  name: US_39_25@38
   password: g5MeD6Ft3CWlJId
   port: 5003
-  server: 38.75.136.21
+  server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: US_37_25@36
+  name: US_41_25@40
   password: KixLvKzwjekG00rm
   port: 5500
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: US_53_25@52
+  name: US_45_25@44
   password: g5MeD6Ft3CWlJId
   port: 5003
-  server: 172.99.190.39
+  server: 38.75.136.21
   type: ss
 - cipher: aes-256-gcm
-  name: US_70_25@69
+  name: US_55_25@54
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 167.88.63.79
   type: ss
 - cipher: aes-256-gcm
-  name: US_71_25@70
-  password: Y6R9pAtvxxzmGC
-  port: 5600
-  server: 38.68.134.85
+  name: US_68_25@67
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 38.64.138.145
   type: ss
 - alterId: 0
   cipher: auto
   http-opts: {}
   name: US_72_25@71
-  network: tcp
-  port: 443
-  server: 51.81.223.10
-  servername: 51.81.223.10
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0156451-4efb-45e2-84fc-8d315c4650db
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  http-opts: {}
-  name: US_73_25@72
   network: tcp
   port: 1069
   server: 152.69.197.60
@@ -3890,11 +3878,11 @@ proxies:
 - alterId: 0
   cipher: auto
   http-opts: {}
-  name: US_74_25@73
+  name: US_73_25@72
   network: tcp
   port: 443
-  server: 51.81.223.26
-  servername: 51.81.223.26
+  server: 51.81.223.10
+  servername: 51.81.223.10
   skip-cert-verify: true
   type: vmess
   uuid: c0156451-4efb-45e2-84fc-8d315c4650db
@@ -3902,10 +3890,22 @@ proxies:
 - alterId: 32
   cipher: auto
   http-opts: {}
-  name: US_75_25@74
+  name: US_74_25@73
   network: tcp
   port: 443
   server: 51.81.223.22
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0156451-4efb-45e2-84fc-8d315c4650db
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  http-opts: {}
+  name: US_75_25@74
+  network: tcp
+  port: 443
+  server: 51.81.223.26
+  servername: 51.81.223.26
   skip-cert-verify: true
   type: vmess
   uuid: c0156451-4efb-45e2-84fc-8d315c4650db
@@ -4481,20 +4481,20 @@ proxy-groups:
   - 🇯🇵_JP_日本_24_23@49
   - AU_1_25@0
   - AU_2_25@1
-  - FR_21_25@20
+  - FR_16_25@15
+  - FR_18_25@17
+  - FR_20_25@19
   - FR_22_25@21
-  - FR_23_25@22
   - FR_24_25@23
-  - FR_25_25@24
   - GB_26_25@25
   - JP_27_25@26
   - LT_28_25@27
   - US_33_25@32
-  - US_34_25@33
-  - US_37_25@36
-  - US_53_25@52
-  - US_70_25@69
-  - US_71_25@70
+  - US_39_25@38
+  - US_41_25@40
+  - US_45_25@44
+  - US_55_25@54
+  - US_68_25@67
   - US_72_25@71
   - US_73_25@72
   - US_74_25@73
@@ -5063,20 +5063,20 @@ proxy-groups:
   - 🇯🇵_JP_日本_24_23@49
   - AU_1_25@0
   - AU_2_25@1
-  - FR_21_25@20
+  - FR_16_25@15
+  - FR_18_25@17
+  - FR_20_25@19
   - FR_22_25@21
-  - FR_23_25@22
   - FR_24_25@23
-  - FR_25_25@24
   - GB_26_25@25
   - JP_27_25@26
   - LT_28_25@27
   - US_33_25@32
-  - US_34_25@33
-  - US_37_25@36
-  - US_53_25@52
-  - US_70_25@69
-  - US_71_25@70
+  - US_39_25@38
+  - US_41_25@40
+  - US_45_25@44
+  - US_55_25@54
+  - US_68_25@67
   - US_72_25@71
   - US_73_25@72
   - US_74_25@73
@@ -5649,20 +5649,20 @@ proxy-groups:
   - 🇯🇵_JP_日本_24_23@49
   - AU_1_25@0
   - AU_2_25@1
-  - FR_21_25@20
+  - FR_16_25@15
+  - FR_18_25@17
+  - FR_20_25@19
   - FR_22_25@21
-  - FR_23_25@22
   - FR_24_25@23
-  - FR_25_25@24
   - GB_26_25@25
   - JP_27_25@26
   - LT_28_25@27
   - US_33_25@32
-  - US_34_25@33
-  - US_37_25@36
-  - US_53_25@52
-  - US_70_25@69
-  - US_71_25@70
+  - US_39_25@38
+  - US_41_25@40
+  - US_45_25@44
+  - US_55_25@54
+  - US_68_25@67
   - US_72_25@71
   - US_73_25@72
   - US_74_25@73
@@ -6232,20 +6232,20 @@ proxy-groups:
   - 🇯🇵_JP_日本_24_23@49
   - AU_1_25@0
   - AU_2_25@1
-  - FR_21_25@20
+  - FR_16_25@15
+  - FR_18_25@17
+  - FR_20_25@19
   - FR_22_25@21
-  - FR_23_25@22
   - FR_24_25@23
-  - FR_25_25@24
   - GB_26_25@25
   - JP_27_25@26
   - LT_28_25@27
   - US_33_25@32
-  - US_34_25@33
-  - US_37_25@36
-  - US_53_25@52
-  - US_70_25@69
-  - US_71_25@70
+  - US_39_25@38
+  - US_41_25@40
+  - US_45_25@44
+  - US_55_25@54
+  - US_68_25@67
   - US_72_25@71
   - US_73_25@72
   - US_74_25@73
@@ -6815,20 +6815,20 @@ proxy-groups:
   - 🇯🇵_JP_日本_24_23@49
   - AU_1_25@0
   - AU_2_25@1
-  - FR_21_25@20
+  - FR_16_25@15
+  - FR_18_25@17
+  - FR_20_25@19
   - FR_22_25@21
-  - FR_23_25@22
   - FR_24_25@23
-  - FR_25_25@24
   - GB_26_25@25
   - JP_27_25@26
   - LT_28_25@27
   - US_33_25@32
-  - US_34_25@33
-  - US_37_25@36
-  - US_53_25@52
-  - US_70_25@69
-  - US_71_25@70
+  - US_39_25@38
+  - US_41_25@40
+  - US_45_25@44
+  - US_55_25@54
+  - US_68_25@67
   - US_72_25@71
   - US_73_25@72
   - US_74_25@73
@@ -7398,20 +7398,20 @@ proxy-groups:
   - 🇯🇵_JP_日本_24_23@49
   - AU_1_25@0
   - AU_2_25@1
-  - FR_21_25@20
+  - FR_16_25@15
+  - FR_18_25@17
+  - FR_20_25@19
   - FR_22_25@21
-  - FR_23_25@22
   - FR_24_25@23
-  - FR_25_25@24
   - GB_26_25@25
   - JP_27_25@26
   - LT_28_25@27
   - US_33_25@32
-  - US_34_25@33
-  - US_37_25@36
-  - US_53_25@52
-  - US_70_25@69
-  - US_71_25@70
+  - US_39_25@38
+  - US_41_25@40
+  - US_45_25@44
+  - US_55_25@54
+  - US_68_25@67
   - US_72_25@71
   - US_73_25@72
   - US_74_25@73
@@ -7998,20 +7998,20 @@ proxy-groups:
   - 🇯🇵_JP_日本_24_23@49
   - AU_1_25@0
   - AU_2_25@1
-  - FR_21_25@20
+  - FR_16_25@15
+  - FR_18_25@17
+  - FR_20_25@19
   - FR_22_25@21
-  - FR_23_25@22
   - FR_24_25@23
-  - FR_25_25@24
   - GB_26_25@25
   - JP_27_25@26
   - LT_28_25@27
   - US_33_25@32
-  - US_34_25@33
-  - US_37_25@36
-  - US_53_25@52
-  - US_70_25@69
-  - US_71_25@70
+  - US_39_25@38
+  - US_41_25@40
+  - US_45_25@44
+  - US_55_25@54
+  - US_68_25@67
   - US_72_25@71
   - US_73_25@72
   - US_74_25@73
