@@ -3041,9 +3041,9 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   name: AU_1_25@0
-  password: FG5ddLsMPbV5CutE
-  port: 9050
-  server: 185.167.116.253
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 185.167.116.24
   type: ss
 - cipher: aes-256-cfb
   name: AU_2_25@1
@@ -3051,8 +3051,29 @@ proxies:
   port: 9014
   server: 185.167.116.253
   type: ss
+- cipher: aes-256-cfb
+  name: AU_3_25@2
+  password: FG5ddLsMPbV5CutE
+  port: 9050
+  server: 185.167.116.253
+  type: ss
+- alterId: 2
+  cipher: auto
+  http-opts: {}
+  name: AU_4_25@3
+  network: ws
+  port: 443
+  server: 810hk01.fx6688.top
+  servername: 810hk01.fx6688.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f8dcfff8-3cb9-3221-bc82-5a58a336d4b9
+  ws-headers:
+    HOST: 810hk01.fx6688.top
+  ws-path: /ray
 - cipher: chacha20-ietf-poly1305
-  name: CA_6_25@5
+  name: CA_5_25@4
   password: Ultr@r00t_2017
   port: 811
   server: 138.197.166.205
@@ -3060,7 +3081,7 @@ proxies:
 - alterId: 2
   cipher: auto
   http-opts: {}
-  name: CA_7_25@6
+  name: CA_9_25@8
   network: ws
   port: 443
   server: 716tw.fx6688.top
@@ -3073,61 +3094,61 @@ proxies:
     HOST: 716tw.fx6688.top
   ws-path: /ray
 - cipher: aes-256-gcm
-  name: DE_13_25@12
+  name: DE_14_25@13
   password: KixLvKzwjekG00rm
   port: 5500
   server: 193.108.118.30
   type: ss
 - cipher: aes-256-gcm
-  name: FR_16_25@15
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  name: FR_17_25@16
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 145.239.1.100
-  type: ss
-- cipher: aes-256-gcm
-  name: FR_20_25@19
+  name: FR_18_25@17
   password: Y6R9pAtvxxzmGC
   port: 8888
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: FR_21_25@20
+  name: FR_20_25@19
   password: KixLvKzwjekG00rm
   port: 8080
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: FR_23_25@22
+  name: FR_21_25@20
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: FR_24_25@23
+  name: FR_23_25@22
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: FR_25_25@24
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: FR_26_25@25
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 62.210.113.98
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: GB_25_25@24
+  name: GB_27_25@26
   password: 4SGLMZ7Z83fN
   port: 15256
   server: 5.188.5.190
   type: ss
-- name: GB_26_25@25
+- name: GB_28_25@27
   password: ce433528-39fa-4711-bc0d-25a5b1579574
   port: 12501
   server: us-05.licom.ml
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: JP_27_25@26
+- name: JP_29_25@28
   password: ce433528-39fa-4711-bc0d-25a5b1579574
   port: 8443
   server: in-01.licom.ml
@@ -3135,7 +3156,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: LT_28_25@27
+  name: LT_30_25@29
   password: KnJGad3FqTvjqbaX
   port: 9014
   server: 213.183.53.222
@@ -3147,12 +3168,6 @@ proxies:
   server: 185.4.65.6
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: SG_83_25@82
-  password: G!yBwPWH3Vao
-  port: 801
-  server: 217.197.160.117
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: SG_84_25@83
   password: G!yBwPWH3Vao
   port: 810
@@ -3161,26 +3176,20 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   name: SG_85_25@84
   password: G!yBwPWH3Vao
+  port: 801
+  server: 217.197.160.117
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SG_86_25@85
+  password: G!yBwPWH3Vao
   port: 805
   server: 217.197.160.117
   type: ss
 - cipher: aes-256-gcm
-  name: US_88_25@87
+  name: US_98_25@97
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 38.75.136.21
-  type: ss
-- cipher: aes-256-gcm
-  name: US_91_25@90
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 167.88.63.79
-  type: ss
-- cipher: aes-256-gcm
-  name: US_102_25@101
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.64.138.145
   type: ss
 - cipher: aes-256-gcm
   name: US_103_25@102
@@ -3189,44 +3198,33 @@ proxies:
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: US_113_25@112
+  name: US_105_25@104
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 38.64.138.145
+  type: ss
+- cipher: aes-256-gcm
+  name: US_109_25@108
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: US_118_25@117
+  name: US_112_25@111
   password: KixLvKzwjekG00rm
   port: 5500
   server: 38.68.135.18
   type: ss
-- alterId: 32
-  cipher: auto
-  http-opts: {}
-  name: US_123_25@122
-  network: tcp
-  port: 443
-  server: 51.81.223.22
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0156451-4efb-45e2-84fc-8d315c4650db
-  ws-path: /
+- cipher: aes-256-gcm
+  name: US_115_25@114
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 167.88.63.79
+  type: ss
 - alterId: 0
   cipher: auto
   http-opts: {}
-  name: US_124_25@123
-  network: tcp
-  port: 443
-  server: 51.81.223.26
-  servername: 51.81.223.26
-  skip-cert-verify: true
-  type: vmess
-  uuid: c0156451-4efb-45e2-84fc-8d315c4650db
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  http-opts: {}
-  name: US_125_25@124
+  name: US_121_25@120
   network: tcp
   port: 443
   server: 51.81.223.10
@@ -3238,7 +3236,19 @@ proxies:
 - alterId: 0
   cipher: auto
   http-opts: {}
-  name: US_126_25@125
+  name: US_122_25@121
+  network: tcp
+  port: 443
+  server: 51.81.223.26
+  servername: 51.81.223.26
+  skip-cert-verify: true
+  type: vmess
+  uuid: c0156451-4efb-45e2-84fc-8d315c4650db
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  http-opts: {}
+  name: US_123_25@122
   network: tcp
   port: 1069
   server: 152.69.197.60
@@ -3246,21 +3256,18 @@ proxies:
   type: vmess
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
   ws-path: /
-- alterId: 0
+- alterId: 32
   cipher: auto
   http-opts: {}
-  name: US_127_25@126
-  network: ws
-  port: 44444
-  server: 20.194.228.239
-  servername: 20.194.228.239
+  name: US_124_25@123
+  network: tcp
+  port: 443
+  server: 51.81.223.22
   skip-cert-verify: true
   type: vmess
-  uuid: b9ee113f-b299-4d62-e89d-d6a943fee8f8
-  ws-headers:
-    HOST: 20.194.228.239
-  ws-path: /23564
-- name: US_128_25@127
+  uuid: c0156451-4efb-45e2-84fc-8d315c4650db
+  ws-path: /
+- name: US_125_25@124
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   port: 3052
   server: kr05.wangxd.life
@@ -3715,35 +3722,36 @@ proxy-groups:
   - 🇺🇸_US_美国_39_24@58
   - AU_1_25@0
   - AU_2_25@1
-  - CA_6_25@5
-  - CA_7_25@6
-  - DE_13_25@12
-  - FR_16_25@15
-  - FR_17_25@16
+  - AU_3_25@2
+  - AU_4_25@3
+  - CA_5_25@4
+  - CA_9_25@8
+  - DE_14_25@13
+  - FR_18_25@17
   - FR_20_25@19
   - FR_21_25@20
   - FR_23_25@22
-  - FR_24_25@23
-  - GB_25_25@24
-  - GB_26_25@25
-  - JP_27_25@26
-  - LT_28_25@27
+  - FR_25_25@24
+  - FR_26_25@25
+  - GB_27_25@26
+  - GB_28_25@27
+  - JP_29_25@28
+  - LT_30_25@29
   - RU_82_25@81
-  - SG_83_25@82
   - SG_84_25@83
   - SG_85_25@84
-  - US_88_25@87
-  - US_91_25@90
-  - US_102_25@101
+  - SG_86_25@85
+  - US_98_25@97
   - US_103_25@102
-  - US_113_25@112
-  - US_118_25@117
+  - US_105_25@104
+  - US_109_25@108
+  - US_112_25@111
+  - US_115_25@114
+  - US_121_25@120
+  - US_122_25@121
   - US_123_25@122
   - US_124_25@123
   - US_125_25@124
-  - US_126_25@125
-  - US_127_25@126
-  - US_128_25@127
   type: select
 - interval: 300
   name: ♻️ 自动选择
@@ -4191,35 +4199,36 @@ proxy-groups:
   - 🇺🇸_US_美国_39_24@58
   - AU_1_25@0
   - AU_2_25@1
-  - CA_6_25@5
-  - CA_7_25@6
-  - DE_13_25@12
-  - FR_16_25@15
-  - FR_17_25@16
+  - AU_3_25@2
+  - AU_4_25@3
+  - CA_5_25@4
+  - CA_9_25@8
+  - DE_14_25@13
+  - FR_18_25@17
   - FR_20_25@19
   - FR_21_25@20
   - FR_23_25@22
-  - FR_24_25@23
-  - GB_25_25@24
-  - GB_26_25@25
-  - JP_27_25@26
-  - LT_28_25@27
+  - FR_25_25@24
+  - FR_26_25@25
+  - GB_27_25@26
+  - GB_28_25@27
+  - JP_29_25@28
+  - LT_30_25@29
   - RU_82_25@81
-  - SG_83_25@82
   - SG_84_25@83
   - SG_85_25@84
-  - US_88_25@87
-  - US_91_25@90
-  - US_102_25@101
+  - SG_86_25@85
+  - US_98_25@97
   - US_103_25@102
-  - US_113_25@112
-  - US_118_25@117
+  - US_105_25@104
+  - US_109_25@108
+  - US_112_25@111
+  - US_115_25@114
+  - US_121_25@120
+  - US_122_25@121
   - US_123_25@122
   - US_124_25@123
   - US_125_25@124
-  - US_126_25@125
-  - US_127_25@126
-  - US_128_25@127
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -4671,35 +4680,36 @@ proxy-groups:
   - 🇺🇸_US_美国_39_24@58
   - AU_1_25@0
   - AU_2_25@1
-  - CA_6_25@5
-  - CA_7_25@6
-  - DE_13_25@12
-  - FR_16_25@15
-  - FR_17_25@16
+  - AU_3_25@2
+  - AU_4_25@3
+  - CA_5_25@4
+  - CA_9_25@8
+  - DE_14_25@13
+  - FR_18_25@17
   - FR_20_25@19
   - FR_21_25@20
   - FR_23_25@22
-  - FR_24_25@23
-  - GB_25_25@24
-  - GB_26_25@25
-  - JP_27_25@26
-  - LT_28_25@27
+  - FR_25_25@24
+  - FR_26_25@25
+  - GB_27_25@26
+  - GB_28_25@27
+  - JP_29_25@28
+  - LT_30_25@29
   - RU_82_25@81
-  - SG_83_25@82
   - SG_84_25@83
   - SG_85_25@84
-  - US_88_25@87
-  - US_91_25@90
-  - US_102_25@101
+  - SG_86_25@85
+  - US_98_25@97
   - US_103_25@102
-  - US_113_25@112
-  - US_118_25@117
+  - US_105_25@104
+  - US_109_25@108
+  - US_112_25@111
+  - US_115_25@114
+  - US_121_25@120
+  - US_122_25@121
   - US_123_25@122
   - US_124_25@123
   - US_125_25@124
-  - US_126_25@125
-  - US_127_25@126
-  - US_128_25@127
   type: select
 - name: 📲 电报信息
   proxies:
@@ -5148,35 +5158,36 @@ proxy-groups:
   - 🇺🇸_US_美国_39_24@58
   - AU_1_25@0
   - AU_2_25@1
-  - CA_6_25@5
-  - CA_7_25@6
-  - DE_13_25@12
-  - FR_16_25@15
-  - FR_17_25@16
+  - AU_3_25@2
+  - AU_4_25@3
+  - CA_5_25@4
+  - CA_9_25@8
+  - DE_14_25@13
+  - FR_18_25@17
   - FR_20_25@19
   - FR_21_25@20
   - FR_23_25@22
-  - FR_24_25@23
-  - GB_25_25@24
-  - GB_26_25@25
-  - JP_27_25@26
-  - LT_28_25@27
+  - FR_25_25@24
+  - FR_26_25@25
+  - GB_27_25@26
+  - GB_28_25@27
+  - JP_29_25@28
+  - LT_30_25@29
   - RU_82_25@81
-  - SG_83_25@82
   - SG_84_25@83
   - SG_85_25@84
-  - US_88_25@87
-  - US_91_25@90
-  - US_102_25@101
+  - SG_86_25@85
+  - US_98_25@97
   - US_103_25@102
-  - US_113_25@112
-  - US_118_25@117
+  - US_105_25@104
+  - US_109_25@108
+  - US_112_25@111
+  - US_115_25@114
+  - US_121_25@120
+  - US_122_25@121
   - US_123_25@122
   - US_124_25@123
   - US_125_25@124
-  - US_126_25@125
-  - US_127_25@126
-  - US_128_25@127
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
@@ -5625,35 +5636,36 @@ proxy-groups:
   - 🇺🇸_US_美国_39_24@58
   - AU_1_25@0
   - AU_2_25@1
-  - CA_6_25@5
-  - CA_7_25@6
-  - DE_13_25@12
-  - FR_16_25@15
-  - FR_17_25@16
+  - AU_3_25@2
+  - AU_4_25@3
+  - CA_5_25@4
+  - CA_9_25@8
+  - DE_14_25@13
+  - FR_18_25@17
   - FR_20_25@19
   - FR_21_25@20
   - FR_23_25@22
-  - FR_24_25@23
-  - GB_25_25@24
-  - GB_26_25@25
-  - JP_27_25@26
-  - LT_28_25@27
+  - FR_25_25@24
+  - FR_26_25@25
+  - GB_27_25@26
+  - GB_28_25@27
+  - JP_29_25@28
+  - LT_30_25@29
   - RU_82_25@81
-  - SG_83_25@82
   - SG_84_25@83
   - SG_85_25@84
-  - US_88_25@87
-  - US_91_25@90
-  - US_102_25@101
+  - SG_86_25@85
+  - US_98_25@97
   - US_103_25@102
-  - US_113_25@112
-  - US_118_25@117
+  - US_105_25@104
+  - US_109_25@108
+  - US_112_25@111
+  - US_115_25@114
+  - US_121_25@120
+  - US_122_25@121
   - US_123_25@122
   - US_124_25@123
   - US_125_25@124
-  - US_126_25@125
-  - US_127_25@126
-  - US_128_25@127
   type: select
 - name: 🍎 苹果服务
   proxies:
@@ -6102,35 +6114,36 @@ proxy-groups:
   - 🇺🇸_US_美国_39_24@58
   - AU_1_25@0
   - AU_2_25@1
-  - CA_6_25@5
-  - CA_7_25@6
-  - DE_13_25@12
-  - FR_16_25@15
-  - FR_17_25@16
+  - AU_3_25@2
+  - AU_4_25@3
+  - CA_5_25@4
+  - CA_9_25@8
+  - DE_14_25@13
+  - FR_18_25@17
   - FR_20_25@19
   - FR_21_25@20
   - FR_23_25@22
-  - FR_24_25@23
-  - GB_25_25@24
-  - GB_26_25@25
-  - JP_27_25@26
-  - LT_28_25@27
+  - FR_25_25@24
+  - FR_26_25@25
+  - GB_27_25@26
+  - GB_28_25@27
+  - JP_29_25@28
+  - LT_30_25@29
   - RU_82_25@81
-  - SG_83_25@82
   - SG_84_25@83
   - SG_85_25@84
-  - US_88_25@87
-  - US_91_25@90
-  - US_102_25@101
+  - SG_86_25@85
+  - US_98_25@97
   - US_103_25@102
-  - US_113_25@112
-  - US_118_25@117
+  - US_105_25@104
+  - US_109_25@108
+  - US_112_25@111
+  - US_115_25@114
+  - US_121_25@120
+  - US_122_25@121
   - US_123_25@122
   - US_124_25@123
   - US_125_25@124
-  - US_126_25@125
-  - US_127_25@126
-  - US_128_25@127
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -6596,35 +6609,36 @@ proxy-groups:
   - 🇺🇸_US_美国_39_24@58
   - AU_1_25@0
   - AU_2_25@1
-  - CA_6_25@5
-  - CA_7_25@6
-  - DE_13_25@12
-  - FR_16_25@15
-  - FR_17_25@16
+  - AU_3_25@2
+  - AU_4_25@3
+  - CA_5_25@4
+  - CA_9_25@8
+  - DE_14_25@13
+  - FR_18_25@17
   - FR_20_25@19
   - FR_21_25@20
   - FR_23_25@22
-  - FR_24_25@23
-  - GB_25_25@24
-  - GB_26_25@25
-  - JP_27_25@26
-  - LT_28_25@27
+  - FR_25_25@24
+  - FR_26_25@25
+  - GB_27_25@26
+  - GB_28_25@27
+  - JP_29_25@28
+  - LT_30_25@29
   - RU_82_25@81
-  - SG_83_25@82
   - SG_84_25@83
   - SG_85_25@84
-  - US_88_25@87
-  - US_91_25@90
-  - US_102_25@101
+  - SG_86_25@85
+  - US_98_25@97
   - US_103_25@102
-  - US_113_25@112
-  - US_118_25@117
+  - US_105_25@104
+  - US_109_25@108
+  - US_112_25@111
+  - US_115_25@114
+  - US_121_25@120
+  - US_122_25@121
   - US_123_25@122
   - US_124_25@123
   - US_125_25@124
-  - US_126_25@125
-  - US_127_25@126
-  - US_128_25@127
   type: select
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
