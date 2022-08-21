@@ -4,344 +4,308 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 阿伟 3, server: 104.18.24.139, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/5206194863/62c7702a0ea8b/, headers: {Host: sg1-v2ray.sshkit.org}}, udp: true}
-  - {name: 法国-阿伟 A, server: us-05.licom.ml, port: 12501, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, skip-cert-verify: true, udp: true}
   - {name: 新加坡-阿伟 A, server: sg-03.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, skip-cert-verify: true, udp: true}
   - {name: 新加坡-阿伟 B, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: 加拿大-阿伟 A, server: 116.129.254.177, port: 65007, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
   - {name: 香港-阿伟, server: pp1.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
   - {name: 香港-阿伟 2, server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
   - {name: 香港-阿伟 3, server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 香港-阿伟 4, server: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, port: 443, type: trojan, password: trojan-daozhu-uallen-qbit-azure-hk, sni: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, skip-cert-verify: true, udp: true}
-  - {name: 香港-阿伟 5, server: gkdcm.myjcbbcn.top, port: 25897, type: vmess, uuid: 153bd8f1-4058-4d66-82ff-44d5786d916f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 印尼-阿伟, server: api.qiscus.com, port: 443, type: vmess, uuid: 8f9b60e6-1db3-42e4-97b9-1e311f427649, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess-ws-makae, headers: {Host: bn-id01.ipv2ray.xyz}}, udp: true}
-  - {name: 印尼-阿伟 2, server: api.qiscus.com, port: 443, type: vmess, uuid: 8f9b60e6-1db3-42e4-97b9-1e311f427649, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess-ws-makae, headers: {Host: bn-id01.ipv2ray.xyz}}, udp: true}
-  - {name: 印度-阿伟, server: in-04.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: in-04.licom.ml, skip-cert-verify: true, udp: true}
-  - {name: 日本-阿伟, server: us-05.licom.ml, port: 12501, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, skip-cert-verify: true, udp: true}
-  - {name: 日本-阿伟 19, server: 185.172.113.106, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 日本-阿伟 25, server: 120.233.150.146, port: 65095, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 韩国-阿伟 4, server: hk08.bp777.buzz, port: 21665, type: vmess, uuid: f5969b01-c239-4b18-9aab-637a5cabb627, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 韩国-阿伟 5, server: 116.129.254.177, port: 65048, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 韩国-阿伟 6, server: best02.downloadmovie.cn, port: 65043, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 韩国-阿伟 7, server: hk05.bp777.buzz, port: 21665, type: vmess, uuid: 90965be2-3ef7-47f6-a3a9-b21eca387654, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 韩国-阿伟 8, server: hk08.bp777.buzz, port: 21665, type: vmess, uuid: 90965be2-3ef7-47f6-a3a9-b21eca387654, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 韩国-阿伟 9, server: 116.129.254.177, port: 65043, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 韩国-阿伟 10, server: 116.129.254.177, port: 65048, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 韩国-阿伟 11, server: best01.downloadmovie.cn, port: 65043, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 韩国-阿伟 12, server: 116.129.254.177, port: 65048, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
   - {name: 荷兰-阿伟, server: 92.38.184.228, port: 2097, type: ss, cipher: chacha20-ietf-poly1305, password: jRKkoWqkrw2f, udp: true}
-  - {name: 新加坡-阿伟 1, server: sg-03.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-阿伟 2, server: trojan3.udpgw.com, port: 443, type: trojan, password: 8db1b560-019d-11ed-8bdf-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-阿伟 3, server: sg-02.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-阿伟 4, server: sg-04.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-阿伟 5, server: status.qiscus.com, port: 443, type: vmess, uuid: 283e8955-4a4a-41ca-ac61-3eabf3077a95, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: sg2.jupiterv2ray.xyz}}, udp: true}
-  - {name: 新加坡-阿伟 6, server: gkdcu.myjcbbcn.top, port: 25895, type: vmess, uuid: 153bd8f1-4058-4d66-82ff-44d5786d916f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
   - {name: 新加坡-阿伟 7, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 新加坡-阿伟 8, server: status.qiscus.com, port: 443, type: vmess, uuid: 283e8955-4a4a-41ca-ac61-3eabf3077a95, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: sg2.jupiterv2ray.xyz}}, udp: true}
-  - {name: 土耳其-阿伟, server: 120.233.150.146, port: 65073, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟, server: 625tw.ok365.cyou, port: 443, type: trojan, password: 15d01051-48d0-4058-8422-ecc686fc340d, sni: 625tw.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: 台湾-阿伟 2, server: tw01.henet.cyou, port: 20000, type: vmess, uuid: dd043aa3-36bf-4766-aaa8-1c99f6f0edeb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 3, server: 36.134.156.5, port: 65037, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
   - {name: 台湾-阿伟 4, server: 116.129.254.177, port: 65063, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 5, server: 36.134.156.5, port: 65082, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 6, server: 36.134.156.5, port: 65024, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
   - {name: 台湾-阿伟 7, server: cn05.downloadmovie.cn, port: 65083, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 8, server: auto-moble.downloadmovie.cn, port: 65023, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 9, server: 116.129.254.177, port: 65037, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 10, server: 116.129.254.177, port: 65037, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 11, server: 36.134.156.5, port: 65040, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 12, server: 116.129.254.177, port: 65034, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 13, server: 111.45.22.136, port: 65023, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 14, server: 120.233.29.189, port: 65039, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 15, server: 36.134.154.119, port: 65024, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 16, server: auto-moble.downloadmovie.cn, port: 65022, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 17, server: auto-moble.downloadmovie.cn, port: 65022, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 18, server: 36.134.156.5, port: 65083, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 19, server: cn01.downloadmovie.cn, port: 65062, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 20, server: 36.134.156.5, port: 65063, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 21, server: 111.45.22.136, port: 65082, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 22, server: 116.129.254.177, port: 65063, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 23, server: cn05.downloadmovie.cn, port: 65037, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 24, server: 111.45.22.136, port: 65024, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 25, server: 36.134.156.5, port: 65083, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 26, server: 111.45.22.136, port: 65023, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 27, server: 120.233.29.189, port: 65062, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 28, server: 120.233.29.189, port: 65024, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
   - {name: 台湾-阿伟 29, server: in-tw-2.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: YouTube-aweikeji}}, udp: true}
   - {name: 台湾-阿伟 30, server: cn01.downloadmovie.cn, port: 65039, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 31, server: 120.233.150.146, port: 65024, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 32, server: 120.233.29.189, port: 65023, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 33, server: 36.134.154.119, port: 65040, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 34, server: 120.233.150.146, port: 65024, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 35, server: 111.45.22.136, port: 65082, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 36, server: 120.233.29.189, port: 65037, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 台湾-阿伟 37, server: 36.134.156.5, port: 65040, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: _美国_-阿伟 8, server: 51.81.223.14, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _美国_-阿伟 9, server: 51.81.223.26, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _美国_-阿伟 10, server: unicom02.downloadmovie.cn, port: 65012, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 美国-阿伟, server: 165.154.235.49, port: 443, type: trojan, password: c1a78daa-a4d8-3fc3-a346-e9bf7fdcbd8c, sni: 20020627.luohuaxian.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国-阿伟 5, server: 38.68.135.18, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国-阿伟 6, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国-阿伟 7, server: 38.68.135.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国-阿伟 8, server: 38.68.135.18, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国-阿伟 12, server: 5.188.0.151, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 美国-阿伟 22, server: 51.81.223.35, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-阿伟 23, server: vfly5.xyz, port: 443, type: vmess, uuid: 825136bb-fc0a-4f43-8888-dc2e36f27e2d, alterId: 60, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /myblog, headers: {Host: vfly5.xyz}}, udp: true}
-  - {name: 美国-阿伟 24, server: vfly5.xyz, port: 443, type: vmess, uuid: 825136bb-fc0a-4f43-8888-dc2e36f27e2d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /myblog, headers: {Host: vfly5.xyz}}, udp: true}
-  - {name: 美国-阿伟 25, server: 116.129.254.177, port: 65072, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 美国-阿伟 26, server: 20.205.115.140, port: 10003, type: vmess, uuid: de4ceb36-b708-4658-81b2-2f2612e39a23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 美国-阿伟 27, server: 36.134.156.5, port: 65087, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 美国-阿伟 28, server: 116.129.254.177, port: 65072, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 美国-阿伟 29, server: 36.134.154.119, port: 65072, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 美国-阿伟 30, server: best04.downloadmovie.cn, port: 65089, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 美国-阿伟 31, server: 36.134.154.119, port: 65087, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 越南-阿伟, server: 120.241.236.217, port: 16256, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 阿塞拜疆-阿伟, server: 116.129.254.177, port: 65092, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 保加利亚-阿伟, server: 36.134.156.5, port: 65079, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 波兰-阿伟, server: 116.129.254.177, port: 65075, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 迪拜-阿伟, server: 120.233.150.146, port: 65066, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 迪拜-阿伟 2, server: 36.134.154.119, port: 65066, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 迪拜-阿伟 3, server: best02.downloadmovie.cn, port: 65066, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 加拿大-阿伟 2, server: best03.downloadmovie.cn, port: 65064, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 柬埔寨-阿伟, server: 120.233.150.146, port: 65068, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 捷克-阿伟 3, server: 116.129.254.177, port: 65077, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 捷克-阿伟 4, server: 116.129.254.177, port: 65077, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 罗马-阿伟, server: 5.188.0.151, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 瑞士-阿伟, server: 120.233.150.146, port: 65079, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: 120.233.150.146}}, udp: true}
-  - {name: 沙特阿拉伯-阿伟, server: 120.233.29.189, port: 65071, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 土耳其-阿伟 2, server: 120.233.150.146, port: 65073, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 土耳其-阿伟 3, server: best01.downloadmovie.cn, port: 65073, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 以色列-阿伟, server: 116.129.254.177, port: 65096, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 以色列-阿伟 2, server: 116.129.254.177, port: 65096, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 以色列-阿伟 3, server: 116.129.254.177, port: 65096, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 美国_-阿伟 10, server: unicom02.downloadmovie.cn, port: 65012, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 阿伟-9, server: clash11.free4444.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 阿伟-8, server: zjg1.free4444.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 阿伟-7, server: sss7.free4444.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 阿伟-6, server: zjg1.free4444.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 阿伟-5, server: 14.fdhsujj.xyz, port: 104, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: VmpKMGExTXlTa1pQVmxaWVYwZDRVVlZyV25KbFZsSnpWV3R3YTFZd2NGbFphMlIzWVcxS1ZXSkVXbHBoYTNCb1ZGVldOR1JHVW5WWGJXeFdWVkU, udp: true}
+  - {name: 阿伟-4, server: sss5.free4444.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 阿伟-3, server: zjg2.free4444.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 阿伟-2, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 阿伟-15, server: zj8.fdhsujj.xyz, port: 23546, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: ZGJlOTYyODY2NTIubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 阿伟-14, server: v2jp.fdhsujj.xyz, port: 787, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: WkdKbE9UWXlPRFkyTlRJdWJXbGpjbTl6YjJaMExtTnZiUQ, udp: true}
+  - {name: 阿伟-13, server: huus.fdhsujj.xyz, port: 23552, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: ZGJlOTYyODY2NTIubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 阿伟-12, server: aa5us2.fdhsujj.xyz, port: 234, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: V2tkS2JFOVVXWGxQUkZreVRsUkpkV0pYYkdwamJUbDZZakphTUV4dFRuWmlVUQ, udp: true}
+  - {name: 阿伟-11, server: sss11.free4444.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 阿伟-10, server: zj9.fdhsujj.xyz, port: 23557, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: WkdKbE9UWXlPRFkyTlRJdWJXbGpjbTl6YjJaMExtTnZiUQ, udp: true}
+  - {name: 油管-阿伟科技, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 捷克(阿伟), server: v2-tcp.shop, port: 15017, type: vmess, uuid: 39ed38fd-aadd-4033-8487-d45dd6bec292, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: v2-tcp.shop}}, udp: true}
+  - {name: 俄罗斯(阿伟), server: v2-tcp.shop, port: 15015, type: vmess, uuid: 4c0925e7-84ac-4579-b44a-3252520cedf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: v2-tcp.shop}}, udp: true}
+  - {name: 俄罗斯(阿伟) 2, server: v2-tcp.shop, port: 15015, type: vmess, uuid: df7d9c68-8d67-4efb-a8ac-71b2c96ff911, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: v2-tcp.shop}}, udp: true}
+  - {name: 美国(阿伟), server: 38.121.43.65, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国(阿伟) 2, server: 38.143.66.20, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国(阿伟) 3, server: 45.78.10.158, port: 38823, type: ss, cipher: aes-256-gcm, password: 7Y4BV4ausKGcnseE, udp: true}
+  - {name: 美国(阿伟) 4, server: ifffffffuuuuuuus.qiqicdn2.cf, port: 443, type: vmess, uuid: 5a36cce4-0527-4d36-bf4a-6c215ef9c524, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5a36cce4-0527-4d36-bf4a-6c215ef9c524-vmess, headers: {Host: ifffffffuuuuuuus.qiqicdn2.cf}}, udp: true}
+  - {name: 美国(阿伟) 5, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-buffalo.lvuft.com}}, udp: true}
+  - {name: 美国(阿伟) 6, server: ifffffffuuuuuuus.qiqicdn2.cf, port: 443, type: vmess, uuid: 5a36cce4-0527-4d36-bf4a-6c215ef9c524, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5a36cce4-0527-4d36-bf4a-6c215ef9c524-vmess, headers: {Host: ifffffffuuuuuuus.qiqicdn2.cf}}, udp: true}
+  - {name: 美国(阿伟) 7, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 192.186.129.66}}, udp: true}
+  - {name: 美国(阿伟) 8, server: bwg2.gushidawang.cc, port: 57539, type: vmess, uuid: fcf7202c-bd1a-44e9-a25e-bf152f6e5c11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(阿伟) 9, server: cf.fullcloud.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxusa.fovi.tk}}, udp: true}
+  - {name: 美国(阿伟) 10, server: lg4.free4444.xyz, port: 443, type: vmess, uuid: fd0c0fca-599a-4ca7-931c-beec46d4f71b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg4.free4444.xyz}}, udp: true}
+  - {name: 新加坡(阿伟), server: sg81701.ok365.cyou, port: 443, type: trojan, password: 9afbdbda-3ba3-44a4-ab90-ee9a83832b0d, sni: sg81701.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(阿伟) 2, server: sg81701.ok365.cyou, port: 443, type: trojan, password: 41a5e2d5-2678-4a7c-9d22-e8c91611d607, sni: sg81701.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(阿伟) 3, server: sg-sin-krn-tr.node.inforun.work, port: 12889, type: trojan, password: kFyvvCcvMXQKFcJZWuxcdTZOFummlVbf, sni: cdn.savoy.click, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(阿伟) 4, server: 36.139.9.191, port: 45731, type: ss, cipher: aes-128-gcm, password: 43742c57-4c84-41ad-b723-d72bed7accc0, udp: true}
+  - {name: 新加坡(阿伟) 5, server: www.fuckdbuy.xyz, port: 57170, type: vmess, uuid: 0fcee849-28e7-4251-87f3-e7cb9d95c00f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(阿伟) 6, server: 139.180.140.20, port: 42424, type: vmess, uuid: a3d12a2a-d6b3-4248-bb5d-0c5759f9606d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(阿伟) 7, server: 104.17.122.239, port: 80, type: vmess, uuid: 20000000-0000-0000-0000-000000000020, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /20, headers: {Host: dosg.azure.bond}}, udp: true}
+  - {name: 新加坡(阿伟) 8, server: 104.18.105.170, port: 80, type: vmess, uuid: 20000000-0000-0000-0000-000000000020, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /20, headers: {Host: dosg.azure.bond}}, udp: true}
+  - {name: 新加坡(阿伟) 9, server: 104.18.243.114, port: 80, type: vmess, uuid: 20000000-0000-0000-0000-000000000020, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /20, headers: {Host: dosg.azure.bond}}, udp: true}
+  - {name: 新加坡(阿伟) 10, server: 104.18.245.229, port: 80, type: vmess, uuid: 20000000-0000-0000-0000-000000000020, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /20, headers: {Host: dosg.azure.bond}}, udp: true}
+  - {name: 新加坡(阿伟) 11, server: 104.19.20.0, port: 80, type: vmess, uuid: 20000000-0000-0000-0000-000000000020, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /20, headers: {Host: dosg.azure.bond}}, udp: true}
+  - {name: 新加坡(阿伟) 12, server: 138.2.87.179, port: 12345, type: vmess, uuid: f9808c79-eb35-4b18-d2bf-9c698966232c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [YouTube-aweikeji]}}, udp: true}
+  - {name: 新加坡(阿伟) 13, server: hk38.swty.buzz, port: 12304, type: vmess, uuid: 8b9167ee-f674-46a5-ac0a-df7ac7b7df58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 新加坡(阿伟) 14, server: v51.xn--6nq44r2uh9rhj7f.com, port: 80, type: vmess, uuid: a534b80a-e674-4b9d-9778-884d60e8cc55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 新加坡(阿伟) 15, server: www.fuckdbuy.xyz, port: 57170, type: vmess, uuid: 0fcee849-28e7-4251-87f3-e7cb9d95c00f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(阿伟) 16, server: www.fuckdbuy.xyz, port: 57170, type: vmess, uuid: 0fcee849-28e7-4251-87f3-e7cb9d95c00f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 韩国(阿伟), server: v2ray10.free4444.xyz, port: 443, type: vmess, uuid: d3ceb960-10dd-463b-851f-923377ea9d84, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: v2ray10.free4444.xyz}}, udp: true}
+  - {name: 韩国(阿伟) 2, server: 113.142.205.92, port: 443, type: vmess, uuid: 96d14945-08f3-4968-8cec-9c2672f1d966, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/1024vws?ed=2048", headers: {Host: cc2.tianxie.us.eu.org}}, udp: true}
+  - {name: 韩国(阿伟) 3, server: cm.awslcn.cc, port: 25218, type: vmess, uuid: d09a512f-4df6-40f8-9240-89782450086e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 韩国(阿伟) 4, server: hk35.swty.buzz, port: 19274, type: vmess, uuid: 8b9167ee-f674-46a5-ac0a-df7ac7b7df58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk35.swty.buzz}}, udp: true}
+  - {name: 韩国(阿伟) 5, server: v41.xn--6nq44r2uh9rhj7f.com, port: 80, type: vmess, uuid: a534b80a-e674-4b9d-9778-884d60e8cc55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 日本(阿伟), server: gbo02.vsvideo.shop, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: ip3884414509.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
+  - {name: 日本(阿伟) 2, server: jp03.wol1.ml, port: 80, type: ss, cipher: aes-128-gcm, password: 43742c57-4c84-41ad-b723-d72bed7accc0, udp: true}
+  - {name: 日本(阿伟) 3, server: 36.139.9.191, port: 45375, type: ss, cipher: aes-128-gcm, password: 43742c57-4c84-41ad-b723-d72bed7accc0, udp: true}
+  - {name: 日本(阿伟) 4, server: c63s4.jamjams3.net, port: 38823, type: vmess, uuid: 6cbf347a-0b52-419f-8db9-9a2a340efdd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本(阿伟) 5, server: cloudflare.catcdndev.tk, port: 443, type: vmess, uuid: 2ffd0058-5f5a-4aa4-839c-c3cccd9325be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/jp.acec.cloud?ed=2048", headers: {Host: jp.acec.cloud}}, udp: true}
+  - {name: 日本(阿伟) 6, server: hk34.swty.buzz, port: 17659, type: vmess, uuid: 8b9167ee-f674-46a5-ac0a-df7ac7b7df58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 印度(阿伟), server: cm.awslcn.cc, port: 25216, type: vmess, uuid: d09a512f-4df6-40f8-9240-89782450086e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 印度(阿伟) 2, server: v61.xn--6nq44r2uh9rhj7f.com, port: 80, type: vmess, uuid: a534b80a-e674-4b9d-9778-884d60e8cc55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 印尼(阿伟), server: 141.193.213.20, port: 80, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnneo, headers: {Host: sanggoro6.nextvpn.cc}}, udp: true}
+  - {name: 印尼(阿伟) 2, server: cdn.digicertcdn.com, port: 80, type: vmess, uuid: 3890505d-a496-4418-91a1-742faa2b0ac7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnneo, headers: {Host: biznet3.nextvpn.cc}}, udp: true}
+  - {name: 印尼(阿伟) 3, server: lms.uin-antasari.ac.id, port: 80, type: vmess, uuid: 46bfdb59-83c6-4710-877e-c809b5a90dff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnneo, headers: {Host: cyber3.nextvpn.cc}}, udp: true}
+  - {name: 英国(阿伟), server: 185.167.77.195, port: 29650, type: vmess, uuid: 660dbb02-2297-466b-c7b2-1bb8a6e680e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国(阿伟) 2, server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: uk2.v2rayserv.com}}, udp: true}
+  - {name: 法国(阿伟), server: 195.154.200.150, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 法国(阿伟) 2, server: 195.154.200.150, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 德国(阿伟), server: cdn.linil.ml, port: 443, type: vmess, uuid: 2c7da08b-b0a0-4544-a4d9-fd75515cc373, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ukqzvws, headers: {Host: eu.ratx.tech}}, udp: true}
+  - {name: 香港(阿伟), server: 16.162.100.9, port: 6688, type: vmess, uuid: 703a041f-b1f5-46e2-ca57-7329a9c62844, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港(阿伟) 2, server: 16.162.100.9, port: 6688, type: vmess, uuid: 703a041f-b1f5-46e2-ca57-7329a9c62844, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港(阿伟) 3, server: 16.162.100.9, port: 6688, type: vmess, uuid: 703a041f-b1f5-46e2-ca57-7329a9c62844, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港(阿伟) 4, server: v21.xn--6nq44r2uh9rhj7f.com, port: 80, type: vmess, uuid: a534b80a-e674-4b9d-9778-884d60e8cc55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 台湾(阿伟), server: 812hk02.ok365.cyou, port: 4433, type: trojan, password: 9afbdbda-3ba3-44a4-ab90-ee9a83832b0d, sni: 812hk02.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: 台湾(阿伟) 2, server: tw-tpe-h-tr.cdn.savoy.click, port: 10089, type: trojan, password: kFyvvCcvMXQKFcJZWuxcdTZOFummlVbf, sni: tw-tpe-h-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
+  - {name: 台湾(阿伟) 3, server: 814tw.ok365.cyou, port: 443, type: trojan, password: 9afbdbda-3ba3-44a4-ab90-ee9a83832b0d, sni: 814tw.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: 台湾(阿伟) 4, server: hk04.wol1.ml, port: 10001, type: ss, cipher: aes-128-gcm, password: 43742c57-4c84-41ad-b723-d72bed7accc0, udp: true}
+  - {name: 台湾(阿伟) 5, server: 123456789abcd.xn--h6q53lcvpz7l.club, port: 80, type: vmess, uuid: e278c68f-4716-4798-a9c6-1f91d74499d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: 台湾(阿伟) 6, server: 123456789abcd.xn--h6q53lcvpz7l.club, port: 80, type: vmess, uuid: ff4711fd-3c73-4afa-a5f3-3b055e7c6a37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: 台湾(阿伟) 7, server: 123456789abcd.xn--h6q53lcvpz7l.club, port: 20941, type: vmess, uuid: e278c68f-4716-4798-a9c6-1f91d74499d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: 台湾(阿伟) 8, server: 123456789abcd.xn--h6q53lcvpz7l.club, port: 20943, type: vmess, uuid: ff4711fd-3c73-4afa-a5f3-3b055e7c6a37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: 台湾(阿伟) 9, server: 123456789abcd.xn--h6q53lcvpz7l.club, port: 20943, type: vmess, uuid: e278c68f-4716-4798-a9c6-1f91d74499d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: 台湾(阿伟) 10, server: hk-gz-hk-hkt-v2-b.cdn.savoy.click, port: 888, type: vmess, uuid: 4d578f9e-6af4-4d29-966f-88c061d075b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}, udp: true}
+  - {name: 台湾(阿伟) 11, server: 527hk1.fans8.xyz, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 527hk1.fans8.xyz}}, udp: true}
+  - {name: 台湾(阿伟) 12, server: 817hk.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 817hk.fx6688.top}}, udp: true}
+  - {name: 台湾(阿伟) 13, server: 810hk05.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 810hk05.fx6688.top}}, udp: true}
+  - {name: 台湾(阿伟) 14, server: auto-moble.downloadmovie.cn, port: 65023, type: vmess, uuid: a15325c9-54ce-376f-a3ae-24315de8b5de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 台湾(阿伟) 15, server: hk31.swty.buzz, port: 12215, type: vmess, uuid: 8b9167ee-f674-46a5-ac0a-df7ac7b7df58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tops/hd.m3u8, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 台湾(阿伟) 16, server: tw-tpe-h-v2.cdn.savoy.click, port: 10088, type: vmess, uuid: 4d578f9e-6af4-4d29-966f-88c061d075b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}, udp: true}
+  - {name: 台湾(阿伟) 17, server: tw-tpe-h-v2.cdn.savoy.click, port: 10088, type: vmess, uuid: 4d578f9e-6af4-4d29-966f-88c061d075b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: tw-tpe-h-v2.cdn.savoy.click}}, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 阿伟 3
-  - 法国-阿伟 A
   - 新加坡-阿伟 A
   - 新加坡-阿伟 B
-  - 加拿大-阿伟 A
   - 香港-阿伟
   - 香港-阿伟 2
   - 香港-阿伟 3
-  - 香港-阿伟 4
-  - 香港-阿伟 5
-  - 印尼-阿伟
-  - 印尼-阿伟 2
-  - 印度-阿伟
-  - 日本-阿伟
-  - 日本-阿伟 19
-  - 日本-阿伟 25
-  - 韩国-阿伟 4
-  - 韩国-阿伟 5
-  - 韩国-阿伟 6
-  - 韩国-阿伟 7
-  - 韩国-阿伟 8
-  - 韩国-阿伟 9
-  - 韩国-阿伟 10
-  - 韩国-阿伟 11
-  - 韩国-阿伟 12
   - 荷兰-阿伟
-  - 新加坡-阿伟 1
-  - 新加坡-阿伟 2
-  - 新加坡-阿伟 3
-  - 新加坡-阿伟 4
-  - 新加坡-阿伟 5
-  - 新加坡-阿伟 6
   - 新加坡-阿伟 7
-  - 新加坡-阿伟 8
-  - 土耳其-阿伟
-  - 台湾-阿伟
-  - 台湾-阿伟 2
-  - 台湾-阿伟 3
   - 台湾-阿伟 4
-  - 台湾-阿伟 5
-  - 台湾-阿伟 6
   - 台湾-阿伟 7
-  - 台湾-阿伟 8
-  - 台湾-阿伟 9
-  - 台湾-阿伟 10
-  - 台湾-阿伟 11
-  - 台湾-阿伟 12
-  - 台湾-阿伟 13
-  - 台湾-阿伟 14
-  - 台湾-阿伟 15
-  - 台湾-阿伟 16
-  - 台湾-阿伟 17
-  - 台湾-阿伟 18
-  - 台湾-阿伟 19
-  - 台湾-阿伟 20
-  - 台湾-阿伟 21
-  - 台湾-阿伟 22
-  - 台湾-阿伟 23
-  - 台湾-阿伟 24
-  - 台湾-阿伟 25
-  - 台湾-阿伟 26
-  - 台湾-阿伟 27
-  - 台湾-阿伟 28
   - 台湾-阿伟 29
   - 台湾-阿伟 30
-  - 台湾-阿伟 31
-  - 台湾-阿伟 32
-  - 台湾-阿伟 33
-  - 台湾-阿伟 34
-  - 台湾-阿伟 35
-  - 台湾-阿伟 36
-  - 台湾-阿伟 37
-  - _美国_-阿伟 8
-  - _美国_-阿伟 9
-  - _美国_-阿伟 10
-  - 美国-阿伟
-  - 美国-阿伟 5
-  - 美国-阿伟 6
-  - 美国-阿伟 7
-  - 美国-阿伟 8
-  - 美国-阿伟 12
-  - 美国-阿伟 22
-  - 美国-阿伟 23
-  - 美国-阿伟 24
-  - 美国-阿伟 25
-  - 美国-阿伟 26
-  - 美国-阿伟 27
-  - 美国-阿伟 28
-  - 美国-阿伟 29
-  - 美国-阿伟 30
-  - 美国-阿伟 31
-  - 越南-阿伟
-  - 阿塞拜疆-阿伟
-  - 保加利亚-阿伟
-  - 波兰-阿伟
-  - 迪拜-阿伟
-  - 迪拜-阿伟 2
-  - 迪拜-阿伟 3
-  - 加拿大-阿伟 2
-  - 柬埔寨-阿伟
-  - 捷克-阿伟 3
-  - 捷克-阿伟 4
-  - 罗马-阿伟
-  - 瑞士-阿伟
-  - 沙特阿拉伯-阿伟
-  - 土耳其-阿伟 2
-  - 土耳其-阿伟 3
-  - 以色列-阿伟
-  - 以色列-阿伟 2
-  - 以色列-阿伟 3
+  - 美国_-阿伟 10
+  - 阿伟-9
+  - 阿伟-8
+  - 阿伟-7
+  - 阿伟-6
+  - 阿伟-5
+  - 阿伟-4
+  - 阿伟-3
+  - 阿伟-2
+  - 阿伟-15
+  - 阿伟-14
+  - 阿伟-13
+  - 阿伟-12
+  - 阿伟-11
+  - 阿伟-10
+  - 油管-阿伟科技
+  - 捷克(阿伟)
+  - 俄罗斯(阿伟)
+  - 俄罗斯(阿伟) 2
+  - 美国(阿伟)
+  - 美国(阿伟) 2
+  - 美国(阿伟) 3
+  - 美国(阿伟) 4
+  - 美国(阿伟) 5
+  - 美国(阿伟) 6
+  - 美国(阿伟) 7
+  - 美国(阿伟) 8
+  - 美国(阿伟) 9
+  - 美国(阿伟) 10
+  - 新加坡(阿伟)
+  - 新加坡(阿伟) 2
+  - 新加坡(阿伟) 3
+  - 新加坡(阿伟) 4
+  - 新加坡(阿伟) 5
+  - 新加坡(阿伟) 6
+  - 新加坡(阿伟) 7
+  - 新加坡(阿伟) 8
+  - 新加坡(阿伟) 9
+  - 新加坡(阿伟) 10
+  - 新加坡(阿伟) 11
+  - 新加坡(阿伟) 12
+  - 新加坡(阿伟) 13
+  - 新加坡(阿伟) 14
+  - 新加坡(阿伟) 15
+  - 新加坡(阿伟) 16
+  - 韩国(阿伟)
+  - 韩国(阿伟) 2
+  - 韩国(阿伟) 3
+  - 韩国(阿伟) 4
+  - 韩国(阿伟) 5
+  - 日本(阿伟)
+  - 日本(阿伟) 2
+  - 日本(阿伟) 3
+  - 日本(阿伟) 4
+  - 日本(阿伟) 5
+  - 日本(阿伟) 6
+  - 印度(阿伟)
+  - 印度(阿伟) 2
+  - 印尼(阿伟)
+  - 印尼(阿伟) 2
+  - 印尼(阿伟) 3
+  - 英国(阿伟)
+  - 英国(阿伟) 2
+  - 法国(阿伟)
+  - 法国(阿伟) 2
+  - 德国(阿伟)
+  - 香港(阿伟)
+  - 香港(阿伟) 2
+  - 香港(阿伟) 3
+  - 香港(阿伟) 4
+  - 台湾(阿伟)
+  - 台湾(阿伟) 2
+  - 台湾(阿伟) 3
+  - 台湾(阿伟) 4
+  - 台湾(阿伟) 5
+  - 台湾(阿伟) 6
+  - 台湾(阿伟) 7
+  - 台湾(阿伟) 8
+  - 台湾(阿伟) 9
+  - 台湾(阿伟) 10
+  - 台湾(阿伟) 11
+  - 台湾(阿伟) 12
+  - 台湾(阿伟) 13
+  - 台湾(阿伟) 14
+  - 台湾(阿伟) 15
+  - 台湾(阿伟) 16
+  - 台湾(阿伟) 17
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 阿伟 3
-  - 法国-阿伟 A
   - 新加坡-阿伟 A
   - 新加坡-阿伟 B
-  - 加拿大-阿伟 A
   - 香港-阿伟
   - 香港-阿伟 2
   - 香港-阿伟 3
-  - 香港-阿伟 4
-  - 香港-阿伟 5
-  - 印尼-阿伟
-  - 印尼-阿伟 2
-  - 印度-阿伟
-  - 日本-阿伟
-  - 日本-阿伟 19
-  - 日本-阿伟 25
-  - 韩国-阿伟 4
-  - 韩国-阿伟 5
-  - 韩国-阿伟 6
-  - 韩国-阿伟 7
-  - 韩国-阿伟 8
-  - 韩国-阿伟 9
-  - 韩国-阿伟 10
-  - 韩国-阿伟 11
-  - 韩国-阿伟 12
   - 荷兰-阿伟
-  - 新加坡-阿伟 1
-  - 新加坡-阿伟 2
-  - 新加坡-阿伟 3
-  - 新加坡-阿伟 4
-  - 新加坡-阿伟 5
-  - 新加坡-阿伟 6
   - 新加坡-阿伟 7
-  - 新加坡-阿伟 8
-  - 土耳其-阿伟
-  - 台湾-阿伟
-  - 台湾-阿伟 2
-  - 台湾-阿伟 3
   - 台湾-阿伟 4
-  - 台湾-阿伟 5
-  - 台湾-阿伟 6
   - 台湾-阿伟 7
-  - 台湾-阿伟 8
-  - 台湾-阿伟 9
-  - 台湾-阿伟 10
-  - 台湾-阿伟 11
-  - 台湾-阿伟 12
-  - 台湾-阿伟 13
-  - 台湾-阿伟 14
-  - 台湾-阿伟 15
-  - 台湾-阿伟 16
-  - 台湾-阿伟 17
-  - 台湾-阿伟 18
-  - 台湾-阿伟 19
-  - 台湾-阿伟 20
-  - 台湾-阿伟 21
-  - 台湾-阿伟 22
-  - 台湾-阿伟 23
-  - 台湾-阿伟 24
-  - 台湾-阿伟 25
-  - 台湾-阿伟 26
-  - 台湾-阿伟 27
-  - 台湾-阿伟 28
   - 台湾-阿伟 29
   - 台湾-阿伟 30
-  - 台湾-阿伟 31
-  - 台湾-阿伟 32
-  - 台湾-阿伟 33
-  - 台湾-阿伟 34
-  - 台湾-阿伟 35
-  - 台湾-阿伟 36
-  - 台湾-阿伟 37
-  - _美国_-阿伟 8
-  - _美国_-阿伟 9
-  - _美国_-阿伟 10
-  - 美国-阿伟
-  - 美国-阿伟 5
-  - 美国-阿伟 6
-  - 美国-阿伟 7
-  - 美国-阿伟 8
-  - 美国-阿伟 12
-  - 美国-阿伟 22
-  - 美国-阿伟 23
-  - 美国-阿伟 24
-  - 美国-阿伟 25
-  - 美国-阿伟 26
-  - 美国-阿伟 27
-  - 美国-阿伟 28
-  - 美国-阿伟 29
-  - 美国-阿伟 30
-  - 美国-阿伟 31
-  - 越南-阿伟
-  - 阿塞拜疆-阿伟
-  - 保加利亚-阿伟
-  - 波兰-阿伟
-  - 迪拜-阿伟
-  - 迪拜-阿伟 2
-  - 迪拜-阿伟 3
-  - 加拿大-阿伟 2
-  - 柬埔寨-阿伟
-  - 捷克-阿伟 3
-  - 捷克-阿伟 4
-  - 罗马-阿伟
-  - 瑞士-阿伟
-  - 沙特阿拉伯-阿伟
-  - 土耳其-阿伟 2
-  - 土耳其-阿伟 3
-  - 以色列-阿伟
-  - 以色列-阿伟 2
-  - 以色列-阿伟 3
+  - 美国_-阿伟 10
+  - 阿伟-9
+  - 阿伟-8
+  - 阿伟-7
+  - 阿伟-6
+  - 阿伟-5
+  - 阿伟-4
+  - 阿伟-3
+  - 阿伟-2
+  - 阿伟-15
+  - 阿伟-14
+  - 阿伟-13
+  - 阿伟-12
+  - 阿伟-11
+  - 阿伟-10
+  - 油管-阿伟科技
+  - 捷克(阿伟)
+  - 俄罗斯(阿伟)
+  - 俄罗斯(阿伟) 2
+  - 美国(阿伟)
+  - 美国(阿伟) 2
+  - 美国(阿伟) 3
+  - 美国(阿伟) 4
+  - 美国(阿伟) 5
+  - 美国(阿伟) 6
+  - 美国(阿伟) 7
+  - 美国(阿伟) 8
+  - 美国(阿伟) 9
+  - 美国(阿伟) 10
+  - 新加坡(阿伟)
+  - 新加坡(阿伟) 2
+  - 新加坡(阿伟) 3
+  - 新加坡(阿伟) 4
+  - 新加坡(阿伟) 5
+  - 新加坡(阿伟) 6
+  - 新加坡(阿伟) 7
+  - 新加坡(阿伟) 8
+  - 新加坡(阿伟) 9
+  - 新加坡(阿伟) 10
+  - 新加坡(阿伟) 11
+  - 新加坡(阿伟) 12
+  - 新加坡(阿伟) 13
+  - 新加坡(阿伟) 14
+  - 新加坡(阿伟) 15
+  - 新加坡(阿伟) 16
+  - 韩国(阿伟)
+  - 韩国(阿伟) 2
+  - 韩国(阿伟) 3
+  - 韩国(阿伟) 4
+  - 韩国(阿伟) 5
+  - 日本(阿伟)
+  - 日本(阿伟) 2
+  - 日本(阿伟) 3
+  - 日本(阿伟) 4
+  - 日本(阿伟) 5
+  - 日本(阿伟) 6
+  - 印度(阿伟)
+  - 印度(阿伟) 2
+  - 印尼(阿伟)
+  - 印尼(阿伟) 2
+  - 印尼(阿伟) 3
+  - 英国(阿伟)
+  - 英国(阿伟) 2
+  - 法国(阿伟)
+  - 法国(阿伟) 2
+  - 德国(阿伟)
+  - 香港(阿伟)
+  - 香港(阿伟) 2
+  - 香港(阿伟) 3
+  - 香港(阿伟) 4
+  - 台湾(阿伟)
+  - 台湾(阿伟) 2
+  - 台湾(阿伟) 3
+  - 台湾(阿伟) 4
+  - 台湾(阿伟) 5
+  - 台湾(阿伟) 6
+  - 台湾(阿伟) 7
+  - 台湾(阿伟) 8
+  - 台湾(阿伟) 9
+  - 台湾(阿伟) 10
+  - 台湾(阿伟) 11
+  - 台湾(阿伟) 12
+  - 台湾(阿伟) 13
+  - 台湾(阿伟) 14
+  - 台湾(阿伟) 15
+  - 台湾(阿伟) 16
+  - 台湾(阿伟) 17
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
