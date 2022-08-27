@@ -4,140 +4,80 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 台湾省-tg频道:@bpjzx2-1, server: 727tw01.ok365.cyou, port: 443, type: trojan, password: bc947be4-4a9c-4f0b-8095-da32c301aa5a, sni: 727tw01.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: 日本-tg频道:@bpjzx2-2, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 410a6fdc-94fe-42df-ae29-d1350c5763e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /lindoerb01, headers: {Host: cs.daxun.cyou}}, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-3, server: us.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: us.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-4, server: us-sjc-ctg-02-v2.node.inforun.work, port: 888, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-5, server: 43.248.116.201, port: 32000, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-6, server: 43.248.116.201, port: 32001, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 台湾省-tg频道:@bpjzx2-7, server: 43.248.116.201, port: 32003, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 日本-tg频道:@bpjzx2-8, server: 43.248.116.201, port: 32004, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 韩国-tg频道:@bpjzx2-9, server: 43.248.116.201, port: 32005, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-10, server: 43.248.116.201, port: 32006, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-11, server: 43.248.116.201, port: 32007, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯-tg频道:@bpjzx2-12, server: 43.248.116.201, port: 32008, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 法国-tg频道:@bpjzx2-13, server: 43.248.116.201, port: 32009, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 伦敦-tg频道:@bpjzx2-14, server: 43.248.116.201, port: 32010, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 德国-tg频道:@bpjzx2-15, server: 43.248.116.201, port: 32011, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-tg频道:@bpjzx2-16, server: 43.248.116.201, port: 32012, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 菲律宾-tg频道:@bpjzx2-17, server: 43.248.116.201, port: 32013, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 阿根廷-tg频道:@bpjzx2-18, server: 43.248.116.201, port: 32015, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 巴西-tg频道:@bpjzx2-19, server: 43.248.116.201, port: 32016, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 印度-tg频道:@bpjzx2-20, server: 43.248.116.201, port: 32017, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯-tg频道:@bpjzx2-21, server: 43.248.116.201, port: 32018, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 乌克兰-tg频道:@bpjzx2-22, server: 43.248.116.201, port: 32019, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-23, server: 43.248.116.201, port: 32443, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-24, server: 43.248.116.201, port: 34000, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-25, server: 43.248.116.201, port: 34001, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 台湾省-tg频道:@bpjzx2-26, server: 43.248.116.201, port: 34003, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 日本-tg频道:@bpjzx2-27, server: 43.248.116.201, port: 34004, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 韩国-tg频道:@bpjzx2-28, server: 43.248.116.201, port: 34005, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-29, server: 43.248.116.201, port: 34006, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-30, server: 43.248.116.201, port: 34007, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯-tg频道:@bpjzx2-31, server: 43.248.116.201, port: 34008, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 法国-tg频道:@bpjzx2-32, server: 43.248.116.201, port: 34009, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 伦敦-tg频道:@bpjzx2-33, server: 43.248.116.201, port: 34010, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 德国-tg频道:@bpjzx2-34, server: 43.248.116.201, port: 34011, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-tg频道:@bpjzx2-35, server: 43.248.116.201, port: 34012, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 菲律宾-tg频道:@bpjzx2-36, server: 43.248.116.201, port: 34013, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 阿根廷-tg频道:@bpjzx2-37, server: 43.248.116.201, port: 34015, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 巴西-tg频道:@bpjzx2-38, server: 43.248.116.201, port: 34016, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 印度-tg频道:@bpjzx2-39, server: 43.248.116.201, port: 34017, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯-tg频道:@bpjzx2-40, server: 43.248.116.201, port: 34018, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 乌克兰-tg频道:@bpjzx2-41, server: 43.248.116.201, port: 34019, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-42, server: 43.248.116.201, port: 34443, type: trojan, password: 16549817-fc61-4434-9317-734348b592ec, skip-cert-verify: true, udp: true}
+  - {name: 荷兰-tg频道:@bpjzx2-1, server: aliyun.install01.vnupgcn.cn, port: 11915, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 美国 067-tg频道:@bpjzx2-2, server: 23.105.199.160, port: 27317, type: vmess, uuid: 01832c71-50ac-4891-ae37-1dea8f42ae2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 美国-tg频道:@bpjzx2-3, server: gdcm.subnebula.live, port: 13013, type: trojan, password: 91121a75-7327-33e0-ae86-fbc9a76044e9, sni: gdcm.subnebula.live, skip-cert-verify: true, udp: true}
+  - {name: 欧洲-tg频道:@bpjzx2-4, server: kukuprogram1.herokuapp.com, port: 443, type: vmess, uuid: d170fb8f-bb43-41a0-930b-5889483c087f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: kukuprogram1.herokuapp.com}}, udp: true}
+  - {name: 台湾-tg频道:@bpjzx2-5, server: aliyun.moble.vnupgcn.cn, port: 9012, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2-6, server: v2ray1.udpgw.com, port: 443, type: vmess, uuid: 09961dcc-8414-4ef9-a7f3-1fd2235da390, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /howdy, headers: {Host: v2ray1.udpgw.com}}, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2-7, server: 821hk03.tfzhc.top, port: 443, type: trojan, password: 501c5492-d6c7-4119-b470-67189394d9a7, sni: 821hk03.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2-8, server: 138.2.86.43, port: 32574, type: vmess, uuid: 6e0aae55-230c-45a0-8591-7fce1ec7a326, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 法国-tg频道:@bpjzx2-9, server: 199.247.8.5, port: 18441, type: trojan, password: My4jSNT2Zh, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯联邦-tg频道:@bpjzx2-10, server: 823tw.tfzhc.top, port: 443, type: trojan, password: e9ea8749-b54c-47d9-8274-c26253332149, sni: 823tw.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-11, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-12, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-13, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-14, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾-tg频道:@bpjzx2-15, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: LTKPTMbjBDYisdMxKEBDzcduXacOvIVY, sni: jp-tyo-04-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-16, server: cm.spacez.cloud, port: 30000, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: 日本-tg频道:@bpjzx2-17, server: aliyun.moble.vnupgcn.cn, port: 9014, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 美国-tg频道:@bpjzx2-18, server: cne.cloudorg.uk, port: 2096, type: trojan, password: 0f88c09d-0fd9-4e34-b3ad-8719e908d5d8, sni: cne.cloudorg.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国-tg频道:@bpjzx2-19, server: us.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: us.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 美国-tg频道:@bpjzx2-20, server: 38.75.136.34, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-21, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国-tg频道:@bpjzx2-22, server: rbobosz.tk, port: 23868, type: trojan, password: gMVN7PbEX2, sni: rbobosz.tk, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 台湾省-tg频道:@bpjzx2-1
-  - 日本-tg频道:@bpjzx2-2
+  - 荷兰-tg频道:@bpjzx2-1
+  - 美国 067-tg频道:@bpjzx2-2
   - 美国-tg频道:@bpjzx2-3
-  - 美国-tg频道:@bpjzx2-4
-  - 香港-tg频道:@bpjzx2-5
-  - 美国-tg频道:@bpjzx2-6
-  - 台湾省-tg频道:@bpjzx2-7
-  - 日本-tg频道:@bpjzx2-8
-  - 韩国-tg频道:@bpjzx2-9
-  - 新加坡-tg频道:@bpjzx2-10
-  - 新加坡-tg频道:@bpjzx2-11
-  - 俄罗斯-tg频道:@bpjzx2-12
-  - 法国-tg频道:@bpjzx2-13
-  - 伦敦-tg频道:@bpjzx2-14
-  - 德国-tg频道:@bpjzx2-15
-  - 澳大利亚-tg频道:@bpjzx2-16
-  - 菲律宾-tg频道:@bpjzx2-17
-  - 阿根廷-tg频道:@bpjzx2-18
-  - 巴西-tg频道:@bpjzx2-19
-  - 印度-tg频道:@bpjzx2-20
-  - 俄罗斯-tg频道:@bpjzx2-21
-  - 乌克兰-tg频道:@bpjzx2-22
-  - 香港-tg频道:@bpjzx2-23
-  - 香港-tg频道:@bpjzx2-24
-  - 美国-tg频道:@bpjzx2-25
-  - 台湾省-tg频道:@bpjzx2-26
-  - 日本-tg频道:@bpjzx2-27
-  - 韩国-tg频道:@bpjzx2-28
-  - 新加坡-tg频道:@bpjzx2-29
-  - 新加坡-tg频道:@bpjzx2-30
-  - 俄罗斯-tg频道:@bpjzx2-31
-  - 法国-tg频道:@bpjzx2-32
-  - 伦敦-tg频道:@bpjzx2-33
-  - 德国-tg频道:@bpjzx2-34
-  - 澳大利亚-tg频道:@bpjzx2-35
-  - 菲律宾-tg频道:@bpjzx2-36
-  - 阿根廷-tg频道:@bpjzx2-37
-  - 巴西-tg频道:@bpjzx2-38
-  - 印度-tg频道:@bpjzx2-39
-  - 俄罗斯-tg频道:@bpjzx2-40
-  - 乌克兰-tg频道:@bpjzx2-41
-  - 香港-tg频道:@bpjzx2-42
+  - 欧洲-tg频道:@bpjzx2-4
+  - 台湾-tg频道:@bpjzx2-5
+  - 新加坡-tg频道:@bpjzx2-6
+  - 新加坡-tg频道:@bpjzx2-7
+  - 新加坡-tg频道:@bpjzx2-8
+  - 法国-tg频道:@bpjzx2-9
+  - 俄罗斯联邦-tg频道:@bpjzx2-10
+  - 香港-tg频道:@bpjzx2-11
+  - 香港-tg频道:@bpjzx2-12
+  - 香港-tg频道:@bpjzx2-13
+  - 香港-tg频道:@bpjzx2-14
+  - 台湾-tg频道:@bpjzx2-15
+  - 香港-tg频道:@bpjzx2-16
+  - 日本-tg频道:@bpjzx2-17
+  - 美国-tg频道:@bpjzx2-18
+  - 美国-tg频道:@bpjzx2-19
+  - 美国-tg频道:@bpjzx2-20
+  - 香港-tg频道:@bpjzx2-21
+  - 美国-tg频道:@bpjzx2-22
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 台湾省-tg频道:@bpjzx2-1
-  - 日本-tg频道:@bpjzx2-2
+  - 荷兰-tg频道:@bpjzx2-1
+  - 美国 067-tg频道:@bpjzx2-2
   - 美国-tg频道:@bpjzx2-3
-  - 美国-tg频道:@bpjzx2-4
-  - 香港-tg频道:@bpjzx2-5
-  - 美国-tg频道:@bpjzx2-6
-  - 台湾省-tg频道:@bpjzx2-7
-  - 日本-tg频道:@bpjzx2-8
-  - 韩国-tg频道:@bpjzx2-9
-  - 新加坡-tg频道:@bpjzx2-10
-  - 新加坡-tg频道:@bpjzx2-11
-  - 俄罗斯-tg频道:@bpjzx2-12
-  - 法国-tg频道:@bpjzx2-13
-  - 伦敦-tg频道:@bpjzx2-14
-  - 德国-tg频道:@bpjzx2-15
-  - 澳大利亚-tg频道:@bpjzx2-16
-  - 菲律宾-tg频道:@bpjzx2-17
-  - 阿根廷-tg频道:@bpjzx2-18
-  - 巴西-tg频道:@bpjzx2-19
-  - 印度-tg频道:@bpjzx2-20
-  - 俄罗斯-tg频道:@bpjzx2-21
-  - 乌克兰-tg频道:@bpjzx2-22
-  - 香港-tg频道:@bpjzx2-23
-  - 香港-tg频道:@bpjzx2-24
-  - 美国-tg频道:@bpjzx2-25
-  - 台湾省-tg频道:@bpjzx2-26
-  - 日本-tg频道:@bpjzx2-27
-  - 韩国-tg频道:@bpjzx2-28
-  - 新加坡-tg频道:@bpjzx2-29
-  - 新加坡-tg频道:@bpjzx2-30
-  - 俄罗斯-tg频道:@bpjzx2-31
-  - 法国-tg频道:@bpjzx2-32
-  - 伦敦-tg频道:@bpjzx2-33
-  - 德国-tg频道:@bpjzx2-34
-  - 澳大利亚-tg频道:@bpjzx2-35
-  - 菲律宾-tg频道:@bpjzx2-36
-  - 阿根廷-tg频道:@bpjzx2-37
-  - 巴西-tg频道:@bpjzx2-38
-  - 印度-tg频道:@bpjzx2-39
-  - 俄罗斯-tg频道:@bpjzx2-40
-  - 乌克兰-tg频道:@bpjzx2-41
-  - 香港-tg频道:@bpjzx2-42
+  - 欧洲-tg频道:@bpjzx2-4
+  - 台湾-tg频道:@bpjzx2-5
+  - 新加坡-tg频道:@bpjzx2-6
+  - 新加坡-tg频道:@bpjzx2-7
+  - 新加坡-tg频道:@bpjzx2-8
+  - 法国-tg频道:@bpjzx2-9
+  - 俄罗斯联邦-tg频道:@bpjzx2-10
+  - 香港-tg频道:@bpjzx2-11
+  - 香港-tg频道:@bpjzx2-12
+  - 香港-tg频道:@bpjzx2-13
+  - 香港-tg频道:@bpjzx2-14
+  - 台湾-tg频道:@bpjzx2-15
+  - 香港-tg频道:@bpjzx2-16
+  - 日本-tg频道:@bpjzx2-17
+  - 美国-tg频道:@bpjzx2-18
+  - 美国-tg频道:@bpjzx2-19
+  - 美国-tg频道:@bpjzx2-20
+  - 香港-tg频道:@bpjzx2-21
+  - 美国-tg频道:@bpjzx2-22
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
