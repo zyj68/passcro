@@ -4,173 +4,227 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: Go加速 - V2 IEPL | TW1, server: i1.go001.buzz, port: 32201, type: ss, cipher: aes-256-gcm, password: bBEXIq, udp: true}
+  - {name: 🇯🇵 SS|日本A01|IDC| 解锁, server: node.a.access.in.nyapi.buzz, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: fbd705c8-a47e-4b8c-bdac-4f0002aaeb3d, udp: true}
+  - {name: 🇰🇷 SS|韩国A01|IDC| 解锁, server: node.a.access.in.nyapi.buzz, port: 25010, type: ss, cipher: chacha20-ietf-poly1305, password: fbd705c8-a47e-4b8c-bdac-4f0002aaeb3d, udp: true}
+  - {name: 🇭🇰 SS|香港A01|原生解锁, server: node.a.access.in.nyapi.buzz, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: fbd705c8-a47e-4b8c-bdac-4f0002aaeb3d, udp: true}
+  - {name: 🇸🇬 SS|新加坡A01|IDC| 解锁, server: node.a.access.in.nyapi.buzz, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: fbd705c8-a47e-4b8c-bdac-4f0002aaeb3d, udp: true}
+  - {name: 🇭🇰 SS|香港A01|IDC| 解锁, server: node.a.access.in.nyapi.buzz, port: 25020, type: ss, cipher: chacha20-ietf-poly1305, password: fbd705c8-a47e-4b8c-bdac-4f0002aaeb3d, udp: true}
+  - {name: 🇮🇳 SS|印度A01|IDC, server: node.a.access.in.nyapi.buzz, port: 25005, type: ss, cipher: chacha20-ietf-poly1305, password: fbd705c8-a47e-4b8c-bdac-4f0002aaeb3d, udp: true}
+  - {name: 香港09 三网通用, server: hnlt.817777.xyz, port: 20524, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 14602:QWf9Uj, obfs-param: 9d76414602.microsoft.com, udp: true}
+  - {name: 香港07 三网通用, server: gzyd.120.817777.xyz, port: 41104, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 14602:QWf9Uj, obfs-param: 9d76414602.microsoft.com, udp: true}
+  - {name: 香港02 三网通用, server: hzlt.817777.xyz, port: 14003, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 14602:QWf9Uj, obfs-param: 9d76414602.microsoft.com, udp: true}
+  - {name: 香港03 三网通用, server: hnyd.817777.xyz, port: 41113, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 14602:QWf9Uj, obfs-param: 9d76414602.microsoft.com, udp: true}
+  - {name: 韩国03 三网通用, server: hnyd.817777.xyz, port: 41107, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 14602:QWf9Uj, obfs-param: 9d76414602.microsoft.com, udp: true}
+  - {name: 香港04 三网通用, server: hnlt.817777.xyz, port: 41113, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 14602:QWf9Uj, obfs-param: 9d76414602.microsoft.com, udp: true}
+  - {name: "Lv3 香港 02 [2.0]", server: yum-y.update.mipglxi.cn, port: 6402, type: ss, cipher: aes-128-gcm, password: "3ee653cf-3f43-43e5-b4d0-7bb1cabe9845", udp: true}
+  - {name: "Lv3 日本 05 [2.0]", server: yum-y.update.mipglxi.cn, port: 6419, type: ss, cipher: aes-128-gcm, password: "3ee653cf-3f43-43e5-b4d0-7bb1cabe9845", udp: true}
+  - {name: "Lv3 日本 04 [2.0]", server: yum-y.update.mipglxi.cn, port: 6418, type: ss, cipher: aes-128-gcm, password: "3ee653cf-3f43-43e5-b4d0-7bb1cabe9845", udp: true}
+  - {name: 剩余流量：500 GB, server: yum-y.update.mipglxi.cn, port: 6401, type: ss, cipher: aes-128-gcm, password: 3ee653cf-3f43-43e5-b4d0-7bb1cabe9845, udp: true}
+  - {name: "Lv3 新加坡 01 [2.0]", server: yum-y.update.mipglxi.cn, port: 6409, type: ss, cipher: aes-128-gcm, password: "3ee653cf-3f43-43e5-b4d0-7bb1cabe9845", udp: true}
+  - {name: 套餐到期：2022-09-10, server: yum-y.update.mipglxi.cn, port: 6401, type: ss, cipher: aes-128-gcm, password: 3ee653cf-3f43-43e5-b4d0-7bb1cabe9845, udp: true}
+  - {name: "[LV2·原生] 香港B2 | 中转", server: s1.j20xs1.xyz, port: 32001, type: trojan, password: "4e3d2c35-906d-36ae-b796-9f852cc6de4d", skip-cert-verify: true, udp: true}
+  - {name: 大萝卜鸡英国, server: a.uk.hideu.tw, port: 10629, type: ssr, cipher: none, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
+  - {name: 大萝卜鸡台湾, server: 120.240.47.74, port: 5710, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: 84fbd78736.microsoft.com, uri: /}, udp: true}
+  - {name: 大萝卜鸡德国, server: a.de.hideu.tw, port: 10629, type: ssr, cipher: none, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
+  - {name: 大萝卜鸡泰国, server: a.th.hideu.tw, port: 10629, type: ssr, cipher: none, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
+  - {name: 大萝卜鸡以色列, server: a.il.hideu.tw, port: 10629, type: ssr, cipher: none, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
+  - {name: "[LV2·原生] 香港B4 | 中转", server: s1.j20xs1.xyz, port: 32003, type: trojan, password: "4e3d2c35-906d-36ae-b796-9f852cc6de4d", skip-cert-verify: true, udp: true}
+  - {name: "[LV2·原生] 香港B3 | 中转", server: s1.j20xs1.xyz, port: 32002, type: trojan, password: "4e3d2c35-906d-36ae-b796-9f852cc6de4d", skip-cert-verify: true, udp: true}
+  - {name: 大萝卜鸡巴西, server: a.br.hideu.tw, port: 10629, type: ssr, cipher: none, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
+  - {name: 大萝卜鸡韩国, server: a.kr.hideu.tw, port: 10629, type: ssr, cipher: none, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
+  - {name: 大萝卜鸡巴, server: a.tw.hideu.tw, port: 10629, type: ssr, cipher: none, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
+  - {name: "[LV2·原生] 香港B1 | 中转", server: s1.j20xs1.xyz, port: 32000, type: trojan, password: "4e3d2c35-906d-36ae-b796-9f852cc6de4d", skip-cert-verify: true, udp: true}
+  - {name: 大萝卜鸡香味, server: a.hk.hideu.tw, port: 10629, type: ssr, cipher: none, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
+  - {name: 香港Az-优化3, server: t.cccao.cyou, port: 16627, type: vmess, uuid: 34839c26-3bfb-4a8e-baed-fcbdd2b0d045, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
+  - {name: lv1 台湾Hinet1 直连, server: gbo02.vsvideo.shop, port: 25634, type: trojan, password: 4e3d2c35-906d-36ae-b796-9f852cc6de4d, skip-cert-verify: true, udp: true}
+  - {name: 新加坡负载B, server: zhenye.zhenyejd.net, port: 10003, type: vmess, uuid: 44bf4d66-f42c-48e8-8d5e-cfe13d55e8d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 新加坡负载A, server: zhenye.zhenyejd.net, port: 10001, type: vmess, uuid: 44bf4d66-f42c-48e8-8d5e-cfe13d55e8d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 日本-智能, server: g.cccao.cyou, port: 16617, type: vmess, uuid: 34839c26-3bfb-4a8e-baed-fcbdd2b0d045, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: g.cccao.cyou}}, udp: true}
+  - {name: 日本-优化2, server: m.lwvzmdu.cn, port: 16617, type: vmess, uuid: 34839c26-3bfb-4a8e-baed-fcbdd2b0d045, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
+  - {name: 香港Az-优化2, server: m.lwvzmdu.cn, port: 16627, type: vmess, uuid: 34839c26-3bfb-4a8e-baed-fcbdd2b0d045, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
+  - {name: 大萝卜鸡日碧, server: b.jp.hideu.tw, port: 10629, type: ssr, cipher: none, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
+  - {name: 大萝卜鸡丸, server: 120.240.47.74, port: 5712, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: 84fbd78736.microsoft.com, uri: /}, udp: true}
+  - {name: 🇯🇵V0-东京2, server: gyjp2.333003.xyz, port: 19780, type: trojan, password: 6367e137-7366-44e4-a7a1-eba23a6d1e93, skip-cert-verify: true, udp: true}
+  - {name: 大萝卜鸡香港, server: 120.240.47.72, port: 2715, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: 84fbd78736.microsoft.com, uri: /}, udp: true}
+  - {name: 越南-1号, server: 103.173.155.72, port: 28443, type: trojan, password: 3b3431ac-05bf-44fd-b93c-10db87d4ff5c, skip-cert-verify: true, udp: true}
+  - {name: 马来西亚-优化3, server: t.cccao.cyou, port: 26623, type: vmess, uuid: 34839c26-3bfb-4a8e-baed-fcbdd2b0d045, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
+  - {name: 日本-z-负载A, server: all.zhenyejd.net, port: 18444, type: vmess, uuid: 44bf4d66-f42c-48e8-8d5e-cfe13d55e8d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵V0-东京3, server: gyjp3.333003.xyz, port: 16914, type: ss, cipher: chacha20-ietf-poly1305, password: 6367e137-7366-44e4-a7a1-eba23a6d1e93, udp: true}
   - {name: Go加速 - V2 IEPL | US1, server: i1.go001.buzz, port: 32601, type: ss, cipher: aes-256-gcm, password: bBEXIq, udp: true}
+  - {name: 新加坡-z-负载B, server: all.zhenyejd.net, port: 18442, type: vmess, uuid: 44bf4d66-f42c-48e8-8d5e-cfe13d55e8d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 大萝卜鸡美国, server: 120.240.47.74, port: 7716, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: 84fbd78736.microsoft.com, uri: /}, udp: true}
+  - {name: 日本-2号, server: 5.180.76.172, port: 28443, type: trojan, password: 3b3431ac-05bf-44fd-b93c-10db87d4ff5c, skip-cert-verify: true, udp: true}
+  - {name: 美国2, server: aws.raytrack.cloud, port: 22372, type: trojan, password: 1b60a674-a7b7-4322-b6e4-f6db29c7e4c9, skip-cert-verify: true, udp: true}
   - {name: Go加速 - V1 IEPL | TR1, server: i1.go001.buzz, port: 31901, type: ss, cipher: aes-256-gcm, password: bBEXIq, udp: true}
+  - {name: 菲律宾04|内网专线|Manila, server: aliyun.install04.vnupgcn.cn, port: 11906, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: Cow Vagina_5, server: aliyun.install03.vnupgcn.cn, port: 11906, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 菲律宾02|内网专线|Manila, server: aliyun.install02.vnupgcn.cn, port: 11906, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵V0-东京, server: gyjp1.333003.xyz, port: 19324, type: trojan, password: 6367e137-7366-44e4-a7a1-eba23a6d1e93, skip-cert-verify: true, udp: true}
+  - {name: 香港06|原生解锁|CMIHK, server: aliyun.moble.vnupgcn.cn, port: 9007, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: DE1, server: det-1.opensvr.net, port: 443, type: trojan, password: opentunnel.net-qe27t3x1m924z140b9rv, skip-cert-verify: true, udp: true}
+  - {name: SG1, server: sgt-1.opensvr.net, port: 443, type: trojan, password: opentunnel.net-1l1tdr1hmcq7g32ndx7g, skip-cert-verify: true, udp: true}
+  - {name: 大萝卜鸡俄罗斯, server: a.rus.hideu.tw, port: 10629, type: ssr, cipher: none, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
+  - {name: 台湾08|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9019, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: Cow Vagina_22, server: aliyun.moble.vnupgcn.cn, port: 9009, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: Cow Vagina_10, server: aliyun.install01.vnupgcn.cn, port: 11906, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 菲律宾03|内网专线|Manila, server: aliyun.install03.vnupgcn.cn, port: 11906, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: Cow Vagina_7, server: aliyun.install03.vnupgcn.cn, port: 11906, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 台湾, server: aws.raytrack.cloud, port: 54784, type: trojan, password: 1b60a674-a7b7-4322-b6e4-f6db29c7e4c9, skip-cert-verify: true, udp: true}
   - {name: Go加速 - V1 IEPL | GB1, server: i1.go001.buzz, port: 31905, type: ss, cipher: aes-256-gcm, password: bBEXIq, udp: true}
-  - {name: "v2ray 香港HKBN(移动) [Netflix]", server: m.lwvzmdu.cn, port: 26609, type: vmess, uuid: 336a4233-3049-30dd-9146-18b49daae237, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: "v2ray 香港HKBN(联通) [Netflix]", server: u.vvvao.cyou, port: 26609, type: vmess, uuid: 336a4233-3049-30dd-9146-18b49daae237, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: u.vvvao.cyou}}, udp: true}
-  - {name: "v2ray 日本(联通) [Netflix]", server: u.vvvao.cyou, port: 26601, type: vmess, uuid: 336a4233-3049-30dd-9146-18b49daae237, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: u.vvvao.cyou}}, udp: true}
-  - {name: "v2ray 日本(移动) [Netflix]", server: m.lwvzmdu.cn, port: 26601, type: vmess, uuid: 336a4233-3049-30dd-9146-18b49daae237, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: 🇯🇵JP_09 @WangCai_1, server: 193.38.139.204, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇯🇵JP_01 @WangCai_1, server: 193.38.139.204, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇯🇵JP_02 @WangCai_1, server: 193.38.139.204, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇯🇵JP_06 @WangCai_1 001, server: 193.38.139.203, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇯🇵JP_06 @WangCai_1 002, server: 193.38.139.204, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 日本-智能, server: g.cccao.cyou, port: 16617, type: vmess, uuid: be34f600-ba79-4912-b448-c415fe56743c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: g.cccao.cyou}}, udp: true}
-  - {name: 香港Az-优化3, server: t.cccao.cyou, port: 16627, type: vmess, uuid: be34f600-ba79-4912-b448-c415fe56743c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
-  - {name: 香港Az-优化2, server: m.lwvzmdu.cn, port: 16627, type: vmess, uuid: be34f600-ba79-4912-b448-c415fe56743c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: 日本-优化, server: u.cccao.cyou, port: 16617, type: vmess, uuid: be34f600-ba79-4912-b448-c415fe56743c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: u.cccao.cyou}}, udp: true}
-  - {name: 香港HKT-优化, server: u.cccao.cyou, port: 16620, type: vmess, uuid: be34f600-ba79-4912-b448-c415fe56743c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: u.cccao.cyou}}, udp: true}
-  - {name: 香港D, server: hkd-zf.jiashumao.net, port: 28481, type: trojan, password: c6bd7759-2164-3587-a40c-a1bf63180b85, skip-cert-verify: true, udp: true}
-  - {name: 香港A, server: szdx-anhb.jiashumao.net, port: 22481, type: trojan, password: c6bd7759-2164-3587-a40c-a1bf63180b85, skip-cert-verify: true, udp: true}
-  - {name: 流媒体(港), server: sxdx-nf.jiashumao.net, port: 35401, type: trojan, password: c6bd7759-2164-3587-a40c-a1bf63180b85, skip-cert-verify: true, udp: true}
-  - {name: 新加坡, server: sg-zf.jiashumao.net, port: 29465, type: trojan, password: c6bd7759-2164-3587-a40c-a1bf63180b85, skip-cert-verify: true, udp: true}
-  - {name: 台湾A, server: twa-zf.jiashumao.net, port: 27919, type: trojan, password: c6bd7759-2164-3587-a40c-a1bf63180b85, skip-cert-verify: true, udp: true}
-  - {name: 日本C, server: jpc-zf.jiashumao.net, port: 27301, type: trojan, password: c6bd7759-2164-3587-a40c-a1bf63180b85, skip-cert-verify: true, udp: true}
-  - {name: 台湾B, server: twb-zf.jiashumao.net, port: 25888, type: trojan, password: c6bd7759-2164-3587-a40c-a1bf63180b85, skip-cert-verify: true, udp: true}
-  - {name: 澳门, server: ma-zf.jiashumao.net, port: 22983, type: trojan, password: c6bd7759-2164-3587-a40c-a1bf63180b85, skip-cert-verify: true, udp: true}
-  - {name: Cow Vagina_16, server: aliyun.moble.vnupgcn.cn, port: 9016, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: Cow Vagina_8, server: aliyun.install03.vnupgcn.cn, port: 11904, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 台湾07|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9018, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 台湾05|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9016, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 保加利亚04|内网专线|България, server: aliyun.install04.vnupgcn.cn, port: 11913, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 阿联酋03|内网专线|Dubai, server: aliyun.install03.vnupgcn.cn, port: 11905, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 越南04|内网专线|HồChíMinh, server: aliyun.install04.vnupgcn.cn, port: 11904, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 大萝卜鸡香港, server: 118.140.206.180, port: 52142, type: vmess, uuid: e4da905b-b046-4bbe-8031-6a6d6a7fc21d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 日本zl, server: 40.115.212.243, port: 33004, type: vmess, uuid: 96532124-8ef6-41da-9303-dfa7ef2b1622, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 日, server: 40.115.212.243, port: 33004, type: vmess, uuid: 1ce245b5-6a47-44e3-9dc3-3cdddecdab38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 香港Bzl, server: 20.239.180.183, port: 33010, type: vmess, uuid: 96532124-8ef6-41da-9303-dfa7ef2b1622, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 新加坡负载C, server: zhenye.zhenyejd.net, port: 10004, type: vmess, uuid: fcef0e02-e0f2-4f1d-a44d-b2737f8916bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 新加坡负载B, server: zhenye.zhenyejd.net, port: 10003, type: vmess, uuid: 254ede3b-1630-44ce-9f11-0bc7b244fccf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 香港Azl, server: 20.239.179.56, port: 33009, type: vmess, uuid: 96532124-8ef6-41da-9303-dfa7ef2b1622, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 日本负载A, server: zhenye.zhenyejd.net, port: 10002, type: vmess, uuid: fcef0e02-e0f2-4f1d-a44d-b2737f8916bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 香, server: 20.239.180.183, port: 33010, type: vmess, uuid: bf140def-cb10-4ba5-a7cc-562ca387c22b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 新加坡负, server: zhenye.zhenyejd.net, port: 10004, type: vmess, uuid: bf140def-cb10-4ba5-a7cc-562ca387c22b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 新加坡负载A, server: zhenye.zhenyejd.net, port: 10001, type: vmess, uuid: fcef0e02-e0f2-4f1d-a44d-b2737f8916bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 印度zl, server: 20.219.4.59, port: 33003, type: vmess, uuid: 7b3eea5a-1ef6-4d2d-b3cd-e42b1584e244, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 日本-z-负载A, server: all.zhenyejd.net, port: 18444, type: vmess, uuid: 7d42ea41-00cf-4329-a1e8-592e0981fff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 新加坡-移动, server: wyyd.zhenyejd.net, port: 61001, type: vmess, uuid: 17267689-50dc-41d2-8698-5f1fa8f2fc07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 日本A-移动, server: wyyd.zhenyejd.net, port: 61002, type: vmess, uuid: 17267689-50dc-41d2-8698-5f1fa8f2fc07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 日本-z, server: all.zhenyejd.net, port: 18444, type: vmess, uuid: 1ce245b5-6a47-44e3-9dc3-3cdddecdab38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 日本B-移动, server: wyyd.zhenyejd.net, port: 61004, type: vmess, uuid: 17267689-50dc-41d2-8698-5f1fa8f2fc07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 日本-z-负载B, server: all.zhenyejd.net, port: 18445, type: vmess, uuid: 254ede3b-1630-44ce-9f11-0bc7b244fccf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 新加, server: wyyd.zhenyejd.net, port: 61003, type: vmess, uuid: 17267689-50dc-41d2-8698-5f1fa8f2fc07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 新加j, server: all.zhenyejd.net, port: 18441, type: vmess, uuid: 7d42ea41-00cf-4329-a1e8-592e0981fff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: Cow Vagina_6, server: aliyun.install04.vnupgcn.cn, port: 11907, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: Cow Vagina_17, server: aliyun.install01.vnupgcn.cn, port: 11907, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 美国1, server: aws.raytrack.cloud, port: 38214, type: trojan, password: 1b60a674-a7b7-4322-b6e4-f6db29c7e4c9, skip-cert-verify: true, udp: true}
+  - {name: 新加坡, server: aws.raytrack.cloud, port: 12106, type: trojan, password: 1b60a674-a7b7-4322-b6e4-f6db29c7e4c9, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - Go加速 - V2 IEPL | TW1
-  - Go加速 - V2 IEPL | US1
-  - Go加速 - V1 IEPL | TR1
-  - Go加速 - V1 IEPL | GB1
-  - v2ray 香港HKBN(移动) [Netflix]
-  - v2ray 香港HKBN(联通) [Netflix]
-  - v2ray 日本(联通) [Netflix]
-  - v2ray 日本(移动) [Netflix]
-  - 🇯🇵JP_09 @WangCai_1
-  - 🇯🇵JP_01 @WangCai_1
-  - 🇯🇵JP_02 @WangCai_1
-  - 🇯🇵JP_06 @WangCai_1 001
-  - 🇯🇵JP_06 @WangCai_1 002
-  - 日本-智能
+  - 🇯🇵 SS|日本A01|IDC| 解锁
+  - 🇰🇷 SS|韩国A01|IDC| 解锁
+  - 🇭🇰 SS|香港A01|原生解锁
+  - 🇸🇬 SS|新加坡A01|IDC| 解锁
+  - 🇭🇰 SS|香港A01|IDC| 解锁
+  - 🇮🇳 SS|印度A01|IDC
+  - 香港09 三网通用
+  - 香港07 三网通用
+  - 香港02 三网通用
+  - 香港03 三网通用
+  - 韩国03 三网通用
+  - 香港04 三网通用
+  - Lv3 香港 02 [2.0]
+  - Lv3 日本 05 [2.0]
+  - Lv3 日本 04 [2.0]
+  - 剩余流量：500 GB
+  - Lv3 新加坡 01 [2.0]
+  - 套餐到期：2022-09-10
+  - "[LV2·原生] 香港B2 | 中转"
+  - 大萝卜鸡英国
+  - 大萝卜鸡台湾
+  - 大萝卜鸡德国
+  - 大萝卜鸡泰国
+  - 大萝卜鸡以色列
+  - "[LV2·原生] 香港B4 | 中转"
+  - "[LV2·原生] 香港B3 | 中转"
+  - 大萝卜鸡巴西
+  - 大萝卜鸡韩国
+  - 大萝卜鸡巴
+  - "[LV2·原生] 香港B1 | 中转"
+  - 大萝卜鸡香味
   - 香港Az-优化3
-  - 香港Az-优化2
-  - 日本-优化
-  - 香港HKT-优化
-  - 香港D
-  - 香港A
-  - 流媒体(港)
-  - 新加坡
-  - 台湾A
-  - 日本C
-  - 台湾B
-  - 澳门
-  - Cow Vagina_16
-  - Cow Vagina_8
-  - 台湾07|原生解锁|中華電信
-  - 台湾05|原生解锁|中華電信
-  - 保加利亚04|内网专线|България
-  - 阿联酋03|内网专线|Dubai
-  - 越南04|内网专线|HồChíMinh
-  - 大萝卜鸡香港
-  - 日本zl
-  - 日
-  - 香港Bzl
-  - 新加坡负载C
+  - lv1 台湾Hinet1 直连
   - 新加坡负载B
-  - 香港Azl
-  - 日本负载A
-  - 香
-  - 新加坡负
   - 新加坡负载A
-  - 印度zl
+  - 日本-智能
+  - 日本-优化2
+  - 香港Az-优化2
+  - 大萝卜鸡日碧
+  - 大萝卜鸡丸
+  - 🇯🇵V0-东京2
+  - 大萝卜鸡香港
+  - 越南-1号
+  - 马来西亚-优化3
   - 日本-z-负载A
-  - 新加坡-移动
-  - 日本A-移动
-  - 日本-z
-  - 日本B-移动
-  - 日本-z-负载B
-  - 新加
-  - 新加j
+  - 🇯🇵V0-东京3
+  - Go加速 - V2 IEPL | US1
+  - 新加坡-z-负载B
+  - 大萝卜鸡美国
+  - 日本-2号
+  - 美国2
+  - Go加速 - V1 IEPL | TR1
+  - 菲律宾04|内网专线|Manila
+  - Cow Vagina_5
+  - 菲律宾02|内网专线|Manila
+  - 🇯🇵V0-东京
+  - 香港06|原生解锁|CMIHK
+  - DE1
+  - SG1
+  - 大萝卜鸡俄罗斯
+  - 台湾08|原生解锁|中華電信
+  - Cow Vagina_22
+  - Cow Vagina_10
+  - 菲律宾03|内网专线|Manila
+  - Cow Vagina_7
+  - 台湾
+  - Go加速 - V1 IEPL | GB1
+  - Cow Vagina_6
+  - Cow Vagina_17
+  - 美国1
+  - 新加坡
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - Go加速 - V2 IEPL | TW1
-  - Go加速 - V2 IEPL | US1
-  - Go加速 - V1 IEPL | TR1
-  - Go加速 - V1 IEPL | GB1
-  - v2ray 香港HKBN(移动) [Netflix]
-  - v2ray 香港HKBN(联通) [Netflix]
-  - v2ray 日本(联通) [Netflix]
-  - v2ray 日本(移动) [Netflix]
-  - 🇯🇵JP_09 @WangCai_1
-  - 🇯🇵JP_01 @WangCai_1
-  - 🇯🇵JP_02 @WangCai_1
-  - 🇯🇵JP_06 @WangCai_1 001
-  - 🇯🇵JP_06 @WangCai_1 002
-  - 日本-智能
+  - 🇯🇵 SS|日本A01|IDC| 解锁
+  - 🇰🇷 SS|韩国A01|IDC| 解锁
+  - 🇭🇰 SS|香港A01|原生解锁
+  - 🇸🇬 SS|新加坡A01|IDC| 解锁
+  - 🇭🇰 SS|香港A01|IDC| 解锁
+  - 🇮🇳 SS|印度A01|IDC
+  - 香港09 三网通用
+  - 香港07 三网通用
+  - 香港02 三网通用
+  - 香港03 三网通用
+  - 韩国03 三网通用
+  - 香港04 三网通用
+  - Lv3 香港 02 [2.0]
+  - Lv3 日本 05 [2.0]
+  - Lv3 日本 04 [2.0]
+  - 剩余流量：500 GB
+  - Lv3 新加坡 01 [2.0]
+  - 套餐到期：2022-09-10
+  - "[LV2·原生] 香港B2 | 中转"
+  - 大萝卜鸡英国
+  - 大萝卜鸡台湾
+  - 大萝卜鸡德国
+  - 大萝卜鸡泰国
+  - 大萝卜鸡以色列
+  - "[LV2·原生] 香港B4 | 中转"
+  - "[LV2·原生] 香港B3 | 中转"
+  - 大萝卜鸡巴西
+  - 大萝卜鸡韩国
+  - 大萝卜鸡巴
+  - "[LV2·原生] 香港B1 | 中转"
+  - 大萝卜鸡香味
   - 香港Az-优化3
-  - 香港Az-优化2
-  - 日本-优化
-  - 香港HKT-优化
-  - 香港D
-  - 香港A
-  - 流媒体(港)
-  - 新加坡
-  - 台湾A
-  - 日本C
-  - 台湾B
-  - 澳门
-  - Cow Vagina_16
-  - Cow Vagina_8
-  - 台湾07|原生解锁|中華電信
-  - 台湾05|原生解锁|中華電信
-  - 保加利亚04|内网专线|България
-  - 阿联酋03|内网专线|Dubai
-  - 越南04|内网专线|HồChíMinh
-  - 大萝卜鸡香港
-  - 日本zl
-  - 日
-  - 香港Bzl
-  - 新加坡负载C
+  - lv1 台湾Hinet1 直连
   - 新加坡负载B
-  - 香港Azl
-  - 日本负载A
-  - 香
-  - 新加坡负
   - 新加坡负载A
-  - 印度zl
+  - 日本-智能
+  - 日本-优化2
+  - 香港Az-优化2
+  - 大萝卜鸡日碧
+  - 大萝卜鸡丸
+  - 🇯🇵V0-东京2
+  - 大萝卜鸡香港
+  - 越南-1号
+  - 马来西亚-优化3
   - 日本-z-负载A
-  - 新加坡-移动
-  - 日本A-移动
-  - 日本-z
-  - 日本B-移动
-  - 日本-z-负载B
-  - 新加
-  - 新加j
+  - 🇯🇵V0-东京3
+  - Go加速 - V2 IEPL | US1
+  - 新加坡-z-负载B
+  - 大萝卜鸡美国
+  - 日本-2号
+  - 美国2
+  - Go加速 - V1 IEPL | TR1
+  - 菲律宾04|内网专线|Manila
+  - Cow Vagina_5
+  - 菲律宾02|内网专线|Manila
+  - 🇯🇵V0-东京
+  - 香港06|原生解锁|CMIHK
+  - DE1
+  - SG1
+  - 大萝卜鸡俄罗斯
+  - 台湾08|原生解锁|中華電信
+  - Cow Vagina_22
+  - Cow Vagina_10
+  - 菲律宾03|内网专线|Manila
+  - Cow Vagina_7
+  - 台湾
+  - Go加速 - V1 IEPL | GB1
+  - Cow Vagina_6
+  - Cow Vagina_17
+  - 美国1
+  - 新加坡
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
