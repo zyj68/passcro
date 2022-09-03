@@ -4,92 +4,86 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 距离下次重置剩余：27 天, server: 123456, port: 25881, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: JCBB官网  jcbb.cc, server: 123456, port: 25881, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: JCBB_香港01【vip1】, server: cm.kapoknode.com, port: 25899, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: JCBB_香港02【vip1】, server: cu.kapoknode.com, port: 25899, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: JCBB_香港03【vip1】, server: cm.kapoknode.com, port: 25898, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: JCBB_香港04【vip1】, server: cu.kapoknode.com, port: 25898, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: JCBB_香港07【vip1】, server: cm.kapoknode.com, port: 25896, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: JCBB_香港08【vip1】, server: cu.kapoknode.com, port: 25896, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: JCBB_新加坡01【vip1】, server: cm.kapoknode.com, port: 25895, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: JCBB_新加坡02【vip1】, server: cu.kapoknode.com, port: 25895, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: JCBB_新加坡03【vip1】, server: cm.kapoknode.com, port: 25894, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: JCBB_新加坡04【vip1】, server: cu.kapoknode.com, port: 25894, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: JCBB_日本01【vip1】, server: cm.kapoknode.com, port: 25888, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: JCBB_日本02【vip1】, server: cu.kapoknode.com, port: 25888, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: JCBB_日本03【vip1】, server: cm.kapoknode.com, port: 25887, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: JCBB_日本04【vip1】, server: cu.kapoknode.com, port: 25887, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: JCBB_美国01【vip1】, server: cm.kapoknode.com, port: 25886, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: JCBB_美国02【vip1】, server: cu.kapoknode.com, port: 25886, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: JCBB_美国03【vip1】, server: cm.kapoknode.com, port: 25885, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: JCBB_美国04【vip1】, server: cu.kapoknode.com, port: 25885, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: JCBB_英国01【vip1】, server: cm.kapoknode.com, port: 25884, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: JCBB_英国02【vip1】, server: cu.kapoknode.com, port: 25884, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: JCBB_德国01【vip1】, server: cm.kapoknode.com, port: 25883, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: JCBB_德国02【vip1】, server: cu.kapoknode.com, port: 25883, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: JCBB_印度01【vip1】, server: cm.kapoknode.com, port: 25882, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: JCBB_印度02【vip1】, server: cu.kapoknode.com, port: 25882, type: vmess, uuid: 0f82b60e-598b-4e12-9202-449393854046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇨🇳 CN 1, server: shxg.iacgbt.com, type: trojan, country: 🇨🇳CN, port: 26016, password: 25fa7d28-f8f7-3f00-b791-71e661263c68, sni: a10.iacgbt.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 2, server: gyjp3.333003.xyz, type: ss, country: 🇨🇳CN, port: 16914, password: 6367e137-7366-44e4-a7a1-eba23a6d1e93, cipher: chacha20-ietf-poly1305}
+  - {name: 🇨🇳 CN 3, server: gyjp2.333003.xyz, type: trojan, country: 🇨🇳CN, port: 19780, password: 6367e137-7366-44e4-a7a1-eba23a6d1e93, sni: gjp2.333003.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 4, server: shxg.iacgbt.com, type: trojan, country: 🇨🇳CN, port: 26017, password: 25fa7d28-f8f7-3f00-b791-71e661263c68, sni: a15.iacgbt.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 HK 5, server: api.hostyunhk1.frydipxian.top, type: trojan, country: 🇭🇰HK, port: 444, password: e74fbde60f91cde4f14e336a011ef195, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 6, server: i1.go001.buzz, type: ss, country: 🇨🇳CN, port: 32201, password: bBEXIq, cipher: aes-256-gcm}
+  - {name: 🇨🇳 CN 7, server: i1.go001.buzz, type: ss, country: 🇨🇳CN, port: 31901, password: bBEXIq, cipher: aes-256-gcm}
+  - {name: 🇨🇳 CN 8, server: gyjp1.333003.xyz, type: trojan, country: 🇨🇳CN, port: 19324, password: 6367e137-7366-44e4-a7a1-eba23a6d1e93, sni: gjp.333003.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 9, server: ttt3.swiftfalcon.app, type: trojan, country: 🇱🇺LU, port: 8443, password: coldwar2, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 10, server: shxg.iacgbt.com, type: trojan, country: 🇨🇳CN, port: 26013, password: 25fa7d28-f8f7-3f00-b791-71e661263c68, sni: a4.iacgbt.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 11, server: 116.129.254.29, type: trojan, country: 🇨🇳CN, port: 3384, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 12, server: transfer01.kaochangonline.online, type: trojan, country: 🇷🇴RO, port: 443, password: 62b78c9b-16cb-4ee6-824b-a4f856cf18f3, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 13, server: jgwcc3.gaox.ml, type: trojan, country: 🇮🇹IT, port: 443, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 HK 14, server: tr04.kaochangonline.online, type: trojan, country: 🇭🇰HK, port: 443, password: 62b78c9b-16cb-4ee6-824b-a4f856cf18f3, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 15, server: 183.240.196.147, type: ss, country: 🇨🇳CN, port: 31905, password: bBEXIq, cipher: aes-256-gcm}
+  - {name: 🇨🇳 CN 16, server: i1.go001.buzz, type: ss, country: 🇨🇳CN, port: 32601, password: bBEXIq, cipher: aes-256-gcm}
+  - {name: 🇺🇸 US 17, server: gzrb.iacgbt.com, type: trojan, country: 🇺🇸US, port: 26013, password: 25fa7d28-f8f7-3f00-b791-71e661263c68, sni: a4.iacgbt.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 18, server: a4.iacgbt.com, type: trojan, country: 🏁ZZ, port: 26013, password: 25fa7d28-f8f7-3f00-b791-71e661263c68, sni: a4.iacgbt.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 19, server: 64.27.30.211, type: trojan, country: 🇺🇸US, port: 14815, password: JDpCGXNLHq, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 20, server: 173.82.248.109, type: trojan, country: 🇺🇸US, port: 11687, password: gkjpxNwC7x, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 21, server: 14.29.124.168, type: ss, country: 🇨🇳CN, port: 24001, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
+  - {name: 🇷🇺 RU 22, server: a5.iacgbt.com, type: trojan, country: 🇷🇺RU, port: 26014, password: 25fa7d28-f8f7-3f00-b791-71e661263c68, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 23, server: gzrb.iacgbt.com, type: trojan, country: 🇺🇸US, port: 26014, password: 25fa7d28-f8f7-3f00-b791-71e661263c68, sni: a5.iacgbt.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 24, server: api.hostyunjp.frydipxian.top, type: trojan, country: 🇯🇵JP, port: 9018, password: 97ea5c08e262acf366b3b973b91960cb, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 距离下次重置剩余：27 天
-  - JCBB官网  jcbb.cc
-  - JCBB_香港01【vip1】
-  - JCBB_香港02【vip1】
-  - JCBB_香港03【vip1】
-  - JCBB_香港04【vip1】
-  - JCBB_香港07【vip1】
-  - JCBB_香港08【vip1】
-  - JCBB_新加坡01【vip1】
-  - JCBB_新加坡02【vip1】
-  - JCBB_新加坡03【vip1】
-  - JCBB_新加坡04【vip1】
-  - JCBB_日本01【vip1】
-  - JCBB_日本02【vip1】
-  - JCBB_日本03【vip1】
-  - JCBB_日本04【vip1】
-  - JCBB_美国01【vip1】
-  - JCBB_美国02【vip1】
-  - JCBB_美国03【vip1】
-  - JCBB_美国04【vip1】
-  - JCBB_英国01【vip1】
-  - JCBB_英国02【vip1】
-  - JCBB_德国01【vip1】
-  - JCBB_德国02【vip1】
-  - JCBB_印度01【vip1】
-  - JCBB_印度02【vip1】
+  - 🇨🇳 CN 1
+  - 🇨🇳 CN 2
+  - 🇨🇳 CN 3
+  - 🇨🇳 CN 4
+  - 🇨🇳 HK 5
+  - 🇨🇳 CN 6
+  - 🇨🇳 CN 7
+  - 🇨🇳 CN 8
+  - 🇸🇬 SG 9
+  - 🇨🇳 CN 10
+  - 🇨🇳 CN 11
+  - 🇸🇬 SG 12
+  - 🇰🇷 KR 13
+  - 🇨🇳 HK 14
+  - 🇨🇳 CN 15
+  - 🇨🇳 CN 16
+  - 🇺🇸 US 17
+  - 🇨🇳 CN 18
+  - 🇺🇸 US 19
+  - 🇺🇸 US 20
+  - 🇨🇳 CN 21
+  - 🇷🇺 RU 22
+  - 🇺🇸 US 23
+  - 🇯🇵 JP 24
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 距离下次重置剩余：27 天
-  - JCBB官网  jcbb.cc
-  - JCBB_香港01【vip1】
-  - JCBB_香港02【vip1】
-  - JCBB_香港03【vip1】
-  - JCBB_香港04【vip1】
-  - JCBB_香港07【vip1】
-  - JCBB_香港08【vip1】
-  - JCBB_新加坡01【vip1】
-  - JCBB_新加坡02【vip1】
-  - JCBB_新加坡03【vip1】
-  - JCBB_新加坡04【vip1】
-  - JCBB_日本01【vip1】
-  - JCBB_日本02【vip1】
-  - JCBB_日本03【vip1】
-  - JCBB_日本04【vip1】
-  - JCBB_美国01【vip1】
-  - JCBB_美国02【vip1】
-  - JCBB_美国03【vip1】
-  - JCBB_美国04【vip1】
-  - JCBB_英国01【vip1】
-  - JCBB_英国02【vip1】
-  - JCBB_德国01【vip1】
-  - JCBB_德国02【vip1】
-  - JCBB_印度01【vip1】
-  - JCBB_印度02【vip1】
+  - 🇨🇳 CN 1
+  - 🇨🇳 CN 2
+  - 🇨🇳 CN 3
+  - 🇨🇳 CN 4
+  - 🇨🇳 HK 5
+  - 🇨🇳 CN 6
+  - 🇨🇳 CN 7
+  - 🇨🇳 CN 8
+  - 🇸🇬 SG 9
+  - 🇨🇳 CN 10
+  - 🇨🇳 CN 11
+  - 🇸🇬 SG 12
+  - 🇰🇷 KR 13
+  - 🇨🇳 HK 14
+  - 🇨🇳 CN 15
+  - 🇨🇳 CN 16
+  - 🇺🇸 US 17
+  - 🇨🇳 CN 18
+  - 🇺🇸 US 19
+  - 🇺🇸 US 20
+  - 🇨🇳 CN 21
+  - 🇷🇺 RU 22
+  - 🇺🇸 US 23
+  - 🇯🇵 JP 24
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
