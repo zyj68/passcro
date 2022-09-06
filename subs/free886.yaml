@@ -4,152 +4,221 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇻🇳 VN • Hồ Chí Minh 03 🎮, server: hochiminh03.vifast.net, port: 80, type: vmess, uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇻🇳 VN • Hà Nội 04 🎮, server: hanoi04.vifast.net, port: 80, type: vmess, uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇻🇳 VN • Hà Nội 06 🚀, server: hanoi06.vifast.net, port: 80, type: vmess, uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇻🇳 VN • Hà Nội 03 🎮, server: hanoi03.vifast.net, port: 80, type: vmess, uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇻🇳 VN • Hồ Chí Minh 05 🚀, server: hochiminh05.vifast.net, port: 80, type: vmess, uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇻🇳 VN • Hà Nội 01 🎮, server: hanoi01.vifast.net, port: 80, type: vmess, uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇻🇳 VN • Huế 01 🎮, server: hue01.vifast.net, port: 80, type: vmess, uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇻🇳 Ha Noi 🔄, server: hn.fuzzypn.me, port: 80, type: vmess, uuid: ad8dfc15-4d98-40af-aaa8-7cc43a565e03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fuzzypn, headers: {Host: Dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇻🇳 Ha Noi 🔄🔒, server: hn.fuzzypn.me, port: 443, type: vmess, uuid: ad8dfc15-4d98-40af-aaa8-7cc43a565e03, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: grpc, servername: None, grpc-opts: {grpc-service-name: fuzzypn}, udp: true}
-  - {name: 🇭🇰 HK 🔄, server: hk.fuzzypn.me, port: 80, type: vmess, uuid: ad8dfc15-4d98-40af-aaa8-7cc43a565e03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fuzzypn, headers: {Host: Dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇯🇵 Japan 🔒, server: jp.fuzzypn.me, port: 443, type: vmess, uuid: ad8dfc15-4d98-40af-aaa8-7cc43a565e03, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: grpc, servername: None, grpc-opts: {grpc-service-name: fuzzypn}, udp: true}
-  - {name: 🇯🇵 Japan, server: jp.fuzzypn.me, port: 80, type: vmess, uuid: ad8dfc15-4d98-40af-aaa8-7cc43a565e03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fuzzypn, headers: {Host: Dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇸🇬 SG 3, server: 206.189.86.75, port: 80, type: vmess, uuid: ad8dfc15-4d98-40af-aaa8-7cc43a565e03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fuzzypn, headers: {Host: Dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇸🇬 SG 🔄, server: sg.fuzzypn.me, port: 80, type: vmess, uuid: ad8dfc15-4d98-40af-aaa8-7cc43a565e03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fuzzypn, headers: {Host: Dl.kgvn.garenanow.com}}, udp: true}
-  - {name: Hong Kong 2 - Tiktok, server: hk-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: v9-vn.tiktokcdn.com}}, udp: true}
-  - {name: Singapore 2 - Garena, server: sing-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: Sài Gòn 1 - Tiktok, server: hcm-1.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: v9-vn.tiktokcdn.com}}, udp: true}
-  - {name: Singapore 2 - Tiktok, server: sing-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: v9-vn.tiktokcdn.com}}, udp: true}
-  - {name: Hong Kong 2 - Garena, server: hk-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: Sài Gòn 1 - Garena, server: hcm-1.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇭🇰 香港❤HK➤01, server: specialcunicom.jjrlrn.com, port: 20520, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10638:CznkVG, obfs-param: 7cd8910638.download.microsoft.com, udp: true}
-  - {name: 🇹🇼 台湾❤HiNet01, server: cmjm.julvab.com, port: 20598, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10638:CznkVG, obfs-param: 7cd8910638.download.microsoft.com, udp: true}
-  - {name: 🇹🇼 台湾❤HiNet02, server: cmjm.julvab.com, port: 20019, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10638:CznkVG, obfs-param: 7cd8910638.download.microsoft.com, udp: true}
-  - {name: 🇹🇼 台湾❤HiNet06, server: ifarocunicom.jjrlrn.com, port: 21222, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10638:CznkVG, obfs-param: 7cd8910638.download.microsoft.com, udp: true}
-  - {name: 🇲🇾 马来西亚❤️MA, server: cmjm.julvab.com, port: 30222, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10638:CznkVG, obfs-param: 7cd8910638.download.microsoft.com, udp: true}
-  - {name: 🇰🇷 韩国❤KR➤01, server: specialcunicom.jjrlrn.com, port: 28108, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10638:CznkVG, obfs-param: 7cd8910638.download.microsoft.com, udp: true}
-  - {name: 🇮🇳 印度❤️IN➤2, server: ifarocunicom.jjrlrn.com, port: 20017, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10638:CznkVG, obfs-param: 7cd8910638.download.microsoft.com, udp: true}
-  - {name: 🇮🇳 印度❤️IN➤3, server: cmjm.julvab.com, port: 20118, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10638:CznkVG, obfs-param: 7cd8910638.download.microsoft.com, udp: true}
-  - {name: 🇸🇬 sg4, server: 13.213.69.245, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 sg3, server: 3.1.6.157, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 us3, server: 54.188.168.172, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 sg2, server: 54.179.182.190, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 uk7, server: 3.10.209.85, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 uk2, server: 13.40.126.229, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: fr3, server: 35.180.202.38, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 uk4, server: 13.40.154.20, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 jp6, server: 18.179.61.97, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: fr2, server: 15.237.116.79, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: fr5, server: 52.47.99.22, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: fr9, server: 35.180.122.151, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: US 9929, server: us9929.azus.ml, port: 20206, type: vmess, uuid: cb6b51a8-085c-4428-dc77-4fd5c05fca90, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪  德国W｜EU-BEST-1, server: direct.woiden.danfeng.cf, port: 443, type: trojan, password: b3490e24-822f-472b-8be0-cb9f4b1f12b6, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪  德国H3｜EU-1, server: direct.hax3.danfeng.cf, port: 443, type: trojan, password: 5179bc50-7d5d-4e23-a141-6f26dd6929d8, skip-cert-verify: true, udp: true}
-  - {name: DE1, server: det-1.opensvr.net, port: 443, type: trojan, password: opentunnel.net-qe27t3x1m924z140b9rv, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪  德国W3｜EU-2, server: direct.woiden3.danfeng.cf, port: 443, type: trojan, password: 71e6cc2f-de90-44c9-af8d-cb792c4cda0f, skip-cert-verify: true, udp: true}
-  - {name: 大萝卜鸡美国, server: 120.240.47.74, port: 7716, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: 84fbd78736.microsoft.com, uri: /}, udp: true}
+  - {name: 2022.09.06_AU_1, server: 185.167.116.24, port: 9097, type: ss, password: Sn5B7jTqr76aCJT8, cipher: aes-256-cfb}
+  - {name: 2022.09.06_AU_2, server: 185.167.116.253, port: 9014, type: ss, password: KnJGad3FqTvjqbaX, cipher: aes-256-cfb}
+  - {name: 2022.09.06_AU_3, server: 185.167.116.253, port: 9050, type: ss, password: FG5ddLsMPbV5CutE, cipher: aes-256-cfb}
+  - {name: 2022.09.06_CA_4, server: 196.247.59.154, port: 800, type: ss, password: G!yBwPWH3Vao, cipher: chacha20-ietf-poly1305}
+  - {name: 2022.09.06_DE_5, server: 193.108.118.30, port: 5500, type: ss, password: KixLvKzwjekG00rm, cipher: aes-256-gcm}
+  - {name: 2022.09.06_FR_6, server: 149.202.82.172, port: 8080, type: ss, password: KixLvKzwjekG00rm, cipher: aes-256-gcm}
+  - {name: 2022.09.06_FR_7, server: 145.239.1.100, port: 8888, type: ss, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+  - {name: 2022.09.06_FR_8, server: 149.202.82.172, port: 6697, type: ss, password: TEzjfAYq2IjtuoS, cipher: aes-256-gcm}
+  - {name: 2022.09.06_FR_9, server: 145.239.1.100, port: 8882, type: ss, password: kDWvXYZoTBcGkC4, cipher: aes-256-gcm}
+  - {name: 2022.09.06_FR_10, server: 145.239.1.100, port: 8080, type: ss, password: KixLvKzwjekG00rm, cipher: aes-256-gcm}
+  - {name: 2022.09.06_FR_11, server: 195.154.200.150, port: 2376, type: ss, password: faBAoD54k87UJG7, cipher: aes-256-gcm}
+  - {name: 2022.09.06_JP_12, server: 193.38.139.204, port: 809, type: ss, password: G!yBwPWH3Vao, cipher: chacha20-ietf-poly1305}
+  - {name: 2022.09.06_LT_13, server: 213.183.53.222, port: 9014, type: ss, password: KnJGad3FqTvjqbaX, cipher: aes-256-cfb}
+  - {name: 2022.09.06_LT_14, server: 213.183.53.198, port: 9025, type: ss, password: XPtzA9sCug3SPR4c, cipher: aes-256-cfb}
+  - {name: 2022.09.06_LT_15, server: 213.183.53.198, port: 9010, type: ss, password: f63gg8EruDnUrmz4, cipher: aes-256-cfb}
+  - {name: 2022.09.06_LT_16, server: 213.183.53.198, port: 9057, type: ss, password: wjTugX3ZtHMB9c3Z, cipher: aes-256-cfb}
+  - {name: 2022.09.06_NL_17, server: 85.208.108.93, port: 8881, type: ss, password: kDWvXYZoTBcGkC4, cipher: aes-256-gcm}
+  - {name: 2022.09.06_NL_18, server: 213.183.59.218, port: 9070, type: ss, password: bf7v334KKDV3YDhH, cipher: aes-256-cfb}
+  - {name: 2022.09.06_NL_19, server: 85.208.108.93, port: 6679, type: ss, password: TEzjfAYq2IjtuoS, cipher: aes-256-gcm}
+  - {name: 2022.09.06_NL_20, server: 213.183.59.211, port: 9070, type: ss, password: bf7v334KKDV3YDhH, cipher: aes-256-cfb}
+  - {name: 2022.09.06_NL_21, server: 213.183.59.218, port: 9043, type: ss, password: HSZuyJQcWe8dxNdF, cipher: aes-256-cfb}
+  - {name: 2022.09.06_NL_22, server: 213.183.59.211, port: 9010, type: ss, password: f63gg8EruDnUrmz4, cipher: aes-256-cfb}
+  - {name: 2022.09.06_NL_23, server: 213.183.59.211, port: 9073, type: ss, password: daFYagqDdBdA6VTX, cipher: aes-256-cfb}
+  - {name: 2022.09.06_NL_24, server: 213.183.59.191, port: 9064, type: ss, password: cp8pRSUAyLhTfVWH, cipher: aes-256-cfb}
+  - {name: 2022.09.06_NL_25, server: 85.208.108.93, port: 8118, type: ss, password: cdBIDV42DCwnfIN, cipher: aes-256-gcm}
+  - {name: 2022.09.06_NL_26, server: 213.183.59.211, port: 9042, type: ss, password: S7KwUu7yBy58S3Ga, cipher: aes-256-cfb}
+  - {name: 2022.09.06_NL_27, server: 213.183.59.214, port: 9010, type: ss, password: f63gg8EruDnUrmz4, cipher: aes-256-cfb}
+  - {name: 2022.09.06_NL_28, server: 213.183.59.191, port: 9073, type: ss, password: daFYagqDdBdA6VTX, cipher: aes-256-cfb}
+  - {name: 2022.09.06_NL_29, server: 85.208.108.19, port: 8118, type: ss, password: cdBIDV42DCwnfIN, cipher: aes-256-gcm}
+  - {name: 2022.09.06_NL_30, server: 85.208.108.19, port: 3389, type: ss, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+  - {name: 2022.09.06_NL_31, server: 85.208.108.19, port: 5000, type: ss, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+  - {name: 2022.09.06_NL_32, server: 85.208.108.93, port: 6379, type: ss, password: zDNVedRFPQexG9v, cipher: aes-256-gcm}
+  - {name: 2022.09.06_NL_33, server: 213.183.59.211, port: 9064, type: ssr, password: cp8pRSUAyLhTfVWH, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+  - {name: 2022.09.06_NL_34, server: 213.183.59.214, port: 9000, type: ssr, password: a3GFYt36Sm82Vys9, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+  - {name: 2022.09.06_RO_35, server: 185.126.116.125, port: 9033, type: ssr, password: UTJA57ypk2XKQpnm, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+  - {name: 2022.09.06_US_36, server: 137.184.93.209, port: 10365, type: ss, password: 9682edd6-89e6-4e6a-b31d-271089771d87, cipher: chacha20-ietf-poly1305}
+  - {name: 2022.09.06_US_37, server: 38.68.134.85, port: 6679, type: ss, password: TEzjfAYq2IjtuoS, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_38, server: 38.75.136.21, port: 5001, type: ss, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_39, server: 38.91.107.37, port: 5003, type: ss, password: g5MeD6Ft3CWlJId, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_40, server: 38.68.135.18, port: 5500, type: ss, password: KixLvKzwjekG00rm, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_41, server: 38.143.66.99, port: 5001, type: ss, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_42, server: 38.114.114.19, port: 443, type: ss, password: pKEW8JPByTVTLtM, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_43, server: 38.114.114.67, port: 6697, type: ss, password: TEzjfAYq2IjtuoS, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_44, server: 38.121.43.71, port: 8119, type: ss, password: cdBIDV42DCwnfIN, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_45, server: 38.75.136.21, port: 5003, type: ss, password: g5MeD6Ft3CWlJId, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_46, server: 38.75.136.34, port: 8091, type: ss, password: PCnnH6SQSnfoS27, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_47, server: 172.99.190.39, port: 5003, type: ss, password: g5MeD6Ft3CWlJId, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_48, server: 38.143.66.99, port: 8118, type: ss, password: cdBIDV42DCwnfIN, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_49, server: 38.75.136.34, port: 8080, type: ss, password: KixLvKzwjekG00rm, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_50, server: 172.99.190.39, port: 5500, type: ss, password: KixLvKzwjekG00rm, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_51, server: 38.75.136.34, port: 5500, type: ss, password: KixLvKzwjekG00rm, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_52, server: 167.88.61.175, port: 8080, type: ss, password: KixLvKzwjekG00rm, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_53, server: 38.68.134.85, port: 5600, type: ss, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_54, server: 167.88.63.79, port: 3306, type: ss, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_55, server: 38.121.43.204, port: 8009, type: ss, password: XKFKl2rULjIp74, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_56, server: 38.64.138.145, port: 8080, type: ss, password: KixLvKzwjekG00rm, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_57, server: 38.114.114.19, port: 5601, type: ss, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_58, server: 38.75.136.21, port: 8080, type: ss, password: KixLvKzwjekG00rm, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_59, server: 38.121.43.71, port: 8882, type: ss, password: kDWvXYZoTBcGkC4, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_60, server: 38.75.136.34, port: 9101, type: ss, password: e4FCWrgpkji3QY, cipher: aes-256-gcm}
+  - {name: 2022.09.06_US_61, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, network: tcp, http-opts: {}, skip-cert-verify: true, ws-opts: {path: /}}
+  - {name: 2022.09.06_US_62, server: 51.81.223.22, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, network: tcp, http-opts: {}, skip-cert-verify: true, ws-opts: {path: /}}
+  - {name: 2022.09.06_US_63, server: 51.81.223.20, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, network: tcp, http-opts: {}, skip-cert-verify: true, servername: 51.81.223.20, ws-opts: {path: /}}
+  - {name: 2022.09.06_US_64, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, network: tcp, http-opts: {}, skip-cert-verify: true, servername: 51.81.223.10, ws-opts: {path: /}}
+  - {name: 2022.09.06_US_65, server: 51.81.223.26, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, network: tcp, http-opts: {}, skip-cert-verify: true, servername: 51.81.223.26, ws-opts: {path: /}}
+  - {name: 2022.09.06_US_66, server: kr05.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: true, udp: true}
+  - {name: 2022.09.06_ZZ_67, server: 134.195.196.149, port: 7307, type: ss, password: FoOiGlkAA9yPEGP, cipher: aes-256-gcm}
+  - {name: 2022.09.06_ZZ_68, server: 169.197.141.5, port: 3306, type: ss, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+  - {name: 2022.09.06_ZZ_69, server: 134.195.196.85, port: 5001, type: ss, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 🇻🇳 VN • Hồ Chí Minh 03 🎮
-  - 🇻🇳 VN • Hà Nội 04 🎮
-  - 🇻🇳 VN • Hà Nội 06 🚀
-  - 🇻🇳 VN • Hà Nội 03 🎮
-  - 🇻🇳 VN • Hồ Chí Minh 05 🚀
-  - 🇻🇳 VN • Hà Nội 01 🎮
-  - 🇻🇳 VN • Huế 01 🎮
-  - 🇻🇳 Ha Noi 🔄
-  - 🇻🇳 Ha Noi 🔄🔒
-  - 🇭🇰 HK 🔄
-  - 🇯🇵 Japan 🔒
-  - 🇯🇵 Japan
-  - 🇸🇬 SG 3
-  - 🇸🇬 SG 🔄
-  - Hong Kong 2 - Tiktok
-  - Singapore 2 - Garena
-  - Sài Gòn 1 - Tiktok
-  - Singapore 2 - Tiktok
-  - Hong Kong 2 - Garena
-  - Sài Gòn 1 - Garena
-  - 🇭🇰 香港❤HK➤01
-  - 🇹🇼 台湾❤HiNet01
-  - 🇹🇼 台湾❤HiNet02
-  - 🇹🇼 台湾❤HiNet06
-  - 🇲🇾 马来西亚❤️MA
-  - 🇰🇷 韩国❤KR➤01
-  - 🇮🇳 印度❤️IN➤2
-  - 🇮🇳 印度❤️IN➤3
-  - 🇸🇬 sg4
-  - 🇸🇬 sg3
-  - 🇺🇸 us3
-  - 🇸🇬 sg2
-  - 🇬🇧 uk7
-  - 🇬🇧 uk2
-  - fr3
-  - 🇬🇧 uk4
-  - 🇯🇵 jp6
-  - fr2
-  - fr5
-  - fr9
-  - US 9929
-  - 🇩🇪  德国W｜EU-BEST-1
-  - 🇩🇪  德国H3｜EU-1
-  - DE1
-  - 🇩🇪  德国W3｜EU-2
-  - 大萝卜鸡美国
+  - 2022.09.06_AU_1
+  - 2022.09.06_AU_2
+  - 2022.09.06_AU_3
+  - 2022.09.06_CA_4
+  - 2022.09.06_DE_5
+  - 2022.09.06_FR_6
+  - 2022.09.06_FR_7
+  - 2022.09.06_FR_8
+  - 2022.09.06_FR_9
+  - 2022.09.06_FR_10
+  - 2022.09.06_FR_11
+  - 2022.09.06_JP_12
+  - 2022.09.06_LT_13
+  - 2022.09.06_LT_14
+  - 2022.09.06_LT_15
+  - 2022.09.06_LT_16
+  - 2022.09.06_NL_17
+  - 2022.09.06_NL_18
+  - 2022.09.06_NL_19
+  - 2022.09.06_NL_20
+  - 2022.09.06_NL_21
+  - 2022.09.06_NL_22
+  - 2022.09.06_NL_23
+  - 2022.09.06_NL_24
+  - 2022.09.06_NL_25
+  - 2022.09.06_NL_26
+  - 2022.09.06_NL_27
+  - 2022.09.06_NL_28
+  - 2022.09.06_NL_29
+  - 2022.09.06_NL_30
+  - 2022.09.06_NL_31
+  - 2022.09.06_NL_32
+  - 2022.09.06_NL_33
+  - 2022.09.06_NL_34
+  - 2022.09.06_RO_35
+  - 2022.09.06_US_36
+  - 2022.09.06_US_37
+  - 2022.09.06_US_38
+  - 2022.09.06_US_39
+  - 2022.09.06_US_40
+  - 2022.09.06_US_41
+  - 2022.09.06_US_42
+  - 2022.09.06_US_43
+  - 2022.09.06_US_44
+  - 2022.09.06_US_45
+  - 2022.09.06_US_46
+  - 2022.09.06_US_47
+  - 2022.09.06_US_48
+  - 2022.09.06_US_49
+  - 2022.09.06_US_50
+  - 2022.09.06_US_51
+  - 2022.09.06_US_52
+  - 2022.09.06_US_53
+  - 2022.09.06_US_54
+  - 2022.09.06_US_55
+  - 2022.09.06_US_56
+  - 2022.09.06_US_57
+  - 2022.09.06_US_58
+  - 2022.09.06_US_59
+  - 2022.09.06_US_60
+  - 2022.09.06_US_61
+  - 2022.09.06_US_62
+  - 2022.09.06_US_63
+  - 2022.09.06_US_64
+  - 2022.09.06_US_65
+  - 2022.09.06_US_66
+  - 2022.09.06_ZZ_67
+  - 2022.09.06_ZZ_68
+  - 2022.09.06_ZZ_69
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 🇻🇳 VN • Hồ Chí Minh 03 🎮
-  - 🇻🇳 VN • Hà Nội 04 🎮
-  - 🇻🇳 VN • Hà Nội 06 🚀
-  - 🇻🇳 VN • Hà Nội 03 🎮
-  - 🇻🇳 VN • Hồ Chí Minh 05 🚀
-  - 🇻🇳 VN • Hà Nội 01 🎮
-  - 🇻🇳 VN • Huế 01 🎮
-  - 🇻🇳 Ha Noi 🔄
-  - 🇻🇳 Ha Noi 🔄🔒
-  - 🇭🇰 HK 🔄
-  - 🇯🇵 Japan 🔒
-  - 🇯🇵 Japan
-  - 🇸🇬 SG 3
-  - 🇸🇬 SG 🔄
-  - Hong Kong 2 - Tiktok
-  - Singapore 2 - Garena
-  - Sài Gòn 1 - Tiktok
-  - Singapore 2 - Tiktok
-  - Hong Kong 2 - Garena
-  - Sài Gòn 1 - Garena
-  - 🇭🇰 香港❤HK➤01
-  - 🇹🇼 台湾❤HiNet01
-  - 🇹🇼 台湾❤HiNet02
-  - 🇹🇼 台湾❤HiNet06
-  - 🇲🇾 马来西亚❤️MA
-  - 🇰🇷 韩国❤KR➤01
-  - 🇮🇳 印度❤️IN➤2
-  - 🇮🇳 印度❤️IN➤3
-  - 🇸🇬 sg4
-  - 🇸🇬 sg3
-  - 🇺🇸 us3
-  - 🇸🇬 sg2
-  - 🇬🇧 uk7
-  - 🇬🇧 uk2
-  - fr3
-  - 🇬🇧 uk4
-  - 🇯🇵 jp6
-  - fr2
-  - fr5
-  - fr9
-  - US 9929
-  - 🇩🇪  德国W｜EU-BEST-1
-  - 🇩🇪  德国H3｜EU-1
-  - DE1
-  - 🇩🇪  德国W3｜EU-2
-  - 大萝卜鸡美国
+  - 2022.09.06_AU_1
+  - 2022.09.06_AU_2
+  - 2022.09.06_AU_3
+  - 2022.09.06_CA_4
+  - 2022.09.06_DE_5
+  - 2022.09.06_FR_6
+  - 2022.09.06_FR_7
+  - 2022.09.06_FR_8
+  - 2022.09.06_FR_9
+  - 2022.09.06_FR_10
+  - 2022.09.06_FR_11
+  - 2022.09.06_JP_12
+  - 2022.09.06_LT_13
+  - 2022.09.06_LT_14
+  - 2022.09.06_LT_15
+  - 2022.09.06_LT_16
+  - 2022.09.06_NL_17
+  - 2022.09.06_NL_18
+  - 2022.09.06_NL_19
+  - 2022.09.06_NL_20
+  - 2022.09.06_NL_21
+  - 2022.09.06_NL_22
+  - 2022.09.06_NL_23
+  - 2022.09.06_NL_24
+  - 2022.09.06_NL_25
+  - 2022.09.06_NL_26
+  - 2022.09.06_NL_27
+  - 2022.09.06_NL_28
+  - 2022.09.06_NL_29
+  - 2022.09.06_NL_30
+  - 2022.09.06_NL_31
+  - 2022.09.06_NL_32
+  - 2022.09.06_NL_33
+  - 2022.09.06_NL_34
+  - 2022.09.06_RO_35
+  - 2022.09.06_US_36
+  - 2022.09.06_US_37
+  - 2022.09.06_US_38
+  - 2022.09.06_US_39
+  - 2022.09.06_US_40
+  - 2022.09.06_US_41
+  - 2022.09.06_US_42
+  - 2022.09.06_US_43
+  - 2022.09.06_US_44
+  - 2022.09.06_US_45
+  - 2022.09.06_US_46
+  - 2022.09.06_US_47
+  - 2022.09.06_US_48
+  - 2022.09.06_US_49
+  - 2022.09.06_US_50
+  - 2022.09.06_US_51
+  - 2022.09.06_US_52
+  - 2022.09.06_US_53
+  - 2022.09.06_US_54
+  - 2022.09.06_US_55
+  - 2022.09.06_US_56
+  - 2022.09.06_US_57
+  - 2022.09.06_US_58
+  - 2022.09.06_US_59
+  - 2022.09.06_US_60
+  - 2022.09.06_US_61
+  - 2022.09.06_US_62
+  - 2022.09.06_US_63
+  - 2022.09.06_US_64
+  - 2022.09.06_US_65
+  - 2022.09.06_US_66
+  - 2022.09.06_ZZ_67
+  - 2022.09.06_ZZ_68
+  - 2022.09.06_ZZ_69
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
