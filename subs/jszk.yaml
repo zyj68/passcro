@@ -4,77 +4,110 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 新北Hinet-dip, server: 36.139.166.76, port: 19215, type: trojan, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
+  - {name: 香港 CN2GIA 福利节点, server: 103.117.100.44, port: 18888, type: vmess, uuid: c43340d1-1bf5-3f01-88f4-ef4e7978b1b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: Taiwan, server: pastry.taiwanesefood.link, port: 443, type: trojan, password: NnvKNoUu3uaud9Sp6ugzYvX92bwr6emJ, skip-cert-verify: true, udp: true}
-  - {name: Tokyo-M, server: 36.139.166.76, port: 19242, type: trojan, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
-  - {name: United-States+8, server: hacks.missionsec.us, port: 443, type: trojan, password: NnvKNoUu3uaud9Sp6ugzYvX92bwr6emJ, skip-cert-verify: true, udp: true}
-  - {name: 香港03, server: 18.162.126.13, port: 44300, type: vmess, uuid: 58652ec4-07d0-3fc8-877a-1a336a8bcec0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: "%7B%22Host%22:%2218.162.126.13%22%7D"}}, udp: true}
-  - {name: 香港04, server: 18.166.56.217, port: 44300, type: vmess, uuid: 58652ec4-07d0-3fc8-877a-1a336a8bcec0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: "%7B%22Host%22:%2218.166.56.217%22%7D"}}, udp: true}
-  - {name: 香港01, server: 20.239.167.145, port: 44300, type: vmess, uuid: 58652ec4-07d0-3fc8-877a-1a336a8bcec0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: "%7B%22Host%22:%2220.239.167.145%22%7D"}}, udp: true}
-  - {name: 香港02, server: 20.247.89.150, port: 44300, type: vmess, uuid: 5c67be68-7e49-39de-af9c-807f1d098702, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.247.89.150}}, udp: true}
-  - {name: 新加坡, server: 20.239.162.0, port: 48001, type: vmess, uuid: 5c67be68-7e49-39de-af9c-807f1d098702, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.239.162.0}}, udp: true}
-  - {name: 日本, server: 20.239.162.0, port: 48002, type: vmess, uuid: 5c67be68-7e49-39de-af9c-807f1d098702, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.239.162.0}}, udp: true}
+  - {name: 🇸🇬 DigitalOcean, server: 188.166.204.68, port: 20020, type: ss, cipher: aes-128-gcm, password: 200000000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
+  - {name: ZZ_26, server: 169.197.143.232, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇺🇲 US_12, server: 38.91.102.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Asia 香港03 | 移动优化, server: 16.163.56.149, port: 44300, type: vmess, uuid: ede9a78f-a007-3aa9-b383-a02ed351714d, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fm, headers: {Host: 16.163.56.149}}, udp: true}
+  - {name: Asia 香港02 | 电信优化, server: 20.187.94.51, port: 44300, type: vmess, uuid: ede9a78f-a007-3aa9-b383-a02ed351714d, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fm, headers: {Host: 20.187.94.51}}, udp: true}
+  - {name: Asia 香港04 | 移动优化, server: 43.198.22.0, port: 44300, type: vmess, uuid: ede9a78f-a007-3aa9-b383-a02ed351714d, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fm, headers: {Host: 43.198.22.0}}, udp: true}
+  - {name: 香港066, server: 154.222.226.101, port: 44300, type: vmess, uuid: cf9af26e-86af-3b77-b1dc-369303e83666, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 154.222.226.101}}, udp: true}
+  - {name: 香港033, server: 18.162.126.13, port: 44300, type: vmess, uuid: cf9af26e-86af-3b77-b1dc-369303e83666, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 18.162.126.13}}, udp: true}
+  - {name: 香港077, server: 154.222.226.102, port: 44300, type: vmess, uuid: cf9af26e-86af-3b77-b1dc-369303e83666, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 154.222.226.102}}, udp: true}
+  - {name: "[V2] 香港 流媒体", server: 120.241.146.31, port: 20001, type: trojan, password: "068ec902-4a9b-35e2-9f93-331cfae6be18", skip-cert-verify: true, udp: true}
+  - {name: "[V2] 台湾 流媒体", server: 120.241.146.31, port: 20004, type: trojan, password: "068ec902-4a9b-35e2-9f93-331cfae6be18", skip-cert-verify: true, udp: true}
+  - {name: "[V1] 日本 1", server: 116.129.253.128, port: 20010, type: trojan, password: "068ec902-4a9b-35e2-9f93-331cfae6be18", skip-cert-verify: true, udp: true}
+  - {name: "[V2] 日本 流媒体 2", server: 120.241.146.31, port: 20014, type: trojan, password: "068ec902-4a9b-35e2-9f93-331cfae6be18", skip-cert-verify: true, udp: true}
+  - {name: "[V2] 日本 流媒体 1", server: 116.129.253.128, port: 20004, type: trojan, password: "068ec902-4a9b-35e2-9f93-331cfae6be18", skip-cert-verify: true, udp: true}
+  - {name: 台湾1, server: tw1.teacat2.xyz, port: 50003, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
+  - {name: 台湾2, server: tw2.teacat2.xyz, port: 50068, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
+  - {name: 新加坡1, server: sg1.teacat2.xyz, port: 50065, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
+  - {name: Taiwan(Taipei1), server: dgcm.pdjs.top, port: 49008, type: trojan, password: 69dc51ad-260d-4c10-8377-3d1658d8ad1e, skip-cert-verify: true, udp: true}
+  - {name: Hongkong (New Territories), server: dgcm.pdjs.top, port: 49000, type: trojan, password: 69dc51ad-260d-4c10-8377-3d1658d8ad1e, skip-cert-verify: true, udp: true}
+  - {name: Hongkong (owloon), server: dgcm.pdjs.top, port: 49001, type: trojan, password: 69dc51ad-260d-4c10-8377-3d1658d8ad1e, skip-cert-verify: true, udp: true}
+  - {name: Japan(Osaka2), server: dgcm.pdjs.top, port: 49007, type: trojan, password: 69dc51ad-260d-4c10-8377-3d1658d8ad1e, skip-cert-verify: true, udp: true}
+  - {name: 香港10, server: cm03.miruvip.com, port: 1664, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 12554:8ADgrg, obfs-param: fd83a12554.microsoft.com, udp: true}
+  - {name: 香港09, server: cm03.miruvip.com, port: 1663, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 12554:8ADgrg, obfs-param: fd83a12554.microsoft.com, udp: true}
+  - {name: 香港04, server: cm03.miruvip.com, port: 1663, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 12554:8ADgrg, obfs-param: fd83a12554.microsoft.com, udp: true}
   - {name: cn.xmss.vip, server: mf02.xmss.vip, port: 18888, type: ss, cipher: chacha20-ietf-poly1305, password: 35b0f578-8961-4a2b-99a1-db9555e522e4, udp: true}
-  - {name: 韩国-高速-L1, server: lin-pucta.run.goorm.io, port: 443, type: vmess, uuid: 599c1ded-48fd-4dc5-a887-0cecbdb24d8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linmi-KR-GOORM, headers: {Host: lin-pucta.run.goorm.io}}, udp: true}
-  - {name: 🇸🇬 Swim World - 新加坡, server: in02.my1188.org, port: 63078, type: vmess, uuid: "c7941905-0cb5-3661-8e1b-a6bd01cc7368", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
-  - {name: 🇯🇵 Swim World - 日本19, server: in06.my1188.org, port: 63086, type: vmess, uuid: "c7941905-0cb5-3661-8e1b-a6bd01cc7368", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /mugua, headers: {Host: "%7B%22Host%22:%22jp-balancer.myn1des.com%22%7D"}}, udp: true}
-  - {name: 🇭🇰 Swim World - 香港02, server: in04.my1188.org, port: 63078, type: vmess, uuid: "c7941905-0cb5-3661-8e1b-a6bd01cc7368", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
-  - {name: 🇯🇵 Swim World - 日本11, server: in05.my1188.org, port: 63086, type: vmess, uuid: "c7941905-0cb5-3661-8e1b-a6bd01cc7368", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /mugua, headers: {Host: "%7B%22Host%22:%22jp-balancer.myn1des.com%22%7D"}}, udp: true}
-  - {name: 🇭🇰 Swim World - 香港01, server: in03.my1188.org, port: 63078, type: vmess, uuid: "c7941905-0cb5-3661-8e1b-a6bd01cc7368", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
-  - {name: 🇭🇰 Swim World - 香港03, server: pro01.my1188.org, port: 3173, type: vmess, uuid: "c7941905-0cb5-3661-8e1b-a6bd01cc7368", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-fdc1.nbsd.us%22%7D"}}, udp: true}
-  - {name: 🇺🇸 Swim World - 美国16, server: in03.my1188.org, port: 63014, type: vmess, uuid: "c7941905-0cb5-3661-8e1b-a6bd01cc7368", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /mg, headers: {Host: "%7B%22Host%22:%22mugua-us01.covid19.rip%22%7D"}}, udp: true}
-  - {name: 大萝卜鸡日本, server: 36.139.166.76, port: 19243, type: trojan, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
-  - {name: 大萝卜鸡台湾, server: 36.139.166.76, port: 19238, type: trojan, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
+  - {name: "Hotspot 🇭🇰[香港]", server: 194.156.99.39, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: "Hotspot 🇫🇷[法国]", server: 13.38.24.83, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: "Hotspot 🇮🇪[爱尔兰]", server: 34.248.69.233, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: "Hotspot 🇺🇸[美国] 001", server: 138.124.183.222, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: "Hotspot 🇺🇸[美国] 002", server: 138.124.183.226, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 新北Hinet-dip
+  - 香港 CN2GIA 福利节点
   - Taiwan
-  - Tokyo-M
-  - United-States+8
-  - 香港03
+  - 🇸🇬 DigitalOcean
+  - ZZ_26
+  - 🇺🇲 US_12
+  - Asia 香港03 | 移动优化
+  - Asia 香港02 | 电信优化
+  - Asia 香港04 | 移动优化
+  - 香港066
+  - 香港033
+  - 香港077
+  - "[V2] 香港 流媒体"
+  - "[V2] 台湾 流媒体"
+  - "[V1] 日本 1"
+  - "[V2] 日本 流媒体 2"
+  - "[V2] 日本 流媒体 1"
+  - 台湾1
+  - 台湾2
+  - 新加坡1
+  - Taiwan(Taipei1)
+  - Hongkong (New Territories)
+  - Hongkong (owloon)
+  - Japan(Osaka2)
+  - 香港10
+  - 香港09
   - 香港04
-  - 香港01
-  - 香港02
-  - 新加坡
-  - 日本
   - cn.xmss.vip
-  - 韩国-高速-L1
-  - 🇸🇬 Swim World - 新加坡
-  - 🇯🇵 Swim World - 日本19
-  - 🇭🇰 Swim World - 香港02
-  - 🇯🇵 Swim World - 日本11
-  - 🇭🇰 Swim World - 香港01
-  - 🇭🇰 Swim World - 香港03
-  - 🇺🇸 Swim World - 美国16
-  - 大萝卜鸡日本
-  - 大萝卜鸡台湾
+  - Hotspot 🇭🇰[香港]
+  - Hotspot 🇫🇷[法国]
+  - Hotspot 🇮🇪[爱尔兰]
+  - Hotspot 🇺🇸[美国] 001
+  - Hotspot 🇺🇸[美国] 002
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 新北Hinet-dip
+  - 香港 CN2GIA 福利节点
   - Taiwan
-  - Tokyo-M
-  - United-States+8
-  - 香港03
+  - 🇸🇬 DigitalOcean
+  - ZZ_26
+  - 🇺🇲 US_12
+  - Asia 香港03 | 移动优化
+  - Asia 香港02 | 电信优化
+  - Asia 香港04 | 移动优化
+  - 香港066
+  - 香港033
+  - 香港077
+  - "[V2] 香港 流媒体"
+  - "[V2] 台湾 流媒体"
+  - "[V1] 日本 1"
+  - "[V2] 日本 流媒体 2"
+  - "[V2] 日本 流媒体 1"
+  - 台湾1
+  - 台湾2
+  - 新加坡1
+  - Taiwan(Taipei1)
+  - Hongkong (New Territories)
+  - Hongkong (owloon)
+  - Japan(Osaka2)
+  - 香港10
+  - 香港09
   - 香港04
-  - 香港01
-  - 香港02
-  - 新加坡
-  - 日本
   - cn.xmss.vip
-  - 韩国-高速-L1
-  - 🇸🇬 Swim World - 新加坡
-  - 🇯🇵 Swim World - 日本19
-  - 🇭🇰 Swim World - 香港02
-  - 🇯🇵 Swim World - 日本11
-  - 🇭🇰 Swim World - 香港01
-  - 🇭🇰 Swim World - 香港03
-  - 🇺🇸 Swim World - 美国16
-  - 大萝卜鸡日本
-  - 大萝卜鸡台湾
+  - Hotspot 🇭🇰[香港]
+  - Hotspot 🇫🇷[法国]
+  - Hotspot 🇮🇪[爱尔兰]
+  - Hotspot 🇺🇸[美国] 001
+  - Hotspot 🇺🇸[美国] 002
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
