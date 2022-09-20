@@ -4,371 +4,86 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 中国-tg频道:@bpjzx2-202, server: 42.49.119.3, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: "", udp: true}
-  - {name: 中国-tg频道:@bpjzx2-201, server: 915sg77.tfzhc.top, port: 25678, type: trojan, password: 3bfb6fba-8afd-4ec9-b6e0-1f17f97a37f2, sni: 915sg77.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: 中国-tg频道:@bpjzx2-13, server: 183.240.209.15, port: 31905, type: ss, cipher: aes-256-gcm, password: bBEXIq, udp: true}
-  - {name: 英国-tg频道:@bpjzx2-15, server: 18.130.157.11, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-91, server: 116.162.120.23, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-90, server: 116.162.120.23, port: 610, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-85, server: 36.139.166.88, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-84, server: 42.180.255.49, port: 11429, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: "", udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-83, server: 36.139.166.88, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-82, server: 36.139.166.73, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-81, server: 36.139.166.73, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-80, server: 36.139.166.73, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-200, server: 20.239.162.0, port: 48001, type: vmess, uuid: 073231db-7167-3551-910c-76dbb9dea785, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.239.162.0}}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-99, server: 116.162.120.24, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-98, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-97, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-96, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-95, server: 116.162.120.24, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-94, server: 116.162.120.24, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-93, server: 116.162.120.24, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-92, server: 116.162.120.24, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-199, server: 183.232.141.89, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-198, server: 223.166.159.179, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-197, server: 183.232.141.87, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-196, server: 223.166.159.179, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-195, server: 183.232.141.89, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-194, server: 223.166.159.179, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-193, server: 183.232.141.110, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-192, server: 223.166.159.25, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-191, server: 168.70.92.12, port: 443, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-190, server: 183.232.141.110, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-189, server: 223.166.159.179, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-188, server: 168.70.92.12, port: 443, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-187, server: 183.232.141.109, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-186, server: 223.166.159.179, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-185, server: 119.237.195.230, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-184, server: 183.232.141.82, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-183, server: 183.232.141.105, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-182, server: 183.232.141.85, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-181, server: 183.232.141.85, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-180, server: 183.232.141.117, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-179, server: 183.232.141.105, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-178, server: 183.232.141.87, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-177, server: 183.232.141.121, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-176, server: 223.166.159.179, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-175, server: 119.237.195.230, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-174, server: 183.232.141.82, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-173, server: 183.232.141.82, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-172, server: 183.232.141.82, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-171, server: 183.232.141.87, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-170, server: 183.232.141.85, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-169, server: 183.232.141.87, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-168, server: 183.232.141.119, port: 559, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-167, server: 183.232.141.105, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-166, server: 183.232.141.87, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-165, server: 183.232.141.85, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-164, server: 183.232.141.87, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-163, server: 223.166.159.179, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-162, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-161, server: 119.237.195.230, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-160, server: 183.232.141.82, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-159, server: 183.232.141.89, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-158, server: 183.232.141.90, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-157, server: 183.232.141.89, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-156, server: 183.232.141.90, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-155, server: 223.166.159.25, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-154, server: 223.166.159.25, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-153, server: 183.232.141.89, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-152, server: 223.166.159.25, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-151, server: 183.232.141.90, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-150, server: 183.232.141.82, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-149, server: 183.232.141.110, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-148, server: 183.232.141.110, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-147, server: 183.232.141.121, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-146, server: 183.232.141.107, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-145, server: 183.232.141.107, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-144, server: 36.139.166.81, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-143, server: 183.232.141.121, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-142, server: 36.139.166.81, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-141, server: 183.232.141.121, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-140, server: 183.232.141.110, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-139, server: 36.139.166.81, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-138, server: 183.232.141.107, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-137, server: 183.232.141.89, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-136, server: 183.232.141.89, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-135, server: 183.232.141.108, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-134, server: 36.139.166.81, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-133, server: 36.139.166.81, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-132, server: 36.139.166.81, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-131, server: 183.232.141.117, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-130, server: 183.232.141.117, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-129, server: 183.232.141.117, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 香港-tg频道:@bpjzx2-128, server: tencent.cdn.cloud.hbly0592.com.cn, port: 45936, type: ss, cipher: aes-128-gcm, password: a643f6f3733c9962851d, plugin: obfs, plugin-opts: {mode: http, host: 48c1d3a10df5432ee227.microsoft.com}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-127, server: 18.166.56.217, port: 44300, type: vmess, uuid: b9ca08fc-d3c3-3821-bb32-d09661f316d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: "%7B%22Host%22:%2218.166.56.217%22%7D"}}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-126, server: 18.162.126.13, port: 44300, type: vmess, uuid: b9ca08fc-d3c3-3821-bb32-d09661f316d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: "%7B%22Host%22:%2218.162.126.13%22%7D"}}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-125, server: 20.247.89.150, port: 44300, type: vmess, uuid: b9ca08fc-d3c3-3821-bb32-d09661f316d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: "%7B%22Host%22:%2220.247.89.150%22%7D"}}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-124, server: 20.239.167.145, port: 44300, type: vmess, uuid: 073231db-7167-3551-910c-76dbb9dea785, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.239.167.145}}, udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-123, server: 915tw17.tfzhc.top, port: 44313, type: trojan, password: 3bfb6fba-8afd-4ec9-b6e0-1f17f97a37f2, sni: 915tw17.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-121, server: 116.162.120.25, port: 569, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-120, server: 116.162.120.25, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-119, server: 116.162.120.25, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-118, server: 116.162.120.25, port: 569, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-117, server: 116.162.120.25, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-116, server: 116.162.120.25, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-115, server: 116.162.120.25, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-114, server: 116.162.120.25, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-113, server: 116.162.120.25, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-112, server: 116.162.120.25, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-111, server: 116.162.120.25, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-110, server: 116.162.120.25, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-109, server: 116.162.120.25, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-108, server: 116.162.120.25, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-107, server: 116.162.120.25, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-106, server: 116.162.120.25, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-105, server: 116.162.120.25, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4000:r*TG*D4f4Jn75i, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-104, server: 116.162.120.25, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-103, server: 116.162.120.25, port: 569, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-102, server: 116.162.120.25, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道:@bpjzx2-101, server: 116.162.120.25, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 9879:5NmfhPHC4ZVt8nJr, obfs-param: "", udp: true}
+  - {name: 台湾-tg频道:@bpjzx2-1, server: tw2.teacat2.xyz, port: 50068, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
+  - {name: 韩国-tg频道:@bpjzx2-2, server: 3.38.108.94, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-3, server: scloud42.jafiyun.world, port: 22042, type: trojan, password: ce19e306-6b87-31b6-8161-df1fa9847b2e, sni: scloud42.jafiyun.world, skip-cert-verify: true, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-4, server: scloud43.jafiyun.world, port: 22043, type: trojan, password: ce19e306-6b87-31b6-8161-df1fa9847b2e, sni: scloud43.jafiyun.world, skip-cert-verify: true, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2-5, server: sg1.teacat2.xyz, port: 50065, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
+  - {name: 台湾-tg频道:@bpjzx2-6, server: tw1.teacat2.xyz, port: 50003, type: ss, cipher: aes-256-gcm, password: 02574c28-0473-4749-b6b5-99feac61f741, udp: true}
+  - {name: 台湾-tg频道:@bpjzx2-7, server: 99tw02.tfzhc.top, port: 443, type: trojan, password: 1fde66c7-c2ac-46e9-9c32-a7128d04c0ee, sni: 99tw02.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: 韩国首尔-tg频道:@bpjzx2-8, server: scloud52.jafiyun.world, port: 22052, type: trojan, password: ce19e306-6b87-31b6-8161-df1fa9847b2e, sni: scloud52.jafiyun.world, skip-cert-verify: true, udp: true}
+  - {name: 美国-tg频道:@bpjzx2-9, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: jgwdj3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯-tg频道:@bpjzx2-10, server: 185.22.153.219, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 英国-tg频道:@bpjzx2-11, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 美国-tg频道:@bpjzx2-12, server: 18.133.181.177, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: 韩国-tg频道:@bpjzx2-13, server: scus1.ddns-pop.cyou, port: 24567, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, sni: scus1.ddns-pop.cyou, skip-cert-verify: true, udp: true}
+  - {name: 英国-tg频道:@bpjzx2-14, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 台湾-tg频道:@bpjzx2-15, server: 913tw.tfzhc.top, port: 44318, type: trojan, password: 1fde66c7-c2ac-46e9-9c32-a7128d04c0ee, sni: 913tw.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: 韩国-tg频道:@bpjzx2-16, server: 158.247.239.243, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 英国-tg频道:@bpjzx2-17, server: 212.102.53.81, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 罗马尼亚-tg频道:@bpjzx2-18, server: 5.181.25.81, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 乌克兰-tg频道:@bpjzx2-19, server: 95.85.72.76, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 意大利-tg频道:@bpjzx2-20, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-21, server: 47.242.239.113, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 加拿大-tg频道:@bpjzx2-22, server: 155.138.140.189, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2-23, server: 18.140.67.76, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: 意大利-tg频道:@bpjzx2-24, server: 92.223.79.25, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 中国-tg频道:@bpjzx2-202
-  - 中国-tg频道:@bpjzx2-201
-  - 中国-tg频道:@bpjzx2-13
-  - 英国-tg频道:@bpjzx2-15
-  - 新加坡-tg频道:@bpjzx2-91
-  - 新加坡-tg频道:@bpjzx2-90
-  - 新加坡-tg频道:@bpjzx2-85
-  - 新加坡-tg频道:@bpjzx2-84
-  - 新加坡-tg频道:@bpjzx2-83
-  - 新加坡-tg频道:@bpjzx2-82
-  - 新加坡-tg频道:@bpjzx2-81
-  - 新加坡-tg频道:@bpjzx2-80
-  - 新加坡-tg频道:@bpjzx2-200
-  - 香港-tg频道:@bpjzx2-99
-  - 香港-tg频道:@bpjzx2-98
-  - 香港-tg频道:@bpjzx2-97
-  - 香港-tg频道:@bpjzx2-96
-  - 香港-tg频道:@bpjzx2-95
-  - 香港-tg频道:@bpjzx2-94
-  - 香港-tg频道:@bpjzx2-93
-  - 香港-tg频道:@bpjzx2-92
-  - 香港-tg频道:@bpjzx2-199
-  - 香港-tg频道:@bpjzx2-198
-  - 香港-tg频道:@bpjzx2-197
-  - 香港-tg频道:@bpjzx2-196
-  - 香港-tg频道:@bpjzx2-195
-  - 香港-tg频道:@bpjzx2-194
-  - 香港-tg频道:@bpjzx2-193
-  - 香港-tg频道:@bpjzx2-192
-  - 香港-tg频道:@bpjzx2-191
-  - 香港-tg频道:@bpjzx2-190
-  - 香港-tg频道:@bpjzx2-189
-  - 香港-tg频道:@bpjzx2-188
-  - 香港-tg频道:@bpjzx2-187
-  - 香港-tg频道:@bpjzx2-186
-  - 香港-tg频道:@bpjzx2-185
-  - 香港-tg频道:@bpjzx2-184
-  - 香港-tg频道:@bpjzx2-183
-  - 香港-tg频道:@bpjzx2-182
-  - 香港-tg频道:@bpjzx2-181
-  - 香港-tg频道:@bpjzx2-180
-  - 香港-tg频道:@bpjzx2-179
-  - 香港-tg频道:@bpjzx2-178
-  - 香港-tg频道:@bpjzx2-177
-  - 香港-tg频道:@bpjzx2-176
-  - 香港-tg频道:@bpjzx2-175
-  - 香港-tg频道:@bpjzx2-174
-  - 香港-tg频道:@bpjzx2-173
-  - 香港-tg频道:@bpjzx2-172
-  - 香港-tg频道:@bpjzx2-171
-  - 香港-tg频道:@bpjzx2-170
-  - 香港-tg频道:@bpjzx2-169
-  - 香港-tg频道:@bpjzx2-168
-  - 香港-tg频道:@bpjzx2-167
-  - 香港-tg频道:@bpjzx2-166
-  - 香港-tg频道:@bpjzx2-165
-  - 香港-tg频道:@bpjzx2-164
-  - 香港-tg频道:@bpjzx2-163
-  - 香港-tg频道:@bpjzx2-162
-  - 香港-tg频道:@bpjzx2-161
-  - 香港-tg频道:@bpjzx2-160
-  - 香港-tg频道:@bpjzx2-159
-  - 香港-tg频道:@bpjzx2-158
-  - 香港-tg频道:@bpjzx2-157
-  - 香港-tg频道:@bpjzx2-156
-  - 香港-tg频道:@bpjzx2-155
-  - 香港-tg频道:@bpjzx2-154
-  - 香港-tg频道:@bpjzx2-153
-  - 香港-tg频道:@bpjzx2-152
-  - 香港-tg频道:@bpjzx2-151
-  - 香港-tg频道:@bpjzx2-150
-  - 香港-tg频道:@bpjzx2-149
-  - 香港-tg频道:@bpjzx2-148
-  - 香港-tg频道:@bpjzx2-147
-  - 香港-tg频道:@bpjzx2-146
-  - 香港-tg频道:@bpjzx2-145
-  - 香港-tg频道:@bpjzx2-144
-  - 香港-tg频道:@bpjzx2-143
-  - 香港-tg频道:@bpjzx2-142
-  - 香港-tg频道:@bpjzx2-141
-  - 香港-tg频道:@bpjzx2-140
-  - 香港-tg频道:@bpjzx2-139
-  - 香港-tg频道:@bpjzx2-138
-  - 香港-tg频道:@bpjzx2-137
-  - 香港-tg频道:@bpjzx2-136
-  - 香港-tg频道:@bpjzx2-135
-  - 香港-tg频道:@bpjzx2-134
-  - 香港-tg频道:@bpjzx2-133
-  - 香港-tg频道:@bpjzx2-132
-  - 香港-tg频道:@bpjzx2-131
-  - 香港-tg频道:@bpjzx2-130
-  - 香港-tg频道:@bpjzx2-129
-  - 香港-tg频道:@bpjzx2-128
-  - 香港-tg频道:@bpjzx2-127
-  - 香港-tg频道:@bpjzx2-126
-  - 香港-tg频道:@bpjzx2-125
-  - 香港-tg频道:@bpjzx2-124
-  - 台湾-tg频道:@bpjzx2-123
-  - 台湾-tg频道:@bpjzx2-121
-  - 台湾-tg频道:@bpjzx2-120
-  - 台湾-tg频道:@bpjzx2-119
-  - 台湾-tg频道:@bpjzx2-118
-  - 台湾-tg频道:@bpjzx2-117
-  - 台湾-tg频道:@bpjzx2-116
-  - 台湾-tg频道:@bpjzx2-115
-  - 台湾-tg频道:@bpjzx2-114
-  - 台湾-tg频道:@bpjzx2-113
-  - 台湾-tg频道:@bpjzx2-112
-  - 台湾-tg频道:@bpjzx2-111
-  - 台湾-tg频道:@bpjzx2-110
-  - 台湾-tg频道:@bpjzx2-109
-  - 台湾-tg频道:@bpjzx2-108
-  - 台湾-tg频道:@bpjzx2-107
-  - 台湾-tg频道:@bpjzx2-106
-  - 台湾-tg频道:@bpjzx2-105
-  - 台湾-tg频道:@bpjzx2-104
-  - 台湾-tg频道:@bpjzx2-103
-  - 台湾-tg频道:@bpjzx2-102
-  - 台湾-tg频道:@bpjzx2-101
+  - 台湾-tg频道:@bpjzx2-1
+  - 韩国-tg频道:@bpjzx2-2
+  - 香港-tg频道:@bpjzx2-3
+  - 香港-tg频道:@bpjzx2-4
+  - 新加坡-tg频道:@bpjzx2-5
+  - 台湾-tg频道:@bpjzx2-6
+  - 台湾-tg频道:@bpjzx2-7
+  - 韩国首尔-tg频道:@bpjzx2-8
+  - 美国-tg频道:@bpjzx2-9
+  - 俄罗斯-tg频道:@bpjzx2-10
+  - 英国-tg频道:@bpjzx2-11
+  - 美国-tg频道:@bpjzx2-12
+  - 韩国-tg频道:@bpjzx2-13
+  - 英国-tg频道:@bpjzx2-14
+  - 台湾-tg频道:@bpjzx2-15
+  - 韩国-tg频道:@bpjzx2-16
+  - 英国-tg频道:@bpjzx2-17
+  - 罗马尼亚-tg频道:@bpjzx2-18
+  - 乌克兰-tg频道:@bpjzx2-19
+  - 意大利-tg频道:@bpjzx2-20
+  - 香港-tg频道:@bpjzx2-21
+  - 加拿大-tg频道:@bpjzx2-22
+  - 新加坡-tg频道:@bpjzx2-23
+  - 意大利-tg频道:@bpjzx2-24
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 中国-tg频道:@bpjzx2-202
-  - 中国-tg频道:@bpjzx2-201
-  - 中国-tg频道:@bpjzx2-13
-  - 英国-tg频道:@bpjzx2-15
-  - 新加坡-tg频道:@bpjzx2-91
-  - 新加坡-tg频道:@bpjzx2-90
-  - 新加坡-tg频道:@bpjzx2-85
-  - 新加坡-tg频道:@bpjzx2-84
-  - 新加坡-tg频道:@bpjzx2-83
-  - 新加坡-tg频道:@bpjzx2-82
-  - 新加坡-tg频道:@bpjzx2-81
-  - 新加坡-tg频道:@bpjzx2-80
-  - 新加坡-tg频道:@bpjzx2-200
-  - 香港-tg频道:@bpjzx2-99
-  - 香港-tg频道:@bpjzx2-98
-  - 香港-tg频道:@bpjzx2-97
-  - 香港-tg频道:@bpjzx2-96
-  - 香港-tg频道:@bpjzx2-95
-  - 香港-tg频道:@bpjzx2-94
-  - 香港-tg频道:@bpjzx2-93
-  - 香港-tg频道:@bpjzx2-92
-  - 香港-tg频道:@bpjzx2-199
-  - 香港-tg频道:@bpjzx2-198
-  - 香港-tg频道:@bpjzx2-197
-  - 香港-tg频道:@bpjzx2-196
-  - 香港-tg频道:@bpjzx2-195
-  - 香港-tg频道:@bpjzx2-194
-  - 香港-tg频道:@bpjzx2-193
-  - 香港-tg频道:@bpjzx2-192
-  - 香港-tg频道:@bpjzx2-191
-  - 香港-tg频道:@bpjzx2-190
-  - 香港-tg频道:@bpjzx2-189
-  - 香港-tg频道:@bpjzx2-188
-  - 香港-tg频道:@bpjzx2-187
-  - 香港-tg频道:@bpjzx2-186
-  - 香港-tg频道:@bpjzx2-185
-  - 香港-tg频道:@bpjzx2-184
-  - 香港-tg频道:@bpjzx2-183
-  - 香港-tg频道:@bpjzx2-182
-  - 香港-tg频道:@bpjzx2-181
-  - 香港-tg频道:@bpjzx2-180
-  - 香港-tg频道:@bpjzx2-179
-  - 香港-tg频道:@bpjzx2-178
-  - 香港-tg频道:@bpjzx2-177
-  - 香港-tg频道:@bpjzx2-176
-  - 香港-tg频道:@bpjzx2-175
-  - 香港-tg频道:@bpjzx2-174
-  - 香港-tg频道:@bpjzx2-173
-  - 香港-tg频道:@bpjzx2-172
-  - 香港-tg频道:@bpjzx2-171
-  - 香港-tg频道:@bpjzx2-170
-  - 香港-tg频道:@bpjzx2-169
-  - 香港-tg频道:@bpjzx2-168
-  - 香港-tg频道:@bpjzx2-167
-  - 香港-tg频道:@bpjzx2-166
-  - 香港-tg频道:@bpjzx2-165
-  - 香港-tg频道:@bpjzx2-164
-  - 香港-tg频道:@bpjzx2-163
-  - 香港-tg频道:@bpjzx2-162
-  - 香港-tg频道:@bpjzx2-161
-  - 香港-tg频道:@bpjzx2-160
-  - 香港-tg频道:@bpjzx2-159
-  - 香港-tg频道:@bpjzx2-158
-  - 香港-tg频道:@bpjzx2-157
-  - 香港-tg频道:@bpjzx2-156
-  - 香港-tg频道:@bpjzx2-155
-  - 香港-tg频道:@bpjzx2-154
-  - 香港-tg频道:@bpjzx2-153
-  - 香港-tg频道:@bpjzx2-152
-  - 香港-tg频道:@bpjzx2-151
-  - 香港-tg频道:@bpjzx2-150
-  - 香港-tg频道:@bpjzx2-149
-  - 香港-tg频道:@bpjzx2-148
-  - 香港-tg频道:@bpjzx2-147
-  - 香港-tg频道:@bpjzx2-146
-  - 香港-tg频道:@bpjzx2-145
-  - 香港-tg频道:@bpjzx2-144
-  - 香港-tg频道:@bpjzx2-143
-  - 香港-tg频道:@bpjzx2-142
-  - 香港-tg频道:@bpjzx2-141
-  - 香港-tg频道:@bpjzx2-140
-  - 香港-tg频道:@bpjzx2-139
-  - 香港-tg频道:@bpjzx2-138
-  - 香港-tg频道:@bpjzx2-137
-  - 香港-tg频道:@bpjzx2-136
-  - 香港-tg频道:@bpjzx2-135
-  - 香港-tg频道:@bpjzx2-134
-  - 香港-tg频道:@bpjzx2-133
-  - 香港-tg频道:@bpjzx2-132
-  - 香港-tg频道:@bpjzx2-131
-  - 香港-tg频道:@bpjzx2-130
-  - 香港-tg频道:@bpjzx2-129
-  - 香港-tg频道:@bpjzx2-128
-  - 香港-tg频道:@bpjzx2-127
-  - 香港-tg频道:@bpjzx2-126
-  - 香港-tg频道:@bpjzx2-125
-  - 香港-tg频道:@bpjzx2-124
-  - 台湾-tg频道:@bpjzx2-123
-  - 台湾-tg频道:@bpjzx2-121
-  - 台湾-tg频道:@bpjzx2-120
-  - 台湾-tg频道:@bpjzx2-119
-  - 台湾-tg频道:@bpjzx2-118
-  - 台湾-tg频道:@bpjzx2-117
-  - 台湾-tg频道:@bpjzx2-116
-  - 台湾-tg频道:@bpjzx2-115
-  - 台湾-tg频道:@bpjzx2-114
-  - 台湾-tg频道:@bpjzx2-113
-  - 台湾-tg频道:@bpjzx2-112
-  - 台湾-tg频道:@bpjzx2-111
-  - 台湾-tg频道:@bpjzx2-110
-  - 台湾-tg频道:@bpjzx2-109
-  - 台湾-tg频道:@bpjzx2-108
-  - 台湾-tg频道:@bpjzx2-107
-  - 台湾-tg频道:@bpjzx2-106
-  - 台湾-tg频道:@bpjzx2-105
-  - 台湾-tg频道:@bpjzx2-104
-  - 台湾-tg频道:@bpjzx2-103
-  - 台湾-tg频道:@bpjzx2-102
-  - 台湾-tg频道:@bpjzx2-101
+  - 台湾-tg频道:@bpjzx2-1
+  - 韩国-tg频道:@bpjzx2-2
+  - 香港-tg频道:@bpjzx2-3
+  - 香港-tg频道:@bpjzx2-4
+  - 新加坡-tg频道:@bpjzx2-5
+  - 台湾-tg频道:@bpjzx2-6
+  - 台湾-tg频道:@bpjzx2-7
+  - 韩国首尔-tg频道:@bpjzx2-8
+  - 美国-tg频道:@bpjzx2-9
+  - 俄罗斯-tg频道:@bpjzx2-10
+  - 英国-tg频道:@bpjzx2-11
+  - 美国-tg频道:@bpjzx2-12
+  - 韩国-tg频道:@bpjzx2-13
+  - 英国-tg频道:@bpjzx2-14
+  - 台湾-tg频道:@bpjzx2-15
+  - 韩国-tg频道:@bpjzx2-16
+  - 英国-tg频道:@bpjzx2-17
+  - 罗马尼亚-tg频道:@bpjzx2-18
+  - 乌克兰-tg频道:@bpjzx2-19
+  - 意大利-tg频道:@bpjzx2-20
+  - 香港-tg频道:@bpjzx2-21
+  - 加拿大-tg频道:@bpjzx2-22
+  - 新加坡-tg频道:@bpjzx2-23
+  - 意大利-tg频道:@bpjzx2-24
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
