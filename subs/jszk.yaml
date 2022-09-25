@@ -4,134 +4,254 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: Taiwan, server: pastry.taiwanesefood.link, port: 443, type: trojan, password: NnvKNoUu3uaud9Sp6ugzYvX92bwr6emJ, skip-cert-verify: true, udp: true}
-  - {name: GB_06, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: Japan(Osaka1) 2, server: dgcm.pdjs.top, port: 49006, type: trojan, password: 69dc51ad-260d-4c10-8377-3d1658d8ad1e, skip-cert-verify: true, udp: true}
-  - {name: Japan(Osaka1) 001, server: dgcm.pdjs.top, port: 49006, type: trojan, password: b2dd238f-11e7-43aa-84b5-8c20ab24741f, skip-cert-verify: true, udp: true}
+  - {name: 香港雞蛋仔 1 001, server: can-01.t7n4vxsm.dxs5.xyz, port: 10000, type: ss, cipher: aes-128-gcm, password: "!6kknK9V+tG4K5", udp: true}
+  - {name: 新加坡辣蟹 2 001, server: can-01.t7n4vxsm.dxs5.xyz, port: 10201, type: ss, cipher: aes-128-gcm, password: "!6kknK9V+tG4K5", udp: true}
+  - {name: 新加坡叻沙 1 001, server: can-01.t7n4vxsm.dxs5.xyz, port: 10200, type: ss, cipher: aes-128-gcm, password: "!6kknK9V+tG4K5", udp: true}
+  - {name: 香港燒鴨飯 2 001, server: can-01.t7n4vxsm.dxs5.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: "S50DbCV00tq]n#", udp: true}
+  - {name: 新加坡叻沙 1 002, server: can-01.t7n4vxsm.dxs5.xyz, port: 10200, type: ss, cipher: aes-128-gcm, password: "S50DbCV00tq]n#", udp: true}
+  - {name: 香港燒鴨飯 2 002, server: can-01.t7n4vxsm.dxs5.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: "b2o9M7iD]7Kk.D", udp: true}
+  - {name: 香港雞蛋仔 1 002, server: can-01.t7n4vxsm.dxs5.xyz, port: 10000, type: ss, cipher: aes-128-gcm, password: "b2o9M7iD]7Kk.D", udp: true}
+  - {name: 台灣豬血湯 1, server: can-01.t7n4vxsm.dxs5.xyz, port: 10100, type: ss, cipher: aes-128-gcm, password: "b2o9M7iD]7Kk.D", udp: true}
+  - {name: 台灣牛舌餅 2, server: can-01.t7n4vxsm.dxs5.xyz, port: 10101, type: ss, cipher: aes-128-gcm, password: "b2o9M7iD]7Kk.D", udp: true}
+  - {name: 新加坡辣蟹 2 002, server: can-01.t7n4vxsm.dxs5.xyz, port: 10201, type: ss, cipher: aes-128-gcm, password: "b2o9M7iD]7Kk.D", udp: true}
+  - {name: 新加坡叻沙 1 003, server: can-01.t7n4vxsm.dxs5.xyz, port: 10200, type: ss, cipher: aes-128-gcm, password: "b2o9M7iD]7Kk.D", udp: true}
+  - {name: 香港燒鴨飯 2 003, server: can-01.t7n4vxsm.dxs5.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: j5t:FwS7yL@4D2, udp: true}
+  - {name: 新加坡辣蟹 2 003, server: can-01.t7n4vxsm.dxs5.xyz, port: 10201, type: ss, cipher: aes-128-gcm, password: j5t:FwS7yL@4D2, udp: true}
+  - {name: 新加坡叻沙 1 004, server: can-01.t7n4vxsm.dxs5.xyz, port: 10200, type: ss, cipher: aes-128-gcm, password: j5t:FwS7yL@4D2, udp: true}
+  - {name: 美國法士達 2, server: shh-01.9dp5voo4.dxs5.xyz, port: 10101, type: ss, cipher: aes-128-gcm, password: j5t:FwS7yL@4D2, udp: true}
+  - {name: 美國甜甜圈 1, server: shh-01.9dp5voo4.dxs5.xyz, port: 10100, type: ss, cipher: aes-128-gcm, password: j5t:FwS7yL@4D2, udp: true}
+  - {name: 香港雞蛋仔 1 003, server: can-01.t7n4vxsm.dxs5.xyz, port: 10000, type: ss, cipher: aes-128-gcm, password: poi82Ty)K2XI7*, udp: true}
+  - {name: 🇯🇵 Japan 07, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 56329, type: ss, cipher: chacha20-ietf-poly1305, password: f8a20018-caef-475b-9583-f4539d9550bd, udp: true}
+  - {name: 🇯🇵 Japan 06, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 56329, type: ss, cipher: chacha20-ietf-poly1305, password: f8a20018-caef-475b-9583-f4539d9550bd, udp: true}
+  - {name: 🇯🇵 Japan 10, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 56329, type: ss, cipher: chacha20-ietf-poly1305, password: f8a20018-caef-475b-9583-f4539d9550bd, udp: true}
+  - {name: 🇯🇵 Japan 09, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 56329, type: ss, cipher: chacha20-ietf-poly1305, password: f8a20018-caef-475b-9583-f4539d9550bd, udp: true}
+  - {name: 🇯🇵 Japan 08, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 56329, type: ss, cipher: chacha20-ietf-poly1305, password: f8a20018-caef-475b-9583-f4539d9550bd, udp: true}
+  - {name: 🇸🇬 Singapore 02, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 28548, type: ss, cipher: chacha20-ietf-poly1305, password: f8a20018-caef-475b-9583-f4539d9550bd, udp: true}
+  - {name: 🇸🇬 Singapore 04, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 28548, type: ss, cipher: chacha20-ietf-poly1305, password: f8a20018-caef-475b-9583-f4539d9550bd, udp: true}
+  - {name: 🇸🇬 Singapore 01 001, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 28548, type: ss, cipher: chacha20-ietf-poly1305, password: f8a20018-caef-475b-9583-f4539d9550bd, udp: true}
+  - {name: 🇸🇬 Singapore 05, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 28548, type: ss, cipher: chacha20-ietf-poly1305, password: f8a20018-caef-475b-9583-f4539d9550bd, udp: true}
+  - {name: "[v1] 新加坡・01", server: yd-05.paofunlink.com, port: 1090, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v1] 新加坡・02", server: yd-05.paofunlink.com, port: 1091, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v1] 日本・01", server: yd-05.paofunlink.com, port: 1050, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v1] 新加坡・03", server: yd-02.paofunlink.com, port: 1092, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v1] 台湾・03", server: yd-02.paofunlink.com, port: 1072, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v3] 台湾・01", server: yd-03.paofunlink.com, port: 1070, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v3] 日本・02", server: yd-03.paofunlink.com, port: 1056, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v3] 新加坡・03", server: yd-03.paofunlink.com, port: 1097, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v3] 台湾・02", server: yd-03.paofunlink.com, port: 1071, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v1] 新加坡・04", server: yd-02.paofunlink.com, port: 1093, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v3] 新加坡・04", server: yd-03.paofunlink.com, port: 1098, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v3] 台湾・04", server: yd-03.paofunlink.com, port: 1073, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v1] 台湾・02", server: yd-05.paofunlink.com, port: 1071, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v1] 美国・02", server: yd-05.paofunlink.com, port: 1081, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v3] 美国・03", server: yd-03.paofunlink.com, port: 1087, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: "[v3] 美国・01", server: yd-03.paofunlink.com, port: 1085, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 91886:B8M99G, obfs-param: 262ff91886.microsoft.com, udp: true}
+  - {name: 日本 ❀大妮妮❀1倍 001, server: da.kanao.xyz, port: 58805, type: trojan, password: ffcc8693-69bf-4dcf-9ae0-523e1518dece, skip-cert-verify: true, udp: true}
+  - {name: 日本 ❀小妮妮❀1倍 001, server: xi.kanao.xyz, port: 58806, type: trojan, password: ffcc8693-69bf-4dcf-9ae0-523e1518dece, skip-cert-verify: true, udp: true}
+  - {name: 台湾 ❀原生❀小妮妮❀1倍, server: xi.kanao.xyz, port: 58827, type: trojan, password: ffcc8693-69bf-4dcf-9ae0-523e1518dece, skip-cert-verify: true, udp: true}
+  - {name: 日本原生1-负载均衡-解锁流媒体, server: 45.159.51.87, port: 39577, type: vmess, uuid: e0b48f8e-4f31-4b1f-a328-9d127fa2b4ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 Singapore 01 002, server: sg1.turingnet.top, port: 50001, type: trojan, password: cf69f080-aa09-4ea4-ba77-4fb9b4bc5f66, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡|IPLC|高速A|x1.3, server: 154.3.36.104, port: 34568, type: trojan, password: 7b48dcdd-4269-3719-bf92-8170d82db520, skip-cert-verify: true, udp: true}
+  - {name: 29, server: 120.195.181.72, port: 12352, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: 台北Scloud-dip9, server: 120.195.181.51, port: 12353, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: 香港GCORE, server: 124.71.16.99, port: 12323, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: 日本 ❀小妮妮❀1倍 002, server: xi.kanao.xyz, port: 58806, type: trojan, password: ffcc8693-69bf-4dcf-9ae0-523e1518dece, skip-cert-verify: true, udp: true}
+  - {name: Hongkong (New Territories), server: 165.154.246.195, port: 49000, type: trojan, password: 7e517fd6-b515-406d-a085-67af8b5f12e3, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸United States 01, server: US-01.leco.ml, port: 41560, type: ss, cipher: aes-256-gcm, password: fd85e31b-0d47-418c-b641-8cc11b2e0cdb, udp: true}
+  - {name: 19, server: 124.71.16.99, port: 12323, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: 日本 ❀大妮妮❀1倍 002, server: da.kanao.xyz, port: 58805, type: trojan, password: ffcc8693-69bf-4dcf-9ae0-523e1518dece, skip-cert-verify: true, udp: true}
+  - {name: 日本NTT-(hkt) | 解锁流媒体, server: zf2.windowsupdate1.com, port: 30010, type: trojan, password: 564f0597-8e7c-4aa9-95cc-51eb9480a4f3, skip-cert-verify: true, udp: true}
+  - {name: 16, server: sg.securevpn.cc, port: 20020, type: ss, cipher: aes-128-gcm, password: 200000000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: TIB2ehlN1U.download.windowsupdate.com,449bff3663.douyincdn.com, uri: /}, udp: true}
+  - {name: 15, server: 139.162.23.118, port: 20020, type: ss, cipher: aes-128-gcm, password: 200000000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
+  - {name: 香港 ❀原生❀小妮妮❀1倍, server: xi.kanao.xyz, port: 58820, type: trojan, password: ffcc8693-69bf-4dcf-9ae0-523e1518dece, skip-cert-verify: true, udp: true}
   - {name: 日本NTT-1号 | 解锁流媒体, server: 202.8.9.67, port: 28443, type: trojan, password: 564f0597-8e7c-4aa9-95cc-51eb9480a4f3, skip-cert-verify: true, udp: true}
-  - {name: 越南-1号, server: 103.173.255.21, port: 28443, type: trojan, password: 564f0597-8e7c-4aa9-95cc-51eb9480a4f3, skip-cert-verify: true, udp: true}
-  - {name: 越南-4号, server: 103.173.255.234, port: 28443, type: trojan, password: 564f0597-8e7c-4aa9-95cc-51eb9480a4f3, skip-cert-verify: true, udp: true}
+  - {name: 香港GG, server: 120.195.181.51, port: 12324, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
   - {name: 越南-3号, server: 103.173.255.228, port: 28443, type: trojan, password: 564f0597-8e7c-4aa9-95cc-51eb9480a4f3, skip-cert-verify: true, udp: true}
   - {name: 美国圣何塞-(hkt) | 解锁流媒体, server: zf2.windowsupdate1.com, port: 30040, type: trojan, password: 564f0597-8e7c-4aa9-95cc-51eb9480a4f3, skip-cert-verify: true, udp: true}
-  - {name: 美国洛杉矶-1号 | 解锁流媒体, server: 45.88.148.234, port: 28443, type: trojan, password: 564f0597-8e7c-4aa9-95cc-51eb9480a4f3, skip-cert-verify: true, udp: true}
-  - {name: 德国-(hkt) | 解锁流媒体, server: zf2.windowsupdate1.com, port: 30050, type: trojan, password: 564f0597-8e7c-4aa9-95cc-51eb9480a4f3, skip-cert-verify: true, udp: true}
-  - {name: 美国圣何塞-2号 | 解锁流媒体, server: 45.82.253.234, port: 28443, type: trojan, password: 564f0597-8e7c-4aa9-95cc-51eb9480a4f3, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵01沪日专线｜0x, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇯🇵02沪日专线｜0x, server: 99tw02.tfzhc.top, port: 443, type: trojan, password: eb50af3d-5339-4ef7-8471-6cde8dff1ba9, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵03沪日专线｜2x, server: 921hk.tfzhc.top, port: 443, type: trojan, password: eb50af3d-5339-4ef7-8471-6cde8dff1ba9, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵04沪日专线｜2x, server: 921tw.tfzhc.top, port: 443, type: trojan, password: eb50af3d-5339-4ef7-8471-6cde8dff1ba9, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵05沪日专线｜2x, server: 99tw03.tfzhc.top, port: 443, type: trojan, password: eb50af3d-5339-4ef7-8471-6cde8dff1ba9, skip-cert-verify: true, udp: true}
-  - {name: 🇲🇴01广奥专线｜2x, server: 99tw03.tfzhc.top, port: 443, type: trojan, password: eb50af3d-5339-4ef7-8471-6cde8dff1ba9, skip-cert-verify: true, udp: true}
-  - {name: 🇲🇴04广奥专线｜2x, server: 99tw03.tfzhc.top, port: 443, type: trojan, password: eb50af3d-5339-4ef7-8471-6cde8dff1ba9, skip-cert-verify: true, udp: true}
-  - {name: 🇲🇴02广奥专线｜2x, server: 913tw.tfzhc.top, port: 44318, type: trojan, password: eb50af3d-5339-4ef7-8471-6cde8dff1ba9, skip-cert-verify: true, udp: true}
-  - {name: 🇲🇴03广奥专线｜2x, server: 921tw.tfzhc.top, port: 443, type: trojan, password: eb50af3d-5339-4ef7-8471-6cde8dff1ba9, skip-cert-verify: true, udp: true}
-  - {name: 🇲🇴05广奥专线｜2x, server: 99tw03.tfzhc.top, port: 443, type: trojan, password: eb50af3d-5339-4ef7-8471-6cde8dff1ba9, skip-cert-verify: true, udp: true}
-  - {name: 1, server: 00000000000000000000000000000000000000000000000000000000000031a.rui77.com, port: 12356, type: vmess, uuid: c5c32a05-8dac-47f3-b8f3-c927f03ccd05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 2, server: 00000000000000000000000000000000000000000000000000000000000036a.rui77.com, port: 12356, type: vmess, uuid: c5c32a05-8dac-47f3-b8f3-c927f03ccd05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 3, server: 00000000000000000000000000000000000000000000000000000000000006a.rui77.com, port: 443, type: vmess, uuid: c5c32a05-8dac-47f3-b8f3-c927f03ccd05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 4, server: 00000000000000000000000000000000000000000000000000000000000005a.rui77.com, port: 80, type: vmess, uuid: c5c32a05-8dac-47f3-b8f3-c927f03ccd05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 5, server: 00000000000000000000000000000000000000000000000000000000000033a.rui77.com, port: 12356, type: vmess, uuid: c5c32a05-8dac-47f3-b8f3-c927f03ccd05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 6, server: 00000000000000000000000000000000000000000000000000000000000004a.rui77.com, port: 443, type: vmess, uuid: c5c32a05-8dac-47f3-b8f3-c927f03ccd05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 7, server: 00000000000000000000000000000000000000000000000000000000000027a.rui77.com, port: 52356, type: vmess, uuid: c5c32a05-8dac-47f3-b8f3-c927f03ccd05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 9, server: 00000000000000000000000000000000000000000000000000000000000008a.rui77.com, port: 443, type: vmess, uuid: c5c32a05-8dac-47f3-b8f3-c927f03ccd05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 8, server: 00000000000000000000000000000000000000000000000000000000000038a.rui77.com, port: 12356, type: vmess, uuid: c5c32a05-8dac-47f3-b8f3-c927f03ccd05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 10, server: 00000000000000000000000000000000000000000000000000000000000007a.rui77.com, port: 80, type: vmess, uuid: c5c32a05-8dac-47f3-b8f3-c927f03ccd05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: Taiwan(Taipei1), server: dgcm.pdjs.top, port: 49008, type: trojan, password: 0f3abc1b-5443-4edd-a012-886bf1a43898, skip-cert-verify: true, udp: true}
-  - {name: Japan(Osaka1) 002, server: dgcm.pdjs.top, port: 49006, type: trojan, password: 0f3abc1b-5443-4edd-a012-886bf1a43898, skip-cert-verify: true, udp: true}
-  - {name: U.S.A(Las Vegas), server: dgcm.pdjs.top, port: 49004, type: trojan, password: 0f3abc1b-5443-4edd-a012-886bf1a43898, skip-cert-verify: true, udp: true}
-  - {name: US, server: 208.72.153.94, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: IT, server: 92.223.79.25, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: RO, server: 5.181.25.81, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: DE, server: 80.240.22.250, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "Hotspot 🇭🇰[香港]", server: 194.156.99.39, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: 越南-1号, server: 103.173.255.21, port: 28443, type: trojan, password: 564f0597-8e7c-4aa9-95cc-51eb9480a4f3, skip-cert-verify: true, udp: true}
+  - {name: 越南-4号, server: 103.173.255.234, port: 28443, type: trojan, password: 564f0597-8e7c-4aa9-95cc-51eb9480a4f3, skip-cert-verify: true, udp: true}
+  - {name: 越南1G | 解锁流媒体, server: 103.195.236.24, port: 28443, type: trojan, password: 564f0597-8e7c-4aa9-95cc-51eb9480a4f3, skip-cert-verify: true, udp: true}
+  - {name: 台北Scloud-dip8, server: 120.195.181.51, port: 12352, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: 新加坡🇸🇬 2, server: 159.223.32.230, port: 8080, type: vmess, uuid: "e4e46233-376c-49be-b302-3ff6fce7a8fb", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: "%7B%22Host%22:%22159.223.32.230%22%7D"}}, udp: true}
+  - {name: U.S.A(Las Vegas), server: 165.154.246.195, port: 49004, type: trojan, password: 7e517fd6-b515-406d-a085-67af8b5f12e3, skip-cert-verify: true, udp: true}
+  - {name: 12, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 24, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 21, server: 120.195.181.51, port: 12353, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: 【新加坡2】不限流4元G口VPS-TG@whoareyou141, server: sg2.3320.top, port: 443, type: vmess, uuid: 4111ed89-8dc3-4102-867c-ae807a759d0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.3320.top}}, udp: true}
+  - {name: Hongkong (owloon), server: 165.154.246.195, port: 49001, type: trojan, password: 7e517fd6-b515-406d-a085-67af8b5f12e3, skip-cert-verify: true, udp: true}
+  - {name: 台北Scloud-dip7, server: 124.71.16.99, port: 12352, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: 台北Scloud-dip5, server: 124.71.16.99, port: 12353, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: true, udp: true}
+  - {name: Taiwan, server: pastry.taiwanesefood.link, port: 443, type: trojan, password: NnvKNoUu3uaud9Sp6ugzYvX92bwr6emJ, skip-cert-verify: true, udp: true}
+  - {name: HK-CN-刁包子专线, server: 120.232.132.120, port: 25682, type: trojan, password: M2e3c493, skip-cert-verify: true, udp: true}
+  - {name: 23, server: 14.29.124.174, port: 11019, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - Taiwan
-  - GB_06
-  - Japan(Osaka1) 2
-  - Japan(Osaka1) 001
+  - 香港雞蛋仔 1 001
+  - 新加坡辣蟹 2 001
+  - 新加坡叻沙 1 001
+  - 香港燒鴨飯 2 001
+  - 新加坡叻沙 1 002
+  - 香港燒鴨飯 2 002
+  - 香港雞蛋仔 1 002
+  - 台灣豬血湯 1
+  - 台灣牛舌餅 2
+  - 新加坡辣蟹 2 002
+  - 新加坡叻沙 1 003
+  - 香港燒鴨飯 2 003
+  - 新加坡辣蟹 2 003
+  - 新加坡叻沙 1 004
+  - 美國法士達 2
+  - 美國甜甜圈 1
+  - 香港雞蛋仔 1 003
+  - 🇯🇵 Japan 07
+  - 🇯🇵 Japan 06
+  - 🇯🇵 Japan 10
+  - 🇯🇵 Japan 09
+  - 🇯🇵 Japan 08
+  - 🇸🇬 Singapore 02
+  - 🇸🇬 Singapore 04
+  - 🇸🇬 Singapore 01 001
+  - 🇸🇬 Singapore 05
+  - "[v1] 新加坡・01"
+  - "[v1] 新加坡・02"
+  - "[v1] 日本・01"
+  - "[v1] 新加坡・03"
+  - "[v1] 台湾・03"
+  - "[v3] 台湾・01"
+  - "[v3] 日本・02"
+  - "[v3] 新加坡・03"
+  - "[v3] 台湾・02"
+  - "[v1] 新加坡・04"
+  - "[v3] 新加坡・04"
+  - "[v3] 台湾・04"
+  - "[v1] 台湾・02"
+  - "[v1] 美国・02"
+  - "[v3] 美国・03"
+  - "[v3] 美国・01"
+  - 日本 ❀大妮妮❀1倍 001
+  - 日本 ❀小妮妮❀1倍 001
+  - 台湾 ❀原生❀小妮妮❀1倍
+  - 日本原生1-负载均衡-解锁流媒体
+  - 🇸🇬 Singapore 01 002
+  - 🇸🇬 新加坡|IPLC|高速A|x1.3
+  - 29
+  - 台北Scloud-dip9
+  - 香港GCORE
+  - 日本 ❀小妮妮❀1倍 002
+  - Hongkong (New Territories)
+  - 🇺🇸United States 01
+  - 19
+  - 日本 ❀大妮妮❀1倍 002
+  - 日本NTT-(hkt) | 解锁流媒体
+  - 16
+  - 15
+  - 香港 ❀原生❀小妮妮❀1倍
   - 日本NTT-1号 | 解锁流媒体
-  - 越南-1号
-  - 越南-4号
+  - 香港GG
   - 越南-3号
   - 美国圣何塞-(hkt) | 解锁流媒体
-  - 美国洛杉矶-1号 | 解锁流媒体
-  - 德国-(hkt) | 解锁流媒体
-  - 美国圣何塞-2号 | 解锁流媒体
-  - 🇯🇵01沪日专线｜0x
-  - 🇯🇵02沪日专线｜0x
-  - 🇯🇵03沪日专线｜2x
-  - 🇯🇵04沪日专线｜2x
-  - 🇯🇵05沪日专线｜2x
-  - 🇲🇴01广奥专线｜2x
-  - 🇲🇴04广奥专线｜2x
-  - 🇲🇴02广奥专线｜2x
-  - 🇲🇴03广奥专线｜2x
-  - 🇲🇴05广奥专线｜2x
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 9
-  - 8
-  - 10
-  - Taiwan(Taipei1)
-  - Japan(Osaka1) 002
+  - 越南-1号
+  - 越南-4号
+  - 越南1G | 解锁流媒体
+  - 台北Scloud-dip8
+  - 新加坡🇸🇬 2
   - U.S.A(Las Vegas)
-  - US
-  - IT
-  - RO
-  - DE
-  - Hotspot 🇭🇰[香港]
+  - 12
+  - 24
+  - 21
+  - 【新加坡2】不限流4元G口VPS-TG@whoareyou141
+  - Hongkong (owloon)
+  - 台北Scloud-dip7
+  - 台北Scloud-dip5
+  - Taiwan
+  - HK-CN-刁包子专线
+  - 23
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - Taiwan
-  - GB_06
-  - Japan(Osaka1) 2
-  - Japan(Osaka1) 001
+  - 香港雞蛋仔 1 001
+  - 新加坡辣蟹 2 001
+  - 新加坡叻沙 1 001
+  - 香港燒鴨飯 2 001
+  - 新加坡叻沙 1 002
+  - 香港燒鴨飯 2 002
+  - 香港雞蛋仔 1 002
+  - 台灣豬血湯 1
+  - 台灣牛舌餅 2
+  - 新加坡辣蟹 2 002
+  - 新加坡叻沙 1 003
+  - 香港燒鴨飯 2 003
+  - 新加坡辣蟹 2 003
+  - 新加坡叻沙 1 004
+  - 美國法士達 2
+  - 美國甜甜圈 1
+  - 香港雞蛋仔 1 003
+  - 🇯🇵 Japan 07
+  - 🇯🇵 Japan 06
+  - 🇯🇵 Japan 10
+  - 🇯🇵 Japan 09
+  - 🇯🇵 Japan 08
+  - 🇸🇬 Singapore 02
+  - 🇸🇬 Singapore 04
+  - 🇸🇬 Singapore 01 001
+  - 🇸🇬 Singapore 05
+  - "[v1] 新加坡・01"
+  - "[v1] 新加坡・02"
+  - "[v1] 日本・01"
+  - "[v1] 新加坡・03"
+  - "[v1] 台湾・03"
+  - "[v3] 台湾・01"
+  - "[v3] 日本・02"
+  - "[v3] 新加坡・03"
+  - "[v3] 台湾・02"
+  - "[v1] 新加坡・04"
+  - "[v3] 新加坡・04"
+  - "[v3] 台湾・04"
+  - "[v1] 台湾・02"
+  - "[v1] 美国・02"
+  - "[v3] 美国・03"
+  - "[v3] 美国・01"
+  - 日本 ❀大妮妮❀1倍 001
+  - 日本 ❀小妮妮❀1倍 001
+  - 台湾 ❀原生❀小妮妮❀1倍
+  - 日本原生1-负载均衡-解锁流媒体
+  - 🇸🇬 Singapore 01 002
+  - 🇸🇬 新加坡|IPLC|高速A|x1.3
+  - 29
+  - 台北Scloud-dip9
+  - 香港GCORE
+  - 日本 ❀小妮妮❀1倍 002
+  - Hongkong (New Territories)
+  - 🇺🇸United States 01
+  - 19
+  - 日本 ❀大妮妮❀1倍 002
+  - 日本NTT-(hkt) | 解锁流媒体
+  - 16
+  - 15
+  - 香港 ❀原生❀小妮妮❀1倍
   - 日本NTT-1号 | 解锁流媒体
-  - 越南-1号
-  - 越南-4号
+  - 香港GG
   - 越南-3号
   - 美国圣何塞-(hkt) | 解锁流媒体
-  - 美国洛杉矶-1号 | 解锁流媒体
-  - 德国-(hkt) | 解锁流媒体
-  - 美国圣何塞-2号 | 解锁流媒体
-  - 🇯🇵01沪日专线｜0x
-  - 🇯🇵02沪日专线｜0x
-  - 🇯🇵03沪日专线｜2x
-  - 🇯🇵04沪日专线｜2x
-  - 🇯🇵05沪日专线｜2x
-  - 🇲🇴01广奥专线｜2x
-  - 🇲🇴04广奥专线｜2x
-  - 🇲🇴02广奥专线｜2x
-  - 🇲🇴03广奥专线｜2x
-  - 🇲🇴05广奥专线｜2x
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 9
-  - 8
-  - 10
-  - Taiwan(Taipei1)
-  - Japan(Osaka1) 002
+  - 越南-1号
+  - 越南-4号
+  - 越南1G | 解锁流媒体
+  - 台北Scloud-dip8
+  - 新加坡🇸🇬 2
   - U.S.A(Las Vegas)
-  - US
-  - IT
-  - RO
-  - DE
-  - Hotspot 🇭🇰[香港]
+  - 12
+  - 24
+  - 21
+  - 【新加坡2】不限流4元G口VPS-TG@whoareyou141
+  - Hongkong (owloon)
+  - 台北Scloud-dip7
+  - 台北Scloud-dip5
+  - Taiwan
+  - HK-CN-刁包子专线
+  - 23
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
