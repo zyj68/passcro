@@ -4,119 +4,383 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇨🇳 CN 1, server: liaoningddns.xyz, type: ssr, country: 🇨🇳 CN, port: 11428, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
-  - {name: 🇨🇳 TW 2, server: 1002tw01.tfzhc.top, type: trojan, country: 🇨🇳 TW, port: 443, password: ea48cdda-6db7-4f34-9d42-7bd9d41b4740, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 3, server: twa-zf.jiashumao.net, type: trojan, country: 🇨🇳 TW, port: 27919, password: d3225e74-8398-332e-8417-faf17753e709, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 4, server: HK-01.bestlink.ml, type: ss, country: 🇭🇰 HK, port: 11608, password: f6f86d3f-100b-4382-9639-7b1c567ac6ee, cipher: aes-256-gcm}
-  - {name: 🇨🇳 CN 5, server: hk-01.bestlink.ml, type: ss, country: 🇭🇰 HK, port: 11608, password: aa72849c-e76f-4c60-8a6e-4b78010ee05d, cipher: aes-256-gcm}
-  - {name: 🇨🇳 CN 6, server: trahk1.bitznet.one, type: trojan, country: 🇭🇰 HK, port: 32443, password: d91e58e8-0ce1-495d-b7a7-0bb96200884e, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE 7, server: dg.jiashumao.net, type: trojan, country: 🇩🇪 DE, port: 29956, password: d3225e74-8398-332e-8417-faf17753e709, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 8, server: JP-02.bestlink.ml, type: ss, country: 🇯🇵 JP, port: 13091, password: aa72849c-e76f-4c60-8a6e-4b78010ee05d, cipher: aes-256-gcm}
-  - {name: 🇨🇳 CN 9, server: liaoningddns.xyz, type: ssr, country: 🇭🇰 HK, port: 11421, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
-  - {name: 🇨🇳 CN 10, server: jp-01.bestlink.ml, type: ss, country: 🇯🇵 JP, port: 18952, password: aa72849c-e76f-4c60-8a6e-4b78010ee05d, cipher: aes-256-gcm}
-  - {name: 🇨🇳 CN 11, server: JP-01.bestlink.ml, type: ss, country: 🇯🇵 JP, port: 18952, password: f6f86d3f-100b-4382-9639-7b1c567ac6ee, cipher: aes-256-gcm}
-  - {name: 🇨🇳 CN 12, server: liaoningddns.xyz, type: ssr, country: 🇭🇰 HK, port: 11420, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
-  - {name: 🇮🇳 IN 13, server: 152.67.162.166, type: trojan, country: 🇮🇳 IN, port: 443, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 HK 14, server: 1002hk1326.tfzhc.top, type: trojan, country: 🇭🇰 HK, port: 443, password: ea48cdda-6db7-4f34-9d42-7bd9d41b4740, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 IN 15, server: 152.67.190.183, type: trojan, country: 🇮🇳 IN, port: 443, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 16, server: 14.29.124.168, type: ss, country: 🇨🇳 TW, port: 24007, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
-  - {name: 🇨🇳 CN 17, server: 14.29.124.168, type: ss, country: 🇨🇳 TW, port: 24001, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
-  - {name: 🇨🇳 CN 18, server: iepl10.dcnode.me, type: ss, country: 🇸🇬 SG, port: 10050, password: 2daf156a-b9ee-4671-913a-4339ddd39021, cipher: aes-128-gcm}
-  - {name: 🇨🇳 CN 19, server: sg-01.bestlink.ml, type: ss, country: 🇸🇬 SG, port: 60008, password: aa72849c-e76f-4c60-8a6e-4b78010ee05d, cipher: aes-256-gcm}
-  - {name: 🇰🇷 KR 20, server: 150.230.249.42, type: trojan, country: 🇰🇷 KR, port: 443, password: 0Y9gOHSdRt, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR 21, server: 144.24.72.126, type: trojan, country: 🇰🇷 KR, port: 443, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 22, server: sg-01.tiktokcdn.top, type: trojan, country: 🇸🇬 SG, port: 443, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 23, server: t3.mkitty.top, type: trojan, country: 🇸🇬 SG, port: 443, password: 71354f48-e8c8-4c4c-a967-47d7ac5e953c, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 24, server: iepl3.dcnode.me, type: ss, country: 🇸🇬 SG, port: 10043, password: 2daf156a-b9ee-4671-913a-4339ddd39021, cipher: aes-128-gcm}
-  - {name: 🇸🇬 SG 25, server: 924hk.tfzhc.top, type: trojan, country: 🇸🇬 SG, port: 44393, password: ea48cdda-6db7-4f34-9d42-7bd9d41b4740, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 26, server: liaoningddns.xyz, type: ssr, country: 🇸🇬 SG, port: 11422, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
-  - {name: 🇨🇳 CN 27, server: guangzhouddns.xyz, type: ssr, country: 🇺🇸 US, port: 11804, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
-  - {name: 🇺🇸 US 28, server: s2.hass.win, type: trojan, country: 🇺🇸 US, port: 12340, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 29, server: 129.146.242.130, type: trojan, country: 🇺🇸 US, port: 443, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 30, server: guangzhouddns.xyz, type: ssr, country: 🇺🇸 US, port: 11805, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
-  - {name: 🇺🇸 US 31, server: s2.hazz.win, type: trojan, country: 🇺🇸 US, port: 12340, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 32, server: US-01.bestlink.ml, type: ss, country: 🇺🇸 US, port: 51032, password: f6f86d3f-100b-4382-9639-7b1c567ac6ee, cipher: aes-256-gcm}
-  - {name: 🇯🇵 JP 33, server: 168.138.43.89, type: trojan, country: 🇯🇵 JP, port: 443, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 34, server: liaoningddns.xyz, type: ssr, country: 🇺🇸 US, port: 11423, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
-  - {name: 🇨🇳 CN 35, server: liaoningddns.xyz, type: ssr, country: 🇺🇸 US, port: 11427, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
+  - {name: 🇨🇳 CN 1, server: 14.29.230.228, type: trojan, country: 🇨🇳 CN, port: 13325, password: M07fa472, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 2, server: liaoningddns.xyz, type: ssr, country: 🇨🇳 CN, port: 11501, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
+  - {name: 🇨🇳 CN 3, server: guangzhouddns.xyz, type: ssr, country: 🇨🇳 CN, port: 11805, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
+  - {name: 🇨🇳 CN 4, server: lld9k6.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇨🇳 TW, port: 12948, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 5, server: lld9k6.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇨🇳 TW, port: 13318, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 6, server: mjk6.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇨🇳 TW, port: 13301, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 7, server: 14.29.124.168, type: ss, country: 🇨🇳 TW, port: 24008, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
+  - {name: 🇨🇳 CN 8, server: lld9k6.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇨🇳 TW, port: 13316, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 9, server: 14.29.230.228, type: trojan, country: 🇫🇷 FR, port: 13330, password: M0ef2eef, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 10, server: 132.145.51.172, type: trojan, country: 🇬🇧 GB, port: 443, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 11, server: 146.19.230.241, type: trojan, country: 🇬🇧 GB, port: 443, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 12, server: 180.101.193.226, type: ss, country: 🇭🇰 HK, port: 10068, password: RsDk3peCSuo76B68, cipher: aes-256-cfb}
+  - {name: 🇨🇳 CN 13, server: meq886.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13495, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 14, server: aaf8.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13263, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 15, server: x321.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13644, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 16, server: meq886.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13497, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 17, server: x321.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13543, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 18, server: z5is.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13181, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 19, server: x321.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13445, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 20, server: meq886.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13451, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 21, server: tata12.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13488, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 22, server: z5is.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13185, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 23, server: aaf8.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13534, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 24, server: z5is.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13186, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 25, server: cd69.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13639, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 26, server: liaoningddns.xyz, type: ssr, country: 🇭🇰 HK, port: 11420, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: TURFNFlXSXhNakF5TXk1dGFXTnliM052Wm5RdVkyOXQ}
+  - {name: 🇨🇳 CN 27, server: aaf8.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13422, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 28, server: z5sa6is.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13681, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 29, server: z5is.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13184, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 30, server: meq886.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13494, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 31, server: tata12.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13642, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 32, server: z5is.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13183, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 33, server: bbq886.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13261, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 34, server: meq886.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13450, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 35, server: cd69.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13640, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 HK 36, server: hk-3.tiktokcdn.sbs, type: trojan, country: 🇭🇰 HK, port: 56810, password: FgnHZ6k9qg, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 37, server: pull-cache-lu01.xyx-xylo.com, type: trojan, country: 🇭🇰 HK, port: 19701, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 38, server: cd69.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13489, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 39, server: 183.232.141.154, type: trojan, country: 🇭🇰 HK, port: 19204, password: a992be42-bed4-3037-8788-9e860cd635d3, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 40, server: tata12.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13545, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 41, server: tata12.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13501, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 42, server: tata12.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13267, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 43, server: z5sa6is.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇭🇰 HK, port: 13680, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 44, server: q8eq.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇯🇵 JP, port: 13589, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 45, server: q8eq.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇯🇵 JP, port: 13593, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 46, server: q8eq.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇯🇵 JP, port: 13590, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 47, server: q8eq.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇯🇵 JP, port: 13594, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 48, server: 14.29.124.168, type: ss, country: 🇨🇳 TW, port: 24007, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
+  - {name: 🇷🇴 RO 49, server: hk-1.tiktokcdn.sbs, type: trojan, country: 🇭🇰 HK, port: 12288, password: OsFEF0P0ia, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 50, server: q8eq.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇯🇵 JP, port: 13592, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 51, server: 14.29.124.168, type: ss, country: 🇨🇳 TW, port: 24009, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
+  - {name: 🇨🇳 CN 52, server: guangzhouddns.xyz, type: ssr, country: 🇯🇵 JP, port: 11842, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
+  - {name: 🇨🇳 HK 53, server: 1002hk1326.tfzhc.top, type: trojan, country: 🇭🇰 HK, port: 443, password: 2be3639a-f4cd-4161-ba78-49842b2269f6, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 54, server: 14.29.124.168, type: ss, country: 🇨🇳 TW, port: 24005, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
+  - {name: 🇯🇵 JP 55, server: 212.50.246.229, type: trojan, country: 🇯🇵 JP, port: 50500, password: 025e0bd5-0136-467a-8120-4a8c656a23bd, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 56, server: 212.50.246.229, type: trojan, country: 🇯🇵 JP, port: 50404, password: 00de03f4-8d4a-4694-a292-1c68afe9e1e9, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 57, server: 168.138.44.176, type: trojan, country: 🇯🇵 JP, port: 443, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 IN 58, server: 152.67.162.166, type: trojan, country: 🇮🇳 IN, port: 443, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 IN 59, server: 152.67.160.174, type: trojan, country: 🇮🇳 IN, port: 443, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 60, server: 168.138.43.89, type: trojan, country: 🇯🇵 JP, port: 443, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 61, server: 14.29.124.168, type: ss, country: 🇨🇳 TW, port: 24002, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
+  - {name: 🇨🇳 CN 62, server: wegm63.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13580, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 63, server: 14.29.124.168, type: ss, country: 🇨🇳 TW, port: 24006, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
+  - {name: 🇰🇷 KR 64, server: 138.2.113.248, type: trojan, country: 🇰🇷 KR, port: 443, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 65, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13574, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 66, server: ngs9.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13438, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 67, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13053, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 68, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13578, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 69, server: ngs9.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13044, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 70, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13052, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 71, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13373, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 72, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13358, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 73, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13370, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 74, server: wegm63.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13582, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 75, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13054, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 76, server: ngs9.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13440, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 77, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13050, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 78, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13372, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 79, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13570, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 80, server: guangzhouddns.xyz, type: ssr, country: 🇸🇬 SG, port: 11806, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
+  - {name: 🇨🇳 CN 81, server: guangzhouddns.xyz, type: ssr, country: 🇸🇬 SG, port: 11807, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
+  - {name: 🇨🇳 CN 82, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 12981, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 83, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 12984, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 84, server: ngs9.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13042, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 85, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13357, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 86, server: liaoningddns.xyz, type: ssr, country: 🇸🇬 SG, port: 11422, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: TURFNFlXSXhNakF5TXk1dGFXTnliM052Wm5RdVkyOXQ}
+  - {name: 🇨🇳 CN 87, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13354, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 88, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13355, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 89, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13566, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 90, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13556, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 91, server: wegm63.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13528, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 92, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 12985, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 93, server: wegm63.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13584, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 94, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13560, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 95, server: r97q.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13351, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 96, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 12939, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 97, server: ngs9.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13439, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 98, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13576, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 99, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 12980, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 100, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13352, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 101, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13558, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 102, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13564, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇰🇷 KR 103, server: 138.2.113.84, type: trojan, country: 🇰🇷 KR, port: 443, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 104, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13374, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 105, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13572, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 106, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13371, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 107, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13350, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 108, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 12983, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇸🇬 SG 109, server: 159.223.89.239, type: trojan, country: 🇸🇬 SG, port: 443, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 110, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13051, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 111, server: gf6s.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 12938, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 112, server: eqwr51.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇸🇬 SG, port: 13568, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇸🇬 SG 113, server: 924hk02.tfzhc.top, type: trojan, country: 🇸🇬 SG, port: 44388, password: 2be3639a-f4cd-4161-ba78-49842b2269f6, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 114, server: bb29cs.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇺🇸 US, port: 13638, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 115, server: 14.29.230.228, type: trojan, country: 🇹🇷 TR, port: 13331, password: M861a23a, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 116, server: bb29cs.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇺🇸 US, port: 13628, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇺🇸 US 117, server: spotted.bigkangaroo.net, type: trojan, country: 🇺🇸 US, port: 443, password: ZCESAylB2u5jga736e8CTN3DcFCAOYz0DlDyx9F3ZpXnSp3IYRa4RwOSqe8Kax, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 118, server: bb29cs.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇺🇸 US, port: 13634, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 119, server: bb29cs.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇺🇸 US, port: 13636, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 120, server: bb29cs.cdn.node.a.ddns-ounk.com, type: ssr, country: 🇺🇸 US, port: 13629, password: Cskw6d, cipher: rc4-md5, protocol: auth_aes128_md5, protocol-param: 205889:AHjsJP, obfs: tls1.2_ticket_auth, obfs-param: NzQzNmYyMDU4ODkubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 121, server: liaoningddns.xyz, type: ssr, country: 🇺🇸 US, port: 11427, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
+  - {name: 🇺🇸 US 122, server: 138.124.183.222, type: trojan, country: 🇺🇸 US, port: 443, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 123, server: nice-jp01.tiktokcdn.buzz, type: trojan, country: 🇺🇸 US, port: 443, password: BXE9notY, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
   - 🇨🇳 CN 1
-  - 🇨🇳 TW 2
+  - 🇨🇳 CN 2
   - 🇨🇳 CN 3
   - 🇨🇳 CN 4
   - 🇨🇳 CN 5
   - 🇨🇳 CN 6
-  - 🇩🇪 DE 7
+  - 🇨🇳 CN 7
   - 🇨🇳 CN 8
   - 🇨🇳 CN 9
-  - 🇨🇳 CN 10
-  - 🇨🇳 CN 11
+  - 🇬🇧 GB 10
+  - 🇬🇧 GB 11
   - 🇨🇳 CN 12
-  - 🇮🇳 IN 13
-  - 🇨🇳 HK 14
-  - 🇮🇳 IN 15
+  - 🇨🇳 CN 13
+  - 🇨🇳 CN 14
+  - 🇨🇳 CN 15
   - 🇨🇳 CN 16
   - 🇨🇳 CN 17
   - 🇨🇳 CN 18
   - 🇨🇳 CN 19
-  - 🇰🇷 KR 20
-  - 🇰🇷 KR 21
-  - 🇸🇬 SG 22
-  - 🇸🇬 SG 23
+  - 🇨🇳 CN 20
+  - 🇨🇳 CN 21
+  - 🇨🇳 CN 22
+  - 🇨🇳 CN 23
   - 🇨🇳 CN 24
-  - 🇸🇬 SG 25
+  - 🇨🇳 CN 25
   - 🇨🇳 CN 26
   - 🇨🇳 CN 27
-  - 🇺🇸 US 28
-  - 🇺🇸 US 29
+  - 🇨🇳 CN 28
+  - 🇨🇳 CN 29
   - 🇨🇳 CN 30
-  - 🇺🇸 US 31
+  - 🇨🇳 CN 31
   - 🇨🇳 CN 32
-  - 🇯🇵 JP 33
+  - 🇨🇳 CN 33
   - 🇨🇳 CN 34
   - 🇨🇳 CN 35
+  - 🇨🇳 HK 36
+  - 🇨🇳 CN 37
+  - 🇨🇳 CN 38
+  - 🇨🇳 CN 39
+  - 🇨🇳 CN 40
+  - 🇨🇳 CN 41
+  - 🇨🇳 CN 42
+  - 🇨🇳 CN 43
+  - 🇨🇳 CN 44
+  - 🇨🇳 CN 45
+  - 🇨🇳 CN 46
+  - 🇨🇳 CN 47
+  - 🇨🇳 CN 48
+  - 🇷🇴 RO 49
+  - 🇨🇳 CN 50
+  - 🇨🇳 CN 51
+  - 🇨🇳 CN 52
+  - 🇨🇳 HK 53
+  - 🇨🇳 CN 54
+  - 🇯🇵 JP 55
+  - 🇯🇵 JP 56
+  - 🇯🇵 JP 57
+  - 🇮🇳 IN 58
+  - 🇮🇳 IN 59
+  - 🇯🇵 JP 60
+  - 🇨🇳 CN 61
+  - 🇨🇳 CN 62
+  - 🇨🇳 CN 63
+  - 🇰🇷 KR 64
+  - 🇨🇳 CN 65
+  - 🇨🇳 CN 66
+  - 🇨🇳 CN 67
+  - 🇨🇳 CN 68
+  - 🇨🇳 CN 69
+  - 🇨🇳 CN 70
+  - 🇨🇳 CN 71
+  - 🇨🇳 CN 72
+  - 🇨🇳 CN 73
+  - 🇨🇳 CN 74
+  - 🇨🇳 CN 75
+  - 🇨🇳 CN 76
+  - 🇨🇳 CN 77
+  - 🇨🇳 CN 78
+  - 🇨🇳 CN 79
+  - 🇨🇳 CN 80
+  - 🇨🇳 CN 81
+  - 🇨🇳 CN 82
+  - 🇨🇳 CN 83
+  - 🇨🇳 CN 84
+  - 🇨🇳 CN 85
+  - 🇨🇳 CN 86
+  - 🇨🇳 CN 87
+  - 🇨🇳 CN 88
+  - 🇨🇳 CN 89
+  - 🇨🇳 CN 90
+  - 🇨🇳 CN 91
+  - 🇨🇳 CN 92
+  - 🇨🇳 CN 93
+  - 🇨🇳 CN 94
+  - 🇨🇳 CN 95
+  - 🇨🇳 CN 96
+  - 🇨🇳 CN 97
+  - 🇨🇳 CN 98
+  - 🇨🇳 CN 99
+  - 🇨🇳 CN 100
+  - 🇨🇳 CN 101
+  - 🇨🇳 CN 102
+  - 🇰🇷 KR 103
+  - 🇨🇳 CN 104
+  - 🇨🇳 CN 105
+  - 🇨🇳 CN 106
+  - 🇨🇳 CN 107
+  - 🇨🇳 CN 108
+  - 🇸🇬 SG 109
+  - 🇨🇳 CN 110
+  - 🇨🇳 CN 111
+  - 🇨🇳 CN 112
+  - 🇸🇬 SG 113
+  - 🇨🇳 CN 114
+  - 🇨🇳 CN 115
+  - 🇨🇳 CN 116
+  - 🇺🇸 US 117
+  - 🇨🇳 CN 118
+  - 🇨🇳 CN 119
+  - 🇨🇳 CN 120
+  - 🇨🇳 CN 121
+  - 🇺🇸 US 122
+  - 🇯🇵 JP 123
 - name: ♻️ automatic
   type: url-test
   proxies:
   - 🇨🇳 CN 1
-  - 🇨🇳 TW 2
+  - 🇨🇳 CN 2
   - 🇨🇳 CN 3
   - 🇨🇳 CN 4
   - 🇨🇳 CN 5
   - 🇨🇳 CN 6
-  - 🇩🇪 DE 7
+  - 🇨🇳 CN 7
   - 🇨🇳 CN 8
   - 🇨🇳 CN 9
-  - 🇨🇳 CN 10
-  - 🇨🇳 CN 11
+  - 🇬🇧 GB 10
+  - 🇬🇧 GB 11
   - 🇨🇳 CN 12
-  - 🇮🇳 IN 13
-  - 🇨🇳 HK 14
-  - 🇮🇳 IN 15
+  - 🇨🇳 CN 13
+  - 🇨🇳 CN 14
+  - 🇨🇳 CN 15
   - 🇨🇳 CN 16
   - 🇨🇳 CN 17
   - 🇨🇳 CN 18
   - 🇨🇳 CN 19
-  - 🇰🇷 KR 20
-  - 🇰🇷 KR 21
-  - 🇸🇬 SG 22
-  - 🇸🇬 SG 23
+  - 🇨🇳 CN 20
+  - 🇨🇳 CN 21
+  - 🇨🇳 CN 22
+  - 🇨🇳 CN 23
   - 🇨🇳 CN 24
-  - 🇸🇬 SG 25
+  - 🇨🇳 CN 25
   - 🇨🇳 CN 26
   - 🇨🇳 CN 27
-  - 🇺🇸 US 28
-  - 🇺🇸 US 29
+  - 🇨🇳 CN 28
+  - 🇨🇳 CN 29
   - 🇨🇳 CN 30
-  - 🇺🇸 US 31
+  - 🇨🇳 CN 31
   - 🇨🇳 CN 32
-  - 🇯🇵 JP 33
+  - 🇨🇳 CN 33
   - 🇨🇳 CN 34
   - 🇨🇳 CN 35
+  - 🇨🇳 HK 36
+  - 🇨🇳 CN 37
+  - 🇨🇳 CN 38
+  - 🇨🇳 CN 39
+  - 🇨🇳 CN 40
+  - 🇨🇳 CN 41
+  - 🇨🇳 CN 42
+  - 🇨🇳 CN 43
+  - 🇨🇳 CN 44
+  - 🇨🇳 CN 45
+  - 🇨🇳 CN 46
+  - 🇨🇳 CN 47
+  - 🇨🇳 CN 48
+  - 🇷🇴 RO 49
+  - 🇨🇳 CN 50
+  - 🇨🇳 CN 51
+  - 🇨🇳 CN 52
+  - 🇨🇳 HK 53
+  - 🇨🇳 CN 54
+  - 🇯🇵 JP 55
+  - 🇯🇵 JP 56
+  - 🇯🇵 JP 57
+  - 🇮🇳 IN 58
+  - 🇮🇳 IN 59
+  - 🇯🇵 JP 60
+  - 🇨🇳 CN 61
+  - 🇨🇳 CN 62
+  - 🇨🇳 CN 63
+  - 🇰🇷 KR 64
+  - 🇨🇳 CN 65
+  - 🇨🇳 CN 66
+  - 🇨🇳 CN 67
+  - 🇨🇳 CN 68
+  - 🇨🇳 CN 69
+  - 🇨🇳 CN 70
+  - 🇨🇳 CN 71
+  - 🇨🇳 CN 72
+  - 🇨🇳 CN 73
+  - 🇨🇳 CN 74
+  - 🇨🇳 CN 75
+  - 🇨🇳 CN 76
+  - 🇨🇳 CN 77
+  - 🇨🇳 CN 78
+  - 🇨🇳 CN 79
+  - 🇨🇳 CN 80
+  - 🇨🇳 CN 81
+  - 🇨🇳 CN 82
+  - 🇨🇳 CN 83
+  - 🇨🇳 CN 84
+  - 🇨🇳 CN 85
+  - 🇨🇳 CN 86
+  - 🇨🇳 CN 87
+  - 🇨🇳 CN 88
+  - 🇨🇳 CN 89
+  - 🇨🇳 CN 90
+  - 🇨🇳 CN 91
+  - 🇨🇳 CN 92
+  - 🇨🇳 CN 93
+  - 🇨🇳 CN 94
+  - 🇨🇳 CN 95
+  - 🇨🇳 CN 96
+  - 🇨🇳 CN 97
+  - 🇨🇳 CN 98
+  - 🇨🇳 CN 99
+  - 🇨🇳 CN 100
+  - 🇨🇳 CN 101
+  - 🇨🇳 CN 102
+  - 🇰🇷 KR 103
+  - 🇨🇳 CN 104
+  - 🇨🇳 CN 105
+  - 🇨🇳 CN 106
+  - 🇨🇳 CN 107
+  - 🇨🇳 CN 108
+  - 🇸🇬 SG 109
+  - 🇨🇳 CN 110
+  - 🇨🇳 CN 111
+  - 🇨🇳 CN 112
+  - 🇸🇬 SG 113
+  - 🇨🇳 CN 114
+  - 🇨🇳 CN 115
+  - 🇨🇳 CN 116
+  - 🇺🇸 US 117
+  - 🇨🇳 CN 118
+  - 🇨🇳 CN 119
+  - 🇨🇳 CN 120
+  - 🇨🇳 CN 121
+  - 🇺🇸 US 122
+  - 🇯🇵 JP 123
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
