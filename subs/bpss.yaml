@@ -4,146 +4,173 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇰🇷 _KR_韩国->🇺🇸_US_美国, server: 152.67.213.242, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国, server: 150.230.217.213, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, skip-cert-verify: false}
-  - {name: 🇯🇵 _JP_日本, server: 168.138.44.176, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 2, server: 129.146.242.130, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: false}
-  - {name: 🇭🇰 _HK_香港, server: 47.243.143.215, port: 64008, type: vmess, uuid: dae844ab-4613-4884-893e-14b74ba4b687, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.143.215]}}}
-  - {name: 🇺🇸 _US_美国 3, server: 150.230.249.42, port: 443, type: trojan, password: 0Y9gOHSdRt, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 4, server: 129.146.133.157, port: 51009, type: vmess, uuid: 81714cef-9bde-4a08-aa50-d6bc0172d78b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 _HK_香港 2, server: 47.243.241.250, port: 54703, type: vmess, uuid: 95b8821c-3432-4630-ad55-35ab873a0796, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.241.250]}}}
-  - {name: 🇺🇸 _US_美国 5, server: 138.2.113.248, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: false}
-  - {name: 🇭🇰 _HK_香港 3, server: 47.242.164.139, port: 21853, type: vmess, uuid: 5a67daf6-438b-46d6-9343-e7bc84fd2038, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.164.139]}}}
-  - {name: 🇭🇰 _HK_香港 4, server: 47.243.250.21, port: 32895, type: vmess, uuid: ae7f10da-663f-4fe2-a141-a23eab12e83e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.250.21]}}}
-  - {name: _CN_中国, server: 43.154.31.230, port: 25916, type: vmess, uuid: cfd98bac-dc87-4e95-a979-b481aed312ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.154.31.230]}}}
-  - {name: 🇭🇰 _HK_香港 5, server: 194.156.99.39, port: 443, type: trojan, password: xxoo, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 6, server: 47.87.166.143, port: 44443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇬🇧 _GB_英国, server: 35.176.191.234, port: 50000, type: ss, cipher: aes-256-cfb, password: "!<str> 3135771619"}
-  - {name: 🇭🇰 _HK_香港 6, server: 8.210.125.63, port: 56911, type: vmess, uuid: 602dc255-5441-40c5-bcf6-2ca4a12d90a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.125.63]}}}
-  - {name: 🇭🇰 _HK_香港 7, server: 47.242.185.162, port: 46143, type: vmess, uuid: 5a6a6f9f-fc53-4fa8-8352-f8cc34bcf131, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.185.162]}}}
-  - {name: 🇭🇰 _HK_香港 8, server: 47.243.248.22, port: 38120, type: vmess, uuid: 29d435a4-b7fb-44db-9119-4ede4e22c250, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.248.22]}}}
-  - {name: 🇦🇺 _AU_澳大利亚, server: 152.67.98.30, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: false}
-  - {name: 🇫🇷 _FR_法国, server: 5.188.93.41, port: 50000, type: ss, cipher: aes-256-cfb, password: "!<str> 3135771619"}
-  - {name: 🇮🇳 _IN_印度, server: 152.67.160.174, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: false}
-  - {name: 🇭🇰 _HK_香港 9, server: 47.243.249.85, port: 31230, type: vmess, uuid: 19499d00-ae11-4520-942c-e4b7be10739d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.249.85]}}}
-  - {name: 🇭🇰 _HK_香港 10, server: 47.243.244.200, port: 51535, type: vmess, uuid: 98a2ba95-d179-4563-82be-ea5c897be747, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.244.200]}}}
-  - {name: 🇦🇺 _AU_澳大利亚 2, server: 140.238.205.173, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, skip-cert-verify: false}
-  - {name: 🇮🇱 _IL_以色列, server: 129.159.139.101, port: 443, type: vmess, uuid: b7519a6f-c1de-4667-e606-b60c65d19078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇰🇷 _KR_韩国, server: 146.56.176.239, port: 443, type: trojan, password: a153fb4e-6d1b-4db0-b03d-acb4012b7198, skip-cert-verify: false}
-  - {name: 🇭🇰 _HK_香港 11, server: 47.243.108.35, port: 39729, type: vmess, uuid: dc47d16f-d3e0-4b37-bde4-218e90144a8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.108.35]}}}
-  - {name: 🇫🇷 _FR_法国 2, server: 54.38.144.255, port: 50000, type: ss, cipher: aes-256-cfb, password: "!<str> 3135771619"}
-  - {name: 🇸🇬 _SG_新加坡, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: _CN_中国 2, server: 43.154.34.49, port: 23183, type: vmess, uuid: b402a4af-285a-463e-c3a7-53f91efdec78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 _HK_香港 12, server: 47.243.187.152, port: 61847, type: vmess, uuid: af998f95-c214-418c-9ad2-cdf55ed755b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.187.152]}}}
-  - {name: 🇺🇸 _US_美国 7, server: 138.2.45.243, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, skip-cert-verify: false}
-  - {name: 🇮🇳 _IN_印度 2, server: 152.67.162.166, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, skip-cert-verify: false}
-  - {name: 🇸🇬 _SG_新加坡 2, server: 81.90.188.58, port: 50000, type: ss, cipher: aes-256-cfb, password: "!<str> 3135771619"}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港, server: 14.29.124.174, port: 11009, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港 2, server: 14.29.124.174, port: 11011, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港 3, server: 14.29.124.174, port: 11044, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港 4, server: 14.29.124.174, port: 11050, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 🇨🇿 _CZ_捷克, server: 185.253.47.79, port: 443, type: trojan, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: false}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港 5, server: 14.29.124.174, port: 11036, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 🇬🇧 _GB_英国 2, server: 144.24.72.126, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: false}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港 6, server: 14.29.124.174, port: 11048, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港 7, server: 14.29.124.174, port: 11020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 🇺🇸 _US_美国 8, server: 20.210.122.21, port: 443, type: ss, cipher: aes-256-gcm, password: 233blog.com}
+  - {type: ssr, name: 🇭🇰_TG频道@baipiaoeverything_1, server: 168.70.92.12, port: 443, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 53925:hjgjuy6t655jjg}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_2, server: 116.162.120.23, port: 560, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 53925:hjgjuy6t655jjg}
+  - {type: trojan, name: 🇺🇸_TG频道@baipiaoeverything_3, server: sctw7.ddns-pop.cyou, port: 24568, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: 18-166-29-57.nhost.00cdn.com}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_4, server: 223.166.145.153, port: 567, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 53925:hjgjuy6t655jjg}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_5, server: 116.162.120.25, port: 568, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 53925:hjgjuy6t655jjg}
+  - {type: vmess, name: 🇺🇸_TG频道@baipiaoeverything_6, ws-opts: {path: /path/243535322906, headers: {host: www.68497352.xyz}}, server: 23.224.2.212, port: 443, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, network: ws, tls: true}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_7, server: 183.232.141.87, port: 562, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 53925:hjgjuy6t655jjg}
+  - {type: vmess, name: 🇯🇵_TG频道@baipiaoeverything_8, ws-opts: {path: /path/243535322906, headers: {host: www.96114262.xyz}}, server: 185.160.24.48, port: 443, uuid: a8a7fc23-c6e6-4505-a173-ae67dfb06f28, alterId: 64, cipher: auto, network: ws, tls: true}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_9, server: eduall.buzzline.org, port: 562, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_10, server: 223.166.145.50, port: 565, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 53925:hjgjuy6t655jjg}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_11, server: usstartus2.eucdurl.me, port: 565, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_12, server: 183.232.141.119, port: 561, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 53925:hjgjuy6t655jjg}
+  - {type: ss, name: 🇨🇳_TG频道@baipiaoeverything_13, server: 14.29.124.174, port: 11011, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {type: vmess, name: 🇸🇬_TG频道@baipiaoeverything_14, ws-opts: {path: /path/243535322906, headers: {host: www.66961389.xyz}}, server: 23.106.249.2, port: 443, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, network: ws, tls: true}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_15, server: 116.162.120.24, port: 560, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 53925:hjgjuy6t655jjg}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_16, server: 183.232.141.82, port: 560, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 53925:hjgjuy6t655jjg}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_17, server: 183.232.141.114, port: 564, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: trojan, name: 🇰🇷_TG频道@baipiaoeverything_18, server: sctw2.ddns-pop.cyou, port: 24567, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: 18-166-29-57.nhost.00cdn.com}
+  - {type: ss, name: 🇺🇸_TG频道@baipiaoeverything_19, server: 20.210.122.21, port: 443, cipher: aes-256-gcm, password: 233blog.com}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_20, server: 183.232.141.120, port: 565, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_21, server: cucshk4.debugex.xyz, port: 562, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: trojan, name: 🇰🇷_TG频道@baipiaoeverything_22, server: sctw8.ddns-pop.cyou, port: 24568, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: 18-166-29-57.nhost.00cdn.com}
+  - {type: vmess, name: 🇭🇰_TG频道@baipiaoeverything_23, ws-opts: {path: /path/243535322906, headers: {host: www.83259712.xyz}}, server: 143.92.52.155, port: 443, uuid: dca5e96d-678c-46c4-bafe-f0d47a6c2c08, alterId: 64, cipher: auto, network: ws, tls: true}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_24, server: 183.232.141.121, port: 560, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: vmess, name: 🇨🇳_TG频道@baipiaoeverything_25, server: 111.45.22.187, port: 50173, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, network: tcp}
+  - {type: trojan, name: TG频道@baipiaoeverything_26, server: 103.173.254.43, port: 443, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: xwascawz.vzwzasc.cn}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_27, server: cmlayer02.debugex.xyz, port: 601, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: ss, name: 🇬🇧_TG频道@baipiaoeverything_28, server: 35.176.191.234, port: 50000, cipher: aes-256-cfb, password: 3135771619}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_29, server: cnallaz.eucdurl.me, port: 564, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: ss, name: 🇫🇷_TG频道@baipiaoeverything_30, server: 54.38.144.255, port: 50000, cipher: aes-256-cfb, password: 3135771619}
+  - {type: trojan, name: 🇺🇸_TG频道@baipiaoeverything_31, server: scus2.ddns-pop.cyou, port: 24567, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: sdhawuyfkjuwx.vzwzasc.cn}
+  - {type: ss, name: 🇸🇬_TG频道@baipiaoeverything_32, server: 81.90.188.58, port: 50000, cipher: aes-256-cfb, password: 3135771619}
+  - {type: trojan, name: 🇩🇪_TG频道@baipiaoeverything_33, server: sctw5.ddns-pop.cyou, port: 24567, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: 18-166-29-57.nhost.00cdn.com}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_34, server: 183.232.141.117, port: 561, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: trojan, name: 🇹🇼_TG频道@baipiaoeverything_35, server: tw222.ddns-pop.cyou, port: 45646, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: jdawlknxihaowd.vzwzasc.cn}
+  - {type: trojan, name: TG频道@baipiaoeverything_36, server: 103.173.254.205, port: 443, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: dauwxncawx.vzwzasc.cn}
+  - {type: ssr, name: 🇭🇰_TG频道@baipiaoeverything_37, server: 119.237.195.230, port: 543, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 53925:hjgjuy6t655jjg}
+  - {type: trojan, name: 🇰🇷_TG频道@baipiaoeverything_38, server: sctw1.ddns-pop.cyou, port: 24567, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: 18-166-29-57.nhost.00cdn.com}
+  - {type: vmess, name: 🇨🇳_TG频道@baipiaoeverything_39, server: 111.23.252.218, port: 59902, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, network: tcp}
+  - {type: trojan, name: TG频道@baipiaoeverything_40, server: 103.173.255.200, port: 443, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: hiubbxiygcwax.vzwzasc.cn}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_41, server: zgrefgd03.standurl.xyz, port: 561, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_42, server: 112.64.53.151, port: 568, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: vmess, name: 🇹🇼_TG频道@baipiaoeverything_43, ws-opts: {path: /path/243535322906, headers: {host: www.33061222.xyz}}, server: 211.23.160.243, port: 443, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, network: ws, tls: true}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_44, server: cnrefhk01.standurl.xyz, port: 560, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_45, server: 183.232.141.107, port: 560, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ==, protocol-param: 53925:hjgjuy6t655jjg}
+  - {type: trojan, name: TG频道@baipiaoeverything_46, server: 103.173.155.211, port: 443, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: sdhawlhxiuhawox.vzwzasc.cn}
+  - {type: trojan, name: 🇰🇷_TG频道@baipiaoeverything_47, server: sctw6.ddns-pop.cyou, port: 24567, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: 18-166-29-57.nhost.00cdn.com}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_48, server: cngdcm.debugex.xyz, port: 562, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: ss, name: 🇫🇷_TG频道@baipiaoeverything_49, server: 5.188.93.41, port: 50000, cipher: aes-256-cfb, password: 3135771619}
+  - {type: ssr, name: 🇨🇳_TG频道@baipiaoeverything_50, server: shzzzhk.eucdurl.me, port: 561, protocol: auth_aes128_md5, cipher: chacha20-ietf, obfs: plain, password: mblank1port, protocol-param: 28568:PUacEInVDcbiFhl4}
+  - {type: trojan, name: 🇺🇸_TG频道@baipiaoeverything_51, server: scus3.ddns-pop.cyou, port: 24567, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: sdhawuyfkjuwx.vzwzasc.cn}
+  - {type: vmess, name: 🇺🇸_TG频道@baipiaoeverything_52, ws-opts: {path: /path/243535322906, headers: {host: www.67815682.xyz}}, server: 104.233.228.136, port: 443, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, network: ws, tls: true}
+  - {type: trojan, name: 🇭🇰_TG频道@baipiaoeverything_53, server: sctw3.ddns-pop.cyou, port: 24567, password: 64c1ad54-b5a7-3bb4-b515-5cd94183bf58, udp: true, skip-cert-verify: true, sni: 18-166-29-57.nhost.00cdn.com}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 🇰🇷 _KR_韩国->🇺🇸_US_美国
-  - 🇺🇸 _US_美国
-  - 🇯🇵 _JP_日本
-  - 🇺🇸 _US_美国 2
-  - 🇭🇰 _HK_香港
-  - 🇺🇸 _US_美国 3
-  - 🇺🇸 _US_美国 4
-  - 🇭🇰 _HK_香港 2
-  - 🇺🇸 _US_美国 5
-  - 🇭🇰 _HK_香港 3
-  - 🇭🇰 _HK_香港 4
-  - _CN_中国
-  - 🇭🇰 _HK_香港 5
-  - 🇺🇸 _US_美国 6
-  - 🇬🇧 _GB_英国
-  - 🇭🇰 _HK_香港 6
-  - 🇭🇰 _HK_香港 7
-  - 🇭🇰 _HK_香港 8
-  - 🇦🇺 _AU_澳大利亚
-  - 🇫🇷 _FR_法国
-  - 🇮🇳 _IN_印度
-  - 🇭🇰 _HK_香港 9
-  - 🇭🇰 _HK_香港 10
-  - 🇦🇺 _AU_澳大利亚 2
-  - 🇮🇱 _IL_以色列
-  - 🇰🇷 _KR_韩国
-  - 🇭🇰 _HK_香港 11
-  - 🇫🇷 _FR_法国 2
-  - 🇸🇬 _SG_新加坡
-  - _CN_中国 2
-  - 🇭🇰 _HK_香港 12
-  - 🇺🇸 _US_美国 7
-  - 🇮🇳 _IN_印度 2
-  - 🇸🇬 _SG_新加坡 2
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港 2
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港 3
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港 4
-  - 🇨🇿 _CZ_捷克
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港 5
-  - 🇬🇧 _GB_英国 2
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港 6
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港 7
-  - 🇺🇸 _US_美国 8
+  - 🇭🇰_TG频道@baipiaoeverything_1
+  - 🇨🇳_TG频道@baipiaoeverything_2
+  - 🇺🇸_TG频道@baipiaoeverything_3
+  - 🇨🇳_TG频道@baipiaoeverything_4
+  - 🇨🇳_TG频道@baipiaoeverything_5
+  - 🇺🇸_TG频道@baipiaoeverything_6
+  - 🇨🇳_TG频道@baipiaoeverything_7
+  - 🇯🇵_TG频道@baipiaoeverything_8
+  - 🇨🇳_TG频道@baipiaoeverything_9
+  - 🇨🇳_TG频道@baipiaoeverything_10
+  - 🇨🇳_TG频道@baipiaoeverything_11
+  - 🇨🇳_TG频道@baipiaoeverything_12
+  - 🇨🇳_TG频道@baipiaoeverything_13
+  - 🇸🇬_TG频道@baipiaoeverything_14
+  - 🇨🇳_TG频道@baipiaoeverything_15
+  - 🇨🇳_TG频道@baipiaoeverything_16
+  - 🇨🇳_TG频道@baipiaoeverything_17
+  - 🇰🇷_TG频道@baipiaoeverything_18
+  - 🇺🇸_TG频道@baipiaoeverything_19
+  - 🇨🇳_TG频道@baipiaoeverything_20
+  - 🇨🇳_TG频道@baipiaoeverything_21
+  - 🇰🇷_TG频道@baipiaoeverything_22
+  - 🇭🇰_TG频道@baipiaoeverything_23
+  - 🇨🇳_TG频道@baipiaoeverything_24
+  - 🇨🇳_TG频道@baipiaoeverything_25
+  - TG频道@baipiaoeverything_26
+  - 🇨🇳_TG频道@baipiaoeverything_27
+  - 🇬🇧_TG频道@baipiaoeverything_28
+  - 🇨🇳_TG频道@baipiaoeverything_29
+  - 🇫🇷_TG频道@baipiaoeverything_30
+  - 🇺🇸_TG频道@baipiaoeverything_31
+  - 🇸🇬_TG频道@baipiaoeverything_32
+  - 🇩🇪_TG频道@baipiaoeverything_33
+  - 🇨🇳_TG频道@baipiaoeverything_34
+  - 🇹🇼_TG频道@baipiaoeverything_35
+  - TG频道@baipiaoeverything_36
+  - 🇭🇰_TG频道@baipiaoeverything_37
+  - 🇰🇷_TG频道@baipiaoeverything_38
+  - 🇨🇳_TG频道@baipiaoeverything_39
+  - TG频道@baipiaoeverything_40
+  - 🇨🇳_TG频道@baipiaoeverything_41
+  - 🇨🇳_TG频道@baipiaoeverything_42
+  - 🇹🇼_TG频道@baipiaoeverything_43
+  - 🇨🇳_TG频道@baipiaoeverything_44
+  - 🇨🇳_TG频道@baipiaoeverything_45
+  - TG频道@baipiaoeverything_46
+  - 🇰🇷_TG频道@baipiaoeverything_47
+  - 🇨🇳_TG频道@baipiaoeverything_48
+  - 🇫🇷_TG频道@baipiaoeverything_49
+  - 🇨🇳_TG频道@baipiaoeverything_50
+  - 🇺🇸_TG频道@baipiaoeverything_51
+  - 🇺🇸_TG频道@baipiaoeverything_52
+  - 🇭🇰_TG频道@baipiaoeverything_53
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 🇰🇷 _KR_韩国->🇺🇸_US_美国
-  - 🇺🇸 _US_美国
-  - 🇯🇵 _JP_日本
-  - 🇺🇸 _US_美国 2
-  - 🇭🇰 _HK_香港
-  - 🇺🇸 _US_美国 3
-  - 🇺🇸 _US_美国 4
-  - 🇭🇰 _HK_香港 2
-  - 🇺🇸 _US_美国 5
-  - 🇭🇰 _HK_香港 3
-  - 🇭🇰 _HK_香港 4
-  - _CN_中国
-  - 🇭🇰 _HK_香港 5
-  - 🇺🇸 _US_美国 6
-  - 🇬🇧 _GB_英国
-  - 🇭🇰 _HK_香港 6
-  - 🇭🇰 _HK_香港 7
-  - 🇭🇰 _HK_香港 8
-  - 🇦🇺 _AU_澳大利亚
-  - 🇫🇷 _FR_法国
-  - 🇮🇳 _IN_印度
-  - 🇭🇰 _HK_香港 9
-  - 🇭🇰 _HK_香港 10
-  - 🇦🇺 _AU_澳大利亚 2
-  - 🇮🇱 _IL_以色列
-  - 🇰🇷 _KR_韩国
-  - 🇭🇰 _HK_香港 11
-  - 🇫🇷 _FR_法国 2
-  - 🇸🇬 _SG_新加坡
-  - _CN_中国 2
-  - 🇭🇰 _HK_香港 12
-  - 🇺🇸 _US_美国 7
-  - 🇮🇳 _IN_印度 2
-  - 🇸🇬 _SG_新加坡 2
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港 2
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港 3
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港 4
-  - 🇨🇿 _CZ_捷克
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港 5
-  - 🇬🇧 _GB_英国 2
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港 6
-  - 🇭🇰 _CN_中国->🇭🇰_HK_香港 7
-  - 🇺🇸 _US_美国 8
+  - 🇭🇰_TG频道@baipiaoeverything_1
+  - 🇨🇳_TG频道@baipiaoeverything_2
+  - 🇺🇸_TG频道@baipiaoeverything_3
+  - 🇨🇳_TG频道@baipiaoeverything_4
+  - 🇨🇳_TG频道@baipiaoeverything_5
+  - 🇺🇸_TG频道@baipiaoeverything_6
+  - 🇨🇳_TG频道@baipiaoeverything_7
+  - 🇯🇵_TG频道@baipiaoeverything_8
+  - 🇨🇳_TG频道@baipiaoeverything_9
+  - 🇨🇳_TG频道@baipiaoeverything_10
+  - 🇨🇳_TG频道@baipiaoeverything_11
+  - 🇨🇳_TG频道@baipiaoeverything_12
+  - 🇨🇳_TG频道@baipiaoeverything_13
+  - 🇸🇬_TG频道@baipiaoeverything_14
+  - 🇨🇳_TG频道@baipiaoeverything_15
+  - 🇨🇳_TG频道@baipiaoeverything_16
+  - 🇨🇳_TG频道@baipiaoeverything_17
+  - 🇰🇷_TG频道@baipiaoeverything_18
+  - 🇺🇸_TG频道@baipiaoeverything_19
+  - 🇨🇳_TG频道@baipiaoeverything_20
+  - 🇨🇳_TG频道@baipiaoeverything_21
+  - 🇰🇷_TG频道@baipiaoeverything_22
+  - 🇭🇰_TG频道@baipiaoeverything_23
+  - 🇨🇳_TG频道@baipiaoeverything_24
+  - 🇨🇳_TG频道@baipiaoeverything_25
+  - TG频道@baipiaoeverything_26
+  - 🇨🇳_TG频道@baipiaoeverything_27
+  - 🇬🇧_TG频道@baipiaoeverything_28
+  - 🇨🇳_TG频道@baipiaoeverything_29
+  - 🇫🇷_TG频道@baipiaoeverything_30
+  - 🇺🇸_TG频道@baipiaoeverything_31
+  - 🇸🇬_TG频道@baipiaoeverything_32
+  - 🇩🇪_TG频道@baipiaoeverything_33
+  - 🇨🇳_TG频道@baipiaoeverything_34
+  - 🇹🇼_TG频道@baipiaoeverything_35
+  - TG频道@baipiaoeverything_36
+  - 🇭🇰_TG频道@baipiaoeverything_37
+  - 🇰🇷_TG频道@baipiaoeverything_38
+  - 🇨🇳_TG频道@baipiaoeverything_39
+  - TG频道@baipiaoeverything_40
+  - 🇨🇳_TG频道@baipiaoeverything_41
+  - 🇨🇳_TG频道@baipiaoeverything_42
+  - 🇹🇼_TG频道@baipiaoeverything_43
+  - 🇨🇳_TG频道@baipiaoeverything_44
+  - 🇨🇳_TG频道@baipiaoeverything_45
+  - TG频道@baipiaoeverything_46
+  - 🇰🇷_TG频道@baipiaoeverything_47
+  - 🇨🇳_TG频道@baipiaoeverything_48
+  - 🇫🇷_TG频道@baipiaoeverything_49
+  - 🇨🇳_TG频道@baipiaoeverything_50
+  - 🇺🇸_TG频道@baipiaoeverything_51
+  - 🇺🇸_TG频道@baipiaoeverything_52
+  - 🇭🇰_TG频道@baipiaoeverything_53
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
