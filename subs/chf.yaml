@@ -4309,20 +4309,20 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   name: FR_2_25@1
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 145.239.1.100
-  type: ss
-- cipher: aes-256-gcm
-  name: FR_4_25@3
   password: faBAoD54k87UJG7
   port: 2376
   server: 195.154.200.150
   type: ss
 - cipher: aes-256-gcm
-  name: FR_6_25@5
+  name: FR_3_25@2
   password: KixLvKzwjekG00rm
   port: 8080
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: FR_4_25@3
+  password: Y6R9pAtvxxzmGC
+  port: 8888
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
@@ -4333,18 +4333,18 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   name: FR_8_25@7
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 145.239.1.100
-  type: ss
-- cipher: aes-256-gcm
-  name: FR_9_25@8
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 149.202.82.172
   type: ss
+- cipher: aes-256-gcm
+  name: FR_9_25@8
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 145.239.1.100
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: GB_10_25@9
+  name: GB_11_25@10
   password: G!yBwPWH3Vao
   port: 809
   server: 78.129.253.9
@@ -4356,46 +4356,40 @@ proxies:
   server: 213.183.53.222
   type: ss
 - cipher: aes-256-gcm
-  name: US_15_25@14
+  name: US_16_25@15
   password: KixLvKzwjekG00rm
   port: 8080
   server: 38.64.138.145
   type: ss
 - cipher: aes-256-gcm
-  name: US_16_25@15
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 38.114.114.19
-  type: ss
-- cipher: aes-256-gcm
   name: US_17_25@16
-  password: Y6R9pAtvxxzmGC
-  port: 5600
-  server: 38.68.134.85
-  type: ss
-- cipher: aes-256-gcm
-  name: US_18_25@17
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 38.114.114.19
-  type: ss
-- cipher: aes-256-gcm
-  name: US_19_25@18
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.75.136.21
-  type: ss
-- cipher: aes-256-gcm
-  name: US_20_25@19
   password: KixLvKzwjekG00rm
   port: 8080
   server: 167.88.61.175
   type: ss
 - cipher: aes-256-gcm
-  name: US_21_25@20
+  name: US_18_25@17
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 38.114.114.67
+  type: ss
+- cipher: aes-256-gcm
+  name: US_19_25@18
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 38.114.114.19
+  type: ss
+- cipher: aes-256-gcm
+  name: US_20_25@19
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 38.143.66.99
+  type: ss
+- cipher: aes-256-gcm
+  name: US_21_25@20
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 38.68.135.18
   type: ss
 - cipher: aes-256-gcm
   name: US_22_25@21
@@ -4405,68 +4399,74 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   name: US_23_25@22
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 38.114.114.19
+  type: ss
+- cipher: aes-256-gcm
+  name: US_24_25@23
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 38.121.43.71
   type: ss
 - cipher: aes-256-gcm
-  name: US_24_25@23
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: US_25_25@24
+  name: US_26_25@25
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 167.88.63.79
   type: ss
 - cipher: aes-256-gcm
-  name: US_26_25@25
+  name: US_27_25@26
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 38.143.66.99
-  type: ss
-- cipher: aes-256-gcm
-  name: US_27_25@26
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
   name: US_28_25@27
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 172.99.190.39
-  type: ss
-- cipher: aes-256-gcm
-  name: US_29_25@28
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 38.75.136.21
   type: ss
 - cipher: aes-256-gcm
-  name: US_30_25@29
+  name: US_29_25@28
   password: KixLvKzwjekG00rm
   port: 5500
-  server: 38.68.135.18
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: US_30_25@29
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
   name: US_31_25@30
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 38.68.134.85
+  type: ss
+- cipher: aes-256-gcm
+  name: US_32_25@31
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: US_33_25@32
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 38.75.136.21
   type: ss
 - cipher: aes-256-gcm
-  name: US_32_25@31
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 38.143.66.99
+  name: US_34_25@33
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 38.75.136.21
   type: ss
 - alterId: 0
   cipher: auto
   http-opts: {}
-  name: US_33_25@32
+  name: US_36_25@35
   network: tcp
   port: 1069
   server: 152.69.197.60
@@ -4475,7 +4475,7 @@ proxies:
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
   ws-path: /
 - cipher: aes-256-gcm
-  name: ZZ_34_25@33
+  name: ZZ_37_25@36
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 134.195.196.149
@@ -5026,14 +5026,13 @@ proxy-groups:
   - 🇺🇸_US_美国_15_24@49
   - CA_1_25@0
   - FR_2_25@1
+  - FR_3_25@2
   - FR_4_25@3
-  - FR_6_25@5
   - FR_7_25@6
   - FR_8_25@7
   - FR_9_25@8
-  - GB_10_25@9
+  - GB_11_25@10
   - LT_13_25@12
-  - US_15_25@14
   - US_16_25@15
   - US_17_25@16
   - US_18_25@17
@@ -5043,7 +5042,6 @@ proxy-groups:
   - US_22_25@21
   - US_23_25@22
   - US_24_25@23
-  - US_25_25@24
   - US_26_25@25
   - US_27_25@26
   - US_28_25@27
@@ -5052,7 +5050,9 @@ proxy-groups:
   - US_31_25@30
   - US_32_25@31
   - US_33_25@32
-  - ZZ_34_25@33
+  - US_34_25@33
+  - US_36_25@35
+  - ZZ_37_25@36
   type: select
 - interval: 300
   name: ♻️ 自动选择
@@ -5598,14 +5598,13 @@ proxy-groups:
   - 🇺🇸_US_美国_15_24@49
   - CA_1_25@0
   - FR_2_25@1
+  - FR_3_25@2
   - FR_4_25@3
-  - FR_6_25@5
   - FR_7_25@6
   - FR_8_25@7
   - FR_9_25@8
-  - GB_10_25@9
+  - GB_11_25@10
   - LT_13_25@12
-  - US_15_25@14
   - US_16_25@15
   - US_17_25@16
   - US_18_25@17
@@ -5615,7 +5614,6 @@ proxy-groups:
   - US_22_25@21
   - US_23_25@22
   - US_24_25@23
-  - US_25_25@24
   - US_26_25@25
   - US_27_25@26
   - US_28_25@27
@@ -5624,7 +5622,9 @@ proxy-groups:
   - US_31_25@30
   - US_32_25@31
   - US_33_25@32
-  - ZZ_34_25@33
+  - US_34_25@33
+  - US_36_25@35
+  - ZZ_37_25@36
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -6174,14 +6174,13 @@ proxy-groups:
   - 🇺🇸_US_美国_15_24@49
   - CA_1_25@0
   - FR_2_25@1
+  - FR_3_25@2
   - FR_4_25@3
-  - FR_6_25@5
   - FR_7_25@6
   - FR_8_25@7
   - FR_9_25@8
-  - GB_10_25@9
+  - GB_11_25@10
   - LT_13_25@12
-  - US_15_25@14
   - US_16_25@15
   - US_17_25@16
   - US_18_25@17
@@ -6191,7 +6190,6 @@ proxy-groups:
   - US_22_25@21
   - US_23_25@22
   - US_24_25@23
-  - US_25_25@24
   - US_26_25@25
   - US_27_25@26
   - US_28_25@27
@@ -6200,7 +6198,9 @@ proxy-groups:
   - US_31_25@30
   - US_32_25@31
   - US_33_25@32
-  - ZZ_34_25@33
+  - US_34_25@33
+  - US_36_25@35
+  - ZZ_37_25@36
   type: select
 - name: 📲 电报信息
   proxies:
@@ -6747,14 +6747,13 @@ proxy-groups:
   - 🇺🇸_US_美国_15_24@49
   - CA_1_25@0
   - FR_2_25@1
+  - FR_3_25@2
   - FR_4_25@3
-  - FR_6_25@5
   - FR_7_25@6
   - FR_8_25@7
   - FR_9_25@8
-  - GB_10_25@9
+  - GB_11_25@10
   - LT_13_25@12
-  - US_15_25@14
   - US_16_25@15
   - US_17_25@16
   - US_18_25@17
@@ -6764,7 +6763,6 @@ proxy-groups:
   - US_22_25@21
   - US_23_25@22
   - US_24_25@23
-  - US_25_25@24
   - US_26_25@25
   - US_27_25@26
   - US_28_25@27
@@ -6773,7 +6771,9 @@ proxy-groups:
   - US_31_25@30
   - US_32_25@31
   - US_33_25@32
-  - ZZ_34_25@33
+  - US_34_25@33
+  - US_36_25@35
+  - ZZ_37_25@36
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
@@ -7320,14 +7320,13 @@ proxy-groups:
   - 🇺🇸_US_美国_15_24@49
   - CA_1_25@0
   - FR_2_25@1
+  - FR_3_25@2
   - FR_4_25@3
-  - FR_6_25@5
   - FR_7_25@6
   - FR_8_25@7
   - FR_9_25@8
-  - GB_10_25@9
+  - GB_11_25@10
   - LT_13_25@12
-  - US_15_25@14
   - US_16_25@15
   - US_17_25@16
   - US_18_25@17
@@ -7337,7 +7336,6 @@ proxy-groups:
   - US_22_25@21
   - US_23_25@22
   - US_24_25@23
-  - US_25_25@24
   - US_26_25@25
   - US_27_25@26
   - US_28_25@27
@@ -7346,7 +7344,9 @@ proxy-groups:
   - US_31_25@30
   - US_32_25@31
   - US_33_25@32
-  - ZZ_34_25@33
+  - US_34_25@33
+  - US_36_25@35
+  - ZZ_37_25@36
   type: select
 - name: 🍎 苹果服务
   proxies:
@@ -7893,14 +7893,13 @@ proxy-groups:
   - 🇺🇸_US_美国_15_24@49
   - CA_1_25@0
   - FR_2_25@1
+  - FR_3_25@2
   - FR_4_25@3
-  - FR_6_25@5
   - FR_7_25@6
   - FR_8_25@7
   - FR_9_25@8
-  - GB_10_25@9
+  - GB_11_25@10
   - LT_13_25@12
-  - US_15_25@14
   - US_16_25@15
   - US_17_25@16
   - US_18_25@17
@@ -7910,7 +7909,6 @@ proxy-groups:
   - US_22_25@21
   - US_23_25@22
   - US_24_25@23
-  - US_25_25@24
   - US_26_25@25
   - US_27_25@26
   - US_28_25@27
@@ -7919,7 +7917,9 @@ proxy-groups:
   - US_31_25@30
   - US_32_25@31
   - US_33_25@32
-  - ZZ_34_25@33
+  - US_34_25@33
+  - US_36_25@35
+  - ZZ_37_25@36
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -8483,14 +8483,13 @@ proxy-groups:
   - 🇺🇸_US_美国_15_24@49
   - CA_1_25@0
   - FR_2_25@1
+  - FR_3_25@2
   - FR_4_25@3
-  - FR_6_25@5
   - FR_7_25@6
   - FR_8_25@7
   - FR_9_25@8
-  - GB_10_25@9
+  - GB_11_25@10
   - LT_13_25@12
-  - US_15_25@14
   - US_16_25@15
   - US_17_25@16
   - US_18_25@17
@@ -8500,7 +8499,6 @@ proxy-groups:
   - US_22_25@21
   - US_23_25@22
   - US_24_25@23
-  - US_25_25@24
   - US_26_25@25
   - US_27_25@26
   - US_28_25@27
@@ -8509,7 +8507,9 @@ proxy-groups:
   - US_31_25@30
   - US_32_25@31
   - US_33_25@32
-  - ZZ_34_25@33
+  - US_34_25@33
+  - US_36_25@35
+  - ZZ_37_25@36
   type: select
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
