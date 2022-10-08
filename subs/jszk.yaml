@@ -4,110 +4,98 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 新加坡 AWS1GB, server: text4.xbywwcp.us, port: 80, type: vmess, uuid: 9050a33f-0306-3dd4-80cf-d833a5328b26, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /xxxxxx, headers: {Host: a.189.cn}}, udp: true}
-  - {name: Trojan 香港HKT, server: hk2.iamnotagoodman.com, port: 443, type: trojan, password: e680d8cf-07f4-3e06-b29a-06c52b258232, skip-cert-verify: true, udp: true}
-  - {name: Trojan 新加坡SG, server: sg2.iamnotagoodman.com, port: 443, type: trojan, password: e680d8cf-07f4-3e06-b29a-06c52b258232, skip-cert-verify: true, udp: true}
-  - {name: 日本(中转), server: zhongzhuan.yongyevpn.com, port: 37462, type: vmess, uuid: 064f68c7-9245-4f27-9d2f-47a630aa3103, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 日本01|三网优化|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 4a4db4cd-6475-4d20-a353-776378e68072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /linodejp01, headers: {Host: gz.daxun.cyou}}, udp: true}
-  - {name: 日本02{优化2|V2ray}, server: jp2.awslcn.cc, port: 25237, type: vmess, uuid: "ed6546d9-4aea-4aa9-a335-24e3e7427c01", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.awslcn.cc}}, udp: true}
-  - {name: 台湾02{联通|V2ray}, server: cu.awslcn.cc, port: 25233, type: vmess, uuid: "ed6546d9-4aea-4aa9-a335-24e3e7427c01", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
-  - {name: 日本 AWS1GB, server: text5.xbywwcp.us, port: 80, type: vmess, uuid: 9050a33f-0306-3dd4-80cf-d833a5328b26, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a.189.cn, headers: {Host: baidu.com}}, udp: true}
-  - {name: 日本04{优化2|V2ray}, server: jp2.awslcn.cc, port: 25220, type: vmess, uuid: "ed6546d9-4aea-4aa9-a335-24e3e7427c01", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.awslcn.cc}}, udp: true}
-  - {name: 韩国 AWS1GB, server: text6.xbywwcp.us, port: 80, type: vmess, uuid: 9050a33f-0306-3dd4-80cf-d833a5328b26, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a.189.cn, headers: {Host: baidu.com}}, udp: true}
-  - {name: "v2ray 香港HKBN(联通) [Netflix]", server: u.vvvao.cyou, port: 26609, type: vmess, uuid: "e680d8cf-07f4-3e06-b29a-06c52b258232", alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: u.vvvao.cyou}}, udp: true}
-  - {name: 韩国c(中转), server: zhongzhuan.yongyevpn.com, port: 43632, type: vmess, uuid: 064f68c7-9245-4f27-9d2f-47a630aa3103, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: SG 新加坡, server: zz.fmmmz1.com, port: 48002, type: vmess, uuid: bd96b364-7462-30fc-99c7-7e387966fad8, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fm, headers: {Host: zz.fmmmz1.com}}, udp: true}
-  - {name: 台湾04|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 4a4db4cd-6475-4d20-a353-776378e68072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hinet04, headers: {Host: gz.daxun.cyou}}, udp: true}
-  - {name: Trojan 美国USLA, server: usla2.iamnotagoodman.com, port: 443, type: trojan, password: e680d8cf-07f4-3e06-b29a-06c52b258232, skip-cert-verify: true, udp: true}
-  - {name: Trojan 柬埔寨KH, server: kh2.iamnotagoodman.com, port: 443, type: trojan, password: e680d8cf-07f4-3e06-b29a-06c52b258232, skip-cert-verify: true, udp: true}
-  - {name: 新加坡02|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 4a4db4cd-6475-4d20-a353-776378e68072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /doxjp03, headers: {Host: gz.daxun.cyou}}, udp: true}
-  - {name: JP 日本, server: zz.fmmmz1.com, port: 48000, type: vmess, uuid: bd96b364-7462-30fc-99c7-7e387966fad8, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fm, headers: {Host: zz.fmmmz1.com}}, udp: true}
-  - {name: 美国 AWS1GB 2号, server: text7.xbywwcp.us, port: 80, type: vmess, uuid: 9050a33f-0306-3dd4-80cf-d833a5328b26, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a.189.cn, headers: {Host: baidu.com}}, udp: true}
-  - {name: 新加坡-a, server: 111.fastea.top, port: 53311, type: trojan, password: d90960ab-1a01-401b-a404-0085dc745afe, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-b, server: 112.fastea.top, port: 53312, type: trojan, password: d90960ab-1a01-401b-a404-0085dc745afe, skip-cert-verify: true, udp: true}
-  - {name: US 美国, server: zz.fmmmz1.com, port: 48001, type: vmess, uuid: bd96b364-7462-30fc-99c7-7e387966fad8, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fm, headers: {Host: zz.fmmmz1.com}}, udp: true}
-  - {name: 日本优选原生IP01|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 4a4db4cd-6475-4d20-a353-776378e68072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /JPZZ01, headers: {Host: gz.daxun.cyou}}, udp: true}
-  - {name: 德国-a, server: 113.fastea.top, port: 53313, type: trojan, password: d90960ab-1a01-401b-a404-0085dc745afe, skip-cert-verify: true, udp: true}
+  - {name: 韩国 B157 | 湘日隧道 | 0x, server: 139.227.182.124, port: 28158, type: trojan, password: M288fab2, skip-cert-verify: true, udp: true}
+  - {name: 夏时, server: 194.59.220.6, port: 46077, type: ss, cipher: aes-256-cfb, password: 60542069, udp: true}
+  - {name: 韩国 B158 | IEPL中转、游戏 | 0x, server: 14.215.107.23, port: 28157, type: trojan, password: M9cf6590, skip-cert-verify: true, udp: true}
+  - {name: 香港01 001, server: hk1.kp1a-ls9a-426a-x45g.paolu.pics, port: 22031, type: trojan, password: 1904200f-3823-40a1-a1ba-5a5fe0dd01f6, skip-cert-verify: true, udp: true}
+  - {name: 剩余流量：300 GB, server: hk1.kp1a-ls9a-426a-x45g.paolu.pics, port: 22031, type: trojan, password: 1904200f-3823-40a1-a1ba-5a5fe0dd01f6, skip-cert-verify: true, udp: true}
+  - {name: 套餐到期：2022-11-07, server: hk1.kp1a-ls9a-426a-x45g.paolu.pics, port: 22031, type: trojan, password: 1904200f-3823-40a1-a1ba-5a5fe0dd01f6, skip-cert-verify: true, udp: true}
+  - {name: 香港03, server: hk3.xjsn-595s-kkf9-knaf.paolu.pics, port: 22031, type: trojan, password: 1904200f-3823-40a1-a1ba-5a5fe0dd01f6, skip-cert-verify: true, udp: true}
+  - {name: 新加坡01, server: sg3-xhsa-45as-92js-ht8s.paolu.pics, port: 22031, type: trojan, password: 3715ea7f-2915-48df-af11-4063fff72cdd, skip-cert-verify: true, udp: true}
+  - {name: 香港02, server: hk2.plxs-u95s-h62a-xs1f.paolu.pics, port: 22031, type: trojan, password: 3715ea7f-2915-48df-af11-4063fff72cdd, skip-cert-verify: true, udp: true}
+  - {name: 日本02, server: jp2-5s4d-sjf9-xaf1-sl99.paolu.pics, port: 22031, type: trojan, password: 3715ea7f-2915-48df-af11-4063fff72cdd, skip-cert-verify: true, udp: true}
+  - {name: 日本01, server: jp1-snxa-s56f-x84a-s41f.paolu.pics, port: 22031, type: trojan, password: 3715ea7f-2915-48df-af11-4063fff72cdd, skip-cert-verify: true, udp: true}
+  - {name: HongKe - 香港 06, server: 178.253.52.110, port: 4953, type: ss, cipher: chacha20-ietf-poly1305, password: xLmtNXU6arq32, udp: true}
+  - {name: HongKe - 香港 07, server: 194.29.186.135, port: 8439, type: ss, cipher: chacha20-ietf-poly1305, password: WOUkp3T89G8jH, udp: true}
+  - {name: HongKe - 香港 05, server: 118.212.143.4, port: 47082, type: ss, cipher: chacha20-ietf-poly1305, password: WmbyWhbKN7td6, udp: true}
+  - {name: 香港03--奈飞+迪士尼解锁-2.0X, server: 18.163.102.203, port: 44300, type: vmess, uuid: 66eea786-ed5b-30ba-b479-79618e82a871, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 18.163.102.203}}, udp: true}
+  - {name: 香港04, server: 16.162.55.130, port: 44300, type: vmess, uuid: 66eea786-ed5b-30ba-b479-79618e82a871, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 16.162.55.130}}, udp: true}
+  - {name: 香港07, server: 154.222.226.102, port: 44300, type: vmess, uuid: 66eea786-ed5b-30ba-b479-79618e82a871, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 154.222.226.102}}, udp: true}
+  - {name: 香港06, server: 154.222.226.101, port: 44300, type: vmess, uuid: fdd09267-11c6-3647-90f9-c9aa0a2e1f90, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 154.222.226.101}}, udp: true}
+  - {name: 香港01 002, server: 20.239.177.171, port: 44300, type: vmess, uuid: fdd09267-11c6-3647-90f9-c9aa0a2e1f90, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.239.177.171}}, udp: true}
+  - {name: 香港02--奈飞+迪士尼解锁-2.0X, server: 20.239.178.155, port: 44300, type: vmess, uuid: fdd09267-11c6-3647-90f9-c9aa0a2e1f90, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.239.178.155}}, udp: true}
+  - {name: 新加坡04|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 4a4db4cd-6475-4d20-a353-776378e68072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /doxjp04, headers: {Host: gz.daxun.cyou}}, udp: true}
+  - {name: 新加坡03|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 4a4db4cd-6475-4d20-a353-776378e68072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /doxjp01, headers: {Host: gz.daxun.cyou}}, udp: true}
   - {name: 新加坡01|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 4a4db4cd-6475-4d20-a353-776378e68072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /doxjp06, headers: {Host: gz.daxun.cyou}}, udp: true}
-  - {name: 🇸🇬 新加坡3, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, skip-cert-verify: true, udp: true}
-  - {name: 日本04|三网优化|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 4a4db4cd-6475-4d20-a353-776378e68072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /japanese03, headers: {Host: gz.daxun.cyou}}, udp: true}
-  - {name: 美国-a, server: 115.fastea.top, port: 53315, type: trojan, password: d90960ab-1a01-401b-a404-0085dc745afe, skip-cert-verify: true, udp: true}
-  - {name: IN 印度, server: zz.fmmmz1.com, port: 48004, type: vmess, uuid: bd96b364-7462-30fc-99c7-7e387966fad8, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fm, headers: {Host: zz.fmmmz1.com}}, udp: true}
-  - {name: 🇭🇰 香港2, server: hk-1.tiktokcdn.sbs, port: 56563, type: trojan, password: R8HpRZUAfK, skip-cert-verify: true, udp: true}
-  - {name: 新加坡C, server: 13.250.99.8, port: 43632, type: vmess, uuid: 064f68c7-9245-4f27-9d2f-47a630aa3103, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 韩国C, server: 52.79.216.17, port: 43632, type: vmess, uuid: 064f68c7-9245-4f27-9d2f-47a630aa3103, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 马来西亚02|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 4a4db4cd-6475-4d20-a353-776378e68072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /mlxy01, headers: {Host: gz.daxun.cyou}}, udp: true}
+  - {name: 马来西亚01|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 4a4db4cd-6475-4d20-a353-776378e68072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /mlxy01, headers: {Host: gz.daxun.cyou}}, udp: true}
+  - {name: 马来西亚03|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 4a4db4cd-6475-4d20-a353-776378e68072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /mlxy01, headers: {Host: gz.daxun.cyou}}, udp: true}
+  - {name: 日本(中转), server: zhongzhuan.yongyevpn.com, port: 37462, type: vmess, uuid: 064f68c7-9245-4f27-9d2f-47a630aa3103, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 美国A, server: 3.145.97.59, port: 43632, type: vmess, uuid: 064f68c7-9245-4f27-9d2f-47a630aa3103, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 新加坡 AWS1GB
-  - Trojan 香港HKT
-  - Trojan 新加坡SG
-  - 日本(中转)
-  - 日本01|三网优化|1x
-  - 日本02{优化2|V2ray}
-  - 台湾02{联通|V2ray}
-  - 日本 AWS1GB
-  - 日本04{优化2|V2ray}
-  - 韩国 AWS1GB
-  - v2ray 香港HKBN(联通) [Netflix]
-  - 韩国c(中转)
-  - SG 新加坡
-  - 台湾04|优选原生IP|1x
-  - Trojan 美国USLA
-  - Trojan 柬埔寨KH
-  - 新加坡02|三网优化|解锁流媒体|1x
-  - JP 日本
-  - 美国 AWS1GB 2号
-  - 新加坡-a
-  - 新加坡-b
-  - US 美国
-  - 日本优选原生IP01|解锁流媒体|1x
-  - 德国-a
+  - 韩国 B157 | 湘日隧道 | 0x
+  - 夏时
+  - 韩国 B158 | IEPL中转、游戏 | 0x
+  - 香港01 001
+  - 剩余流量：300 GB
+  - 套餐到期：2022-11-07
+  - 香港03
+  - 新加坡01
+  - 香港02
+  - 日本02
+  - 日本01
+  - HongKe - 香港 06
+  - HongKe - 香港 07
+  - HongKe - 香港 05
+  - 香港03--奈飞+迪士尼解锁-2.0X
+  - 香港04
+  - 香港07
+  - 香港06
+  - 香港01 002
+  - 香港02--奈飞+迪士尼解锁-2.0X
+  - 新加坡04|三网优化|解锁流媒体|1x
+  - 新加坡03|三网优化|解锁流媒体|1x
   - 新加坡01|三网优化|解锁流媒体|1x
-  - 🇸🇬 新加坡3
-  - 日本04|三网优化|1x
-  - 美国-a
-  - IN 印度
-  - 🇭🇰 香港2
-  - 新加坡C
-  - 韩国C
+  - 马来西亚02|优选原生IP|1x
+  - 马来西亚01|优选原生IP|1x
+  - 马来西亚03|优选原生IP|1x
+  - 日本(中转)
+  - 美国A
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 新加坡 AWS1GB
-  - Trojan 香港HKT
-  - Trojan 新加坡SG
-  - 日本(中转)
-  - 日本01|三网优化|1x
-  - 日本02{优化2|V2ray}
-  - 台湾02{联通|V2ray}
-  - 日本 AWS1GB
-  - 日本04{优化2|V2ray}
-  - 韩国 AWS1GB
-  - v2ray 香港HKBN(联通) [Netflix]
-  - 韩国c(中转)
-  - SG 新加坡
-  - 台湾04|优选原生IP|1x
-  - Trojan 美国USLA
-  - Trojan 柬埔寨KH
-  - 新加坡02|三网优化|解锁流媒体|1x
-  - JP 日本
-  - 美国 AWS1GB 2号
-  - 新加坡-a
-  - 新加坡-b
-  - US 美国
-  - 日本优选原生IP01|解锁流媒体|1x
-  - 德国-a
+  - 韩国 B157 | 湘日隧道 | 0x
+  - 夏时
+  - 韩国 B158 | IEPL中转、游戏 | 0x
+  - 香港01 001
+  - 剩余流量：300 GB
+  - 套餐到期：2022-11-07
+  - 香港03
+  - 新加坡01
+  - 香港02
+  - 日本02
+  - 日本01
+  - HongKe - 香港 06
+  - HongKe - 香港 07
+  - HongKe - 香港 05
+  - 香港03--奈飞+迪士尼解锁-2.0X
+  - 香港04
+  - 香港07
+  - 香港06
+  - 香港01 002
+  - 香港02--奈飞+迪士尼解锁-2.0X
+  - 新加坡04|三网优化|解锁流媒体|1x
+  - 新加坡03|三网优化|解锁流媒体|1x
   - 新加坡01|三网优化|解锁流媒体|1x
-  - 🇸🇬 新加坡3
-  - 日本04|三网优化|1x
-  - 美国-a
-  - IN 印度
-  - 🇭🇰 香港2
-  - 新加坡C
-  - 韩国C
+  - 马来西亚02|优选原生IP|1x
+  - 马来西亚01|优选原生IP|1x
+  - 马来西亚03|优选原生IP|1x
+  - 日本(中转)
+  - 美国A
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
