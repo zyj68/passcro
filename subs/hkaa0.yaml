@@ -4,149 +4,179 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: TG@hkaa0|新加坡 001, server: 5.44.249.155, port: 3389, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0|香港 001, server: 47.243.241.250, port: 54703, type: vmess, uuid: 95b8821c-3432-4630-ad55-35ab873a0796, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: TG@hkaa0|澳大利亚, server: 140.238.205.173, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0 001, server: fn600mlines008.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fc568c325d09, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: /, tls: true, mux: true}, udp: true}
+  - {name: TG@hkaa0|香港 001, server: 165.154.244.100, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 165.154.244.100}}, udp: true}
+  - {name: TG@hkaa0|美国 001, server: 38.54.33.116, port: 50000, type: ss, cipher: aes-256-cfb, password: 3135771619, udp: true}
+  - {name: TG@hkaa0|中国 001, server: unicomv3.mipglxi.cn, port: 6616, type: ss, cipher: aes-128-gcm, password: fd772ab8-d7ae-477b-98d4-f8ef389b9472, udp: true}
+  - {name: TG@hkaa0|美国 002, server: 172.64.153.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg3.zhujicn2.com}}, udp: true}
   - {name: TG@hkaa0|香港 002, server: 47.243.108.35, port: 39729, type: vmess, uuid: dc47d16f-d3e0-4b37-bde4-218e90144a8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: TG@hkaa0|美国 001, server: 172.64.153.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}, udp: true}
-  - {name: TG@hkaa0|美国 002, server: 172.64.155.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}, udp: true}
-  - {name: TG@hkaa0|英国, server: 142.202.51.98, port: 50000, type: ss, cipher: aes-256-cfb, password: 3135771619, udp: true}
-  - {name: TG@hkaa0|中国 001, server: 116.129.253.134, port: 3381, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0 001, server: jparm.fineyoo.cf, port: 443, type: vmess, uuid: bd5ee249-fe7b-4669-a6d9-b3f5eecb98e6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /123, headers: {Host: jparm.fineyoo.cf}}, udp: true}
-  - {name: TG@hkaa0|美国 003, server: 129.146.242.130, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0 002, server: fn600mlines008.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fc568c325d09, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: /, tls: true, mux: true}, udp: true}
-  - {name: TG@hkaa0|新加坡 002, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: TG@hkaa0|新加坡 003, server: 165.154.253.15, port: 49002, type: trojan, password: 562c4c98-00c9-4037-a966-c7fc6a81367c, sni: us-a.bbbb.pw, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0|台湾 001, server: fn600mlines021.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0ac84efef442, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: /, tls: true, mux: true}, udp: true}
-  - {name: TG@hkaa0|香港 003, server: 165.154.244.100, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 165.154.244.100}}, udp: true}
-  - {name: TG@hkaa0|中国 002, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: TG@hkaa0|荷兰, server: 51.15.110.0, port: 80, type: vmess, uuid: 0aaf081d-b23c-4b6a-a85f-ed4bffcb1a2c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: TG@hkaa0|法国 001, server: PL.nexitally.xyz, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /a54e284cb6/, headers: {Host: PL.nexitally.xyz}}, udp: true}
+  - {name: TG@hkaa0|中国 002, server: 116.129.253.134, port: 3381, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0|美国 003, server: 172.64.154.155, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}, udp: true}
   - {name: TG@hkaa0|中国 003, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: TG@hkaa0|中国 004, server: 116.162.120.23, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53923:hjgjuy6t655jjg, obfs-param: t.me/vpnhat, udp: true}
-  - {name: TG@hkaa0|台湾 002, server: fn600mliness018.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: /, tls: false, mux: true}, udp: true}
-  - {name: TG@hkaa0|新加坡 004, server: 165.232.169.142, port: 29332, type: ss, cipher: aes-256-cfb, password: 1e5111699c45496da84112f35db665c4, udp: true}
-  - {name: TG@hkaa0|加拿大 001, server: cat1.sshocean.net, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0 002, server: 198.41.212.30, port: 443, type: vmess, uuid: 105c635f-918d-4b2a-8c9d-d5426e94eb4b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg2.zhujicn2.com}}, udp: true}
+  - {name: TG@hkaa0|美国 004, server: 172.64.155.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}, udp: true}
+  - {name: TG@hkaa0|美国 005, server: 192.161.164.156, port: 40338, type: vmess, uuid: fe20f87d-4e11-4c2a-af6e-5b8bd9927092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: TG@hkaa0|美国 006, server: 172.64.153.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}, udp: true}
+  - {name: TG@hkaa0|美国 007, server: 172.64.153.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}, udp: true}
+  - {name: TG@hkaa0|美国 008, server: 129.146.242.130, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0|美国 009, server: c90s801.jamjams3.net, port: 19623, type: vmess, uuid: b03a1e7b-f1ad-4d0e-895d-639354e35ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: TG@hkaa0|中国 004, server: 116.162.120.23, port: 610, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53923:hjgjuy6t655jjg, obfs-param: t.me/vpnhat, udp: true}
   - {name: TG@hkaa0|中国 005, server: 116.162.120.23, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53923:hjgjuy6t655jjg, obfs-param: t.me/vpnhat, udp: true}
-  - {name: TG@hkaa0|法国 002, server: 51.68.126.193, port: 80, type: vmess, uuid: d4a79505-dd7f-47e4-98b7-30c9fa77fa66, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: TG@hkaa0|台湾 003, server: fn600mliness018.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: /, tls: true, mux: true}, udp: true}
-  - {name: TG@hkaa0|中国 006, server: 119.91.223.167, port: 80, type: vmess, uuid: 5087e6ea-b650-443e-923f-b754661b8c47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 119.91.223.167}}, udp: true}
-  - {name: TG@hkaa0|中国 007, server: 14.29.124.174, port: 11020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: TG@hkaa0|台湾 004, server: fn600mlines021.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0ac84efef442, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: /, tls: false, mux: true}, udp: true}
-  - {name: TG@hkaa0|中国 008, server: 116.162.120.23, port: 610, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53923:hjgjuy6t655jjg, obfs-param: t.me/vpnhat, udp: true}
-  - {name: TG@hkaa0|法国 003, server: 54.38.144.255, port: 50000, type: ss, cipher: aes-256-cfb, password: 3135771619, udp: true}
-  - {name: TG@hkaa0|中国 009, server: 119.91.223.167, port: 80, type: vmess, uuid: 5087e6ea-b650-443e-923f-b754661b8c47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: TG@hkaa0|中国 010, server: 116.162.120.23, port: 610, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53923:hjgjuy6t655jjg, obfs-param: t.me/vpnhat, udp: true}
-  - {name: TG@hkaa0|新加坡 005, server: 165.154.253.15, port: 49001, type: trojan, password: 562c4c98-00c9-4037-a966-c7fc6a81367c, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0|中国 011, server: 121.41.86.94, port: 5674, type: vmess, uuid: 79ce0633-5bc1-44ab-a47c-119916f2901d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: TG@hkaa0|美国 004, server: 38.54.33.116, port: 50000, type: ss, cipher: aes-256-cfb, password: 3135771619, udp: true}
-  - {name: TG@hkaa0|日本, server: 185.160.24.48, port: 443, type: vmess, uuid: a8a7fc23-c6e6-4505-a173-ae67dfb06f28, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/243535322906}, udp: true}
-  - {name: TG@hkaa0|韩国, server: 146.56.176.239, port: 443, type: trojan, password: a153fb4e-6d1b-4db0-b03d-acb4012b7198, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0|美国 005, server: 138.2.113.84, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0|中国 012, server: 14.29.124.174, port: 11007, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: TG@hkaa0|捷克, server: 185.253.47.79, port: 443, type: trojan, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0|中国 013, server: 14.29.124.174, port: 11004, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: TG@hkaa0|香港 004, server: 58.177.92.202, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: TG@hkaa0|中国 006, server: 116.162.120.23, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53923:hjgjuy6t655jjg, obfs-param: t.me/vpnhat, udp: true}
+  - {name: TG@hkaa0|香港 003, server: 47.243.241.250, port: 54703, type: vmess, uuid: 95b8821c-3432-4630-ad55-35ab873a0796, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: TG@hkaa0|澳大利亚 001, server: 185.167.116.253, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: TG@hkaa0|加拿大 001, server: cat1.sshocean.net, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0|美国 010, server: 150.230.217.213, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0|印度 001, server: 152.67.162.166, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0|中国 007, server: 116.162.120.23, port: 610, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53923:hjgjuy6t655jjg, obfs-param: t.me/vpnhat, udp: true}
   - {name: TG@hkaa0|加拿大 002, server: 149.56.141.11, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0|新加坡 006, server: 165.154.253.15, port: 49004, type: trojan, password: 562c4c98-00c9-4037-a966-c7fc6a81367c, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0|印度 002, server: 152.67.190.183, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0|中国 008, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: TG@hkaa0|法国 001, server: PL.nexitally.xyz, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /a54e284cb6/, headers: {Host: PL.nexitally.xyz}}, udp: true}
+  - {name: TG@hkaa0|韩国, server: 146.56.176.239, port: 443, type: trojan, password: a153fb4e-6d1b-4db0-b03d-acb4012b7198, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0|美国 011, server: 150.230.249.42, port: 443, type: trojan, password: 0Y9gOHSdRt, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0|香港 004, server: 194.156.99.39, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0|美国 012, server: 129.146.190.42, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0|法国 002, server: 51.68.126.193, port: 80, type: vmess, uuid: d4a79505-dd7f-47e4-98b7-30c9fa77fa66, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: TG@hkaa0|法国 003, server: 51.83.185.94, port: 80, type: vmess, uuid: 4aa457f6-5ff4-477f-ba24-17bf291aea53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: TG@hkaa0|台湾 001, server: fn600mlines021.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0ac84efef442, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: /, tls: true, mux: true}, udp: true}
+  - {name: TG@hkaa0|中国 009, server: 119.91.223.167, port: 80, type: vmess, uuid: 5087e6ea-b650-443e-923f-b754661b8c47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 119.91.223.167}}, udp: true}
+  - {name: TG@hkaa0|保加利亚, server: 213.183.63.221, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: TG@hkaa0|台湾 002, server: fn600mliness018.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: /, tls: false, mux: true}, udp: true}
+  - {name: TG@hkaa0|中国 010, server: 119.91.223.167, port: 80, type: vmess, uuid: 5087e6ea-b650-443e-923f-b754661b8c47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: TG@hkaa0|中国 011, server: 14.29.124.174, port: 11015, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: TG@hkaa0|中国 012, server: shcuac.aag436.ccddn4.icu, port: 65523, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0|台湾 003, server: fn600mlines021.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0ac84efef442, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: /, tls: false, mux: true}, udp: true}
+  - {name: TG@hkaa0|中国 013, server: 14.29.124.174, port: 11050, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: TG@hkaa0|中国 014, server: 121.41.86.94, port: 5674, type: vmess, uuid: 79ce0633-5bc1-44ab-a47c-119916f2901d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: TG@hkaa0|新加坡, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: TG@hkaa0 003, server: shopify.com, port: 80, type: vmess, uuid: 90e35d9e-d5a0-4ffa-fdeb-f5c14f957b21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aries, headers: {Host: tgsg.cloudflare.quest}}, udp: true}
+  - {name: TG@hkaa0|台湾 004, server: fn600mliness018.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: /, tls: true, mux: true}, udp: true}
+  - {name: TG@hkaa0|美国 013, server: 20.210.122.21, port: 443, type: ss, cipher: aes-256-gcm, password: 233blog.com, udp: true}
+  - {name: TG@hkaa0 004, server: 104.16.122.77, port: 80, type: vmess, uuid: 645fc4e7-e3a3-4e82-8abd-2d71324894c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.asuka.buzz}}, udp: true}
+  - {name: TG@hkaa0|英国, server: 144.24.72.126, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0|美国 014, server: 172.67.216.5, port: 443, type: vmess, uuid: bd5ee249-fe7b-4669-a6d9-b3f5eecb98e6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /123, headers: {Host: jparm.fineyoo.cf}}, udp: true}
+  - {name: TG@hkaa0|中国 015, server: 14.29.124.174, port: 11035, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: TG@hkaa0|澳大利亚 002, server: 185.167.116.252, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: TG@hkaa0 005, server: jparm.fineyoo.cf, port: 443, type: vmess, uuid: bd5ee249-fe7b-4669-a6d9-b3f5eecb98e6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /123, headers: {Host: jparm.fineyoo.cf}}, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - TG@hkaa0|新加坡 001
-  - TG@hkaa0|香港 001
-  - TG@hkaa0|澳大利亚
-  - TG@hkaa0|香港 002
-  - TG@hkaa0|美国 001
-  - TG@hkaa0|美国 002
-  - TG@hkaa0|英国
-  - TG@hkaa0|中国 001
   - TG@hkaa0 001
-  - TG@hkaa0|美国 003
-  - TG@hkaa0 002
-  - TG@hkaa0|新加坡 002
-  - TG@hkaa0|新加坡 003
-  - TG@hkaa0|台湾 001
-  - TG@hkaa0|香港 003
+  - TG@hkaa0|香港 001
+  - TG@hkaa0|美国 001
+  - TG@hkaa0|中国 001
+  - TG@hkaa0|美国 002
+  - TG@hkaa0|香港 002
   - TG@hkaa0|中国 002
-  - TG@hkaa0|荷兰
-  - TG@hkaa0|法国 001
+  - TG@hkaa0|美国 003
   - TG@hkaa0|中国 003
-  - TG@hkaa0|中国 004
-  - TG@hkaa0|台湾 002
-  - TG@hkaa0|新加坡 004
-  - TG@hkaa0|加拿大 001
-  - TG@hkaa0|中国 005
-  - TG@hkaa0|法国 002
-  - TG@hkaa0|台湾 003
-  - TG@hkaa0|中国 006
-  - TG@hkaa0|中国 007
-  - TG@hkaa0|台湾 004
-  - TG@hkaa0|中国 008
-  - TG@hkaa0|法国 003
-  - TG@hkaa0|中国 009
-  - TG@hkaa0|中国 010
-  - TG@hkaa0|新加坡 005
-  - TG@hkaa0|中国 011
+  - TG@hkaa0 002
   - TG@hkaa0|美国 004
-  - TG@hkaa0|日本
-  - TG@hkaa0|韩国
   - TG@hkaa0|美国 005
-  - TG@hkaa0|中国 012
-  - TG@hkaa0|捷克
-  - TG@hkaa0|中国 013
-  - TG@hkaa0|香港 004
+  - TG@hkaa0|美国 006
+  - TG@hkaa0|美国 007
+  - TG@hkaa0|美国 008
+  - TG@hkaa0|美国 009
+  - TG@hkaa0|中国 004
+  - TG@hkaa0|中国 005
+  - TG@hkaa0|中国 006
+  - TG@hkaa0|香港 003
+  - TG@hkaa0|澳大利亚 001
+  - TG@hkaa0|加拿大 001
+  - TG@hkaa0|美国 010
+  - TG@hkaa0|印度 001
+  - TG@hkaa0|中国 007
   - TG@hkaa0|加拿大 002
-  - TG@hkaa0|新加坡 006
+  - TG@hkaa0|印度 002
+  - TG@hkaa0|中国 008
+  - TG@hkaa0|法国 001
+  - TG@hkaa0|韩国
+  - TG@hkaa0|美国 011
+  - TG@hkaa0|香港 004
+  - TG@hkaa0|美国 012
+  - TG@hkaa0|法国 002
+  - TG@hkaa0|法国 003
+  - TG@hkaa0|台湾 001
+  - TG@hkaa0|中国 009
+  - TG@hkaa0|保加利亚
+  - TG@hkaa0|台湾 002
+  - TG@hkaa0|中国 010
+  - TG@hkaa0|中国 011
+  - TG@hkaa0|中国 012
+  - TG@hkaa0|台湾 003
+  - TG@hkaa0|中国 013
+  - TG@hkaa0|中国 014
+  - TG@hkaa0|新加坡
+  - TG@hkaa0 003
+  - TG@hkaa0|台湾 004
+  - TG@hkaa0|美国 013
+  - TG@hkaa0 004
+  - TG@hkaa0|英国
+  - TG@hkaa0|美国 014
+  - TG@hkaa0|中国 015
+  - TG@hkaa0|澳大利亚 002
+  - TG@hkaa0 005
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - TG@hkaa0|新加坡 001
-  - TG@hkaa0|香港 001
-  - TG@hkaa0|澳大利亚
-  - TG@hkaa0|香港 002
-  - TG@hkaa0|美国 001
-  - TG@hkaa0|美国 002
-  - TG@hkaa0|英国
-  - TG@hkaa0|中国 001
   - TG@hkaa0 001
-  - TG@hkaa0|美国 003
-  - TG@hkaa0 002
-  - TG@hkaa0|新加坡 002
-  - TG@hkaa0|新加坡 003
-  - TG@hkaa0|台湾 001
-  - TG@hkaa0|香港 003
+  - TG@hkaa0|香港 001
+  - TG@hkaa0|美国 001
+  - TG@hkaa0|中国 001
+  - TG@hkaa0|美国 002
+  - TG@hkaa0|香港 002
   - TG@hkaa0|中国 002
-  - TG@hkaa0|荷兰
-  - TG@hkaa0|法国 001
+  - TG@hkaa0|美国 003
   - TG@hkaa0|中国 003
-  - TG@hkaa0|中国 004
-  - TG@hkaa0|台湾 002
-  - TG@hkaa0|新加坡 004
-  - TG@hkaa0|加拿大 001
-  - TG@hkaa0|中国 005
-  - TG@hkaa0|法国 002
-  - TG@hkaa0|台湾 003
-  - TG@hkaa0|中国 006
-  - TG@hkaa0|中国 007
-  - TG@hkaa0|台湾 004
-  - TG@hkaa0|中国 008
-  - TG@hkaa0|法国 003
-  - TG@hkaa0|中国 009
-  - TG@hkaa0|中国 010
-  - TG@hkaa0|新加坡 005
-  - TG@hkaa0|中国 011
+  - TG@hkaa0 002
   - TG@hkaa0|美国 004
-  - TG@hkaa0|日本
-  - TG@hkaa0|韩国
   - TG@hkaa0|美国 005
-  - TG@hkaa0|中国 012
-  - TG@hkaa0|捷克
-  - TG@hkaa0|中国 013
-  - TG@hkaa0|香港 004
+  - TG@hkaa0|美国 006
+  - TG@hkaa0|美国 007
+  - TG@hkaa0|美国 008
+  - TG@hkaa0|美国 009
+  - TG@hkaa0|中国 004
+  - TG@hkaa0|中国 005
+  - TG@hkaa0|中国 006
+  - TG@hkaa0|香港 003
+  - TG@hkaa0|澳大利亚 001
+  - TG@hkaa0|加拿大 001
+  - TG@hkaa0|美国 010
+  - TG@hkaa0|印度 001
+  - TG@hkaa0|中国 007
   - TG@hkaa0|加拿大 002
-  - TG@hkaa0|新加坡 006
+  - TG@hkaa0|印度 002
+  - TG@hkaa0|中国 008
+  - TG@hkaa0|法国 001
+  - TG@hkaa0|韩国
+  - TG@hkaa0|美国 011
+  - TG@hkaa0|香港 004
+  - TG@hkaa0|美国 012
+  - TG@hkaa0|法国 002
+  - TG@hkaa0|法国 003
+  - TG@hkaa0|台湾 001
+  - TG@hkaa0|中国 009
+  - TG@hkaa0|保加利亚
+  - TG@hkaa0|台湾 002
+  - TG@hkaa0|中国 010
+  - TG@hkaa0|中国 011
+  - TG@hkaa0|中国 012
+  - TG@hkaa0|台湾 003
+  - TG@hkaa0|中国 013
+  - TG@hkaa0|中国 014
+  - TG@hkaa0|新加坡
+  - TG@hkaa0 003
+  - TG@hkaa0|台湾 004
+  - TG@hkaa0|美国 013
+  - TG@hkaa0 004
+  - TG@hkaa0|英国
+  - TG@hkaa0|美国 014
+  - TG@hkaa0|中国 015
+  - TG@hkaa0|澳大利亚 002
+  - TG@hkaa0 005
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
