@@ -4,56 +4,65 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇺🇸 US 1, server: de.p1.gay, type: trojan, country: 🇩🇪 DE, port: 23511, password: 69a019dd-617b-449f-9af0-57762a476530, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇿 CZ 2, server: 185.253.46.40, type: trojan, country: 🇨🇿 CZ, port: 443, password: vGWCNNfBHwSY6m6M, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL 3, server: he.p1.gay, type: trojan, country: 🇳🇱 NL, port: 25113, password: 69a019dd-617b-449f-9af0-57762a476530, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇺 RU 4, server: ru.p1.gay, type: trojan, country: 🇷🇺 RU, port: 24114, password: 69a019dd-617b-449f-9af0-57762a476530, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 5, server: 221.131.165.89, type: ss, country: 🏁 ZZ, port: 57124, password: Lxjc2FLT5XXbt, cipher: chacha20-ietf-poly1305}
-  - {name: 🇨🇳 CN 6, server: 116.162.120.23, type: ssr, country: 🇺🇸 US, port: 610, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53923:hjgjuy6t655jjg, obfs: plain, obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpK}
-  - {name: 🇨🇳 CN 7, server: 221.131.165.89, type: ss, country: 🏁 ZZ, port: 57362, password: kL9OzMCvMXuRI, cipher: chacha20-ietf-poly1305}
-  - {name: 🇨🇳 CN 8, server: 116.162.120.23, type: ssr, country: 🇷🇺 RU, port: 560, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53923:hjgjuy6t655jjg, obfs: plain, obfs-param: ZEM1dFpTOTJjRzVvWVhR}
-  - {name: 🇨🇳 CN 9, server: 14.29.124.168, type: ss, country: 🇨🇳 TW, port: 24001, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
-  - {name: 🇨🇳 CN 10, server: 221.131.165.89, type: ss, country: 🏁 ZZ, port: 51872, password: JbCHRtQy82qvQ, cipher: chacha20-ietf-poly1305}
-  - {name: 🇨🇿 CZ 11, server: 185.253.47.79, type: trojan, country: 🇨🇿 CZ, port: 443, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 12, server: 14.29.124.168, type: ss, country: 🇨🇳 TW, port: 24008, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
-  - {name: 🇨🇳 CN 13, server: pull-cache-lu01.xyx-xylo.com, type: trojan, country: 🇨🇳 CN, port: 19701, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 14, server: liaoningddns.xyz, type: ssr, country: 🇺🇸 US, port: 11427, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
+  - {name: 🇯🇵 JP 1, server: trs02.bolab.net, type: trojan, country: 🇯🇵 JP, port: 443, password: 7a566d21dfcd0f12490275fd3dd3cfc4, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 2, server: cnrefhk2.standurl.xyz, type: ssr, country: 🇭🇰 HK, port: 561, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 41755:q13433801326, obfs: plain}
+  - {name: 🇸🇬 SG 3, server: hk1.kp1a-ls9a-426a-x45g.paolu.pics, type: trojan, country: 🇸🇬 SG, port: 22031, password: 9481e66d-3dc3-4a79-a298-5c09f3e70484, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 4, server: 14.29.124.168, type: ss, country: 🇨🇳 TW, port: 24002, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
+  - {name: 🇨🇳 CN 5, server: 180.101.193.226, type: ss, country: 🇭🇰 HK, port: 10068, password: RsDk3peCSuo76B68, cipher: aes-256-cfb}
+  - {name: 🇨🇿 CZ 6, server: v2cross.com.03.v2ce.com, type: trojan, country: 🇨🇿 CZ, port: 443, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 7, server: sg3-xhsa-45as-92js-ht8s.paolu.pics, type: trojan, country: 🇸🇬 SG, port: 22031, password: 3715ea7f-2915-48df-af11-4063fff72cdd, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 8, server: kr1.api-aws.com, type: trojan, country: 🇰🇷 KR, port: 443, password: 6c383778-a50e-4292-8e2b-13b4184363e0, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 9, server: 14.29.124.168, type: ss, country: 🇨🇳 TW, port: 24007, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
+  - {name: 🇸🇬 SG 10, server: 5.44.249.155, type: trojan, country: 🇸🇬 SG, port: 3389, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 11, server: usstartus2.eucdurl.me, type: ssr, country: 🇺🇸 US, port: 567, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 41755:q13433801326, obfs: plain}
+  - {name: 🇨🇳 CN 12, server: liaoningddns.xyz, type: ssr, country: 🇺🇸 US, port: 11427, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
+  - {name: 🇨🇳 CN 13, server: usstartus2.eucdurl.me, type: ssr, country: 🇺🇸 US, port: 564, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 41755:q13433801326, obfs: plain}
+  - {name: 🇨🇳 CN 14, server: 116.129.253.134, type: trojan, country: 🇺🇸 US, port: 3381, password: 6222266fcd4ed224, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 RU 15, server: ru.p1.gay, type: trojan, country: 🇷🇺 RU, port: 24114, password: 69a019dd-617b-449f-9af0-57762a476530, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 16, server: 168.138.44.176, type: trojan, country: 🇯🇵 JP, port: 443, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 17, server: 116.129.254.29, type: trojan, country: 🇺🇸 US, port: 3381, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 🇺🇸 US 1
-  - 🇨🇿 CZ 2
-  - 🇳🇱 NL 3
-  - 🇷🇺 RU 4
+  - 🇯🇵 JP 1
+  - 🇨🇳 CN 2
+  - 🇸🇬 SG 3
+  - 🇨🇳 CN 4
   - 🇨🇳 CN 5
-  - 🇨🇳 CN 6
-  - 🇨🇳 CN 7
-  - 🇨🇳 CN 8
+  - 🇨🇿 CZ 6
+  - 🇸🇬 SG 7
+  - 🇰🇷 KR 8
   - 🇨🇳 CN 9
-  - 🇨🇳 CN 10
-  - 🇨🇿 CZ 11
+  - 🇸🇬 SG 10
+  - 🇨🇳 CN 11
   - 🇨🇳 CN 12
   - 🇨🇳 CN 13
   - 🇨🇳 CN 14
+  - 🇷🇺 RU 15
+  - 🇯🇵 JP 16
+  - 🇨🇳 CN 17
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 🇺🇸 US 1
-  - 🇨🇿 CZ 2
-  - 🇳🇱 NL 3
-  - 🇷🇺 RU 4
+  - 🇯🇵 JP 1
+  - 🇨🇳 CN 2
+  - 🇸🇬 SG 3
+  - 🇨🇳 CN 4
   - 🇨🇳 CN 5
-  - 🇨🇳 CN 6
-  - 🇨🇳 CN 7
-  - 🇨🇳 CN 8
+  - 🇨🇿 CZ 6
+  - 🇸🇬 SG 7
+  - 🇰🇷 KR 8
   - 🇨🇳 CN 9
-  - 🇨🇳 CN 10
-  - 🇨🇿 CZ 11
+  - 🇸🇬 SG 10
+  - 🇨🇳 CN 11
   - 🇨🇳 CN 12
   - 🇨🇳 CN 13
   - 🇨🇳 CN 14
+  - 🇷🇺 RU 15
+  - 🇯🇵 JP 16
+  - 🇨🇳 CN 17
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
