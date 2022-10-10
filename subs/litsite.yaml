@@ -4,37 +4,39 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇨🇳 CN 1, server: fmpnschx.nodelist.xyz, type: ssr, country: 🇨🇳 CN, port: 1308, password: MAYING, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 8207:EqSdog, obfs: plain}
-  - {name: 🇨🇳 CN 2, server: wcjihipm.nodelist.xyz, type: ssr, country: 🇨🇳 CN, port: 1426, password: MAYING, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 8207:EqSdog, obfs: plain}
-  - {name: 🇨🇳 CN 3, server: guangzhouddns.xyz, type: ssr, country: 🇨🇳 CN, port: 11842, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
-  - {name: 🇨🇳 CN 4, server: liaoningddns.xyz, type: ssr, country: 🇨🇳 CN, port: 11422, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
-  - {name: 🇨🇳 HK 5, server: shcn2.bjyxrwlkj.com, type: trojan, country: 🇨🇳 TW, port: 31113, password: e041b94e-e309-3b94-8116-8ca393124930, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 HK 6, server: gztc.bjyxrwlkj.com, type: trojan, country: 🇨🇳 TW, port: 31113, password: e041b94e-e309-3b94-8116-8ca393124930, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 7, server: 183.232.141.121, type: ssr, country: 🇭🇰 HK, port: 560, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 45197:HECS4utDkIVxbpwN, obfs: plain, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 HK 8, server: 45.11.104.94, type: trojan, country: 🇭🇰 HK, port: 3389, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 HK 9, server: 20.239.81.151, type: trojan, country: 🇭🇰 HK, port: 12388, password: 653d48cf-7801-4396-97cb-eb0bbcf4378f, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 10, server: 183.232.141.82, type: ssr, country: 🇭🇰 HK, port: 560, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53925:hjgjuy6t655jjg, obfs: plain}
-  - {name: 🇨🇳 CN 11, server: xi.kanao.xyz, type: trojan, country: 🇮🇳 IN, port: 58812, password: 5f828b55-4967-41f3-99df-873e9eddcfca, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 12, server: shcuzxhk.eucdurl.me, type: ssr, country: 🇭🇰 HK, port: 562, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 45197:HECS4utDkIVxbpwN, obfs: plain}
-  - {name: 🇨🇳 CN 13, server: 183.232.141.114, type: ssr, country: 🇰🇷 KR, port: 565, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53925:hjgjuy6t655jjg, obfs: plain, obfs-param: dC5tZS92cG5oYXQ}
-  - {name: 🇨🇳 CN 14, server: liaoningddns.xyz, type: ssr, country: 🇬🇧 GB, port: 11501, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
-  - {name: 🇩🇪 DE 15, server: content-provider10.cdn-delivery.akamaicd.com, type: trojan, country: 🇩🇪 DE, port: 443, password: yxGY7A5MczQYg6UqSFx9u78V, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 16, server: xi.kanao.xyz, type: trojan, country: 🇷🇴 RO, port: 58806, password: 5f828b55-4967-41f3-99df-873e9eddcfca, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 17, server: 180.101.193.226, type: ss, country: 🇭🇰 HK, port: 10068, password: RsDk3peCSuo76B68, cipher: aes-256-cfb}
-  - {name: 🇨🇳 CN 18, server: 14.29.230.228, type: trojan, country: 🇯🇵 JP, port: 13324, password: Mf50c428, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 19, server: xi.kanao.xyz, type: trojan, country: 🇸🇬 SG, port: 58808, password: 5f828b55-4967-41f3-99df-873e9eddcfca, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR 20, server: 144.24.72.126, type: trojan, country: 🇰🇷 KR, port: 443, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 21, server: 116.162.120.23, type: ssr, country: 🇷🇺 RU, port: 562, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53925:hjgjuy6t655jjg, obfs: plain, obfs-param: dC5tZS92cG5oYXQ}
-  - {name: 🇨🇳 CN 22, server: 116.162.120.23, type: ssr, country: 🇳🇱 NL, port: 611, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53925:hjgjuy6t655jjg, obfs: plain}
-  - {name: 🇨🇳 CN 23, server: liaoningddns.xyz, type: ssr, country: 🇸🇬 SG, port: 11429, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
-  - {name: 🇨🇳 CN 24, server: xi.kanao.xyz, type: trojan, country: 🇻🇳 VN, port: 58831, password: 5f828b55-4967-41f3-99df-873e9eddcfca, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 25, server: us-02.bestlink.ml, type: ss, country: 🇺🇸 US, port: 15029, password: b639e8a7-8fee-4d28-9d5b-2e8ea92f0c30, cipher: aes-256-gcm}
-  - {name: 🇨🇳 CN 26, server: usstartus2.eucdurl.me, type: ssr, country: 🇺🇸 US, port: 564, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 45197:HECS4utDkIVxbpwN, obfs: plain}
-  - {name: 🇨🇳 CN 27, server: usstartus2.eucdurl.me, type: ssr, country: 🇺🇸 US, port: 567, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 45197:HECS4utDkIVxbpwN, obfs: plain}
-  - {name: 🇨🇳 CN 28, server: 223.166.145.153, type: ssr, country: 🇺🇸 US, port: 564, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 45197:HECS4utDkIVxbpwN, obfs: plain, obfs-param: dC5tZS92cG5oYXQ}
-  - {name: 🇬🇧 GB 29, server: content-provider14.cdn-delivery.akamaicd.com, type: trojan, country: 🇬🇧 GB, port: 443, password: origin, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 GB 30, server: content-provider13.cdn-delivery.akamaicd.com, type: trojan, country: 🇬🇧 GB, port: 443, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 31, server: gz-hk.iepl.0000.foxinode.com, type: ss, country: 🇭🇰 HK, port: 10121, password: e31cc8d4-5b95-4064-822e-b0524442a1fe, cipher: chacha20-ietf-poly1305}
+  - {name: 🇨🇳 CN 1, server: xi.kanao.xyz, type: trojan, country: 🇨🇳 TW, port: 58827, password: 5f828b55-4967-41f3-99df-873e9eddcfca, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 2, server: zj9.fdhsujj.xyz, type: ssr, country: 🇬🇧 GB, port: 23557, password: J3ITPq, cipher: aes-256-cfb, protocol: auth_aes128_sha1, protocol-param: 286652:Ky6KOw, obfs: http_simple, obfs-param: ZGJlOTYyODY2NTIubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 3, server: 183.232.141.119, type: ssr, country: 🇭🇰 HK, port: 561, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53925:hjgjuy6t655jjg, obfs: plain, obfs-param: ZEM1dFpTOTJjRzVvWVhR}
+  - {name: 🇨🇳 HK 4, server: 45.11.104.94, type: trojan, country: 🇭🇰 HK, port: 3389, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 5, server: 183.232.141.82, type: ssr, country: 🇭🇰 HK, port: 560, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53925:hjgjuy6t655jjg, obfs: plain}
+  - {name: 🇨🇳 HK 6, server: hk1cmi.nicevpns.com, type: trojan, country: 🇭🇰 HK, port: 443, password: 679c2b87-afc3-44a6-8470-1fb03ecdbec6, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 7, server: 183.232.141.107, type: ssr, country: 🇭🇰 HK, port: 560, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53925:hjgjuy6t655jjg, obfs: plain, obfs-param: ZEM1dFpTOTJjRzVvWVhR}
+  - {name: 🇨🇳 CN 8, server: da.kanao.xyz, type: trojan, country: 🇭🇰 HK, port: 58803, password: 5f828b55-4967-41f3-99df-873e9eddcfca, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 9, server: xi.kanao.xyz, type: trojan, country: 🇭🇰 HK, port: 58820, password: 5f828b55-4967-41f3-99df-873e9eddcfca, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 10, server: xi.kanao.xyz, type: trojan, country: 🇭🇰 HK, port: 58802, password: 5f828b55-4967-41f3-99df-873e9eddcfca, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 11, server: liaoningddns.xyz, type: ssr, country: 🇬🇧 GB, port: 11501, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: VFVSRk5GbFhTWGhOYWtGNVRYazFkR0ZYVG5saU0wNTJXbTVSZFZreU9YUQ}
+  - {name: 🇨🇳 CN 12, server: da.kanao.xyz, type: trojan, country: 🇭🇰 HK, port: 58819, password: 5f828b55-4967-41f3-99df-873e9eddcfca, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 13, server: 183.232.141.120, type: ssr, country: 🇰🇷 KR, port: 565, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53925:hjgjuy6t655jjg, obfs: plain}
+  - {name: 🇨🇳 CN 14, server: 3hk.fdhsujj.xyz, type: ssr, country: 🇸🇬 SG, port: 23543, password: J3ITPq, cipher: aes-256-cfb, protocol: auth_aes128_sha1, protocol-param: 286652:Ky6KOw, obfs: http_simple, obfs-param: ZGJlOTYyODY2NTIubWljcm9zb2Z0LmNvbQ}
+  - {name: 🇨🇳 CN 15, server: xi.kanao.xyz, type: trojan, country: 🇮🇳 IN, port: 58812, password: 5f828b55-4967-41f3-99df-873e9eddcfca, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 16, server: 112.fastea.top, type: trojan, country: 🇸🇬 SG, port: 53316, password: bc65adbe-946a-4b68-b3dc-9a777af92412, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 17, server: 116.162.120.23, type: ssr, country: 🇳🇱 NL, port: 611, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53925:hjgjuy6t655jjg, obfs: plain}
+  - {name: 🇨🇳 CN 18, server: 116.162.120.23, type: ssr, country: 🇷🇺 RU, port: 562, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53925:hjgjuy6t655jjg, obfs: plain}
+  - {name: 🇨🇳 CN 19, server: 14.29.230.228, type: trojan, country: 🇸🇬 SG, port: 13325, password: M87e36b2, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 20, server: liaoningddns.xyz, type: ssr, country: 🇭🇰 HK, port: 11420, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
+  - {name: 🇨🇳 CN 21, server: da.kanao.xyz, type: trojan, country: 🇰🇷 KR, port: 58809, password: 5f828b55-4967-41f3-99df-873e9eddcfca, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 22, server: xi.kanao.xyz, type: trojan, country: 🇹🇭 TH, port: 58830, password: 5f828b55-4967-41f3-99df-873e9eddcfca, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 23, server: 14.29.124.168, type: ss, country: 🇨🇳 TW, port: 24004, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
+  - {name: 🇨🇳 CN 24, server: 223.166.145.153, type: ssr, country: 🇺🇸 US, port: 565, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53925:hjgjuy6t655jjg, obfs: plain}
+  - {name: 🇨🇳 CN 25, server: 223.166.145.153, type: ssr, country: 🇺🇸 US, port: 568, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53925:hjgjuy6t655jjg, obfs: plain}
+  - {name: 🇨🇳 CN 26, server: usstartus2.eucdurl.me, type: ssr, country: 🇺🇸 US, port: 569, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 51361:67mfIToL84PnZq0d, obfs: plain}
+  - {name: 🇨🇳 CN 27, server: 116.162.120.23, type: ssr, country: 🇹🇷 TR, port: 620, password: mblank1port, cipher: chacha20-ietf, protocol: auth_aes128_md5, protocol-param: 53925:hjgjuy6t655jjg, obfs: plain}
+  - {name: 🇯🇵 JP 28, server: 1009jp.tfzhc.top, type: trojan, country: 🇯🇵 JP, port: 80, password: 1a17faee-e35d-48e8-9708-e0a7b7ef04a1, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 29, server: 116.129.254.29, type: trojan, country: 🇺🇸 US, port: 3381, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 30, server: xi.kanao.xyz, type: trojan, country: 🇺🇸 US, port: 58832, password: 5f828b55-4967-41f3-99df-873e9eddcfca, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 31, server: liaoningddns.xyz, type: ssr, country: 🇺🇸 US, port: 11423, password: Fhbe0z, cipher: chacha20-ietf, protocol: auth_aes128_sha1, protocol-param: 26786:r3uWHp, obfs: tls1.2_ticket_auth, obfs-param: 018ab12023.microsoft.com}
+  - {name: 🇨🇳 CN 32, server: pull-cache-lu01.xyx-xylo.com, type: trojan, country: 🇭🇰 HK, port: 19701, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 33, server: 116.129.253.134, type: trojan, country: 🇺🇸 US, port: 3381, password: 6222266fcd4ed224, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
@@ -43,23 +45,23 @@ proxy-groups:
   - 🇨🇳 CN 1
   - 🇨🇳 CN 2
   - 🇨🇳 CN 3
-  - 🇨🇳 CN 4
-  - 🇨🇳 HK 5
+  - 🇨🇳 HK 4
+  - 🇨🇳 CN 5
   - 🇨🇳 HK 6
   - 🇨🇳 CN 7
-  - 🇨🇳 HK 8
-  - 🇨🇳 HK 9
+  - 🇨🇳 CN 8
+  - 🇨🇳 CN 9
   - 🇨🇳 CN 10
   - 🇨🇳 CN 11
   - 🇨🇳 CN 12
   - 🇨🇳 CN 13
   - 🇨🇳 CN 14
-  - 🇩🇪 DE 15
-  - 🇨🇳 CN 16
+  - 🇨🇳 CN 15
+  - 🇸🇬 SG 16
   - 🇨🇳 CN 17
   - 🇨🇳 CN 18
   - 🇨🇳 CN 19
-  - 🇰🇷 KR 20
+  - 🇨🇳 CN 20
   - 🇨🇳 CN 21
   - 🇨🇳 CN 22
   - 🇨🇳 CN 23
@@ -67,33 +69,35 @@ proxy-groups:
   - 🇨🇳 CN 25
   - 🇨🇳 CN 26
   - 🇨🇳 CN 27
-  - 🇨🇳 CN 28
-  - 🇬🇧 GB 29
-  - 🇬🇧 GB 30
+  - 🇯🇵 JP 28
+  - 🇨🇳 CN 29
+  - 🇨🇳 CN 30
   - 🇨🇳 CN 31
+  - 🇨🇳 CN 32
+  - 🇨🇳 CN 33
 - name: ♻️ automatic
   type: url-test
   proxies:
   - 🇨🇳 CN 1
   - 🇨🇳 CN 2
   - 🇨🇳 CN 3
-  - 🇨🇳 CN 4
-  - 🇨🇳 HK 5
+  - 🇨🇳 HK 4
+  - 🇨🇳 CN 5
   - 🇨🇳 HK 6
   - 🇨🇳 CN 7
-  - 🇨🇳 HK 8
-  - 🇨🇳 HK 9
+  - 🇨🇳 CN 8
+  - 🇨🇳 CN 9
   - 🇨🇳 CN 10
   - 🇨🇳 CN 11
   - 🇨🇳 CN 12
   - 🇨🇳 CN 13
   - 🇨🇳 CN 14
-  - 🇩🇪 DE 15
-  - 🇨🇳 CN 16
+  - 🇨🇳 CN 15
+  - 🇸🇬 SG 16
   - 🇨🇳 CN 17
   - 🇨🇳 CN 18
   - 🇨🇳 CN 19
-  - 🇰🇷 KR 20
+  - 🇨🇳 CN 20
   - 🇨🇳 CN 21
   - 🇨🇳 CN 22
   - 🇨🇳 CN 23
@@ -101,10 +105,12 @@ proxy-groups:
   - 🇨🇳 CN 25
   - 🇨🇳 CN 26
   - 🇨🇳 CN 27
-  - 🇨🇳 CN 28
-  - 🇬🇧 GB 29
-  - 🇬🇧 GB 30
+  - 🇯🇵 JP 28
+  - 🇨🇳 CN 29
+  - 🇨🇳 CN 30
   - 🇨🇳 CN 31
+  - 🇨🇳 CN 32
+  - 🇨🇳 CN 33
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
