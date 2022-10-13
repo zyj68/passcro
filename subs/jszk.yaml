@@ -4,149 +4,86 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 新加坡, server: 20.239.162.0, port: 48001, type: vmess, uuid: 8a8c22a9-b299-37d6-b6c5-d13984b5861d, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.239.162.0}}, udp: true}
-  - {name: 日本02, server: 20.239.162.0, port: 48008, type: vmess, uuid: 8a8c22a9-b299-37d6-b6c5-d13984b5861d, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.239.162.0}}, udp: true}
-  - {name: 日本01, server: 20.239.162.0, port: 48002, type: vmess, uuid: 8a8c22a9-b299-37d6-b6c5-d13984b5861d, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.239.162.0}}, udp: true}
-  - {name: 日本03, server: 20.239.162.0, port: 48009, type: vmess, uuid: 8a8c22a9-b299-37d6-b6c5-d13984b5861d, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.239.162.0}}, udp: true}
-  - {name: 荷兰, server: 20.239.162.0, port: 48011, type: vmess, uuid: 8a8c22a9-b299-37d6-b6c5-d13984b5861d, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.239.162.0}}, udp: true}
-  - {name: "深港专线转香港BGP[M][倍率:2.5]", server: 211.99.96.118, port: 16132, type: ssr, cipher: aes-256-cfb, password: ocClvLAuwJ7dTNPn, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: "湖南联通转香港HKT3[M][倍率:0.9]", server: 116.129.254.12, port: 65526, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "上海电信转香港BGP3[M][倍率:1.1]", server: cn-shtele.lfk5s2.ccddn4.icu, port: 65001, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "上海电信转香港BGP4[M][倍率:1.1]", server: cn-shtele.lfk5s2.ccddn4.icu, port: 65002, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "湖南联通转日本NTT5[倍率:0.8]", server: 116.129.254.12, port: 65522, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "长沙联通转日本NTT[M][倍率:0.8]", server: 116.129.253.131, port: 65522, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "长沙联通转日本NTT5[倍率:0.8]", server: 116.129.253.160, port: 16132, type: ssr, cipher: aes-256-cfb, password: ocClvLAuwJ7dTNPn, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: "长沙联通转日本NTT3[M][倍率:0.8]", server: 116.129.253.131, port: 65523, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "湖南联通转日本NTT[倍率:0.8]", server: 116.129.254.5, port: 4569, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "湖南联通转日本Azure[倍率:1]", server: 116.129.254.12, port: 65520, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "湖南联通转日本AWS[M][倍率:0.9]", server: 116.129.254.7, port: 16132, type: ssr, cipher: aes-256-cfb, password: ocClvLAuwJ7dTNPn, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: "长沙联通转台湾HiNet2[倍率:1]", server: 116.129.253.131, port: 65520, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "湖南联通转日本Webarena[M][倍率:0.8]", server: 116.129.254.12, port: 65523, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "长沙联通转日本NTT2[M][倍率:0.8]", server: 116.129.253.138, port: 16132, type: ssr, cipher: aes-256-cfb, password: ocClvLAuwJ7dTNPn, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: "长沙联通转日本Webarena[M][倍率:0.9]", server: 116.129.253.131, port: 65526, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "湖南联通转日本NTT4[倍率:0.8]", server: 116.129.254.12, port: 65521, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "上海电信转台湾HiNet2[M][倍率:1.2]", server: cn-shtele.lfk5s2.ccddn4.icu, port: 65003, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "长沙联通转香港icable[M][倍率:0.9]", server: 116.129.253.141, port: 16132, type: ssr, cipher: aes-256-cfb, password: ocClvLAuwJ7dTNPn, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 香港Misaka-dip, server: 45.11.104.94, port: 3389, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
-  - {name: "湖南联通转香港Azure[倍率:0.9]", server: 116.129.254.5, port: 16132, type: ssr, cipher: aes-256-cfb, password: ocClvLAuwJ7dTNPn, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: "长沙联通转香港BGP[M][倍率:0.9]", server: 116.129.253.131, port: 65524, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: "湖南联通转香港BGP3[M][倍率:0.9]", server: 116.129.254.45, port: 16132, type: ssr, cipher: aes-256-cfb, password: ocClvLAuwJ7dTNPn, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 日本03{优化1|V2ray}, server: jp1.awslcn.cc, port: 25220, type: vmess, uuid: "eb91d603-c8e9-4050-8304-8421ccfd0b00", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.awslcn.cc}}, udp: true}
-  - {name: 日本02{优化2|V2ray}, server: jp2.awslcn.cc, port: 25237, type: vmess, uuid: "eb91d603-c8e9-4050-8304-8421ccfd0b00", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.awslcn.cc}}, udp: true}
-  - {name: 台湾②{联通|V2ray}, server: cu.awslcn.cc, port: 25232, type: vmess, uuid: "eb91d603-c8e9-4050-8304-8421ccfd0b00", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
-  - {name: 日本01{优化1|V2ray}, server: jp1.awslcn.cc, port: 25237, type: vmess, uuid: "eb91d603-c8e9-4050-8304-8421ccfd0b00", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.awslcn.cc}}, udp: true}
-  - {name: 香港03{优化1|V2ray}, server: hk1.awslcn.cc, port: 25248, type: vmess, uuid: "eb91d603-c8e9-4050-8304-8421ccfd0b00", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk1.awslcn.cc}}, udp: true}
-  - {name: 香港05{优化1|V2ray}, server: hk1.awslcn.cc, port: 25244, type: vmess, uuid: "eb91d603-c8e9-4050-8304-8421ccfd0b00", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk1.awslcn.cc}}, udp: true}
-  - {name: "湖南联通转台湾KBT[M][倍率:1]", server: 116.129.254.5, port: 4565, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 1af96125473.dm.files.1drv.com, uri: /}, udp: true}
-  - {name: 韩国 B157 | 湘日隧道 | 0x, server: 139.227.182.124, port: 28158, type: trojan, password: M469de9d, skip-cert-verify: true, udp: true}
-  - {name: "湖南联通转香港HKT2[M][倍率:0.9]", server: 116.129.254.25, port: 16132, type: ssr, cipher: aes-256-cfb, password: ocClvLAuwJ7dTNPn, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: "🇺🇸 [BGP-GSLB]美国1•0.8x", server: 16.163.226.1, port: 2053, type: trojan, password: 39f71286-da06-4de4-81ba-5559b9b8b74b, skip-cert-verify: true, udp: true}
-  - {name: 彰化Hinet-dip_5, server: 111.45.22.246, port: 16129, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB, server: sg16.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 C 03 1Gbps HBO TVB, server: sg03.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW, udp: true}
+  - {name: 香港 油尖旺御金·国峯 名氣通電訊 C03, server: hkhe03.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW, udp: true}
+  - {name: 香港 油尖旺御金·国峯 環球全域電訊 C01, server: hgc01.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW, udp: true}
+  - {name: 香港 油尖旺御金·国峯 環球全域電訊 C03, server: hgc03.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK8 C 02 1Gbps HBO TVB, server: sg12.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW, udp: true}
+  - {name: 香港 H1, server: nehk01.amamya.live, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW, udp: true}
+  - {name: 香港 油尖旺御金·国峯 環球全域電訊 C05, server: hgc05.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW, udp: true}
+  - {name: 香港 油尖旺御金·国峯 名氣通電訊 C02, server: hkhe02.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK8 C 04 1Gbps HBO TVB, server: sg14.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB, server: sg20.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW, udp: true}
+  - {name: 中国-香港 IPLC Equinix HK2 C 02 1Gbps HBO TVB, server: sg02.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW, udp: true}
+  - {name: 香港 H4, server: nehk04.amamya.live, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW, udp: true}
+  - {name: Asia 香港04 | 移动优化 | 解锁奈飞, server: 18.167.180.68, port: 44300, type: vmess, uuid: bff480ce-84c0-3185-8e0d-ed2b39e0873e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fm}, udp: true}
+  - {name: Asia 香港03 | 移动优化 | 解锁奈飞, server: 18.163.121.150, port: 44300, type: vmess, uuid: bff480ce-84c0-3185-8e0d-ed2b39e0873e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fm}, udp: true}
+  - {name: Asia 香港02 | 电信优化 | 解锁奈飞, server: 20.205.13.125, port: 44300, type: vmess, uuid: bff480ce-84c0-3185-8e0d-ed2b39e0873e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fm}, udp: true}
+  - {name: 新加坡 AWS1000M, server: text3.xbywwcp.us, port: 80, type: vmess, uuid: "c13208bf-d4f7-3e84-8f17-3d6c0830be2e", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: "%7B%22host%22:%22a.189.cn%22%7D"}}, udp: true}
+  - {name: 香港 AWS1000M, server: text1.xbywwcp.us, port: 80, type: vmess, uuid: "c13208bf-d4f7-3e84-8f17-3d6c0830be2e", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: "%7B%22host%22:%22a.189.cn%22%7D"}}, udp: true}
+  - {name: 日本 AWS1000M, server: text2.xbywwcp.us, port: 80, type: vmess, uuid: "c13208bf-d4f7-3e84-8f17-3d6c0830be2e", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: "%7B%22host%22:%22a.189.cn%22%7D"}}, udp: true}
+  - {name: 香港 AZ1000M, server: text4.xbywwcp.us, port: 80, type: vmess, uuid: "c13208bf-d4f7-3e84-8f17-3d6c0830be2e", alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: "%7B%22host%22:%22a.189.cn%22%7D"}}, udp: true}
+  - {name: 寻梦SS, server: xmssmf01.xmss.vip, port: 16666, type: ss, cipher: chacha20-ietf-poly1305, password: 10657658-502a-42fd-97fd-1e08f538e13d, udp: true}
   - {name: USSS, server: xmssmf01.xmss.vip, port: 16666, type: ss, cipher: chacha20-ietf-poly1305, password: 10657658-502a-42fd-97fd-1e08f538e13d, udp: true}
+  - {name: 香港Misaka-dip, server: 45.11.104.94, port: 3389, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
   - {name: 台北PNI-dip_1, server: 111.45.22.136, port: 16114, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 彰化Hinet-dip_8, server: 111.45.22.246, port: 16132, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇵🇭 [BGP-GSLB]菲律宾马尼拉", server: 16.163.226.1, port: 2053, type: trojan, password: 39f71286-da06-4de4-81ba-5559b9b8b74b, skip-cert-verify: true, udp: true}
-  - {name: GH, server: 118.140.206.169, port: 443, type: trojan, password: 666888, skip-cert-verify: true, udp: true}
-  - {name: "🇳🇬 [BGP-GSLB]尼日尼亚", server: 16.163.226.1, port: 2053, type: trojan, password: 39f71286-da06-4de4-81ba-5559b9b8b74b, skip-cert-verify: true, udp: true}
-  - {name: 台北PNI-dip_4, server: 111.45.22.246, port: 16115, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 新加坡
-  - 日本02
-  - 日本01
-  - 日本03
-  - 荷兰
-  - 深港专线转香港BGP[M][倍率:2.5]
-  - 湖南联通转香港HKT3[M][倍率:0.9]
-  - 上海电信转香港BGP3[M][倍率:1.1]
-  - 上海电信转香港BGP4[M][倍率:1.1]
-  - 湖南联通转日本NTT5[倍率:0.8]
-  - 长沙联通转日本NTT[M][倍率:0.8]
-  - 长沙联通转日本NTT5[倍率:0.8]
-  - 长沙联通转日本NTT3[M][倍率:0.8]
-  - 湖南联通转日本NTT[倍率:0.8]
-  - 湖南联通转日本Azure[倍率:1]
-  - 湖南联通转日本AWS[M][倍率:0.9]
-  - 长沙联通转台湾HiNet2[倍率:1]
-  - 湖南联通转日本Webarena[M][倍率:0.8]
-  - 长沙联通转日本NTT2[M][倍率:0.8]
-  - 长沙联通转日本Webarena[M][倍率:0.9]
-  - 湖南联通转日本NTT4[倍率:0.8]
-  - 上海电信转台湾HiNet2[M][倍率:1.2]
-  - 长沙联通转香港icable[M][倍率:0.9]
-  - 香港Misaka-dip
-  - 湖南联通转香港Azure[倍率:0.9]
-  - 长沙联通转香港BGP[M][倍率:0.9]
-  - 湖南联通转香港BGP3[M][倍率:0.9]
-  - 日本03{优化1|V2ray}
-  - 日本02{优化2|V2ray}
-  - 台湾②{联通|V2ray}
-  - 日本01{优化1|V2ray}
-  - 香港03{优化1|V2ray}
-  - 香港05{优化1|V2ray}
-  - 湖南联通转台湾KBT[M][倍率:1]
-  - 韩国 B157 | 湘日隧道 | 0x
-  - 湖南联通转香港HKT2[M][倍率:0.9]
-  - 🇺🇸 [BGP-GSLB]美国1•0.8x
-  - 彰化Hinet-dip_5
+  - 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
+  - 中国-香港 IPLC Equinix HK2 C 03 1Gbps HBO TVB
+  - 香港 油尖旺御金·国峯 名氣通電訊 C03
+  - 香港 油尖旺御金·国峯 環球全域電訊 C01
+  - 香港 油尖旺御金·国峯 環球全域電訊 C03
+  - 中国-香港 IEPL Equinix HK8 C 02 1Gbps HBO TVB
+  - 香港 H1
+  - 香港 油尖旺御金·国峯 環球全域電訊 C05
+  - 香港 油尖旺御金·国峯 名氣通電訊 C02
+  - 中国-香港 IEPL Equinix HK8 C 04 1Gbps HBO TVB
+  - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
+  - 中国-香港 IPLC Equinix HK2 C 02 1Gbps HBO TVB
+  - 香港 H4
+  - Asia 香港04 | 移动优化 | 解锁奈飞
+  - Asia 香港03 | 移动优化 | 解锁奈飞
+  - Asia 香港02 | 电信优化 | 解锁奈飞
+  - 新加坡 AWS1000M
+  - 香港 AWS1000M
+  - 日本 AWS1000M
+  - 香港 AZ1000M
+  - 寻梦SS
   - USSS
+  - 香港Misaka-dip
   - 台北PNI-dip_1
-  - 彰化Hinet-dip_8
-  - 🇵🇭 [BGP-GSLB]菲律宾马尼拉
-  - GH
-  - 🇳🇬 [BGP-GSLB]尼日尼亚
-  - 台北PNI-dip_4
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 新加坡
-  - 日本02
-  - 日本01
-  - 日本03
-  - 荷兰
-  - 深港专线转香港BGP[M][倍率:2.5]
-  - 湖南联通转香港HKT3[M][倍率:0.9]
-  - 上海电信转香港BGP3[M][倍率:1.1]
-  - 上海电信转香港BGP4[M][倍率:1.1]
-  - 湖南联通转日本NTT5[倍率:0.8]
-  - 长沙联通转日本NTT[M][倍率:0.8]
-  - 长沙联通转日本NTT5[倍率:0.8]
-  - 长沙联通转日本NTT3[M][倍率:0.8]
-  - 湖南联通转日本NTT[倍率:0.8]
-  - 湖南联通转日本Azure[倍率:1]
-  - 湖南联通转日本AWS[M][倍率:0.9]
-  - 长沙联通转台湾HiNet2[倍率:1]
-  - 湖南联通转日本Webarena[M][倍率:0.8]
-  - 长沙联通转日本NTT2[M][倍率:0.8]
-  - 长沙联通转日本Webarena[M][倍率:0.9]
-  - 湖南联通转日本NTT4[倍率:0.8]
-  - 上海电信转台湾HiNet2[M][倍率:1.2]
-  - 长沙联通转香港icable[M][倍率:0.9]
-  - 香港Misaka-dip
-  - 湖南联通转香港Azure[倍率:0.9]
-  - 长沙联通转香港BGP[M][倍率:0.9]
-  - 湖南联通转香港BGP3[M][倍率:0.9]
-  - 日本03{优化1|V2ray}
-  - 日本02{优化2|V2ray}
-  - 台湾②{联通|V2ray}
-  - 日本01{优化1|V2ray}
-  - 香港03{优化1|V2ray}
-  - 香港05{优化1|V2ray}
-  - 湖南联通转台湾KBT[M][倍率:1]
-  - 韩国 B157 | 湘日隧道 | 0x
-  - 湖南联通转香港HKT2[M][倍率:0.9]
-  - 🇺🇸 [BGP-GSLB]美国1•0.8x
-  - 彰化Hinet-dip_5
+  - 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
+  - 中国-香港 IPLC Equinix HK2 C 03 1Gbps HBO TVB
+  - 香港 油尖旺御金·国峯 名氣通電訊 C03
+  - 香港 油尖旺御金·国峯 環球全域電訊 C01
+  - 香港 油尖旺御金·国峯 環球全域電訊 C03
+  - 中国-香港 IEPL Equinix HK8 C 02 1Gbps HBO TVB
+  - 香港 H1
+  - 香港 油尖旺御金·国峯 環球全域電訊 C05
+  - 香港 油尖旺御金·国峯 名氣通電訊 C02
+  - 中国-香港 IEPL Equinix HK8 C 04 1Gbps HBO TVB
+  - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
+  - 中国-香港 IPLC Equinix HK2 C 02 1Gbps HBO TVB
+  - 香港 H4
+  - Asia 香港04 | 移动优化 | 解锁奈飞
+  - Asia 香港03 | 移动优化 | 解锁奈飞
+  - Asia 香港02 | 电信优化 | 解锁奈飞
+  - 新加坡 AWS1000M
+  - 香港 AWS1000M
+  - 日本 AWS1000M
+  - 香港 AZ1000M
+  - 寻梦SS
   - USSS
+  - 香港Misaka-dip
   - 台北PNI-dip_1
-  - 彰化Hinet-dip_8
-  - 🇵🇭 [BGP-GSLB]菲律宾马尼拉
-  - GH
-  - 🇳🇬 [BGP-GSLB]尼日尼亚
-  - 台北PNI-dip_4
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
