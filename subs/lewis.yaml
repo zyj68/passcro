@@ -4,101 +4,56 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 中国-tg频道:@bpjzx2-1, server: 116.129.253.134, port: 3381, type: trojan, password: 6222266fcd4ed224, skip-cert-verify: true, udp: true}
-  - {name: 英国-tg频道:@bpjzx2-2, server: content-provider22.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: shefelnak, sni: content-provider22.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: 日本-tg频道:@bpjzx2-3, server: 8.209.220.34, port: 80, type: vmess, uuid: 74758f06-f4b9-4ef1-a86c-f0a0cc82109f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aries, headers: {Host: lux.justu.ml}}, udp: true}
-  - {name: 德国-tg频道:@bpjzx2-4, server: 172.64.155.30, port: 2053, type: vmess, uuid: 8afc6cdf-4f0a-4725-a44c-5dacdc2b2784, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: haxeu2.zikkcc.ga}}, udp: true}
-  - {name: 法国-tg频道:@bpjzx2-5, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, sni: content-provider5.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: 中国-tg频道:@bpjzx2-6, server: 116.129.253.134, port: 3381, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
-  - {name: 中国-tg频道:@bpjzx2-7, server: ingress-i2.iivvppnn.info, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: 韩国-tg频道:@bpjzx2-8, server: 13.124.168.115, port: 443, type: vmess, uuid: 9bd937e3-9c36-485a-8273-c3bcb170eafc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 13.124.168.115}}, udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-9, server: 13.212.58.232, port: 443, type: vmess, uuid: 9bd937e3-9c36-485a-8273-c3bcb170eafc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 13.212.58.232}}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-10, server: 1002hk1326.tfzhc.top, port: 443, type: trojan, password: 9bd937e3-9c36-485a-8273-c3bcb170eafc, sni: 1002hk1326.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: 日本-tg频道:@bpjzx2-11, server: 20.205.119.31, port: 48000, type: vmess, uuid: fc30ce60-2362-39c7-af7d-3295e6016ad9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fm, headers: {Host: 20.205.119.31}}, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-12, server: 172.64.153.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}, udp: true}
-  - {name: 法国-tg频道:@bpjzx2-13, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, sni: content-provider26.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-14, server: shopify.com, port: 2086, type: vmess, uuid: cc91051d-79cf-460a-e018-54d5ed103820, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aries, headers: {Host: kmus.cloudflare.quest}}, udp: true}
-  - {name: -tg频道:@bpjzx2-15, server: cfhk.oppo.quest, port: 80, type: vmess, uuid: 2508cb1d-bd54-47c0-aead-1b8f55090427, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aries, headers: {Host: scw.cloudflare.quest}}, udp: true}
-  - {name: 中国-tg频道:@bpjzx2-16, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: -tg频道:@bpjzx2-17, server: cfhk.oppo.quest, port: 80, type: vmess, uuid: 2508cb1d-bd54-47c0-aead-1b8f55090427, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aries, headers: {Host: scw.cloudflare.quest}}, udp: true}
-  - {name: 美国-tg频道:@bpjzx2-18, server: aa.houdinix.space, port: 56656, type: vmess, uuid: fdb1740c-f246-4f5d-d1ff-87c5b29ae22c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /wis, headers: {Host: aa.houdinix.space}}, udp: true}
-  - {name: 中国-tg频道:@bpjzx2-19, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 香港-tg频道:@bpjzx2-20, server: 18.166.228.48, port: 45342, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2-21, server: 13.212.58.232, port: 443, type: vmess, uuid: 9bd937e3-9c36-485a-8273-c3bcb170eafc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 13.212.58.232}}, udp: true}
-  - {name: 韩国-tg频道:@bpjzx2-22, server: 13.124.168.115, port: 443, type: vmess, uuid: 9bd937e3-9c36-485a-8273-c3bcb170eafc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 13.124.168.115}}, udp: true}
-  - {name: 中国-tg频道:@bpjzx2-23, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 中国-tg频道:@bpjzx2-24, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 中国-tg频道:@bpjzx2-25, server: 116.129.254.6, port: 9026, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 中国-tg频道:@bpjzx2-26, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 法国-tg频道:@bpjzx2-27, server: content-provider6.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, sni: sg-01.tiktokcdn.top, skip-cert-verify: true, udp: true}
-  - {name: 中国-tg频道:@bpjzx2-28, server: 116.129.253.134, port: 3381, type: trojan, password: d02058f4f819dced, sni: d76bb35696.wns.windows.com, skip-cert-verify: true, udp: true}
-  - {name: 法国-tg频道:@bpjzx2-29, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, sni: golang.protocolbuffer.com, skip-cert-verify: true, udp: true}
+  - {name: 印度=tg频道:@bpjzx2=1, server: in02.my1188.org, port: 63069, type: vmess, uuid: "ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22mugua-us03.covid19.rip%22%7D"}}, udp: true}
+  - {name: 伊朗=tg频道:@bpjzx2=2, server: mahsaproxychannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxychannel.way-of-freedom.com}}, udp: true}
+  - {name: 伊朗=tg频道:@bpjzx2=3, server: MahsaProxyTelegramChannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /graphql, headers: {Host: MahsaProxyTelegramChannel.way-of-freedom.com}}, udp: true}
+  - {name: 英国=tg频道:@bpjzx2=4, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
+  - {name: 印度=tg频道:@bpjzx2=5, server: in06.my1188.org, port: 63087, type: vmess, uuid: "ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /mugua, headers: {Host: "%7B%22Host%22:%22sg-balancer.tencent.best%22%7D"}}, udp: true}
+  - {name: 香港=tg频道:@bpjzx2=6, server: www.gov.hk, port: 80, type: vmess, uuid: f9247df4-02d5-4b31-acc5-4022652c5953, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aries, headers: {Host: ee.cloudflare.quest}}, udp: true}
+  - {name: 新加坡=tg频道:@bpjzx2=7, server: 54.151.172.209, port: 443, type: vmess, uuid: 20a1e3d1-9fb0-4f09-8bc9-b75ec31a1858, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 印度=tg频道:@bpjzx2=8, server: in02.my1188.org, port: 63071, type: vmess, uuid: "ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22mugua-ru01.myn1des.com%22%7D"}}, udp: true}
+  - {name: 印度=tg频道:@bpjzx2=9, server: in02.my1188.org, port: 63051, type: vmess, uuid: "ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /hls, headers: {Host: "%7B%22Host%22:%22mugua-in01.airport-v2.com%22%7D"}}, udp: true}
+  - {name: 爱沙尼亚=tg频道:@bpjzx2=10, server: ee.cloudflare.quest, port: 80, type: vmess, uuid: f9247df4-02d5-4b31-acc5-4022652c5953, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aries, headers: {Host: ee.cloudflare.quest}}, udp: true}
+  - {name: 印度=tg频道:@bpjzx2=11, server: in02.my1188.org, port: 63014, type: vmess, uuid: "ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /mg, headers: {Host: "%7B%22Host%22:%22mugua-us01.covid19.rip%22%7D"}}, udp: true}
+  - {name: 日本=tg频道:@bpjzx2=12, server: 8.209.220.34, port: 80, type: vmess, uuid: 74758f06-f4b9-4ef1-a86c-f0a0cc82109f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aries, headers: {Host: lux.justu.ml}}, udp: true}
+  - {name: 印度=tg频道:@bpjzx2=13, server: in02.my1188.org, port: 63041, type: vmess, uuid: "ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /mg, headers: {Host: "%7B%22Host%22:%22mugua-br01.covid19.rip%22%7D"}}, udp: true}
+  - {name: 中国=tg频道:@bpjzx2=14, server: pro01.my1188.org, port: 3213, type: vmess, uuid: "ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22au01.iepl.nbsd.us%22%7D"}}, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 中国-tg频道:@bpjzx2-1
-  - 英国-tg频道:@bpjzx2-2
-  - 日本-tg频道:@bpjzx2-3
-  - 德国-tg频道:@bpjzx2-4
-  - 法国-tg频道:@bpjzx2-5
-  - 中国-tg频道:@bpjzx2-6
-  - 中国-tg频道:@bpjzx2-7
-  - 韩国-tg频道:@bpjzx2-8
-  - 新加坡-tg频道:@bpjzx2-9
-  - 香港-tg频道:@bpjzx2-10
-  - 日本-tg频道:@bpjzx2-11
-  - 美国-tg频道:@bpjzx2-12
-  - 法国-tg频道:@bpjzx2-13
-  - 美国-tg频道:@bpjzx2-14
-  - -tg频道:@bpjzx2-15
-  - 中国-tg频道:@bpjzx2-16
-  - -tg频道:@bpjzx2-17
-  - 美国-tg频道:@bpjzx2-18
-  - 中国-tg频道:@bpjzx2-19
-  - 香港-tg频道:@bpjzx2-20
-  - 新加坡-tg频道:@bpjzx2-21
-  - 韩国-tg频道:@bpjzx2-22
-  - 中国-tg频道:@bpjzx2-23
-  - 中国-tg频道:@bpjzx2-24
-  - 中国-tg频道:@bpjzx2-25
-  - 中国-tg频道:@bpjzx2-26
-  - 法国-tg频道:@bpjzx2-27
-  - 中国-tg频道:@bpjzx2-28
-  - 法国-tg频道:@bpjzx2-29
+  - 印度=tg频道:@bpjzx2=1
+  - 伊朗=tg频道:@bpjzx2=2
+  - 伊朗=tg频道:@bpjzx2=3
+  - 英国=tg频道:@bpjzx2=4
+  - 印度=tg频道:@bpjzx2=5
+  - 香港=tg频道:@bpjzx2=6
+  - 新加坡=tg频道:@bpjzx2=7
+  - 印度=tg频道:@bpjzx2=8
+  - 印度=tg频道:@bpjzx2=9
+  - 爱沙尼亚=tg频道:@bpjzx2=10
+  - 印度=tg频道:@bpjzx2=11
+  - 日本=tg频道:@bpjzx2=12
+  - 印度=tg频道:@bpjzx2=13
+  - 中国=tg频道:@bpjzx2=14
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 中国-tg频道:@bpjzx2-1
-  - 英国-tg频道:@bpjzx2-2
-  - 日本-tg频道:@bpjzx2-3
-  - 德国-tg频道:@bpjzx2-4
-  - 法国-tg频道:@bpjzx2-5
-  - 中国-tg频道:@bpjzx2-6
-  - 中国-tg频道:@bpjzx2-7
-  - 韩国-tg频道:@bpjzx2-8
-  - 新加坡-tg频道:@bpjzx2-9
-  - 香港-tg频道:@bpjzx2-10
-  - 日本-tg频道:@bpjzx2-11
-  - 美国-tg频道:@bpjzx2-12
-  - 法国-tg频道:@bpjzx2-13
-  - 美国-tg频道:@bpjzx2-14
-  - -tg频道:@bpjzx2-15
-  - 中国-tg频道:@bpjzx2-16
-  - -tg频道:@bpjzx2-17
-  - 美国-tg频道:@bpjzx2-18
-  - 中国-tg频道:@bpjzx2-19
-  - 香港-tg频道:@bpjzx2-20
-  - 新加坡-tg频道:@bpjzx2-21
-  - 韩国-tg频道:@bpjzx2-22
-  - 中国-tg频道:@bpjzx2-23
-  - 中国-tg频道:@bpjzx2-24
-  - 中国-tg频道:@bpjzx2-25
-  - 中国-tg频道:@bpjzx2-26
-  - 法国-tg频道:@bpjzx2-27
-  - 中国-tg频道:@bpjzx2-28
-  - 法国-tg频道:@bpjzx2-29
+  - 印度=tg频道:@bpjzx2=1
+  - 伊朗=tg频道:@bpjzx2=2
+  - 伊朗=tg频道:@bpjzx2=3
+  - 英国=tg频道:@bpjzx2=4
+  - 印度=tg频道:@bpjzx2=5
+  - 香港=tg频道:@bpjzx2=6
+  - 新加坡=tg频道:@bpjzx2=7
+  - 印度=tg频道:@bpjzx2=8
+  - 印度=tg频道:@bpjzx2=9
+  - 爱沙尼亚=tg频道:@bpjzx2=10
+  - 印度=tg频道:@bpjzx2=11
+  - 日本=tg频道:@bpjzx2=12
+  - 印度=tg频道:@bpjzx2=13
+  - 中国=tg频道:@bpjzx2=14
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
