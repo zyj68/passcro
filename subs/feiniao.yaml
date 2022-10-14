@@ -5,6 +5,13 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: "[CT/CM]香港 01", server: cnrefhk01.standurl.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 48714:NWsm4Mn83YRPHoye, obfs-param: "", udp: true}
+  - {name: "[CT/CM]香港 12", server: cnrefhk2.standurl.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 48714:NWsm4Mn83YRPHoye, obfs-param: "", udp: true}
+  - {name: "[CT/CM]香港 11", server: cucshk4.debugex.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 48714:NWsm4Mn83YRPHoye, obfs-param: "", udp: true}
+  - {name: 俄罗斯c RT, server: eduall.buzzline.org, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 48714:NWsm4Mn83YRPHoye, obfs-param: "", udp: true}
+  - {name: "[CT/CM]香港 14", server: cucshk4.debugex.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 48714:NWsm4Mn83YRPHoye, obfs-param: "", udp: true}
+  - {name: 土耳其, server: eduall.buzzline.org, port: 620, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 48714:NWsm4Mn83YRPHoye, obfs-param: "", udp: true}
+  - {name: 意大利, server: eduall.buzzline.org, port: 612, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 48714:NWsm4Mn83YRPHoye, obfs-param: "", udp: true}
   - {name: 香港 HK - 1, server: node-1.xenoconnect.com, port: 40005, type: vmess, uuid: 69afb009-991f-474a-800f-18173cfa6a87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: d1--cn-gotcha104.bilivideo.com}, udp: true}
   - {name: 新加坡 SG - MPLS 3, server: mpls-3.xenonode1.top, port: 10001, type: ss, cipher: aes-256-gcm, password: 69afb009-991f-474a-800f-18173cfa6a87, udp: true}
   - {name: 泰国 TH - 3, server: node-3.xenoconnect.com, port: 40024, type: vmess, uuid: 69afb009-991f-474a-800f-18173cfa6a87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: d1--cn-gotcha202.bilivideo.com}, udp: true}
@@ -89,6 +96,13 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - "[CT/CM]香港 01"
+      - "[CT/CM]香港 12"
+      - "[CT/CM]香港 11"
+      - 俄罗斯c RT
+      - "[CT/CM]香港 14"
+      - 土耳其
+      - 意大利
       - 香港 HK - 1
       - 新加坡 SG - MPLS 3
       - 泰国 TH - 3
@@ -172,6 +186,13 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - "[CT/CM]香港 01"
+      - "[CT/CM]香港 12"
+      - "[CT/CM]香港 11"
+      - 俄罗斯c RT
+      - "[CT/CM]香港 14"
+      - 土耳其
+      - 意大利
       - 香港 HK - 1
       - 新加坡 SG - MPLS 3
       - 泰国 TH - 3
@@ -256,6 +277,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - "[CT/CM]香港 01"
+      - "[CT/CM]香港 12"
+      - "[CT/CM]香港 11"
+      - 俄罗斯c RT
+      - "[CT/CM]香港 14"
+      - 土耳其
+      - 意大利
       - 香港 HK - 1
       - 新加坡 SG - MPLS 3
       - 泰国 TH - 3
@@ -352,6 +380,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - "[CT/CM]香港 01"
+      - "[CT/CM]香港 12"
+      - "[CT/CM]香港 11"
+      - 俄罗斯c RT
+      - "[CT/CM]香港 14"
+      - 土耳其
+      - 意大利
       - 香港 HK - 1
       - 新加坡 SG - MPLS 3
       - 泰国 TH - 3
@@ -434,6 +469,10 @@ proxy-groups:
     type: select
     proxies:
       - 🎯 全球直连
+      - "[CT/CM]香港 01"
+      - "[CT/CM]香港 12"
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14"
       - 香港 HK - 1
       - 香港 HK - 3
       - 台湾 TW - 1
@@ -451,6 +490,13 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - "[CT/CM]香港 01"
+      - "[CT/CM]香港 12"
+      - "[CT/CM]香港 11"
+      - 俄罗斯c RT
+      - "[CT/CM]香港 14"
+      - 土耳其
+      - 意大利
       - 香港 HK - 1
       - 新加坡 SG - MPLS 3
       - 泰国 TH - 3
@@ -534,6 +580,13 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - "[CT/CM]香港 01"
+      - "[CT/CM]香港 12"
+      - "[CT/CM]香港 11"
+      - 俄罗斯c RT
+      - "[CT/CM]香港 14"
+      - 土耳其
+      - 意大利
       - 香港 HK - 1
       - 新加坡 SG - MPLS 3
       - 泰国 TH - 3
@@ -618,6 +671,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - "[CT/CM]香港 01"
+      - "[CT/CM]香港 12"
+      - "[CT/CM]香港 11"
+      - 俄罗斯c RT
+      - "[CT/CM]香港 14"
+      - 土耳其
+      - 意大利
       - 香港 HK - 1
       - 新加坡 SG - MPLS 3
       - 泰国 TH - 3
@@ -711,6 +771,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - "[CT/CM]香港 01"
+      - "[CT/CM]香港 12"
+      - "[CT/CM]香港 11"
+      - 俄罗斯c RT
+      - "[CT/CM]香港 14"
+      - 土耳其
+      - 意大利
       - 香港 HK - 1
       - 新加坡 SG - MPLS 3
       - 泰国 TH - 3
