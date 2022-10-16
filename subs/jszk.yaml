@@ -4,116 +4,122 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 免费新加坡, server: m1.pianyijc.top, port: 31210, type: vmess, uuid: 6b855dbd-3f5a-4a8b-8338-73ab337eb8e6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: m1.pianyijc.top}}, udp: true}
-  - {name: ss-香港09|公益, server: 8.218.24.67, port: 5555, type: ss, cipher: chacha20-ietf-poly1305, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, udp: true}
-  - {name: 香港M247(移动网优化) | 解锁流媒体, server: 5.181.4.104, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
-  - {name: 台湾Hinet | 解锁流媒体, server: download1tw.windowsupdate1.com, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
-  - {name: 新加坡G-Core | 解锁流媒体, server: 91.243.81.42, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
-  - {name: 台湾Hinet2 | 解锁流媒体, server: download2tw.windowsupdate1.com, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
-  - {name: 香港HKT | 解锁流媒体, server: download1hkt.windowsupdate1.com, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK888, server: 43.198.21.189, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK999, server: 43.198.21.189, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
-  - {name: "v2ray 香港HKT(联通) [Netflix]", server: 43.198.21.189, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: 日本D2, server: standard.efcloud.cc, port: 50000, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, skip-cert-verify: true, udp: true}
+  - {name: 套餐到期：2022-11-14, server: basics.efcloud.cc, port: 50000, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, skip-cert-verify: true, udp: true}
+  - {name: 距离下次重置剩余：30 天, server: basics.efcloud.cc, port: 50000, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, skip-cert-verify: true, udp: true}
+  - {name: 台湾D2, server: standard.efcloud.cc, port: 42001, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, skip-cert-verify: true, udp: true}
+  - {name: 剩余流量：4052.44 GB, server: basics.efcloud.cc, port: 50000, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, skip-cert-verify: true, udp: true}
+  - {name: 香港D2, server: basics.efcloud.cc, port: 50000, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, skip-cert-verify: true, udp: true}
+  - {name: ss-香港02|公益, server: 8.210.87.228, port: 5555, type: ss, cipher: chacha20-ietf-poly1305, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, udp: true}
   - {name: "v2ray 香港HKT(联通) [X站]", server: download1hkt.windowsupdate1.com, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
   - {name: "v2ray 香港HKT(联通) [P站]", server: download1hkt.windowsupdate1.com, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
   - {name: "🇯🇵 [BGP-GSLB]日本•0.8x", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
   - {name: "🇭🇰 [BGP-GSLB]香港•BGP", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
-  - {name: "🇻🇳 [BGP-GSLB]越南胡志明", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
-  - {name: "🇵🇭 [BGP-GSLB]菲律宾马尼拉", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
   - {name: "🇭🇰 [BGP-GSLB]香港•HGC", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
-  - {name: "🇺🇸 [BGP-GSLB]美国1•0.8x", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
-  - {name: "🇹🇭 [BGP-GSLB]泰国曼谷", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
-  - {name: 韩国 B157 | 湘日隧道 | 0x, server: 139.227.182.124, port: 28158, type: trojan, password: Mfee7ccb, skip-cert-verify: true, udp: true}
-  - {name: CH-Geneva-ITL_1, server: 111.45.22.136, port: 16284, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: "🇮🇩 [BGP-GSLB]印度尼西亚", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇹🇭 [BGP-GSLB]泰国曼谷", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇺🇸 [BGP-GSLB]美国1•0.8x", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇵🇭 [BGP-GSLB]菲律宾马尼拉", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇻🇳 [BGP-GSLB]越南胡志明", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
   - {name: "🇫🇷 [BGP-GSLB]法国1•0.8x", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
-  - {name: "🇬🇧 [BGP-GSLB]英国1•0.8x", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
   - {name: "🇷🇺 [BGP-GSLB]俄罗斯•0.8x", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇬🇧 [BGP-GSLB]英国1•0.8x", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
   - {name: "🇳🇬 [BGP-GSLB]尼日尼亚", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
   - {name: "🇸🇬 [BGP-GSLB]新加坡1", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: 香港M247(移动网优化) | 解锁流媒体, server: 5.181.4.104, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
   - {name: "🇹🇷 [BGP-GSLB]土耳其•0.8x", server: 18.181.233.220, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
-  - {name: Hanoi-Hostingviet-dip_2, server: 116.129.254.192, port: 16256, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: Frankfurt-DigitalOcean_2, server: 111.45.22.246, port: 16292, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 彰化Hinet-dip_5, server: 111.45.22.246, port: 16129, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 免费新加坡, server: m1.pianyijc.top, port: 31210, type: vmess, uuid: 6b855dbd-3f5a-4a8b-8338-73ab337eb8e6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: m1.pianyijc.top}}, udp: true}
+  - {name: CH-Geneva-ITL_1, server: 111.45.22.136, port: 16284, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: Singapore-GCORE_5, server: 111.45.22.246, port: 16109, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: Singapore-GCORE_6, server: 111.45.22.246, port: 16108, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 彰化Hinet-dip_5, server: 111.45.22.246, port: 16129, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 彰化Hinet-dip_7, server: 111.45.22.246, port: 16131, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 台湾D1, server: basics.efcloud.cc, port: 42001, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, skip-cert-verify: true, udp: true}
+  - {name: 日本D1, server: standard.efcloud.cc, port: 50000, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, skip-cert-verify: true, udp: true}
+  - {name: 香港D1, server: basics.efcloud.cc, port: 50000, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, skip-cert-verify: true, udp: true}
+  - {name: 新加坡D1, server: basics.efcloud.cc, port: 44001, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, skip-cert-verify: true, udp: true}
+  - {name: 新加坡D2, server: basics.efcloud.cc, port: 44001, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, skip-cert-verify: true, udp: true}
+  - {name: 美国D1, server: standard.efcloud.cc, port: 45001, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 免费新加坡
-  - ss-香港09|公益
-  - 香港M247(移动网优化) | 解锁流媒体
-  - 台湾Hinet | 解锁流媒体
-  - 新加坡G-Core | 解锁流媒体
-  - 台湾Hinet2 | 解锁流媒体
-  - 香港HKT | 解锁流媒体
-  - 🇭🇰 HK888
-  - 🇭🇰 HK999
-  - v2ray 香港HKT(联通) [Netflix]
+  - 日本D2
+  - 套餐到期：2022-11-14
+  - 距离下次重置剩余：30 天
+  - 台湾D2
+  - 剩余流量：4052.44 GB
+  - 香港D2
+  - ss-香港02|公益
   - v2ray 香港HKT(联通) [X站]
   - v2ray 香港HKT(联通) [P站]
   - 🇯🇵 [BGP-GSLB]日本•0.8x
   - 🇭🇰 [BGP-GSLB]香港•BGP
-  - 🇻🇳 [BGP-GSLB]越南胡志明
-  - 🇵🇭 [BGP-GSLB]菲律宾马尼拉
   - 🇭🇰 [BGP-GSLB]香港•HGC
-  - 🇺🇸 [BGP-GSLB]美国1•0.8x
-  - 🇹🇭 [BGP-GSLB]泰国曼谷
-  - 韩国 B157 | 湘日隧道 | 0x
-  - CH-Geneva-ITL_1
   - 🇮🇩 [BGP-GSLB]印度尼西亚
+  - 🇹🇭 [BGP-GSLB]泰国曼谷
+  - 🇺🇸 [BGP-GSLB]美国1•0.8x
+  - 🇵🇭 [BGP-GSLB]菲律宾马尼拉
+  - 🇻🇳 [BGP-GSLB]越南胡志明
   - 🇫🇷 [BGP-GSLB]法国1•0.8x
-  - 🇬🇧 [BGP-GSLB]英国1•0.8x
   - 🇷🇺 [BGP-GSLB]俄罗斯•0.8x
+  - 🇬🇧 [BGP-GSLB]英国1•0.8x
   - 🇳🇬 [BGP-GSLB]尼日尼亚
   - 🇸🇬 [BGP-GSLB]新加坡1
+  - 香港M247(移动网优化) | 解锁流媒体
   - 🇹🇷 [BGP-GSLB]土耳其•0.8x
-  - Hanoi-Hostingviet-dip_2
-  - Frankfurt-DigitalOcean_2
+  - 彰化Hinet-dip_5
+  - 免费新加坡
+  - CH-Geneva-ITL_1
   - Singapore-GCORE_5
   - Singapore-GCORE_6
-  - 彰化Hinet-dip_5
   - 彰化Hinet-dip_7
+  - 台湾D1
+  - 日本D1
+  - 香港D1
+  - 新加坡D1
+  - 新加坡D2
+  - 美国D1
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 免费新加坡
-  - ss-香港09|公益
-  - 香港M247(移动网优化) | 解锁流媒体
-  - 台湾Hinet | 解锁流媒体
-  - 新加坡G-Core | 解锁流媒体
-  - 台湾Hinet2 | 解锁流媒体
-  - 香港HKT | 解锁流媒体
-  - 🇭🇰 HK888
-  - 🇭🇰 HK999
-  - v2ray 香港HKT(联通) [Netflix]
+  - 日本D2
+  - 套餐到期：2022-11-14
+  - 距离下次重置剩余：30 天
+  - 台湾D2
+  - 剩余流量：4052.44 GB
+  - 香港D2
+  - ss-香港02|公益
   - v2ray 香港HKT(联通) [X站]
   - v2ray 香港HKT(联通) [P站]
   - 🇯🇵 [BGP-GSLB]日本•0.8x
   - 🇭🇰 [BGP-GSLB]香港•BGP
-  - 🇻🇳 [BGP-GSLB]越南胡志明
-  - 🇵🇭 [BGP-GSLB]菲律宾马尼拉
   - 🇭🇰 [BGP-GSLB]香港•HGC
-  - 🇺🇸 [BGP-GSLB]美国1•0.8x
-  - 🇹🇭 [BGP-GSLB]泰国曼谷
-  - 韩国 B157 | 湘日隧道 | 0x
-  - CH-Geneva-ITL_1
   - 🇮🇩 [BGP-GSLB]印度尼西亚
+  - 🇹🇭 [BGP-GSLB]泰国曼谷
+  - 🇺🇸 [BGP-GSLB]美国1•0.8x
+  - 🇵🇭 [BGP-GSLB]菲律宾马尼拉
+  - 🇻🇳 [BGP-GSLB]越南胡志明
   - 🇫🇷 [BGP-GSLB]法国1•0.8x
-  - 🇬🇧 [BGP-GSLB]英国1•0.8x
   - 🇷🇺 [BGP-GSLB]俄罗斯•0.8x
+  - 🇬🇧 [BGP-GSLB]英国1•0.8x
   - 🇳🇬 [BGP-GSLB]尼日尼亚
   - 🇸🇬 [BGP-GSLB]新加坡1
+  - 香港M247(移动网优化) | 解锁流媒体
   - 🇹🇷 [BGP-GSLB]土耳其•0.8x
-  - Hanoi-Hostingviet-dip_2
-  - Frankfurt-DigitalOcean_2
+  - 彰化Hinet-dip_5
+  - 免费新加坡
+  - CH-Geneva-ITL_1
   - Singapore-GCORE_5
   - Singapore-GCORE_6
-  - 彰化Hinet-dip_5
   - 彰化Hinet-dip_7
+  - 台湾D1
+  - 日本D1
+  - 香港D1
+  - 新加坡D1
+  - 新加坡D2
+  - 美国D1
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
