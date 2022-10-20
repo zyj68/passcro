@@ -4,194 +4,290 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 阿伟-6, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 阿伟-7, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
   - {type: vmess, name: 阿伟-19, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, network: tcp}
-  - {type: trojan, name: IN+印度_1, server: cat1.sshocean.net, port: 443, password: 67960bfb-00de-4a6b-9a7a-e74fc9e8b158, udp: true, skip-cert-verify: true, sni: cat1.sshocean.net}
-  - {type: vmess, name: KR韩国_2, server: 3.39.229.226, port: 43632, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, network: tcp}
-  - {type: vmess, name: KR韩国_3, server: 13.125.112.5, port: 43632, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, network: tcp}
-  - {type: vmess, name: US美国_17, server: 116.129.254.6, port: 9026, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
-  - {type: vmess, name: US美国_18, server: 221.131.165.72, port: 9022, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
-  - {type: vmess, name: US美国_19, server: 221.131.165.72, port: 9022, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
-  - {type: vmess, name: US美国_22, server: 221.131.165.72, port: 9007, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
-  - {type: ssr, name: 其他11, server: 121.0.97.25, port: 44002, protocol: auth_chain_a, cipher: dummy, obfs: tls1.2_ticket_auth, password: dongtaiwang.com}
-  - {name: 智利, server: 221.181.185.171, port: 11935, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 以色列, server: 221.181.185.153, port: 11934, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 以色列 2, server: 116.129.254.6, port: 11934, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 保加利亚, server: 221.181.185.153, port: 11913, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 巴基斯坦, server: 221.181.185.153, port: 11932, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 巴基斯坦 2, server: 185.215.234.21, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxy.com}}, udp: true}
-  - {name: 巴基斯坦 3, server: arvancloud.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxy.com}}, udp: true}
-  - {name: US 美国, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}, udp: true}
-  - {name: US 美国 2, server: 141.101.114.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: US 美国 3, server: 172.64.153.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: US 美国 4, server: 172.64.153.201, port: 443, type: vmess, uuid: 28dad69c-c9d6-47c5-ad05-c66afb87ccbd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash3.trump2023.org}}, udp: true}
-  - {name: US 美国 5, server: 172.64.154.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: US 美国 6, server: 172.64.155.201, port: 443, type: vmess, uuid: 28dad69c-c9d6-47c5-ad05-c66afb87ccbd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash3.trump2023.org}}, udp: true}
-  - {name: US 美国 7, server: 221.181.185.171, port: 9000, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 美国 8, server: static.tcpbbr.net, port: 80, type: vmess, uuid: fb6bc6ea-2992-11ed-8856-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.hgcbroadband.com}}, udp: true}
-  - {name: US 美国 9, server: 172.64.154.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: US 美国 10, server: zzah.oldsan.xyz, port: 8081, type: vmess, uuid: 0a8900c1-efb8-301f-be7a-b3df560c1e9c, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /h5game6, headers: {Host: asu2.h5game.xyz}}, udp: true}
-  - {name: US 美国 11, server: 221.181.185.171, port: 9010, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 美国 12, server: 221.181.185.171, port: 9000, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 美国 13, server: 116.129.254.6, port: 9028, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 美国 14, server: 198.41.212.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: US 美国 15, server: 221.181.185.153, port: 11911, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 美国 16, server: 221.181.185.153, port: 9010, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 美国 17, server: 221.181.185.153, port: 9031, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 美国 18, server: 221.181.185.153, port: 9006, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: UKR 乌克兰, server: 221.181.185.153, port: 11919, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: UKR 乌克兰 2, server: 221.181.185.171, port: 11919, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: UKR 乌克兰 3, server: 221.181.185.171, port: 11919, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: UK 英国, server: zzah.oldsan.xyz, port: 8081, type: vmess, uuid: 0a8900c1-efb8-301f-be7a-b3df560c1e9c, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /flash4, headers: {Host: yg.h5game.xyz}}, udp: true}
-  - {name: TW 台湾, server: 221.181.185.171, port: 9006, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW 台湾 2, server: 221.181.185.171, port: 9006, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW 台湾 3, server: 221.181.185.153, port: 9002, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: PL 波兰, server: 221.181.185.153, port: 11914, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL 荷兰, server: 221.181.185.153, port: 11933, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL 荷兰 2, server: 221.181.185.153, port: 11933, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR 韩国, server: cn-hnct.zeichuan.xyz, port: 28315, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR 韩国 2, server: 221.181.185.153, port: 11923, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR 韩国 3, server: 221.181.185.153, port: 11923, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP 日本, server: 20.239.180.240, port: 80, type: vmess, uuid: d41c193f-52ca-3ef9-9cf5-e7d50330f26e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/ws-jp?ed=2048", headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: JP 日本 2, server: cn-hnct.zeichuan.xyz, port: 29304, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP 日本 3, server: 172.64.159.18, port: 2053, type: vmess, uuid: 319881ad-fb36-4688-dd94-8334b0028da0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1017.fqcloud.ga, headers: {Host: 1017.fqcloud.ga}}, udp: true}
-  - {name: JP 日本 4, server: zzah.oldsan.xyz, port: 8081, type: vmess, uuid: 0a8900c1-efb8-301f-be7a-b3df560c1e9c, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /h5game4, headers: {Host: br2.h5game.xyz}}, udp: true}
-  - {name: IN 印度, server: 172.64.153.102, port: 443, type: vmess, uuid: bed3d876-2d26-4d4d-b789-3063438ee774, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash2.trump2023.us}}, udp: true}
-  - {name: HK 香港, server: 20.239.180.240, port: 80, type: vmess, uuid: d41c193f-52ca-3ef9-9cf5-e7d50330f26e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/ws?ed=2048", headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: HK 香港 2, server: 20.239.65.134, port: 80, type: vmess, uuid: d41c193f-52ca-3ef9-9cf5-e7d50330f26e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/ws?ed=2048", headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: HK 香港 3, server: zzah.oldsan.xyz, port: 8081, type: vmess, uuid: 0a8900c1-efb8-301f-be7a-b3df560c1e9c, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /flash5, headers: {Host: kh3.h5game.xyz}}, udp: true}
-  - {name: AR 阿根廷, server: 221.181.185.153, port: 11921, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: FR+法国, server: 195.154.200.150, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: FR+法国 2, server: 185.77.217.217, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: qYAt85SFGV56, udp: true}
+  - {name: US 美国 21, server: 141.101.114.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: US 美国 22, server: 172.64.153.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: US 美国 23, server: 172.64.153.201, port: 443, type: vmess, uuid: 28dad69c-c9d6-47c5-ad05-c66afb87ccbd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash3.trump2023.org}}, udp: true}
+  - {name: US 美国 24, server: 172.64.154.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: US 美国 25, server: 198.41.212.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {type: vmess, name: AR阿根廷, server: 221.181.185.171, port: 11921, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: trojan, name: AU+澳大利亚, server: ap.liangyuandian.top, port: 443, password: 21a387ca-5461-47d5-bf2c-a68bad0ca970, udp: true, skip-cert-verify: true}
+  - {type: vmess, name: AU澳大利亚_1, ws-opts: {path: /chat, headers: {host: vau1.0bad.com}}, server: vau1.0bad.com, port: 443, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: AU澳大利亚_2, server: 94.177.8.87, port: 23453, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, network: tcp, tls: true}
+  - {type: vmess, name: AU澳大利亚_3, server: 221.181.185.171, port: 11925, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: ss, name: FR+法国_1, server: 195.154.200.150, port: 3306, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {type: ss, name: FR+法国_2, server: 195.154.200.150, port: 9101, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {type: ss, name: FR+法国_3, server: 195.154.200.150, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {type: vmess, name: HK香港_1, ws-opts: {path: /, headers: {host: YouTube-aweikeji}}, server: 165.154.244.82, port: 443, uuid: a144de38-a881-4d45-852b-59eb5c38f7a8, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: HK香港_2, ws-opts: {path: /, headers: {host: YouTube-aweikeji}}, server: 165.154.244.82, port: 443, uuid: a144de38-a881-4d45-852b-59eb5c38f7a8, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: HK香港_3, server: 165.154.244.29, port: 443, uuid: a144de38-a881-4d45-852b-59eb5c38f7a8, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: HK香港_4, server: 165.154.244.29, port: 443, uuid: a144de38-a881-4d45-852b-59eb5c38f7a8, alterId: 0, cipher: auto, network: tcp}
+  - {type: ss, name: HK+香港, server: cn-south-1b.ens3.buzz, port: 65102, cipher: aes-256-gcm, password: f4159535-2ffa-4496-9684-ce8740e9630d}
+  - {type: vmess, name: IN印度_1, ws-opts: {path: /dongtaiwang.com, headers: {host: clash2.trump2023.us}}, server: 172.64.153.102, port: 443, uuid: bed3d876-2d26-4d4d-b789-3063438ee774, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: IN印度_2, ws-opts: {path: /dongtaiwang.com, headers: {host: fr1.cfcdn1.xyz}}, server: 141.101.115.200, port: 443, uuid: fb5bbc8c-f6ec-4629-8c9e-23f02781a20d, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: IN印度_3, ws-opts: {path: /dongtaiwang.com, headers: {host: fr1.cfcdn1.xyz}}, server: 172.64.148.18, port: 443, uuid: fb5bbc8c-f6ec-4629-8c9e-23f02781a20d, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: IN印度_4, server: 221.181.185.171, port: 11929, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: JP日本_1, ws-opts: {path: /, headers: {host: YouTube-aweikeji}}, server: jp-5.wumaojichang.ml, port: 35786, uuid: d3978bd0-dade-4181-81de-bae3091339f1, alterId: 0, cipher: auto, network: ws}
+  - {type: trojan, name: JP+日本, server: www.tallme.top, port: 2096, password: yscPkvDKpT, udp: true, skip-cert-verify: true}
+  - {type: vmess, name: JP日本_2, ws-opts: {path: /ray}, server: ming2.kiwireich.com, port: 443, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: KR韩国_1, ws-opts: {path: /kr.wumaojichang.ml, headers: {host: YouTube-aweikeji}}, server: kr.wumaojichang.ml, port: 35779, uuid: d3978bd0-dade-4181-81de-bae3091339f1, alterId: 0, cipher: auto, network: ws}
+  - {type: trojan, name: KR+韩国_1, server: 144.24.69.60, port: 28443, password: 11f3465a-f0bc-4d97-98cd-6892d0ef61d5, udp: true, skip-cert-verify: true, sni: glc.hruqoaw.cn}
+  - {type: trojan, name: KR+韩国_2, server: 144.24.77.154, port: 28443, password: 11f3465a-f0bc-4d97-98cd-6892d0ef61d5, udp: true, skip-cert-verify: true, sni: glc.hruqoaw.cn}
+  - {type: vmess, name: KR韩国_2, ws-opts: {path: /58a5342f7a/, headers: {host: www.apulnion.com}}, server: www.apulnion.com, port: 443, uuid: 7b8c370d-8610-4988-b0a7-cde74aa0713b, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: NL荷兰, server: 221.181.185.171, port: 11915, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: PH菲律宾, server: 221.181.185.171, port: 11906, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: PL波兰, ws-opts: {path: /obnevws, headers: {host: 5472.1808.cf}}, server: 5472.1808.cf, port: 443, uuid: cba97a89-351c-4f88-b19e-9a8cecf66dfa, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: trojan, name: SG+新加坡_1, server: 91.243.81.42, port: 28443, password: 11f3465a-f0bc-4d97-98cd-6892d0ef61d5, udp: true, skip-cert-verify: true, sni: glc.hruqoaw.cn}
+  - {type: trojan, name: SG+新加坡_2, server: sg.liangyuandian.top, port: 443, password: 21a387ca-5461-47d5-bf2c-a68bad0ca970, udp: true, skip-cert-verify: true}
+  - {type: vmess, name: SG新加坡_1, ws-opts: {path: /chat, headers: {host: vsg1.0bad.com}}, server: vsg1.0bad.com, port: 443, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: SG新加坡_2, ws-opts: {path: /sg-04.wumaojichang.ml, headers: {host: YouTube-aweikeji}}, server: sg-4.wumaojichang.ml, port: 35782, uuid: d3978bd0-dade-4181-81de-bae3091339f1, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: SG新加坡_3, server: 221.181.185.171, port: 9042, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: SG新加坡_4, server: 221.181.185.171, port: 9043, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: SG新加坡_5, server: 221.181.185.171, port: 9044, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: SG新加坡_6, ws-opts: {path: /, headers: {host: YouTube-aweikeji}}, server: www.gnklerg.top, port: 64432, uuid: 0a596834-03dd-423b-bfa6-35d5c155568d, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: TUR土耳其, server: 221.181.185.153, port: 11912, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: trojan, name: TW+台湾_1, server: download2tw.windowsupdate1.com, port: 28443, password: 6248895b-4255-4f07-9479-d198bc1eb8db, udp: true, skip-cert-verify: true, sni: glc.hruqoaw.cn}
+  - {type: vmess, name: TW台湾_1, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {host: hinet.meizhiyuanya.xyz}}, server: 141.101.114.199, port: 443, uuid: 11f3465a-f0bc-4d97-98cd-6892d0ef61d5, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: TW台湾_2, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {host: hinet.meizhiyuanya.xyz}}, server: 198.41.209.214, port: 443, uuid: 11f3465a-f0bc-4d97-98cd-6892d0ef61d5, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: trojan, name: TW+台湾_2, server: download2tw.windowsupdate1.com, port: 28443, password: 11f3465a-f0bc-4d97-98cd-6892d0ef61d5, udp: true, skip-cert-verify: true, sni: glc.hruqoaw.cn}
+  - {type: vmess, name: TW台湾_3, server: 165.154.253.63, port: 443, uuid: a144de38-a881-4d45-852b-59eb5c38f7a8, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: TW台湾_4, server: 165.154.253.63, port: 443, uuid: a144de38-a881-4d45-852b-59eb5c38f7a8, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: TW台湾_5, server: 165.154.253.63, port: 443, uuid: a144de38-a881-4d45-852b-59eb5c38f7a8, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: TW台湾_6, server: 165.154.253.63, port: 443, uuid: a144de38-a881-4d45-852b-59eb5c38f7a8, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: TW台湾_7, server: 111.45.22.246, port: 16131, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, network: tcp}
+  - {type: ss, name: TW+台湾_3, server: cn-south-1b.ens3.buzz, port: 15021, cipher: aes-256-gcm, password: f4159535-2ffa-4496-9684-ce8740e9630d}
+  - {type: trojan, name: UK+英国, server: 15.168.34.80, port: 2053, password: de39d941-eaf6-405d-958a-ebebe1315574, udp: true, skip-cert-verify: true, sni: wel-usgt.qchwnd.moe}
+  - {type: vmess, name: UKR乌克兰_1, server: 221.181.185.171, port: 11919, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: UKR乌克兰_2, server: 221.181.185.171, port: 11919, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: US美国_1, ws-opts: {path: "/guolicheng/us1?ed=2048", headers: {host: us1.meizhiyuanya.xyz}}, server: 141.101.115.116, port: 443, uuid: 11f3465a-f0bc-4d97-98cd-6892d0ef61d5, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: US美国_2, ws-opts: {path: "/guolicheng/us2?ed=2048", headers: {host: us2.meizhiyuanya.xyz}}, server: 198.41.208.175, port: 443, uuid: 11f3465a-f0bc-4d97-98cd-6892d0ef61d5, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: US美国_3, ws-opts: {path: /dongtaiwang.com, headers: {host: lg1.cfcdn3.xyz}}, server: 141.101.115.120, port: 443, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: US美国_4, ws-opts: {path: "/guolicheng/us3?ed=2048", headers: {host: us3.meizhiyuanya.xyz}}, server: 198.41.209.68, port: 443, uuid: 11f3465a-f0bc-4d97-98cd-6892d0ef61d5, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: US美国_5, ws-opts: {path: /dongtaiwang.com, headers: {host: clash6.ssr-free.xyz}}, server: 172.64.154.155, port: 443, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: US美国_6, ws-opts: {path: /dongtaiwang.com, headers: {host: clash3.trump2023.org}}, server: 172.64.153.201, port: 443, uuid: 28dad69c-c9d6-47c5-ad05-c66afb87ccbd, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: US美国_7, ws-opts: {path: /dongtaiwang.com, headers: {host: clash3.trump2023.org}}, server: 172.64.155.201, port: 443, uuid: 28dad69c-c9d6-47c5-ad05-c66afb87ccbd, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: US美国_8, ws-opts: {path: /dongtaiwang.com, headers: {host: clash6.ssr-free.xyz}}, server: 141.101.114.150, port: 443, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: US美国_9, ws-opts: {path: /dongtaiwang.com, headers: {host: clash6.ssr-free.xyz}}, server: 172.64.154.150, port: 443, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: US美国_10, ws-opts: {path: /dongtaiwang.com, headers: {host: clash3.trump2023.org}}, server: 172.64.153.201, port: 443, uuid: 28dad69c-c9d6-47c5-ad05-c66afb87ccbd, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: US美国_11, ws-opts: {path: "/guolicheng/us2?ed=2048", headers: {host: us2.meizhiyuanya.xyz}}, server: 198.41.208.175, port: 443, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: US美国_12, ws-opts: {path: /dongtaiwang.com, headers: {host: clash6.ssr-free.xyz}}, server: 172.64.154.102, port: 443, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: ss, name: US+美国_1, server: 38.64.138.145, port: 8090, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {type: vmess, name: US美国_13, ws-opts: {path: /dongtaiwang.com, headers: {host: lg1.cfcdn3.xyz}}, server: 141.101.114.120, port: 443, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: US美国_14, server: 221.181.185.171, port: 11922, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: US美国_15, server: 221.181.185.171, port: 11926, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: ss, name: US+美国_2, server: 38.64.138.145, port: 8008, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {type: ss, name: US+美国_3, server: 38.64.138.145, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {type: ss, name: US+美国_4, server: 38.64.138.145, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {type: vmess, name: US美国_16, ws-opts: {path: /getweather, headers: {host: aop.ssfree.ru}}, server: aop.ssfree.ru, port: 443, uuid: 81fb5078-4f62-11ed-86e6-000017022008, alterId: 64, cipher: auto, network: ws, tls: true}
+  - {type: ss, name: US+美国_5, server: 195.154.200.150, port: 9101, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {type: ss, name: US+美国_6, server: 38.64.138.145, port: 5004, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {type: ss, name: US+美国_7, server: 38.64.138.145, port: 5001, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {type: ss, name: US+美国_8, server: 38.64.138.145, port: 5003, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {type: ss, name: US+美国_9, server: 38.64.138.145, port: 2375, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {type: ss, name: US+美国_10, server: 38.64.138.145, port: 8091, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {type: ss, name: US+美国_11, server: 38.64.138.145, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {type: ss, name: US+美国_12, server: 38.64.138.145, port: 5601, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {type: ss, name: US+美国_13, server: 38.64.138.145, port: 3306, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {type: ss, name: US+美国_14, server: 38.64.138.145, port: 5601, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {type: ss, name: US+美国_15, server: 38.64.138.145, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {type: ss, name: US+美国_16, server: cn-east-1c.ens3.buzz, port: 34521, cipher: aes-256-gcm, password: f4159535-2ffa-4496-9684-ce8740e9630d}
+  - {type: ss, name: US+美国_17, server: cn-north-1c.ens3.buzz, port: 47354, cipher: aes-256-gcm, password: f4159535-2ffa-4496-9684-ce8740e9630d}
+  - {type: vmess, name: VN越南, ws-opts: {path: /aries, headers: {host: vn.cloudflare.quest}}, server: www.gov.hk, port: 2086, uuid: dc8b64db-eb6d-4bdf-98b2-31615319bea8, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 迪拜, server: 221.181.185.171, port: 11905, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: 以色列, server: 221.181.185.153, port: 11934, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: 智利, server: 221.181.185.171, port: 11935, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, network: tcp}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 阿伟-6
-  - 阿伟-7
   - 阿伟-19
-  - IN+印度_1
+  - US 美国 21
+  - US 美国 22
+  - US 美国 23
+  - US 美国 24
+  - US 美国 25
+  - AR阿根廷
+  - AU+澳大利亚
+  - AU澳大利亚_1
+  - AU澳大利亚_2
+  - AU澳大利亚_3
+  - FR+法国_1
+  - FR+法国_2
+  - FR+法国_3
+  - HK香港_1
+  - HK香港_2
+  - HK香港_3
+  - HK香港_4
+  - HK+香港
+  - IN印度_1
+  - IN印度_2
+  - IN印度_3
+  - IN印度_4
+  - JP日本_1
+  - JP+日本
+  - JP日本_2
+  - KR韩国_1
+  - KR+韩国_1
+  - KR+韩国_2
   - KR韩国_2
-  - KR韩国_3
-  - US美国_17
-  - US美国_18
-  - US美国_19
-  - US美国_22
-  - 其他11
-  - 智利
+  - NL荷兰
+  - PH菲律宾
+  - PL波兰
+  - SG+新加坡_1
+  - SG+新加坡_2
+  - SG新加坡_1
+  - SG新加坡_2
+  - SG新加坡_3
+  - SG新加坡_4
+  - SG新加坡_5
+  - SG新加坡_6
+  - TUR土耳其
+  - TW+台湾_1
+  - TW台湾_1
+  - TW台湾_2
+  - TW+台湾_2
+  - TW台湾_3
+  - TW台湾_4
+  - TW台湾_5
+  - TW台湾_6
+  - TW台湾_7
+  - TW+台湾_3
+  - UK+英国
+  - UKR乌克兰_1
+  - UKR乌克兰_2
+  - US美国_1
+  - US美国_2
+  - US美国_3
+  - US美国_4
+  - US美国_5
+  - US美国_6
+  - US美国_7
+  - US美国_8
+  - US美国_9
+  - US美国_10
+  - US美国_11
+  - US美国_12
+  - US+美国_1
+  - US美国_13
+  - US美国_14
+  - US美国_15
+  - US+美国_2
+  - US+美国_3
+  - US+美国_4
+  - US美国_16
+  - US+美国_5
+  - US+美国_6
+  - US+美国_7
+  - US+美国_8
+  - US+美国_9
+  - US+美国_10
+  - US+美国_11
+  - US+美国_12
+  - US+美国_13
+  - US+美国_14
+  - US+美国_15
+  - US+美国_16
+  - US+美国_17
+  - VN越南
+  - 迪拜
   - 以色列
-  - 以色列 2
-  - 保加利亚
-  - 巴基斯坦
-  - 巴基斯坦 2
-  - 巴基斯坦 3
-  - US 美国
-  - US 美国 2
-  - US 美国 3
-  - US 美国 4
-  - US 美国 5
-  - US 美国 6
-  - US 美国 7
-  - US 美国 8
-  - US 美国 9
-  - US 美国 10
-  - US 美国 11
-  - US 美国 12
-  - US 美国 13
-  - US 美国 14
-  - US 美国 15
-  - US 美国 16
-  - US 美国 17
-  - US 美国 18
-  - UKR 乌克兰
-  - UKR 乌克兰 2
-  - UKR 乌克兰 3
-  - UK 英国
-  - TW 台湾
-  - TW 台湾 2
-  - TW 台湾 3
-  - PL 波兰
-  - NL 荷兰
-  - NL 荷兰 2
-  - KR 韩国
-  - KR 韩国 2
-  - KR 韩国 3
-  - JP 日本
-  - JP 日本 2
-  - JP 日本 3
-  - JP 日本 4
-  - IN 印度
-  - HK 香港
-  - HK 香港 2
-  - HK 香港 3
-  - AR 阿根廷
-  - FR+法国
-  - FR+法国 2
+  - 智利
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 阿伟-6
-  - 阿伟-7
   - 阿伟-19
-  - IN+印度_1
+  - US 美国 21
+  - US 美国 22
+  - US 美国 23
+  - US 美国 24
+  - US 美国 25
+  - AR阿根廷
+  - AU+澳大利亚
+  - AU澳大利亚_1
+  - AU澳大利亚_2
+  - AU澳大利亚_3
+  - FR+法国_1
+  - FR+法国_2
+  - FR+法国_3
+  - HK香港_1
+  - HK香港_2
+  - HK香港_3
+  - HK香港_4
+  - HK+香港
+  - IN印度_1
+  - IN印度_2
+  - IN印度_3
+  - IN印度_4
+  - JP日本_1
+  - JP+日本
+  - JP日本_2
+  - KR韩国_1
+  - KR+韩国_1
+  - KR+韩国_2
   - KR韩国_2
-  - KR韩国_3
-  - US美国_17
-  - US美国_18
-  - US美国_19
-  - US美国_22
-  - 其他11
-  - 智利
+  - NL荷兰
+  - PH菲律宾
+  - PL波兰
+  - SG+新加坡_1
+  - SG+新加坡_2
+  - SG新加坡_1
+  - SG新加坡_2
+  - SG新加坡_3
+  - SG新加坡_4
+  - SG新加坡_5
+  - SG新加坡_6
+  - TUR土耳其
+  - TW+台湾_1
+  - TW台湾_1
+  - TW台湾_2
+  - TW+台湾_2
+  - TW台湾_3
+  - TW台湾_4
+  - TW台湾_5
+  - TW台湾_6
+  - TW台湾_7
+  - TW+台湾_3
+  - UK+英国
+  - UKR乌克兰_1
+  - UKR乌克兰_2
+  - US美国_1
+  - US美国_2
+  - US美国_3
+  - US美国_4
+  - US美国_5
+  - US美国_6
+  - US美国_7
+  - US美国_8
+  - US美国_9
+  - US美国_10
+  - US美国_11
+  - US美国_12
+  - US+美国_1
+  - US美国_13
+  - US美国_14
+  - US美国_15
+  - US+美国_2
+  - US+美国_3
+  - US+美国_4
+  - US美国_16
+  - US+美国_5
+  - US+美国_6
+  - US+美国_7
+  - US+美国_8
+  - US+美国_9
+  - US+美国_10
+  - US+美国_11
+  - US+美国_12
+  - US+美国_13
+  - US+美国_14
+  - US+美国_15
+  - US+美国_16
+  - US+美国_17
+  - VN越南
+  - 迪拜
   - 以色列
-  - 以色列 2
-  - 保加利亚
-  - 巴基斯坦
-  - 巴基斯坦 2
-  - 巴基斯坦 3
-  - US 美国
-  - US 美国 2
-  - US 美国 3
-  - US 美国 4
-  - US 美国 5
-  - US 美国 6
-  - US 美国 7
-  - US 美国 8
-  - US 美国 9
-  - US 美国 10
-  - US 美国 11
-  - US 美国 12
-  - US 美国 13
-  - US 美国 14
-  - US 美国 15
-  - US 美国 16
-  - US 美国 17
-  - US 美国 18
-  - UKR 乌克兰
-  - UKR 乌克兰 2
-  - UKR 乌克兰 3
-  - UK 英国
-  - TW 台湾
-  - TW 台湾 2
-  - TW 台湾 3
-  - PL 波兰
-  - NL 荷兰
-  - NL 荷兰 2
-  - KR 韩国
-  - KR 韩国 2
-  - KR 韩国 3
-  - JP 日本
-  - JP 日本 2
-  - JP 日本 3
-  - JP 日本 4
-  - IN 印度
-  - HK 香港
-  - HK 香港 2
-  - HK 香港 3
-  - AR 阿根廷
-  - FR+法国
-  - FR+法国 2
+  - 智利
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:

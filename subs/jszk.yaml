@@ -4,68 +4,125 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 日本2, server: zf.662278.xyz, port: 11433, type: vmess, uuid: f44dafc9-a62b-48ce-b832-7655d54974ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 日本3, server: zf.662278.xyz, port: 44195, type: vmess, uuid: f44dafc9-a62b-48ce-b832-7655d54974ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 日本4, server: zf.662278.xyz, port: 11433, type: vmess, uuid: f44dafc9-a62b-48ce-b832-7655d54974ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 日本1, server: zf.662278.xyz, port: 44195, type: vmess, uuid: f44dafc9-a62b-48ce-b832-7655d54974ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 韩国4, server: zf.662278.xyz, port: 56615, type: vmess, uuid: f44dafc9-a62b-48ce-b832-7655d54974ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 韩国3, server: zf.662278.xyz, port: 40164, type: vmess, uuid: f44dafc9-a62b-48ce-b832-7655d54974ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸US1, server: 221.181.185.153, port: 9002, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸US2, server: 221.181.185.153, port: 9000, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸US4, server: 221.181.185.171, port: 9038, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸US3, server: 221.181.185.171, port: 9038, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸US5, server: id-v.sshmax.xyz, port: 80, type: vmess, uuid: 781adf87-0afa-420c-875f-879162a2bce1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: "%7B%22Host%22:%22id-v.sshmax.xyz%22%7D"}}, udp: true}
-  - {name: 🇺🇸US6, server: azsh01.1aba.cn, port: 41440, type: vmess, uuid: "7fea2481-11ff-49be-8b15-da5e3bc79791", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22sg1.horizonbirth.xyz%22%7D"}}, udp: true}
-  - {name: 🇺🇸US7, server: 221.181.185.153, port: 9038, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸US8, server: yd.dagecloud.xyz, port: 37313, type: vmess, uuid: 46dbe2f9-fa95-3100-8239-89019168ede6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22a.189.cn%22%7D"}}, udp: true}
-  - {name: 🇺🇸US9, server: 1063975e-d559-89b3-5d40-2faae0a79030.cnnic.rip, port: 80, type: vmess, uuid: 6b468d94-f14a-4109-88d7-e23587536eca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%221063975e-d559-89b3-5d40-2faae0a79030.cnnic.rip%22%7D"}}, udp: true}
-  - {name: 日本 M5 | 0x, server: 221.181.185.118, port: 13324, type: trojan, password: M67c639c, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 M1 | 流媒体 | 0x, server: 221.181.185.118, port: 13325, type: trojan, password: M0041901, skip-cert-verify: true, udp: true}
-  - {name: HK4, server: 14.29.124.174, port: 11043, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 香港04, server: 16.162.55.130, port: 44300, type: vmess, uuid: 19b95a0e-ffcf-32ed-8656-52ae102a8ad8, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 16.162.55.130}}, udp: true}
+  - {name: 香港01, server: 20.239.177.171, port: 44300, type: vmess, uuid: 19b95a0e-ffcf-32ed-8656-52ae102a8ad8, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.239.177.171}}, udp: true}
+  - {name: US1, server: 138.128.220.143, port: 30923, type: ss, cipher: aes-256-gcm, password: cP7jJCUtsFumgZAW, udp: true}
+  - {name: US2, server: 45.78.10.188, port: 30923, type: ss, cipher: aes-256-gcm, password: cP7jJCUtsFumgZAW, udp: true}
+  - {name: 🇭🇰HK1, server: 14.29.124.174, port: 11048, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇭🇰HK2, server: 14.29.124.174, port: 11020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇭🇰HK3, server: tw.33yun.xyz, port: 80, type: vmess, uuid: 62b12463-1c73-40ed-adff-724756b9a6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22tw.33yun.xyz%22%7D"}}, udp: true}
+  - {name: 🇭🇰HK4, server: 165.154.243.161, port: 443, type: vmess, uuid: 5282f68b-14ca-4325-a630-d911abf59c54, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰HK5, server: 165.154.243.161, port: 443, type: vmess, uuid: 5282f68b-14ca-4325-a630-d911abf59c54, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰HK6, server: 165.154.243.161, port: 443, type: vmess, uuid: 5282f68b-14ca-4325-a630-d911abf59c54, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰HK7, server: 14.29.124.174, port: 11048, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇭🇰HK8, server: 14.29.124.174, port: 11048, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇭🇰HK9, server: tr.33yun.xyz, port: 33003, type: vmess, uuid: 62b12463-1c73-40ed-adff-724756b9a6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰HK10, server: 15.168.34.80, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰HK11, server: in01.my1188.org, port: 61086, type: vmess, uuid: "fbee28a2-8641-3ff9-a35f-d9577e64c7ba", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /jkl, headers: {Host: "%7B%22Host%22:%22jp-balancer.myn1des.com%22%7D"}}, udp: true}
+  - {name: 🇭🇰HK12, server: yes.iamagoodman.net, port: 16627, type: vmess, uuid: a67ff1ed-00a6-4f6e-9223-65a7a799cf75, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22yes.iamagoodman.net%22%7D"}}, udp: true}
+  - {name: 🇭🇰HK13, server: 221.181.185.118, port: 13325, type: trojan, password: M0041901, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰HK14, server: 221.181.185.118, port: 13325, type: trojan, password: M0041901, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰HK15, server: 221.181.185.118, port: 13325, type: trojan, password: M0041901, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰HK16, server: 165.154.243.161, port: 443, type: vmess, uuid: 5282f68b-14ca-4325-a630-d911abf59c54, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 韩国 B157 | 湘日隧道 | 0x, server: 139.227.182.124, port: 28158, type: trojan, password: M0bbb37b, skip-cert-verify: true, udp: true}
+  - {name: 日本 M5 | 0x, server: 221.181.185.118, port: 13324, type: trojan, password: M1b378d7, skip-cert-verify: true, udp: true}
+  - {name: "🇯🇵 [BGP-GSLB]日本", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇭🇰 [BGP-GSLB]香港•HKT", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇭🇰 [BGP-GSLB]香港•HGC", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇰🇷 [BGP-GSLB]韩国", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇵🇭 [BGP-GSLB]菲律宾马尼拉", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇮🇩 [BGP-GSLB]印度尼西亚•0.8x", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇺🇸 [BGP-GSLB]美国1", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇹🇭 [BGP-GSLB]泰国曼谷", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇻🇳 [BGP-GSLB]越南胡志明", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇫🇷 [BGP-GSLB]法国•0.8x", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇬🇧 [BGP-GSLB]英国•0.8x", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇷🇺 [BGP-GSLB]俄罗斯•0.1x", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇳🇬 [BGP-GSLB]尼日尼亚", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇹🇷 [BGP-GSLB]土耳其•0.5x", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
+  - {name: "🇸🇬 [BGP-GSLB]新加坡", server: 15.152.207.82, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 日本2
-  - 日本3
-  - 日本4
-  - 日本1
-  - 韩国4
-  - 韩国3
-  - 🇺🇸US1
-  - 🇺🇸US2
-  - 🇺🇸US4
-  - 🇺🇸US3
-  - 🇺🇸US5
-  - 🇺🇸US6
-  - 🇺🇸US7
-  - 🇺🇸US8
-  - 🇺🇸US9
+  - 香港04
+  - 香港01
+  - US1
+  - US2
+  - 🇭🇰HK1
+  - 🇭🇰HK2
+  - 🇭🇰HK3
+  - 🇭🇰HK4
+  - 🇭🇰HK5
+  - 🇭🇰HK6
+  - 🇭🇰HK7
+  - 🇭🇰HK8
+  - 🇭🇰HK9
+  - 🇭🇰HK10
+  - 🇭🇰HK11
+  - 🇭🇰HK12
+  - 🇭🇰HK13
+  - 🇭🇰HK14
+  - 🇭🇰HK15
+  - 🇭🇰HK16
+  - 韩国 B157 | 湘日隧道 | 0x
   - 日本 M5 | 0x
-  - 新加坡 M1 | 流媒体 | 0x
-  - HK4
+  - 🇯🇵 [BGP-GSLB]日本
+  - 🇭🇰 [BGP-GSLB]香港•HKT
+  - 🇭🇰 [BGP-GSLB]香港•HGC
+  - 🇰🇷 [BGP-GSLB]韩国
+  - 🇵🇭 [BGP-GSLB]菲律宾马尼拉
+  - 🇮🇩 [BGP-GSLB]印度尼西亚•0.8x
+  - 🇺🇸 [BGP-GSLB]美国1
+  - 🇹🇭 [BGP-GSLB]泰国曼谷
+  - 🇻🇳 [BGP-GSLB]越南胡志明
+  - 🇫🇷 [BGP-GSLB]法国•0.8x
+  - 🇬🇧 [BGP-GSLB]英国•0.8x
+  - 🇷🇺 [BGP-GSLB]俄罗斯•0.1x
+  - 🇳🇬 [BGP-GSLB]尼日尼亚
+  - 🇹🇷 [BGP-GSLB]土耳其•0.5x
+  - 🇸🇬 [BGP-GSLB]新加坡
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 日本2
-  - 日本3
-  - 日本4
-  - 日本1
-  - 韩国4
-  - 韩国3
-  - 🇺🇸US1
-  - 🇺🇸US2
-  - 🇺🇸US4
-  - 🇺🇸US3
-  - 🇺🇸US5
-  - 🇺🇸US6
-  - 🇺🇸US7
-  - 🇺🇸US8
-  - 🇺🇸US9
+  - 香港04
+  - 香港01
+  - US1
+  - US2
+  - 🇭🇰HK1
+  - 🇭🇰HK2
+  - 🇭🇰HK3
+  - 🇭🇰HK4
+  - 🇭🇰HK5
+  - 🇭🇰HK6
+  - 🇭🇰HK7
+  - 🇭🇰HK8
+  - 🇭🇰HK9
+  - 🇭🇰HK10
+  - 🇭🇰HK11
+  - 🇭🇰HK12
+  - 🇭🇰HK13
+  - 🇭🇰HK14
+  - 🇭🇰HK15
+  - 🇭🇰HK16
+  - 韩国 B157 | 湘日隧道 | 0x
   - 日本 M5 | 0x
-  - 新加坡 M1 | 流媒体 | 0x
-  - HK4
+  - 🇯🇵 [BGP-GSLB]日本
+  - 🇭🇰 [BGP-GSLB]香港•HKT
+  - 🇭🇰 [BGP-GSLB]香港•HGC
+  - 🇰🇷 [BGP-GSLB]韩国
+  - 🇵🇭 [BGP-GSLB]菲律宾马尼拉
+  - 🇮🇩 [BGP-GSLB]印度尼西亚•0.8x
+  - 🇺🇸 [BGP-GSLB]美国1
+  - 🇹🇭 [BGP-GSLB]泰国曼谷
+  - 🇻🇳 [BGP-GSLB]越南胡志明
+  - 🇫🇷 [BGP-GSLB]法国•0.8x
+  - 🇬🇧 [BGP-GSLB]英国•0.8x
+  - 🇷🇺 [BGP-GSLB]俄罗斯•0.1x
+  - 🇳🇬 [BGP-GSLB]尼日尼亚
+  - 🇹🇷 [BGP-GSLB]土耳其•0.5x
+  - 🇸🇬 [BGP-GSLB]新加坡
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
