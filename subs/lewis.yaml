@@ -4,47 +4,140 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 中国=tg频道:@bpjzx2=1, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 香港=tg频道:@bpjzx2=2, server: 47.243.190.110, port: 33232, type: vmess, uuid: 1a76d211-1dee-4fb2-99cc-b19b95dcbbb0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 香港=tg频道:@bpjzx2=3, server: 47.243.182.204, port: 22082, type: vmess, uuid: f46292d1-a5c6-44e3-9539-c45ea9f7ec6a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 香港=tg频道:@bpjzx2=4, server: 47.243.177.72, port: 27991, type: vmess, uuid: 7f25b2a0-188a-4fea-89cb-e3a4f6e3434a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 台湾=tg频道:@bpjzx2=5, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: /, tls: true, mux: true}, udp: true}
-  - {name: 美国=tg频道:@bpjzx2=6, server: 172.64.153.201, port: 443, type: vmess, uuid: 28dad69c-c9d6-47c5-ad05-c66afb87ccbd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash3.trump2023.org}}, udp: true}
-  - {name: 美国=tg频道:@bpjzx2=7, server: 172.64.155.201, port: 443, type: vmess, uuid: 28dad69c-c9d6-47c5-ad05-c66afb87ccbd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash3.trump2023.org}}, udp: true}
-  - {name: 中国=tg频道:@bpjzx2=8, server: 221.181.185.171, port: 11916, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 英国=tg频道:@bpjzx2=9, server: 185.194.30.40, port: 23453, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 韩国=tg频道:@bpjzx2=10, server: shouer.azzhuangaping.tw, port: 80, type: vmess, uuid: 70de4924-d1ac-3482-a494-577b4ccc9b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /adobe, headers: {Host: a.189.cn}}, udp: true}
-  - {name: 中国=tg频道:@bpjzx2=11, server: 119.23.45.18, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 香港=tg频道:@bpjzx2=1, server: 1.71.136.24, port: 19202, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 香港=tg频道:@bpjzx2=2, server: 182.151.8.150, port: 19205, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 新加坡=tg频道:@bpjzx2=3, server: 222.84.250.35, port: 19228, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=4, server: 182.151.8.150, port: 19212, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 香港=tg频道:@bpjzx2=5, server: 182.151.8.150, port: 19204, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 香港=tg频道:@bpjzx2=6, server: 222.84.250.35, port: 19203, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 新加坡=tg频道:@bpjzx2=7, server: 182.151.8.150, port: 19227, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 日本=tg频道:@bpjzx2=8, server: 222.84.250.35, port: 19244, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 香港=tg频道:@bpjzx2=9, server: 182.151.8.150, port: 19206, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 新加坡=tg频道:@bpjzx2=10, server: 222.84.250.35, port: 19227, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 圣克拉拉=tg频道:@bpjzx2=11, server: 1.71.136.24, port: 19241, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=12, server: 222.84.250.35, port: 19213, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 日本=tg频道:@bpjzx2=13, server: 182.151.8.150, port: 19244, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 香港=tg频道:@bpjzx2=14, server: 1.71.136.24, port: 19206, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 圣克拉拉=tg频道:@bpjzx2=15, server: 222.84.250.35, port: 19240, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=16, server: 1.71.136.24, port: 19215, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 洛杉矶=tg频道:@bpjzx2=17, server: 1.71.136.24, port: 19238, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 洛杉矶=tg频道:@bpjzx2=18, server: 182.151.8.150, port: 19235, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 伦敦=tg频道:@bpjzx2=19, server: 182.151.8.150, port: 19249, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 日本=tg频道:@bpjzx2=20, server: 1.71.136.24, port: 19245, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=21, server: 1.71.136.24, port: 19213, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 洛杉矶=tg频道:@bpjzx2=22, server: 182.151.8.150, port: 19238, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 洛杉矶=tg频道:@bpjzx2=23, server: 1.71.136.24, port: 19235, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 洛杉矶=tg频道:@bpjzx2=24, server: 1.71.136.24, port: 19236, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 圣荷西=tg频道:@bpjzx2=25, server: 1.71.136.24, port: 19232, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=26, server: 1.71.136.24, port: 19216, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=27, server: 182.151.8.150, port: 19216, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 香港=tg频道:@bpjzx2=28, server: 1.71.136.24, port: 19205, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 圣克拉拉=tg频道:@bpjzx2=29, server: 222.84.250.35, port: 19241, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 洛杉矶=tg频道:@bpjzx2=30, server: 222.84.250.35, port: 19238, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 洛杉矶=tg频道:@bpjzx2=31, server: 1.71.136.24, port: 19237, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 圣荷西=tg频道:@bpjzx2=32, server: 1.71.136.24, port: 19231, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 香港=tg频道:@bpjzx2=33, server: 222.84.250.35, port: 19206, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 洛杉矶=tg频道:@bpjzx2=34, server: 222.84.250.35, port: 19236, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 日本=tg频道:@bpjzx2=35, server: 182.151.8.150, port: 19245, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=36, server: 222.84.250.35, port: 19212, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 新加坡=tg频道:@bpjzx2=37, server: 1.71.136.24, port: 19228, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 新加坡=tg频道:@bpjzx2=38, server: 182.151.8.150, port: 19229, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=39, server: 182.151.8.150, port: 19215, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 洛杉矶=tg频道:@bpjzx2=40, server: 182.151.8.150, port: 19237, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 日本=tg频道:@bpjzx2=41, server: 1.71.136.24, port: 19244, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
+  - {name: 洛杉矶=tg频道:@bpjzx2=42, server: 182.151.8.150, port: 19236, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 中国=tg频道:@bpjzx2=1
+  - 香港=tg频道:@bpjzx2=1
   - 香港=tg频道:@bpjzx2=2
-  - 香港=tg频道:@bpjzx2=3
-  - 香港=tg频道:@bpjzx2=4
-  - 台湾=tg频道:@bpjzx2=5
-  - 美国=tg频道:@bpjzx2=6
-  - 美国=tg频道:@bpjzx2=7
-  - 中国=tg频道:@bpjzx2=8
-  - 英国=tg频道:@bpjzx2=9
-  - 韩国=tg频道:@bpjzx2=10
-  - 中国=tg频道:@bpjzx2=11
+  - 新加坡=tg频道:@bpjzx2=3
+  - 台湾=tg频道:@bpjzx2=4
+  - 香港=tg频道:@bpjzx2=5
+  - 香港=tg频道:@bpjzx2=6
+  - 新加坡=tg频道:@bpjzx2=7
+  - 日本=tg频道:@bpjzx2=8
+  - 香港=tg频道:@bpjzx2=9
+  - 新加坡=tg频道:@bpjzx2=10
+  - 圣克拉拉=tg频道:@bpjzx2=11
+  - 台湾=tg频道:@bpjzx2=12
+  - 日本=tg频道:@bpjzx2=13
+  - 香港=tg频道:@bpjzx2=14
+  - 圣克拉拉=tg频道:@bpjzx2=15
+  - 台湾=tg频道:@bpjzx2=16
+  - 洛杉矶=tg频道:@bpjzx2=17
+  - 洛杉矶=tg频道:@bpjzx2=18
+  - 伦敦=tg频道:@bpjzx2=19
+  - 日本=tg频道:@bpjzx2=20
+  - 台湾=tg频道:@bpjzx2=21
+  - 洛杉矶=tg频道:@bpjzx2=22
+  - 洛杉矶=tg频道:@bpjzx2=23
+  - 洛杉矶=tg频道:@bpjzx2=24
+  - 圣荷西=tg频道:@bpjzx2=25
+  - 台湾=tg频道:@bpjzx2=26
+  - 台湾=tg频道:@bpjzx2=27
+  - 香港=tg频道:@bpjzx2=28
+  - 圣克拉拉=tg频道:@bpjzx2=29
+  - 洛杉矶=tg频道:@bpjzx2=30
+  - 洛杉矶=tg频道:@bpjzx2=31
+  - 圣荷西=tg频道:@bpjzx2=32
+  - 香港=tg频道:@bpjzx2=33
+  - 洛杉矶=tg频道:@bpjzx2=34
+  - 日本=tg频道:@bpjzx2=35
+  - 台湾=tg频道:@bpjzx2=36
+  - 新加坡=tg频道:@bpjzx2=37
+  - 新加坡=tg频道:@bpjzx2=38
+  - 台湾=tg频道:@bpjzx2=39
+  - 洛杉矶=tg频道:@bpjzx2=40
+  - 日本=tg频道:@bpjzx2=41
+  - 洛杉矶=tg频道:@bpjzx2=42
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 中国=tg频道:@bpjzx2=1
+  - 香港=tg频道:@bpjzx2=1
   - 香港=tg频道:@bpjzx2=2
-  - 香港=tg频道:@bpjzx2=3
-  - 香港=tg频道:@bpjzx2=4
-  - 台湾=tg频道:@bpjzx2=5
-  - 美国=tg频道:@bpjzx2=6
-  - 美国=tg频道:@bpjzx2=7
-  - 中国=tg频道:@bpjzx2=8
-  - 英国=tg频道:@bpjzx2=9
-  - 韩国=tg频道:@bpjzx2=10
-  - 中国=tg频道:@bpjzx2=11
+  - 新加坡=tg频道:@bpjzx2=3
+  - 台湾=tg频道:@bpjzx2=4
+  - 香港=tg频道:@bpjzx2=5
+  - 香港=tg频道:@bpjzx2=6
+  - 新加坡=tg频道:@bpjzx2=7
+  - 日本=tg频道:@bpjzx2=8
+  - 香港=tg频道:@bpjzx2=9
+  - 新加坡=tg频道:@bpjzx2=10
+  - 圣克拉拉=tg频道:@bpjzx2=11
+  - 台湾=tg频道:@bpjzx2=12
+  - 日本=tg频道:@bpjzx2=13
+  - 香港=tg频道:@bpjzx2=14
+  - 圣克拉拉=tg频道:@bpjzx2=15
+  - 台湾=tg频道:@bpjzx2=16
+  - 洛杉矶=tg频道:@bpjzx2=17
+  - 洛杉矶=tg频道:@bpjzx2=18
+  - 伦敦=tg频道:@bpjzx2=19
+  - 日本=tg频道:@bpjzx2=20
+  - 台湾=tg频道:@bpjzx2=21
+  - 洛杉矶=tg频道:@bpjzx2=22
+  - 洛杉矶=tg频道:@bpjzx2=23
+  - 洛杉矶=tg频道:@bpjzx2=24
+  - 圣荷西=tg频道:@bpjzx2=25
+  - 台湾=tg频道:@bpjzx2=26
+  - 台湾=tg频道:@bpjzx2=27
+  - 香港=tg频道:@bpjzx2=28
+  - 圣克拉拉=tg频道:@bpjzx2=29
+  - 洛杉矶=tg频道:@bpjzx2=30
+  - 洛杉矶=tg频道:@bpjzx2=31
+  - 圣荷西=tg频道:@bpjzx2=32
+  - 香港=tg频道:@bpjzx2=33
+  - 洛杉矶=tg频道:@bpjzx2=34
+  - 日本=tg频道:@bpjzx2=35
+  - 台湾=tg频道:@bpjzx2=36
+  - 新加坡=tg频道:@bpjzx2=37
+  - 新加坡=tg频道:@bpjzx2=38
+  - 台湾=tg频道:@bpjzx2=39
+  - 洛杉矶=tg频道:@bpjzx2=40
+  - 日本=tg频道:@bpjzx2=41
+  - 洛杉矶=tg频道:@bpjzx2=42
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:

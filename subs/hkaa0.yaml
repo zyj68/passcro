@@ -4,29 +4,29 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: TG:@hkaa0|新加坡|自建|无限流量 001, server: sg118.hkaa0.tk, port: 20784, type: vmess, uuid: c6295e62-0c09-40b7-d8f8-de94db5318ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hkaa0, headers: {Host: sg118.hkaa0.tk}}, udp: true}
-  - {name: TG:@hkaa0|新加坡|自建|无限流量 002, server: sg118.hkaa0.tk, port: 42649, type: vmess, uuid: fbae0835-97f5-40c6-ec1a-60750c3c40cf, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hkaa0, headers: {Host: sg118.hkaa0.tk}}, udp: true}
-  - {name: TG:@hkaa0|新加坡|自建|无限流量 003, server: sg118.hkaa0.tk, port: 31323, type: vmess, uuid: 1af66f9c-da3f-49fd-8f30-6d161f519931, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hkaa0, headers: {Host: sg118.hkaa0.tk}}, udp: true}
-  - {name: TG:@hkaa0|新加坡|自建|无限流量 004, server: sg118.hkaa0.tk, port: 13691, type: vmess, uuid: 652f4263-bd86-4bf6-9f7e-d25e7516fb72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hkaa0, headers: {Host: sg118.hkaa0.tk}}, udp: true}
-  - {name: TG:@hkaa0|新加坡|自建|无限流量 005, server: sg118.hkaa0.tk, port: 26772, type: vmess, uuid: 5223beb3-c348-4cbb-9b66-076564920784, alterId: 6, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hkaa0, headers: {Host: sg118.hkaa0.tk}}, udp: true}
+  - {name: TG:@hkaa0|新加坡|自建|无限流量_1, server: sg118.hkaa0.tk, port: 20784, type: vmess, uuid: c6295e62-0c09-40b7-d8f8-de94db5318ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hkaa0, headers: {Host: sg118.hkaa0.tk}}, udp: true}
+  - {name: TG:@hkaa0|新加坡|自建|无限流量_2, server: sg118.hkaa0.tk, port: 42649, type: vmess, uuid: fbae0835-97f5-40c6-ec1a-60750c3c40cf, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hkaa0, headers: {Host: sg118.hkaa0.tk}}, udp: true}
+  - {name: TG:@hkaa0|新加坡|自建|无限流量_3, server: sg118.hkaa0.tk, port: 31323, type: vmess, uuid: 1af66f9c-da3f-49fd-8f30-6d161f519931, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hkaa0, headers: {Host: sg118.hkaa0.tk}}, udp: true}
+  - {name: TG:@hkaa0|新加坡|自建|无限流量_4, server: sg118.hkaa0.tk, port: 13691, type: vmess, uuid: 652f4263-bd86-4bf6-9f7e-d25e7516fb72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hkaa0, headers: {Host: sg118.hkaa0.tk}}, udp: true}
+  - {name: TG:@hkaa0|新加坡|自建|无限流量_5, server: sg118.hkaa0.tk, port: 26772, type: vmess, uuid: 5223beb3-c348-4cbb-9b66-076564920784, alterId: 6, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hkaa0, headers: {Host: sg118.hkaa0.tk}}, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - TG:@hkaa0|新加坡|自建|无限流量 001
-  - TG:@hkaa0|新加坡|自建|无限流量 002
-  - TG:@hkaa0|新加坡|自建|无限流量 003
-  - TG:@hkaa0|新加坡|自建|无限流量 004
-  - TG:@hkaa0|新加坡|自建|无限流量 005
+  - TG:@hkaa0|新加坡|自建|无限流量_1
+  - TG:@hkaa0|新加坡|自建|无限流量_2
+  - TG:@hkaa0|新加坡|自建|无限流量_3
+  - TG:@hkaa0|新加坡|自建|无限流量_4
+  - TG:@hkaa0|新加坡|自建|无限流量_5
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - TG:@hkaa0|新加坡|自建|无限流量 001
-  - TG:@hkaa0|新加坡|自建|无限流量 002
-  - TG:@hkaa0|新加坡|自建|无限流量 003
-  - TG:@hkaa0|新加坡|自建|无限流量 004
-  - TG:@hkaa0|新加坡|自建|无限流量 005
+  - TG:@hkaa0|新加坡|自建|无限流量_1
+  - TG:@hkaa0|新加坡|自建|无限流量_2
+  - TG:@hkaa0|新加坡|自建|无限流量_3
+  - TG:@hkaa0|新加坡|自建|无限流量_4
+  - TG:@hkaa0|新加坡|自建|无限流量_5
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:

@@ -4,302 +4,242 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {cipher: chacha20-ietf-poly1305, name: "[10-20]-🇭🇰-香港-434-148.66.56.98", password: G!yBwPWH3Vao, server: 148.66.56.98, port: 809, type: ss, udp: true}
-  - {cipher: chacha20-ietf-poly1305, name: "[10-20]-🇦🇶-塞舌尔-762-165.231.67.3", password: G!yBwPWH3Vao, server: 165.231.67.3, port: 804, type: ss, udp: true}
-  - {cipher: chacha20-ietf-poly1305, name: "[10-20]-🇯🇵-日本-290-193.38.139.203", password: G!yBwPWH3Vao, server: 193.38.139.203, port: 807, type: ss, udp: true}
-  - {cipher: chacha20-ietf-poly1305, name: "[10-20]-🇸🇬-新加坡-418-51.79.177.107", password: G!yBwPWH3Vao, server: 51.79.177.107, port: 809, type: ss, udp: true}
-  - {cipher: chacha20-ietf-poly1305, name: "[10-20]-🇫🇷-法国-410-51.89.99.52", password: G!yBwPWH3Vao, server: 51.89.99.52, port: 805, type: ss, udp: true}
-  - {cipher: chacha20-ietf-poly1305, name: "[10-20]-🇸🇬-新加坡-358-54.251.230.216", password: "Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS", server: 54.251.230.216, port: 18332, type: ss, udp: true}
-  - {cipher: chacha20-ietf-poly1305, name: "[10-20]-🇺🇸-美国-286-149.86.105.76", password: kpZWhk5r1RLT, server: 149.86.105.76, port: 443, type: ss, udp: true}
-  - {cipher: aes-128-gcm, name: "[10-20]-🇦🇶-本机地址-440-ss3.ssrsub.com", password: suo.yt/ssrsub, server: ss3.ssrsub.com, port: 40443, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇮🇳-印度-760-49.12.203.80", password: 6kA7b3f9Aw2508erQ3W7D4, server: 49.12.203.80, port: 40960, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇮🇷-伊朗-448-185.108.106.176", password: 8n6pwAcrrv2pj6tFY2p3TbQ6, server: 185.108.106.176, port: 33992, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇮🇷-伊朗-632-185.108.106.21", password: 8n6pwAcrrv2pj6tFY2p3TbQ6, server: 185.108.106.21, port: 33992, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇪🇸-西班牙-450-185.153.150.56", password: 8n6pwAcrrv2pj6tFY2p3TbQ6, server: 185.153.150.56, port: 33992, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-374-198.147.22.213", password: 8n6pwAcrrv2pj6tFY2p3TbQ6, server: 198.147.22.213, port: 33992, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-398-155.254.29.165", password: CMduaFXddcQbwNAAs7xFDnc8, server: 155.254.29.165, port: 33148, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-438-198.147.22.163", password: CMduaFXddcQbwNAAs7xFDnc8, server: 198.147.22.163, port: 33148, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-380-209.216.92.212", password: CTK8GXFQgKYQErrghPJfZ6tk, server: 209.216.92.212, port: 47121, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇷🇴-罗马尼亚-444-5.154.174.219", password: CUndSZnYsPKcu6Kj8THVMBHD, server: 5.154.174.219, port: 39772, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇷🇴-罗马尼亚-436-91.250.240.144", password: CUndSZnYsPKcu6Kj8THVMBHD, server: 91.250.240.144, port: 39772, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇷🇴-罗马尼亚-630-91.245.254.235", password: DKXfWwc4ebscpXTKpbt85rSH, server: 91.245.254.235, port: 38742, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-378-172.99.190.35", password: FoOiGlkAA9yPEGP, server: 172.99.190.35, port: 7307, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇨🇦-加拿大蒙特利尔-366-134.195.196.147", password: FoOiGlkAA9yPEGP, server: 134.195.196.147, port: 7307, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇨🇦-加拿大蒙特利尔-426-134.195.196.154", password: FoOiGlkAA9yPEGP, server: 134.195.196.154, port: 7307, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-392-38.107.226.146", password: FoOiGlkAA9yPEGP, server: 38.107.226.146, port: 7306, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇵🇹-葡萄牙-406-185.174.159.133", password: FaTG4zALZru72gxjgSHQ7Jdh, server: 185.174.159.133, port: 42185, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇪🇸-欧洲-628-154.16.171.213", password: Kquv5UhvZXNMemAQy8DxZ7qn, server: 154.16.171.213, port: 38620, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇷🇴-罗马尼亚-368-193.29.107.125", password: LJcChRsGQRhywrtXUU55TLTu, server: 193.29.107.125, port: 47861, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇦🇶-亚太地区-422-103.152.151.85", password: LkFAzkzXkSCRYa2CsRdL8cGb, server: 103.152.151.85, port: 34815, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-370-209.216.92.222", password: LkFAzkzXkSCRYa2CsRdL8cGb, server: 209.216.92.222, port: 34815, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇹🇭-泰国-442-27.131.164.100", password: LsYSQDxmPj9AcWpSX5HrYfu6, server: 27.131.164.100, port: 49468, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇮🇷-伊朗-456-185.108.106.152", password: NHwQTPLCfaTMSqTnU3mjcSxe, server: 185.108.106.152, port: 33998, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-390-172.99.190.205", password: PCnnH6SQSnfoS27, server: 172.99.190.205, port: 8091, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇨🇦-加拿大多伦多-754-198.57.27.218", password: PCnnH6SQSnfoS27, server: 198.57.27.218, port: 8091, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇦🇶-欧盟-424-185.252.222.101", password: WCuz7yrfZSCQQXSNrtGPz2HT, server: 185.252.222.101, port: 50168, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇪🇸-欧洲-394-138.199.40.167", password: WCuz7yrfZSCQQXSNrtGPz2HT, server: 138.199.40.167, port: 50168, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-458-45.134.224.15", password: WCuz7yrfZSCQQXSNrtGPz2HT, server: 45.134.224.15, port: 50168, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇷🇺-俄罗斯-430-91.240.243.9", password: WCuz7yrfZSCQQXSNrtGPz2HT, server: 91.240.243.9, port: 50168, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇷🇴-罗马尼亚-386-91.245.254.43", password: WCuz7yrfZSCQQXSNrtGPz2HT, server: 91.245.254.43, port: 50168, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇷🇴-罗马尼亚-752-91.245.254.45", password: WCuz7yrfZSCQQXSNrtGPz2HT, server: 91.245.254.45, port: 50168, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇵🇱-波兰-624-91.205.230.176", password: WCuz7yrfZSCQQXSNrtGPz2HT, server: 91.205.230.176, port: 50168, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇦-乌克兰-428-2.58.241.131", password: b2jDPHUQxCNa2KmGHZjy7C4B, server: 2.58.241.131, port: 50024, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-402-155.254.31.184", password: gYL83DQWXuDbxmZAVVtUTXaK, server: 155.254.31.184, port: 46642, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇮🇳-印度-622-103.94.27.101", password: gYL83DQWXuDbxmZAVVtUTXaK, server: 103.94.27.101, port: 46642, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-284-38.75.136.102", password: e4FCWrgpkji3QY, server: 38.75.136.102, port: 9102, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇮🇷-伊朗-452-185.108.106.148", password: enctdKyJfSu76VqznKwTt6Ap, server: 185.108.106.148, port: 37473, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-388-172.99.190.158", password: faBAoD54k87UJG7, server: 172.99.190.158, port: 2376, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇦🇶-巴西-432-128.14.222.215", password: faBAoD54k87UJG7, server: 128.14.222.215, port: 2376, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-412-45.79.122.28", password: faBAoD54k87UJG7, server: 45.79.122.28, port: 2375, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇮🇷-伊朗-454-185.108.106.186", password: kD9vkjnE6dsUzwQfvKkPkQAd, server: 185.108.106.186, port: 37588, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇺🇸-美国-400-192.154.255.54", password: n8w4StnbVD9dmXYn4Ajt87EA, server: 192.154.255.54, port: 31572, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇭🇰-香港-376-84.17.35.103", password: n8w4StnbVD9dmXYn4Ajt87EA, server: 84.17.35.103, port: 31572, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇵🇱-波兰-620-91.205.230.133", password: n8w4StnbVD9dmXYn4Ajt87EA, server: 91.205.230.133, port: 31572, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇦🇶-欧盟-384-45.12.223.195", password: suucSeVLmt6PQKAP77NtGw9x, server: 45.12.223.195, port: 49339, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇳🇴-挪威-396-46.29.218.6", password: pKEW8JPByTVTLtM, server: 46.29.218.6, port: 443, type: ss, udp: true}
-  - {cipher: aes-256-gcm, name: "[10-20]-🇵🇱-波兰-382-194.150.167.42", password: x23Z4LGkGDkThZ9Kaz4DURQp, server: 194.150.167.42, port: 40093, type: ss, udp: true}
-  - {v: 2, name: 🇦🇶-立陶宛-85.206.165.44, server: 85.206.165.44, port: 443, type: vmess, uuid: ba49ab05-78f8-4b0b-9400-1826cc2d3f75, alterId: 64, network: ws, host: www.57080742.xyz, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /path/243535322906}}
-  - {v: 2, name: 🇦🇶-丹麦-185.236.203.68, server: 185.236.203.68, port: 443, type: vmess, uuid: 2e967dd5-8d24-4099-a901-412dcb4024fd, alterId: 64, network: ws, host: www.24400881.xyz, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /path/243535322906}}
-  - {v: 2, name: 🇦🇶-亚太地区-id-v.sshmax.xyz, server: id-v.sshmax.xyz, port: 443, type: vmess, uuid: 781adf87-0afa-420c-875f-879162a2bce1, alterId: 0, network: ws, host: id-v.sshmax.xyz, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇦🇶-亚太地区-lsrug-1037-v2-9.hkg-d-cmi.jd.cjhh.lol, server: lsrug-1037-v2-9.hkg-d-cmi.jd.cjhh.lol, port: 443, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, network: ws, host: lsrug-1037-v2-9.hkg-d-cmi.jd.cjhh.lol, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /je5x3pBN1vez3NQudNkB}}
-  - {v: 2, name: 🇦🇶-匈牙利-185.128.26.68, server: 185.128.26.68, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, network: ws, host: www.63838778.xyz, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /path/243535322906}}
-  - {v: 2, name: 🇦🇶-希腊-213.170.203.90, server: 213.170.203.90, port: 443, type: vmess, uuid: aed25472-7d6f-376b-9958-d540b43b4896, alterId: 0, network: ws, host: wakuwaku.wakutls.com, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /soda}}
-  - {v: 2, name: 🇦🇶-本机地址-azhktransfer.kczz2038.online, server: azhktransfer.kczz2038.online, port: 443, type: vmess, uuid: 88939272-790a-441f-b12b-8ce531aca810, alterId: 0, network: ws, host: azt06.kctr2038.icu, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇦🇶-本机地址-azsgtr.kctr2038.icu, server: azsgtr.kctr2038.icu, port: 443, type: vmess, uuid: 88939272-790a-441f-b12b-8ce531aca810, alterId: 0, network: ws, host: linodetr03.kaochangonline.online, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇦🇺-澳大利亚-140.83.48.214, server: 140.83.48.214, port: 443, type: vmess, uuid: e10b4091-91f0-424b-8da0-686d6a9b8047, alterId: 2, network: ws, host: None, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇦🇺-澳大利亚-140.83.86.247, server: 140.83.86.247, port: 443, type: vmess, uuid: e10b4091-91f0-424b-8da0-686d6a9b8047, alterId: 2, network: ws, host: None, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇦🇺-澳大利亚-139.99.180.112, server: 139.99.180.112, port: 443, type: vmess, uuid: 6c04a273-7302-4e09-9ced-aedaaa7461af, alterId: 64, network: ws, host: www.96832799.xyz, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /path/243535322906}}
-  - {v: 2, name: 🇨🇦-加拿大-165.154.244.29, server: 165.154.244.29, port: 443, type: vmess, uuid: a144de38-a881-4d45-852b-59eb5c38f7a8, alterId: 0, network: tcp, host: fr2.v2rayserv.com, tls: false, cipher: auto, udp: true, ws-opts: {path: /sshocean}}
-  - {v: 2, name: 🇨🇦-加拿大-165.154.244.82, server: 165.154.244.82, port: 443, type: vmess, uuid: a144de38-a881-4d45-852b-59eb5c38f7a8, alterId: 0, network: ws, host: 165.154.244.82, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇨🇦-加拿大-165.154.243.161, server: 165.154.243.161, port: 443, type: vmess, uuid: a144de38-a881-4d45-852b-59eb5c38f7a8, alterId: 0, network: tcp, host: None, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇩🇪-德国-92.223.63.26, server: 92.223.63.26, port: 443, type: vmess, uuid: 5c854e2e-205c-4309-8363-ff60ea7b2a16, alterId: 0, network: ws, host: lz8pqp9kufc6gv59.114517.xyz, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /cgi-bin/api/dataflow/}}
-  - {v: 2, name: 🇩🇪-德国-92.223.114.11, server: 92.223.114.11, port: 443, type: vmess, uuid: 5c854e2e-205c-4309-8363-ff60ea7b2a16, alterId: 0, network: ws, host: mosurqgz9ft1y8rn.114517.xyz, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /cgi-bin/api/dataflow/}}
-  - {v: 2, name: 🇩🇪-德国-92.223.114.6, server: 92.223.114.6, port: 443, type: vmess, uuid: 5c854e2e-205c-4309-8363-ff60ea7b2a16, alterId: 0, network: ws, host: fjij9pkomxouiela.114517.xyz, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /cgi-bin/api/dataflow/}}
-  - {v: 2, name: 🇪🇸-西班牙-185.194.30.40, server: 185.194.30.40, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, network: tcp, host: tr02.kczz2038.online, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇯🇵-日本-146.56.99.196, server: 146.56.99.196, port: 443, type: vmess, uuid: e10b4091-91f0-424b-8da0-686d6a9b8047, alterId: 2, network: ws, host: a.189.cn, tls: false, cipher: auto, udp: true, ws-opts: {path: /JJkuv3}}
-  - {v: 2, name: 🇯🇵-日本-43.206.109.25, server: 43.206.109.25, port: 443, type: vmess, uuid: 5f7e80d2-8115-4597-92e0-f85f3bc972fe, alterId: 0, network: ws, host: 43.206.109.25, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇯🇵-日本-43.206.118.166, server: 43.206.118.166, port: 443, type: vmess, uuid: 5f7e80d2-8115-4597-92e0-f85f3bc972fe, alterId: 0, network: ws, host: 43.206.118.166, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇯🇵-日本-54.178.106.181, server: 54.178.106.181, port: 443, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, network: tcp, host: 43.206.109.25, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇯🇵-日本-m2.pianyijc.top, server: m2.pianyijc.top, port: 443, type: vmess, uuid: 6b855dbd-3f5a-4a8b-8338-73ab337eb8e6, alterId: 0, network: ws, host: m2.pianyijc.top, tls: false, cipher: auto, udp: true, ws-opts: {path: /sometimesnaive}}
-  - {v: 2, name: 🇯🇵-日本-jp02-vm0.entry.srthdw.art, server: jp02-vm0.entry.srthdw.art, port: 443, type: vmess, uuid: 8acc3591-e6ce-3e75-84aa-2afe203b13f0, alterId: 0, network: ws, host: jp02-vm0.entry.srthdw.art, tls: false, cipher: auto, udp: true, ws-opts: {path: /hls/cctv5phd.m3u8}}
-  - {v: 2, name: 🇯🇵-日本-jp04-vm0.entry.srthdw.art, server: jp04-vm0.entry.srthdw.art, port: 443, type: vmess, uuid: 8acc3591-e6ce-3e75-84aa-2afe203b13f0, alterId: 0, network: ws, host: jp04-vm0.entry.srthdw.art, tls: false, cipher: auto, udp: true, ws-opts: {path: /hls/cctv5phd.m3u8}}
-  - {v: 2, name: 🇯🇵-日本-shouer.azzhuangaping.tw, server: shouer.azzhuangaping.tw, port: 443, type: vmess, uuid: 70de4924-d1ac-3482-a494-577b4ccc9b1d, alterId: 0, network: ws, host: a.189.cn, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇯🇵-日本-v21.idcloudhost.de, server: v21.idcloudhost.de, port: 443, type: vmess, uuid: 00974d71-032f-4f5c-941b-612fb426252a, alterId: 0, network: ws, host: v21.idcloudhost.de, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇯🇵-日本-v26.idcloudhost.de, server: v26.idcloudhost.de, port: 443, type: vmess, uuid: 00974d71-032f-4f5c-941b-612fb426252a, alterId: 0, network: ws, host: v26.idcloudhost.de, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇯🇵-日本-vm10.leifengkeji.live, server: vm10.leifengkeji.live, port: 443, type: vmess, uuid: 752a9404-c729-485e-8ea5-acb3f4fc8180, alterId: 0, network: ws, host: vm10.leifengkeji.live, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇯🇵-日本-vm12.leifengkeji.live, server: vm12.leifengkeji.live, port: 443, type: vmess, uuid: 752a9404-c729-485e-8ea5-acb3f4fc8180, alterId: 0, network: ws, host: vm12.leifengkeji.live, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇯🇵-日本-vm14.leifengkeji.live, server: vm14.leifengkeji.live, port: 443, type: vmess, uuid: 752a9404-c729-485e-8ea5-acb3f4fc8180, alterId: 0, network: ws, host: vm14.leifengkeji.live, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇯🇵-日本-vm3.leifengkeji.live, server: vm3.leifengkeji.live, port: 443, type: vmess, uuid: 752a9404-c729-485e-8ea5-acb3f4fc8180, alterId: 0, network: ws, host: vm3.leifengkeji.live, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇬🇧-英国-193.123.92.160, server: 193.123.92.160, port: 443, type: vmess, uuid: e10b4091-91f0-424b-8da0-686d6a9b8047, alterId: 2, network: ws, host: None, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇬🇧-英国-193.123.94.180, server: 193.123.94.180, port: 443, type: vmess, uuid: e10b4091-91f0-424b-8da0-686d6a9b8047, alterId: 2, network: ws, host: None, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇬🇧-英国-80.85.84.37, server: 80.85.84.37, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, network: ws, host: None, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇭🇰-香港-18.167.121.42, server: 18.167.121.42, port: 443, type: vmess, uuid: d3978bd0-dade-4181-81de-bae3091339f1, alterId: 0, network: ws, host: 18.167.121.42, tls: false, cipher: auto, udp: true, ws-opts: {path: /hk.wumaojichang.ml}}
-  - {v: 2, name: 🇭🇰-香港-1063975e-d559-89b3-5d40-2faae0a79030.cnnic.rip, server: 1063975e-d559-89b3-5d40-2faae0a79030.cnnic.rip, port: 443, type: vmess, uuid: 6b468d94-f14a-4109-88d7-e23587536eca, alterId: 0, network: ws, host: 1063975e-d559-89b3-5d40-2faae0a79030.cnnic.rip, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇭🇰-香港-47.242.60.8, server: 47.242.60.8, port: 443, type: vmess, uuid: bb170858-0779-484a-a708-7dc1728921cf, alterId: 0, network: http, host: None, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇭🇰-香港-47.242.193.213, server: 47.242.193.213, port: 443, type: vmess, uuid: 59f44d1e-c2e7-4de9-983a-4727bb861f43, alterId: 0, network: http, host: 47.242.193.213, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇭🇰-香港-47.243.100.254, server: 47.243.100.254, port: 443, type: vmess, uuid: 180c6326-6679-4192-b418-457df58e8ba9, alterId: 0, network: http, host: None, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇭🇰-香港-47.243.18.69, server: 47.243.18.69, port: 443, type: vmess, uuid: f2f964e9-1a9b-43f9-82a5-b80ee2ccb4f7, alterId: 0, network: http, host: None, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
-  - {v: 2, name: 🇭🇰-香港-47.243.182.204, server: 47.243.182.204, port: 443, type: vmess, uuid: f46292d1-a5c6-44e3-9539-c45ea9f7ec6a, alterId: 0, network: http, host: 47.243.182.204, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇭🇰-香港-5236-8.210.87.228", password: 752a9404-c729-485e-8ea5-acb3f4fc8180, server: 8.210.87.228, port: 5555, type: ss, udp: true}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇹🇼-台湾-450-fn600mlines021.fnline.info", password: 0ac84efef442, server: fn600mlines021.fnline.info, port: 443, type: ss, udp: true}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇦🇶-塞舌尔-3804-165.231.67.3", password: G!yBwPWH3Vao, server: 165.231.67.3, port: 810, type: ss, udp: true}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇩🇪-德国-230-185.104.184.78", password: G!yBwPWH3Vao, server: 185.104.184.78, port: 810, type: ss, udp: true}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇷🇴-罗马尼亚-2834-37.120.147.230", password: G!yBwPWH3Vao, server: 37.120.147.230, port: 805, type: ss, udp: true}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇸🇬-新加坡-228-51.79.177.107", password: G!yBwPWH3Vao, server: 51.79.177.107, port: 809, type: ss, udp: true}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇸🇬-新加坡-572-81.90.189.41", password: G!yBwPWH3Vao, server: 81.90.189.41, port: 0, type: ss, udp: true}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇯🇵-日本-3618-ak1470.free.www.outline.network", password: G!yBwPWH3Vao, server: ak1470.free.www.outline.network, port: 808, type: ss, udp: true}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇳🇱-荷兰-4270-37.218.247.25", password: VdFUd2u5zZJv, server: 37.218.247.25, port: 443, type: ss, udp: true}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇺🇦-乌克兰-2838-217.12.223.190", password: WacwetCif, server: 217.12.223.190, port: 444, type: ss, udp: true}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇺🇸-美国-4278-154.17.2.31", password: "Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS", server: 154.17.2.31, port: 18333, type: ss, udp: true}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇨🇦-加拿大-672-165.154.253.80", password: "fa0702f4-8ec9-48e5-9b53-a0afb7c3717e", server: 165.154.253.80, port: 1334, type: ss, udp: true}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇺🇸-美国-4044-149.86.105.76", password: kpZWhk5r1RLT, server: 149.86.105.76, port: 443, type: ss, udp: true}
+  - {cipher: chacha20-ietf-poly1305, name: "[10-21]-🇨🇦-加拿大-4286-135.181.114.242", password: siF98xBL2v1i, server: 135.181.114.242, port: 8478, type: ss, udp: true}
+  - {cipher: aes-128-gcm, name: "[10-21]-🇮🇹-意大利-5234-212.102.53.194", password: shadowsocks, server: 212.102.53.194, port: 443, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇮🇷-伊朗-226-185.108.106.176", password: 8n6pwAcrrv2pj6tFY2p3TbQ6, server: 185.108.106.176, port: 33992, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇪🇸-西班牙-3112-185.153.150.56", password: 8n6pwAcrrv2pj6tFY2p3TbQ6, server: 185.153.150.56, port: 33992, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇺🇸-美国-3026-198.147.22.213", password: 8n6pwAcrrv2pj6tFY2p3TbQ6, server: 198.147.22.213, port: 33992, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇸🇬-新加坡-2876-89.187.163.215", password: 8n6pwAcrrv2pj6tFY2p3TbQ6, server: 89.187.163.215, port: 33992, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇺🇸-美国-224-155.254.29.165", password: CMduaFXddcQbwNAAs7xFDnc8, server: 155.254.29.165, port: 33148, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇺🇸-美国-3388-209.216.92.200", password: CTK8GXFQgKYQErrghPJfZ6tk, server: 209.216.92.200, port: 47121, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇩🇪-德国-222-185.166.84.59", password: CUndSZnYsPKcu6Kj8THVMBHD, server: 185.166.84.59, port: 39772, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇷🇴-罗马尼亚-3744-5.154.174.219", password: CUndSZnYsPKcu6Kj8THVMBHD, server: 5.154.174.219, port: 39772, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇷🇴-罗马尼亚-3130-91.250.240.144", password: CUndSZnYsPKcu6Kj8THVMBHD, server: 91.250.240.144, port: 39772, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇷🇴-罗马尼亚-3110-91.245.254.235", password: DKXfWwc4ebscpXTKpbt85rSH, server: 91.245.254.235, port: 38742, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇨🇦-加拿大蒙特利尔-3300-134.195.196.163", password: FoOiGlkAA9yPEGP, server: 134.195.196.163, port: 7307, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇺🇸-美国-3616-45.79.127.97", password: FoOiGlkAA9yPEGP, server: 45.79.127.97, port: 7306, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇵🇹-葡萄牙-220-185.174.159.133", password: FaTG4zALZru72gxjgSHQ7Jdh, server: 185.174.159.133, port: 42185, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇫🇷-法国-3674-149.202.82.172", password: KixLvKzwjekG00rm, server: 149.202.82.172, port: 8080, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇺🇸-美国-3668-38.68.135.18", password: KixLvKzwjekG00rm, server: 38.68.135.18, port: 5500, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇺🇸-美国-4302-38.114.114.19", password: KixLvKzwjekG00rm, server: 38.114.114.19, port: 8000, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇮🇳-印度-218-137.59.52.109", password: Kquv5UhvZXNMemAQy8DxZ7qn, server: 137.59.52.109, port: 38620, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇦🇶-亚太地区-3024-103.152.151.85", password: LkFAzkzXkSCRYa2CsRdL8cGb, server: 103.152.151.85, port: 34815, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇺🇸-美国-3516-209.216.92.222", password: LkFAzkzXkSCRYa2CsRdL8cGb, server: 209.216.92.222, port: 34815, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇩🇪-德国-3742-185.102.219.6", password: NHwQTPLCfaTMSqTnU3mjcSxe, server: 185.102.219.6, port: 33998, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇮🇷-伊朗-2874-185.108.106.152", password: NHwQTPLCfaTMSqTnU3mjcSxe, server: 185.108.106.152, port: 33998, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇺🇸-美国-216-172.99.190.205", password: PCnnH6SQSnfoS27, server: 172.99.190.205, port: 8091, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇪🇸-欧洲-214-138.199.40.167", password: WCuz7yrfZSCQQXSNrtGPz2HT, server: 138.199.40.167, port: 50168, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇷🇺-俄罗斯-3614-91.240.243.9", password: WCuz7yrfZSCQQXSNrtGPz2HT, server: 91.240.243.9, port: 50168, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇷🇴-罗马尼亚-212-91.245.254.45", password: WCuz7yrfZSCQQXSNrtGPz2HT, server: 91.245.254.45, port: 50168, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇷🇴-罗马尼亚-2872-91.250.240.138", password: WCuz7yrfZSCQQXSNrtGPz2HT, server: 91.250.240.138, port: 50168, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇵🇱-波兰-3514-91.205.230.166", password: WCuz7yrfZSCQQXSNrtGPz2HT, server: 91.205.230.166, port: 50168, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇨🇦-加拿大蒙特利尔-448-134.195.196.231", password: Y6R9pAtvxxzmGC, server: 134.195.196.231, port: 5600, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇬🇧-英国-210-145.239.1.100", password: Y6R9pAtvxxzmGC, server: 145.239.1.100, port: 0, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇸🇪-瑞典-460-167.88.61.14", password: Y6R9pAtvxxzmGC, server: 167.88.61.14, port: 5001, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇹🇭-泰国-3108-27.131.164.100", password: Y9GcTPemHMKEkrfGQPJqFDNr, server: 27.131.164.100, port: 49653, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇺🇸-美国-2940-45.78.10.188", password: cP7jJCUtsFumgZAW, server: 45.78.10.188, port: 30923, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇺🇸-美国-208-138.128.220.143", password: cP7jJCUtsFumgZAW, server: 138.128.220.143, port: 30923, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇮🇹-意大利-3740-212.102.44.86", password: b2jDPHUQxCNa2KmGHZjy7C4B, server: 212.102.44.86, port: 50024, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇮🇳-印度-206-103.94.27.101", password: gYL83DQWXuDbxmZAVVtUTXaK, server: 103.94.27.101, port: 46642, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇨🇦-加拿大-5232-38.111.114.246", password: e4FCWrgpkji3QY, server: 38.111.114.246, port: 9102, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇷🇺-俄罗斯-3184-195.158.249.42", password: enctdKyJfSu76VqznKwTt6Ap, server: 195.158.249.42, port: 37473, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇺🇸-美国-3022-172.99.190.158", password: faBAoD54k87UJG7, server: 172.99.190.158, port: 2376, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇹🇭-泰国-3612-27.131.164.94", password: g4AfpNELpdYEeLYhM8XCX9se, server: 27.131.164.94, port: 39556, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇮🇷-伊朗-3128-185.108.106.186", password: kD9vkjnE6dsUzwQfvKkPkQAd, server: 185.108.106.186, port: 37588, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇺🇸-美国-4354-38.86.135.27", password: kDWvXYZoTBcGkC4, server: 38.86.135.27, port: 8882, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇭🇰-香港-2870-84.17.35.103", password: n8w4StnbVD9dmXYn4Ajt87EA, server: 84.17.35.103, port: 31572, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇵🇱-波兰-204-91.205.230.133", password: n8w4StnbVD9dmXYn4Ajt87EA, server: 91.205.230.133, port: 31572, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇦🇶-波斯尼亚和黑塞哥维那-3512-185.99.3.98", password: suucSeVLmt6PQKAP77NtGw9x, server: 185.99.3.98, port: 49339, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇦🇶-欧盟-3386-45.12.223.195", password: suucSeVLmt6PQKAP77NtGw9x, server: 45.12.223.195, port: 49339, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇵🇱-波兰-202-5.187.49.187", password: r9Q3adc3ru9sfBDPEj4yp6U6, server: 5.187.49.187, port: 48794, type: ss, udp: true}
+  - {cipher: aes-256-gcm, name: "[10-21]-🇺🇸-美国-4352-45.130.137.14", password: x23Z4LGkGDkThZ9Kaz4DURQp, server: 45.130.137.14, port: 40093, type: ss, udp: true}
+  - {v: 2, name: 🇦🇶-本机地址-cf.fovi.tk, server: cf.fovi.tk, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, network: ws, host: foxca2.fovi.tk, tls: true, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /eisasqa}}
+  - {v: 2, name: 🇯🇵-日本-89.31.126.126, server: 89.31.126.126, port: 443, type: vmess, uuid: 5c7b33c6-6d83-11eb-b77b-f23c913c8d2b, alterId: 2, network: ws, host: 89.31.126.126, tls: false, cipher: auto, udp: true, ws-opts: {path: broadcastlv.chat.bilibili.com}}
+  - {v: 2, name: 🇯🇵-日本-jp2js.bafang.vip, server: jp2js.bafang.vip, port: 443, type: vmess, uuid: 88217f59-d96e-478a-82c9-42c42c272be0, alterId: 0, network: ws, host: jp2js.bafang.vip, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
+  - {v: 2, name: 🇰🇷-韩国首尔-193.122.119.64, server: 193.122.119.64, port: 443, type: vmess, uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e, alterId: 0, network: ws, host: dm.toutiao.com, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
+  - {v: 2, name: 🇺🇸-美国-104.24.31.0, server: 104.24.31.0, port: 443, type: vmess, uuid: 4db99e96-3ee3-419c-b1fb-856975801380, alterId: 64, network: ws, host: localhoster.ml, tls: false, cipher: auto, udp: true, ws-opts: {path: /ray}}
+  - {v: 2, name: 🇺🇸-美国-jp-5.wumaojichang.ml, server: jp-5.wumaojichang.ml, port: 443, type: vmess, uuid: d3978bd0-dade-4181-81de-bae3091339f1, alterId: 0, network: ws, host: jp-5.wumaojichang.ml, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
+  - {v: 2, name: 🇺🇸-美国-jp2js1.bafang.vip, server: jp2js1.bafang.vip, port: 443, type: vmess, uuid: 88217f59-d96e-478a-82c9-42c42c272be0, alterId: 0, network: ws, host: jp2js1.bafang.vip, tls: false, cipher: auto, udp: true, ws-opts: {path: /}}
+  - {server: 165.154.243.175, port: 443, uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e, alterId: 0, cipher: auto, network: tcp, host: v11-xg.ixigua.com, tls: false, sni: None, v: 2, name: 🇨🇦-加拿大-165.154.243.175, type: vmess, serverPort: 0, nation: None, udp: true, ws-opts: {path: /}}
+  - {server: wehave.elonsms.shop, alterId: 0, host: elonsms.shop, uuid: 2de653d6-e8a9-4ddf-80bc-5c45ac42c020, network: ws, port: 443, name: 🇺🇸-美国-wehave.elonsms.shop, tls: true, type: vmess, security: auto, skip-cert-verify: true, sni: wehave.elonsms.shop, cipher: auto, allowinsecure: true, udp: true, ws-opts: {path: /flex}}
+  - {name: 🇸🇬-新加坡-13.229.112.195, 免费订阅尽在https: //t.me/go4sharing4, server: 13.229.112.195, port: 443, type: vmess, uuid: e13a9c42-54d6-4fe1-9578-0ca3bfc17122, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, udp: true, ws-opts: {path: /}}
+  - {name: 🇺🇸-美国-18.143.123.35, 免费订阅尽在https: //t.me/go4sharing7, server: 18.143.123.35, port: 443, type: vmess, uuid: 68df4838-46d0-4b5b-c3f0-a40ec7063245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, host: dm.toutiao.com, udp: true, ws-opts: {path: /}}
+  - {name: 🇺🇸-美国-tk2.mybestjj.com, 免费订阅尽在https: //t.me/go4sharing14, server: tk2.mybestjj.com, port: 443, type: vmess, uuid: a53c7c43-0f34-4ff3-a528-ab887f3c8815, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, host: tk2.mybestjj.com, udp: true, allowinsecure: true, ws-opts: {path: /1654431}}
+  - {name: 🇨🇦-加拿大-165.154.243.30, 免费订阅尽在https: //t.me/go4sharing16, server: 165.154.243.30, port: 443, type: vmess, uuid: e13a9c42-54d6-4fe1-9578-0ca3bfc17122, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, udp: true, ws-opts: {path: /}}
+  - {name: 🇭🇰-香港-xg1.xbywwcp.us, 免费订阅尽在https: //t.me/go4sharing8, server: xg1.xbywwcp.us, port: 443, type: vmess, uuid: ab08a8a4-26f6-3540-8b7d-adbd8c0d571b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, host: a.189.cn, udp: true, ws-opts: {path: /aaaa}}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - "[10-20]-🇭🇰-香港-434-148.66.56.98"
-  - "[10-20]-🇦🇶-塞舌尔-762-165.231.67.3"
-  - "[10-20]-🇯🇵-日本-290-193.38.139.203"
-  - "[10-20]-🇸🇬-新加坡-418-51.79.177.107"
-  - "[10-20]-🇫🇷-法国-410-51.89.99.52"
-  - "[10-20]-🇸🇬-新加坡-358-54.251.230.216"
-  - "[10-20]-🇺🇸-美国-286-149.86.105.76"
-  - "[10-20]-🇦🇶-本机地址-440-ss3.ssrsub.com"
-  - "[10-20]-🇮🇳-印度-760-49.12.203.80"
-  - "[10-20]-🇮🇷-伊朗-448-185.108.106.176"
-  - "[10-20]-🇮🇷-伊朗-632-185.108.106.21"
-  - "[10-20]-🇪🇸-西班牙-450-185.153.150.56"
-  - "[10-20]-🇺🇸-美国-374-198.147.22.213"
-  - "[10-20]-🇺🇸-美国-398-155.254.29.165"
-  - "[10-20]-🇺🇸-美国-438-198.147.22.163"
-  - "[10-20]-🇺🇸-美国-380-209.216.92.212"
-  - "[10-20]-🇷🇴-罗马尼亚-444-5.154.174.219"
-  - "[10-20]-🇷🇴-罗马尼亚-436-91.250.240.144"
-  - "[10-20]-🇷🇴-罗马尼亚-630-91.245.254.235"
-  - "[10-20]-🇺🇸-美国-378-172.99.190.35"
-  - "[10-20]-🇨🇦-加拿大蒙特利尔-366-134.195.196.147"
-  - "[10-20]-🇨🇦-加拿大蒙特利尔-426-134.195.196.154"
-  - "[10-20]-🇺🇸-美国-392-38.107.226.146"
-  - "[10-20]-🇵🇹-葡萄牙-406-185.174.159.133"
-  - "[10-20]-🇪🇸-欧洲-628-154.16.171.213"
-  - "[10-20]-🇷🇴-罗马尼亚-368-193.29.107.125"
-  - "[10-20]-🇦🇶-亚太地区-422-103.152.151.85"
-  - "[10-20]-🇺🇸-美国-370-209.216.92.222"
-  - "[10-20]-🇹🇭-泰国-442-27.131.164.100"
-  - "[10-20]-🇮🇷-伊朗-456-185.108.106.152"
-  - "[10-20]-🇺🇸-美国-390-172.99.190.205"
-  - "[10-20]-🇨🇦-加拿大多伦多-754-198.57.27.218"
-  - "[10-20]-🇦🇶-欧盟-424-185.252.222.101"
-  - "[10-20]-🇪🇸-欧洲-394-138.199.40.167"
-  - "[10-20]-🇺🇸-美国-458-45.134.224.15"
-  - "[10-20]-🇷🇺-俄罗斯-430-91.240.243.9"
-  - "[10-20]-🇷🇴-罗马尼亚-386-91.245.254.43"
-  - "[10-20]-🇷🇴-罗马尼亚-752-91.245.254.45"
-  - "[10-20]-🇵🇱-波兰-624-91.205.230.176"
-  - "[10-20]-🇺🇦-乌克兰-428-2.58.241.131"
-  - "[10-20]-🇺🇸-美国-402-155.254.31.184"
-  - "[10-20]-🇮🇳-印度-622-103.94.27.101"
-  - "[10-20]-🇺🇸-美国-284-38.75.136.102"
-  - "[10-20]-🇮🇷-伊朗-452-185.108.106.148"
-  - "[10-20]-🇺🇸-美国-388-172.99.190.158"
-  - "[10-20]-🇦🇶-巴西-432-128.14.222.215"
-  - "[10-20]-🇺🇸-美国-412-45.79.122.28"
-  - "[10-20]-🇮🇷-伊朗-454-185.108.106.186"
-  - "[10-20]-🇺🇸-美国-400-192.154.255.54"
-  - "[10-20]-🇭🇰-香港-376-84.17.35.103"
-  - "[10-20]-🇵🇱-波兰-620-91.205.230.133"
-  - "[10-20]-🇦🇶-欧盟-384-45.12.223.195"
-  - "[10-20]-🇳🇴-挪威-396-46.29.218.6"
-  - "[10-20]-🇵🇱-波兰-382-194.150.167.42"
-  - 🇦🇶-立陶宛-85.206.165.44
-  - 🇦🇶-丹麦-185.236.203.68
-  - 🇦🇶-亚太地区-id-v.sshmax.xyz
-  - 🇦🇶-亚太地区-lsrug-1037-v2-9.hkg-d-cmi.jd.cjhh.lol
-  - 🇦🇶-匈牙利-185.128.26.68
-  - 🇦🇶-希腊-213.170.203.90
-  - 🇦🇶-本机地址-azhktransfer.kczz2038.online
-  - 🇦🇶-本机地址-azsgtr.kctr2038.icu
-  - 🇦🇺-澳大利亚-140.83.48.214
-  - 🇦🇺-澳大利亚-140.83.86.247
-  - 🇦🇺-澳大利亚-139.99.180.112
-  - 🇨🇦-加拿大-165.154.244.29
-  - 🇨🇦-加拿大-165.154.244.82
-  - 🇨🇦-加拿大-165.154.243.161
-  - 🇩🇪-德国-92.223.63.26
-  - 🇩🇪-德国-92.223.114.11
-  - 🇩🇪-德国-92.223.114.6
-  - 🇪🇸-西班牙-185.194.30.40
-  - 🇯🇵-日本-146.56.99.196
-  - 🇯🇵-日本-43.206.109.25
-  - 🇯🇵-日本-43.206.118.166
-  - 🇯🇵-日本-54.178.106.181
-  - 🇯🇵-日本-m2.pianyijc.top
-  - 🇯🇵-日本-jp02-vm0.entry.srthdw.art
-  - 🇯🇵-日本-jp04-vm0.entry.srthdw.art
-  - 🇯🇵-日本-shouer.azzhuangaping.tw
-  - 🇯🇵-日本-v21.idcloudhost.de
-  - 🇯🇵-日本-v26.idcloudhost.de
-  - 🇯🇵-日本-vm10.leifengkeji.live
-  - 🇯🇵-日本-vm12.leifengkeji.live
-  - 🇯🇵-日本-vm14.leifengkeji.live
-  - 🇯🇵-日本-vm3.leifengkeji.live
-  - 🇬🇧-英国-193.123.92.160
-  - 🇬🇧-英国-193.123.94.180
-  - 🇬🇧-英国-80.85.84.37
-  - 🇭🇰-香港-18.167.121.42
-  - 🇭🇰-香港-1063975e-d559-89b3-5d40-2faae0a79030.cnnic.rip
-  - 🇭🇰-香港-47.242.60.8
-  - 🇭🇰-香港-47.242.193.213
-  - 🇭🇰-香港-47.243.100.254
-  - 🇭🇰-香港-47.243.18.69
-  - 🇭🇰-香港-47.243.182.204
+  - "[10-21]-🇭🇰-香港-5236-8.210.87.228"
+  - "[10-21]-🇹🇼-台湾-450-fn600mlines021.fnline.info"
+  - "[10-21]-🇦🇶-塞舌尔-3804-165.231.67.3"
+  - "[10-21]-🇩🇪-德国-230-185.104.184.78"
+  - "[10-21]-🇷🇴-罗马尼亚-2834-37.120.147.230"
+  - "[10-21]-🇸🇬-新加坡-228-51.79.177.107"
+  - "[10-21]-🇸🇬-新加坡-572-81.90.189.41"
+  - "[10-21]-🇯🇵-日本-3618-ak1470.free.www.outline.network"
+  - "[10-21]-🇳🇱-荷兰-4270-37.218.247.25"
+  - "[10-21]-🇺🇦-乌克兰-2838-217.12.223.190"
+  - "[10-21]-🇺🇸-美国-4278-154.17.2.31"
+  - "[10-21]-🇨🇦-加拿大-672-165.154.253.80"
+  - "[10-21]-🇺🇸-美国-4044-149.86.105.76"
+  - "[10-21]-🇨🇦-加拿大-4286-135.181.114.242"
+  - "[10-21]-🇮🇹-意大利-5234-212.102.53.194"
+  - "[10-21]-🇮🇷-伊朗-226-185.108.106.176"
+  - "[10-21]-🇪🇸-西班牙-3112-185.153.150.56"
+  - "[10-21]-🇺🇸-美国-3026-198.147.22.213"
+  - "[10-21]-🇸🇬-新加坡-2876-89.187.163.215"
+  - "[10-21]-🇺🇸-美国-224-155.254.29.165"
+  - "[10-21]-🇺🇸-美国-3388-209.216.92.200"
+  - "[10-21]-🇩🇪-德国-222-185.166.84.59"
+  - "[10-21]-🇷🇴-罗马尼亚-3744-5.154.174.219"
+  - "[10-21]-🇷🇴-罗马尼亚-3130-91.250.240.144"
+  - "[10-21]-🇷🇴-罗马尼亚-3110-91.245.254.235"
+  - "[10-21]-🇨🇦-加拿大蒙特利尔-3300-134.195.196.163"
+  - "[10-21]-🇺🇸-美国-3616-45.79.127.97"
+  - "[10-21]-🇵🇹-葡萄牙-220-185.174.159.133"
+  - "[10-21]-🇫🇷-法国-3674-149.202.82.172"
+  - "[10-21]-🇺🇸-美国-3668-38.68.135.18"
+  - "[10-21]-🇺🇸-美国-4302-38.114.114.19"
+  - "[10-21]-🇮🇳-印度-218-137.59.52.109"
+  - "[10-21]-🇦🇶-亚太地区-3024-103.152.151.85"
+  - "[10-21]-🇺🇸-美国-3516-209.216.92.222"
+  - "[10-21]-🇩🇪-德国-3742-185.102.219.6"
+  - "[10-21]-🇮🇷-伊朗-2874-185.108.106.152"
+  - "[10-21]-🇺🇸-美国-216-172.99.190.205"
+  - "[10-21]-🇪🇸-欧洲-214-138.199.40.167"
+  - "[10-21]-🇷🇺-俄罗斯-3614-91.240.243.9"
+  - "[10-21]-🇷🇴-罗马尼亚-212-91.245.254.45"
+  - "[10-21]-🇷🇴-罗马尼亚-2872-91.250.240.138"
+  - "[10-21]-🇵🇱-波兰-3514-91.205.230.166"
+  - "[10-21]-🇨🇦-加拿大蒙特利尔-448-134.195.196.231"
+  - "[10-21]-🇬🇧-英国-210-145.239.1.100"
+  - "[10-21]-🇸🇪-瑞典-460-167.88.61.14"
+  - "[10-21]-🇹🇭-泰国-3108-27.131.164.100"
+  - "[10-21]-🇺🇸-美国-2940-45.78.10.188"
+  - "[10-21]-🇺🇸-美国-208-138.128.220.143"
+  - "[10-21]-🇮🇹-意大利-3740-212.102.44.86"
+  - "[10-21]-🇮🇳-印度-206-103.94.27.101"
+  - "[10-21]-🇨🇦-加拿大-5232-38.111.114.246"
+  - "[10-21]-🇷🇺-俄罗斯-3184-195.158.249.42"
+  - "[10-21]-🇺🇸-美国-3022-172.99.190.158"
+  - "[10-21]-🇹🇭-泰国-3612-27.131.164.94"
+  - "[10-21]-🇮🇷-伊朗-3128-185.108.106.186"
+  - "[10-21]-🇺🇸-美国-4354-38.86.135.27"
+  - "[10-21]-🇭🇰-香港-2870-84.17.35.103"
+  - "[10-21]-🇵🇱-波兰-204-91.205.230.133"
+  - "[10-21]-🇦🇶-波斯尼亚和黑塞哥维那-3512-185.99.3.98"
+  - "[10-21]-🇦🇶-欧盟-3386-45.12.223.195"
+  - "[10-21]-🇵🇱-波兰-202-5.187.49.187"
+  - "[10-21]-🇺🇸-美国-4352-45.130.137.14"
+  - 🇦🇶-本机地址-cf.fovi.tk
+  - 🇯🇵-日本-89.31.126.126
+  - 🇯🇵-日本-jp2js.bafang.vip
+  - 🇰🇷-韩国首尔-193.122.119.64
+  - 🇺🇸-美国-104.24.31.0
+  - 🇺🇸-美国-jp-5.wumaojichang.ml
+  - 🇺🇸-美国-jp2js1.bafang.vip
+  - 🇨🇦-加拿大-165.154.243.175
+  - 🇺🇸-美国-wehave.elonsms.shop
+  - 🇸🇬-新加坡-13.229.112.195
+  - 🇺🇸-美国-18.143.123.35
+  - 🇺🇸-美国-tk2.mybestjj.com
+  - 🇨🇦-加拿大-165.154.243.30
+  - 🇭🇰-香港-xg1.xbywwcp.us
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - "[10-20]-🇭🇰-香港-434-148.66.56.98"
-  - "[10-20]-🇦🇶-塞舌尔-762-165.231.67.3"
-  - "[10-20]-🇯🇵-日本-290-193.38.139.203"
-  - "[10-20]-🇸🇬-新加坡-418-51.79.177.107"
-  - "[10-20]-🇫🇷-法国-410-51.89.99.52"
-  - "[10-20]-🇸🇬-新加坡-358-54.251.230.216"
-  - "[10-20]-🇺🇸-美国-286-149.86.105.76"
-  - "[10-20]-🇦🇶-本机地址-440-ss3.ssrsub.com"
-  - "[10-20]-🇮🇳-印度-760-49.12.203.80"
-  - "[10-20]-🇮🇷-伊朗-448-185.108.106.176"
-  - "[10-20]-🇮🇷-伊朗-632-185.108.106.21"
-  - "[10-20]-🇪🇸-西班牙-450-185.153.150.56"
-  - "[10-20]-🇺🇸-美国-374-198.147.22.213"
-  - "[10-20]-🇺🇸-美国-398-155.254.29.165"
-  - "[10-20]-🇺🇸-美国-438-198.147.22.163"
-  - "[10-20]-🇺🇸-美国-380-209.216.92.212"
-  - "[10-20]-🇷🇴-罗马尼亚-444-5.154.174.219"
-  - "[10-20]-🇷🇴-罗马尼亚-436-91.250.240.144"
-  - "[10-20]-🇷🇴-罗马尼亚-630-91.245.254.235"
-  - "[10-20]-🇺🇸-美国-378-172.99.190.35"
-  - "[10-20]-🇨🇦-加拿大蒙特利尔-366-134.195.196.147"
-  - "[10-20]-🇨🇦-加拿大蒙特利尔-426-134.195.196.154"
-  - "[10-20]-🇺🇸-美国-392-38.107.226.146"
-  - "[10-20]-🇵🇹-葡萄牙-406-185.174.159.133"
-  - "[10-20]-🇪🇸-欧洲-628-154.16.171.213"
-  - "[10-20]-🇷🇴-罗马尼亚-368-193.29.107.125"
-  - "[10-20]-🇦🇶-亚太地区-422-103.152.151.85"
-  - "[10-20]-🇺🇸-美国-370-209.216.92.222"
-  - "[10-20]-🇹🇭-泰国-442-27.131.164.100"
-  - "[10-20]-🇮🇷-伊朗-456-185.108.106.152"
-  - "[10-20]-🇺🇸-美国-390-172.99.190.205"
-  - "[10-20]-🇨🇦-加拿大多伦多-754-198.57.27.218"
-  - "[10-20]-🇦🇶-欧盟-424-185.252.222.101"
-  - "[10-20]-🇪🇸-欧洲-394-138.199.40.167"
-  - "[10-20]-🇺🇸-美国-458-45.134.224.15"
-  - "[10-20]-🇷🇺-俄罗斯-430-91.240.243.9"
-  - "[10-20]-🇷🇴-罗马尼亚-386-91.245.254.43"
-  - "[10-20]-🇷🇴-罗马尼亚-752-91.245.254.45"
-  - "[10-20]-🇵🇱-波兰-624-91.205.230.176"
-  - "[10-20]-🇺🇦-乌克兰-428-2.58.241.131"
-  - "[10-20]-🇺🇸-美国-402-155.254.31.184"
-  - "[10-20]-🇮🇳-印度-622-103.94.27.101"
-  - "[10-20]-🇺🇸-美国-284-38.75.136.102"
-  - "[10-20]-🇮🇷-伊朗-452-185.108.106.148"
-  - "[10-20]-🇺🇸-美国-388-172.99.190.158"
-  - "[10-20]-🇦🇶-巴西-432-128.14.222.215"
-  - "[10-20]-🇺🇸-美国-412-45.79.122.28"
-  - "[10-20]-🇮🇷-伊朗-454-185.108.106.186"
-  - "[10-20]-🇺🇸-美国-400-192.154.255.54"
-  - "[10-20]-🇭🇰-香港-376-84.17.35.103"
-  - "[10-20]-🇵🇱-波兰-620-91.205.230.133"
-  - "[10-20]-🇦🇶-欧盟-384-45.12.223.195"
-  - "[10-20]-🇳🇴-挪威-396-46.29.218.6"
-  - "[10-20]-🇵🇱-波兰-382-194.150.167.42"
-  - 🇦🇶-立陶宛-85.206.165.44
-  - 🇦🇶-丹麦-185.236.203.68
-  - 🇦🇶-亚太地区-id-v.sshmax.xyz
-  - 🇦🇶-亚太地区-lsrug-1037-v2-9.hkg-d-cmi.jd.cjhh.lol
-  - 🇦🇶-匈牙利-185.128.26.68
-  - 🇦🇶-希腊-213.170.203.90
-  - 🇦🇶-本机地址-azhktransfer.kczz2038.online
-  - 🇦🇶-本机地址-azsgtr.kctr2038.icu
-  - 🇦🇺-澳大利亚-140.83.48.214
-  - 🇦🇺-澳大利亚-140.83.86.247
-  - 🇦🇺-澳大利亚-139.99.180.112
-  - 🇨🇦-加拿大-165.154.244.29
-  - 🇨🇦-加拿大-165.154.244.82
-  - 🇨🇦-加拿大-165.154.243.161
-  - 🇩🇪-德国-92.223.63.26
-  - 🇩🇪-德国-92.223.114.11
-  - 🇩🇪-德国-92.223.114.6
-  - 🇪🇸-西班牙-185.194.30.40
-  - 🇯🇵-日本-146.56.99.196
-  - 🇯🇵-日本-43.206.109.25
-  - 🇯🇵-日本-43.206.118.166
-  - 🇯🇵-日本-54.178.106.181
-  - 🇯🇵-日本-m2.pianyijc.top
-  - 🇯🇵-日本-jp02-vm0.entry.srthdw.art
-  - 🇯🇵-日本-jp04-vm0.entry.srthdw.art
-  - 🇯🇵-日本-shouer.azzhuangaping.tw
-  - 🇯🇵-日本-v21.idcloudhost.de
-  - 🇯🇵-日本-v26.idcloudhost.de
-  - 🇯🇵-日本-vm10.leifengkeji.live
-  - 🇯🇵-日本-vm12.leifengkeji.live
-  - 🇯🇵-日本-vm14.leifengkeji.live
-  - 🇯🇵-日本-vm3.leifengkeji.live
-  - 🇬🇧-英国-193.123.92.160
-  - 🇬🇧-英国-193.123.94.180
-  - 🇬🇧-英国-80.85.84.37
-  - 🇭🇰-香港-18.167.121.42
-  - 🇭🇰-香港-1063975e-d559-89b3-5d40-2faae0a79030.cnnic.rip
-  - 🇭🇰-香港-47.242.60.8
-  - 🇭🇰-香港-47.242.193.213
-  - 🇭🇰-香港-47.243.100.254
-  - 🇭🇰-香港-47.243.18.69
-  - 🇭🇰-香港-47.243.182.204
+  - "[10-21]-🇭🇰-香港-5236-8.210.87.228"
+  - "[10-21]-🇹🇼-台湾-450-fn600mlines021.fnline.info"
+  - "[10-21]-🇦🇶-塞舌尔-3804-165.231.67.3"
+  - "[10-21]-🇩🇪-德国-230-185.104.184.78"
+  - "[10-21]-🇷🇴-罗马尼亚-2834-37.120.147.230"
+  - "[10-21]-🇸🇬-新加坡-228-51.79.177.107"
+  - "[10-21]-🇸🇬-新加坡-572-81.90.189.41"
+  - "[10-21]-🇯🇵-日本-3618-ak1470.free.www.outline.network"
+  - "[10-21]-🇳🇱-荷兰-4270-37.218.247.25"
+  - "[10-21]-🇺🇦-乌克兰-2838-217.12.223.190"
+  - "[10-21]-🇺🇸-美国-4278-154.17.2.31"
+  - "[10-21]-🇨🇦-加拿大-672-165.154.253.80"
+  - "[10-21]-🇺🇸-美国-4044-149.86.105.76"
+  - "[10-21]-🇨🇦-加拿大-4286-135.181.114.242"
+  - "[10-21]-🇮🇹-意大利-5234-212.102.53.194"
+  - "[10-21]-🇮🇷-伊朗-226-185.108.106.176"
+  - "[10-21]-🇪🇸-西班牙-3112-185.153.150.56"
+  - "[10-21]-🇺🇸-美国-3026-198.147.22.213"
+  - "[10-21]-🇸🇬-新加坡-2876-89.187.163.215"
+  - "[10-21]-🇺🇸-美国-224-155.254.29.165"
+  - "[10-21]-🇺🇸-美国-3388-209.216.92.200"
+  - "[10-21]-🇩🇪-德国-222-185.166.84.59"
+  - "[10-21]-🇷🇴-罗马尼亚-3744-5.154.174.219"
+  - "[10-21]-🇷🇴-罗马尼亚-3130-91.250.240.144"
+  - "[10-21]-🇷🇴-罗马尼亚-3110-91.245.254.235"
+  - "[10-21]-🇨🇦-加拿大蒙特利尔-3300-134.195.196.163"
+  - "[10-21]-🇺🇸-美国-3616-45.79.127.97"
+  - "[10-21]-🇵🇹-葡萄牙-220-185.174.159.133"
+  - "[10-21]-🇫🇷-法国-3674-149.202.82.172"
+  - "[10-21]-🇺🇸-美国-3668-38.68.135.18"
+  - "[10-21]-🇺🇸-美国-4302-38.114.114.19"
+  - "[10-21]-🇮🇳-印度-218-137.59.52.109"
+  - "[10-21]-🇦🇶-亚太地区-3024-103.152.151.85"
+  - "[10-21]-🇺🇸-美国-3516-209.216.92.222"
+  - "[10-21]-🇩🇪-德国-3742-185.102.219.6"
+  - "[10-21]-🇮🇷-伊朗-2874-185.108.106.152"
+  - "[10-21]-🇺🇸-美国-216-172.99.190.205"
+  - "[10-21]-🇪🇸-欧洲-214-138.199.40.167"
+  - "[10-21]-🇷🇺-俄罗斯-3614-91.240.243.9"
+  - "[10-21]-🇷🇴-罗马尼亚-212-91.245.254.45"
+  - "[10-21]-🇷🇴-罗马尼亚-2872-91.250.240.138"
+  - "[10-21]-🇵🇱-波兰-3514-91.205.230.166"
+  - "[10-21]-🇨🇦-加拿大蒙特利尔-448-134.195.196.231"
+  - "[10-21]-🇬🇧-英国-210-145.239.1.100"
+  - "[10-21]-🇸🇪-瑞典-460-167.88.61.14"
+  - "[10-21]-🇹🇭-泰国-3108-27.131.164.100"
+  - "[10-21]-🇺🇸-美国-2940-45.78.10.188"
+  - "[10-21]-🇺🇸-美国-208-138.128.220.143"
+  - "[10-21]-🇮🇹-意大利-3740-212.102.44.86"
+  - "[10-21]-🇮🇳-印度-206-103.94.27.101"
+  - "[10-21]-🇨🇦-加拿大-5232-38.111.114.246"
+  - "[10-21]-🇷🇺-俄罗斯-3184-195.158.249.42"
+  - "[10-21]-🇺🇸-美国-3022-172.99.190.158"
+  - "[10-21]-🇹🇭-泰国-3612-27.131.164.94"
+  - "[10-21]-🇮🇷-伊朗-3128-185.108.106.186"
+  - "[10-21]-🇺🇸-美国-4354-38.86.135.27"
+  - "[10-21]-🇭🇰-香港-2870-84.17.35.103"
+  - "[10-21]-🇵🇱-波兰-204-91.205.230.133"
+  - "[10-21]-🇦🇶-波斯尼亚和黑塞哥维那-3512-185.99.3.98"
+  - "[10-21]-🇦🇶-欧盟-3386-45.12.223.195"
+  - "[10-21]-🇵🇱-波兰-202-5.187.49.187"
+  - "[10-21]-🇺🇸-美国-4352-45.130.137.14"
+  - 🇦🇶-本机地址-cf.fovi.tk
+  - 🇯🇵-日本-89.31.126.126
+  - 🇯🇵-日本-jp2js.bafang.vip
+  - 🇰🇷-韩国首尔-193.122.119.64
+  - 🇺🇸-美国-104.24.31.0
+  - 🇺🇸-美国-jp-5.wumaojichang.ml
+  - 🇺🇸-美国-jp2js1.bafang.vip
+  - 🇨🇦-加拿大-165.154.243.175
+  - 🇺🇸-美国-wehave.elonsms.shop
+  - 🇸🇬-新加坡-13.229.112.195
+  - 🇺🇸-美国-18.143.123.35
+  - 🇺🇸-美国-tk2.mybestjj.com
+  - 🇨🇦-加拿大-165.154.243.30
+  - 🇭🇰-香港-xg1.xbywwcp.us
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
