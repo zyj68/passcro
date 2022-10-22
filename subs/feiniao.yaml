@@ -5,143 +5,511 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: N2-00, server: b13f959.na.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.na.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: N2-01, server: b13f959.nb.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: N2-02, server: b13f959.nc.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: N2-03, server: b13f959.nd.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nd.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: N2-04, server: b13f959.ne.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.ne.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: N2-05, server: b13f959.nf.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nf.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: N2-06, server: b13f959.ng.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.ng.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: N2-07, server: b13f959.nh.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nh.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: N2-08, server: b13f959.ni.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.ni.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: T1-Netflix, server: b13f959.f1.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/b13f959.fm.apple.com:111174, ws-headers: {Host: n2.gladns.com}, udp: true}
-  - {name: T2-Netflix, server: b13f959.f2.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/b13f959.fm.apple.com:111174, ws-headers: {Host: n2.gladns.com}, udp: true}
-  - {name: T3-Netflix, server: b13f959.f3.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/b13f959.fm.apple.com:111174, ws-headers: {Host: n2.gladns.com}, udp: true}
-  - {name: US-01, server: b13f959.ga.gladns.com, port: 3381, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: US-02, server: b13f959.gb.gladns.com, port: 3381, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: US-03, server: b13f959.gc.gladns.com, port: 3381, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP-01, server: b13f959.ga.gladns.com, port: 3382, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP-02, server: b13f959.gb.gladns.com, port: 3382, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP-03, server: b13f959.gc.gladns.com, port: 3382, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TW-01, server: b13f959.ga.gladns.com, port: 3383, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TW-02, server: b13f959.gb.gladns.com, port: 3383, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TW-03, server: b13f959.gc.gladns.com, port: 3383, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: HK-01, server: b13f959.ga.gladns.com, port: 3384, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: HK-02, server: b13f959.gb.gladns.com, port: 3384, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: HK-03, server: b13f959.gc.gladns.com, port: 3384, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: SG-01, server: b13f959.ga.gladns.com, port: 3385, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: SG-02, server: b13f959.gb.gladns.com, port: 3385, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: SG-03, server: b13f959.gc.gladns.com, port: 3385, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: UK-01, server: b13f959.ga.gladns.com, port: 3386, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: UK-02, server: b13f959.gb.gladns.com, port: 3386, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: UK-03, server: b13f959.gc.gladns.com, port: 3386, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: 广东K-新加坡|x1.5|V2ray, server: qgd6.cdn.node.a.ddns-ounk.com, port: 12936, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x1.5|V2ray 2, server: qgd6.cdn.node.a.ddns-ounk.com, port: 12940, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x1.5|V2ray 3, server: qgd6.cdn.node.a.ddns-ounk.com, port: 12941, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x1.5|V2ray 4, server: qgd6.cdn.node.a.ddns-ounk.com, port: 12942, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray, server: q8eq.cdn.node.a.ddns-ounk.com, port: 12960, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|解锁|x1.3|V2ray, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13056, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|解锁|x1.3|V2ray 2, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13057, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|解锁|x1.3|V2ray 3, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13058, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|解锁|x1.3|V2ray 4, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13059, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|解锁|x1.3|V2ray 5, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13060, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 2, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13074, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东D-香港|解锁|x1.5|V2ray, server: z5is.cdn.node.a.ddns-ounk.com, port: 13172, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: z5is.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东D-香港|解锁|x1.5|V2ray 2, server: z5is.cdn.node.a.ddns-ounk.com, port: 13182, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: z5is.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东D-香港|解锁|x1.5|V2ray 3, server: z5is.cdn.node.a.ddns-ounk.com, port: 13192, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: z5is.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东D-香港|解锁|x1.5|V2ray 4, server: z5is.cdn.node.a.ddns-ounk.com, port: 13193, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: z5is.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东D-香港|解锁|x1.5|V2ray 5, server: z5is.cdn.node.a.ddns-ounk.com, port: 13194, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: z5is.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东D-香港|解锁|x1.5|V2ray 6, server: z5is.cdn.node.a.ddns-ounk.com, port: 13195, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: z5is.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东W-香港HKT|解锁|x1.5|V2ray, server: tata12.cdn.node.a.ddns-ounk.com, port: 13275, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: tata12.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东U-台湾|解锁|x1.5|V2ray, server: lld9k6.cdn.node.a.ddns-ounk.com, port: 13319, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: lld9k6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东U-台湾|解锁|x1.5|V2ray 2, server: lld9k6.cdn.node.a.ddns-ounk.com, port: 13320, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: lld9k6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东U-台湾|解锁|x1.5|V2ray 3, server: lld9k6.cdn.node.a.ddns-ounk.com, port: 13321, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: lld9k6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东X-香港HKT|解锁|x2.0|V2ray, server: cd69.cdn.node.a.ddns-ounk.com, port: 13343, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东X-香港HKT|解锁|x2.0|V2ray 2, server: cd69.cdn.node.a.ddns-ounk.com, port: 13345, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x1.5|V2ray 5, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13375, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x1.5|V2ray 6, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13376, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x1.5|V2ray 7, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13377, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x1.5|V2ray 8, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13378, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x1.5|V2ray 9, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13379, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海CN2-台湾|解锁|x1.5|V2ray, server: dr64.cdn.node.a.ddns-ounk.com, port: 13388, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: dr64.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东U-台湾|解锁|x1.5|V2ray 4, server: lld9k6.cdn.node.a.ddns-ounk.com, port: 13389, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: lld9k6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海移动-香港|x1.5|V2ray, server: meq886.cdn.node.a.ddns-ounk.com, port: 13476, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: meq886.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海移动-香港|x1.5|V2ray 2, server: meq886.cdn.node.a.ddns-ounk.com, port: 13477, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: meq886.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东X-香港HKT|解锁|x1.0|V2ray, server: cd69.cdn.node.a.ddns-ounk.com, port: 13504, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海移动-香港|x1.5|V2ray 3, server: meq886.cdn.node.a.ddns-ounk.com, port: 13508, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: meq886.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海移动-香港|x1.5|V2ray 4, server: meq886.cdn.node.a.ddns-ounk.com, port: 13511, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: meq886.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海移动-香港|x1.5|V2ray 5, server: meq886.cdn.node.a.ddns-ounk.com, port: 13512, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: meq886.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东X-香港HKT|解锁|x1.5|V2ray, server: cd69.cdn.node.a.ddns-ounk.com, port: 13548, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x2.0|V2ray, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13571, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x2.0|V2ray 2, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13573, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x2.0|V2ray 3, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13575, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x2.0|V2ray 4, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13577, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x2.0|V2ray 5, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13579, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x1.5|V2ray 10, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13587, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东K-新加坡|x1.5|V2ray 11, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13588, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 3, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13596, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 4, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13597, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 5, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13598, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 6, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13599, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 7, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13600, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 8, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13601, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 9, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13604, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 10, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13605, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 11, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13606, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东M-美国|解锁|x2.5|V2ray, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13659, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东M-美国|解锁|x2.5|V2ray 2, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13660, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东M-美国|解锁|x2.5|V2ray 3, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13662, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东M-美国|解锁|x2.5|V2ray 4, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13663, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东M-美国|解锁|x2.5|V2ray 5, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13664, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东-香港HKT|x1.5|V2ray, server: cd69.cdn.node.a.ddns-ounk.com, port: 13671, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东-台湾|解锁|x2.0|V2ray, server: lld9k6.cdn.node.a.ddns-ounk.com, port: 13690, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: lld9k6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东W-香港HKT|解锁|x1.5|V2ray 2, server: tata12.cdn.node.a.ddns-ounk.com, port: 13546, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: tata12.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.5|V2ray, server: r97q.cdn.node.a.ddns-ounk.com, port: 12919, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.5|V2ray 2, server: r97q.cdn.node.a.ddns-ounk.com, port: 51197, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.5|V2ray 3, server: r97q.cdn.node.a.ddns-ounk.com, port: 51198, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.5|V2ray 4, server: r97q.cdn.node.a.ddns-ounk.com, port: 51200, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|解锁|x2.0|V2ray, server: r97q.cdn.node.a.ddns-ounk.com, port: 12987, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|解锁|x2.0|V2ray 2, server: r97q.cdn.node.a.ddns-ounk.com, port: 12988, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|解锁|x2.0|V2ray 3, server: r97q.cdn.node.a.ddns-ounk.com, port: 12989, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|解锁|x2.0|V2ray 4, server: r97q.cdn.node.a.ddns-ounk.com, port: 12990, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|解锁|x2.0|V2ray 5, server: r97q.cdn.node.a.ddns-ounk.com, port: 12991, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 12, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13093, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 13, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13094, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x2.0|V2ray, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13096, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东H-台湾|解锁|x2.5|V2ray, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13306, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: mjk6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东H-台湾|解锁|x2.5|V2ray 2, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13307, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: mjk6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东H-台湾|解锁|x2.0|V2ray, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13308, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: mjk6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东H-台湾|解锁|x2.0|V2ray 2, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13309, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: mjk6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东H-台湾|解锁|x2.5|V2ray 3, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13310, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: mjk6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东H-台湾|解锁|x2.0|V2ray 3, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13311, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: mjk6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东H-台湾|解锁|x2.0|V2ray 4, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13312, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: mjk6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东H-台湾|解锁|x2.0|V2ray 5, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13313, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: mjk6.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.5|V2ray 5, server: r97q.cdn.node.a.ddns-ounk.com, port: 13360, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.5|V2ray 6, server: r97q.cdn.node.a.ddns-ounk.com, port: 13361, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.5|V2ray 7, server: r97q.cdn.node.a.ddns-ounk.com, port: 13362, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.5|V2ray 8, server: r97q.cdn.node.a.ddns-ounk.com, port: 13364, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.5|V2ray 9, server: r97q.cdn.node.a.ddns-ounk.com, port: 13365, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.5|V2ray 10, server: r97q.cdn.node.a.ddns-ounk.com, port: 13367, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.5|V2ray 11, server: r97q.cdn.node.a.ddns-ounk.com, port: 13368, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东W-香港HKT|解锁|x1.5|V2ray 3, server: tata12.cdn.node.a.ddns-ounk.com, port: 13502, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: tata12.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东X-香港HKT|解锁|x1.5|V2ray 2, server: cd69.cdn.node.a.ddns-ounk.com, port: 13503, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东-香港HKT|x2.0|V2ray, server: cd69.cdn.node.a.ddns-ounk.com, port: 13542, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.0|V2ray, server: r97q.cdn.node.a.ddns-ounk.com, port: 13559, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.0|V2ray 2, server: r97q.cdn.node.a.ddns-ounk.com, port: 13561, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.0|V2ray 3, server: r97q.cdn.node.a.ddns-ounk.com, port: 13563, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.0|V2ray 4, server: r97q.cdn.node.a.ddns-ounk.com, port: 13565, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.0|V2ray 5, server: r97q.cdn.node.a.ddns-ounk.com, port: 13567, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.0|V2ray 6, server: r97q.cdn.node.a.ddns-ounk.com, port: 13569, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|解锁|x2.0|V2ray 6, server: r97q.cdn.node.a.ddns-ounk.com, port: 13586, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 14, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13607, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 15, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13608, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 上海-日本M|解锁|x1.5|V2ray 16, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13609, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东X-香港HKT|解锁|x1.5|V2ray 3, server: cd69.cdn.node.a.ddns-ounk.com, port: 13665, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东X-香港HKT|解锁|x1.5|V2ray 4, server: cd69.cdn.node.a.ddns-ounk.com, port: 13666, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东X-香港HKT|x1.5|V2ray, server: cd69.cdn.node.a.ddns-ounk.com, port: 13667, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东W-香港HKT|解锁|x1.5|V2ray 4, server: tata12.cdn.node.a.ddns-ounk.com, port: 13668, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: tata12.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东X-香港HKT|解锁|x1.5|V2ray 5, server: cd69.cdn.node.a.ddns-ounk.com, port: 13669, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 广东G-新加坡|x2.0|V2ray 7, server: r97q.cdn.node.a.ddns-ounk.com, port: 13688, type: vmess, uuid: 90acf9a8-3216-39ca-aec6-1849db2e0f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
+  - {name: 美国 11 中转, server: 01-america-a.mealstream.xyz, port: 15055, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 11-america.mealstream.xyz}, udp: true}
+  - {name: 美国 12 中转, server: 01-america-a.mealstream.xyz, port: 50555, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 12-america.mealstream.xyz}, udp: true}
+  - {name: 日本 21 中转, server: 29-japan.mealstream.xyz, port: 15055, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 21-japan.mealstream.xyz}, udp: true}
+  - {name: 日本 22 中转, server: 29-japan.mealstream.xyz, port: 50555, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 22-japan.mealstream.xyz}, udp: true}
+  - {name: 新加坡 31 中转, server: 39-singapore.mealstream.xyz, port: 15055, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 31-singapore.mealstream.xyz}, udp: true}
+  - {name: 新加坡 32 中转, server: 39-singapore.mealstream.xyz, port: 50555, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 32-singapore.mealstream.xyz}, udp: true}
+  - {name: 新加坡 33 中转, server: 03-singapore-b.mealstream.xyz, port: 15055, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 33-singapore.mealstream.xyz}, udp: true}
+  - {name: 新加坡 34 中转, server: 03-singapore-b.mealstream.xyz, port: 50555, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 34-singapore.mealstream.xyz}, udp: true}
+  - {name: 美国 71 直连, server: 71-america.mealstream.xyz, port: 50555, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 71-america.mealstream.xyz}, udp: true}
+  - {name: 俄罗斯 72 直连, server: 72-russia.mealstream.xyz, port: 443, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 72-russia.mealstream.xyz}, udp: true}
+  - {name: 新加坡 73 直连, server: 73-singapore.mealstream.xyz, port: 10919, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 73-singapore.mealstream.xyz}, udp: true}
+  - {name: 日本 74 直连, server: 74-japan.mealstream.xyz, port: 50555, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 74-japan.mealstream.xyz}, udp: true}
+  - {name: 韩国 75 直连, server: 75-korea.mealstream.xyz, port: 50555, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 75-korea.mealstream.xyz}, udp: true}
+  - {name: 日本 76 直连, server: 76-japan.mealstream.xyz, port: 443, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 76-japan.mealstream.xyz}, udp: true}
+  - {name: 韩国 81 直连, server: 05-korea-a.mealstream.xyz, port: 443, type: vmess, uuid: 69d8def9-c993-48ad-a7d6-0aa6c005de3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 05-korea-a.mealstream.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - N2-00
-      - N2-01
-      - N2-02
-      - N2-03
-      - N2-04
-      - N2-05
-      - N2-06
-      - N2-07
-      - N2-08
-      - T1-Netflix
-      - T2-Netflix
-      - T3-Netflix
-      - US-01
-      - US-02
-      - US-03
-      - JP-01
-      - JP-02
-      - JP-03
-      - TW-01
-      - TW-02
-      - TW-03
-      - HK-01
-      - HK-02
-      - HK-03
-      - SG-01
-      - SG-02
-      - SG-03
-      - UK-01
-      - UK-02
-      - UK-03
+      - 广东K-新加坡|x1.5|V2ray
+      - 广东K-新加坡|x1.5|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 3
+      - 广东K-新加坡|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray 2
+      - 广东K-新加坡|解锁|x1.3|V2ray 3
+      - 广东K-新加坡|解锁|x1.3|V2ray 4
+      - 广东K-新加坡|解锁|x1.3|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray
+      - 广东D-香港|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray 3
+      - 广东D-香港|解锁|x1.5|V2ray 4
+      - 广东D-香港|解锁|x1.5|V2ray 5
+      - 广东D-香港|解锁|x1.5|V2ray 6
+      - 广东W-香港HKT|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 2
+      - 广东U-台湾|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x2.0|V2ray
+      - 广东X-香港HKT|解锁|x2.0|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 6
+      - 广东K-新加坡|x1.5|V2ray 7
+      - 广东K-新加坡|x1.5|V2ray 8
+      - 广东K-新加坡|x1.5|V2ray 9
+      - 上海CN2-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray
+      - 上海移动-香港|x1.5|V2ray 2
+      - 广东X-香港HKT|解锁|x1.0|V2ray
+      - 上海移动-香港|x1.5|V2ray 3
+      - 上海移动-香港|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray 5
+      - 广东X-香港HKT|解锁|x1.5|V2ray
+      - 广东K-新加坡|x2.0|V2ray
+      - 广东K-新加坡|x2.0|V2ray 2
+      - 广东K-新加坡|x2.0|V2ray 3
+      - 广东K-新加坡|x2.0|V2ray 4
+      - 广东K-新加坡|x2.0|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 10
+      - 广东K-新加坡|x1.5|V2ray 11
+      - 上海-日本M|解锁|x1.5|V2ray 3
+      - 上海-日本M|解锁|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 7
+      - 上海-日本M|解锁|x1.5|V2ray 8
+      - 上海-日本M|解锁|x1.5|V2ray 9
+      - 上海-日本M|解锁|x1.5|V2ray 10
+      - 上海-日本M|解锁|x1.5|V2ray 11
+      - 广东M-美国|解锁|x2.5|V2ray
+      - 广东M-美国|解锁|x2.5|V2ray 2
+      - 广东M-美国|解锁|x2.5|V2ray 3
+      - 广东M-美国|解锁|x2.5|V2ray 4
+      - 广东M-美国|解锁|x2.5|V2ray 5
+      - 广东-香港HKT|x1.5|V2ray
+      - 广东-台湾|解锁|x2.0|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray
+      - 广东G-新加坡|x2.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray 3
+      - 广东G-新加坡|x2.5|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray
+      - 广东G-新加坡|解锁|x2.0|V2ray 2
+      - 广东G-新加坡|解锁|x2.0|V2ray 3
+      - 广东G-新加坡|解锁|x2.0|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 12
+      - 上海-日本M|解锁|x1.5|V2ray 13
+      - 上海-日本M|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray 2
+      - 广东H-台湾|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.0|V2ray 2
+      - 广东H-台湾|解锁|x2.5|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 4
+      - 广东H-台湾|解锁|x2.0|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 6
+      - 广东G-新加坡|x2.5|V2ray 7
+      - 广东G-新加坡|x2.5|V2ray 8
+      - 广东G-新加坡|x2.5|V2ray 9
+      - 广东G-新加坡|x2.5|V2ray 10
+      - 广东G-新加坡|x2.5|V2ray 11
+      - 广东W-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 2
+      - 广东-香港HKT|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray 2
+      - 广东G-新加坡|x2.0|V2ray 3
+      - 广东G-新加坡|x2.0|V2ray 4
+      - 广东G-新加坡|x2.0|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 6
+      - 广东G-新加坡|解锁|x2.0|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 14
+      - 上海-日本M|解锁|x1.5|V2ray 15
+      - 上海-日本M|解锁|x1.5|V2ray 16
+      - 广东X-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|x1.5|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|解锁|x1.5|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 7
+      - 美国 11 中转
+      - 美国 12 中转
+      - 日本 21 中转
+      - 日本 22 中转
+      - 新加坡 31 中转
+      - 新加坡 32 中转
+      - 新加坡 33 中转
+      - 新加坡 34 中转
+      - 美国 71 直连
+      - 俄罗斯 72 直连
+      - 新加坡 73 直连
+      - 日本 74 直连
+      - 韩国 75 直连
+      - 日本 76 直连
+      - 韩国 81 直连
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - N2-00
-      - N2-01
-      - N2-02
-      - N2-03
-      - N2-04
-      - N2-05
-      - N2-06
-      - N2-07
-      - N2-08
-      - T1-Netflix
-      - T2-Netflix
-      - T3-Netflix
-      - US-01
-      - US-02
-      - US-03
-      - JP-01
-      - JP-02
-      - JP-03
-      - TW-01
-      - TW-02
-      - TW-03
-      - HK-01
-      - HK-02
-      - HK-03
-      - SG-01
-      - SG-02
-      - SG-03
-      - UK-01
-      - UK-02
-      - UK-03
+      - 广东K-新加坡|x1.5|V2ray
+      - 广东K-新加坡|x1.5|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 3
+      - 广东K-新加坡|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray 2
+      - 广东K-新加坡|解锁|x1.3|V2ray 3
+      - 广东K-新加坡|解锁|x1.3|V2ray 4
+      - 广东K-新加坡|解锁|x1.3|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray
+      - 广东D-香港|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray 3
+      - 广东D-香港|解锁|x1.5|V2ray 4
+      - 广东D-香港|解锁|x1.5|V2ray 5
+      - 广东D-香港|解锁|x1.5|V2ray 6
+      - 广东W-香港HKT|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 2
+      - 广东U-台湾|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x2.0|V2ray
+      - 广东X-香港HKT|解锁|x2.0|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 6
+      - 广东K-新加坡|x1.5|V2ray 7
+      - 广东K-新加坡|x1.5|V2ray 8
+      - 广东K-新加坡|x1.5|V2ray 9
+      - 上海CN2-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray
+      - 上海移动-香港|x1.5|V2ray 2
+      - 广东X-香港HKT|解锁|x1.0|V2ray
+      - 上海移动-香港|x1.5|V2ray 3
+      - 上海移动-香港|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray 5
+      - 广东X-香港HKT|解锁|x1.5|V2ray
+      - 广东K-新加坡|x2.0|V2ray
+      - 广东K-新加坡|x2.0|V2ray 2
+      - 广东K-新加坡|x2.0|V2ray 3
+      - 广东K-新加坡|x2.0|V2ray 4
+      - 广东K-新加坡|x2.0|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 10
+      - 广东K-新加坡|x1.5|V2ray 11
+      - 上海-日本M|解锁|x1.5|V2ray 3
+      - 上海-日本M|解锁|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 7
+      - 上海-日本M|解锁|x1.5|V2ray 8
+      - 上海-日本M|解锁|x1.5|V2ray 9
+      - 上海-日本M|解锁|x1.5|V2ray 10
+      - 上海-日本M|解锁|x1.5|V2ray 11
+      - 广东M-美国|解锁|x2.5|V2ray
+      - 广东M-美国|解锁|x2.5|V2ray 2
+      - 广东M-美国|解锁|x2.5|V2ray 3
+      - 广东M-美国|解锁|x2.5|V2ray 4
+      - 广东M-美国|解锁|x2.5|V2ray 5
+      - 广东-香港HKT|x1.5|V2ray
+      - 广东-台湾|解锁|x2.0|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray
+      - 广东G-新加坡|x2.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray 3
+      - 广东G-新加坡|x2.5|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray
+      - 广东G-新加坡|解锁|x2.0|V2ray 2
+      - 广东G-新加坡|解锁|x2.0|V2ray 3
+      - 广东G-新加坡|解锁|x2.0|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 12
+      - 上海-日本M|解锁|x1.5|V2ray 13
+      - 上海-日本M|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray 2
+      - 广东H-台湾|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.0|V2ray 2
+      - 广东H-台湾|解锁|x2.5|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 4
+      - 广东H-台湾|解锁|x2.0|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 6
+      - 广东G-新加坡|x2.5|V2ray 7
+      - 广东G-新加坡|x2.5|V2ray 8
+      - 广东G-新加坡|x2.5|V2ray 9
+      - 广东G-新加坡|x2.5|V2ray 10
+      - 广东G-新加坡|x2.5|V2ray 11
+      - 广东W-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 2
+      - 广东-香港HKT|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray 2
+      - 广东G-新加坡|x2.0|V2ray 3
+      - 广东G-新加坡|x2.0|V2ray 4
+      - 广东G-新加坡|x2.0|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 6
+      - 广东G-新加坡|解锁|x2.0|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 14
+      - 上海-日本M|解锁|x1.5|V2ray 15
+      - 上海-日本M|解锁|x1.5|V2ray 16
+      - 广东X-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|x1.5|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|解锁|x1.5|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 7
+      - 美国 11 中转
+      - 美国 12 中转
+      - 日本 21 中转
+      - 日本 22 中转
+      - 新加坡 31 中转
+      - 新加坡 32 中转
+      - 新加坡 33 中转
+      - 新加坡 34 中转
+      - 美国 71 直连
+      - 俄罗斯 72 直连
+      - 新加坡 73 直连
+      - 日本 74 直连
+      - 韩国 75 直连
+      - 日本 76 直连
+      - 韩国 81 直连
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - N2-00
-      - N2-01
-      - N2-02
-      - N2-03
-      - N2-04
-      - N2-05
-      - N2-06
-      - N2-07
-      - N2-08
-      - T1-Netflix
-      - T2-Netflix
-      - T3-Netflix
-      - US-01
-      - US-02
-      - US-03
-      - JP-01
-      - JP-02
-      - JP-03
-      - TW-01
-      - TW-02
-      - TW-03
-      - HK-01
-      - HK-02
-      - HK-03
-      - SG-01
-      - SG-02
-      - SG-03
-      - UK-01
-      - UK-02
-      - UK-03
+      - 广东K-新加坡|x1.5|V2ray
+      - 广东K-新加坡|x1.5|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 3
+      - 广东K-新加坡|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray 2
+      - 广东K-新加坡|解锁|x1.3|V2ray 3
+      - 广东K-新加坡|解锁|x1.3|V2ray 4
+      - 广东K-新加坡|解锁|x1.3|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray
+      - 广东D-香港|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray 3
+      - 广东D-香港|解锁|x1.5|V2ray 4
+      - 广东D-香港|解锁|x1.5|V2ray 5
+      - 广东D-香港|解锁|x1.5|V2ray 6
+      - 广东W-香港HKT|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 2
+      - 广东U-台湾|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x2.0|V2ray
+      - 广东X-香港HKT|解锁|x2.0|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 6
+      - 广东K-新加坡|x1.5|V2ray 7
+      - 广东K-新加坡|x1.5|V2ray 8
+      - 广东K-新加坡|x1.5|V2ray 9
+      - 上海CN2-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray
+      - 上海移动-香港|x1.5|V2ray 2
+      - 广东X-香港HKT|解锁|x1.0|V2ray
+      - 上海移动-香港|x1.5|V2ray 3
+      - 上海移动-香港|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray 5
+      - 广东X-香港HKT|解锁|x1.5|V2ray
+      - 广东K-新加坡|x2.0|V2ray
+      - 广东K-新加坡|x2.0|V2ray 2
+      - 广东K-新加坡|x2.0|V2ray 3
+      - 广东K-新加坡|x2.0|V2ray 4
+      - 广东K-新加坡|x2.0|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 10
+      - 广东K-新加坡|x1.5|V2ray 11
+      - 上海-日本M|解锁|x1.5|V2ray 3
+      - 上海-日本M|解锁|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 7
+      - 上海-日本M|解锁|x1.5|V2ray 8
+      - 上海-日本M|解锁|x1.5|V2ray 9
+      - 上海-日本M|解锁|x1.5|V2ray 10
+      - 上海-日本M|解锁|x1.5|V2ray 11
+      - 广东M-美国|解锁|x2.5|V2ray
+      - 广东M-美国|解锁|x2.5|V2ray 2
+      - 广东M-美国|解锁|x2.5|V2ray 3
+      - 广东M-美国|解锁|x2.5|V2ray 4
+      - 广东M-美国|解锁|x2.5|V2ray 5
+      - 广东-香港HKT|x1.5|V2ray
+      - 广东-台湾|解锁|x2.0|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray
+      - 广东G-新加坡|x2.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray 3
+      - 广东G-新加坡|x2.5|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray
+      - 广东G-新加坡|解锁|x2.0|V2ray 2
+      - 广东G-新加坡|解锁|x2.0|V2ray 3
+      - 广东G-新加坡|解锁|x2.0|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 12
+      - 上海-日本M|解锁|x1.5|V2ray 13
+      - 上海-日本M|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray 2
+      - 广东H-台湾|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.0|V2ray 2
+      - 广东H-台湾|解锁|x2.5|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 4
+      - 广东H-台湾|解锁|x2.0|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 6
+      - 广东G-新加坡|x2.5|V2ray 7
+      - 广东G-新加坡|x2.5|V2ray 8
+      - 广东G-新加坡|x2.5|V2ray 9
+      - 广东G-新加坡|x2.5|V2ray 10
+      - 广东G-新加坡|x2.5|V2ray 11
+      - 广东W-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 2
+      - 广东-香港HKT|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray 2
+      - 广东G-新加坡|x2.0|V2ray 3
+      - 广东G-新加坡|x2.0|V2ray 4
+      - 广东G-新加坡|x2.0|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 6
+      - 广东G-新加坡|解锁|x2.0|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 14
+      - 上海-日本M|解锁|x1.5|V2ray 15
+      - 上海-日本M|解锁|x1.5|V2ray 16
+      - 广东X-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|x1.5|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|解锁|x1.5|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 7
+      - 美国 11 中转
+      - 美国 12 中转
+      - 日本 21 中转
+      - 日本 22 中转
+      - 新加坡 31 中转
+      - 新加坡 32 中转
+      - 新加坡 33 中转
+      - 新加坡 34 中转
+      - 美国 71 直连
+      - 俄罗斯 72 直连
+      - 新加坡 73 直连
+      - 日本 74 直连
+      - 韩国 75 直连
+      - 日本 76 直连
+      - 韩国 81 直连
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -160,147 +528,555 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - N2-00
-      - N2-01
-      - N2-02
-      - N2-03
-      - N2-04
-      - N2-05
-      - N2-06
-      - N2-07
-      - N2-08
-      - T1-Netflix
-      - T2-Netflix
-      - T3-Netflix
-      - US-01
-      - US-02
-      - US-03
-      - JP-01
-      - JP-02
-      - JP-03
-      - TW-01
-      - TW-02
-      - TW-03
-      - HK-01
-      - HK-02
-      - HK-03
-      - SG-01
-      - SG-02
-      - SG-03
-      - UK-01
-      - UK-02
-      - UK-03
+      - 广东K-新加坡|x1.5|V2ray
+      - 广东K-新加坡|x1.5|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 3
+      - 广东K-新加坡|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray 2
+      - 广东K-新加坡|解锁|x1.3|V2ray 3
+      - 广东K-新加坡|解锁|x1.3|V2ray 4
+      - 广东K-新加坡|解锁|x1.3|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray
+      - 广东D-香港|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray 3
+      - 广东D-香港|解锁|x1.5|V2ray 4
+      - 广东D-香港|解锁|x1.5|V2ray 5
+      - 广东D-香港|解锁|x1.5|V2ray 6
+      - 广东W-香港HKT|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 2
+      - 广东U-台湾|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x2.0|V2ray
+      - 广东X-香港HKT|解锁|x2.0|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 6
+      - 广东K-新加坡|x1.5|V2ray 7
+      - 广东K-新加坡|x1.5|V2ray 8
+      - 广东K-新加坡|x1.5|V2ray 9
+      - 上海CN2-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray
+      - 上海移动-香港|x1.5|V2ray 2
+      - 广东X-香港HKT|解锁|x1.0|V2ray
+      - 上海移动-香港|x1.5|V2ray 3
+      - 上海移动-香港|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray 5
+      - 广东X-香港HKT|解锁|x1.5|V2ray
+      - 广东K-新加坡|x2.0|V2ray
+      - 广东K-新加坡|x2.0|V2ray 2
+      - 广东K-新加坡|x2.0|V2ray 3
+      - 广东K-新加坡|x2.0|V2ray 4
+      - 广东K-新加坡|x2.0|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 10
+      - 广东K-新加坡|x1.5|V2ray 11
+      - 上海-日本M|解锁|x1.5|V2ray 3
+      - 上海-日本M|解锁|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 7
+      - 上海-日本M|解锁|x1.5|V2ray 8
+      - 上海-日本M|解锁|x1.5|V2ray 9
+      - 上海-日本M|解锁|x1.5|V2ray 10
+      - 上海-日本M|解锁|x1.5|V2ray 11
+      - 广东M-美国|解锁|x2.5|V2ray
+      - 广东M-美国|解锁|x2.5|V2ray 2
+      - 广东M-美国|解锁|x2.5|V2ray 3
+      - 广东M-美国|解锁|x2.5|V2ray 4
+      - 广东M-美国|解锁|x2.5|V2ray 5
+      - 广东-香港HKT|x1.5|V2ray
+      - 广东-台湾|解锁|x2.0|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray
+      - 广东G-新加坡|x2.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray 3
+      - 广东G-新加坡|x2.5|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray
+      - 广东G-新加坡|解锁|x2.0|V2ray 2
+      - 广东G-新加坡|解锁|x2.0|V2ray 3
+      - 广东G-新加坡|解锁|x2.0|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 12
+      - 上海-日本M|解锁|x1.5|V2ray 13
+      - 上海-日本M|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray 2
+      - 广东H-台湾|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.0|V2ray 2
+      - 广东H-台湾|解锁|x2.5|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 4
+      - 广东H-台湾|解锁|x2.0|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 6
+      - 广东G-新加坡|x2.5|V2ray 7
+      - 广东G-新加坡|x2.5|V2ray 8
+      - 广东G-新加坡|x2.5|V2ray 9
+      - 广东G-新加坡|x2.5|V2ray 10
+      - 广东G-新加坡|x2.5|V2ray 11
+      - 广东W-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 2
+      - 广东-香港HKT|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray 2
+      - 广东G-新加坡|x2.0|V2ray 3
+      - 广东G-新加坡|x2.0|V2ray 4
+      - 广东G-新加坡|x2.0|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 6
+      - 广东G-新加坡|解锁|x2.0|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 14
+      - 上海-日本M|解锁|x1.5|V2ray 15
+      - 上海-日本M|解锁|x1.5|V2ray 16
+      - 广东X-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|x1.5|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|解锁|x1.5|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 7
+      - 美国 11 中转
+      - 美国 12 中转
+      - 日本 21 中转
+      - 日本 22 中转
+      - 新加坡 31 中转
+      - 新加坡 32 中转
+      - 新加坡 33 中转
+      - 新加坡 34 中转
+      - 美国 71 直连
+      - 俄罗斯 72 直连
+      - 新加坡 73 直连
+      - 日本 74 直连
+      - 韩国 75 直连
+      - 日本 76 直连
+      - 韩国 81 直连
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 广东D-香港|解锁|x1.5|V2ray
+      - 广东D-香港|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray 3
+      - 广东D-香港|解锁|x1.5|V2ray 4
+      - 广东D-香港|解锁|x1.5|V2ray 5
+      - 广东D-香港|解锁|x1.5|V2ray 6
+      - 广东W-香港HKT|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 2
+      - 广东U-台湾|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x2.0|V2ray
+      - 广东X-香港HKT|解锁|x2.0|V2ray 2
+      - 上海CN2-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray
+      - 上海移动-香港|x1.5|V2ray 2
+      - 广东X-香港HKT|解锁|x1.0|V2ray
+      - 上海移动-香港|x1.5|V2ray 3
+      - 上海移动-香港|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray 5
+      - 广东X-香港HKT|解锁|x1.5|V2ray
+      - 广东-香港HKT|x1.5|V2ray
+      - 广东-台湾|解锁|x2.0|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 2
+      - 广东H-台湾|解锁|x2.5|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray 2
+      - 广东H-台湾|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.0|V2ray 2
+      - 广东H-台湾|解锁|x2.5|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 4
+      - 广东H-台湾|解锁|x2.0|V2ray 5
+      - 广东W-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 2
+      - 广东-香港HKT|x2.0|V2ray
+      - 广东X-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|x1.5|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|解锁|x1.5|V2ray 5
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - N2-00
-      - N2-01
-      - N2-02
-      - N2-03
-      - N2-04
-      - N2-05
-      - N2-06
-      - N2-07
-      - N2-08
-      - T1-Netflix
-      - T2-Netflix
-      - T3-Netflix
-      - US-01
-      - US-02
-      - US-03
-      - JP-01
-      - JP-02
-      - JP-03
-      - TW-01
-      - TW-02
-      - TW-03
-      - HK-01
-      - HK-02
-      - HK-03
-      - SG-01
-      - SG-02
-      - SG-03
-      - UK-01
-      - UK-02
-      - UK-03
+      - 广东K-新加坡|x1.5|V2ray
+      - 广东K-新加坡|x1.5|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 3
+      - 广东K-新加坡|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray 2
+      - 广东K-新加坡|解锁|x1.3|V2ray 3
+      - 广东K-新加坡|解锁|x1.3|V2ray 4
+      - 广东K-新加坡|解锁|x1.3|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray
+      - 广东D-香港|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray 3
+      - 广东D-香港|解锁|x1.5|V2ray 4
+      - 广东D-香港|解锁|x1.5|V2ray 5
+      - 广东D-香港|解锁|x1.5|V2ray 6
+      - 广东W-香港HKT|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 2
+      - 广东U-台湾|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x2.0|V2ray
+      - 广东X-香港HKT|解锁|x2.0|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 6
+      - 广东K-新加坡|x1.5|V2ray 7
+      - 广东K-新加坡|x1.5|V2ray 8
+      - 广东K-新加坡|x1.5|V2ray 9
+      - 上海CN2-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray
+      - 上海移动-香港|x1.5|V2ray 2
+      - 广东X-香港HKT|解锁|x1.0|V2ray
+      - 上海移动-香港|x1.5|V2ray 3
+      - 上海移动-香港|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray 5
+      - 广东X-香港HKT|解锁|x1.5|V2ray
+      - 广东K-新加坡|x2.0|V2ray
+      - 广东K-新加坡|x2.0|V2ray 2
+      - 广东K-新加坡|x2.0|V2ray 3
+      - 广东K-新加坡|x2.0|V2ray 4
+      - 广东K-新加坡|x2.0|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 10
+      - 广东K-新加坡|x1.5|V2ray 11
+      - 上海-日本M|解锁|x1.5|V2ray 3
+      - 上海-日本M|解锁|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 7
+      - 上海-日本M|解锁|x1.5|V2ray 8
+      - 上海-日本M|解锁|x1.5|V2ray 9
+      - 上海-日本M|解锁|x1.5|V2ray 10
+      - 上海-日本M|解锁|x1.5|V2ray 11
+      - 广东M-美国|解锁|x2.5|V2ray
+      - 广东M-美国|解锁|x2.5|V2ray 2
+      - 广东M-美国|解锁|x2.5|V2ray 3
+      - 广东M-美国|解锁|x2.5|V2ray 4
+      - 广东M-美国|解锁|x2.5|V2ray 5
+      - 广东-香港HKT|x1.5|V2ray
+      - 广东-台湾|解锁|x2.0|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray
+      - 广东G-新加坡|x2.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray 3
+      - 广东G-新加坡|x2.5|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray
+      - 广东G-新加坡|解锁|x2.0|V2ray 2
+      - 广东G-新加坡|解锁|x2.0|V2ray 3
+      - 广东G-新加坡|解锁|x2.0|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 12
+      - 上海-日本M|解锁|x1.5|V2ray 13
+      - 上海-日本M|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray 2
+      - 广东H-台湾|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.0|V2ray 2
+      - 广东H-台湾|解锁|x2.5|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 4
+      - 广东H-台湾|解锁|x2.0|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 6
+      - 广东G-新加坡|x2.5|V2ray 7
+      - 广东G-新加坡|x2.5|V2ray 8
+      - 广东G-新加坡|x2.5|V2ray 9
+      - 广东G-新加坡|x2.5|V2ray 10
+      - 广东G-新加坡|x2.5|V2ray 11
+      - 广东W-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 2
+      - 广东-香港HKT|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray 2
+      - 广东G-新加坡|x2.0|V2ray 3
+      - 广东G-新加坡|x2.0|V2ray 4
+      - 广东G-新加坡|x2.0|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 6
+      - 广东G-新加坡|解锁|x2.0|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 14
+      - 上海-日本M|解锁|x1.5|V2ray 15
+      - 上海-日本M|解锁|x1.5|V2ray 16
+      - 广东X-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|x1.5|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|解锁|x1.5|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 7
+      - 美国 11 中转
+      - 美国 12 中转
+      - 日本 21 中转
+      - 日本 22 中转
+      - 新加坡 31 中转
+      - 新加坡 32 中转
+      - 新加坡 33 中转
+      - 新加坡 34 中转
+      - 美国 71 直连
+      - 俄罗斯 72 直连
+      - 新加坡 73 直连
+      - 日本 74 直连
+      - 韩国 75 直连
+      - 日本 76 直连
+      - 韩国 81 直连
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - N2-00
-      - N2-01
-      - N2-02
-      - N2-03
-      - N2-04
-      - N2-05
-      - N2-06
-      - N2-07
-      - N2-08
-      - T1-Netflix
-      - T2-Netflix
-      - T3-Netflix
-      - US-01
-      - US-02
-      - US-03
-      - JP-01
-      - JP-02
-      - JP-03
-      - TW-01
-      - TW-02
-      - TW-03
-      - HK-01
-      - HK-02
-      - HK-03
-      - SG-01
-      - SG-02
-      - SG-03
-      - UK-01
-      - UK-02
-      - UK-03
+      - 广东K-新加坡|x1.5|V2ray
+      - 广东K-新加坡|x1.5|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 3
+      - 广东K-新加坡|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray 2
+      - 广东K-新加坡|解锁|x1.3|V2ray 3
+      - 广东K-新加坡|解锁|x1.3|V2ray 4
+      - 广东K-新加坡|解锁|x1.3|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray
+      - 广东D-香港|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray 3
+      - 广东D-香港|解锁|x1.5|V2ray 4
+      - 广东D-香港|解锁|x1.5|V2ray 5
+      - 广东D-香港|解锁|x1.5|V2ray 6
+      - 广东W-香港HKT|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 2
+      - 广东U-台湾|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x2.0|V2ray
+      - 广东X-香港HKT|解锁|x2.0|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 6
+      - 广东K-新加坡|x1.5|V2ray 7
+      - 广东K-新加坡|x1.5|V2ray 8
+      - 广东K-新加坡|x1.5|V2ray 9
+      - 上海CN2-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray
+      - 上海移动-香港|x1.5|V2ray 2
+      - 广东X-香港HKT|解锁|x1.0|V2ray
+      - 上海移动-香港|x1.5|V2ray 3
+      - 上海移动-香港|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray 5
+      - 广东X-香港HKT|解锁|x1.5|V2ray
+      - 广东K-新加坡|x2.0|V2ray
+      - 广东K-新加坡|x2.0|V2ray 2
+      - 广东K-新加坡|x2.0|V2ray 3
+      - 广东K-新加坡|x2.0|V2ray 4
+      - 广东K-新加坡|x2.0|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 10
+      - 广东K-新加坡|x1.5|V2ray 11
+      - 上海-日本M|解锁|x1.5|V2ray 3
+      - 上海-日本M|解锁|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 7
+      - 上海-日本M|解锁|x1.5|V2ray 8
+      - 上海-日本M|解锁|x1.5|V2ray 9
+      - 上海-日本M|解锁|x1.5|V2ray 10
+      - 上海-日本M|解锁|x1.5|V2ray 11
+      - 广东M-美国|解锁|x2.5|V2ray
+      - 广东M-美国|解锁|x2.5|V2ray 2
+      - 广东M-美国|解锁|x2.5|V2ray 3
+      - 广东M-美国|解锁|x2.5|V2ray 4
+      - 广东M-美国|解锁|x2.5|V2ray 5
+      - 广东-香港HKT|x1.5|V2ray
+      - 广东-台湾|解锁|x2.0|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray
+      - 广东G-新加坡|x2.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray 3
+      - 广东G-新加坡|x2.5|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray
+      - 广东G-新加坡|解锁|x2.0|V2ray 2
+      - 广东G-新加坡|解锁|x2.0|V2ray 3
+      - 广东G-新加坡|解锁|x2.0|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 12
+      - 上海-日本M|解锁|x1.5|V2ray 13
+      - 上海-日本M|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray 2
+      - 广东H-台湾|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.0|V2ray 2
+      - 广东H-台湾|解锁|x2.5|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 4
+      - 广东H-台湾|解锁|x2.0|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 6
+      - 广东G-新加坡|x2.5|V2ray 7
+      - 广东G-新加坡|x2.5|V2ray 8
+      - 广东G-新加坡|x2.5|V2ray 9
+      - 广东G-新加坡|x2.5|V2ray 10
+      - 广东G-新加坡|x2.5|V2ray 11
+      - 广东W-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 2
+      - 广东-香港HKT|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray 2
+      - 广东G-新加坡|x2.0|V2ray 3
+      - 广东G-新加坡|x2.0|V2ray 4
+      - 广东G-新加坡|x2.0|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 6
+      - 广东G-新加坡|解锁|x2.0|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 14
+      - 上海-日本M|解锁|x1.5|V2ray 15
+      - 上海-日本M|解锁|x1.5|V2ray 16
+      - 广东X-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|x1.5|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|解锁|x1.5|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 7
+      - 美国 11 中转
+      - 美国 12 中转
+      - 日本 21 中转
+      - 日本 22 中转
+      - 新加坡 31 中转
+      - 新加坡 32 中转
+      - 新加坡 33 中转
+      - 新加坡 34 中转
+      - 美国 71 直连
+      - 俄罗斯 72 直连
+      - 新加坡 73 直连
+      - 日本 74 直连
+      - 韩国 75 直连
+      - 日本 76 直连
+      - 韩国 81 直连
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - N2-00
-      - N2-01
-      - N2-02
-      - N2-03
-      - N2-04
-      - N2-05
-      - N2-06
-      - N2-07
-      - N2-08
-      - T1-Netflix
-      - T2-Netflix
-      - T3-Netflix
-      - US-01
-      - US-02
-      - US-03
-      - JP-01
-      - JP-02
-      - JP-03
-      - TW-01
-      - TW-02
-      - TW-03
-      - HK-01
-      - HK-02
-      - HK-03
-      - SG-01
-      - SG-02
-      - SG-03
-      - UK-01
-      - UK-02
-      - UK-03
+      - 广东K-新加坡|x1.5|V2ray
+      - 广东K-新加坡|x1.5|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 3
+      - 广东K-新加坡|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray 2
+      - 广东K-新加坡|解锁|x1.3|V2ray 3
+      - 广东K-新加坡|解锁|x1.3|V2ray 4
+      - 广东K-新加坡|解锁|x1.3|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray
+      - 广东D-香港|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray 3
+      - 广东D-香港|解锁|x1.5|V2ray 4
+      - 广东D-香港|解锁|x1.5|V2ray 5
+      - 广东D-香港|解锁|x1.5|V2ray 6
+      - 广东W-香港HKT|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 2
+      - 广东U-台湾|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x2.0|V2ray
+      - 广东X-香港HKT|解锁|x2.0|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 6
+      - 广东K-新加坡|x1.5|V2ray 7
+      - 广东K-新加坡|x1.5|V2ray 8
+      - 广东K-新加坡|x1.5|V2ray 9
+      - 上海CN2-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray
+      - 上海移动-香港|x1.5|V2ray 2
+      - 广东X-香港HKT|解锁|x1.0|V2ray
+      - 上海移动-香港|x1.5|V2ray 3
+      - 上海移动-香港|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray 5
+      - 广东X-香港HKT|解锁|x1.5|V2ray
+      - 广东K-新加坡|x2.0|V2ray
+      - 广东K-新加坡|x2.0|V2ray 2
+      - 广东K-新加坡|x2.0|V2ray 3
+      - 广东K-新加坡|x2.0|V2ray 4
+      - 广东K-新加坡|x2.0|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 10
+      - 广东K-新加坡|x1.5|V2ray 11
+      - 上海-日本M|解锁|x1.5|V2ray 3
+      - 上海-日本M|解锁|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 7
+      - 上海-日本M|解锁|x1.5|V2ray 8
+      - 上海-日本M|解锁|x1.5|V2ray 9
+      - 上海-日本M|解锁|x1.5|V2ray 10
+      - 上海-日本M|解锁|x1.5|V2ray 11
+      - 广东M-美国|解锁|x2.5|V2ray
+      - 广东M-美国|解锁|x2.5|V2ray 2
+      - 广东M-美国|解锁|x2.5|V2ray 3
+      - 广东M-美国|解锁|x2.5|V2ray 4
+      - 广东M-美国|解锁|x2.5|V2ray 5
+      - 广东-香港HKT|x1.5|V2ray
+      - 广东-台湾|解锁|x2.0|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray
+      - 广东G-新加坡|x2.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray 3
+      - 广东G-新加坡|x2.5|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray
+      - 广东G-新加坡|解锁|x2.0|V2ray 2
+      - 广东G-新加坡|解锁|x2.0|V2ray 3
+      - 广东G-新加坡|解锁|x2.0|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 12
+      - 上海-日本M|解锁|x1.5|V2ray 13
+      - 上海-日本M|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray 2
+      - 广东H-台湾|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.0|V2ray 2
+      - 广东H-台湾|解锁|x2.5|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 4
+      - 广东H-台湾|解锁|x2.0|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 6
+      - 广东G-新加坡|x2.5|V2ray 7
+      - 广东G-新加坡|x2.5|V2ray 8
+      - 广东G-新加坡|x2.5|V2ray 9
+      - 广东G-新加坡|x2.5|V2ray 10
+      - 广东G-新加坡|x2.5|V2ray 11
+      - 广东W-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 2
+      - 广东-香港HKT|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray 2
+      - 广东G-新加坡|x2.0|V2ray 3
+      - 广东G-新加坡|x2.0|V2ray 4
+      - 广东G-新加坡|x2.0|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 6
+      - 广东G-新加坡|解锁|x2.0|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 14
+      - 上海-日本M|解锁|x1.5|V2ray 15
+      - 上海-日本M|解锁|x1.5|V2ray 16
+      - 广东X-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|x1.5|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|解锁|x1.5|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 7
+      - 美国 11 中转
+      - 美国 12 中转
+      - 日本 21 中转
+      - 日本 22 中转
+      - 新加坡 31 中转
+      - 新加坡 32 中转
+      - 新加坡 33 中转
+      - 新加坡 34 中转
+      - 美国 71 直连
+      - 俄罗斯 72 直连
+      - 新加坡 73 直连
+      - 日本 74 直连
+      - 韩国 75 直连
+      - 日本 76 直连
+      - 韩国 81 直连
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -316,36 +1092,128 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - N2-00
-      - N2-01
-      - N2-02
-      - N2-03
-      - N2-04
-      - N2-05
-      - N2-06
-      - N2-07
-      - N2-08
-      - T1-Netflix
-      - T2-Netflix
-      - T3-Netflix
-      - US-01
-      - US-02
-      - US-03
-      - JP-01
-      - JP-02
-      - JP-03
-      - TW-01
-      - TW-02
-      - TW-03
-      - HK-01
-      - HK-02
-      - HK-03
-      - SG-01
-      - SG-02
-      - SG-03
-      - UK-01
-      - UK-02
-      - UK-03
+      - 广东K-新加坡|x1.5|V2ray
+      - 广东K-新加坡|x1.5|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 3
+      - 广东K-新加坡|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray
+      - 广东K-新加坡|解锁|x1.3|V2ray 2
+      - 广东K-新加坡|解锁|x1.3|V2ray 3
+      - 广东K-新加坡|解锁|x1.3|V2ray 4
+      - 广东K-新加坡|解锁|x1.3|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray
+      - 广东D-香港|解锁|x1.5|V2ray 2
+      - 广东D-香港|解锁|x1.5|V2ray 3
+      - 广东D-香港|解锁|x1.5|V2ray 4
+      - 广东D-香港|解锁|x1.5|V2ray 5
+      - 广东D-香港|解锁|x1.5|V2ray 6
+      - 广东W-香港HKT|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 2
+      - 广东U-台湾|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x2.0|V2ray
+      - 广东X-香港HKT|解锁|x2.0|V2ray 2
+      - 广东K-新加坡|x1.5|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 6
+      - 广东K-新加坡|x1.5|V2ray 7
+      - 广东K-新加坡|x1.5|V2ray 8
+      - 广东K-新加坡|x1.5|V2ray 9
+      - 上海CN2-台湾|解锁|x1.5|V2ray
+      - 广东U-台湾|解锁|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray
+      - 上海移动-香港|x1.5|V2ray 2
+      - 广东X-香港HKT|解锁|x1.0|V2ray
+      - 上海移动-香港|x1.5|V2ray 3
+      - 上海移动-香港|x1.5|V2ray 4
+      - 上海移动-香港|x1.5|V2ray 5
+      - 广东X-香港HKT|解锁|x1.5|V2ray
+      - 广东K-新加坡|x2.0|V2ray
+      - 广东K-新加坡|x2.0|V2ray 2
+      - 广东K-新加坡|x2.0|V2ray 3
+      - 广东K-新加坡|x2.0|V2ray 4
+      - 广东K-新加坡|x2.0|V2ray 5
+      - 广东K-新加坡|x1.5|V2ray 10
+      - 广东K-新加坡|x1.5|V2ray 11
+      - 上海-日本M|解锁|x1.5|V2ray 3
+      - 上海-日本M|解锁|x1.5|V2ray 4
+      - 上海-日本M|解锁|x1.5|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 7
+      - 上海-日本M|解锁|x1.5|V2ray 8
+      - 上海-日本M|解锁|x1.5|V2ray 9
+      - 上海-日本M|解锁|x1.5|V2ray 10
+      - 上海-日本M|解锁|x1.5|V2ray 11
+      - 广东M-美国|解锁|x2.5|V2ray
+      - 广东M-美国|解锁|x2.5|V2ray 2
+      - 广东M-美国|解锁|x2.5|V2ray 3
+      - 广东M-美国|解锁|x2.5|V2ray 4
+      - 广东M-美国|解锁|x2.5|V2ray 5
+      - 广东-香港HKT|x1.5|V2ray
+      - 广东-台湾|解锁|x2.0|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray
+      - 广东G-新加坡|x2.5|V2ray 2
+      - 广东G-新加坡|x2.5|V2ray 3
+      - 广东G-新加坡|x2.5|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray
+      - 广东G-新加坡|解锁|x2.0|V2ray 2
+      - 广东G-新加坡|解锁|x2.0|V2ray 3
+      - 广东G-新加坡|解锁|x2.0|V2ray 4
+      - 广东G-新加坡|解锁|x2.0|V2ray 5
+      - 上海-日本M|解锁|x1.5|V2ray 12
+      - 上海-日本M|解锁|x1.5|V2ray 13
+      - 上海-日本M|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray
+      - 广东H-台湾|解锁|x2.5|V2ray 2
+      - 广东H-台湾|解锁|x2.0|V2ray
+      - 广东H-台湾|解锁|x2.0|V2ray 2
+      - 广东H-台湾|解锁|x2.5|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 3
+      - 广东H-台湾|解锁|x2.0|V2ray 4
+      - 广东H-台湾|解锁|x2.0|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 5
+      - 广东G-新加坡|x2.5|V2ray 6
+      - 广东G-新加坡|x2.5|V2ray 7
+      - 广东G-新加坡|x2.5|V2ray 8
+      - 广东G-新加坡|x2.5|V2ray 9
+      - 广东G-新加坡|x2.5|V2ray 10
+      - 广东G-新加坡|x2.5|V2ray 11
+      - 广东W-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 2
+      - 广东-香港HKT|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray
+      - 广东G-新加坡|x2.0|V2ray 2
+      - 广东G-新加坡|x2.0|V2ray 3
+      - 广东G-新加坡|x2.0|V2ray 4
+      - 广东G-新加坡|x2.0|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 6
+      - 广东G-新加坡|解锁|x2.0|V2ray 6
+      - 上海-日本M|解锁|x1.5|V2ray 14
+      - 上海-日本M|解锁|x1.5|V2ray 15
+      - 上海-日本M|解锁|x1.5|V2ray 16
+      - 广东X-香港HKT|解锁|x1.5|V2ray 3
+      - 广东X-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|x1.5|V2ray
+      - 广东W-香港HKT|解锁|x1.5|V2ray 4
+      - 广东X-香港HKT|解锁|x1.5|V2ray 5
+      - 广东G-新加坡|x2.0|V2ray 7
+      - 美国 11 中转
+      - 美国 12 中转
+      - 日本 21 中转
+      - 日本 22 中转
+      - 新加坡 31 中转
+      - 新加坡 32 中转
+      - 新加坡 33 中转
+      - 新加坡 34 中转
+      - 美国 71 直连
+      - 俄罗斯 72 直连
+      - 新加坡 73 直连
+      - 日本 74 直连
+      - 韩国 75 直连
+      - 日本 76 直连
+      - 韩国 81 直连
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
