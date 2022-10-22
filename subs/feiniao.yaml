@@ -1,147 +1,147 @@
-aport: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TG频道:@kxswa|GLaDOS-N2-00, server: b13f959.na.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.na.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-N2-01, server: b13f959.nb.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-N2-02, server: b13f959.nc.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-N2-03, server: b13f959.nd.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nd.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-N2-04, server: b13f959.ne.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.ne.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-N2-05, server: b13f959.nf.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nf.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-N2-06, server: b13f959.ng.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.ng.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-N2-07, server: b13f959.nh.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nh.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-N2-08, server: b13f959.ni.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.ni.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-T1-Netflix, server: b13f959.f1.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/b13f959.fm.apple.com:111174, ws-headers: {Host: n2.gladns.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-T2-Netflix, server: b13f959.f2.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/b13f959.fm.apple.com:111174, ws-headers: {Host: n2.gladns.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-T3-Netflix, server: b13f959.f3.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/b13f959.fm.apple.com:111174, ws-headers: {Host: n2.gladns.com}, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-US-01, server: b13f959.ga.gladns.com, port: 3381, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-US-02, server: b13f959.gb.gladns.com, port: 3381, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-US-03, server: b13f959.gc.gladns.com, port: 3381, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-JP-01, server: b13f959.ga.gladns.com, port: 3382, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-JP-02, server: b13f959.gb.gladns.com, port: 3382, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-JP-03, server: b13f959.gc.gladns.com, port: 3382, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-TW-01, server: b13f959.ga.gladns.com, port: 3383, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-TW-02, server: b13f959.gb.gladns.com, port: 3383, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-TW-03, server: b13f959.gc.gladns.com, port: 3383, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-HK-01, server: b13f959.ga.gladns.com, port: 3384, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-HK-02, server: b13f959.gb.gladns.com, port: 3384, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-HK-03, server: b13f959.gc.gladns.com, port: 3384, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-SG-01, server: b13f959.ga.gladns.com, port: 3385, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-SG-02, server: b13f959.gb.gladns.com, port: 3385, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-SG-03, server: b13f959.gc.gladns.com, port: 3385, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-UK-01, server: b13f959.ga.gladns.com, port: 3386, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-UK-02, server: b13f959.gb.gladns.com, port: 3386, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: TG频道:@kxswa|GLaDOS-GEOIP-UK-03, server: b13f959.gc.gladns.com, port: 3386, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: N2-00, server: b13f959.na.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.na.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: N2-01, server: b13f959.nb.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: N2-02, server: b13f959.nc.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: N2-03, server: b13f959.nd.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nd.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: N2-04, server: b13f959.ne.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.ne.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: N2-05, server: b13f959.nf.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nf.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: N2-06, server: b13f959.ng.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.ng.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: N2-07, server: b13f959.nh.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.nh.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: N2-08, server: b13f959.ni.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: b13f959.ni.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: T1-Netflix, server: b13f959.f1.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/b13f959.fm.apple.com:111174, ws-headers: {Host: n2.gladns.com}, udp: true}
+  - {name: T2-Netflix, server: b13f959.f2.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/b13f959.fm.apple.com:111174, ws-headers: {Host: n2.gladns.com}, udp: true}
+  - {name: T3-Netflix, server: b13f959.f3.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /s/b13f959.fm.apple.com:111174, ws-headers: {Host: n2.gladns.com}, udp: true}
+  - {name: US-01, server: b13f959.ga.gladns.com, port: 3381, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: US-02, server: b13f959.gb.gladns.com, port: 3381, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: US-03, server: b13f959.gc.gladns.com, port: 3381, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP-01, server: b13f959.ga.gladns.com, port: 3382, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP-02, server: b13f959.gb.gladns.com, port: 3382, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP-03, server: b13f959.gc.gladns.com, port: 3382, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: TW-01, server: b13f959.ga.gladns.com, port: 3383, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: TW-02, server: b13f959.gb.gladns.com, port: 3383, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: TW-03, server: b13f959.gc.gladns.com, port: 3383, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: HK-01, server: b13f959.ga.gladns.com, port: 3384, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: HK-02, server: b13f959.gb.gladns.com, port: 3384, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: HK-03, server: b13f959.gc.gladns.com, port: 3384, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: SG-01, server: b13f959.ga.gladns.com, port: 3385, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: SG-02, server: b13f959.gb.gladns.com, port: 3385, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: SG-03, server: b13f959.gc.gladns.com, port: 3385, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: UK-01, server: b13f959.ga.gladns.com, port: 3386, type: trojan, password: 182228812d1e0f23, sni: b13f959.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: UK-02, server: b13f959.gb.gladns.com, port: 3386, type: trojan, password: 182228812d1e0f23, sni: b13f959.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: UK-03, server: b13f959.gc.gladns.com, port: 3386, type: trojan, password: 182228812d1e0f23, sni: b13f959.gc.gladns.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道:@kxswa|GLaDOS-N2-00
-      - TG频道:@kxswa|GLaDOS-N2-01
-      - TG频道:@kxswa|GLaDOS-N2-02
-      - TG频道:@kxswa|GLaDOS-N2-03
-      - TG频道:@kxswa|GLaDOS-N2-04
-      - TG频道:@kxswa|GLaDOS-N2-05
-      - TG频道:@kxswa|GLaDOS-N2-06
-      - TG频道:@kxswa|GLaDOS-N2-07
-      - TG频道:@kxswa|GLaDOS-N2-08
-      - TG频道:@kxswa|GLaDOS-T1-Netflix
-      - TG频道:@kxswa|GLaDOS-T2-Netflix
-      - TG频道:@kxswa|GLaDOS-T3-Netflix
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-03
+      - N2-00
+      - N2-01
+      - N2-02
+      - N2-03
+      - N2-04
+      - N2-05
+      - N2-06
+      - N2-07
+      - N2-08
+      - T1-Netflix
+      - T2-Netflix
+      - T3-Netflix
+      - US-01
+      - US-02
+      - US-03
+      - JP-01
+      - JP-02
+      - JP-03
+      - TW-01
+      - TW-02
+      - TW-03
+      - HK-01
+      - HK-02
+      - HK-03
+      - SG-01
+      - SG-02
+      - SG-03
+      - UK-01
+      - UK-02
+      - UK-03
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TG频道:@kxswa|GLaDOS-N2-00
-      - TG频道:@kxswa|GLaDOS-N2-01
-      - TG频道:@kxswa|GLaDOS-N2-02
-      - TG频道:@kxswa|GLaDOS-N2-03
-      - TG频道:@kxswa|GLaDOS-N2-04
-      - TG频道:@kxswa|GLaDOS-N2-05
-      - TG频道:@kxswa|GLaDOS-N2-06
-      - TG频道:@kxswa|GLaDOS-N2-07
-      - TG频道:@kxswa|GLaDOS-N2-08
-      - TG频道:@kxswa|GLaDOS-T1-Netflix
-      - TG频道:@kxswa|GLaDOS-T2-Netflix
-      - TG频道:@kxswa|GLaDOS-T3-Netflix
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-03
+      - N2-00
+      - N2-01
+      - N2-02
+      - N2-03
+      - N2-04
+      - N2-05
+      - N2-06
+      - N2-07
+      - N2-08
+      - T1-Netflix
+      - T2-Netflix
+      - T3-Netflix
+      - US-01
+      - US-02
+      - US-03
+      - JP-01
+      - JP-02
+      - JP-03
+      - TW-01
+      - TW-02
+      - TW-03
+      - HK-01
+      - HK-02
+      - HK-03
+      - SG-01
+      - SG-02
+      - SG-03
+      - UK-01
+      - UK-02
+      - UK-03
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道:@kxswa|GLaDOS-N2-00
-      - TG频道:@kxswa|GLaDOS-N2-01
-      - TG频道:@kxswa|GLaDOS-N2-02
-      - TG频道:@kxswa|GLaDOS-N2-03
-      - TG频道:@kxswa|GLaDOS-N2-04
-      - TG频道:@kxswa|GLaDOS-N2-05
-      - TG频道:@kxswa|GLaDOS-N2-06
-      - TG频道:@kxswa|GLaDOS-N2-07
-      - TG频道:@kxswa|GLaDOS-N2-08
-      - TG频道:@kxswa|GLaDOS-T1-Netflix
-      - TG频道:@kxswa|GLaDOS-T2-Netflix
-      - TG频道:@kxswa|GLaDOS-T3-Netflix
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-03
+      - N2-00
+      - N2-01
+      - N2-02
+      - N2-03
+      - N2-04
+      - N2-05
+      - N2-06
+      - N2-07
+      - N2-08
+      - T1-Netflix
+      - T2-Netflix
+      - T3-Netflix
+      - US-01
+      - US-02
+      - US-03
+      - JP-01
+      - JP-02
+      - JP-03
+      - TW-01
+      - TW-02
+      - TW-03
+      - HK-01
+      - HK-02
+      - HK-03
+      - SG-01
+      - SG-02
+      - SG-03
+      - UK-01
+      - UK-02
+      - UK-03
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -160,36 +160,36 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道:@kxswa|GLaDOS-N2-00
-      - TG频道:@kxswa|GLaDOS-N2-01
-      - TG频道:@kxswa|GLaDOS-N2-02
-      - TG频道:@kxswa|GLaDOS-N2-03
-      - TG频道:@kxswa|GLaDOS-N2-04
-      - TG频道:@kxswa|GLaDOS-N2-05
-      - TG频道:@kxswa|GLaDOS-N2-06
-      - TG频道:@kxswa|GLaDOS-N2-07
-      - TG频道:@kxswa|GLaDOS-N2-08
-      - TG频道:@kxswa|GLaDOS-T1-Netflix
-      - TG频道:@kxswa|GLaDOS-T2-Netflix
-      - TG频道:@kxswa|GLaDOS-T3-Netflix
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-03
+      - N2-00
+      - N2-01
+      - N2-02
+      - N2-03
+      - N2-04
+      - N2-05
+      - N2-06
+      - N2-07
+      - N2-08
+      - T1-Netflix
+      - T2-Netflix
+      - T3-Netflix
+      - US-01
+      - US-02
+      - US-03
+      - JP-01
+      - JP-02
+      - JP-03
+      - TW-01
+      - TW-02
+      - TW-03
+      - HK-01
+      - HK-02
+      - HK-03
+      - SG-01
+      - SG-02
+      - SG-03
+      - UK-01
+      - UK-02
+      - UK-03
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -200,107 +200,107 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TG频道:@kxswa|GLaDOS-N2-00
-      - TG频道:@kxswa|GLaDOS-N2-01
-      - TG频道:@kxswa|GLaDOS-N2-02
-      - TG频道:@kxswa|GLaDOS-N2-03
-      - TG频道:@kxswa|GLaDOS-N2-04
-      - TG频道:@kxswa|GLaDOS-N2-05
-      - TG频道:@kxswa|GLaDOS-N2-06
-      - TG频道:@kxswa|GLaDOS-N2-07
-      - TG频道:@kxswa|GLaDOS-N2-08
-      - TG频道:@kxswa|GLaDOS-T1-Netflix
-      - TG频道:@kxswa|GLaDOS-T2-Netflix
-      - TG频道:@kxswa|GLaDOS-T3-Netflix
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-03
+      - N2-00
+      - N2-01
+      - N2-02
+      - N2-03
+      - N2-04
+      - N2-05
+      - N2-06
+      - N2-07
+      - N2-08
+      - T1-Netflix
+      - T2-Netflix
+      - T3-Netflix
+      - US-01
+      - US-02
+      - US-03
+      - JP-01
+      - JP-02
+      - JP-03
+      - TW-01
+      - TW-02
+      - TW-03
+      - HK-01
+      - HK-02
+      - HK-03
+      - SG-01
+      - SG-02
+      - SG-03
+      - UK-01
+      - UK-02
+      - UK-03
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TG频道:@kxswa|GLaDOS-N2-00
-      - TG频道:@kxswa|GLaDOS-N2-01
-      - TG频道:@kxswa|GLaDOS-N2-02
-      - TG频道:@kxswa|GLaDOS-N2-03
-      - TG频道:@kxswa|GLaDOS-N2-04
-      - TG频道:@kxswa|GLaDOS-N2-05
-      - TG频道:@kxswa|GLaDOS-N2-06
-      - TG频道:@kxswa|GLaDOS-N2-07
-      - TG频道:@kxswa|GLaDOS-N2-08
-      - TG频道:@kxswa|GLaDOS-T1-Netflix
-      - TG频道:@kxswa|GLaDOS-T2-Netflix
-      - TG频道:@kxswa|GLaDOS-T3-Netflix
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-03
+      - N2-00
+      - N2-01
+      - N2-02
+      - N2-03
+      - N2-04
+      - N2-05
+      - N2-06
+      - N2-07
+      - N2-08
+      - T1-Netflix
+      - T2-Netflix
+      - T3-Netflix
+      - US-01
+      - US-02
+      - US-03
+      - JP-01
+      - JP-02
+      - JP-03
+      - TW-01
+      - TW-02
+      - TW-03
+      - HK-01
+      - HK-02
+      - HK-03
+      - SG-01
+      - SG-02
+      - SG-03
+      - UK-01
+      - UK-02
+      - UK-03
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道:@kxswa|GLaDOS-N2-00
-      - TG频道:@kxswa|GLaDOS-N2-01
-      - TG频道:@kxswa|GLaDOS-N2-02
-      - TG频道:@kxswa|GLaDOS-N2-03
-      - TG频道:@kxswa|GLaDOS-N2-04
-      - TG频道:@kxswa|GLaDOS-N2-05
-      - TG频道:@kxswa|GLaDOS-N2-06
-      - TG频道:@kxswa|GLaDOS-N2-07
-      - TG频道:@kxswa|GLaDOS-N2-08
-      - TG频道:@kxswa|GLaDOS-T1-Netflix
-      - TG频道:@kxswa|GLaDOS-T2-Netflix
-      - TG频道:@kxswa|GLaDOS-T3-Netflix
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-03
+      - N2-00
+      - N2-01
+      - N2-02
+      - N2-03
+      - N2-04
+      - N2-05
+      - N2-06
+      - N2-07
+      - N2-08
+      - T1-Netflix
+      - T2-Netflix
+      - T3-Netflix
+      - US-01
+      - US-02
+      - US-03
+      - JP-01
+      - JP-02
+      - JP-03
+      - TW-01
+      - TW-02
+      - TW-03
+      - HK-01
+      - HK-02
+      - HK-03
+      - SG-01
+      - SG-02
+      - SG-03
+      - UK-01
+      - UK-02
+      - UK-03
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -316,36 +316,36 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道:@kxswa|GLaDOS-N2-00
-      - TG频道:@kxswa|GLaDOS-N2-01
-      - TG频道:@kxswa|GLaDOS-N2-02
-      - TG频道:@kxswa|GLaDOS-N2-03
-      - TG频道:@kxswa|GLaDOS-N2-04
-      - TG频道:@kxswa|GLaDOS-N2-05
-      - TG频道:@kxswa|GLaDOS-N2-06
-      - TG频道:@kxswa|GLaDOS-N2-07
-      - TG频道:@kxswa|GLaDOS-N2-08
-      - TG频道:@kxswa|GLaDOS-T1-Netflix
-      - TG频道:@kxswa|GLaDOS-T2-Netflix
-      - TG频道:@kxswa|GLaDOS-T3-Netflix
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-US-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-JP-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-TW-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-HK-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-SG-03
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-01
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-02
-      - TG频道:@kxswa|GLaDOS-GEOIP-UK-03
+      - N2-00
+      - N2-01
+      - N2-02
+      - N2-03
+      - N2-04
+      - N2-05
+      - N2-06
+      - N2-07
+      - N2-08
+      - T1-Netflix
+      - T2-Netflix
+      - T3-Netflix
+      - US-01
+      - US-02
+      - US-03
+      - JP-01
+      - JP-02
+      - JP-03
+      - TW-01
+      - TW-02
+      - TW-03
+      - HK-01
+      - HK-02
+      - HK-03
+      - SG-01
+      - SG-02
+      - SG-03
+      - UK-01
+      - UK-02
+      - UK-03
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
