@@ -4,98 +4,77 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 亚洲 | 香港D, server: a-ct1.jsmmm.cyou, port: 39122, type: vmess, uuid: 5e307b0b-2e97-3a7a-a2a2-09bc60afe40b, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 亚洲 | 日本B, server: a-cm1.jsmmm.cyou, port: 39312, type: vmess, uuid: 5e307b0b-2e97-3a7a-a2a2-09bc60afe40b, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 亚洲 | 香港B, server: a-cm1.jsmmm.cyou, port: 39112, type: vmess, uuid: 5e307b0b-2e97-3a7a-a2a2-09bc60afe40b, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 亚洲 | 香港C, server: a-ct1.jsmmm.cyou, port: 39121, type: vmess, uuid: 5e307b0b-2e97-3a7a-a2a2-09bc60afe40b, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 亚洲 | 马来西亚, server: a-cm1.jsmmm.cyou, port: 39814, type: vmess, uuid: 5e307b0b-2e97-3a7a-a2a2-09bc60afe40b, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[CT/CM] HKT B", server: 2cnrelay2.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 25443:Jsnzkpg888, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT N", server: initest08.initcloud.pro, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 25443:Jsnzkpg888, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT G", server: inlayer7.standurls.co, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 25443:Jsnzkpg888, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN D", server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 25443:Jsnzkpg888, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT F", server: inlayer7.standurls.co, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 25443:Jsnzkpg888, obfs-param: "", udp: true}
+  - {name: 🇸🇬 Linode, server: 170.187.230.86, port: 20020, type: ss, cipher: aes-128-gcm, password: 202022100000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
+  - {name: GLaDOS-H2-01, server: 1260eea.hb.gladns.com, port: 3306, type: trojan, password: 70face6dd320ea29, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-Railgun-02, server: 1260eea.td.glados-config.net, port: 443, type: vmess, uuid: "57e0cb4d-eae5-48ec-8091-149dc2b309e0", alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%221260eea.fm.huawei.com:138218%22,%22Host%22:%22n1.glados-remote.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Railgun-09, server: 1260eea.wz.glados-config.net, port: 443, type: vmess, uuid: "57e0cb4d-eae5-48ec-8091-149dc2b309e0", alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%221260eea.fm.huawei.com:138218%22,%22Host%22:%22n2.glados-remote.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Railgun-03, server: 1260eea.tt.glados-config.net, port: 443, type: vmess, uuid: "57e0cb4d-eae5-48ec-8091-149dc2b309e0", alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%221260eea.fm.huawei.com:138218%22,%22Host%22:%22n1.glados-remote.com%22%7D"}}, udp: true}
+  - {name: GLaDOS-Railgun-01, server: 1260eea.ts.glados-config.net, port: 443, type: vmess, uuid: "57e0cb4d-eae5-48ec-8091-149dc2b309e0", alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%221260eea.fm.huawei.com:138218%22,%22Host%22:%22n1.glados-remote.com%22%7D"}}, udp: true}
+  - {name: 【直连】ICN/首尔 - 4, server: 00000000000000000000000000000000000000000000000000000000000038a.rui77.com, port: 12356, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 【直连】ICN/首尔 - 80端口 - 1, server: 00000000000000000000000000000000000000000000000000000000000007a.rui77.com, port: 80, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 美国, server: 20003.purefast2.com, port: 20003, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, skip-cert-verify: true, udp: true}
+  - {name: 【越南】峰值150M-NetFlix 解锁, server: yn.xbywwcp.us, port: 25365, type: vmess, uuid: e3dcfe09-bda5-35db-a717-0f6e5bc2f4cb, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: yn.xbywwcp.us}}, udp: true}
+  - {name: 🇭🇰HK1, server: 180.101.193.226, port: 10068, type: ss, cipher: aes-256-cfb, password: RsDk3peCSuo76B68, udp: true}
+  - {name: 🇭🇰HK2, server: 5.44.249.155, port: 3389, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰HK3, server: 47.242.164.3, port: 2053, type: vmess, uuid: "98df8720-fe3d-476a-882c-1b659e3869b6", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22arm1dj.qiancheng.ml%22%7D"}}, udp: true}
+  - {name: 🇭🇰HK4, server: 47.242.164.3, port: 2053, type: vmess, uuid: "98df8720-fe3d-476a-882c-1b659e3869b6", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22arm1dj.qiancheng.ml%22%7D"}}, udp: true}
+  - {name: 🇭🇰HK5, server: 47.242.164.3, port: 2053, type: vmess, uuid: "98df8720-fe3d-476a-882c-1b659e3869b6", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22arm1dj.qiancheng.ml%22%7D"}}, udp: true}
+  - {name: 🇭🇰HK6, server: hk1.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰HK7, server: 8.209.240.54, port: 2053, type: vmess, uuid: "98df8720-fe3d-476a-882c-1b659e3869b6", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22arm1dj.qiancheng.ml%22%7D"}}, udp: true}
+  - {name: 🇭🇰HK8, server: 8.209.240.54, port: 2053, type: vmess, uuid: "98df8720-fe3d-476a-882c-1b659e3869b6", alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22arm1dj.qiancheng.ml%22%7D"}}, udp: true}
+  - {name: 🇭🇰HK9, server: hk1.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, skip-cert-verify: true, udp: true}
   - {name: 【直连】HKG/香港 - 2, server: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com, port: 52356, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 【直连】SIN/狮城 - 1, server: 00000000000000000000000000000000000000000000000000000000000025a.rui77.com, port: 52356, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 【直连】ICN/首尔 - 3, server: 00000000000000000000000000000000000000000000000000000000000037a.rui77.com, port: 12356, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 美国 03, server: us3.520748.xyz, port: 10001, type: trojan, password: 9e1efeee-8911-4c5b-85ce-3c447ccfef6a, skip-cert-verify: true, udp: true}
-  - {name: 德国 01, server: ger.520748.xyz, port: 443, type: trojan, password: 9e1efeee-8911-4c5b-85ce-3c447ccfef6a, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 01, server: sg.520748.xyz, port: 10002, type: trojan, password: 9e1efeee-8911-4c5b-85ce-3c447ccfef6a, skip-cert-verify: true, udp: true}
-  - {name: Level1 Japan 03, server: 172.104.125.96, port: 2053, type: vmess, uuid: db95a78c-daed-4439-a0ef-1180ac2f6666, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: Level1 Japan 04, server: 172.104.125.118, port: 2053, type: vmess, uuid: db95a78c-daed-4439-a0ef-1180ac2f6666, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 韩国, server: 20002.purefast2.com, port: 20002, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, skip-cert-verify: true, udp: true}
-  - {name: 法国, server: 20010.purefast2.com, port: 20010, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, skip-cert-verify: true, udp: true}
-  - {name: 德国, server: 20013.purefast2.com, port: 20013, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, skip-cert-verify: true, udp: true}
-  - {name: 英国, server: 20009.purefast2.com, port: 20009, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, skip-cert-verify: true, udp: true}
-  - {name: 土耳其, server: 20008.purefast2.com, port: 20008, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, skip-cert-verify: true, udp: true}
-  - {name: 荷兰, server: 20011.purefast2.com, port: 20011, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, skip-cert-verify: true, udp: true}
   - {name: 巴西, server: 20012.purefast2.com, port: 20012, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, skip-cert-verify: true, udp: true}
-  - {name: 【日本】01, server: rb.xbywwcp.us, port: 80, type: vmess, uuid: e3dcfe09-bda5-35db-a717-0f6e5bc2f4cb, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: a.189.cn}}, udp: true}
-  - {name: 【新加坡】02, server: xjp1.xbywwcp.us, port: 80, type: vmess, uuid: e3dcfe09-bda5-35db-a717-0f6e5bc2f4cb, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: a.189.cn}}, udp: true}
-  - {name: 【香港】峰值1000M-NetFlix 解锁, server: xg1.xbywwcp.us, port: 15264, type: vmess, uuid: e3dcfe09-bda5-35db-a717-0f6e5bc2f4cb, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: xg1.xbywwcp.us}}, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 亚洲 | 香港D
-  - 亚洲 | 日本B
-  - 亚洲 | 香港B
-  - 亚洲 | 香港C
-  - 亚洲 | 马来西亚
-  - "[CT/CM] HKT B"
-  - "[CT/CM] HKT N"
-  - "[CT/CM] HKT G"
-  - "[CT/CM] HKBN D"
-  - "[CT/CM] HKT F"
+  - 🇸🇬 Linode
+  - GLaDOS-H2-01
+  - GLaDOS-Railgun-02
+  - GLaDOS-Railgun-09
+  - GLaDOS-Railgun-03
+  - GLaDOS-Railgun-01
+  - 【直连】ICN/首尔 - 4
+  - 【直连】ICN/首尔 - 80端口 - 1
+  - 美国
+  - 【越南】峰值150M-NetFlix 解锁
+  - 🇭🇰HK1
+  - 🇭🇰HK2
+  - 🇭🇰HK3
+  - 🇭🇰HK4
+  - 🇭🇰HK5
+  - 🇭🇰HK6
+  - 🇭🇰HK7
+  - 🇭🇰HK8
+  - 🇭🇰HK9
   - 【直连】HKG/香港 - 2
-  - 【直连】SIN/狮城 - 1
-  - 【直连】ICN/首尔 - 3
-  - 美国 03
-  - 德国 01
-  - 新加坡 01
-  - Level1 Japan 03
-  - Level1 Japan 04
-  - 韩国
-  - 法国
-  - 德国
-  - 英国
-  - 土耳其
-  - 荷兰
   - 巴西
-  - 【日本】01
-  - 【新加坡】02
-  - 【香港】峰值1000M-NetFlix 解锁
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 亚洲 | 香港D
-  - 亚洲 | 日本B
-  - 亚洲 | 香港B
-  - 亚洲 | 香港C
-  - 亚洲 | 马来西亚
-  - "[CT/CM] HKT B"
-  - "[CT/CM] HKT N"
-  - "[CT/CM] HKT G"
-  - "[CT/CM] HKBN D"
-  - "[CT/CM] HKT F"
+  - 🇸🇬 Linode
+  - GLaDOS-H2-01
+  - GLaDOS-Railgun-02
+  - GLaDOS-Railgun-09
+  - GLaDOS-Railgun-03
+  - GLaDOS-Railgun-01
+  - 【直连】ICN/首尔 - 4
+  - 【直连】ICN/首尔 - 80端口 - 1
+  - 美国
+  - 【越南】峰值150M-NetFlix 解锁
+  - 🇭🇰HK1
+  - 🇭🇰HK2
+  - 🇭🇰HK3
+  - 🇭🇰HK4
+  - 🇭🇰HK5
+  - 🇭🇰HK6
+  - 🇭🇰HK7
+  - 🇭🇰HK8
+  - 🇭🇰HK9
   - 【直连】HKG/香港 - 2
-  - 【直连】SIN/狮城 - 1
-  - 【直连】ICN/首尔 - 3
-  - 美国 03
-  - 德国 01
-  - 新加坡 01
-  - Level1 Japan 03
-  - Level1 Japan 04
-  - 韩国
-  - 法国
-  - 德国
-  - 英国
-  - 土耳其
-  - 荷兰
   - 巴西
-  - 【日本】01
-  - 【新加坡】02
-  - 【香港】峰值1000M-NetFlix 解锁
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:

@@ -4,53 +4,275 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_1, server: zfd-moblev2.gatknqh.cn, port: 16113, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, network: tcp}
-  - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_2, server: zfd-moblev2.gatknqh.cn, port: 16113, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, network: tcp}
-  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /ray, headers: {host: localhoster.ml}}, server: 172.67.196.0, port: 443, uuid: 4db99e96-3ee3-419c-b1fb-856975801380, alterId: 0, cipher: auto, network: ws, tls: true}
-  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /ray, headers: {host: localhoster.ml}}, server: 172.67.196.0, port: 443, uuid: 4db99e96-3ee3-419c-b1fb-856975801380, alterId: 0, cipher: auto, network: ws, tls: true}
-  - {type: vmess, name: (欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /dongtaiwang.com, headers: {host: lg1.cfcdn3.xyz}}, server: 141.101.115.120, port: 443, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_1, server: zfd-moble.gatknqh.cn, port: 16131, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: (欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /dongtaiwang.com, headers: {host: clash1.trump2023.net}}, server: 141.101.114.20, port: 443, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: (欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /dongtaiwang.com, headers: {host: v2ray1.zhujicn2.org}}, server: 141.101.114.33, port: 443, uuid: e5a88ce2-fc1b-45d1-9c5f-553721d28004, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇭🇰香港(欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 8.210.119.159, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 47.91.17.249, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 47.74.43.158, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_3, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 47.91.11.23, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_4, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 47.74.32.51, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_5, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 47.74.21.12, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_6, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 47.74.51.122, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_7, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 47.91.23.182, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇭🇰香港(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 47.243.62.222, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 138.2.122.225, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 146.56.162.25, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 47.254.146.203, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 47.254.156.141, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_3, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 47.254.159.6, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇭🇰香港(欢迎订阅Youtube元亨利贞)_3, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 167.179.32.53, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_4, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 47.254.159.202, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_5, ws-opts: {path: /v2ray, headers: {host: idnusa2.vpn-akcelluler.my.id}}, server: 47.254.175.154, port: 443, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: trojan, name: 🇭🇰香港(欢迎订阅Youtube元亨利贞)_4, server: hk1.sanfen001.pics, port: 443, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, udp: true, skip-cert-verify: true, sni: hk1.sanfen001.pics}
+  - {type: vmess, name: 🇭🇰香港(欢迎订阅Youtube元亨利贞)_5, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 159.100.206.88, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇭🇰香港(欢迎订阅Youtube元亨利贞)_6, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.243.92.11, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇭🇰香港(欢迎订阅Youtube元亨利贞)_7, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.242.44.57, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_8, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.245.25.67, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: ss, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_9, server: 85.208.108.60, port: 8091, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {type: vmess, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_10, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 158.101.150.139, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_6, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 47.254.155.155, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 172.64.154.201, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_7, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 47.254.146.203, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇭🇰香港(欢迎订阅Youtube元亨利贞)_8, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 47.242.44.57, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇭🇰香港(欢迎订阅Youtube元亨利贞)_9, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 47.243.92.11, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_3, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 152.69.204.164, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_4, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 150.230.221.227, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_8, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 47.254.174.110, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_9, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 47.254.128.86, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_10, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 47.254.154.24, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇯🇵日本(欢迎订阅Youtube元亨利贞)_11, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 47.245.53.29, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_5, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 138.2.122.225, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_11, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 47.254.149.0, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_6, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 138.2.52.244, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_12, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 47.254.175.154, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_13, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 47.254.148.87, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 146.56.166.153, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_14, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 47.254.175.195, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_15, ws-opts: {path: /wo.png, headers: {host: els200.jklist.ga}}, server: 47.254.159.202, port: 2095, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, network: ws}
+  - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 113.31.124.147, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_3, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 106.75.218.112, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_7, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 138.2.52.244, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_3, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 146.56.166.153, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_4, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 146.56.149.205, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇫🇷法国(欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 152.228.191.232, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇫🇷法国(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 198.244.148.214, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_16, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.132.101, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_17, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.155.155, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_18, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.154.24, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_19, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.128.86, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_20, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.155.106, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_21, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.174.110, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_22, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.171.171, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_23, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.131.159, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_24, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.132.62, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_25, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.135.214, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_26, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.157.203, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_27, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.174.173, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_28, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.149.0, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_29, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.176.217, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_30, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.175.195, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_31, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.148.87, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_32, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.173.55, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇩🇪德国(欢迎订阅Youtube元亨利贞)_33, ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 47.254.171.201, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇦🇺澳大利亚(欢迎订阅Youtube元亨利贞), ws-opts: {path: /ray, headers: {host: lg30.cfcdn3.xyz}}, server: 139.99.236.163, port: 443, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_8, ws-opts: {path: /bxfbvws, headers: {host: h5528.1808.cf}}, server: cf.731808.tk, port: 443, uuid: 8194f724-d648-4eb8-98d2-0013136e79f0, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: trojan, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_9, server: kr2.sanfen001.pics, port: 443, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, udp: true, skip-cert-verify: true, sni: kr1.sanfen001.pics}
+  - {type: vmess, name: 🇷🇺俄罗斯联邦(欢迎订阅Youtube元亨利贞)_1, server: pf.napsternetv.com, port: 34142, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, network: tcp, tls: true}
+  - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_4, server: zfd-unicomv2.gatknqh.cn, port: 16106, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_10, ws-opts: {path: /gceevws, headers: {host: www.xt000.xyz}}, server: www.xt000.xyz, port: 443, uuid: 80782eff-e3fe-fc69-37cd-7efd760adf91, alterId: 0, cipher: auto, network: ws, tls: true}
   - {type: vmess, name: 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_1, ws-opts: {path: /linod, headers: {host: lindo.cnabc.eu.org}}, server: 211.72.35.110, port: 443, uuid: f6d7b072-de00-45dc-9e24-49f8cf43530d, alterId: 0, cipher: auto, network: ws, tls: true}
-  - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_3, server: zfd-moble.gatknqh.cn, port: 16131, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, network: tcp}
-  - {type: vmess, name: (欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /dongtaiwang.com, headers: {host: clash1.trump2023.net}}, server: 141.101.114.20, port: 443, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, network: ws, tls: true}
-  - {type: vmess, name: (欢迎订阅Youtube元亨利贞)_3, ws-opts: {path: /dongtaiwang.com, headers: {host: v2ray1.zhujicn2.org}}, server: 141.101.114.33, port: 443, uuid: e5a88ce2-fc1b-45d1-9c5f-553721d28004, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇷🇺俄罗斯联邦(欢迎订阅Youtube元亨利贞)_2, server: pf.napsternetv.com, port: 34141, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, network: tcp, tls: true}
+  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_11, ws-opts: {path: /nl7-EcxxxOvD}, server: nl7a.aagogo.cf, port: 443, uuid: 10759c14-d72f-346d-8d6a-af349e5ecd69, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_12, ws-opts: {path: /ray, headers: {host: localhoster.ml}}, server: 172.67.196.0, port: 443, uuid: 4db99e96-3ee3-419c-b1fb-856975801380, alterId: 64, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇺🇸美国(欢迎订阅Youtube元亨利贞)_13, ws-opts: {path: /v2ray, headers: {host: ssru.v2.jp01.2yun.win}}, server: ah.yd01.paopaocloud.cyou, port: 10007, uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2, alterId: 0, cipher: auto, network: ws, tls: true}
+  - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_5, server: zfd-moblev2.gatknqh.cn, port: 16119, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, network: tcp}
   - {type: vmess, name: 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_2, ws-opts: {path: /howdy, headers: {host: v2ray2.udpgw.com}}, server: 220.130.80.179, port: 443, uuid: ceb8a7f4-a45b-48a7-8f8e-ca7124a5ebee, alterId: 0, cipher: auto, network: ws, tls: true}
-  - {type: vmess, name: (欢迎订阅Youtube元亨利贞)_4, ws-opts: {path: /dongtaiwang.com, headers: {host: v2ray1.zhujicn2.org}}, server: 141.101.114.33, port: 443, uuid: e5a88ce2-fc1b-45d1-9c5f-553721d28004, alterId: 0, cipher: auto, network: ws, tls: true}
-  - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_4, server: zfd-moblev2.gatknqh.cn, port: 16116, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, network: tcp}
-  - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_5, server: zfd-moblev2.gatknqh.cn, port: 16116, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_6, server: zfd-moblev2.gatknqh.cn, port: 16116, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_7, server: zfd-moblev2.gatknqh.cn, port: 16113, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, network: tcp}
+  - {type: vmess, name: 🇨🇳中国(欢迎订阅Youtube元亨利贞)_8, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: tv.cctv.com}}, server: ingress-i2.iivvppnn.info, port: 38102, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, network: ws}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_1
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_2
-  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_1
-  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_2
   - (欢迎订阅Youtube元亨利贞)_1
-  - 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_1
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_3
   - (欢迎订阅Youtube元亨利贞)_2
-  - (欢迎订阅Youtube元亨利贞)_3
-  - 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_2
-  - (欢迎订阅Youtube元亨利贞)_4
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_1
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_1
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_2
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_3
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_4
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_5
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_6
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_7
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_2
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_1
+  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_1
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_1
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_2
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_3
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_3
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_4
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_5
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_4
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_5
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_6
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_7
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_8
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_9
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_10
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_6
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_2
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_7
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_8
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_9
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_3
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_4
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_8
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_9
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_10
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_11
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_5
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_11
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_6
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_12
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_13
+  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_2
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_14
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_15
+  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_2
+  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_3
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_7
+  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_3
+  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_4
+  - 🇫🇷法国(欢迎订阅Youtube元亨利贞)_1
+  - 🇫🇷法国(欢迎订阅Youtube元亨利贞)_2
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_16
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_17
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_18
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_19
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_20
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_21
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_22
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_23
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_24
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_25
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_26
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_27
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_28
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_29
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_30
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_31
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_32
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_33
+  - 🇦🇺澳大利亚(欢迎订阅Youtube元亨利贞)
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_8
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_9
+  - 🇷🇺俄罗斯联邦(欢迎订阅Youtube元亨利贞)_1
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_4
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_10
+  - 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_1
+  - 🇷🇺俄罗斯联邦(欢迎订阅Youtube元亨利贞)_2
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_11
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_12
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_13
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_5
+  - 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_2
+  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_6
+  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_7
+  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_8
 - name: ♻️ automatic
   type: url-test
   proxies:
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_1
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_2
-  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_1
-  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_2
   - (欢迎订阅Youtube元亨利贞)_1
-  - 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_1
-  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_3
   - (欢迎订阅Youtube元亨利贞)_2
-  - (欢迎订阅Youtube元亨利贞)_3
-  - 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_2
-  - (欢迎订阅Youtube元亨利贞)_4
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_1
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_1
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_2
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_3
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_4
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_5
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_6
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_7
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_2
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_1
+  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_1
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_1
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_2
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_3
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_3
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_4
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_5
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_4
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_5
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_6
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_7
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_8
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_9
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_10
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_6
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_2
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_7
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_8
+  - 🇭🇰香港(欢迎订阅Youtube元亨利贞)_9
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_3
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_4
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_8
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_9
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_10
+  - 🇯🇵日本(欢迎订阅Youtube元亨利贞)_11
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_5
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_11
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_6
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_12
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_13
+  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_2
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_14
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_15
+  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_2
+  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_3
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_7
+  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_3
+  - 🇰🇷韩国(欢迎订阅Youtube元亨利贞)_4
+  - 🇫🇷法国(欢迎订阅Youtube元亨利贞)_1
+  - 🇫🇷法国(欢迎订阅Youtube元亨利贞)_2
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_16
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_17
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_18
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_19
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_20
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_21
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_22
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_23
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_24
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_25
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_26
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_27
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_28
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_29
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_30
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_31
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_32
+  - 🇩🇪德国(欢迎订阅Youtube元亨利贞)_33
+  - 🇦🇺澳大利亚(欢迎订阅Youtube元亨利贞)
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_8
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_9
+  - 🇷🇺俄罗斯联邦(欢迎订阅Youtube元亨利贞)_1
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_4
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_10
+  - 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_1
+  - 🇷🇺俄罗斯联邦(欢迎订阅Youtube元亨利贞)_2
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_11
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_12
+  - 🇺🇸美国(欢迎订阅Youtube元亨利贞)_13
   - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_5
+  - 🇹🇼台湾(欢迎订阅Youtube元亨利贞)_2
+  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_6
+  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_7
+  - 🇨🇳中国(欢迎订阅Youtube元亨利贞)_8
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
