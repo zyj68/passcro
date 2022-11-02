@@ -1,0 +1,9 @@
+https://github.com/2dust/v2rayN/issues/1013
+
+
+默认的http://speedtest-sgp1.digitalocean.com/10mb.test 为单点新加坡服务器，使用一些冷门线路VPS的时候因线路影响，不能获得更加准确的实际速度测试。
+
+额外信息（推荐）
+使用cloudflare或者cachefly的10mb的cdn文件，可以获得更加准确的测试（cloudflare对客户端的ip识别更加准确，推荐使用，cachefly可作为备用）.
+url1：https://speed.cloudflare.com/__down?bytes=10000000
+url2：http://cachefly.cachefly.net/10mb.test
