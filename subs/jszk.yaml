@@ -4,92 +4,167 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇸🇬 Linode3, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
   - {name: 🇸🇬 Linode, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
+  - {name: 🇸🇬 Linode3, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
   - {name: 🇸🇬 Linode IPv6, server: sg.ipv6.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: Scloud台湾02|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 7e4cce7c-15b4-4436-9b75-28f483d63161, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /schinet02, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 香港BGP02|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 7e4cce7c-15b4-4436-9b75-28f483d63161, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /BGP02, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 新加坡02|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 7e4cce7c-15b4-4436-9b75-28f483d63161, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /doxjp03, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 香港BGP03|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 7e4cce7c-15b4-4436-9b75-28f483d63161, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /BGP03, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 新加坡04|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 7e4cce7c-15b4-4436-9b75-28f483d63161, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /doxjp04, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: Scloud台湾06-原生IP, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 7e4cce7c-15b4-4436-9b75-28f483d63161, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /scloudhinet06, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 新加坡备用02, server: 117sg2.bfyun.top, port: 3385, type: vmess, uuid: 570d6b22-2094-48a0-8933-ca027e32f010, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 117sg2.bfyun.top}}, udp: true}
-  - {name: 日本直连|高速, server: zzjp.bfyun.top, port: 10021, type: vmess, uuid: 570d6b22-2094-48a0-8933-ca027e32f010, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: zzjp.bfyun.top}}, udp: true}
-  - {name: 距离下次重置剩余：23 天, server: zzjp.bfyun.top, port: 10021, type: vmess, uuid: 570d6b22-2094-48a0-8933-ca027e32f010, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: zzjp.bfyun.top}}, udp: true}
-  - {name: 剩余流量：1000 GB, server: zzjp.bfyun.top, port: 10021, type: vmess, uuid: 570d6b22-2094-48a0-8933-ca027e32f010, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: zzjp.bfyun.top}}, udp: true}
-  - {name: 套餐到期：2022-12-07, server: zzjp.bfyun.top, port: 10021, type: vmess, uuid: 570d6b22-2094-48a0-8933-ca027e32f010, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: zzjp.bfyun.top}}, udp: true}
-  - {name: 日本备用节点01, server: 117jp1.bfyun.top, port: 13568, type: vmess, uuid: 570d6b22-2094-48a0-8933-ca027e32f010, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv10/hd.m3u8, headers: {Host: 117jp1.bfyun.top}}, udp: true}
-  - {name: 新加坡备用03, server: 117sg3.bfyun.top, port: 4481, type: vmess, uuid: 570d6b22-2094-48a0-8933-ca027e32f010, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 117sg3.bfyun.top}}, udp: true}
-  - {name: 【纽约02】峰值1000M-NetFlix 解锁, server: mgny1.xbywwcp.us, port: 80, type: vmess, uuid: e3dcfe09-bda5-35db-a717-0f6e5bc2f4cb, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: a.189.cn}}, udp: true}
-  - {name: 🇭🇰HongKong-04, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
+  - {name: 🇹🇼 台湾 | Trojan | B | 1.0X | 黄金 | 原生動態IP |, server: TW.xibai6.top, port: 31007, type: trojan, password: e0ef6178-23ad-3385-9e72-b93820a847da, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 台湾 | Trojan | C | 1.0X | 黄金 | 原生動態IP |, server: TW.xibai6.top, port: 31008, type: trojan, password: e0ef6178-23ad-3385-9e72-b93820a847da, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 台湾 | Trojan | D | 1.0X | 黄金 | 原生動態IP |, server: TW.xibai6.top, port: 31009, type: trojan, password: e0ef6178-23ad-3385-9e72-b93820a847da, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰  香港 | Trojan | N | 0.2X | 白銀 | 港區流媒體解鎖 |, server: azhj001.xibai6.top, port: 20782, type: trojan, password: e0ef6178-23ad-3385-9e72-b93820a847da, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰  香港 | Trojan | L | 0.2X | 白銀 | 港區流媒體解鎖 |, server: azhj001.xibai6.top, port: 20780, type: trojan, password: e0ef6178-23ad-3385-9e72-b93820a847da, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰HK12, server: v9.583181.xyz, port: 443, type: vmess, uuid: dac68179-449a-4f47-854c-30f0ce488fba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: 🇭🇰HK13, server: v8.583181.xyz, port: 80, type: vmess, uuid: dac68179-449a-4f47-854c-30f0ce488fba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: 🇭🇰HK14, server: v3.583181.xyz, port: 80, type: vmess, uuid: dac68179-449a-4f47-854c-30f0ce488fba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: 🇭🇰HK15, server: v1.583181.xyz, port: 80, type: vmess, uuid: dac68179-449a-4f47-854c-30f0ce488fba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: 🇭🇰HK16, server: sg.vpntransfer.xyz, port: 10000, type: vmess, uuid: dac68179-449a-4f47-854c-30f0ce488fba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: 🇭🇰HK17, server: sg.vpntransfer.xyz, port: 7832, type: vmess, uuid: dac68179-449a-4f47-854c-30f0ce488fba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: 🇭🇰HK18, server: v11.583181.xyz, port: 80, type: vmess, uuid: dac68179-449a-4f47-854c-30f0ce488fba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: 🇭🇰HK19, server: v2.583181.xyz, port: 80, type: vmess, uuid: dac68179-449a-4f47-854c-30f0ce488fba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D05, server: hkt05.clashcloud.tech, port: 44517, type: ss, cipher: rc4-md5, password: d4r0EH, udp: true}
+  - {name: 🇭🇰 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB, server: hk06.clashcloud.tech, port: 44517, type: ss, cipher: rc4-md5, password: d4r0EH, udp: true}
+  - {name: 🇭🇰 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB, server: sg03.clashcloud.tech, port: 44517, type: ss, cipher: rc4-md5, password: d4r0EH, udp: true}
+  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01, server: pvcc01.clashcloud.tech, port: 44517, type: ss, cipher: rc4-md5, password: d4r0EH, udp: true}
+  - {name: 🇭🇰 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB, server: sg04.clashcloud.tech, port: 44517, type: ss, cipher: rc4-md5, password: d4r0EH, udp: true}
+  - {name: 🇭🇰 中国-香港 IPLC Equinix HK2 D 05 1Gbps HBO TVB, server: sg05.clashcloud.tech, port: 44517, type: ss, cipher: rc4-md5, password: d4r0EH, udp: true}
+  - {name: 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D01, server: hkt01.clashcloud.tech, port: 44517, type: ss, cipher: rc4-md5, password: d4r0EH, udp: true}
+  - {name: 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D06, server: hkt06.clashcloud.tech, port: 44517, type: ss, cipher: rc4-md5, password: d4r0EH, udp: true}
+  - {name: 韩国 01|v2直连|x2|高速|流媒体解锁, server: jptr1.bfyun.top, port: 8888, type: vmess, uuid: 34786ab0-8443-4f76-b0c9-58b9be412fa8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: jptr1.bfyun.top}}, udp: true}
+  - {name: 剩余流量：621.79 GB, server: jptr1.bfyun.top, port: 8888, type: vmess, uuid: 34786ab0-8443-4f76-b0c9-58b9be412fa8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: jptr1.bfyun.top}}, udp: true}
+  - {name: 距离下次重置剩余：22 天, server: jptr1.bfyun.top, port: 8888, type: vmess, uuid: 34786ab0-8443-4f76-b0c9-58b9be412fa8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: jptr1.bfyun.top}}, udp: true}
+  - {name: 套餐到期：2022-12-07, server: jptr1.bfyun.top, port: 8888, type: vmess, uuid: 34786ab0-8443-4f76-b0c9-58b9be412fa8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: jptr1.bfyun.top}}, udp: true}
+  - {name: 台湾-02, server: 20001.purefast2.com, port: 20001, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: 法国, server: 20010.purefast2.com, port: 20010, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰HK10, server: vinaphone2.4gsinhvien.me, port: 26, type: vmess, uuid: 8acdc72c-3501-433b-9869-3a91ae4b5d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: static.vnpt.vn}}, udp: true}
+  - {name: 🇭🇰HK11, server: vinaphone1.4gsinhvien.me, port: 26, type: vmess, uuid: 8acdc72c-3501-433b-9869-3a91ae4b5d90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: static.vnpt.vn}}, udp: true}
+  - {name: 【纽约03】NetFlix 解锁, server: mgny2.xbywwcp.us, port: 80, type: vmess, uuid: e3dcfe09-bda5-35db-a717-0f6e5bc2f4cb, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 🇭🇰HK1, server: bit-moble.gatknqh.cn, port: 12002, type: vmess, uuid: 5d00a662-960f-42bc-9f7b-00395059e093, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰HK2, server: v8.583181.xyz, port: 80, type: vmess, uuid: dac68179-449a-4f47-854c-30f0ce488fba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22pull.free.video.10010.com%22%7D"}}, udp: true}
+  - {name: 🇭🇰HK3, server: 103.172.116.5, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: 🇭🇰HK4, server: t1.583181.xyz, port: 80, type: trojan, password: dac68179-449a-4f47-854c-30f0ce488fba, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰HK5, server: v3.583181.xyz, port: 80, type: vmess, uuid: dac68179-449a-4f47-854c-30f0ce488fba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22pull.free.video.10010.com%22%7D"}}, udp: true}
+  - {name: 🇭🇰HK6, server: 20001.purefast2.com, port: 20001, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰HK7, server: v1.583181.xyz, port: 80, type: vmess, uuid: dac68179-449a-4f47-854c-30f0ce488fba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22pull.free.video.10010.com%22%7D"}}, udp: true}
+  - {name: 🇭🇰HK8, server: sg.vpntransfer.xyz, port: 7832, type: vmess, uuid: dac68179-449a-4f47-854c-30f0ce488fba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22pull.free.video.10010.com%22%7D"}}, udp: true}
+  - {name: 🇭🇰HK9, server: v2.583181.xyz, port: 80, type: vmess, uuid: dac68179-449a-4f47-854c-30f0ce488fba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22pull.free.video.10010.com%22%7D"}}, udp: true}
   - {name: 🇭🇰HongKong-17, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
+  - {name: 🇭🇰HongKong-04, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
   - {name: 🇭🇰HongKong-07, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
+  - {name: 🇭🇰HongKong-19, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
+  - {name: 🇭🇰HongKong-11, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
+  - {name: 🇭🇰HongKong-06, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
+  - {name: 🇭🇰HongKong-12, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
   - {name: 🇭🇰HongKong-14, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
   - {name: 🇭🇰HongKong-16, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-12, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-06, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-11, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-19, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 🇸🇬 Linode3
   - 🇸🇬 Linode
+  - 🇸🇬 Linode3
   - 🇸🇬 Linode IPv6
-  - Scloud台湾02|三网优化|解锁流媒体|1x
-  - 香港BGP02|优选原生IP|1x
-  - 新加坡02|三网优化|解锁流媒体|1x
-  - 香港BGP03|优选原生IP|1x
-  - 新加坡04|三网优化|解锁流媒体|1x
-  - Scloud台湾06-原生IP
-  - 新加坡备用02
-  - 日本直连|高速
-  - 距离下次重置剩余：23 天
-  - 剩余流量：1000 GB
+  - 🇹🇼 台湾 | Trojan | B | 1.0X | 黄金 | 原生動態IP |
+  - 🇹🇼 台湾 | Trojan | C | 1.0X | 黄金 | 原生動態IP |
+  - 🇹🇼 台湾 | Trojan | D | 1.0X | 黄金 | 原生動態IP |
+  - 🇭🇰  香港 | Trojan | N | 0.2X | 白銀 | 港區流媒體解鎖 |
+  - 🇭🇰  香港 | Trojan | L | 0.2X | 白銀 | 港區流媒體解鎖 |
+  - 🇭🇰HK12
+  - 🇭🇰HK13
+  - 🇭🇰HK14
+  - 🇭🇰HK15
+  - 🇭🇰HK16
+  - 🇭🇰HK17
+  - 🇭🇰HK18
+  - 🇭🇰HK19
+  - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D05
+  - 🇭🇰 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
+  - 🇭🇰 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
+  - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
+  - 🇭🇰 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
+  - 🇭🇰 中国-香港 IPLC Equinix HK2 D 05 1Gbps HBO TVB
+  - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D01
+  - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D06
+  - 韩国 01|v2直连|x2|高速|流媒体解锁
+  - 剩余流量：621.79 GB
+  - 距离下次重置剩余：22 天
   - 套餐到期：2022-12-07
-  - 日本备用节点01
-  - 新加坡备用03
-  - 【纽约02】峰值1000M-NetFlix 解锁
-  - 🇭🇰HongKong-04
+  - 台湾-02
+  - 法国
+  - 🇭🇰HK10
+  - 🇭🇰HK11
+  - 【纽约03】NetFlix 解锁
+  - 🇭🇰HK1
+  - 🇭🇰HK2
+  - 🇭🇰HK3
+  - 🇭🇰HK4
+  - 🇭🇰HK5
+  - 🇭🇰HK6
+  - 🇭🇰HK7
+  - 🇭🇰HK8
+  - 🇭🇰HK9
   - 🇭🇰HongKong-17
+  - 🇭🇰HongKong-04
   - 🇭🇰HongKong-07
+  - 🇭🇰HongKong-19
+  - 🇭🇰HongKong-11
+  - 🇭🇰HongKong-06
+  - 🇭🇰HongKong-12
   - 🇭🇰HongKong-14
   - 🇭🇰HongKong-16
-  - 🇭🇰HongKong-12
-  - 🇭🇰HongKong-06
-  - 🇭🇰HongKong-11
-  - 🇭🇰HongKong-19
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 🇸🇬 Linode3
   - 🇸🇬 Linode
+  - 🇸🇬 Linode3
   - 🇸🇬 Linode IPv6
-  - Scloud台湾02|三网优化|解锁流媒体|1x
-  - 香港BGP02|优选原生IP|1x
-  - 新加坡02|三网优化|解锁流媒体|1x
-  - 香港BGP03|优选原生IP|1x
-  - 新加坡04|三网优化|解锁流媒体|1x
-  - Scloud台湾06-原生IP
-  - 新加坡备用02
-  - 日本直连|高速
-  - 距离下次重置剩余：23 天
-  - 剩余流量：1000 GB
+  - 🇹🇼 台湾 | Trojan | B | 1.0X | 黄金 | 原生動態IP |
+  - 🇹🇼 台湾 | Trojan | C | 1.0X | 黄金 | 原生動態IP |
+  - 🇹🇼 台湾 | Trojan | D | 1.0X | 黄金 | 原生動態IP |
+  - 🇭🇰  香港 | Trojan | N | 0.2X | 白銀 | 港區流媒體解鎖 |
+  - 🇭🇰  香港 | Trojan | L | 0.2X | 白銀 | 港區流媒體解鎖 |
+  - 🇭🇰HK12
+  - 🇭🇰HK13
+  - 🇭🇰HK14
+  - 🇭🇰HK15
+  - 🇭🇰HK16
+  - 🇭🇰HK17
+  - 🇭🇰HK18
+  - 🇭🇰HK19
+  - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D05
+  - 🇭🇰 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
+  - 🇭🇰 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
+  - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
+  - 🇭🇰 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
+  - 🇭🇰 中国-香港 IPLC Equinix HK2 D 05 1Gbps HBO TVB
+  - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D01
+  - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D06
+  - 韩国 01|v2直连|x2|高速|流媒体解锁
+  - 剩余流量：621.79 GB
+  - 距离下次重置剩余：22 天
   - 套餐到期：2022-12-07
-  - 日本备用节点01
-  - 新加坡备用03
-  - 【纽约02】峰值1000M-NetFlix 解锁
-  - 🇭🇰HongKong-04
+  - 台湾-02
+  - 法国
+  - 🇭🇰HK10
+  - 🇭🇰HK11
+  - 【纽约03】NetFlix 解锁
+  - 🇭🇰HK1
+  - 🇭🇰HK2
+  - 🇭🇰HK3
+  - 🇭🇰HK4
+  - 🇭🇰HK5
+  - 🇭🇰HK6
+  - 🇭🇰HK7
+  - 🇭🇰HK8
+  - 🇭🇰HK9
   - 🇭🇰HongKong-17
+  - 🇭🇰HongKong-04
   - 🇭🇰HongKong-07
+  - 🇭🇰HongKong-19
+  - 🇭🇰HongKong-11
+  - 🇭🇰HongKong-06
+  - 🇭🇰HongKong-12
   - 🇭🇰HongKong-14
   - 🇭🇰HongKong-16
-  - 🇭🇰HongKong-12
-  - 🇭🇰HongKong-06
-  - 🇭🇰HongKong-11
-  - 🇭🇰HongKong-19
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
