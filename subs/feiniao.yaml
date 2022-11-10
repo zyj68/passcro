@@ -8,38 +8,55 @@ proxies:
   - {name: 日本专线, server: 116.129.254.5, port: 4569, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 98a8231722.dm.files.1drv.com}, udp: true}
   - {name: 香港专线, server: 211.99.96.117, port: 65025, type: trojan, password: 967126bb-b719-36c3-977c-6409aff8c899, skip-cert-verify: true, udp: true}
   - {name: 香港专线 2, server: 211.99.96.118, port: 21119, type: ss, cipher: chacha20-ietf, password: 1AOv6P, udp: true}
-  - {name: 香港HGC-高速中转|1x, server: 165.154.241.29, port: 48888, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /daxun/hkhgc, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 美国洛杉矶-中转|1x, server: 165.154.241.29, port: 48888, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /daxun/us1, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: DE德国001, server: de.liangyuandian.top, port: 443, type: trojan, password: 18304160-03d4-4c55-95c1-586c0a5f3a0a, sni: de.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: CA加拿大001, server: ca.liangyuandian.top, port: 443, type: trojan, password: 18304160-03d4-4c55-95c1-586c0a5f3a0a, sni: ca.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: AU澳大利亚001, server: ap.liangyuandian.top, port: 443, type: trojan, password: 18304160-03d4-4c55-95c1-586c0a5f3a0a, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: UK英国001, server: uk.liangyuandian.top, port: 443, type: trojan, password: 18304160-03d4-4c55-95c1-586c0a5f3a0a, sni: uk.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: 新加坡→直连→0.5x-流媒体, server: sg.tencent.cfd, port: 64177, type: vmess, uuid: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg.tencent.cfd}, udp: true}
+  - {name: 美国→直连→0.5x-流媒体, server: us.tencent.cfd, port: 60578, type: vmess, uuid: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us.tencent.cfd}, udp: true}
+  - {name: 德国→直连→0.2x-流媒体, server: 192.145.44.206, port: 57517, type: vmess, uuid: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 192.145.44.206}, udp: true}
+  - {name: 美西Atl→直连→1x-流媒体, server: us-atl.tencent.cfd, port: 64913, type: vmess, uuid: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us-atl.tencent.cfd}, udp: true}
+  - {name: 香港→CMI三网→2.8x-流媒体, server: hk-cmi.tencent.cfd, port: 64973, type: vmess, uuid: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-cmi.tencent.cfd}, udp: true}
+  - {name: 香港HKT→海港→2.2x-流媒体, server: 124.225.24.191, port: 10374, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 香港HKT→苏新→2.2x-流媒体, server: cn1.cdn.zeroteam.top, port: 14073, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 新加坡→海港-1.7x-流媒体, server: 124.225.24.191, port: 10155, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 新加坡→苏新-1.7x-流媒体, server: cn1.cdn.zeroteam.top, port: 41393, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 日本→海港→1.7x-流媒体, server: 124.225.24.191, port: 10192, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 日本→苏新→1.7x-流媒体, server: cn1.cdn.zeroteam.top, port: 28508, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 新加坡→海港-活动-0.1x-流媒体, server: hnct.daodecloud.com, port: 40496, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 新加坡→广港-活动-0.1x-流媒体, server: gzct.daodecloud.com, port: 25087, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 日本→海港-活动→0.1x-流媒体, server: hnct.daodecloud.com, port: 32411, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 日本→广港-活动→0.1x-流媒体, server: gzct.daodecloud.com, port: 44807, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 美国→海港-活动→0.1x-流媒体, server: hnct.daodecloud.com, port: 15456, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 美国→广港-活动→0.1x-流媒体, server: gzct.daodecloud.com, port: 45945, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 印度→海港-活动→0.1x-流媒体, server: hnct.daodecloud.com, port: 47531, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 印度→广港-活动→0.1x-流媒体, server: gzct.daodecloud.com, port: 42205, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 英国→海港-活动→0.1x-流媒体, server: hnct.daodecloud.com, port: 29671, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
+  - {name: 英国→广港-活动→0.1x-流媒体, server: gzct.daodecloud.com, port: 27638, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
   - {name: 美国圣何塞-中转|1x, server: 165.154.241.29, port: 48888, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /daxun/us2, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: 香港HKT|防失联直连|1x, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
   - {name: 香港HKT-中转|1x, server: cs.daxun.cyou, port: 48002, type: trojan, password: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, sni: cs.daxun.cyou, skip-cert-verify: true, udp: true}
   - {name: 香港BGP01|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /BGP01, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 香港BGP02|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /BGP02, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 香港BGP03|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /BGP03, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: 新加坡01|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp06, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 新加坡02|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp03, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: 新加坡03|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp01, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: 新加坡04|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp04, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 新加坡05|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp05, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: SJP—新加坡|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /singapore01, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 马来西亚01|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mlxy01, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: 日本02|三网优化|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp02, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: 日本优选原生IP01|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ01, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: 日本优选原生IP02|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ02, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 日本优选原生IP03|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ03, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: 日本原生IP|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp01, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 台湾hinet01|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet04, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: Scloud台湾01|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: Scloud台湾02|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet02, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: Scould台湾03|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet01, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: Scloud台湾04|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet02, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: Scloud台湾05—可下载, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet05, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: Scloud台湾06-原生IP, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet06, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: Scloud台湾07—原生IP, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet07, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 英国|三网优化|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: 加拿大|三网优化|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada1, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 澳大利亚|三网优化|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS01, ws-headers: {Host: gz.daxun.cyou}, udp: true}
-  - {name: 美国|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa04, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: 东京|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dj01, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 韩国|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: www.baidu.com}, udp: true}
   - {name: 印度|三网优化|注册游戏|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yd01, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 日本优选原生IP03|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ03, ws-headers: {Host: www.baidu.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -49,38 +66,55 @@ proxy-groups:
       - 日本专线
       - 香港专线
       - 香港专线 2
-      - 香港HGC-高速中转|1x
-      - 美国洛杉矶-中转|1x
+      - DE德国001
+      - CA加拿大001
+      - AU澳大利亚001
+      - UK英国001
+      - 新加坡→直连→0.5x-流媒体
+      - 美国→直连→0.5x-流媒体
+      - 德国→直连→0.2x-流媒体
+      - 美西Atl→直连→1x-流媒体
+      - 香港→CMI三网→2.8x-流媒体
+      - 香港HKT→海港→2.2x-流媒体
+      - 香港HKT→苏新→2.2x-流媒体
+      - 新加坡→海港-1.7x-流媒体
+      - 新加坡→苏新-1.7x-流媒体
+      - 日本→海港→1.7x-流媒体
+      - 日本→苏新→1.7x-流媒体
+      - 新加坡→海港-活动-0.1x-流媒体
+      - 新加坡→广港-活动-0.1x-流媒体
+      - 日本→海港-活动→0.1x-流媒体
+      - 日本→广港-活动→0.1x-流媒体
+      - 美国→海港-活动→0.1x-流媒体
+      - 美国→广港-活动→0.1x-流媒体
+      - 印度→海港-活动→0.1x-流媒体
+      - 印度→广港-活动→0.1x-流媒体
+      - 英国→海港-活动→0.1x-流媒体
+      - 英国→广港-活动→0.1x-流媒体
       - 美国圣何塞-中转|1x
       - 香港HKT|防失联直连|1x
       - 香港HKT-中转|1x
       - 香港BGP01|优选原生IP|1x
-      - 香港BGP02|优选原生IP|1x
+      - 香港BGP03|优选原生IP|1x
       - 新加坡01|三网优化|解锁流媒体|1x
+      - 新加坡02|三网优化|解锁流媒体|1x
       - 新加坡03|三网优化|解锁流媒体|1x
       - 新加坡04|三网优化|解锁流媒体|1x
-      - 新加坡05|三网优化|解锁流媒体|1x
       - SJP—新加坡|优选原生IP|1x
-      - 马来西亚01|优选原生IP|1x
       - 日本02|三网优化|1x
       - 日本优选原生IP01|解锁流媒体|1x
       - 日本优选原生IP02|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
       - 日本原生IP|解锁流媒体|1x
-      - 台湾hinet01|优选原生IP|1x
       - Scloud台湾01|三网优化|解锁流媒体|1x
       - Scloud台湾02|三网优化|解锁流媒体|1x
       - Scould台湾03|解锁流媒体|1x
       - Scloud台湾04|解锁流媒体|1x
-      - Scloud台湾05—可下载
-      - Scloud台湾06-原生IP
       - Scloud台湾07—原生IP
-      - 英国|三网优化|1x
       - 加拿大|三网优化|1x
-      - 澳大利亚|三网优化|1x
-      - 美国|解锁流媒体|1x
       - 东京|解锁流媒体|1x
+      - 韩国|解锁流媒体|1x
       - 印度|三网优化|注册游戏|1x
+      - 日本优选原生IP03|解锁流媒体|1x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -89,38 +123,55 @@ proxy-groups:
       - 日本专线
       - 香港专线
       - 香港专线 2
-      - 香港HGC-高速中转|1x
-      - 美国洛杉矶-中转|1x
+      - DE德国001
+      - CA加拿大001
+      - AU澳大利亚001
+      - UK英国001
+      - 新加坡→直连→0.5x-流媒体
+      - 美国→直连→0.5x-流媒体
+      - 德国→直连→0.2x-流媒体
+      - 美西Atl→直连→1x-流媒体
+      - 香港→CMI三网→2.8x-流媒体
+      - 香港HKT→海港→2.2x-流媒体
+      - 香港HKT→苏新→2.2x-流媒体
+      - 新加坡→海港-1.7x-流媒体
+      - 新加坡→苏新-1.7x-流媒体
+      - 日本→海港→1.7x-流媒体
+      - 日本→苏新→1.7x-流媒体
+      - 新加坡→海港-活动-0.1x-流媒体
+      - 新加坡→广港-活动-0.1x-流媒体
+      - 日本→海港-活动→0.1x-流媒体
+      - 日本→广港-活动→0.1x-流媒体
+      - 美国→海港-活动→0.1x-流媒体
+      - 美国→广港-活动→0.1x-流媒体
+      - 印度→海港-活动→0.1x-流媒体
+      - 印度→广港-活动→0.1x-流媒体
+      - 英国→海港-活动→0.1x-流媒体
+      - 英国→广港-活动→0.1x-流媒体
       - 美国圣何塞-中转|1x
       - 香港HKT|防失联直连|1x
       - 香港HKT-中转|1x
       - 香港BGP01|优选原生IP|1x
-      - 香港BGP02|优选原生IP|1x
+      - 香港BGP03|优选原生IP|1x
       - 新加坡01|三网优化|解锁流媒体|1x
+      - 新加坡02|三网优化|解锁流媒体|1x
       - 新加坡03|三网优化|解锁流媒体|1x
       - 新加坡04|三网优化|解锁流媒体|1x
-      - 新加坡05|三网优化|解锁流媒体|1x
       - SJP—新加坡|优选原生IP|1x
-      - 马来西亚01|优选原生IP|1x
       - 日本02|三网优化|1x
       - 日本优选原生IP01|解锁流媒体|1x
       - 日本优选原生IP02|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
       - 日本原生IP|解锁流媒体|1x
-      - 台湾hinet01|优选原生IP|1x
       - Scloud台湾01|三网优化|解锁流媒体|1x
       - Scloud台湾02|三网优化|解锁流媒体|1x
       - Scould台湾03|解锁流媒体|1x
       - Scloud台湾04|解锁流媒体|1x
-      - Scloud台湾05—可下载
-      - Scloud台湾06-原生IP
       - Scloud台湾07—原生IP
-      - 英国|三网优化|1x
       - 加拿大|三网优化|1x
-      - 澳大利亚|三网优化|1x
-      - 美国|解锁流媒体|1x
       - 东京|解锁流媒体|1x
+      - 韩国|解锁流媒体|1x
       - 印度|三网优化|注册游戏|1x
+      - 日本优选原生IP03|解锁流媒体|1x
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -130,38 +181,55 @@ proxy-groups:
       - 日本专线
       - 香港专线
       - 香港专线 2
-      - 香港HGC-高速中转|1x
-      - 美国洛杉矶-中转|1x
+      - DE德国001
+      - CA加拿大001
+      - AU澳大利亚001
+      - UK英国001
+      - 新加坡→直连→0.5x-流媒体
+      - 美国→直连→0.5x-流媒体
+      - 德国→直连→0.2x-流媒体
+      - 美西Atl→直连→1x-流媒体
+      - 香港→CMI三网→2.8x-流媒体
+      - 香港HKT→海港→2.2x-流媒体
+      - 香港HKT→苏新→2.2x-流媒体
+      - 新加坡→海港-1.7x-流媒体
+      - 新加坡→苏新-1.7x-流媒体
+      - 日本→海港→1.7x-流媒体
+      - 日本→苏新→1.7x-流媒体
+      - 新加坡→海港-活动-0.1x-流媒体
+      - 新加坡→广港-活动-0.1x-流媒体
+      - 日本→海港-活动→0.1x-流媒体
+      - 日本→广港-活动→0.1x-流媒体
+      - 美国→海港-活动→0.1x-流媒体
+      - 美国→广港-活动→0.1x-流媒体
+      - 印度→海港-活动→0.1x-流媒体
+      - 印度→广港-活动→0.1x-流媒体
+      - 英国→海港-活动→0.1x-流媒体
+      - 英国→广港-活动→0.1x-流媒体
       - 美国圣何塞-中转|1x
       - 香港HKT|防失联直连|1x
       - 香港HKT-中转|1x
       - 香港BGP01|优选原生IP|1x
-      - 香港BGP02|优选原生IP|1x
+      - 香港BGP03|优选原生IP|1x
       - 新加坡01|三网优化|解锁流媒体|1x
+      - 新加坡02|三网优化|解锁流媒体|1x
       - 新加坡03|三网优化|解锁流媒体|1x
       - 新加坡04|三网优化|解锁流媒体|1x
-      - 新加坡05|三网优化|解锁流媒体|1x
       - SJP—新加坡|优选原生IP|1x
-      - 马来西亚01|优选原生IP|1x
       - 日本02|三网优化|1x
       - 日本优选原生IP01|解锁流媒体|1x
       - 日本优选原生IP02|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
       - 日本原生IP|解锁流媒体|1x
-      - 台湾hinet01|优选原生IP|1x
       - Scloud台湾01|三网优化|解锁流媒体|1x
       - Scloud台湾02|三网优化|解锁流媒体|1x
       - Scould台湾03|解锁流媒体|1x
       - Scloud台湾04|解锁流媒体|1x
-      - Scloud台湾05—可下载
-      - Scloud台湾06-原生IP
       - Scloud台湾07—原生IP
-      - 英国|三网优化|1x
       - 加拿大|三网优化|1x
-      - 澳大利亚|三网优化|1x
-      - 美国|解锁流媒体|1x
       - 东京|解锁流媒体|1x
+      - 韩国|解锁流媒体|1x
       - 印度|三网优化|注册游戏|1x
+      - 日本优选原生IP03|解锁流媒体|1x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -183,56 +251,84 @@ proxy-groups:
       - 日本专线
       - 香港专线
       - 香港专线 2
-      - 香港HGC-高速中转|1x
-      - 美国洛杉矶-中转|1x
+      - DE德国001
+      - CA加拿大001
+      - AU澳大利亚001
+      - UK英国001
+      - 新加坡→直连→0.5x-流媒体
+      - 美国→直连→0.5x-流媒体
+      - 德国→直连→0.2x-流媒体
+      - 美西Atl→直连→1x-流媒体
+      - 香港→CMI三网→2.8x-流媒体
+      - 香港HKT→海港→2.2x-流媒体
+      - 香港HKT→苏新→2.2x-流媒体
+      - 新加坡→海港-1.7x-流媒体
+      - 新加坡→苏新-1.7x-流媒体
+      - 日本→海港→1.7x-流媒体
+      - 日本→苏新→1.7x-流媒体
+      - 新加坡→海港-活动-0.1x-流媒体
+      - 新加坡→广港-活动-0.1x-流媒体
+      - 日本→海港-活动→0.1x-流媒体
+      - 日本→广港-活动→0.1x-流媒体
+      - 美国→海港-活动→0.1x-流媒体
+      - 美国→广港-活动→0.1x-流媒体
+      - 印度→海港-活动→0.1x-流媒体
+      - 印度→广港-活动→0.1x-流媒体
+      - 英国→海港-活动→0.1x-流媒体
+      - 英国→广港-活动→0.1x-流媒体
       - 美国圣何塞-中转|1x
       - 香港HKT|防失联直连|1x
       - 香港HKT-中转|1x
       - 香港BGP01|优选原生IP|1x
-      - 香港BGP02|优选原生IP|1x
+      - 香港BGP03|优选原生IP|1x
       - 新加坡01|三网优化|解锁流媒体|1x
+      - 新加坡02|三网优化|解锁流媒体|1x
       - 新加坡03|三网优化|解锁流媒体|1x
       - 新加坡04|三网优化|解锁流媒体|1x
-      - 新加坡05|三网优化|解锁流媒体|1x
       - SJP—新加坡|优选原生IP|1x
-      - 马来西亚01|优选原生IP|1x
       - 日本02|三网优化|1x
       - 日本优选原生IP01|解锁流媒体|1x
       - 日本优选原生IP02|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
       - 日本原生IP|解锁流媒体|1x
-      - 台湾hinet01|优选原生IP|1x
       - Scloud台湾01|三网优化|解锁流媒体|1x
       - Scloud台湾02|三网优化|解锁流媒体|1x
       - Scould台湾03|解锁流媒体|1x
       - Scloud台湾04|解锁流媒体|1x
-      - Scloud台湾05—可下载
-      - Scloud台湾06-原生IP
       - Scloud台湾07—原生IP
-      - 英国|三网优化|1x
       - 加拿大|三网优化|1x
-      - 澳大利亚|三网优化|1x
-      - 美国|解锁流媒体|1x
       - 东京|解锁流媒体|1x
+      - 韩国|解锁流媒体|1x
       - 印度|三网优化|注册游戏|1x
+      - 日本优选原生IP03|解锁流媒体|1x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港专线
       - 香港专线 2
-      - 香港HGC-高速中转|1x
+      - 香港→CMI三网→2.8x-流媒体
+      - 香港HKT→海港→2.2x-流媒体
+      - 香港HKT→苏新→2.2x-流媒体
+      - 新加坡→海港-1.7x-流媒体
+      - 日本→海港→1.7x-流媒体
+      - 新加坡→海港-活动-0.1x-流媒体
+      - 新加坡→广港-活动-0.1x-流媒体
+      - 日本→海港-活动→0.1x-流媒体
+      - 日本→广港-活动→0.1x-流媒体
+      - 美国→海港-活动→0.1x-流媒体
+      - 美国→广港-活动→0.1x-流媒体
+      - 印度→海港-活动→0.1x-流媒体
+      - 印度→广港-活动→0.1x-流媒体
+      - 英国→海港-活动→0.1x-流媒体
+      - 英国→广港-活动→0.1x-流媒体
       - 香港HKT|防失联直连|1x
       - 香港HKT-中转|1x
       - 香港BGP01|优选原生IP|1x
-      - 香港BGP02|优选原生IP|1x
-      - 台湾hinet01|优选原生IP|1x
+      - 香港BGP03|优选原生IP|1x
       - Scloud台湾01|三网优化|解锁流媒体|1x
       - Scloud台湾02|三网优化|解锁流媒体|1x
       - Scould台湾03|解锁流媒体|1x
       - Scloud台湾04|解锁流媒体|1x
-      - Scloud台湾05—可下载
-      - Scloud台湾06-原生IP
       - Scloud台湾07—原生IP
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
@@ -243,38 +339,55 @@ proxy-groups:
       - 日本专线
       - 香港专线
       - 香港专线 2
-      - 香港HGC-高速中转|1x
-      - 美国洛杉矶-中转|1x
+      - DE德国001
+      - CA加拿大001
+      - AU澳大利亚001
+      - UK英国001
+      - 新加坡→直连→0.5x-流媒体
+      - 美国→直连→0.5x-流媒体
+      - 德国→直连→0.2x-流媒体
+      - 美西Atl→直连→1x-流媒体
+      - 香港→CMI三网→2.8x-流媒体
+      - 香港HKT→海港→2.2x-流媒体
+      - 香港HKT→苏新→2.2x-流媒体
+      - 新加坡→海港-1.7x-流媒体
+      - 新加坡→苏新-1.7x-流媒体
+      - 日本→海港→1.7x-流媒体
+      - 日本→苏新→1.7x-流媒体
+      - 新加坡→海港-活动-0.1x-流媒体
+      - 新加坡→广港-活动-0.1x-流媒体
+      - 日本→海港-活动→0.1x-流媒体
+      - 日本→广港-活动→0.1x-流媒体
+      - 美国→海港-活动→0.1x-流媒体
+      - 美国→广港-活动→0.1x-流媒体
+      - 印度→海港-活动→0.1x-流媒体
+      - 印度→广港-活动→0.1x-流媒体
+      - 英国→海港-活动→0.1x-流媒体
+      - 英国→广港-活动→0.1x-流媒体
       - 美国圣何塞-中转|1x
       - 香港HKT|防失联直连|1x
       - 香港HKT-中转|1x
       - 香港BGP01|优选原生IP|1x
-      - 香港BGP02|优选原生IP|1x
+      - 香港BGP03|优选原生IP|1x
       - 新加坡01|三网优化|解锁流媒体|1x
+      - 新加坡02|三网优化|解锁流媒体|1x
       - 新加坡03|三网优化|解锁流媒体|1x
       - 新加坡04|三网优化|解锁流媒体|1x
-      - 新加坡05|三网优化|解锁流媒体|1x
       - SJP—新加坡|优选原生IP|1x
-      - 马来西亚01|优选原生IP|1x
       - 日本02|三网优化|1x
       - 日本优选原生IP01|解锁流媒体|1x
       - 日本优选原生IP02|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
       - 日本原生IP|解锁流媒体|1x
-      - 台湾hinet01|优选原生IP|1x
       - Scloud台湾01|三网优化|解锁流媒体|1x
       - Scloud台湾02|三网优化|解锁流媒体|1x
       - Scould台湾03|解锁流媒体|1x
       - Scloud台湾04|解锁流媒体|1x
-      - Scloud台湾05—可下载
-      - Scloud台湾06-原生IP
       - Scloud台湾07—原生IP
-      - 英国|三网优化|1x
       - 加拿大|三网优化|1x
-      - 澳大利亚|三网优化|1x
-      - 美国|解锁流媒体|1x
       - 东京|解锁流媒体|1x
+      - 韩国|解锁流媒体|1x
       - 印度|三网优化|注册游戏|1x
+      - 日本优选原生IP03|解锁流媒体|1x
   - name: 📲 电报信息
     type: select
     proxies:
@@ -283,38 +396,55 @@ proxy-groups:
       - 日本专线
       - 香港专线
       - 香港专线 2
-      - 香港HGC-高速中转|1x
-      - 美国洛杉矶-中转|1x
+      - DE德国001
+      - CA加拿大001
+      - AU澳大利亚001
+      - UK英国001
+      - 新加坡→直连→0.5x-流媒体
+      - 美国→直连→0.5x-流媒体
+      - 德国→直连→0.2x-流媒体
+      - 美西Atl→直连→1x-流媒体
+      - 香港→CMI三网→2.8x-流媒体
+      - 香港HKT→海港→2.2x-流媒体
+      - 香港HKT→苏新→2.2x-流媒体
+      - 新加坡→海港-1.7x-流媒体
+      - 新加坡→苏新-1.7x-流媒体
+      - 日本→海港→1.7x-流媒体
+      - 日本→苏新→1.7x-流媒体
+      - 新加坡→海港-活动-0.1x-流媒体
+      - 新加坡→广港-活动-0.1x-流媒体
+      - 日本→海港-活动→0.1x-流媒体
+      - 日本→广港-活动→0.1x-流媒体
+      - 美国→海港-活动→0.1x-流媒体
+      - 美国→广港-活动→0.1x-流媒体
+      - 印度→海港-活动→0.1x-流媒体
+      - 印度→广港-活动→0.1x-流媒体
+      - 英国→海港-活动→0.1x-流媒体
+      - 英国→广港-活动→0.1x-流媒体
       - 美国圣何塞-中转|1x
       - 香港HKT|防失联直连|1x
       - 香港HKT-中转|1x
       - 香港BGP01|优选原生IP|1x
-      - 香港BGP02|优选原生IP|1x
+      - 香港BGP03|优选原生IP|1x
       - 新加坡01|三网优化|解锁流媒体|1x
+      - 新加坡02|三网优化|解锁流媒体|1x
       - 新加坡03|三网优化|解锁流媒体|1x
       - 新加坡04|三网优化|解锁流媒体|1x
-      - 新加坡05|三网优化|解锁流媒体|1x
       - SJP—新加坡|优选原生IP|1x
-      - 马来西亚01|优选原生IP|1x
       - 日本02|三网优化|1x
       - 日本优选原生IP01|解锁流媒体|1x
       - 日本优选原生IP02|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
       - 日本原生IP|解锁流媒体|1x
-      - 台湾hinet01|优选原生IP|1x
       - Scloud台湾01|三网优化|解锁流媒体|1x
       - Scloud台湾02|三网优化|解锁流媒体|1x
       - Scould台湾03|解锁流媒体|1x
       - Scloud台湾04|解锁流媒体|1x
-      - Scloud台湾05—可下载
-      - Scloud台湾06-原生IP
       - Scloud台湾07—原生IP
-      - 英国|三网优化|1x
       - 加拿大|三网优化|1x
-      - 澳大利亚|三网优化|1x
-      - 美国|解锁流媒体|1x
       - 东京|解锁流媒体|1x
+      - 韩国|解锁流媒体|1x
       - 印度|三网优化|注册游戏|1x
+      - 日本优选原生IP03|解锁流媒体|1x
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -324,38 +454,55 @@ proxy-groups:
       - 日本专线
       - 香港专线
       - 香港专线 2
-      - 香港HGC-高速中转|1x
-      - 美国洛杉矶-中转|1x
+      - DE德国001
+      - CA加拿大001
+      - AU澳大利亚001
+      - UK英国001
+      - 新加坡→直连→0.5x-流媒体
+      - 美国→直连→0.5x-流媒体
+      - 德国→直连→0.2x-流媒体
+      - 美西Atl→直连→1x-流媒体
+      - 香港→CMI三网→2.8x-流媒体
+      - 香港HKT→海港→2.2x-流媒体
+      - 香港HKT→苏新→2.2x-流媒体
+      - 新加坡→海港-1.7x-流媒体
+      - 新加坡→苏新-1.7x-流媒体
+      - 日本→海港→1.7x-流媒体
+      - 日本→苏新→1.7x-流媒体
+      - 新加坡→海港-活动-0.1x-流媒体
+      - 新加坡→广港-活动-0.1x-流媒体
+      - 日本→海港-活动→0.1x-流媒体
+      - 日本→广港-活动→0.1x-流媒体
+      - 美国→海港-活动→0.1x-流媒体
+      - 美国→广港-活动→0.1x-流媒体
+      - 印度→海港-活动→0.1x-流媒体
+      - 印度→广港-活动→0.1x-流媒体
+      - 英国→海港-活动→0.1x-流媒体
+      - 英国→广港-活动→0.1x-流媒体
       - 美国圣何塞-中转|1x
       - 香港HKT|防失联直连|1x
       - 香港HKT-中转|1x
       - 香港BGP01|优选原生IP|1x
-      - 香港BGP02|优选原生IP|1x
+      - 香港BGP03|优选原生IP|1x
       - 新加坡01|三网优化|解锁流媒体|1x
+      - 新加坡02|三网优化|解锁流媒体|1x
       - 新加坡03|三网优化|解锁流媒体|1x
       - 新加坡04|三网优化|解锁流媒体|1x
-      - 新加坡05|三网优化|解锁流媒体|1x
       - SJP—新加坡|优选原生IP|1x
-      - 马来西亚01|优选原生IP|1x
       - 日本02|三网优化|1x
       - 日本优选原生IP01|解锁流媒体|1x
       - 日本优选原生IP02|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
       - 日本原生IP|解锁流媒体|1x
-      - 台湾hinet01|优选原生IP|1x
       - Scloud台湾01|三网优化|解锁流媒体|1x
       - Scloud台湾02|三网优化|解锁流媒体|1x
       - Scould台湾03|解锁流媒体|1x
       - Scloud台湾04|解锁流媒体|1x
-      - Scloud台湾05—可下载
-      - Scloud台湾06-原生IP
       - Scloud台湾07—原生IP
-      - 英国|三网优化|1x
       - 加拿大|三网优化|1x
-      - 澳大利亚|三网优化|1x
-      - 美国|解锁流媒体|1x
       - 东京|解锁流媒体|1x
+      - 韩国|解锁流媒体|1x
       - 印度|三网优化|注册游戏|1x
+      - 日本优选原生IP03|解锁流媒体|1x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -374,38 +521,55 @@ proxy-groups:
       - 日本专线
       - 香港专线
       - 香港专线 2
-      - 香港HGC-高速中转|1x
-      - 美国洛杉矶-中转|1x
+      - DE德国001
+      - CA加拿大001
+      - AU澳大利亚001
+      - UK英国001
+      - 新加坡→直连→0.5x-流媒体
+      - 美国→直连→0.5x-流媒体
+      - 德国→直连→0.2x-流媒体
+      - 美西Atl→直连→1x-流媒体
+      - 香港→CMI三网→2.8x-流媒体
+      - 香港HKT→海港→2.2x-流媒体
+      - 香港HKT→苏新→2.2x-流媒体
+      - 新加坡→海港-1.7x-流媒体
+      - 新加坡→苏新-1.7x-流媒体
+      - 日本→海港→1.7x-流媒体
+      - 日本→苏新→1.7x-流媒体
+      - 新加坡→海港-活动-0.1x-流媒体
+      - 新加坡→广港-活动-0.1x-流媒体
+      - 日本→海港-活动→0.1x-流媒体
+      - 日本→广港-活动→0.1x-流媒体
+      - 美国→海港-活动→0.1x-流媒体
+      - 美国→广港-活动→0.1x-流媒体
+      - 印度→海港-活动→0.1x-流媒体
+      - 印度→广港-活动→0.1x-流媒体
+      - 英国→海港-活动→0.1x-流媒体
+      - 英国→广港-活动→0.1x-流媒体
       - 美国圣何塞-中转|1x
       - 香港HKT|防失联直连|1x
       - 香港HKT-中转|1x
       - 香港BGP01|优选原生IP|1x
-      - 香港BGP02|优选原生IP|1x
+      - 香港BGP03|优选原生IP|1x
       - 新加坡01|三网优化|解锁流媒体|1x
+      - 新加坡02|三网优化|解锁流媒体|1x
       - 新加坡03|三网优化|解锁流媒体|1x
       - 新加坡04|三网优化|解锁流媒体|1x
-      - 新加坡05|三网优化|解锁流媒体|1x
       - SJP—新加坡|优选原生IP|1x
-      - 马来西亚01|优选原生IP|1x
       - 日本02|三网优化|1x
       - 日本优选原生IP01|解锁流媒体|1x
       - 日本优选原生IP02|解锁流媒体|1x
-      - 日本优选原生IP03|解锁流媒体|1x
       - 日本原生IP|解锁流媒体|1x
-      - 台湾hinet01|优选原生IP|1x
       - Scloud台湾01|三网优化|解锁流媒体|1x
       - Scloud台湾02|三网优化|解锁流媒体|1x
       - Scould台湾03|解锁流媒体|1x
       - Scloud台湾04|解锁流媒体|1x
-      - Scloud台湾05—可下载
-      - Scloud台湾06-原生IP
       - Scloud台湾07—原生IP
-      - 英国|三网优化|1x
       - 加拿大|三网优化|1x
-      - 澳大利亚|三网优化|1x
-      - 美国|解锁流媒体|1x
       - 东京|解锁流媒体|1x
+      - 韩国|解锁流媒体|1x
       - 印度|三网优化|注册游戏|1x
+      - 日本优选原生IP03|解锁流媒体|1x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
