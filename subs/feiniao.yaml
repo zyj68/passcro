@@ -1,342 +1,271 @@
-port: 7890
+aport: 7890
 socks-port: 7891
+allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本→海港-活动→0.1x-流媒体, server: hnct.daodecloud.com, port: 32411, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
-  - {name: 日本02|三网优化|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp02, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 日本→广港-活动→0.1x-流媒体, server: gzct.daodecloud.com, port: 44807, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
-  - {name: 日本→海港→1.7x-流媒体, server: 124.225.24.191, port: 10192, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
-  - {name: 美国→海港-活动→0.1x-流媒体, server: hnct.daodecloud.com, port: 15456, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
-  - {name: 香港 - IEPL -备用  01, server: cm1-hk.hutaonode2.top, port: 12401, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
+  - {name: 新加坡 SG IEPL 01, server: dajbxsg.naikonode.top, port: 15401, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 美国洛杉矶 | 解锁流媒体, server: 172.67.206.33, port: 443, type: vmess, uuid: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/us1?ed=2048", ws-headers: {Host: us1.guolicheng.cyou}, udp: true}
+  - {name: 新加坡09-SG 09, server: cm01.newcome.xyz, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
+  - {name: 香港 HK IEPL 05, server: dajbxhk.naikonode.top, port: 15005, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 新加坡07-SG 07, server: cm01.newcome.xyz, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
+  - {name: Scloud台湾01|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 香港 HK IEPL 06, server: dajbxhk.naikonode.top, port: 15006, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 香港04-HK04, server: zx01.endhigh.xyz, port: 2403, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
+  - {name: 美国西雅图 | 解锁流媒体, server: 172.67.206.188, port: 443, type: vmess, uuid: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/us3?ed=2048", ws-headers: {Host: us3.guolicheng.cyou}, udp: true}
+  - {name: 新加坡 SG IEPL 07, server: dajbxsg.naikonode.top, port: 15407, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 香港 HK IEPL 02, server: dajbxhk.naikonode.top, port: 15002, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 香港07-HK07, server: zx01.endhigh.xyz, port: 2406, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
+  - {name: 香港 HK IEPL 08, server: dajbxhk.naikonode.top, port: 15008, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 新加坡 - IEPL -备用  01, server: cm1-sg.hutaonode2.top, port: 12301, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
+  - {name: 香港 HK IEPL 01, server: dajbxhk.naikonode.top, port: 15001, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 香港BGP03|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /BGP03, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 香港 HK IEPL 07, server: dajbxhk.naikonode.top, port: 15007, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: Scould台湾03|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet01, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 日本06-JP 06, server: cm01.newcome.xyz, port: 3705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
   - {name: 香港05-HK05, server: zx01.endhigh.xyz, port: 2404, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
+  - {name: 香港03-HK03, server: zx01.endhigh.xyz, port: 2402, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
+  - {name: 香港HGC-2号线路 | 解锁流媒体, server: 172.67.183.170, port: 443, type: vmess, uuid: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/hkhgc?ed=2048", ws-headers: {Host: hkhgc.guolicheng.cyou}, udp: true}
+  - {name: 德国 | 解锁流媒体, server: 172.67.206.208, port: 443, type: vmess, uuid: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/de?ed=2048", ws-headers: {Host: de.guolicheng.cyou}, udp: true}
+  - {name: 香港 - IEPL -备用  05, server: cm1-hk.hutaonode2.top, port: 12405, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
+  - {name: 香港 - IEPL -备用  01, server: cm1-hk.hutaonode2.top, port: 12401, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
+  - {name: 美国 US IEPL 04, server: dajbxus.naikonode.top, port: 15104, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 日本优选原生IP02|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ02, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 香港HGC-1号线路 | 解锁流媒体, server: 172.67.205.183, port: 443, type: vmess, uuid: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/hkhgc?ed=2048", ws-headers: {Host: hkhgc.guolicheng.cyou}, udp: true}
+  - {name: 印度|三网优化|注册游戏|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yd01, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 新加坡 SG IEPL 03, server: dajbxsg.naikonode.top, port: 15403, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 日本 - IEPL -备用  03, server: cm1-jp.hutaonode2.top, port: 12003, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
+  - {name: 香港 - IEPL -备用  04, server: cm1-hk.hutaonode2.top, port: 12404, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
+  - {name: 香港10-HK10, server: zx01.endhigh.xyz, port: 2409, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
+  - {name: 台湾Hinet-1号线路 | 解锁流媒体, server: 172.67.205.208, port: 443, type: vmess, uuid: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/hinet?ed=2048", ws-headers: {Host: hinet.guolicheng.cyou}, udp: true}
+  - {name: 法国 | 解锁流媒体, server: 172.67.206.118, port: 443, type: vmess, uuid: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/fr?ed=2048", ws-headers: {Host: fr.guolicheng.cyou}, udp: true}
+  - {name: 香港08-HK08, server: zx01.endhigh.xyz, port: 2407, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
+  - {name: 美国 US IEPL 03, server: dajbxus.naikonode.top, port: 15103, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 美国 US IEPL 06, server: dajbxus.naikonode.top, port: 15106, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 日本 - IEPL -备用  04, server: cm1-jp.hutaonode2.top, port: 12004, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
+  - {name: 香港 HK IEPL 04, server: dajbxhk.naikonode.top, port: 15004, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: Scloud台湾02|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet02, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 日本 JP IEPL 06, server: dajbxjp.naikonode.top, port: 15206, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 香港 HK IEPL 03, server: dajbxhk.naikonode.top, port: 15003, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 新加坡04|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp04, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 美国圣何塞 | 解锁流媒体, server: 172.67.206.133, port: 443, type: vmess, uuid: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/guolicheng/us2?ed=2048", ws-headers: {Host: us2.guolicheng.cyou}, udp: true}
+  - {name: 美国03-USA03, server: cm01.newcome.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
+  - {name: 新加坡 SG IEPL 02, server: dajbxsg.naikonode.top, port: 15402, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 美国 US IEPL 07, server: dajbxus.naikonode.top, port: 15107, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 美国 US IEPL 02, server: dajbxus.naikonode.top, port: 15102, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 美国 US IEPL 05, server: dajbxus.naikonode.top, port: 15105, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 日本 JP IEPL 07, server: dajbxjp.naikonode.top, port: 15207, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 新加坡 SG IEPL 04, server: dajbxsg.naikonode.top, port: 15404, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 日本04-JP 04, server: cm01.newcome.xyz, port: 3703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
+  - {name: 新加坡 SG IEPL 06, server: dajbxsg.naikonode.top, port: 15406, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
+  - {name: 台湾 TW IEPL 07, server: dajbxtw.naikonode.top, port: 15507, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
   - {name: 新加坡 SG IEPL 08, server: dajbxsg.naikonode.top, port: 15408, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
   - {name: 新加坡 SG IEPL 05, server: dajbxsg.naikonode.top, port: 15405, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 新加坡 - IEPL -备用  01, server: cm1-sg.hutaonode2.top, port: 12301, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
-  - {name: 日本10-JP 10, server: cm01.newcome.xyz, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 香港 HK IEPL 04, server: dajbxhk.naikonode.top, port: 15004, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 台湾03-TW 03, server: cm01.newcome.xyz, port: 5702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 新加坡 SG IEPL 01, server: dajbxsg.naikonode.top, port: 15401, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 香港 HK IEPL 07, server: dajbxhk.naikonode.top, port: 15007, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 香港 - IEPL -备用  03, server: cm1-hk.hutaonode2.top, port: 12403, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
-  - {name: 香港03-HK03, server: zx01.endhigh.xyz, port: 2402, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 香港 HK IEPL 03, server: dajbxhk.naikonode.top, port: 15003, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 香港 HK IEPL 06, server: dajbxhk.naikonode.top, port: 15006, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 新加坡 - IEPL -备用  05, server: cm1-sg.hutaonode2.top, port: 12305, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
-  - {name: 日本 - IEPL -备用  04, server: cm1-jp.hutaonode2.top, port: 12004, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
-  - {name: 香港 - IEPL -备用  02, server: cm1-hk.hutaonode2.top, port: 12402, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
-  - {name: 香港10-HK10, server: zx01.endhigh.xyz, port: 2409, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 日本 - IEPL -备用  05, server: cm1-jp.hutaonode2.top, port: 12005, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
-  - {name: 新加坡 SG IEPL 06, server: dajbxsg.naikonode.top, port: 15406, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: Scloud台湾02|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet02, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 日本→苏新→1.7x-流媒体, server: cn1.cdn.zeroteam.top, port: 28508, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
-  - {name: 新加坡 SG IEPL 04, server: dajbxsg.naikonode.top, port: 15404, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 新加坡03-SG 03, server: cm01.newcome.xyz, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 日本 - IEPL -备用  03, server: cm1-jp.hutaonode2.top, port: 12003, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
-  - {name: 香港08-HK08, server: zx01.endhigh.xyz, port: 2407, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 日本优选原生IP02|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ02, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 香港 HK IEPL 08, server: dajbxhk.naikonode.top, port: 15008, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 日本 - IEPL -备用  06, server: cm1-jp.hutaonode2.top, port: 12006, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
-  - {name: 香港 HK IEPL 05, server: dajbxhk.naikonode.top, port: 15005, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 香港 - IEPL -备用  04, server: cm1-hk.hutaonode2.top, port: 12404, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
-  - {name: 美国 US IEPL 01, server: dajbxus.naikonode.top, port: 15101, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 日本03-JP 03, server: cm01.newcome.xyz, port: 3702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 香港 HK IEPL 02, server: dajbxhk.naikonode.top, port: 15002, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: Scould台湾03|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet01, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 新加坡 SG IEPL 02, server: dajbxsg.naikonode.top, port: 15402, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 香港04-HK04, server: zx01.endhigh.xyz, port: 2403, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 香港 HK IEPL 01, server: dajbxhk.naikonode.top, port: 15001, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 新加坡04|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp04, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 美国 US IEPL 04, server: dajbxus.naikonode.top, port: 15104, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 印度|三网优化|注册游戏|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yd01, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 新加坡 - IEPL -备用  03, server: cm1-sg.hutaonode2.top, port: 12303, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
   - {name: 美国08-USA08, server: cm01.newcome.xyz, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 新加坡 SG IEPL 07, server: dajbxsg.naikonode.top, port: 15407, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 新加坡 - IEPL -备用  06, server: cm1-sg.hutaonode2.top, port: 12306, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
-  - {name: 印度→海港-活动→0.1x-流媒体, server: hnct.daodecloud.com, port: 47531, type: ss, cipher: chacha20-ietf-poly1305, password: 7a8a2158-ed62-4364-8ba9-937f0ab9d6f0, udp: true}
-  - {name: 日本 JP IEPL 06, server: dajbxjp.naikonode.top, port: 15206, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: Scloud台湾01|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 美国 US IEPL 02, server: dajbxus.naikonode.top, port: 15102, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 香港 - IEPL -备用  05, server: cm1-hk.hutaonode2.top, port: 12405, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 23462:xx1LFxmqcjHSNPQn, obfs-param: 64ec923462.jd.hk, udp: true}
-  - {name: 美国 US IEPL 07, server: dajbxus.naikonode.top, port: 15107, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 新加坡09-SG 09, server: cm01.newcome.xyz, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 美国 US IEPL 03, server: dajbxus.naikonode.top, port: 15103, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 新加坡 SG IEPL 03, server: dajbxsg.naikonode.top, port: 15403, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 美国 US IEPL 05, server: dajbxus.naikonode.top, port: 15105, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 美国 US IEPL 06, server: dajbxus.naikonode.top, port: 15106, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 日本04-JP 04, server: cm01.newcome.xyz, port: 3703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 日本 JP IEPL 07, server: dajbxjp.naikonode.top, port: 15207, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 台湾 TW IEPL 07, server: dajbxtw.naikonode.top, port: 15507, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 美国01-USA01, server: cm01.newcome.xyz, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 加拿大|三网优化|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada1, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 日本 JP IEPL 01, server: dajbxjp.naikonode.top, port: 15201, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 192:OJEfxaXO8eV6CmUr, obfs-param: f97a2192.microsoft.com, udp: true}
-  - {name: 日本02-JP 02, server: cm01.newcome.xyz, port: 3701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 日本06-JP 06, server: cm01.newcome.xyz, port: 3705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 日本09-JP 09, server: cm01.newcome.xyz, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 日本05-JP 05, server: cm01.newcome.xyz, port: 3704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 美国03-USA03, server: cm01.newcome.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 香港07-HK07, server: zx01.endhigh.xyz, port: 2406, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 新加坡07-SG 07, server: cm01.newcome.xyz, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 香港BGP03|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /BGP03, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 日本01-JP 01, server: cm01.newcome.xyz, port: 3700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 日本07-JP 07, server: cm01.newcome.xyz, port: 3706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 新加坡10-SG 10, server: cm01.newcome.xyz, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
-  - {name: 新加坡05-SG 05, server: cm01.newcome.xyz, port: 6704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
+  - {name: 日本03-JP 03, server: cm01.newcome.xyz, port: 3702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
+  - {name: 日本10-JP 10, server: cm01.newcome.xyz, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 44654:262E1006ja, obfs-param: 0532a44654.microsoft.com, udp: true}
+  - {name: 香港超级专线 @ZDYZ2, server: 211.99.96.118, port: 29200, type: ss, cipher: aes-256-gcm, password: ZX1wtWjgt8i2b5pS, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本→海港-活动→0.1x-流媒体
-      - 日本02|三网优化|1x
-      - 日本→广港-活动→0.1x-流媒体
-      - 日本→海港→1.7x-流媒体
-      - 美国→海港-活动→0.1x-流媒体
-      - 香港 - IEPL -备用  01
+      - 新加坡 SG IEPL 01
+      - 美国洛杉矶 | 解锁流媒体
+      - 新加坡09-SG 09
+      - 香港 HK IEPL 05
+      - 新加坡07-SG 07
+      - Scloud台湾01|三网优化|解锁流媒体|1x
+      - 香港 HK IEPL 06
+      - 香港04-HK04
+      - 美国西雅图 | 解锁流媒体
+      - 新加坡 SG IEPL 07
+      - 香港 HK IEPL 02
+      - 香港07-HK07
+      - 香港 HK IEPL 08
+      - 新加坡 - IEPL -备用  01
+      - 香港 HK IEPL 01
+      - 香港BGP03|优选原生IP|1x
+      - 香港 HK IEPL 07
+      - Scould台湾03|解锁流媒体|1x
+      - 日本06-JP 06
       - 香港05-HK05
+      - 香港03-HK03
+      - 香港HGC-2号线路 | 解锁流媒体
+      - 德国 | 解锁流媒体
+      - 香港 - IEPL -备用  05
+      - 香港 - IEPL -备用  01
+      - 美国 US IEPL 04
+      - 日本优选原生IP02|解锁流媒体|1x
+      - 香港HGC-1号线路 | 解锁流媒体
+      - 印度|三网优化|注册游戏|1x
+      - 新加坡 SG IEPL 03
+      - 日本 - IEPL -备用  03
+      - 香港 - IEPL -备用  04
+      - 香港10-HK10
+      - 台湾Hinet-1号线路 | 解锁流媒体
+      - 法国 | 解锁流媒体
+      - 香港08-HK08
+      - 美国 US IEPL 03
+      - 美国 US IEPL 06
+      - 日本 - IEPL -备用  04
+      - 香港 HK IEPL 04
+      - Scloud台湾02|三网优化|解锁流媒体|1x
+      - 日本 JP IEPL 06
+      - 香港 HK IEPL 03
+      - 新加坡04|三网优化|解锁流媒体|1x
+      - 美国圣何塞 | 解锁流媒体
+      - 美国03-USA03
+      - 新加坡 SG IEPL 02
+      - 美国 US IEPL 07
+      - 美国 US IEPL 02
+      - 美国 US IEPL 05
+      - 日本 JP IEPL 07
+      - 新加坡 SG IEPL 04
+      - 日本04-JP 04
+      - 新加坡 SG IEPL 06
+      - 台湾 TW IEPL 07
       - 新加坡 SG IEPL 08
       - 新加坡 SG IEPL 05
-      - 新加坡 - IEPL -备用  01
-      - 日本10-JP 10
-      - 香港 HK IEPL 04
-      - 台湾03-TW 03
-      - 新加坡 SG IEPL 01
-      - 香港 HK IEPL 07
-      - 香港 - IEPL -备用  03
-      - 香港03-HK03
-      - 香港 HK IEPL 03
-      - 香港 HK IEPL 06
-      - 新加坡 - IEPL -备用  05
-      - 日本 - IEPL -备用  04
-      - 香港 - IEPL -备用  02
-      - 香港10-HK10
-      - 日本 - IEPL -备用  05
-      - 新加坡 SG IEPL 06
-      - Scloud台湾02|三网优化|解锁流媒体|1x
-      - 日本→苏新→1.7x-流媒体
-      - 新加坡 SG IEPL 04
-      - 新加坡03-SG 03
-      - 日本 - IEPL -备用  03
-      - 香港08-HK08
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 香港 HK IEPL 08
-      - 日本 - IEPL -备用  06
-      - 香港 HK IEPL 05
-      - 香港 - IEPL -备用  04
-      - 美国 US IEPL 01
-      - 日本03-JP 03
-      - 香港 HK IEPL 02
-      - Scould台湾03|解锁流媒体|1x
-      - 新加坡 SG IEPL 02
-      - 香港04-HK04
-      - 香港 HK IEPL 01
-      - 新加坡04|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 04
-      - 印度|三网优化|注册游戏|1x
-      - 新加坡 - IEPL -备用  03
       - 美国08-USA08
-      - 新加坡 SG IEPL 07
-      - 新加坡 - IEPL -备用  06
-      - 印度→海港-活动→0.1x-流媒体
-      - 日本 JP IEPL 06
-      - Scloud台湾01|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 02
-      - 香港 - IEPL -备用  05
-      - 美国 US IEPL 07
-      - 新加坡09-SG 09
-      - 美国 US IEPL 03
-      - 新加坡 SG IEPL 03
-      - 美国 US IEPL 05
-      - 美国 US IEPL 06
-      - 日本04-JP 04
-      - 日本 JP IEPL 07
-      - 台湾 TW IEPL 07
-      - 美国01-USA01
-      - 加拿大|三网优化|1x
-      - 日本 JP IEPL 01
-      - 日本02-JP 02
-      - 日本06-JP 06
-      - 日本09-JP 09
-      - 日本05-JP 05
-      - 美国03-USA03
-      - 香港07-HK07
-      - 新加坡07-SG 07
-      - 香港BGP03|优选原生IP|1x
-      - 日本01-JP 01
-      - 日本07-JP 07
-      - 新加坡10-SG 10
-      - 新加坡05-SG 05
+      - 日本03-JP 03
+      - 日本10-JP 10
+      - 香港超级专线 @ZDYZ2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本→海港-活动→0.1x-流媒体
-      - 日本02|三网优化|1x
-      - 日本→广港-活动→0.1x-流媒体
-      - 日本→海港→1.7x-流媒体
-      - 美国→海港-活动→0.1x-流媒体
-      - 香港 - IEPL -备用  01
+      - 新加坡 SG IEPL 01
+      - 美国洛杉矶 | 解锁流媒体
+      - 新加坡09-SG 09
+      - 香港 HK IEPL 05
+      - 新加坡07-SG 07
+      - Scloud台湾01|三网优化|解锁流媒体|1x
+      - 香港 HK IEPL 06
+      - 香港04-HK04
+      - 美国西雅图 | 解锁流媒体
+      - 新加坡 SG IEPL 07
+      - 香港 HK IEPL 02
+      - 香港07-HK07
+      - 香港 HK IEPL 08
+      - 新加坡 - IEPL -备用  01
+      - 香港 HK IEPL 01
+      - 香港BGP03|优选原生IP|1x
+      - 香港 HK IEPL 07
+      - Scould台湾03|解锁流媒体|1x
+      - 日本06-JP 06
       - 香港05-HK05
+      - 香港03-HK03
+      - 香港HGC-2号线路 | 解锁流媒体
+      - 德国 | 解锁流媒体
+      - 香港 - IEPL -备用  05
+      - 香港 - IEPL -备用  01
+      - 美国 US IEPL 04
+      - 日本优选原生IP02|解锁流媒体|1x
+      - 香港HGC-1号线路 | 解锁流媒体
+      - 印度|三网优化|注册游戏|1x
+      - 新加坡 SG IEPL 03
+      - 日本 - IEPL -备用  03
+      - 香港 - IEPL -备用  04
+      - 香港10-HK10
+      - 台湾Hinet-1号线路 | 解锁流媒体
+      - 法国 | 解锁流媒体
+      - 香港08-HK08
+      - 美国 US IEPL 03
+      - 美国 US IEPL 06
+      - 日本 - IEPL -备用  04
+      - 香港 HK IEPL 04
+      - Scloud台湾02|三网优化|解锁流媒体|1x
+      - 日本 JP IEPL 06
+      - 香港 HK IEPL 03
+      - 新加坡04|三网优化|解锁流媒体|1x
+      - 美国圣何塞 | 解锁流媒体
+      - 美国03-USA03
+      - 新加坡 SG IEPL 02
+      - 美国 US IEPL 07
+      - 美国 US IEPL 02
+      - 美国 US IEPL 05
+      - 日本 JP IEPL 07
+      - 新加坡 SG IEPL 04
+      - 日本04-JP 04
+      - 新加坡 SG IEPL 06
+      - 台湾 TW IEPL 07
       - 新加坡 SG IEPL 08
       - 新加坡 SG IEPL 05
-      - 新加坡 - IEPL -备用  01
-      - 日本10-JP 10
-      - 香港 HK IEPL 04
-      - 台湾03-TW 03
-      - 新加坡 SG IEPL 01
-      - 香港 HK IEPL 07
-      - 香港 - IEPL -备用  03
-      - 香港03-HK03
-      - 香港 HK IEPL 03
-      - 香港 HK IEPL 06
-      - 新加坡 - IEPL -备用  05
-      - 日本 - IEPL -备用  04
-      - 香港 - IEPL -备用  02
-      - 香港10-HK10
-      - 日本 - IEPL -备用  05
-      - 新加坡 SG IEPL 06
-      - Scloud台湾02|三网优化|解锁流媒体|1x
-      - 日本→苏新→1.7x-流媒体
-      - 新加坡 SG IEPL 04
-      - 新加坡03-SG 03
-      - 日本 - IEPL -备用  03
-      - 香港08-HK08
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 香港 HK IEPL 08
-      - 日本 - IEPL -备用  06
-      - 香港 HK IEPL 05
-      - 香港 - IEPL -备用  04
-      - 美国 US IEPL 01
-      - 日本03-JP 03
-      - 香港 HK IEPL 02
-      - Scould台湾03|解锁流媒体|1x
-      - 新加坡 SG IEPL 02
-      - 香港04-HK04
-      - 香港 HK IEPL 01
-      - 新加坡04|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 04
-      - 印度|三网优化|注册游戏|1x
-      - 新加坡 - IEPL -备用  03
       - 美国08-USA08
-      - 新加坡 SG IEPL 07
-      - 新加坡 - IEPL -备用  06
-      - 印度→海港-活动→0.1x-流媒体
-      - 日本 JP IEPL 06
-      - Scloud台湾01|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 02
-      - 香港 - IEPL -备用  05
-      - 美国 US IEPL 07
-      - 新加坡09-SG 09
-      - 美国 US IEPL 03
-      - 新加坡 SG IEPL 03
-      - 美国 US IEPL 05
-      - 美国 US IEPL 06
-      - 日本04-JP 04
-      - 日本 JP IEPL 07
-      - 台湾 TW IEPL 07
-      - 美国01-USA01
-      - 加拿大|三网优化|1x
-      - 日本 JP IEPL 01
-      - 日本02-JP 02
-      - 日本06-JP 06
-      - 日本09-JP 09
-      - 日本05-JP 05
-      - 美国03-USA03
-      - 香港07-HK07
-      - 新加坡07-SG 07
-      - 香港BGP03|优选原生IP|1x
-      - 日本01-JP 01
-      - 日本07-JP 07
-      - 新加坡10-SG 10
-      - 新加坡05-SG 05
+      - 日本03-JP 03
+      - 日本10-JP 10
+      - 香港超级专线 @ZDYZ2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本→海港-活动→0.1x-流媒体
-      - 日本02|三网优化|1x
-      - 日本→广港-活动→0.1x-流媒体
-      - 日本→海港→1.7x-流媒体
-      - 美国→海港-活动→0.1x-流媒体
-      - 香港 - IEPL -备用  01
+      - 新加坡 SG IEPL 01
+      - 美国洛杉矶 | 解锁流媒体
+      - 新加坡09-SG 09
+      - 香港 HK IEPL 05
+      - 新加坡07-SG 07
+      - Scloud台湾01|三网优化|解锁流媒体|1x
+      - 香港 HK IEPL 06
+      - 香港04-HK04
+      - 美国西雅图 | 解锁流媒体
+      - 新加坡 SG IEPL 07
+      - 香港 HK IEPL 02
+      - 香港07-HK07
+      - 香港 HK IEPL 08
+      - 新加坡 - IEPL -备用  01
+      - 香港 HK IEPL 01
+      - 香港BGP03|优选原生IP|1x
+      - 香港 HK IEPL 07
+      - Scould台湾03|解锁流媒体|1x
+      - 日本06-JP 06
       - 香港05-HK05
+      - 香港03-HK03
+      - 香港HGC-2号线路 | 解锁流媒体
+      - 德国 | 解锁流媒体
+      - 香港 - IEPL -备用  05
+      - 香港 - IEPL -备用  01
+      - 美国 US IEPL 04
+      - 日本优选原生IP02|解锁流媒体|1x
+      - 香港HGC-1号线路 | 解锁流媒体
+      - 印度|三网优化|注册游戏|1x
+      - 新加坡 SG IEPL 03
+      - 日本 - IEPL -备用  03
+      - 香港 - IEPL -备用  04
+      - 香港10-HK10
+      - 台湾Hinet-1号线路 | 解锁流媒体
+      - 法国 | 解锁流媒体
+      - 香港08-HK08
+      - 美国 US IEPL 03
+      - 美国 US IEPL 06
+      - 日本 - IEPL -备用  04
+      - 香港 HK IEPL 04
+      - Scloud台湾02|三网优化|解锁流媒体|1x
+      - 日本 JP IEPL 06
+      - 香港 HK IEPL 03
+      - 新加坡04|三网优化|解锁流媒体|1x
+      - 美国圣何塞 | 解锁流媒体
+      - 美国03-USA03
+      - 新加坡 SG IEPL 02
+      - 美国 US IEPL 07
+      - 美国 US IEPL 02
+      - 美国 US IEPL 05
+      - 日本 JP IEPL 07
+      - 新加坡 SG IEPL 04
+      - 日本04-JP 04
+      - 新加坡 SG IEPL 06
+      - 台湾 TW IEPL 07
       - 新加坡 SG IEPL 08
       - 新加坡 SG IEPL 05
-      - 新加坡 - IEPL -备用  01
-      - 日本10-JP 10
-      - 香港 HK IEPL 04
-      - 台湾03-TW 03
-      - 新加坡 SG IEPL 01
-      - 香港 HK IEPL 07
-      - 香港 - IEPL -备用  03
-      - 香港03-HK03
-      - 香港 HK IEPL 03
-      - 香港 HK IEPL 06
-      - 新加坡 - IEPL -备用  05
-      - 日本 - IEPL -备用  04
-      - 香港 - IEPL -备用  02
-      - 香港10-HK10
-      - 日本 - IEPL -备用  05
-      - 新加坡 SG IEPL 06
-      - Scloud台湾02|三网优化|解锁流媒体|1x
-      - 日本→苏新→1.7x-流媒体
-      - 新加坡 SG IEPL 04
-      - 新加坡03-SG 03
-      - 日本 - IEPL -备用  03
-      - 香港08-HK08
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 香港 HK IEPL 08
-      - 日本 - IEPL -备用  06
-      - 香港 HK IEPL 05
-      - 香港 - IEPL -备用  04
-      - 美国 US IEPL 01
-      - 日本03-JP 03
-      - 香港 HK IEPL 02
-      - Scould台湾03|解锁流媒体|1x
-      - 新加坡 SG IEPL 02
-      - 香港04-HK04
-      - 香港 HK IEPL 01
-      - 新加坡04|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 04
-      - 印度|三网优化|注册游戏|1x
-      - 新加坡 - IEPL -备用  03
       - 美国08-USA08
-      - 新加坡 SG IEPL 07
-      - 新加坡 - IEPL -备用  06
-      - 印度→海港-活动→0.1x-流媒体
-      - 日本 JP IEPL 06
-      - Scloud台湾01|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 02
-      - 香港 - IEPL -备用  05
-      - 美国 US IEPL 07
-      - 新加坡09-SG 09
-      - 美国 US IEPL 03
-      - 新加坡 SG IEPL 03
-      - 美国 US IEPL 05
-      - 美国 US IEPL 06
-      - 日本04-JP 04
-      - 日本 JP IEPL 07
-      - 台湾 TW IEPL 07
-      - 美国01-USA01
-      - 加拿大|三网优化|1x
-      - 日本 JP IEPL 01
-      - 日本02-JP 02
-      - 日本06-JP 06
-      - 日本09-JP 09
-      - 日本05-JP 05
-      - 美国03-USA03
-      - 香港07-HK07
-      - 新加坡07-SG 07
-      - 香港BGP03|优选原生IP|1x
-      - 日本01-JP 01
-      - 日本07-JP 07
-      - 新加坡10-SG 10
-      - 新加坡05-SG 05
+      - 日本03-JP 03
+      - 日本10-JP 10
+      - 香港超级专线 @ZDYZ2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -355,373 +284,297 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本→海港-活动→0.1x-流媒体
-      - 日本02|三网优化|1x
-      - 日本→广港-活动→0.1x-流媒体
-      - 日本→海港→1.7x-流媒体
-      - 美国→海港-活动→0.1x-流媒体
-      - 香港 - IEPL -备用  01
+      - 新加坡 SG IEPL 01
+      - 美国洛杉矶 | 解锁流媒体
+      - 新加坡09-SG 09
+      - 香港 HK IEPL 05
+      - 新加坡07-SG 07
+      - Scloud台湾01|三网优化|解锁流媒体|1x
+      - 香港 HK IEPL 06
+      - 香港04-HK04
+      - 美国西雅图 | 解锁流媒体
+      - 新加坡 SG IEPL 07
+      - 香港 HK IEPL 02
+      - 香港07-HK07
+      - 香港 HK IEPL 08
+      - 新加坡 - IEPL -备用  01
+      - 香港 HK IEPL 01
+      - 香港BGP03|优选原生IP|1x
+      - 香港 HK IEPL 07
+      - Scould台湾03|解锁流媒体|1x
+      - 日本06-JP 06
       - 香港05-HK05
+      - 香港03-HK03
+      - 香港HGC-2号线路 | 解锁流媒体
+      - 德国 | 解锁流媒体
+      - 香港 - IEPL -备用  05
+      - 香港 - IEPL -备用  01
+      - 美国 US IEPL 04
+      - 日本优选原生IP02|解锁流媒体|1x
+      - 香港HGC-1号线路 | 解锁流媒体
+      - 印度|三网优化|注册游戏|1x
+      - 新加坡 SG IEPL 03
+      - 日本 - IEPL -备用  03
+      - 香港 - IEPL -备用  04
+      - 香港10-HK10
+      - 台湾Hinet-1号线路 | 解锁流媒体
+      - 法国 | 解锁流媒体
+      - 香港08-HK08
+      - 美国 US IEPL 03
+      - 美国 US IEPL 06
+      - 日本 - IEPL -备用  04
+      - 香港 HK IEPL 04
+      - Scloud台湾02|三网优化|解锁流媒体|1x
+      - 日本 JP IEPL 06
+      - 香港 HK IEPL 03
+      - 新加坡04|三网优化|解锁流媒体|1x
+      - 美国圣何塞 | 解锁流媒体
+      - 美国03-USA03
+      - 新加坡 SG IEPL 02
+      - 美国 US IEPL 07
+      - 美国 US IEPL 02
+      - 美国 US IEPL 05
+      - 日本 JP IEPL 07
+      - 新加坡 SG IEPL 04
+      - 日本04-JP 04
+      - 新加坡 SG IEPL 06
+      - 台湾 TW IEPL 07
       - 新加坡 SG IEPL 08
       - 新加坡 SG IEPL 05
-      - 新加坡 - IEPL -备用  01
-      - 日本10-JP 10
-      - 香港 HK IEPL 04
-      - 台湾03-TW 03
-      - 新加坡 SG IEPL 01
-      - 香港 HK IEPL 07
-      - 香港 - IEPL -备用  03
-      - 香港03-HK03
-      - 香港 HK IEPL 03
-      - 香港 HK IEPL 06
-      - 新加坡 - IEPL -备用  05
-      - 日本 - IEPL -备用  04
-      - 香港 - IEPL -备用  02
-      - 香港10-HK10
-      - 日本 - IEPL -备用  05
-      - 新加坡 SG IEPL 06
-      - Scloud台湾02|三网优化|解锁流媒体|1x
-      - 日本→苏新→1.7x-流媒体
-      - 新加坡 SG IEPL 04
-      - 新加坡03-SG 03
-      - 日本 - IEPL -备用  03
-      - 香港08-HK08
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 香港 HK IEPL 08
-      - 日本 - IEPL -备用  06
-      - 香港 HK IEPL 05
-      - 香港 - IEPL -备用  04
-      - 美国 US IEPL 01
-      - 日本03-JP 03
-      - 香港 HK IEPL 02
-      - Scould台湾03|解锁流媒体|1x
-      - 新加坡 SG IEPL 02
-      - 香港04-HK04
-      - 香港 HK IEPL 01
-      - 新加坡04|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 04
-      - 印度|三网优化|注册游戏|1x
-      - 新加坡 - IEPL -备用  03
       - 美国08-USA08
-      - 新加坡 SG IEPL 07
-      - 新加坡 - IEPL -备用  06
-      - 印度→海港-活动→0.1x-流媒体
-      - 日本 JP IEPL 06
-      - Scloud台湾01|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 02
-      - 香港 - IEPL -备用  05
-      - 美国 US IEPL 07
-      - 新加坡09-SG 09
-      - 美国 US IEPL 03
-      - 新加坡 SG IEPL 03
-      - 美国 US IEPL 05
-      - 美国 US IEPL 06
-      - 日本04-JP 04
-      - 日本 JP IEPL 07
-      - 台湾 TW IEPL 07
-      - 美国01-USA01
-      - 加拿大|三网优化|1x
-      - 日本 JP IEPL 01
-      - 日本02-JP 02
-      - 日本06-JP 06
-      - 日本09-JP 09
-      - 日本05-JP 05
-      - 美国03-USA03
-      - 香港07-HK07
-      - 新加坡07-SG 07
-      - 香港BGP03|优选原生IP|1x
-      - 日本01-JP 01
-      - 日本07-JP 07
-      - 新加坡10-SG 10
-      - 新加坡05-SG 05
+      - 日本03-JP 03
+      - 日本10-JP 10
+      - 香港超级专线 @ZDYZ2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 日本→海港-活动→0.1x-流媒体
-      - 日本→广港-活动→0.1x-流媒体
-      - 日本→海港→1.7x-流媒体
-      - 美国→海港-活动→0.1x-流媒体
-      - 香港 - IEPL -备用  01
-      - 香港05-HK05
-      - 香港 HK IEPL 04
-      - 台湾03-TW 03
-      - 香港 HK IEPL 07
-      - 香港 - IEPL -备用  03
-      - 香港03-HK03
-      - 香港 HK IEPL 03
-      - 香港 HK IEPL 06
-      - 香港 - IEPL -备用  02
-      - 香港10-HK10
-      - Scloud台湾02|三网优化|解锁流媒体|1x
-      - 香港08-HK08
-      - 香港 HK IEPL 08
       - 香港 HK IEPL 05
-      - 香港 - IEPL -备用  04
-      - 香港 HK IEPL 02
-      - Scould台湾03|解锁流媒体|1x
-      - 香港04-HK04
-      - 香港 HK IEPL 01
-      - 印度→海港-活动→0.1x-流媒体
       - Scloud台湾01|三网优化|解锁流媒体|1x
-      - 香港 - IEPL -备用  05
-      - 台湾 TW IEPL 07
+      - 香港 HK IEPL 06
+      - 香港04-HK04
+      - 香港 HK IEPL 02
       - 香港07-HK07
+      - 香港 HK IEPL 08
+      - 香港 HK IEPL 01
       - 香港BGP03|优选原生IP|1x
+      - 香港 HK IEPL 07
+      - Scould台湾03|解锁流媒体|1x
+      - 香港05-HK05
+      - 香港03-HK03
+      - 香港HGC-2号线路 | 解锁流媒体
+      - 香港 - IEPL -备用  05
+      - 香港 - IEPL -备用  01
+      - 香港HGC-1号线路 | 解锁流媒体
+      - 香港 - IEPL -备用  04
+      - 香港10-HK10
+      - 台湾Hinet-1号线路 | 解锁流媒体
+      - 香港08-HK08
+      - 香港 HK IEPL 04
+      - Scloud台湾02|三网优化|解锁流媒体|1x
+      - 香港 HK IEPL 03
+      - 台湾 TW IEPL 07
+      - 香港超级专线 @ZDYZ2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本→海港-活动→0.1x-流媒体
-      - 日本02|三网优化|1x
-      - 日本→广港-活动→0.1x-流媒体
-      - 日本→海港→1.7x-流媒体
-      - 美国→海港-活动→0.1x-流媒体
-      - 香港 - IEPL -备用  01
+      - 新加坡 SG IEPL 01
+      - 美国洛杉矶 | 解锁流媒体
+      - 新加坡09-SG 09
+      - 香港 HK IEPL 05
+      - 新加坡07-SG 07
+      - Scloud台湾01|三网优化|解锁流媒体|1x
+      - 香港 HK IEPL 06
+      - 香港04-HK04
+      - 美国西雅图 | 解锁流媒体
+      - 新加坡 SG IEPL 07
+      - 香港 HK IEPL 02
+      - 香港07-HK07
+      - 香港 HK IEPL 08
+      - 新加坡 - IEPL -备用  01
+      - 香港 HK IEPL 01
+      - 香港BGP03|优选原生IP|1x
+      - 香港 HK IEPL 07
+      - Scould台湾03|解锁流媒体|1x
+      - 日本06-JP 06
       - 香港05-HK05
+      - 香港03-HK03
+      - 香港HGC-2号线路 | 解锁流媒体
+      - 德国 | 解锁流媒体
+      - 香港 - IEPL -备用  05
+      - 香港 - IEPL -备用  01
+      - 美国 US IEPL 04
+      - 日本优选原生IP02|解锁流媒体|1x
+      - 香港HGC-1号线路 | 解锁流媒体
+      - 印度|三网优化|注册游戏|1x
+      - 新加坡 SG IEPL 03
+      - 日本 - IEPL -备用  03
+      - 香港 - IEPL -备用  04
+      - 香港10-HK10
+      - 台湾Hinet-1号线路 | 解锁流媒体
+      - 法国 | 解锁流媒体
+      - 香港08-HK08
+      - 美国 US IEPL 03
+      - 美国 US IEPL 06
+      - 日本 - IEPL -备用  04
+      - 香港 HK IEPL 04
+      - Scloud台湾02|三网优化|解锁流媒体|1x
+      - 日本 JP IEPL 06
+      - 香港 HK IEPL 03
+      - 新加坡04|三网优化|解锁流媒体|1x
+      - 美国圣何塞 | 解锁流媒体
+      - 美国03-USA03
+      - 新加坡 SG IEPL 02
+      - 美国 US IEPL 07
+      - 美国 US IEPL 02
+      - 美国 US IEPL 05
+      - 日本 JP IEPL 07
+      - 新加坡 SG IEPL 04
+      - 日本04-JP 04
+      - 新加坡 SG IEPL 06
+      - 台湾 TW IEPL 07
       - 新加坡 SG IEPL 08
       - 新加坡 SG IEPL 05
-      - 新加坡 - IEPL -备用  01
-      - 日本10-JP 10
-      - 香港 HK IEPL 04
-      - 台湾03-TW 03
-      - 新加坡 SG IEPL 01
-      - 香港 HK IEPL 07
-      - 香港 - IEPL -备用  03
-      - 香港03-HK03
-      - 香港 HK IEPL 03
-      - 香港 HK IEPL 06
-      - 新加坡 - IEPL -备用  05
-      - 日本 - IEPL -备用  04
-      - 香港 - IEPL -备用  02
-      - 香港10-HK10
-      - 日本 - IEPL -备用  05
-      - 新加坡 SG IEPL 06
-      - Scloud台湾02|三网优化|解锁流媒体|1x
-      - 日本→苏新→1.7x-流媒体
-      - 新加坡 SG IEPL 04
-      - 新加坡03-SG 03
-      - 日本 - IEPL -备用  03
-      - 香港08-HK08
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 香港 HK IEPL 08
-      - 日本 - IEPL -备用  06
-      - 香港 HK IEPL 05
-      - 香港 - IEPL -备用  04
-      - 美国 US IEPL 01
-      - 日本03-JP 03
-      - 香港 HK IEPL 02
-      - Scould台湾03|解锁流媒体|1x
-      - 新加坡 SG IEPL 02
-      - 香港04-HK04
-      - 香港 HK IEPL 01
-      - 新加坡04|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 04
-      - 印度|三网优化|注册游戏|1x
-      - 新加坡 - IEPL -备用  03
       - 美国08-USA08
-      - 新加坡 SG IEPL 07
-      - 新加坡 - IEPL -备用  06
-      - 印度→海港-活动→0.1x-流媒体
-      - 日本 JP IEPL 06
-      - Scloud台湾01|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 02
-      - 香港 - IEPL -备用  05
-      - 美国 US IEPL 07
-      - 新加坡09-SG 09
-      - 美国 US IEPL 03
-      - 新加坡 SG IEPL 03
-      - 美国 US IEPL 05
-      - 美国 US IEPL 06
-      - 日本04-JP 04
-      - 日本 JP IEPL 07
-      - 台湾 TW IEPL 07
-      - 美国01-USA01
-      - 加拿大|三网优化|1x
-      - 日本 JP IEPL 01
-      - 日本02-JP 02
-      - 日本06-JP 06
-      - 日本09-JP 09
-      - 日本05-JP 05
-      - 美国03-USA03
-      - 香港07-HK07
-      - 新加坡07-SG 07
-      - 香港BGP03|优选原生IP|1x
-      - 日本01-JP 01
-      - 日本07-JP 07
-      - 新加坡10-SG 10
-      - 新加坡05-SG 05
+      - 日本03-JP 03
+      - 日本10-JP 10
+      - 香港超级专线 @ZDYZ2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本→海港-活动→0.1x-流媒体
-      - 日本02|三网优化|1x
-      - 日本→广港-活动→0.1x-流媒体
-      - 日本→海港→1.7x-流媒体
-      - 美国→海港-活动→0.1x-流媒体
-      - 香港 - IEPL -备用  01
+      - 新加坡 SG IEPL 01
+      - 美国洛杉矶 | 解锁流媒体
+      - 新加坡09-SG 09
+      - 香港 HK IEPL 05
+      - 新加坡07-SG 07
+      - Scloud台湾01|三网优化|解锁流媒体|1x
+      - 香港 HK IEPL 06
+      - 香港04-HK04
+      - 美国西雅图 | 解锁流媒体
+      - 新加坡 SG IEPL 07
+      - 香港 HK IEPL 02
+      - 香港07-HK07
+      - 香港 HK IEPL 08
+      - 新加坡 - IEPL -备用  01
+      - 香港 HK IEPL 01
+      - 香港BGP03|优选原生IP|1x
+      - 香港 HK IEPL 07
+      - Scould台湾03|解锁流媒体|1x
+      - 日本06-JP 06
       - 香港05-HK05
+      - 香港03-HK03
+      - 香港HGC-2号线路 | 解锁流媒体
+      - 德国 | 解锁流媒体
+      - 香港 - IEPL -备用  05
+      - 香港 - IEPL -备用  01
+      - 美国 US IEPL 04
+      - 日本优选原生IP02|解锁流媒体|1x
+      - 香港HGC-1号线路 | 解锁流媒体
+      - 印度|三网优化|注册游戏|1x
+      - 新加坡 SG IEPL 03
+      - 日本 - IEPL -备用  03
+      - 香港 - IEPL -备用  04
+      - 香港10-HK10
+      - 台湾Hinet-1号线路 | 解锁流媒体
+      - 法国 | 解锁流媒体
+      - 香港08-HK08
+      - 美国 US IEPL 03
+      - 美国 US IEPL 06
+      - 日本 - IEPL -备用  04
+      - 香港 HK IEPL 04
+      - Scloud台湾02|三网优化|解锁流媒体|1x
+      - 日本 JP IEPL 06
+      - 香港 HK IEPL 03
+      - 新加坡04|三网优化|解锁流媒体|1x
+      - 美国圣何塞 | 解锁流媒体
+      - 美国03-USA03
+      - 新加坡 SG IEPL 02
+      - 美国 US IEPL 07
+      - 美国 US IEPL 02
+      - 美国 US IEPL 05
+      - 日本 JP IEPL 07
+      - 新加坡 SG IEPL 04
+      - 日本04-JP 04
+      - 新加坡 SG IEPL 06
+      - 台湾 TW IEPL 07
       - 新加坡 SG IEPL 08
       - 新加坡 SG IEPL 05
-      - 新加坡 - IEPL -备用  01
-      - 日本10-JP 10
-      - 香港 HK IEPL 04
-      - 台湾03-TW 03
-      - 新加坡 SG IEPL 01
-      - 香港 HK IEPL 07
-      - 香港 - IEPL -备用  03
-      - 香港03-HK03
-      - 香港 HK IEPL 03
-      - 香港 HK IEPL 06
-      - 新加坡 - IEPL -备用  05
-      - 日本 - IEPL -备用  04
-      - 香港 - IEPL -备用  02
-      - 香港10-HK10
-      - 日本 - IEPL -备用  05
-      - 新加坡 SG IEPL 06
-      - Scloud台湾02|三网优化|解锁流媒体|1x
-      - 日本→苏新→1.7x-流媒体
-      - 新加坡 SG IEPL 04
-      - 新加坡03-SG 03
-      - 日本 - IEPL -备用  03
-      - 香港08-HK08
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 香港 HK IEPL 08
-      - 日本 - IEPL -备用  06
-      - 香港 HK IEPL 05
-      - 香港 - IEPL -备用  04
-      - 美国 US IEPL 01
-      - 日本03-JP 03
-      - 香港 HK IEPL 02
-      - Scould台湾03|解锁流媒体|1x
-      - 新加坡 SG IEPL 02
-      - 香港04-HK04
-      - 香港 HK IEPL 01
-      - 新加坡04|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 04
-      - 印度|三网优化|注册游戏|1x
-      - 新加坡 - IEPL -备用  03
       - 美国08-USA08
-      - 新加坡 SG IEPL 07
-      - 新加坡 - IEPL -备用  06
-      - 印度→海港-活动→0.1x-流媒体
-      - 日本 JP IEPL 06
-      - Scloud台湾01|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 02
-      - 香港 - IEPL -备用  05
-      - 美国 US IEPL 07
-      - 新加坡09-SG 09
-      - 美国 US IEPL 03
-      - 新加坡 SG IEPL 03
-      - 美国 US IEPL 05
-      - 美国 US IEPL 06
-      - 日本04-JP 04
-      - 日本 JP IEPL 07
-      - 台湾 TW IEPL 07
-      - 美国01-USA01
-      - 加拿大|三网优化|1x
-      - 日本 JP IEPL 01
-      - 日本02-JP 02
-      - 日本06-JP 06
-      - 日本09-JP 09
-      - 日本05-JP 05
-      - 美国03-USA03
-      - 香港07-HK07
-      - 新加坡07-SG 07
-      - 香港BGP03|优选原生IP|1x
-      - 日本01-JP 01
-      - 日本07-JP 07
-      - 新加坡10-SG 10
-      - 新加坡05-SG 05
+      - 日本03-JP 03
+      - 日本10-JP 10
+      - 香港超级专线 @ZDYZ2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本→海港-活动→0.1x-流媒体
-      - 日本02|三网优化|1x
-      - 日本→广港-活动→0.1x-流媒体
-      - 日本→海港→1.7x-流媒体
-      - 美国→海港-活动→0.1x-流媒体
-      - 香港 - IEPL -备用  01
+      - 新加坡 SG IEPL 01
+      - 美国洛杉矶 | 解锁流媒体
+      - 新加坡09-SG 09
+      - 香港 HK IEPL 05
+      - 新加坡07-SG 07
+      - Scloud台湾01|三网优化|解锁流媒体|1x
+      - 香港 HK IEPL 06
+      - 香港04-HK04
+      - 美国西雅图 | 解锁流媒体
+      - 新加坡 SG IEPL 07
+      - 香港 HK IEPL 02
+      - 香港07-HK07
+      - 香港 HK IEPL 08
+      - 新加坡 - IEPL -备用  01
+      - 香港 HK IEPL 01
+      - 香港BGP03|优选原生IP|1x
+      - 香港 HK IEPL 07
+      - Scould台湾03|解锁流媒体|1x
+      - 日本06-JP 06
       - 香港05-HK05
+      - 香港03-HK03
+      - 香港HGC-2号线路 | 解锁流媒体
+      - 德国 | 解锁流媒体
+      - 香港 - IEPL -备用  05
+      - 香港 - IEPL -备用  01
+      - 美国 US IEPL 04
+      - 日本优选原生IP02|解锁流媒体|1x
+      - 香港HGC-1号线路 | 解锁流媒体
+      - 印度|三网优化|注册游戏|1x
+      - 新加坡 SG IEPL 03
+      - 日本 - IEPL -备用  03
+      - 香港 - IEPL -备用  04
+      - 香港10-HK10
+      - 台湾Hinet-1号线路 | 解锁流媒体
+      - 法国 | 解锁流媒体
+      - 香港08-HK08
+      - 美国 US IEPL 03
+      - 美国 US IEPL 06
+      - 日本 - IEPL -备用  04
+      - 香港 HK IEPL 04
+      - Scloud台湾02|三网优化|解锁流媒体|1x
+      - 日本 JP IEPL 06
+      - 香港 HK IEPL 03
+      - 新加坡04|三网优化|解锁流媒体|1x
+      - 美国圣何塞 | 解锁流媒体
+      - 美国03-USA03
+      - 新加坡 SG IEPL 02
+      - 美国 US IEPL 07
+      - 美国 US IEPL 02
+      - 美国 US IEPL 05
+      - 日本 JP IEPL 07
+      - 新加坡 SG IEPL 04
+      - 日本04-JP 04
+      - 新加坡 SG IEPL 06
+      - 台湾 TW IEPL 07
       - 新加坡 SG IEPL 08
       - 新加坡 SG IEPL 05
-      - 新加坡 - IEPL -备用  01
-      - 日本10-JP 10
-      - 香港 HK IEPL 04
-      - 台湾03-TW 03
-      - 新加坡 SG IEPL 01
-      - 香港 HK IEPL 07
-      - 香港 - IEPL -备用  03
-      - 香港03-HK03
-      - 香港 HK IEPL 03
-      - 香港 HK IEPL 06
-      - 新加坡 - IEPL -备用  05
-      - 日本 - IEPL -备用  04
-      - 香港 - IEPL -备用  02
-      - 香港10-HK10
-      - 日本 - IEPL -备用  05
-      - 新加坡 SG IEPL 06
-      - Scloud台湾02|三网优化|解锁流媒体|1x
-      - 日本→苏新→1.7x-流媒体
-      - 新加坡 SG IEPL 04
-      - 新加坡03-SG 03
-      - 日本 - IEPL -备用  03
-      - 香港08-HK08
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 香港 HK IEPL 08
-      - 日本 - IEPL -备用  06
-      - 香港 HK IEPL 05
-      - 香港 - IEPL -备用  04
-      - 美国 US IEPL 01
-      - 日本03-JP 03
-      - 香港 HK IEPL 02
-      - Scould台湾03|解锁流媒体|1x
-      - 新加坡 SG IEPL 02
-      - 香港04-HK04
-      - 香港 HK IEPL 01
-      - 新加坡04|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 04
-      - 印度|三网优化|注册游戏|1x
-      - 新加坡 - IEPL -备用  03
       - 美国08-USA08
-      - 新加坡 SG IEPL 07
-      - 新加坡 - IEPL -备用  06
-      - 印度→海港-活动→0.1x-流媒体
-      - 日本 JP IEPL 06
-      - Scloud台湾01|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 02
-      - 香港 - IEPL -备用  05
-      - 美国 US IEPL 07
-      - 新加坡09-SG 09
-      - 美国 US IEPL 03
-      - 新加坡 SG IEPL 03
-      - 美国 US IEPL 05
-      - 美国 US IEPL 06
-      - 日本04-JP 04
-      - 日本 JP IEPL 07
-      - 台湾 TW IEPL 07
-      - 美国01-USA01
-      - 加拿大|三网优化|1x
-      - 日本 JP IEPL 01
-      - 日本02-JP 02
-      - 日本06-JP 06
-      - 日本09-JP 09
-      - 日本05-JP 05
-      - 美国03-USA03
-      - 香港07-HK07
-      - 新加坡07-SG 07
-      - 香港BGP03|优选原生IP|1x
-      - 日本01-JP 01
-      - 日本07-JP 07
-      - 新加坡10-SG 10
-      - 新加坡05-SG 05
+      - 日本03-JP 03
+      - 日本10-JP 10
+      - 香港超级专线 @ZDYZ2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -737,85 +590,67 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本→海港-活动→0.1x-流媒体
-      - 日本02|三网优化|1x
-      - 日本→广港-活动→0.1x-流媒体
-      - 日本→海港→1.7x-流媒体
-      - 美国→海港-活动→0.1x-流媒体
-      - 香港 - IEPL -备用  01
+      - 新加坡 SG IEPL 01
+      - 美国洛杉矶 | 解锁流媒体
+      - 新加坡09-SG 09
+      - 香港 HK IEPL 05
+      - 新加坡07-SG 07
+      - Scloud台湾01|三网优化|解锁流媒体|1x
+      - 香港 HK IEPL 06
+      - 香港04-HK04
+      - 美国西雅图 | 解锁流媒体
+      - 新加坡 SG IEPL 07
+      - 香港 HK IEPL 02
+      - 香港07-HK07
+      - 香港 HK IEPL 08
+      - 新加坡 - IEPL -备用  01
+      - 香港 HK IEPL 01
+      - 香港BGP03|优选原生IP|1x
+      - 香港 HK IEPL 07
+      - Scould台湾03|解锁流媒体|1x
+      - 日本06-JP 06
       - 香港05-HK05
+      - 香港03-HK03
+      - 香港HGC-2号线路 | 解锁流媒体
+      - 德国 | 解锁流媒体
+      - 香港 - IEPL -备用  05
+      - 香港 - IEPL -备用  01
+      - 美国 US IEPL 04
+      - 日本优选原生IP02|解锁流媒体|1x
+      - 香港HGC-1号线路 | 解锁流媒体
+      - 印度|三网优化|注册游戏|1x
+      - 新加坡 SG IEPL 03
+      - 日本 - IEPL -备用  03
+      - 香港 - IEPL -备用  04
+      - 香港10-HK10
+      - 台湾Hinet-1号线路 | 解锁流媒体
+      - 法国 | 解锁流媒体
+      - 香港08-HK08
+      - 美国 US IEPL 03
+      - 美国 US IEPL 06
+      - 日本 - IEPL -备用  04
+      - 香港 HK IEPL 04
+      - Scloud台湾02|三网优化|解锁流媒体|1x
+      - 日本 JP IEPL 06
+      - 香港 HK IEPL 03
+      - 新加坡04|三网优化|解锁流媒体|1x
+      - 美国圣何塞 | 解锁流媒体
+      - 美国03-USA03
+      - 新加坡 SG IEPL 02
+      - 美国 US IEPL 07
+      - 美国 US IEPL 02
+      - 美国 US IEPL 05
+      - 日本 JP IEPL 07
+      - 新加坡 SG IEPL 04
+      - 日本04-JP 04
+      - 新加坡 SG IEPL 06
+      - 台湾 TW IEPL 07
       - 新加坡 SG IEPL 08
       - 新加坡 SG IEPL 05
-      - 新加坡 - IEPL -备用  01
-      - 日本10-JP 10
-      - 香港 HK IEPL 04
-      - 台湾03-TW 03
-      - 新加坡 SG IEPL 01
-      - 香港 HK IEPL 07
-      - 香港 - IEPL -备用  03
-      - 香港03-HK03
-      - 香港 HK IEPL 03
-      - 香港 HK IEPL 06
-      - 新加坡 - IEPL -备用  05
-      - 日本 - IEPL -备用  04
-      - 香港 - IEPL -备用  02
-      - 香港10-HK10
-      - 日本 - IEPL -备用  05
-      - 新加坡 SG IEPL 06
-      - Scloud台湾02|三网优化|解锁流媒体|1x
-      - 日本→苏新→1.7x-流媒体
-      - 新加坡 SG IEPL 04
-      - 新加坡03-SG 03
-      - 日本 - IEPL -备用  03
-      - 香港08-HK08
-      - 日本优选原生IP02|解锁流媒体|1x
-      - 香港 HK IEPL 08
-      - 日本 - IEPL -备用  06
-      - 香港 HK IEPL 05
-      - 香港 - IEPL -备用  04
-      - 美国 US IEPL 01
-      - 日本03-JP 03
-      - 香港 HK IEPL 02
-      - Scould台湾03|解锁流媒体|1x
-      - 新加坡 SG IEPL 02
-      - 香港04-HK04
-      - 香港 HK IEPL 01
-      - 新加坡04|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 04
-      - 印度|三网优化|注册游戏|1x
-      - 新加坡 - IEPL -备用  03
       - 美国08-USA08
-      - 新加坡 SG IEPL 07
-      - 新加坡 - IEPL -备用  06
-      - 印度→海港-活动→0.1x-流媒体
-      - 日本 JP IEPL 06
-      - Scloud台湾01|三网优化|解锁流媒体|1x
-      - 美国 US IEPL 02
-      - 香港 - IEPL -备用  05
-      - 美国 US IEPL 07
-      - 新加坡09-SG 09
-      - 美国 US IEPL 03
-      - 新加坡 SG IEPL 03
-      - 美国 US IEPL 05
-      - 美国 US IEPL 06
-      - 日本04-JP 04
-      - 日本 JP IEPL 07
-      - 台湾 TW IEPL 07
-      - 美国01-USA01
-      - 加拿大|三网优化|1x
-      - 日本 JP IEPL 01
-      - 日本02-JP 02
-      - 日本06-JP 06
-      - 日本09-JP 09
-      - 日本05-JP 05
-      - 美国03-USA03
-      - 香港07-HK07
-      - 新加坡07-SG 07
-      - 香港BGP03|优选原生IP|1x
-      - 日本01-JP 01
-      - 日本07-JP 07
-      - 新加坡10-SG 10
-      - 新加坡05-SG 05
+      - 日本03-JP 03
+      - 日本10-JP 10
+      - 香港超级专线 @ZDYZ2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
