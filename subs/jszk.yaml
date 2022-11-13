@@ -2,206 +2,230 @@ port: 7890
 mode: rule
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇸🇬 Linode5 001, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: 🇸🇬 Linode2 001, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: k 001, server: 18.181.162.226, port: 65525, type: ssr, cipher: aes-256-cfb8, password: ssgg123123, protocol: auth_aes128_md5, obfs: tls1.2_ticket_fastauth, protocol-param: None, obfs-param: None, udp: true}
-  - {name: 🇸🇬 Linode1 001, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: 🇸🇬 Linode3 001, server: sg.ipv6.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: 🇸🇬 DigitalOcean6 001, server: dosg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: 🇸🇬 DigitalOcean6 002, server: dosg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: 🇸🇬 Linode3 002, server: sg.ipv6.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: 🇸🇬 Linode1 002, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: k 002, server: 18.181.162.226, port: 65525, type: ssr, cipher: aes-256-cfb8, password: ssgg123123, protocol: auth_aes128_md5, obfs: tls1.2_ticket_fastauth, protocol-param: None, obfs-param: None, udp: true}
-  - {name: 🇸🇬 Linode2 002, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: 🇸🇬 Linode5 002, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: 🇭🇰HK9 001, server: 103.172.116.8, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: 🇭🇰HK5 001, server: 103.172.116.5, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: 🇭🇰HK8 001, server: 103.172.116.8, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: 🇭🇰HK7 001, server: 103.172.116.5, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 🇭🇰HK6 001, server: 103.172.116.5, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: 🇭🇰HK4 001, server: 103.172.116.5, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: 🇭🇰HK3 001, server: 103.172.116.5, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: 🇭🇰HK2 001, server: 103.172.116.5, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: 🇭🇰HK1 001, server: 103.172.116.5, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: 🇭🇰HK1 002, server: 103.172.116.5, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: 🇭🇰HK2 002, server: 103.172.116.5, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: 🇭🇰HK3 002, server: 103.172.116.5, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: 🇭🇰HK4 002, server: 103.172.116.5, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: 🇭🇰HK5 002, server: 103.172.116.5, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: 🇭🇰HK6 002, server: 103.172.116.5, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: 🇭🇰HK7 002, server: 103.172.116.5, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 🇭🇰HK8 002, server: 103.172.116.8, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: 🇭🇰HK9 002, server: 103.172.116.8, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: 🇭🇰HongKong-19, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
+  - {name: B02 香港*, server: stream-hefei-cmcc-111-36-21-3.edgesrv.com.edgesrv.xyz, port: 39002, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: bilivideo.com, udp: true}
+  - {name: 广州移动-香港Akari 001, server: 36.138.255.226, port: 39415, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州移动-香港Akari 002, server: 36.138.255.226, port: 39348, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: B01 香港*, server: stream-hefei-cmcc-111-36-21-3.edgesrv.com.edgesrv.xyz, port: 39006, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: bilivideo.com, udp: true}
+  - {name: 广州移动-香港Akari 003, server: 36.138.255.226, port: 39155, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州移动-香港HKT-dip, server: 36.138.255.226, port: 39275, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州移动-香港Akari-dipx1.2, server: 36.138.255.226, port: 39318, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州移动-台北Hinet-dip 001, server: 36.138.255.226, port: 39402, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州移动-香港Akari 004, server: 36.138.255.226, port: 39344, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州移动-台北Hinet-dip 002, server: 36.138.255.226, port: 39401, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇸🇬 Linode1, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
+  - {name: 🇸🇬 Linode5, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
+  - {name: 广州移动-新北Hinet-dip, server: 36.138.255.226, port: 39403, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇸🇬 Linode2, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
+  - {name: 广州移动-台北Hinet-dip 003, server: 36.138.255.226, port: 39404, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州移动-Singapore-GCore 001, server: 36.138.255.226, port: 39429, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州移动-Singapore-SuperInternet, server: 36.138.255.226, port: 39442, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州移动-Singapore-GCore 002, server: 36.138.255.226, port: 39413, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州移动-Singapore-GCore 003, server: 36.138.255.226, port: 39091, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 郴州联通-Tokyo-Linode, server: 116.129.253.6, port: 39439, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州移动-Kuala Lumpur-Tmnet-dip, server: 36.138.255.226, port: 39342, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州移动-Jakarta-Apik-dip, server: 36.138.255.226, port: 39443, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 郴州联通-Tokyo-GCore, server: 116.129.253.6, port: 39230, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇸🇬 Linode3, server: sg.ipv6.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
+  - {name: 广州移动-Chuncheon-Oracle, server: 36.138.255.226, port: 39384, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat, udp: true}
+  - {name: k, server: 18.181.162.226, port: 65525, type: ssr, cipher: aes-256-cfb8, password: ssgg123123, protocol: auth_aes128_md5, obfs: tls1.2_ticket_fastauth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 🇸🇬 DigitalOcean6, server: dosg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
+  - {name: D21 日本* 001, server: 576d37c2.ksyungslb.com.ksyungslb.xyz, port: 39411, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: bilivideo.com, udp: true}
+  - {name: D21 日本* 002, server: 576d37c2.ksyungslb.com.ksyungslb.xyz, port: 39411, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: bilivideo.com, udp: true}
+  - {name: 🇺🇸US7 001, server: 128.14.140.254, port: 443, type: vmess, uuid: 02ddd27e-cb08-424d-8279-d02bf11b0342, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /123, headers: {Host: zz1.wblogw1.tk}}, udp: true}
+  - {name: 亚洲 | 台湾D, server: a-ct1.jsmmm.cyou, port: 39222, type: vmess, uuid: 1de9a8a0-51f3-3272-afb8-442cde438bf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 亚洲 | 日本C, server: a-ct1.jsmmm.cyou, port: 39321, type: vmess, uuid: 1de9a8a0-51f3-3272-afb8-442cde438bf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 亚洲 | 日本D, server: a-ct1.jsmmm.cyou, port: 39322, type: vmess, uuid: 1de9a8a0-51f3-3272-afb8-442cde438bf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 亚洲 | 新加坡A, server: a-cm1.jsmmm.cyou, port: 39411, type: vmess, uuid: 1de9a8a0-51f3-3272-afb8-442cde438bf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 亚洲 | 日本A, server: a-cm1.jsmmm.cyou, port: 39311, type: vmess, uuid: 1de9a8a0-51f3-3272-afb8-442cde438bf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 柬埔寨→高速|负载|Tik Tok, server: hk-bgp01.ieplduijie.xyz, port: 58255, type: trojan, password: 4623c69e-ebd5-43c0-be48-c893f7091031, sni: jpz01.tongyongjd.top, skip-cert-verify: true, udp: true}
+  - {name: 全球→|多国线路混合负载, server: hk-bgp01.ieplduijie.xyz, port: 58251, type: trojan, password: 4623c69e-ebd5-43c0-be48-c893f7091031, sni: us01.usjiedian01.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡→高速|负载|TikTok, server: hk-bgp01.ieplduijie.xyz, port: 58242, type: trojan, password: 4623c69e-ebd5-43c0-be48-c893f7091031, sni: xjp02.xjpjiedian.xyz, skip-cert-verify: true, udp: true}
+  - {name: 迪拜→高速|负载三|广港1号, server: hk-bgp01.ieplduijie.xyz, port: 58256, type: trojan, password: 4623c69e-ebd5-43c0-be48-c893f7091031, sni: db01.tongyongjd.top, skip-cert-verify: true, udp: true}
+  - {name: 韩国→京日|负载|流畅, server: zj-fs.allzhongzhuan.top, port: 46531, type: trojan, password: 4623c69e-ebd5-43c0-be48-c893f7091031, sni: hg02.krjieidan01.xyz, skip-cert-verify: true, udp: true}
+  - {name: IEPL-AP-TW-1(ss), server: h745768.waihuizhibiaowang.com, port: 15343, type: ss, cipher: chacha20-ietf-poly1305, password: 18900188-deff-4d97-b99d-60111f9ad4b9, udp: true}
+  - {name: IEPL-AP-TW-1(trojan), server: h745768.waihuizhibiaowang.com, port: 13343, type: trojan, password: 18900188-deff-4d97-b99d-60111f9ad4b9, sni: h745768.waihuizhibiaowang.com, skip-cert-verify: true, udp: true}
+  - {name: IPLC-US-US-1(ss), server: h533654.waihuizhibiaowang.com, port: 15243, type: ss, cipher: chacha20-ietf-poly1305, password: 18900188-deff-4d97-b99d-60111f9ad4b9, udp: true}
+  - {name: 【香港01】yuyan.online, server: hk1.yuyan.online, port: 31000, type: vmess, uuid: e24a9fa2-4189-4446-8168-583061fd9327, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /adad, headers: {Host: hk1.yuyan.online}}, udp: true}
+  - {name: 【香港02】【yuyan.online】, server: hk2.yuyan.online, port: 31000, type: vmess, uuid: e24a9fa2-4189-4446-8168-583061fd9327, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /adad, headers: {Host: hk2.yuyan.online}}, udp: true}
+  - {name: 【日本01】yuyan.online, server: jp1.yuyan.online, port: 31000, type: vmess, uuid: e24a9fa2-4189-4446-8168-583061fd9327, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /adad, headers: {Host: jp1.yuyan.online}}, udp: true}
+  - {name: 【韩国01】yuyan.online, server: kr.yuyan.online, port: 31000, type: vmess, uuid: e24a9fa2-4189-4446-8168-583061fd9327, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /adad, headers: {Host: kr.yuyan.online}}, udp: true}
+  - {name: 【日本02】yuyan.online, server: jp2.yuyan.online, port: 31000, type: vmess, uuid: e24a9fa2-4189-4446-8168-583061fd9327, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /adad, headers: {Host: jp2.yuyan.online}}, udp: true}
+  - {name: 🇯🇵 日本a, server: dl-jp1.efpan.one, port: 443, type: trojan, password: aef2ca33-b162-409f-8f16-4c736c338412, sni: data-jp.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本1, server: 20.89.40.63, port: 443, type: trojan, password: aef2ca33-b162-409f-8f16-4c736c338412, sni: data-jp.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本2, server: 20.89.40.133, port: 443, type: trojan, password: aef2ca33-b162-409f-8f16-4c736c338412, sni: data-jp.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本b, server: dl-jp2.efpan.one, port: 443, type: trojan, password: aef2ca33-b162-409f-8f16-4c736c338412, sni: data-jp.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港1, server: 20.205.37.136, port: 443, type: trojan, password: aef2ca33-b162-409f-8f16-4c736c338412, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港a, server: dl-hk1.efpan.one, port: 443, type: trojan, password: aef2ca33-b162-409f-8f16-4c736c338412, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港2, server: 20.205.37.128, port: 443, type: trojan, password: aef2ca33-b162-409f-8f16-4c736c338412, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港4, server: 20.205.8.29, port: 443, type: trojan, password: aef2ca33-b162-409f-8f16-4c736c338412, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 台湾b, server: dl-hk2.efpan.one, port: 443, type: trojan, password: aef2ca33-b162-409f-8f16-4c736c338412, sni: data-tw.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡a, server: dl-sg1.efpan.one, port: 443, type: trojan, password: aef2ca33-b162-409f-8f16-4c736c338412, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸US1, server: 103.172.116.5, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: 🇺🇸US2, server: 103.172.116.5, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: 🇺🇸US3, server: 103.172.116.5, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: 🇺🇸US4, server: 103.172.116.5, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: 🇺🇸US5, server: 103.172.116.5, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: 🇺🇸US6, server: 103.172.116.5, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: 🇺🇸US7 002, server: 103.172.116.5, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: 🇺🇸US8, server: 103.172.116.5, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: 🇺🇸US9, server: oss-cn-shanghai.westdatacloud.xyz, port: 20048, type: trojan, password: 30030B00-A596-87B4-965A-511CD7E05351, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰HongKong-18, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-17, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-16, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-15, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-14, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
   - {name: 🇭🇰HongKong-13, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-12, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-11, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-10, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-09, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-08, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-07, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-06, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-05, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-04 001, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
   - {name: 🇭🇰HongKong-03, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰HongKong-02, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
   - {name: 🇭🇰HongKong-01, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇸🇬 Linode5 003, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: 🇸🇬 Linode2 003, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: 🇸🇬 Linode1 003, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: 🇭🇰HongKong-04 002, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 台湾Scloud01|下载专用|0.3x, server: sh.baibianxiaoying.top, port: 20630, type: vmess, uuid: bc0ece90-7e4b-3783-94a7-fb972b6bc73e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sctw7, headers: {Host: sh.baibianxiaoying.top}}, udp: true}
-  - {name: 台湾Scloud03|下载专用|0.3x, server: sh.baibianxiaoying.top, port: 20630, type: vmess, uuid: bc0ece90-7e4b-3783-94a7-fb972b6bc73e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sctw3, headers: {Host: sh.baibianxiaoying.top}}, udp: true}
-  - {name: 台湾Scloud06|下载专用|0.3x, server: sh.baibianxiaoying.top, port: 20630, type: vmess, uuid: bc0ece90-7e4b-3783-94a7-fb972b6bc73e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sctw6, headers: {Host: sh.baibianxiaoying.top}}, udp: true}
-  - {name: 🇸🇬 Linode3 003, server: sg.ipv6.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc, uri: /}, udp: true}
-  - {name: 日本--优质节点试用--Four, server: 3.112.18.248, port: 42365, type: vmess, uuid: b9ee8850-6eab-46bc-92e4-a28773dc2aab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 3.112.18.248}}, udp: true}
-  - {name: 日本--优质节点试用--Two, server: 54.168.185.239, port: 10254, type: vmess, uuid: b9ee8850-6eab-46bc-92e4-a28773dc2aab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 54.168.185.239}}, udp: true}
-  - {name: 🇺🇸US2, server: de.vmess2.xservs.xyz, port: 80, type: vmess, uuid: dc5e01f7-8238-4755-840b-adf45da456c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: "%7B%22Host%22:%22Vipmahsa%22%7D"}}, udp: true}
-  - {name: k 003, server: 18.181.162.226, port: 65525, type: ssr, cipher: aes-256-cfb8, password: ssgg123123, protocol: auth_aes128_md5, obfs: tls1.2_ticket_fastauth, protocol-param: None, obfs-param: None, udp: true}
-  - {name: 🇺🇸US7, server: 128.14.140.254, port: 443, type: vmess, uuid: 02ddd27e-cb08-424d-8279-d02bf11b0342, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /123, headers: {Host: zz1.wblogw1.tk}}, udp: true}
-  - {name: w1-80, server: node.xn--ces488atrj.eu.org, port: 80, type: vmess, uuid: 63b77ec0-65a9-4d10-d17a-777fd3f49c31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: w1.800876.xyz}}, udp: true}
-  - {name: 🇺🇸US3, server: 128.14.140.254, port: 443, type: vmess, uuid: 02ddd27e-cb08-424d-8279-d02bf11b0342, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /123, headers: {Host: "%7B%22Host%22:%22zz1.wblogw1.tk%22%7D"}}, udp: true}
+  - {name: 🇭🇰HongKong-10, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 🇸🇬 Linode5 001
-  - 🇸🇬 Linode2 001
-  - k 001
-  - 🇸🇬 Linode1 001
-  - 🇸🇬 Linode3 001
-  - 🇸🇬 DigitalOcean6 001
-  - 🇸🇬 DigitalOcean6 002
-  - 🇸🇬 Linode3 002
-  - 🇸🇬 Linode1 002
-  - k 002
-  - 🇸🇬 Linode2 002
-  - 🇸🇬 Linode5 002
-  - 🇭🇰HK9 001
-  - 🇭🇰HK5 001
-  - 🇭🇰HK8 001
-  - 🇭🇰HK7 001
-  - 🇭🇰HK6 001
-  - 🇭🇰HK4 001
-  - 🇭🇰HK3 001
-  - 🇭🇰HK2 001
-  - 🇭🇰HK1 001
-  - 🇭🇰HK1 002
-  - 🇭🇰HK2 002
-  - 🇭🇰HK3 002
-  - 🇭🇰HK4 002
-  - 🇭🇰HK5 002
-  - 🇭🇰HK6 002
-  - 🇭🇰HK7 002
-  - 🇭🇰HK8 002
-  - 🇭🇰HK9 002
-  - 🇭🇰HongKong-19
-  - 🇭🇰HongKong-18
-  - 🇭🇰HongKong-17
-  - 🇭🇰HongKong-16
-  - 🇭🇰HongKong-15
-  - 🇭🇰HongKong-14
-  - 🇭🇰HongKong-13
-  - 🇭🇰HongKong-12
-  - 🇭🇰HongKong-11
-  - 🇭🇰HongKong-10
-  - 🇭🇰HongKong-09
-  - 🇭🇰HongKong-08
-  - 🇭🇰HongKong-07
-  - 🇭🇰HongKong-06
-  - 🇭🇰HongKong-05
-  - 🇭🇰HongKong-04 001
-  - 🇭🇰HongKong-03
-  - 🇭🇰HongKong-02
-  - 🇭🇰HongKong-01
-  - 🇸🇬 Linode5 003
-  - 🇸🇬 Linode2 003
-  - 🇸🇬 Linode1 003
-  - 🇭🇰HongKong-04 002
-  - 台湾Scloud01|下载专用|0.3x
-  - 台湾Scloud03|下载专用|0.3x
-  - 台湾Scloud06|下载专用|0.3x
-  - 🇸🇬 Linode3 003
-  - 日本--优质节点试用--Four
-  - 日本--优质节点试用--Two
+  - B02 香港*
+  - 广州移动-香港Akari 001
+  - 广州移动-香港Akari 002
+  - B01 香港*
+  - 广州移动-香港Akari 003
+  - 广州移动-香港HKT-dip
+  - 广州移动-香港Akari-dipx1.2
+  - 广州移动-台北Hinet-dip 001
+  - 广州移动-香港Akari 004
+  - 广州移动-台北Hinet-dip 002
+  - 🇸🇬 Linode1
+  - 🇸🇬 Linode5
+  - 广州移动-新北Hinet-dip
+  - 🇸🇬 Linode2
+  - 广州移动-台北Hinet-dip 003
+  - 广州移动-Singapore-GCore 001
+  - 广州移动-Singapore-SuperInternet
+  - 广州移动-Singapore-GCore 002
+  - 广州移动-Singapore-GCore 003
+  - 郴州联通-Tokyo-Linode
+  - 广州移动-Kuala Lumpur-Tmnet-dip
+  - 广州移动-Jakarta-Apik-dip
+  - 郴州联通-Tokyo-GCore
+  - 🇸🇬 Linode3
+  - 广州移动-Chuncheon-Oracle
+  - k
+  - 🇸🇬 DigitalOcean6
+  - D21 日本* 001
+  - D21 日本* 002
+  - 🇺🇸US7 001
+  - 亚洲 | 台湾D
+  - 亚洲 | 日本C
+  - 亚洲 | 日本D
+  - 亚洲 | 新加坡A
+  - 亚洲 | 日本A
+  - 柬埔寨→高速|负载|Tik Tok
+  - 全球→|多国线路混合负载
+  - 新加坡→高速|负载|TikTok
+  - 迪拜→高速|负载三|广港1号
+  - 韩国→京日|负载|流畅
+  - IEPL-AP-TW-1(ss)
+  - IEPL-AP-TW-1(trojan)
+  - IPLC-US-US-1(ss)
+  - 【香港01】yuyan.online
+  - 【香港02】【yuyan.online】
+  - 【日本01】yuyan.online
+  - 【韩国01】yuyan.online
+  - 【日本02】yuyan.online
+  - 🇯🇵 日本a
+  - 🇯🇵 日本1
+  - 🇯🇵 日本2
+  - 🇯🇵 日本b
+  - 🇭🇰 香港1
+  - 🇭🇰 香港a
+  - 🇭🇰 香港2
+  - 🇭🇰 香港4
+  - 🇹🇼 台湾b
+  - 🇸🇬 新加坡a
+  - 🇺🇸US1
   - 🇺🇸US2
-  - k 003
-  - 🇺🇸US7
-  - w1-80
   - 🇺🇸US3
+  - 🇺🇸US4
+  - 🇺🇸US5
+  - 🇺🇸US6
+  - 🇺🇸US7 002
+  - 🇺🇸US8
+  - 🇺🇸US9
+  - 🇭🇰HongKong-18
+  - 🇭🇰HongKong-13
+  - 🇭🇰HongKong-03
+  - 🇭🇰HongKong-01
+  - 🇭🇰HongKong-10
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 🇸🇬 Linode5 001
-  - 🇸🇬 Linode2 001
-  - k 001
-  - 🇸🇬 Linode1 001
-  - 🇸🇬 Linode3 001
-  - 🇸🇬 DigitalOcean6 001
-  - 🇸🇬 DigitalOcean6 002
-  - 🇸🇬 Linode3 002
-  - 🇸🇬 Linode1 002
-  - k 002
-  - 🇸🇬 Linode2 002
-  - 🇸🇬 Linode5 002
-  - 🇭🇰HK9 001
-  - 🇭🇰HK5 001
-  - 🇭🇰HK8 001
-  - 🇭🇰HK7 001
-  - 🇭🇰HK6 001
-  - 🇭🇰HK4 001
-  - 🇭🇰HK3 001
-  - 🇭🇰HK2 001
-  - 🇭🇰HK1 001
-  - 🇭🇰HK1 002
-  - 🇭🇰HK2 002
-  - 🇭🇰HK3 002
-  - 🇭🇰HK4 002
-  - 🇭🇰HK5 002
-  - 🇭🇰HK6 002
-  - 🇭🇰HK7 002
-  - 🇭🇰HK8 002
-  - 🇭🇰HK9 002
-  - 🇭🇰HongKong-19
-  - 🇭🇰HongKong-18
-  - 🇭🇰HongKong-17
-  - 🇭🇰HongKong-16
-  - 🇭🇰HongKong-15
-  - 🇭🇰HongKong-14
-  - 🇭🇰HongKong-13
-  - 🇭🇰HongKong-12
-  - 🇭🇰HongKong-11
-  - 🇭🇰HongKong-10
-  - 🇭🇰HongKong-09
-  - 🇭🇰HongKong-08
-  - 🇭🇰HongKong-07
-  - 🇭🇰HongKong-06
-  - 🇭🇰HongKong-05
-  - 🇭🇰HongKong-04 001
-  - 🇭🇰HongKong-03
-  - 🇭🇰HongKong-02
-  - 🇭🇰HongKong-01
-  - 🇸🇬 Linode5 003
-  - 🇸🇬 Linode2 003
-  - 🇸🇬 Linode1 003
-  - 🇭🇰HongKong-04 002
-  - 台湾Scloud01|下载专用|0.3x
-  - 台湾Scloud03|下载专用|0.3x
-  - 台湾Scloud06|下载专用|0.3x
-  - 🇸🇬 Linode3 003
-  - 日本--优质节点试用--Four
-  - 日本--优质节点试用--Two
+  - B02 香港*
+  - 广州移动-香港Akari 001
+  - 广州移动-香港Akari 002
+  - B01 香港*
+  - 广州移动-香港Akari 003
+  - 广州移动-香港HKT-dip
+  - 广州移动-香港Akari-dipx1.2
+  - 广州移动-台北Hinet-dip 001
+  - 广州移动-香港Akari 004
+  - 广州移动-台北Hinet-dip 002
+  - 🇸🇬 Linode1
+  - 🇸🇬 Linode5
+  - 广州移动-新北Hinet-dip
+  - 🇸🇬 Linode2
+  - 广州移动-台北Hinet-dip 003
+  - 广州移动-Singapore-GCore 001
+  - 广州移动-Singapore-SuperInternet
+  - 广州移动-Singapore-GCore 002
+  - 广州移动-Singapore-GCore 003
+  - 郴州联通-Tokyo-Linode
+  - 广州移动-Kuala Lumpur-Tmnet-dip
+  - 广州移动-Jakarta-Apik-dip
+  - 郴州联通-Tokyo-GCore
+  - 🇸🇬 Linode3
+  - 广州移动-Chuncheon-Oracle
+  - k
+  - 🇸🇬 DigitalOcean6
+  - D21 日本* 001
+  - D21 日本* 002
+  - 🇺🇸US7 001
+  - 亚洲 | 台湾D
+  - 亚洲 | 日本C
+  - 亚洲 | 日本D
+  - 亚洲 | 新加坡A
+  - 亚洲 | 日本A
+  - 柬埔寨→高速|负载|Tik Tok
+  - 全球→|多国线路混合负载
+  - 新加坡→高速|负载|TikTok
+  - 迪拜→高速|负载三|广港1号
+  - 韩国→京日|负载|流畅
+  - IEPL-AP-TW-1(ss)
+  - IEPL-AP-TW-1(trojan)
+  - IPLC-US-US-1(ss)
+  - 【香港01】yuyan.online
+  - 【香港02】【yuyan.online】
+  - 【日本01】yuyan.online
+  - 【韩国01】yuyan.online
+  - 【日本02】yuyan.online
+  - 🇯🇵 日本a
+  - 🇯🇵 日本1
+  - 🇯🇵 日本2
+  - 🇯🇵 日本b
+  - 🇭🇰 香港1
+  - 🇭🇰 香港a
+  - 🇭🇰 香港2
+  - 🇭🇰 香港4
+  - 🇹🇼 台湾b
+  - 🇸🇬 新加坡a
+  - 🇺🇸US1
   - 🇺🇸US2
-  - k 003
-  - 🇺🇸US7
-  - w1-80
   - 🇺🇸US3
+  - 🇺🇸US4
+  - 🇺🇸US5
+  - 🇺🇸US6
+  - 🇺🇸US7 002
+  - 🇺🇸US8
+  - 🇺🇸US9
+  - 🇭🇰HongKong-18
+  - 🇭🇰HongKong-13
+  - 🇭🇰HongKong-03
+  - 🇭🇰HongKong-01
+  - 🇭🇰HongKong-10
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:

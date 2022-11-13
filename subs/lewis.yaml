@@ -2,29 +2,197 @@ port: 7890
 mode: rule
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 日本=tg频道:@bpjzx2=1, server: 54.168.185.239, port: 10254, type: vmess, uuid: b9ee8850-6eab-46bc-92e4-a28773dc2aab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 54.168.185.239}}, udp: true}
-  - {name: 日本=tg频道:@bpjzx2=2, server: 3.112.18.248, port: 42365, type: vmess, uuid: b9ee8850-6eab-46bc-92e4-a28773dc2aab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 3.112.18.248}}, udp: true}
-  - {name: 台湾=tg频道:@bpjzx2=3, server: sh.baibianxiaoying.top, port: 20630, type: vmess, uuid: bc0ece90-7e4b-3783-94a7-fb972b6bc73e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sctw3, headers: {Host: sh.baibianxiaoying.top}}, udp: true}
-  - {name: 台湾=tg频道:@bpjzx2=4, server: sh.baibianxiaoying.top, port: 20630, type: vmess, uuid: bc0ece90-7e4b-3783-94a7-fb972b6bc73e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sctw6, headers: {Host: sh.baibianxiaoying.top}}, udp: true}
-  - {name: 新加坡=tg频道:@bpjzx2=5, server: dosg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}, udp: true}
+  - {name: 印度=tg频道:@bpjzx2=1, server: 116.129.253.6, port: 39326, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 日本=tg频道:@bpjzx2=2, server: 116.129.253.6, port: 39424, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 日本=tg频道:@bpjzx2=3, server: 103.186.4.60, port: 39230, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=4, server: 36.138.255.226, port: 39275, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=5, server: 36.139.107.251, port: 39402, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=6, server: 222.186.20.75, port: 39415, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=7, server: 36.139.107.251, port: 39275, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=8, server: 222.186.20.75, port: 39348, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=9, server: 222.186.20.75, port: 39344, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=10, server: 222.186.20.75, port: 39155, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=11, server: 36.138.255.226, port: 39155, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=12, server: 36.138.255.226, port: 39402, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=13, server: 36.138.255.226, port: 39318, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=14, server: 222.186.20.75, port: 39402, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度=tg频道:@bpjzx2=15, server: 222.186.20.75, port: 39091, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=16, server: 36.138.255.226, port: 39348, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=17, server: 222.186.20.75, port: 39275, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=18, server: 222.186.20.75, port: 39403, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=19, server: 222.186.20.75, port: 39404, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 日本=tg频道:@bpjzx2=20, server: 116.129.253.6, port: 39244, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度尼西亚=tg频道:@bpjzx2=21, server: 116.129.253.6, port: 39372, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=22, server: 36.138.255.226, port: 39404, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 越南=tg频道:@bpjzx2=23, server: 116.129.253.6, port: 39407, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=24, server: 36.138.255.226, port: 39415, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=25, server: 36.139.107.251, port: 39404, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 日本=tg频道:@bpjzx2=26, server: 116.129.253.6, port: 39114, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=27, server: 36.139.107.251, port: 39403, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=28, server: 36.139.107.251, port: 39155, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度=tg频道:@bpjzx2=29, server: 222.186.20.75, port: 39413, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 泰国=tg频道:@bpjzx2=30, server: 222.186.20.75, port: 39803, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=31, server: 36.138.255.226, port: 39403, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=32, server: 36.139.107.251, port: 39415, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 日本=tg频道:@bpjzx2=33, server: 103.186.4.60, port: 39439, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 马来西亚=tg频道:@bpjzx2=34, server: 36.139.107.251, port: 39342, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=35, server: 36.139.107.251, port: 39348, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度尼西亚=tg频道:@bpjzx2=36, server: 36.138.255.226, port: 39443, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度尼西亚=tg频道:@bpjzx2=37, server: 36.139.107.251, port: 39384, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度尼西亚=tg频道:@bpjzx2=38, server: 36.139.107.251, port: 39443, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 澳大利亚=tg频道:@bpjzx2=39, server: 222.186.20.75, port: 39807, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度尼西亚=tg频道:@bpjzx2=40, server: 36.138.255.226, port: 39384, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度尼西亚=tg频道:@bpjzx2=41, server: 222.186.20.75, port: 39384, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 爱尔兰=tg频道:@bpjzx2=42, server: 116.129.253.6, port: 39472, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=43, server: 36.139.107.251, port: 39318, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度尼西亚=tg频道:@bpjzx2=44, server: 222.186.20.75, port: 39443, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 马来西亚=tg频道:@bpjzx2=45, server: 36.139.107.251, port: 39378, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 马来西亚=tg频道:@bpjzx2=46, server: 36.138.255.226, port: 39378, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 瑞典=tg频道:@bpjzx2=47, server: 222.186.20.75, port: 39805, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度=tg频道:@bpjzx2=48, server: 222.186.20.75, port: 39442, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 俄罗斯=tg频道:@bpjzx2=49, server: 116.129.253.6, port: 39149, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 瑞士=tg频道:@bpjzx2=50, server: 222.186.20.75, port: 39801, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 卢森堡=tg频道:@bpjzx2=51, server: 116.129.253.6, port: 39479, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 荷兰=tg频道:@bpjzx2=52, server: 222.186.20.75, port: 39802, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=53, server: 36.139.107.251, port: 39344, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 马来西亚=tg频道:@bpjzx2=54, server: 36.138.255.226, port: 39342, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度=tg频道:@bpjzx2=55, server: 222.186.20.75, port: 39429, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度=tg频道:@bpjzx2=56, server: 36.139.107.251, port: 39091, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度=tg频道:@bpjzx2=57, server: 36.138.255.226, port: 39429, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 日本=tg频道:@bpjzx2=58, server: 116.129.253.6, port: 39411, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 印度=tg频道:@bpjzx2=59, server: 36.139.107.251, port: 39442, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=60, server: 222.186.20.75, port: 39318, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
+  - {name: 香港=tg频道:@bpjzx2=61, server: 36.138.255.226, port: 39344, type: ssr, cipher: chacha20-ietf, password: \x1a\x14+\r, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: "", udp: true}
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - ♻️ automatic
-  - 日本=tg频道:@bpjzx2=1
+  - 印度=tg频道:@bpjzx2=1
   - 日本=tg频道:@bpjzx2=2
-  - 台湾=tg频道:@bpjzx2=3
-  - 台湾=tg频道:@bpjzx2=4
-  - 新加坡=tg频道:@bpjzx2=5
+  - 日本=tg频道:@bpjzx2=3
+  - 香港=tg频道:@bpjzx2=4
+  - 台湾=tg频道:@bpjzx2=5
+  - 香港=tg频道:@bpjzx2=6
+  - 香港=tg频道:@bpjzx2=7
+  - 香港=tg频道:@bpjzx2=8
+  - 香港=tg频道:@bpjzx2=9
+  - 香港=tg频道:@bpjzx2=10
+  - 香港=tg频道:@bpjzx2=11
+  - 台湾=tg频道:@bpjzx2=12
+  - 香港=tg频道:@bpjzx2=13
+  - 台湾=tg频道:@bpjzx2=14
+  - 印度=tg频道:@bpjzx2=15
+  - 香港=tg频道:@bpjzx2=16
+  - 香港=tg频道:@bpjzx2=17
+  - 台湾=tg频道:@bpjzx2=18
+  - 台湾=tg频道:@bpjzx2=19
+  - 日本=tg频道:@bpjzx2=20
+  - 印度尼西亚=tg频道:@bpjzx2=21
+  - 台湾=tg频道:@bpjzx2=22
+  - 越南=tg频道:@bpjzx2=23
+  - 香港=tg频道:@bpjzx2=24
+  - 台湾=tg频道:@bpjzx2=25
+  - 日本=tg频道:@bpjzx2=26
+  - 台湾=tg频道:@bpjzx2=27
+  - 香港=tg频道:@bpjzx2=28
+  - 印度=tg频道:@bpjzx2=29
+  - 泰国=tg频道:@bpjzx2=30
+  - 台湾=tg频道:@bpjzx2=31
+  - 香港=tg频道:@bpjzx2=32
+  - 日本=tg频道:@bpjzx2=33
+  - 马来西亚=tg频道:@bpjzx2=34
+  - 香港=tg频道:@bpjzx2=35
+  - 印度尼西亚=tg频道:@bpjzx2=36
+  - 印度尼西亚=tg频道:@bpjzx2=37
+  - 印度尼西亚=tg频道:@bpjzx2=38
+  - 澳大利亚=tg频道:@bpjzx2=39
+  - 印度尼西亚=tg频道:@bpjzx2=40
+  - 印度尼西亚=tg频道:@bpjzx2=41
+  - 爱尔兰=tg频道:@bpjzx2=42
+  - 香港=tg频道:@bpjzx2=43
+  - 印度尼西亚=tg频道:@bpjzx2=44
+  - 马来西亚=tg频道:@bpjzx2=45
+  - 马来西亚=tg频道:@bpjzx2=46
+  - 瑞典=tg频道:@bpjzx2=47
+  - 印度=tg频道:@bpjzx2=48
+  - 俄罗斯=tg频道:@bpjzx2=49
+  - 瑞士=tg频道:@bpjzx2=50
+  - 卢森堡=tg频道:@bpjzx2=51
+  - 荷兰=tg频道:@bpjzx2=52
+  - 香港=tg频道:@bpjzx2=53
+  - 马来西亚=tg频道:@bpjzx2=54
+  - 印度=tg频道:@bpjzx2=55
+  - 印度=tg频道:@bpjzx2=56
+  - 印度=tg频道:@bpjzx2=57
+  - 日本=tg频道:@bpjzx2=58
+  - 印度=tg频道:@bpjzx2=59
+  - 香港=tg频道:@bpjzx2=60
+  - 香港=tg频道:@bpjzx2=61
 - name: ♻️ automatic
   type: url-test
   proxies:
-  - 日本=tg频道:@bpjzx2=1
+  - 印度=tg频道:@bpjzx2=1
   - 日本=tg频道:@bpjzx2=2
-  - 台湾=tg频道:@bpjzx2=3
-  - 台湾=tg频道:@bpjzx2=4
-  - 新加坡=tg频道:@bpjzx2=5
+  - 日本=tg频道:@bpjzx2=3
+  - 香港=tg频道:@bpjzx2=4
+  - 台湾=tg频道:@bpjzx2=5
+  - 香港=tg频道:@bpjzx2=6
+  - 香港=tg频道:@bpjzx2=7
+  - 香港=tg频道:@bpjzx2=8
+  - 香港=tg频道:@bpjzx2=9
+  - 香港=tg频道:@bpjzx2=10
+  - 香港=tg频道:@bpjzx2=11
+  - 台湾=tg频道:@bpjzx2=12
+  - 香港=tg频道:@bpjzx2=13
+  - 台湾=tg频道:@bpjzx2=14
+  - 印度=tg频道:@bpjzx2=15
+  - 香港=tg频道:@bpjzx2=16
+  - 香港=tg频道:@bpjzx2=17
+  - 台湾=tg频道:@bpjzx2=18
+  - 台湾=tg频道:@bpjzx2=19
+  - 日本=tg频道:@bpjzx2=20
+  - 印度尼西亚=tg频道:@bpjzx2=21
+  - 台湾=tg频道:@bpjzx2=22
+  - 越南=tg频道:@bpjzx2=23
+  - 香港=tg频道:@bpjzx2=24
+  - 台湾=tg频道:@bpjzx2=25
+  - 日本=tg频道:@bpjzx2=26
+  - 台湾=tg频道:@bpjzx2=27
+  - 香港=tg频道:@bpjzx2=28
+  - 印度=tg频道:@bpjzx2=29
+  - 泰国=tg频道:@bpjzx2=30
+  - 台湾=tg频道:@bpjzx2=31
+  - 香港=tg频道:@bpjzx2=32
+  - 日本=tg频道:@bpjzx2=33
+  - 马来西亚=tg频道:@bpjzx2=34
+  - 香港=tg频道:@bpjzx2=35
+  - 印度尼西亚=tg频道:@bpjzx2=36
+  - 印度尼西亚=tg频道:@bpjzx2=37
+  - 印度尼西亚=tg频道:@bpjzx2=38
+  - 澳大利亚=tg频道:@bpjzx2=39
+  - 印度尼西亚=tg频道:@bpjzx2=40
+  - 印度尼西亚=tg频道:@bpjzx2=41
+  - 爱尔兰=tg频道:@bpjzx2=42
+  - 香港=tg频道:@bpjzx2=43
+  - 印度尼西亚=tg频道:@bpjzx2=44
+  - 马来西亚=tg频道:@bpjzx2=45
+  - 马来西亚=tg频道:@bpjzx2=46
+  - 瑞典=tg频道:@bpjzx2=47
+  - 印度=tg频道:@bpjzx2=48
+  - 俄罗斯=tg频道:@bpjzx2=49
+  - 瑞士=tg频道:@bpjzx2=50
+  - 卢森堡=tg频道:@bpjzx2=51
+  - 荷兰=tg频道:@bpjzx2=52
+  - 香港=tg频道:@bpjzx2=53
+  - 马来西亚=tg频道:@bpjzx2=54
+  - 印度=tg频道:@bpjzx2=55
+  - 印度=tg频道:@bpjzx2=56
+  - 印度=tg频道:@bpjzx2=57
+  - 日本=tg频道:@bpjzx2=58
+  - 印度=tg频道:@bpjzx2=59
+  - 香港=tg频道:@bpjzx2=60
+  - 香港=tg频道:@bpjzx2=61
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
