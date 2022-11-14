@@ -3,7 +3,7 @@ global
 port: 7890
 external-controller: :9090
 proxies:
-  - {name: JCBB_德国01【vip1】, server: cm.kapoknode.com, port: 25883, type: vmess, uuid: f13781e9-4a11-4a27-82e8-b7ed3023b8a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.kapoknode.com}, udp: true}
+  - {name: JCBB_德国01【vip1】, server: "cm.kapoknode.com", port: 25883, type: vmess, uuid: f13781e9-4a11-4a27-82e8-b7ed3023b8a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.kapoknode.com}, udp: true}
   - {name: JCBB_美国01【vip1】, server: cu.kapoknode.com, port: 25886, type: vmess, uuid: f13781e9-4a11-4a27-82e8-b7ed3023b8a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.kapoknode.com}, udp: true}
   - {name: JCBB_美国02【vip1】, server: cu.kapoknode.com, port: 25886, type: vmess, uuid: f13781e9-4a11-4a27-82e8-b7ed3023b8a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.kapoknode.com}, udp: true}
   - {name: JCBB_美国03【vip1】, server: cu.kapoknode.com, port: 25885, type: vmess, uuid: f13781e9-4a11-4a27-82e8-b7ed3023b8a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.kapoknode.com}, udp: true}
