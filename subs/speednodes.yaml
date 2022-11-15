@@ -31,10 +31,7 @@ proxies:
   - {name: speednode_0027, server: jp3.czs1000.com, port: 8886, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
   - {name: speednode_0028, server: sg3.czs1000.com, port: 8883, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
   - {name: speednode_0029, server: hk2.czs1000.com, port: 8885, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: speednode_0030, server: hk2.czs1000.com, port: 8885, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: speednode_0031, server: hk2.czs1000.com, port: 8885, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: speednode_0032, server: hk2.czs1000.com, port: 8885, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: speednode_0033, server: kr1.czs1000.com, port: 8887, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: speednode_0030, server: kr1.czs1000.com, port: 8887, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
@@ -70,9 +67,6 @@ proxy-groups:
   - speednode_0028
   - speednode_0029
   - speednode_0030
-  - speednode_0031
-  - speednode_0032
-  - speednode_0033
 - name: ♻️ automatic
   type: url-test
   proxies:
@@ -106,9 +100,6 @@ proxy-groups:
   - speednode_0028
   - speednode_0029
   - speednode_0030
-  - speednode_0031
-  - speednode_0032
-  - speednode_0033
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
