@@ -2,114 +2,92 @@ port: 7890
 mode: rule
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: speednode_0001, server: 180.101.133.70, port: 41562, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0002, server: 211.99.114.100, port: 42735, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0003, server: 211.99.114.100, port: 41404, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0004, server: jp3.czs1000.com, port: 8886, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: speednode_0005, server: 211.99.114.100, port: 47055, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0006, server: 211.99.114.100, port: 43441, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0007, server: 211.99.114.100, port: 45940, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0008, server: hk1.kfcnode.xyz, port: 443, type: trojan, password: 99ce20e7-2525-41b6-98ce-fb6c222fb54a, allowInsecure: 0, skip-cert-verify: true, udp: true}
-  - {name: speednode_0009, server: 211.99.114.100, port: 40856, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0010, server: 211.99.114.100, port: 40608, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0011, server: hk3.kfcnode.xyz, port: 443, type: trojan, password: 99ce20e7-2525-41b6-98ce-fb6c222fb54a, allowInsecure: 0, skip-cert-verify: true, udp: true}
-  - {name: speednode_0012, server: 121.14.203.216, port: 12001, type: trojan, password: 89cd0b3e-b9c1-4f76-8a96-0a6c6d1e8f71, sni: wel-hkt.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: speednode_0013, server: hk1.kfcnode.xyz, port: 443, type: trojan, password: 99ce20e7-2525-41b6-98ce-fb6c222fb54a, allowInsecure: 0, skip-cert-verify: true, udp: true}
-  - {name: speednode_0014, server: hk1.kfcnode.xyz, port: 443, type: trojan, password: 99ce20e7-2525-41b6-98ce-fb6c222fb54a, allowInsecure: 0, skip-cert-verify: true, udp: true}
-  - {name: speednode_0015, server: hk2.kfcnode.xyz, port: 443, type: trojan, password: 99ce20e7-2525-41b6-98ce-fb6c222fb54a, allowInsecure: 0, skip-cert-verify: true, udp: true}
-  - {name: speednode_0016, server: hk4.kfcnode.xyz, port: 443, type: trojan, password: 99ce20e7-2525-41b6-98ce-fb6c222fb54a, allowInsecure: 0, skip-cert-verify: true, udp: true}
-  - {name: speednode_0017, server: 211.99.114.100, port: 46577, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0018, server: 211.99.114.100, port: 45144, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0019, server: hk1.kfcnode.xyz, port: 443, type: trojan, password: 99ce20e7-2525-41b6-98ce-fb6c222fb54a, allowInsecure: 0, skip-cert-verify: true, udp: true}
-  - {name: speednode_0020, server: 180.101.133.70, port: 40384, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0021, server: sg3.czs1000.com, port: 8883, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: speednode_0022, server: 211.99.114.100, port: 43467, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0023, server: hk2.czs1000.com, port: 8885, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: speednode_0024, server: hk2.czs1000.com, port: 8885, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: speednode_0025, server: hk2.czs1000.com, port: 8885, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: speednode_0026, server: hk2.czs1000.com, port: 8885, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: speednode_0027, server: 211.99.114.100, port: 39779, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0028, server: 101.226.16.183, port: 12002, type: trojan, password: 89cd0b3e-b9c1-4f76-8a96-0a6c6d1e8f71, sni: wel-hgc.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: speednode_0029, server: 103.85.86.93, port: 42115, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0030, server: 180.101.133.70, port: 47009, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0031, server: 211.99.114.100, port: 47033, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0032, server: 101.226.16.183, port: 12002, type: trojan, password: 89cd0b3e-b9c1-4f76-8a96-0a6c6d1e8f71, sni: wel-jp.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: speednode_0033, server: 211.99.114.100, port: 46798, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0034, server: 173.82.212.183, port: 945, type: trojan, password: admin, skip-cert-verify: true}
-  - {name: speednode_0035, server: 101.226.16.183, port: 12002, type: trojan, password: 89cd0b3e-b9c1-4f76-8a96-0a6c6d1e8f71, sni: wel-kr.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: speednode_0036, server: 121.14.203.216, port: 12001, type: trojan, password: 89cd0b3e-b9c1-4f76-8a96-0a6c6d1e8f71, sni: wel-hk.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: speednode_0037, server: 211.99.114.100, port: 47230, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0038, server: 103.85.86.93, port: 46512, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0039, server: 211.99.114.100, port: 41833, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0040, server: 101.226.16.183, port: 12002, type: trojan, password: 89cd0b3e-b9c1-4f76-8a96-0a6c6d1e8f71, sni: wel-usgt.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: speednode_0041, server: 103.85.86.93, port: 43126, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0042, server: 180.101.133.70, port: 46432, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0043, server: kr1.czs1000.com, port: 8887, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: speednode_0044, server: 180.101.133.70, port: 45225, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0045, server: 211.99.114.100, port: 44617, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0046, server: 103.85.86.93, port: 41066, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0047, server: 211.99.114.100, port: 41992, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0048, server: 211.99.114.100, port: 42489, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0049, server: 211.99.114.100, port: 41085, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0050, server: 180.101.133.70, port: 40034, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0051, server: 180.101.133.70, port: 42675, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0052, server: 180.101.133.70, port: 46868, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0053, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}, udp: true}
-  - {name: speednode_0054, server: 180.101.133.70, port: 46485, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0055, server: 180.101.133.70, port: 40594, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0056, server: 211.99.114.100, port: 43719, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0057, server: 180.101.133.70, port: 46770, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0058, server: 180.101.133.70, port: 46633, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0059, server: 211.99.114.100, port: 41335, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0060, server: 211.99.114.100, port: 46764, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0061, server: 211.99.114.100, port: 42511, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0062, server: huclouds.ml, port: 5505, type: vmess, uuid: 69801534-3870-4d14-9d07-6f65da593da4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: huclouds.ml}}}
-  - {name: speednode_0063, server: huclouds.ml, port: 5505, type: vmess, uuid: 69801534-3870-4d14-9d07-6f65da593da4, alterId: 0, cipher: auto, skip-cert-vertify: true, network: ws, tls: false, ws-opts: {path: /, headers: {Host: huclouds.ml}}}
-  - {name: speednode_0064, server: 211.99.114.100, port: 46549, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0065, server: 211.99.114.100, port: 40391, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0066, server: 211.99.114.100, port: 43920, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0067, server: 180.101.133.70, port: 40024, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0068, server: 211.99.114.100, port: 43734, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0069, server: 211.99.114.100, port: 44862, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0070, server: 180.101.133.70, port: 41226, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0071, server: 211.99.114.100, port: 45025, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0072, server: 20.205.117.138, port: 18521, type: ss, cipher: chacha20-ietf-poly1305, password: 81b5428a-b2cd-4a5b-943e-fa5bafa5fd41}
-  - {name: speednode_0073, server: 211.99.114.100, port: 43565, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0074, server: 211.99.114.100, port: 42009, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0075, server: 211.99.114.100, port: 44504, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0076, server: 211.99.114.100, port: 45397, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0077, server: 211.99.114.100, port: 39912, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0078, server: 211.99.114.100, port: 42983, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0079, server: 211.99.114.100, port: 42022, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0080, server: 211.99.114.100, port: 41947, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0081, server: 211.99.114.100, port: 42720, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0082, server: 211.99.114.100, port: 40842, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0083, server: us2.kfcnode.xyz, port: 443, type: trojan, password: 99ce20e7-2525-41b6-98ce-fb6c222fb54a, allowInsecure: 0, skip-cert-verify: true, udp: true}
-  - {name: speednode_0084, server: 211.99.114.100, port: 46523, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0085, server: 20.187.93.152, port: 31000, type: vmess, uuid: 81b5428a-b2cd-4a5b-943e-fa5bafa5fd41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /adad, headers: {Host: hk2.ikuncloud.com}}}
-  - {name: speednode_0086, server: 211.99.114.100, port: 43801, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0087, server: us3.kfcnode.xyz, port: 443, type: trojan, password: 99ce20e7-2525-41b6-98ce-fb6c222fb54a, allowInsecure: 0, skip-cert-verify: true, udp: true}
-  - {name: speednode_0088, server: 211.99.114.100, port: 43300, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0089, server: 211.99.114.100, port: 46319, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0090, server: 211.99.114.100, port: 40836, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0091, server: gzct.daodecloud.com, port: 20505, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: gzct.daodecloud.com, skip-cert-verify: true, udp: true}
-  - {name: speednode_0092, server: 211.99.114.100, port: 44210, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0093, server: azxg.yddh.tk, port: 80, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: azxg.yddh.tk, skip-cert-verify: true, udp: true}
-  - {name: speednode_0094, server: hnct.daodecloud.com, port: 10993, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: hnct.daodecloud.com, skip-cert-verify: true, udp: true}
-  - {name: speednode_0095, server: gzct.daodecloud.com, port: 10200, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: gzct.daodecloud.com, skip-cert-verify: true, udp: true}
-  - {name: speednode_0096, server: 211.99.114.100, port: 46690, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
-  - {name: speednode_0097, server: us1.kfcnode.xyz, port: 443, type: trojan, password: 99ce20e7-2525-41b6-98ce-fb6c222fb54a, allowInsecure: 0, skip-cert-verify: true, udp: true}
-  - {name: speednode_0098, server: 81.28.4.210, port: 18521, type: ss, cipher: chacha20-ietf-poly1305, password: 81b5428a-b2cd-4a5b-943e-fa5bafa5fd41}
-  - {name: speednode_0099, server: 69.87.216.135, port: 18521, type: ss, cipher: chacha20-ietf-poly1305, password: 81b5428a-b2cd-4a5b-943e-fa5bafa5fd41}
-  - {name: speednode_0100, server: 69.87.218.55, port: 18521, type: ss, cipher: chacha20-ietf-poly1305, password: 81b5428a-b2cd-4a5b-943e-fa5bafa5fd41}
-  - {name: speednode_0101, server: hnct.daodecloud.com, port: 17756, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: hnct.daodecloud.com, skip-cert-verify: true, udp: true}
-  - {name: speednode_0102, server: gzct.daodecloud.com, port: 17914, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: gzct.daodecloud.com, skip-cert-verify: true, udp: true}
-  - {name: speednode_0103, server: hnct.daodecloud.com, port: 41911, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: hnct.daodecloud.com, skip-cert-verify: true, udp: true}
-  - {name: speednode_0104, server: jnd.yddh.tk, port: 10045, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: jnd.yddh.tk, skip-cert-verify: true, udp: true}
-  - {name: speednode_0105, server: gzct.daodecloud.com, port: 18925, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: gzct.daodecloud.com, skip-cert-verify: true, udp: true}
-  - {name: speednode_0106, server: mg1.yddh.tk, port: 10044, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: mg1.yddh.tk, skip-cert-verify: true, udp: true}
-  - {name: speednode_0107, server: xjp.yddh.tk, port: 10037, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: xjp.yddh.tk, skip-cert-verify: true, udp: true}
-  - {name: speednode_0108, server: gzct.daodecloud.com, port: 45771, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: gzct.daodecloud.com, skip-cert-verify: true, udp: true}
+  - {name: speednode_0001, server: 103.85.86.93, port: 43126, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0002, server: 103.85.86.93, port: 41066, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0003, server: 103.85.86.93, port: 46512, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0004, server: 180.101.133.70, port: 47009, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0005, server: 180.101.133.70, port: 40034, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0006, server: 103.85.86.93, port: 42115, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0007, server: 180.101.133.70, port: 46432, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0008, server: 180.101.133.70, port: 40384, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0009, server: 180.101.133.70, port: 45225, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0010, server: 180.101.133.70, port: 41562, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0011, server: 180.101.133.70, port: 42675, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0012, server: jp3.czs1000.com, port: 8886, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: speednode_0013, server: 180.101.133.70, port: 46868, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0014, server: 211.99.114.100, port: 45144, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0015, server: 211.99.114.100, port: 41992, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0016, server: 211.99.114.100, port: 47033, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0017, server: 211.99.114.100, port: 41085, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0018, server: 211.99.114.100, port: 46577, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0019, server: 211.99.114.100, port: 47230, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0020, server: 211.99.114.100, port: 42489, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0021, server: 211.99.114.100, port: 41404, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0022, server: 211.99.114.100, port: 43441, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0023, server: 211.99.114.100, port: 42735, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0024, server: 211.99.114.100, port: 47055, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0025, server: 180.101.133.70, port: 46485, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0026, server: 211.99.114.100, port: 45940, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0027, server: 211.99.114.100, port: 41833, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0028, server: 180.101.133.70, port: 40594, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0029, server: 121.14.203.216, port: 12001, type: trojan, password: 89cd0b3e-b9c1-4f76-8a96-0a6c6d1e8f71, sni: wel-hkt.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: speednode_0030, server: kr1.czs1000.com, port: 8887, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: speednode_0031, server: 211.99.114.100, port: 40856, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0032, server: 180.101.133.70, port: 46770, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0033, server: 211.99.114.100, port: 39779, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0034, server: 211.99.114.100, port: 43467, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0035, server: sg3.czs1000.com, port: 8883, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: speednode_0036, server: 211.99.114.100, port: 44617, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0037, server: 121.14.203.216, port: 12001, type: trojan, password: 89cd0b3e-b9c1-4f76-8a96-0a6c6d1e8f71, sni: wel-hk.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: speednode_0038, server: 211.99.114.100, port: 43719, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0039, server: 211.99.114.100, port: 40608, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0040, server: 211.99.114.100, port: 46798, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0041, server: hk2.czs1000.com, port: 8885, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: speednode_0042, server: 101.226.16.183, port: 12002, type: trojan, password: 89cd0b3e-b9c1-4f76-8a96-0a6c6d1e8f71, sni: wel-kr.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: speednode_0043, server: hk2.czs1000.com, port: 8885, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: speednode_0044, server: hk2.czs1000.com, port: 8885, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: speednode_0045, server: 211.99.114.100, port: 46764, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0046, server: 211.99.114.100, port: 41335, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0047, server: hk2.czs1000.com, port: 8885, type: vmess, uuid: a559c390-7d89-4570-a481-41cd59f9498b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: speednode_0048, server: 180.101.133.70, port: 40024, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0049, server: 211.99.114.100, port: 42511, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0050, server: 211.99.114.100, port: 40391, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0051, server: 180.101.133.70, port: 41226, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0052, server: 180.101.133.70, port: 46633, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0053, server: 211.99.114.100, port: 43734, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0054, server: 211.99.114.100, port: 43920, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0055, server: 211.99.114.100, port: 46549, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0056, server: 211.99.114.100, port: 44862, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0057, server: 211.99.114.100, port: 45025, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0058, server: 211.99.114.100, port: 42009, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0059, server: 211.99.114.100, port: 45397, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0060, server: 211.99.114.100, port: 44504, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0061, server: 211.99.114.100, port: 42022, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0062, server: 211.99.114.100, port: 39912, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0063, server: 211.99.114.100, port: 43565, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0064, server: 211.99.114.100, port: 42983, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0065, server: 211.99.114.100, port: 46523, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0066, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}, udp: true}
+  - {name: speednode_0067, server: 211.99.114.100, port: 42720, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0068, server: hnct.daodecloud.com, port: 10993, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: hnct.daodecloud.com, skip-cert-verify: true, udp: true}
+  - {name: speednode_0069, server: azxg.yddh.tk, port: 80, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: azxg.yddh.tk, skip-cert-verify: true, udp: true}
+  - {name: speednode_0070, server: 211.99.114.100, port: 40842, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0071, server: gzct.daodecloud.com, port: 20505, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: gzct.daodecloud.com, skip-cert-verify: true, udp: true}
+  - {name: speednode_0072, server: gzct.daodecloud.com, port: 10200, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: gzct.daodecloud.com, skip-cert-verify: true, udp: true}
+  - {name: speednode_0073, server: 211.99.114.100, port: 41947, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0074, server: hnct.daodecloud.com, port: 17756, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: hnct.daodecloud.com, skip-cert-verify: true, udp: true}
+  - {name: speednode_0075, server: 211.99.114.100, port: 43801, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0076, server: 211.99.114.100, port: 46319, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0077, server: 211.99.114.100, port: 43300, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0078, server: 211.99.114.100, port: 40836, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0079, server: 211.99.114.100, port: 46690, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0080, server: 211.99.114.100, port: 44210, type: ss, cipher: aes-128-gcm, password: 6afcc0c41d6846f1}
+  - {name: speednode_0081, server: huclouds.ml, port: 5505, type: vmess, uuid: 69801534-3870-4d14-9d07-6f65da593da4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: huclouds.ml}}}
+  - {name: speednode_0082, server: mg1.yddh.tk, port: 10044, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: mg1.yddh.tk, skip-cert-verify: true, udp: true}
+  - {name: speednode_0083, server: gzct.daodecloud.com, port: 17914, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: gzct.daodecloud.com, skip-cert-verify: true, udp: true}
+  - {name: speednode_0084, server: jnd.yddh.tk, port: 10045, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: jnd.yddh.tk, skip-cert-verify: true, udp: true}
+  - {name: speednode_0085, server: gzct.daodecloud.com, port: 18925, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: gzct.daodecloud.com, skip-cert-verify: true, udp: true}
+  - {name: speednode_0086, server: hnct.daodecloud.com, port: 41911, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, sni: hnct.daodecloud.com, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
@@ -201,28 +179,6 @@ proxy-groups:
   - speednode_0084
   - speednode_0085
   - speednode_0086
-  - speednode_0087
-  - speednode_0088
-  - speednode_0089
-  - speednode_0090
-  - speednode_0091
-  - speednode_0092
-  - speednode_0093
-  - speednode_0094
-  - speednode_0095
-  - speednode_0096
-  - speednode_0097
-  - speednode_0098
-  - speednode_0099
-  - speednode_0100
-  - speednode_0101
-  - speednode_0102
-  - speednode_0103
-  - speednode_0104
-  - speednode_0105
-  - speednode_0106
-  - speednode_0107
-  - speednode_0108
 - name: ♻️ automatic
   type: url-test
   proxies:
@@ -312,28 +268,6 @@ proxy-groups:
   - speednode_0084
   - speednode_0085
   - speednode_0086
-  - speednode_0087
-  - speednode_0088
-  - speednode_0089
-  - speednode_0090
-  - speednode_0091
-  - speednode_0092
-  - speednode_0093
-  - speednode_0094
-  - speednode_0095
-  - speednode_0096
-  - speednode_0097
-  - speednode_0098
-  - speednode_0099
-  - speednode_0100
-  - speednode_0101
-  - speednode_0102
-  - speednode_0103
-  - speednode_0104
-  - speednode_0105
-  - speednode_0106
-  - speednode_0107
-  - speednode_0108
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
