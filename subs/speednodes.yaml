@@ -2,6 +2,9 @@ port: 7890
 mode: rule
 external-controller: 127.0.0.1:9090
 proxies:
+  - {name: 香港专线, server: 116.129.254.5, port: 22409, type: ss, cipher: chacha20-ietf, password: utrZbh, udp: true}
+  - {name: 日本专线, server: 116.129.254.12, port: 65523, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 3676713584.dm.files.1drv.com}, udp: true}
+  - {name: 美国专线, server: 116.129.254.82, port: 22409, type: ss, cipher: chacha20-ietf, password: utrZbh, udp: true}
   - {name: speednode_0001, server: cu.kapoknode.com, port: 25897, type: vmess, uuid: 3a06c1a5-eaec-4696-ba3b-331ffcfd2bc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
   - {name: speednode_0002, server: node.ckcloud.info, port: 25926, type: vmess, uuid: 3a06c1a5-eaec-4696-ba3b-331ffcfd2bc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}, udp: true}
   - {name: speednode_0003, server: node.ckcloud.info, port: 25925, type: vmess, uuid: 3a06c1a5-eaec-4696-ba3b-331ffcfd2bc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}, udp: true}
@@ -109,6 +112,9 @@ proxy-groups:
   type: select
   proxies:
   - ♻️ automatic
+  - 香港专线
+  - 日本专线
+  - 美国专线
   - speednode_0001
   - speednode_0002
   - speednode_0003
@@ -214,6 +220,9 @@ proxy-groups:
 - name: ♻️ automatic
   type: url-test
   proxies:
+  - 香港专线
+  - 日本专线
+  - 美国专线
   - speednode_0001
   - speednode_0002
   - speednode_0003
