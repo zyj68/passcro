@@ -89,7 +89,6 @@ proxies:
   - {name: speednode_0085, server: 94.102.53.19, port: 443, type: trojan, password: TestingServer@@, skip-cert-verify: true}
   - {name: speednode_0086, server: 103.172.116.8, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq}
   - {name: speednode_0087, server: 119.36.161.40, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/323127100515, headers: {Host: www.42768395.xyz}}, udp: true}
-  - {name: speednode_0088, server: 138.2.113.84, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, skip-cert-verify: true}
 proxy-groups:
 - name: Proxy
   type: select
@@ -182,7 +181,6 @@ proxy-groups:
   - speednode_0085
   - speednode_0086
   - speednode_0087
-  - speednode_0088
 - name: ♻️ automatic
   type: url-test
   proxies:
@@ -273,7 +271,6 @@ proxy-groups:
   - speednode_0085
   - speednode_0086
   - speednode_0087
-  - speednode_0088
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
