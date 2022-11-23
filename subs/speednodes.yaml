@@ -2,50 +2,118 @@ port: 7890
 mode: rule
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: speednode_0001, server: oss-cn-shanghai.westdatacloud.top, port: 20033, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0002, server: cos-ap-guangzhou.westdatacloud.top, port: 20016, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0003, server: cos-ap-guangzhou.westdatacloud.top, port: 20018, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0004, server: cos-ap-guangzhou.westdatacloud.top, port: 20024, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0005, server: cos-ap-guangzhou.westdatacloud.top, port: 20015, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0006, server: cos-ap-guangzhou.westdatacloud.top, port: 20025, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0007, server: cos-ap-guangzhou.westdatacloud.top, port: 20027, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0008, server: oss-cn-shanghai.westdatacloud.top, port: 20036, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0009, server: oss-cn-shanghai.westdatacloud.top, port: 20037, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0010, server: oss-cn-shanghai.westdatacloud.top, port: 20034, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0011, server: oss-cn-shanghai.westdatacloud.top, port: 20035, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0012, server: oss-cn-shanghai.westdatacloud.top, port: 20038, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0013, server: oss-cn-shanghai.westdatacloud.top, port: 20031, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0014, server: oss-cn-shanghai.westdatacloud.top, port: 20032, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0015, server: oss-cn-shanghai.westdatacloud.top, port: 20065, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0016, server: oss-cn-shanghai.westdatacloud.top, port: 20047, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0017, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0018, server: cos-ap-guangzhou.westdatacloud.top, port: 20004, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0019, server: cos-ap-guangzhou.westdatacloud.top, port: 20066, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0020, server: oss-cn-shanghai.westdatacloud.top, port: 20045, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0021, server: cos-ap-guangzhou.westdatacloud.top, port: 20002, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0022, server: cos-ap-guangzhou.westdatacloud.top, port: 20003, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0023, server: oss-cn-shanghai.westdatacloud.top, port: 20043, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0024, server: oss-cn-shanghai.westdatacloud.top, port: 20051, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0025, server: cos-ap-beijing.westdatacloud.top, port: 20053, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0026, server: cos-ap-beijing.westdatacloud.top, port: 20057, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0027, server: cos-ap-beijing.westdatacloud.top, port: 20055, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0028, server: cos-ap-beijing.westdatacloud.top, port: 20060, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0029, server: cos-ap-beijing.westdatacloud.top, port: 20054, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0030, server: cos-ap-guangzhou.westdatacloud.top, port: 20006, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0031, server: cos-ap-beijing.westdatacloud.top, port: 20058, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0032, server: oss-cn-shanghai.westdatacloud.top, port: 20062, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0033, server: 45.64.22.55, port: 443, type: trojan, password: TaSXwOxORaZ7pD8DlzCE3yNFS5C38eeCuDng03FcA4BSpjK96YaZRIAlx2yqY3, sni: mhkla.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: speednode_0034, server: 212.102.53.196, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: speednode_0035, server: oss-cn-shanghai.westdatacloud.top, port: 20064, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0036, server: oss-cn-shanghai.westdatacloud.top, port: 20063, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0037, server: 212.102.53.193, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: speednode_0038, server: 45.64.22.55, port: 443, type: trojan, password: ZCRe0IlTyApFDO73qeaSlyDEaXwSOYCZ9B3j6ca3Anxg84CDKF2SxpzuNY58R3, sni: leeihs.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: speednode_0039, server: 45.64.22.55, port: 443, type: trojan, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS, sni: reooec.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: speednode_0040, server: cos-ap-beijing.westdatacloud.top, port: 20067, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: speednode_0041, server: 85.208.108.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: speednode_0042, server: 85.208.108.60, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: speednode_0043, server: do-1.heicloud.cf, port: 443, type: vmess, uuid: 2757fd62-fcf0-4946-9b46-1b697741575b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /m1, headers: {Host: do-1.heicloud.cf}}, udp: true}
+  - {name: speednode_0001, server: cos-ap-guangzhou.westdatacloud.top, port: 20006, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0002, server: cos-ap-guangzhou.westdatacloud.top, port: 20003, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0003, server: cos-ap-guangzhou.westdatacloud.top, port: 20017, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0004, server: oss-cn-shanghai.westdatacloud.top, port: 20038, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0005, server: oss-cn-shanghai.westdatacloud.top, port: 20035, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0006, server: oss-cn-shanghai.westdatacloud.top, port: 20037, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0007, server: cos-ap-guangzhou.westdatacloud.top, port: 20026, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0008, server: oss-cn-shanghai.westdatacloud.top, port: 20031, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0009, server: oss-cn-shanghai.westdatacloud.top, port: 20034, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0010, server: oss-cn-shanghai.westdatacloud.top, port: 20033, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0011, server: oss-cn-shanghai.westdatacloud.top, port: 20036, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0012, server: oss-cn-shanghai.westdatacloud.top, port: 20047, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0013, server: oss-cn-shanghai.westdatacloud.top, port: 20045, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0014, server: oss-cn-shanghai.westdatacloud.top, port: 20044, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0015, server: oss-cn-shanghai.westdatacloud.top, port: 20043, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0016, server: cos-ap-guangzhou.westdatacloud.top, port: 20066, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0017, server: oss-cn-shanghai.westdatacloud.top, port: 20065, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0018, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0019, server: oss-cn-shanghai.westdatacloud.top, port: 20042, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0020, server: oss-cn-shanghai.westdatacloud.top, port: 20046, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0021, server: oss-cn-shanghai.westdatacloud.top, port: 20051, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0022, server: oss-cn-shanghai.westdatacloud.top, port: 20032, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0023, server: cos-ap-beijing.westdatacloud.top, port: 20054, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0024, server: cos-ap-beijing.westdatacloud.top, port: 20057, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0025, server: oss-cn-shanghai.westdatacloud.top, port: 20041, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0026, server: cos-ap-beijing.westdatacloud.top, port: 20058, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0027, server: cos-ap-beijing.westdatacloud.top, port: 20060, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0028, server: cos-ap-beijing.westdatacloud.top, port: 20055, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0029, server: 212.102.53.193, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: speednode_0030, server: oss-cn-shanghai.westdatacloud.top, port: 20062, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0031, server: 43.156.18.119, port: 46617, type: vmess, alterId: 0, cipher: auto, http-opts: {headers: {Host: [apple.com]}, path: [/]}, network: http, uuid: 94d4ae3f-933a-41ee-c824-d5bcd32d2f04}
+  - {name: speednode_0032, server: oss-cn-shanghai.westdatacloud.top, port: 20063, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0033, server: cos-ap-beijing.westdatacloud.top, port: 20067, type: trojan, password: E19AC577-B16C-AE8E-AE52-C48D9B0E20F9, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: speednode_0034, server: 45.64.22.55, port: 443, type: trojan, password: ZCRe0IlTyApFDO73qeaSlyDEaXwSOYCZ9B3j6ca3Anxg84CDKF2SxpzuNY58R3, sni: leeihs.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: speednode_0035, server: 212.102.53.196, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: speednode_0036, server: 85.208.108.60, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: speednode_0037, server: 85.208.108.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: speednode_0038, server: 103.172.116.8, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: speednode_0039, server: 103.172.116.8, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: speednode_0040, server: 85.208.108.60, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: speednode_0041, server: do-1.heicloud.cf, port: 443, type: vmess, uuid: 2757fd62-fcf0-4946-9b46-1b697741575b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /m1, headers: {Host: do-1.heicloud.cf}}, udp: true}
+  - {name: speednode_0042, server: 85.208.108.60, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: speednode_0043, server: 144.24.150.126, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: speednode_0044, server: do-3.heicloud.cf, port: 443, type: vmess, uuid: 2757fd62-fcf0-4946-9b46-1b697741575b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /m3, headers: {Host: do-3.heicloud.cf}}, udp: true}
+  - {name: speednode_0045, server: 103.172.116.7, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
+  - {name: speednode_0046, server: 45.64.22.55, port: 443, type: vmess, uuid: d217db0c-0faa-4270-ea38-e6093d9774e3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: h2.800876.xyz}}, udp: true}
+  - {name: speednode_0047, server: 85.208.108.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: speednode_0048, server: 85.208.108.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: speednode_0049, server: 103.172.116.7, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM}
+  - {name: speednode_0050, server: 159.65.151.44, port: 8081, type: vmess, alterId: 0, cipher: auto, network: ws, skip-cert-verify: true, tls: false, uuid: 30e1d1f5-1d7f-4a44-d129-a910b85a6bdf, ws-opts: {path: /}}
+  - {name: speednode_0051, server: 202.110.80.141, port: 16306, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0052, server: 202.110.80.141, port: 16317, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0053, server: 117.164.185.221, port: 16258, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0054, server: 117.164.185.221, port: 16272, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0055, server: 202.110.80.141, port: 16132, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0056, server: 202.110.80.141, port: 16318, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0057, server: 117.164.185.221, port: 16317, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0058, server: 117.164.185.221, port: 16280, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0059, server: 117.164.185.222, port: 16130, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0060, server: 202.110.80.141, port: 16294, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0061, server: 202.110.80.141, port: 16260, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0062, server: 202.110.80.141, port: 16304, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0063, server: 117.164.185.221, port: 16114, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0064, server: 202.110.80.141, port: 16274, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0065, server: 202.110.80.141, port: 16312, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0066, server: 202.110.80.141, port: 16268, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0067, server: 117.164.185.221, port: 16282, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0068, server: 202.110.80.141, port: 16314, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0069, server: 117.164.185.221, port: 16116, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0070, server: 202.110.80.141, port: 16258, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0071, server: 202.110.80.141, port: 16308, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0072, server: 202.110.80.141, port: 16131, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0073, server: 117.164.185.221, port: 16318, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0074, server: 202.110.80.141, port: 16282, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0075, server: 117.164.185.221, port: 16288, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0076, server: 117.164.185.222, port: 16258, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0077, server: 202.110.80.141, port: 16114, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0078, server: 117.164.185.222, port: 16315, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0079, server: 117.164.185.221, port: 16310, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0080, server: 202.110.80.141, port: 16104, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0081, server: 202.110.80.141, port: 16315, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0082, server: 202.110.80.141, port: 16272, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0083, server: 117.164.185.221, port: 16312, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0084, server: 202.110.80.141, port: 16103, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0085, server: 202.110.80.141, port: 16105, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0086, server: 117.164.185.222, port: 16286, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0087, server: 202.110.80.141, port: 16130, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0088, server: 202.110.80.141, port: 16264, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0089, server: 117.164.185.221, port: 16304, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0090, server: 202.110.80.141, port: 16106, type: vmess, uuid: ee867204-3f52-3faf-8de4-6f4180939d7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0091, server: 14.18.93.168, port: 20028, type: trojan, password: C803D247-D37F-B441-0643-5996ED1F066F, skip-cert-verify: true, udp: true}
+  - {name: speednode_0092, server: 14.18.93.168, port: 20001, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, skip-cert-verify: true, udp: true}
+  - {name: speednode_0093, server: 14.18.93.168, port: 20055, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, skip-cert-verify: true, udp: true}
+  - {name: speednode_0094, server: 117.149.247.11, port: 20048, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, skip-cert-verify: true, udp: true}
+  - {name: speednode_0095, server: 117.149.247.11, port: 20048, type: trojan, password: C803D247-D37F-B441-0643-5996ED1F066F, skip-cert-verify: true, udp: true}
+  - {name: speednode_0096, server: 117.149.247.11, port: 20031, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, skip-cert-verify: true, udp: true}
+  - {name: speednode_0097, server: 117.149.247.11, port: 20031, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, skip-cert-verify: true, udp: true}
+  - {name: speednode_0098, server: 117.149.247.11, port: 20031, type: trojan, password: C803D247-D37F-B441-0643-5996ED1F066F, skip-cert-verify: true, udp: true}
+  - {name: speednode_0099, server: 117.149.247.11, port: 20048, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, skip-cert-verify: true, udp: true}
+  - {name: speednode_0100, server: 14.18.93.168, port: 20028, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, skip-cert-verify: true, udp: true}
+  - {name: speednode_0101, server: 14.18.93.168, port: 20056, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, skip-cert-verify: true, udp: true}
+  - {name: speednode_0102, server: 14.18.93.168, port: 20055, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, skip-cert-verify: true, udp: true}
+  - {name: speednode_0103, server: 14.18.93.168, port: 20028, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, skip-cert-verify: true, udp: true}
+  - {name: speednode_0104, server: 14.18.93.168, port: 20011, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, skip-cert-verify: true, udp: true}
+  - {name: speednode_0105, server: 14.18.93.168, port: 20055, type: trojan, password: C803D247-D37F-B441-0643-5996ED1F066F, skip-cert-verify: true, udp: true}
+  - {name: speednode_0106, server: 14.18.93.168, port: 20001, type: trojan, password: C803D247-D37F-B441-0643-5996ED1F066F, skip-cert-verify: true, udp: true}
+  - {name: speednode_0107, server: 14.18.93.168, port: 20052, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, skip-cert-verify: true, udp: true}
+  - {name: speednode_0108, server: 14.18.93.168, port: 20052, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, skip-cert-verify: true, udp: true}
+  - {name: speednode_0109, server: 14.18.93.168, port: 20061, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, skip-cert-verify: true, udp: true}
+  - {name: speednode_0110, server: 14.18.93.168, port: 20052, type: trojan, password: C803D247-D37F-B441-0643-5996ED1F066F, skip-cert-verify: true, udp: true}
+  - {name: speednode_0111, server: 14.18.93.168, port: 20056, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, skip-cert-verify: true, udp: true}
+  - {name: speednode_0112, server: 14.18.93.168, port: 20061, type: trojan, password: C803D247-D37F-B441-0643-5996ED1F066F, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: Proxy
   type: select
@@ -95,6 +163,74 @@ proxy-groups:
   - speednode_0042
   - speednode_0043
   - speednode_0044
+  - speednode_0045
+  - speednode_0046
+  - speednode_0047
+  - speednode_0048
+  - speednode_0049
+  - speednode_0050
+  - speednode_0051
+  - speednode_0052
+  - speednode_0053
+  - speednode_0054
+  - speednode_0055
+  - speednode_0056
+  - speednode_0057
+  - speednode_0058
+  - speednode_0059
+  - speednode_0060
+  - speednode_0061
+  - speednode_0062
+  - speednode_0063
+  - speednode_0064
+  - speednode_0065
+  - speednode_0066
+  - speednode_0067
+  - speednode_0068
+  - speednode_0069
+  - speednode_0070
+  - speednode_0071
+  - speednode_0072
+  - speednode_0073
+  - speednode_0074
+  - speednode_0075
+  - speednode_0076
+  - speednode_0077
+  - speednode_0078
+  - speednode_0079
+  - speednode_0080
+  - speednode_0081
+  - speednode_0082
+  - speednode_0083
+  - speednode_0084
+  - speednode_0085
+  - speednode_0086
+  - speednode_0087
+  - speednode_0088
+  - speednode_0089
+  - speednode_0090
+  - speednode_0091
+  - speednode_0092
+  - speednode_0093
+  - speednode_0094
+  - speednode_0095
+  - speednode_0096
+  - speednode_0097
+  - speednode_0098
+  - speednode_0099
+  - speednode_0100
+  - speednode_0101
+  - speednode_0102
+  - speednode_0103
+  - speednode_0104
+  - speednode_0105
+  - speednode_0106
+  - speednode_0107
+  - speednode_0108
+  - speednode_0109
+  - speednode_0110
+  - speednode_0111
+  - speednode_0112
 - name: ♻️ automatic
   type: url-test
   proxies:
@@ -142,6 +278,74 @@ proxy-groups:
   - speednode_0042
   - speednode_0043
   - speednode_0044
+  - speednode_0045
+  - speednode_0046
+  - speednode_0047
+  - speednode_0048
+  - speednode_0049
+  - speednode_0050
+  - speednode_0051
+  - speednode_0052
+  - speednode_0053
+  - speednode_0054
+  - speednode_0055
+  - speednode_0056
+  - speednode_0057
+  - speednode_0058
+  - speednode_0059
+  - speednode_0060
+  - speednode_0061
+  - speednode_0062
+  - speednode_0063
+  - speednode_0064
+  - speednode_0065
+  - speednode_0066
+  - speednode_0067
+  - speednode_0068
+  - speednode_0069
+  - speednode_0070
+  - speednode_0071
+  - speednode_0072
+  - speednode_0073
+  - speednode_0074
+  - speednode_0075
+  - speednode_0076
+  - speednode_0077
+  - speednode_0078
+  - speednode_0079
+  - speednode_0080
+  - speednode_0081
+  - speednode_0082
+  - speednode_0083
+  - speednode_0084
+  - speednode_0085
+  - speednode_0086
+  - speednode_0087
+  - speednode_0088
+  - speednode_0089
+  - speednode_0090
+  - speednode_0091
+  - speednode_0092
+  - speednode_0093
+  - speednode_0094
+  - speednode_0095
+  - speednode_0096
+  - speednode_0097
+  - speednode_0098
+  - speednode_0099
+  - speednode_0100
+  - speednode_0101
+  - speednode_0102
+  - speednode_0103
+  - speednode_0104
+  - speednode_0105
+  - speednode_0106
+  - speednode_0107
+  - speednode_0108
+  - speednode_0109
+  - speednode_0110
+  - speednode_0111
+  - speednode_0112
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
