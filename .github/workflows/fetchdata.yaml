@@ -3,30 +3,31 @@ name: fetchSubs
 # 触发条件
 on:
   # push的时候触发
-#   push:
-#     branches: main
+  push:
+    branches: main
   workflow_dispatch:
   # 定时触发
-#   schedule:
-#    - cron: '0 */4 * * *'
+  schedule:
+   - cron: '0 */4 * * *'
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.8", "3.9", "3.10"]
     steps:
-    - name: 迁出代码
-      uses: actions/checkout@v2
-    - name: 安装Python
-      uses: actions/setup-python@v2
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
       with:
-        python-version: '3.8.0'
-    - name: 加载缓存  
-      uses: actions/cache@v2
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install flake8 pytest
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: 安装依赖
@@ -34,13 +35,12 @@ jobs:
         pip install -r ./utils/requirements.txt
     - name: 执行任务
       run: |
-        python ./utils/chf.py
-          
+        python ./chf.py
     - name: 提交更改
       run: |                 
-         git config --local user.email "actions@gmail.com"
-         git config --local user.name "zhkaction"
-         git add subs/*yaml
+         git config --local user.email "9032692@qq.com"
+         git config --local user.name "herochengm"
+         git add subs/*
          git commit -m "更新订阅链接"
     - name: 推送更改
       uses:  ad-m/github-push-action@master
