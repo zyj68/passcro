@@ -12,8 +12,9 @@ proxies = './subs/chf.txt'
 
 def get_sharelinks(subscribe_urls):
     share_links = []
-    for subscribe_url in subscribe_urls:
+    for index ,subscribe_url in enumerate(subscribe_urls):
         return_content = requests.get(subscribe_url).text
+        with open("./subs/subscripe_" + str(index) + '.yaml', 'w') as f: f.write(return_content)
         yaml_content = yaml.safe_load(return_content)
         for proxy in yaml_content['proxies']:
             share_links.append(clash2v2ray(proxy))
