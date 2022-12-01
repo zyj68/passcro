@@ -2,59 +2,98 @@ port: 7890
 mode: rule
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: speednode_0001, server: gddx.fosi.hk, port: 60952, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
-  - {name: speednode_0002, server: azsh01.1aba.cn, port: 45260, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0003, server: fsyy.fosi.hk, port: 30459, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fsyy.fosi.hk}}, udp: true}
-  - {name: speednode_0004, server: azsh01.1aba.cn, port: 17180, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0005, server: gddx.fosi.hk, port: 60387, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
-  - {name: speednode_0006, server: shcu.1aba.cn, port: 61148, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
-  - {name: speednode_0007, server: azsh01.1aba.cn, port: 30002, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0008, server: shcu.1aba.cn, port: 51550, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
-  - {name: speednode_0009, server: shcu.1aba.cn, port: 11613, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
-  - {name: speednode_0010, server: azsh01.1aba.cn, port: 54958, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0011, server: azbj01.1aba.cn, port: 38676, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azbj01.1aba.cn}}, udp: true}
-  - {name: speednode_0012, server: azsh01.1aba.cn, port: 37363, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0013, server: gddx.fosi.hk, port: 60387, type: vmess, uuid: 4fe562a9-042a-49d1-a8af-aeba59e38d1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
-  - {name: speednode_0014, server: azsh01.1aba.cn, port: 45260, type: vmess, uuid: 4fe562a9-042a-49d1-a8af-aeba59e38d1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0015, server: fsyy.fosi.hk, port: 30459, type: vmess, uuid: 4fe562a9-042a-49d1-a8af-aeba59e38d1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fsyy.fosi.hk}}, udp: true}
-  - {name: speednode_0016, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
-  - {name: speednode_0017, server: fsyy.fosi.hk, port: 43706, type: vmess, uuid: a1ec0437-ea3e-4ad8-91b2-ce6e664ee4f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fsyy.fosi.hk}}, udp: true}
-  - {name: speednode_0018, server: azsh01.1aba.cn, port: 17180, type: vmess, uuid: 4fe562a9-042a-49d1-a8af-aeba59e38d1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0019, server: gddx.fosi.hk, port: 60952, type: vmess, uuid: 4fe562a9-042a-49d1-a8af-aeba59e38d1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
-  - {name: speednode_0020, server: azsh01.1aba.cn, port: 37363, type: vmess, uuid: 4fe562a9-042a-49d1-a8af-aeba59e38d1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0021, server: azsh01.1aba.cn, port: 30002, type: vmess, uuid: 4fe562a9-042a-49d1-a8af-aeba59e38d1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0022, server: shcu.1aba.cn, port: 11613, type: vmess, uuid: 4fe562a9-042a-49d1-a8af-aeba59e38d1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
-  - {name: speednode_0023, server: shcu.1aba.cn, port: 51550, type: vmess, uuid: 4fe562a9-042a-49d1-a8af-aeba59e38d1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
-  - {name: speednode_0024, server: shcu.1aba.cn, port: 61148, type: vmess, uuid: 4fe562a9-042a-49d1-a8af-aeba59e38d1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
-  - {name: speednode_0025, server: gddx.fosi.hk, port: 60952, type: vmess, uuid: 79ac5c76-940c-40ce-b35a-947167390e10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
-  - {name: speednode_0026, server: azsh01.1aba.cn, port: 54958, type: vmess, uuid: 4fe562a9-042a-49d1-a8af-aeba59e38d1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0027, server: gddx.fosi.hk, port: 60387, type: vmess, uuid: 79ac5c76-940c-40ce-b35a-947167390e10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
-  - {name: speednode_0028, server: azsh01.1aba.cn, port: 45260, type: vmess, uuid: 79ac5c76-940c-40ce-b35a-947167390e10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0029, server: fsyy.fosi.hk, port: 30459, type: vmess, uuid: 79ac5c76-940c-40ce-b35a-947167390e10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fsyy.fosi.hk}}, udp: true}
-  - {name: speednode_0030, server: azsh01.1aba.cn, port: 17180, type: vmess, uuid: 79ac5c76-940c-40ce-b35a-947167390e10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0031, server: fsyy.fosi.hk, port: 43706, type: vmess, uuid: 4fe562a9-042a-49d1-a8af-aeba59e38d1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fsyy.fosi.hk}}, udp: true}
-  - {name: speednode_0032, server: azsh01.1aba.cn, port: 37363, type: vmess, uuid: 79ac5c76-940c-40ce-b35a-947167390e10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0033, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: 4fe562a9-042a-49d1-a8af-aeba59e38d1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
-  - {name: speednode_0034, server: shcu.1aba.cn, port: 61148, type: vmess, uuid: 79ac5c76-940c-40ce-b35a-947167390e10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
-  - {name: speednode_0035, server: azsh01.1aba.cn, port: 30002, type: vmess, uuid: 79ac5c76-940c-40ce-b35a-947167390e10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0036, server: shcu.1aba.cn, port: 11613, type: vmess, uuid: 79ac5c76-940c-40ce-b35a-947167390e10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
-  - {name: speednode_0037, server: shcu.1aba.cn, port: 51550, type: vmess, uuid: 79ac5c76-940c-40ce-b35a-947167390e10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
-  - {name: speednode_0038, server: azsh01.1aba.cn, port: 54958, type: vmess, uuid: 79ac5c76-940c-40ce-b35a-947167390e10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: speednode_0039, server: fsyy.fosi.hk, port: 43706, type: vmess, uuid: 79ac5c76-940c-40ce-b35a-947167390e10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fsyy.fosi.hk}}, udp: true}
-  - {name: speednode_0040, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: 79ac5c76-940c-40ce-b35a-947167390e10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
-  - {name: speednode_0041, server: ingress-i2.iivvppnn.info, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: speednode_0042, server: 203.30.188.120, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /IYKLD53M, headers: {Host: opfr1.v2rayfree1.xyz}}, udp: true}
-  - {name: speednode_0043, server: 45.64.22.55, port: 443, type: trojan, password: NqYpxKxB8A5jnDaISe834lAOaTwEOYzCeSD7CSZyFa0C3ypcR2F9XD3ug36lZR, sni: pbvre.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: speednode_0044, server: gzyd.120.817777.xyz, port: 11000, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: ZDYyYzQyMjY2My5taWNyb3NvZnQuY29t, udp: true}
-  - {name: speednode_0045, server: hnlt.817777.xyz, port: 11011, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: ZDYyYzQyMjY2My5taWNyb3NvZnQuY29t, udp: true}
-  - {name: speednode_0046, server: 45.64.22.55, port: 443, type: trojan, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS, sni: reooec.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: speednode_0047, server: 23.175.144.181, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true}
-  - {name: speednode_0048, server: sh73gxpe.0xnwy1fyrtlb.com, port: 11103, type: ssr, cipher: aes-256-cfb, obfs: tls1.2_ticket_auth, obfs-param: e1efd28305.baidu.com, password: iuo7tbw4ks, protocol: auth_aes128_sha1, protocol-param: 28305:ZukOkl}
-  - {name: speednode_0049, server: sh73gxpe.0xnwy1fyrtlb.com, port: 11105, type: ssr, cipher: aes-256-cfb, obfs: tls1.2_ticket_auth, obfs-param: e1efd28305.baidu.com, password: iuo7tbw4ks, protocol: auth_aes128_sha1, protocol-param: 28305:ZukOkl}
-  - {name: speednode_0050, server: sh73gxpe.0xnwy1fyrtlb.com, port: 11104, type: ssr, cipher: aes-256-cfb, obfs: tls1.2_ticket_auth, obfs-param: e1efd28305.baidu.com, password: iuo7tbw4ks, protocol: auth_aes128_sha1, protocol-param: 28305:ZukOkl}
-  - {name: speednode_0051, server: hk12.sanfen001.pics, port: 443, type: vmess, alterId: 0, cipher: auto, network: ws, skip-cert-verify: true, tls: true, uuid: 9f3f612a-2fb0-420d-830f-1a502a1db50c, ws-opts: {path: /zh-cn}}
-  - {name: speednode_0052, server: sh73gxpe.0xnwy1fyrtlb.com, port: 11106, type: ssr, cipher: aes-256-cfb, obfs: tls1.2_ticket_auth, obfs-param: e1efd28305.baidu.c%, password: iuo7tbw4ks, protocol: auth_aes128_sha1, protocol-param: 28305:ZukOkl}
-  - {name: speednode_0053, server: 213.59.123.21, port: 44570, type: vmess, alterId: 0, cipher: auto, http-opts: {method: GET, path: [/]}, network: http, tls: false, uuid: 4a19d5bc-3d90-4117-dc94-0763ccdb5ef1}
+  - {name: speednode_0001, server: jp1.speeds99.ml, port: 25920, type: vmess, uuid: f004afb0-6e86-4f55-adb7-5b05a57c3ac5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.speeds99.ml}}, udp: true}
+  - {name: speednode_0002, server: cu.kapoknode.com, port: 25897, type: vmess, uuid: f004afb0-6e86-4f55-adb7-5b05a57c3ac5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0003, server: gddx.fosi.hk, port: 60952, type: vmess, uuid: 39a9ea34-24fe-4c15-a173-7e31bfc04893, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: speednode_0004, server: azsh01.1aba.cn, port: 17180, type: vmess, uuid: 39a9ea34-24fe-4c15-a173-7e31bfc04893, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0005, server: jp1.speeds99.ml, port: 25919, type: vmess, uuid: f004afb0-6e86-4f55-adb7-5b05a57c3ac5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.speeds99.ml}}, udp: true}
+  - {name: speednode_0006, server: cm.kapoknode.com, port: 25882, type: vmess, uuid: f004afb0-6e86-4f55-adb7-5b05a57c3ac5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0007, server: azsh01.1aba.cn, port: 30002, type: vmess, uuid: 39a9ea34-24fe-4c15-a173-7e31bfc04893, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0008, server: cu.kapoknode.com, port: 25897, type: vmess, uuid: 440cdfd2-a055-481d-a8af-0a3a2fef364f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0009, server: shcu.1aba.cn, port: 61148, type: vmess, uuid: 39a9ea34-24fe-4c15-a173-7e31bfc04893, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
+  - {name: speednode_0010, server: azsh01.1aba.cn, port: 54958, type: vmess, uuid: 39a9ea34-24fe-4c15-a173-7e31bfc04893, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0011, server: cm.kapoknode.com, port: 25897, type: vmess, uuid: f004afb0-6e86-4f55-adb7-5b05a57c3ac5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0012, server: cu.kapoknode.com, port: 25885, type: vmess, uuid: f004afb0-6e86-4f55-adb7-5b05a57c3ac5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0013, server: tongzhi.838501.xyz, port: 13081, type: ss, cipher: chacha20-ietf-poly1305, password: 56de83c3-6f43-40a1-95c1-eb5f5a3af65f, udp: true}
+  - {name: speednode_0014, server: cu.kapoknode.com, port: 25883, type: vmess, uuid: f004afb0-6e86-4f55-adb7-5b05a57c3ac5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0015, server: cm.kapoknode.com, port: 25884, type: vmess, uuid: f004afb0-6e86-4f55-adb7-5b05a57c3ac5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0016, server: de.838501.xyz, port: 15001, type: trojan, password: 56de83c3-6f43-40a1-95c1-eb5f5a3af65f, allowInsecure: 0, skip-cert-verify: true, udp: true}
+  - {name: speednode_0017, server: cm.kapoknode.com, port: 25883, type: vmess, uuid: f004afb0-6e86-4f55-adb7-5b05a57c3ac5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0018, server: cm.kapoknode.com, port: 25886, type: vmess, uuid: f004afb0-6e86-4f55-adb7-5b05a57c3ac5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0019, server: azsh01.1aba.cn, port: 37363, type: vmess, uuid: 08c2889a-8f2c-47d9-a7d5-e62d669a2eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0020, server: cu.kapoknode.com, port: 25883, type: vmess, uuid: 440cdfd2-a055-481d-a8af-0a3a2fef364f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0021, server: cm.kapoknode.com, port: 25886, type: vmess, uuid: 440cdfd2-a055-481d-a8af-0a3a2fef364f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0022, server: cm.kapoknode.com, port: 25884, type: vmess, uuid: 440cdfd2-a055-481d-a8af-0a3a2fef364f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0023, server: shcu.1aba.cn, port: 61148, type: vmess, uuid: 08c2889a-8f2c-47d9-a7d5-e62d669a2eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
+  - {name: speednode_0024, server: jp1.speeds99.ml, port: 25919, type: vmess, uuid: 8db6b0af-b284-44a6-9baa-049e4eb030d9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.speeds99.ml}}, udp: true}
+  - {name: speednode_0025, server: de.838501.xyz, port: 15001, type: trojan, password: 28c09744-e761-48f0-aafe-08c7dd1b19a7, allowInsecure: 0, skip-cert-verify: true, udp: true}
+  - {name: speednode_0026, server: jp.838501.xyz, port: 15001, type: trojan, password: 28c09744-e761-48f0-aafe-08c7dd1b19a7, allowInsecure: 0, skip-cert-verify: true, udp: true}
+  - {name: speednode_0027, server: cu.kapoknode.com, port: 25897, type: vmess, uuid: 8db6b0af-b284-44a6-9baa-049e4eb030d9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0028, server: azsh01.1aba.cn, port: 54958, type: vmess, uuid: 08c2889a-8f2c-47d9-a7d5-e62d669a2eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0029, server: cm.kapoknode.com, port: 25897, type: vmess, uuid: 8db6b0af-b284-44a6-9baa-049e4eb030d9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0030, server: cu.kapoknode.com, port: 25882, type: vmess, uuid: 8db6b0af-b284-44a6-9baa-049e4eb030d9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0031, server: cu.kapoknode.com, port: 25885, type: vmess, uuid: 8db6b0af-b284-44a6-9baa-049e4eb030d9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0032, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: 08c2889a-8f2c-47d9-a7d5-e62d669a2eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: speednode_0033, server: azsh01.1aba.cn, port: 45260, type: vmess, uuid: 52073622-5eba-4f4f-b430-c7eca6e3b356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0034, server: shcu.1aba.cn, port: 11613, type: vmess, uuid: 08c2889a-8f2c-47d9-a7d5-e62d669a2eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
+  - {name: speednode_0035, server: cm.kapoknode.com, port: 25884, type: vmess, uuid: 8db6b0af-b284-44a6-9baa-049e4eb030d9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0036, server: gddx.fosi.hk, port: 60387, type: vmess, uuid: 52073622-5eba-4f4f-b430-c7eca6e3b356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: speednode_0037, server: cm.kapoknode.com, port: 25886, type: vmess, uuid: 8db6b0af-b284-44a6-9baa-049e4eb030d9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0038, server: cu.kapoknode.com, port: 25883, type: vmess, uuid: 8db6b0af-b284-44a6-9baa-049e4eb030d9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0039, server: cu.kapoknode.com, port: 25884, type: vmess, uuid: 8db6b0af-b284-44a6-9baa-049e4eb030d9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0040, server: cm.kapoknode.com, port: 25882, type: vmess, uuid: 8db6b0af-b284-44a6-9baa-049e4eb030d9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0041, server: azsh01.1aba.cn, port: 37363, type: vmess, uuid: 52073622-5eba-4f4f-b430-c7eca6e3b356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0042, server: z1.810823.xyz, port: 13081, type: ss, cipher: chacha20-ietf-poly1305, password: d65eaee2-1e3f-44ca-b44b-d88c9a8b28f7, udp: true}
+  - {name: speednode_0043, server: gddx.fosi.hk, port: 60952, type: vmess, uuid: 52073622-5eba-4f4f-b430-c7eca6e3b356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: speednode_0044, server: azsh01.1aba.cn, port: 17180, type: vmess, uuid: 52073622-5eba-4f4f-b430-c7eca6e3b356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0045, server: shcu.1aba.cn, port: 61148, type: vmess, uuid: 52073622-5eba-4f4f-b430-c7eca6e3b356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
+  - {name: speednode_0046, server: cm.kapoknode.com, port: 25897, type: vmess, uuid: 5e252304-a00c-491b-bc1c-244d8649b3ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0047, server: shcu.1aba.cn, port: 11613, type: vmess, uuid: 52073622-5eba-4f4f-b430-c7eca6e3b356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
+  - {name: speednode_0048, server: sg.838501.xyz, port: 15001, type: trojan, password: d65eaee2-1e3f-44ca-b44b-d88c9a8b28f7, allowInsecure: 0, skip-cert-verify: true, udp: true}
+  - {name: speednode_0049, server: jp1.speeds99.ml, port: 25919, type: vmess, uuid: 5e252304-a00c-491b-bc1c-244d8649b3ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.speeds99.ml}}, udp: true}
+  - {name: speednode_0050, server: azsh01.1aba.cn, port: 45260, type: vmess, uuid: 545e1356-1c8d-45ff-821a-004b750648ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0051, server: azsh01.1aba.cn, port: 30002, type: vmess, uuid: 52073622-5eba-4f4f-b430-c7eca6e3b356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0052, server: azsh01.1aba.cn, port: 17180, type: vmess, uuid: 545e1356-1c8d-45ff-821a-004b750648ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0053, server: fsyy.fosi.hk, port: 43706, type: vmess, uuid: 52073622-5eba-4f4f-b430-c7eca6e3b356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fsyy.fosi.hk}}, udp: true}
+  - {name: speednode_0054, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: 52073622-5eba-4f4f-b430-c7eca6e3b356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: speednode_0055, server: azsh01.1aba.cn, port: 37363, type: vmess, uuid: 545e1356-1c8d-45ff-821a-004b750648ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0056, server: cu.kapoknode.com, port: 25882, type: vmess, uuid: 5e252304-a00c-491b-bc1c-244d8649b3ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0057, server: azsh01.1aba.cn, port: 54958, type: vmess, uuid: 52073622-5eba-4f4f-b430-c7eca6e3b356, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0058, server: gddx.fosi.hk, port: 60952, type: vmess, uuid: 545e1356-1c8d-45ff-821a-004b750648ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: speednode_0059, server: cu.kapoknode.com, port: 25885, type: vmess, uuid: 5e252304-a00c-491b-bc1c-244d8649b3ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0060, server: cm.kapoknode.com, port: 25882, type: vmess, uuid: 5e252304-a00c-491b-bc1c-244d8649b3ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0061, server: shcu.1aba.cn, port: 11613, type: vmess, uuid: 545e1356-1c8d-45ff-821a-004b750648ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
+  - {name: speednode_0062, server: cm.kapoknode.com, port: 25886, type: vmess, uuid: 5e252304-a00c-491b-bc1c-244d8649b3ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0063, server: cu.kapoknode.com, port: 25884, type: vmess, uuid: 5e252304-a00c-491b-bc1c-244d8649b3ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0064, server: cu.kapoknode.com, port: 25883, type: vmess, uuid: 5e252304-a00c-491b-bc1c-244d8649b3ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: speednode_0065, server: shcu.1aba.cn, port: 61148, type: vmess, uuid: 545e1356-1c8d-45ff-821a-004b750648ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
+  - {name: speednode_0066, server: cm.kapoknode.com, port: 25883, type: vmess, uuid: 5e252304-a00c-491b-bc1c-244d8649b3ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0067, server: cm.kapoknode.com, port: 25884, type: vmess, uuid: 5e252304-a00c-491b-bc1c-244d8649b3ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: speednode_0068, server: shcu.1aba.cn, port: 51550, type: vmess, uuid: 545e1356-1c8d-45ff-821a-004b750648ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
+  - {name: speednode_0069, server: fsyy.fosi.hk, port: 43706, type: vmess, uuid: 545e1356-1c8d-45ff-821a-004b750648ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fsyy.fosi.hk}}, udp: true}
+  - {name: speednode_0070, server: azsh01.1aba.cn, port: 54958, type: vmess, uuid: 545e1356-1c8d-45ff-821a-004b750648ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: speednode_0071, server: 32.wgong1.top, port: 52232, type: vmess, uuid: 05fecb15-af0a-338a-8db1-31876050e355, alterId: 2, cipher: auto, udp: true}
+  - {name: speednode_0072, server: 33.wgong1.top, port: 52233, type: vmess, uuid: 05fecb15-af0a-338a-8db1-31876050e355, alterId: 2, cipher: auto, udp: true}
+  - {name: speednode_0073, server: 120.wgong1.top, port: 52220, type: vmess, uuid: 05fecb15-af0a-338a-8db1-31876050e355, alterId: 2, cipher: auto, udp: true}
+  - {name: speednode_0074, server: 34.wgong1.top, port: 52234, type: vmess, uuid: 05fecb15-af0a-338a-8db1-31876050e355, alterId: 2, cipher: auto, udp: true}
+  - {name: speednode_0075, server: sg80-2.sanfen001.pics, port: 80, type: vmess, uuid: 9f3f612a-2fb0-420d-830f-1a502a1db50c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn/download, headers: {Host: sg80-2.sanfen001.pics}}, udp: true}
+  - {name: speednode_0076, server: 114.wgong1.top, port: 52214, type: vmess, uuid: 05fecb15-af0a-338a-8db1-31876050e355, alterId: 2, cipher: auto, udp: true}
+  - {name: speednode_0077, server: 116.wgong1.top, port: 52216, type: vmess, uuid: 05fecb15-af0a-338a-8db1-31876050e355, alterId: 2, cipher: auto, udp: true}
+  - {name: speednode_0078, server: 118.wgong1.top, port: 52218, type: vmess, uuid: 05fecb15-af0a-338a-8db1-31876050e355, alterId: 2, cipher: auto, udp: true}
+  - {name: speednode_0079, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15339:SVIPTIZ8, obfs-param: 23ffd711.microsoft.com, udp: true}
+  - {name: speednode_0080, server: 121.wgong1.top, port: 52221, type: vmess, uuid: 05fecb15-af0a-338a-8db1-31876050e355, alterId: 2, cipher: auto, udp: true}
+  - {name: speednode_0081, server: 29.wgong1.top, port: 52229, type: vmess, uuid: 05fecb15-af0a-338a-8db1-31876050e355, alterId: 2, cipher: auto, udp: true}
+  - {name: speednode_0082, server: 1cnrelay.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 15339:SVIPTIZ8, obfs-param: 23ffd711.microsoft.com, udp: true}
+  - {name: speednode_0083, server: hnlt.817777.xyz, port: 11011, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: d62c422663.microsoft.com, udp: true}
+  - {name: speednode_0084, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: None, obfs-param: "", udp: true}
+  - {name: speednode_0085, server: 54.248.175.71, port: 44455, type: vmess, uuid: 10c0bf3e-9d0d-4a32-9e32-151aa8e46330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 54.248.175.71}}, udp: true}
+  - {name: speednode_0086, server: gzyd.120.817777.xyz, port: 11000, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: d62c422663.microsoft.com, udp: true}
+  - {name: speednode_0087, server: 150.230.249.15, port: 46842, type: vmess, uuid: 4530b5ee-ced4-4e64-9285-1867fc5df7f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: speednode_0088, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: speednode_0089, server: gzyd.120.817777.xyz, port: 11000, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: ZDYyYzQyMjY2My5taWNyb3NvZnQuY29t, udp: true}
+  - {name: speednode_0090, server: dl-hkcmi1.efpan.one, port: 443, type: trojan, password: 0235fcca-cb26-4e1d-a5d5-8264e83ec0f0, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: speednode_0091, server: dl-hkcmi2.efpan.one, port: 443, type: trojan, password: 0235fcca-cb26-4e1d-a5d5-8264e83ec0f0, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+  - {name: speednode_0092, server: content-provider1.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: TestingServer@@, skip-cert-verify: true}
 proxy-groups:
 - name: Proxy
   type: select
@@ -113,6 +152,45 @@ proxy-groups:
   - speednode_0051
   - speednode_0052
   - speednode_0053
+  - speednode_0054
+  - speednode_0055
+  - speednode_0056
+  - speednode_0057
+  - speednode_0058
+  - speednode_0059
+  - speednode_0060
+  - speednode_0061
+  - speednode_0062
+  - speednode_0063
+  - speednode_0064
+  - speednode_0065
+  - speednode_0066
+  - speednode_0067
+  - speednode_0068
+  - speednode_0069
+  - speednode_0070
+  - speednode_0071
+  - speednode_0072
+  - speednode_0073
+  - speednode_0074
+  - speednode_0075
+  - speednode_0076
+  - speednode_0077
+  - speednode_0078
+  - speednode_0079
+  - speednode_0080
+  - speednode_0081
+  - speednode_0082
+  - speednode_0083
+  - speednode_0084
+  - speednode_0085
+  - speednode_0086
+  - speednode_0087
+  - speednode_0088
+  - speednode_0089
+  - speednode_0090
+  - speednode_0091
+  - speednode_0092
 - name: ♻️ automatic
   type: url-test
   proxies:
@@ -169,6 +247,45 @@ proxy-groups:
   - speednode_0051
   - speednode_0052
   - speednode_0053
+  - speednode_0054
+  - speednode_0055
+  - speednode_0056
+  - speednode_0057
+  - speednode_0058
+  - speednode_0059
+  - speednode_0060
+  - speednode_0061
+  - speednode_0062
+  - speednode_0063
+  - speednode_0064
+  - speednode_0065
+  - speednode_0066
+  - speednode_0067
+  - speednode_0068
+  - speednode_0069
+  - speednode_0070
+  - speednode_0071
+  - speednode_0072
+  - speednode_0073
+  - speednode_0074
+  - speednode_0075
+  - speednode_0076
+  - speednode_0077
+  - speednode_0078
+  - speednode_0079
+  - speednode_0080
+  - speednode_0081
+  - speednode_0082
+  - speednode_0083
+  - speednode_0084
+  - speednode_0085
+  - speednode_0086
+  - speednode_0087
+  - speednode_0088
+  - speednode_0089
+  - speednode_0090
+  - speednode_0091
+  - speednode_0092
   url: https://www.google.com/favicon.ico
   interval: 300
 rules:
