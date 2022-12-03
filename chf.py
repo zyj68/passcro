@@ -88,7 +88,7 @@ def clash2v2ray(share_link):
                 ip=share_link['server'],
                 port=share_link['port'],
                 pwdbase64=(base64.b64encode(share_link['password'].encode())).decode(),
-                method='none',
+                method=share_link['cipher'],
                 protocol=share_link['protocol'],
                 protoparams64=(base64.b64encode(share_link['protocol-param'].encode())).decode(),
                 obfs=share_link['obfs'],
