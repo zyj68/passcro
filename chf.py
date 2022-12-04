@@ -8,7 +8,7 @@ subscribe_urls = [
 ]
 
 proxies = './subs/chf.txt'
-
+filterDomain = {"fsyy.fosi.hk", "gddx.fosi.hk", "ydgy.fosi.hk"}
 
 def get_sharelinks(subscribe_urls):
     share_links = []
@@ -17,7 +17,8 @@ def get_sharelinks(subscribe_urls):
         with open("./subs/subscripe_" + str(index) + '.yaml', 'w') as f: f.write(return_content)
         yaml_content = yaml.safe_load(return_content)
         for proxy in yaml_content['proxies']:
-            share_links.append(clash2v2ray(proxy))
+            if proxy['server'] in filterDomain:
+                share_links.append(clash2v2ray(proxy))
     return share_links
 
 def create_ssrurl():
@@ -81,7 +82,6 @@ def clash2v2ray(share_link):
     elif share_link['type'] == 'vless':
         pass
     elif share_link['type'] == 'ssr':
-        print(share_link)
         if 'protocol-param' in share_link:
             res = "{ip}:{port}:{protocol}:{method}:{obfs}:{pwdbase64}/?" \
             "obfsparam={obfsparam64}&protoparam={protoparams64}&remarks={remarkbase64}&group={group64}".format(
