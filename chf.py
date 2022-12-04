@@ -1,6 +1,7 @@
 import requests
 import yaml
 import base64
+import json
 from urllib.parse import quote
 
 subscribe_urls = [
@@ -58,12 +59,36 @@ def create_ssrurl():
     ssrlink = 'ssr://' + str((base64.b64encode(res.encode())).decode())
     return ssrlink
 
+def createVMESSShareLink(node):
+    shareLink = ""
+    vmess = {}
+    vmess['v'] = "2"
+    vmess['ps'] = node['name']
+    vmess['add'] = node['server']
+    vmess['port'] = node['port']
+    vmess['id'] = node['uuid']
+    vmess['aid'] = node['alterId']
+    vmess['scy'] = node['cipher']
+    vmess['sni'] = node['name']
+    vmess['type'] = 'none'
+    if 'network' in node:
+        vmess['net'] = node['network']
+        if vmess['net'] == 'ws':
+            if 'headers' in node['ws-opts']:
+                vmess['host'] = node['ws-opts']['headers']['Host']
+            vmess['path'] = node['ws-opts']['path']
+    if 'tls' in node and node['tls'] == True:
+        vmess['tls'] = 'tls'
+    else:
+        vmess['tls'] = ''
+    jsonData = json.dumps(vmess)
+    shareLink = 'vmess://' + base64.b64encode(bytes(jsonData.encode('utf-8'))).decode('utf-8')
+    return shareLink
+
 def clash2v2ray(share_link):
     link = ''
     if share_link['type'] == 'vmess':
-        link = 'vmess://'
-        link += base64.b64encode(bytes(('{"v":"2","ps":"' + share_link['name'].encode('utf-16', 'surrogatepass').decode('utf-16') + '","add":"' + share_link['server'] + '","port":"' + str(
-            share_link['port']) + '","id":"' + share_link['uuid'] + '","aid":"' + str(share_link['alterId']) + '","net":"tcp","type":"none","host":"","path":"","tls":""}').encode('utf-8'))).decode('utf-8')
+        link = createVMESSShareLink(share_link)
         # TODO
     elif share_link['type'] == 'ss':
         link = 'ss://'
