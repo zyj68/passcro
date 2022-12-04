@@ -8,7 +8,13 @@ subscribe_urls = [
 ]
 
 proxies = './subs/chf.txt'
-filterDomain = {"fsyy.fosi.hk", "gddx.fosi.hk", "ydgy.fosi.hk"}
+filterDomain = {"fsyy.fosi.hk", 
+                "gddx.fosi.hk", 
+                "ydgy.fosi.hk", 
+                "azsh01.1aba.cn",
+                "shcu.1aba.cn",
+                "azbj01.1aba.cn"
+                }
 
 def get_sharelinks(subscribe_urls):
     share_links = []
