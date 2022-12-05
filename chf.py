@@ -24,8 +24,8 @@ def get_sharelinks(subscribe_urls):
         with open("./subs/subscripe_" + str(index) + '.yaml', 'w') as f: f.write(return_content)
         yaml_content = yaml.safe_load(return_content)
         for proxy in yaml_content['proxies']:
-            if proxy['server'] in filterDomain:
-                share_links.append(clash2v2ray(proxy))
+            # if proxy['server'] in filterDomain:
+            share_links.append(clash2v2ray(proxy))
     return share_links
 
 def create_ssrurl():
