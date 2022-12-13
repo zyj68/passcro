@@ -115,6 +115,10 @@ def clash2v2ray(share_link):
     elif share_link['type'] == 'vless':
         pass
     elif share_link['type'] == 'ssr':
+        if 'obfs-param' in share_link:
+            obfsparam64= (base64.b64encode(share_link['obfs-param'].encode())).decode(),
+        else:
+            obfsparam64= ""
         if 'protocol-param' in share_link:
             res = "{ip}:{port}:{protocol}:{method}:{obfs}:{pwdbase64}/?" \
             "obfsparam={obfsparam64}&protoparam={protoparams64}&remarks={remarkbase64}&group={group64}".format(
@@ -125,7 +129,7 @@ def clash2v2ray(share_link):
                 protocol=share_link['protocol'],
                 protoparams64=(base64.b64encode(share_link['protocol-param'].encode())).decode(),
                 obfs=share_link['obfs'],
-                obfsparam64=(base64.b64encode(share_link['obfs-param'].encode())).decode(),
+                obfsparam64=obfsparam64,
                 remarkbase64=(base64.b64encode(share_link['name'].encode())).decode(),
                 group64=(base64.b64encode(share_link['name'].encode())).decode()
                 )
