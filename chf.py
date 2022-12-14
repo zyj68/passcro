@@ -74,7 +74,7 @@ def createVMESSShareLink(node):
     if 'network' in node:
         vmess['net'] = node['network']
         if vmess['net'] == 'ws':
-            if 'headers' in node['ws-opts']:
+            if 'headers' in node['ws-opts'] and 'Host' in node['ws-opts']['headers']:
                 vmess['host'] = node['ws-opts']['headers']['Host']
             vmess['path'] = node['ws-opts']['path']
         if vmess['net'] == 'http':
