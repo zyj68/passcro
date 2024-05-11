@@ -34,7 +34,7 @@ jobs:
       run: |
         git status --porcelain
     - name: 提交更改
-      if: ${{ steps.git-status.outputs.stdout != '' }}
+      
       run: |                 
         git config --local user.email "1024304930@qq.com"
         git config --local user.name "zyj68"
