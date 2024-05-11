@@ -31,7 +31,7 @@ jobs:
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: 执行任务
       run: |
-        python ./subs/chf.py
+        python ./utils/chf.py
     - name: 提交更改
       run: |                 
          git config --local user.email "9032692@qq.com"
