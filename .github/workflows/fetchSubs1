@@ -1,4 +1,4 @@
-name: fetchSubs1
+name: fetchSubs
 
 on:
   push:
@@ -16,11 +16,11 @@ jobs:
         python-version: ["3.12"]
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Python ${{ matrix.python-version }}
+    - name: 设置 Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
+    - name: 安装依赖
       run: |
         python -m pip install --upgrade pip
         python -m pip install urllib3 requests PyYAML
@@ -29,7 +29,7 @@ jobs:
     - name: 执行任务
       run: |
         python ./utils/chf.py
-    - name: Check for changes
+    - name: 检查变更
       id: git-status
       run: |
         git status --porcelain
